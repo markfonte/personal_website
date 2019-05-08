@@ -2,13 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from './about/about';
-import Contact from './contact/contact';
-import Resume from './resume/resume';
-
-function Index() {
-    return <h2>Home</h2>;
-}
+import About from './about/about.jsx';
+import Contact from './contact/contact.jsx';
+import Resume from './resume/resume.jsx';
+import Home from './home/home.jsx';
 
 class App extends React.Component {
 
@@ -65,7 +62,8 @@ class App extends React.Component {
                     </ul>
                 </nav>
 
-                <Route path="/" exact component={Index} />
+                <Route path="/" exact component={Home} />
+                <Route path="/home" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/resume" component={Resume} />
