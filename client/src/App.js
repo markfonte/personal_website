@@ -9,14 +9,27 @@ function Index() {
 }
 
 class About extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {apiResponse: ""};
+    }
+
+    getInfo() {
+        fetch("http://localhost:9000/about", {credentials: 'same-origin' })
+        .then(res => res.text())
+        .then(res => this.setState({apiResponse: res}))
+        .catch(error => console.log(error));
+    }
+
+    componentDidMount() {
+        this.getInfo();
+    }
+
     render() {
         return(
-            <h2>About</h2>
+            <h2>{this.state.apiResponse}</h2>
         );
-        // fetch("http://localhost:9000/about", {credentials: 'same-origin' })
-        // .then(res => res.text())
-        // .then(res => console.log(res))
-        // .catch(error => console.log(error));
     }
 }
 
