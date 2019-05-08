@@ -3,13 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from './about/about';
+import Contact from './contact/contact';
+import Resume from './resume/resume';
 
 function Index() {
     return <h2>Home</h2>;
-}
-
-function Contact() {
-    return <h2>Contact</h2>;
 }
 
 class App extends React.Component {
@@ -21,7 +19,7 @@ class App extends React.Component {
     }
 
     callAPI() {
-        fetch("http://localhost:9000/testAPI")
+        fetch(process.env.REACT_APP_API_URL + "testAPI")
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res}))
             .catch(err => err);
@@ -61,12 +59,16 @@ class App extends React.Component {
                         <li>
                             <Link to="/contact">Contact</Link>
                         </li>
+                        <li>
+                            <Link to="/resume">Resume</Link>
+                        </li>
                     </ul>
                 </nav>
 
                 <Route path="/" exact component={Index} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/resume" component={Resume} />
 
                 </div>
             </Router>

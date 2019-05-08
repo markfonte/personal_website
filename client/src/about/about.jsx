@@ -8,15 +8,15 @@ class About extends React.Component {
         this.state = {apiResponse: ""};
     }
 
-    getInfo() {
-        fetch("http://localhost:9000/about", {credentials: 'same-origin' })
+    fetchInfo() {
+        fetch(process.env.REACT_APP_API_URL + "about", {credentials: 'same-origin' })
         .then(res => res.text())
         .then(res => this.setState({apiResponse: res}))
         .catch(error => console.log(error));
     }
 
     componentDidMount() {
-        this.getInfo();
+        this.fetchInfo();
     }
 
     render() {
