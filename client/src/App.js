@@ -2,35 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import About from './about/about';
 
 function Index() {
     return <h2>Home</h2>;
-}
-
-class About extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {apiResponse: ""};
-    }
-
-    getInfo() {
-        fetch("http://localhost:9000/about", {credentials: 'same-origin' })
-        .then(res => res.text())
-        .then(res => this.setState({apiResponse: res}))
-        .catch(error => console.log(error));
-    }
-
-    componentDidMount() {
-        this.getInfo();
-    }
-
-    render() {
-        return(
-            <p class="main_text">{this.state.apiResponse}</p>
-        );
-    }
 }
 
 function Contact() {
