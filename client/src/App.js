@@ -28,7 +28,7 @@ class About extends React.Component {
 
     render() {
         return(
-            <h2>{this.state.apiResponse}</h2>
+            <p class="main_text">{this.state.apiResponse}</p>
         );
     }
 }
