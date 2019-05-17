@@ -30,30 +30,33 @@ class App extends React.Component {
         return (
             <Router>
                 <div className="App">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>{this.state.apiResponse}</p>
-                <nav class="primary-nav">
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contact</Link>
-                        </li>
-                        <li>
-                            <Link to="/resume">Resume</Link>
-                        </li>
-                    </ul>
-                </nav>
+                    { this.state.apiResponse ? (
+                        <img src={logo} className="App-logo" alt="logo" />
+                    ) : (
+                        <p></p> )
+                    }
+                    <nav class="primary-nav">
+                        <ul>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                            <li>
+                                <Link to="/resume">Resume</Link>
+                            </li>
+                        </ul>
+                    </nav>
 
-                <Route path="/" exact component={Home} />
-                <Route path="/home" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/resume" component={Resume} />
+                    <Route path="/" exact component={Home} />
+                    <Route path="/home" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/resume" component={Resume} />
 
                 </div>
             </Router>
