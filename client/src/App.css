@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 2s linear;
+  animation: App-logo-spin infinite 1s linear;
   /* height: 40vmin; */
   height: 100px;
   width: 100px;
@@ -33,13 +33,28 @@
     transform: rotate(360deg);
   }
 }
+/* .index-nav {
+    display: inline-block;
+} */
 
 
-.primary-nav:before,
+.App ul {
+    list-style: none;
+}
+
+.App li {
+    display: inline;
+    margin: 4px;
+}
+
+.primary-nav {
+    text-align:center;
+}
+/* .primary-nav:before,
 .primary-nav:after {
   content: " ";
   display: table;
 }
 .primary-nav:after {
   clear: both;
-}
+} */

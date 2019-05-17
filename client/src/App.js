@@ -33,7 +33,7 @@ class App extends React.Component {
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>{this.state.apiResponse}</p>
                 <nav class="primary-nav">
-                    <ul class="index-nav">
+                    <ul>
                         <li>
                             <Link to="/">Home</Link>
                         </li>
