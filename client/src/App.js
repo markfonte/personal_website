@@ -6,6 +6,8 @@ import About from './about/about.jsx';
 import Contact from './contact/contact.jsx';
 import Resume from './resume/resume.jsx';
 import Home from './home/home.jsx';
+import Button from '@material-ui/core/Button';
+import LinkStyle from '@material-ui/core/Link';
 
 class App extends React.Component {
 
@@ -38,16 +40,40 @@ class App extends React.Component {
                     <nav class="primary-nav">
                         <ul>
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/">
+                                    <LinkStyle>
+                                        <Button variant="contained" color="primary">
+                                            Home
+                                        </Button>
+                                    </LinkStyle>
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/about">About</Link>
+                                <Link to="/about">
+                                    <LinkStyle>
+                                        <Button variant="contained" color="primary">
+                                            About
+                                        </Button>
+                                    </LinkStyle>
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/contact">Contact</Link>
+                                <Link to="/contact">
+                                    <LinkStyle>
+                                        <Button variant="contained" color="primary">
+                                            Contact
+                                        </Button>
+                                    </LinkStyle>
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/resume">Resume</Link>
+                                <Link to="/resume">
+                                    <LinkStyle>
+                                        <Button variant="contained" color="primary">
+                                            Resume
+                                        </Button>
+                                    </LinkStyle>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
