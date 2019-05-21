@@ -99,4 +99,5 @@ body {
 
 #built-with-table {
     min-width: 520px;
+    max-width: 640px;
 }
