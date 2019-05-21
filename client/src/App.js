@@ -59,19 +59,19 @@ class App extends React.Component {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/contact">
+                                <Link to="/resume">
                                     <LinkStyle>
                                         <Button variant="contained" color="primary">
-                                            Contact
+                                            Resume
                                         </Button>
                                     </LinkStyle>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/resume">
+                                <Link to="/contact">
                                     <LinkStyle>
                                         <Button variant="contained" color="primary">
-                                            Resume
+                                            Contact
                                         </Button>
                                     </LinkStyle>
                                 </Link>
