@@ -12,12 +12,15 @@ import Paper from '@material-ui/core/Paper';
 import 'typeface-roboto';
 import { Typography } from '@material-ui/core';
 import Link from '@material-ui/core/Link';
+import Button from '@material-ui/core/Button';
 
 function Square(props) {
     return (
-        <button className="square" onClick={props.onClick}>
-            {props.value}
-        </button>
+        <Button variant="outlined" className="square" onClick={props.onClick}>
+            <Typography variant="h5">
+                {props.value}
+            </Typography>
+        </Button>
     );
 }
 
@@ -105,7 +108,7 @@ class Game extends React.Component {
                 'Go to game start';
             return (
                 <li key={move}>
-                <button onClick={() => this.jumpTo(move)}>{desc}</button>
+                <Button variant="contained" onClick={() => this.jumpTo(move)}>{desc}</Button>
                 </li>
             );
         });
@@ -126,7 +129,7 @@ class Game extends React.Component {
             />
             </div>
             <div className="game-info">
-            <div>{status}</div>
+            <div><Typography variant="subtitle1" color="primary"> {status}</Typography></div>
             { this.state.stepNumber !== 0 ? (
                 <ol className="move-list">{moves}</ol>
             ) : (
@@ -184,7 +187,11 @@ class Home extends React.Component {
                 <div className="tic-tac-toe-container">
                     <Typography variant="h5" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
                     <Game />
-                    <Typography variant="caption" id="tic-tac-toe-caption"><Link href={reactTutorialLink}>credit: reactjs tutorial</Link></Typography>
+                    <Typography variant="caption" id="tic-tac-toe-caption">
+                        <Link color="textPrimary" href={reactTutorialLink}>
+                            credit: reactjs tutorial
+                        </Link>
+                    </Typography>
                 </div>
 
                 <Typography variant="h6" id="built-with-title">Built With:</Typography>
@@ -193,7 +200,7 @@ class Home extends React.Component {
                         <TableBody>
                             <TableRow key={1}>
                                 <TableCell component="th" scope="row" align="center">
-                                    <Typography variant="body1">
+                                    <Typography variant="subtitle1">
                                         React
                                     </Typography>
                                 </TableCell>
@@ -203,7 +210,7 @@ class Home extends React.Component {
                             </TableRow>
                             <TableRow key={2}>
                                 <TableCell component="th" scope="row" align="center">
-                                    <Typography variant="body1">
+                                    <Typography variant="subtitle1">
                                         Express
                                     </Typography>
                                 </TableCell>
@@ -213,7 +220,7 @@ class Home extends React.Component {
                             </TableRow>
                             <TableRow key={3}>
                             <TableCell component="th" scope="row" align="center">
-                                    <Typography variant="body1">
+                                    <Typography variant="subtitle1">
                                         NodeJS
                                     </Typography>
                                 </TableCell>
