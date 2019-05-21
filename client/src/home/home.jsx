@@ -187,24 +187,36 @@ class Home extends React.Component {
                     <Typography variant="caption" id="tic-tac-toe-caption"><Link href={reactTutorialLink}>credit: reactjs tutorial</Link></Typography>
                 </div>
 
-                <Typography variant="h5" >Built With:</Typography>
-                <Paper className="built-with-table">
+                <Typography variant="h6" id="built-with-title">Built With:</Typography>
+                <Paper id="built-with-table">
                     <Table>
                         <TableBody>
                             <TableRow key={1}>
-                                <TableCell component="th" scope="row" align="center">React</TableCell>
+                                <TableCell component="th" scope="row" align="center">
+                                    <Typography variant="body1">
+                                        React
+                                    </Typography>
+                                </TableCell>
                                 <TableCell align="center">
                                     <img src={reactLogo} className="profile-logo" alt="react" />
                                 </TableCell>
                             </TableRow>
                             <TableRow key={2}>
-                                <TableCell component="th" scope="row" align="center">Express</TableCell>
+                                <TableCell component="th" scope="row" align="center">
+                                    <Typography variant="body1">
+                                        Express
+                                    </Typography>
+                                </TableCell>
                                 <TableCell align="center">
                                     <img src={expressLogo} className="logo-default" alt="expressjs" />
                                 </TableCell>
                             </TableRow>
                             <TableRow key={3}>
-                                <TableCell component="th" scope="row" align="center">NodeJS</TableCell>
+                            <TableCell component="th" scope="row" align="center">
+                                    <Typography variant="body1">
+                                        NodeJS
+                                    </Typography>
+                                </TableCell>
                                 <TableCell align="center">
                                     <img src={nodeLogo} className="logo-default" alt="nodejs" />
                                 </TableCell>

@@ -80,3 +80,15 @@ body {
     margin-top:16px;
     margin-bottom:16px;
 }
+
+#built-with-title {
+    margin-top: 300px;
+}
+
+#built-with-table {
+    margin-top: 8px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    margin-bottom: 24px;
+    width: 400px;
+}

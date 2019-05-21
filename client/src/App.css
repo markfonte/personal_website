@@ -8,7 +8,7 @@
   height: 50px;
   width: 50px;
   pointer-events: none;
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 
@@ -46,14 +46,6 @@
 }
 .primary-nav {
     text-align:center;
-}
-
-.built-with-table {
-    margin-top: 24px;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
-    margin-bottom: 24px;
-    width: 400px;
 }
 
 .logo-default {
