@@ -47,3 +47,15 @@
 .primary-nav {
     text-align:center;
 }
+
+.built-with-table {
+    margin-top: 24px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    margin-bottom: 24px;
+    width: 400px;
+}
+
+.logo-default {
+    width: 100px;
+}

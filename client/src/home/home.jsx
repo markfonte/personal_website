@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import { Typography } from '@material-ui/core';
 
 function Square(props) {
     return (
@@ -167,7 +168,8 @@ class Home extends React.Component {
     render() {
         return(
             <div>
-                <p class="main_text">{this.state.apiResponse}</p>
+                
+                <Typography variant="h6">{this.state.apiResponse}</Typography>
                 <h2> Here's some tic-tac-toe while you wait: </h2>
                 <Game />
             </div>
