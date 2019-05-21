@@ -11,6 +11,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import 'typeface-roboto';
 import { Typography } from '@material-ui/core';
+import Link from '@material-ui/core/Link';
 
 function Square(props) {
     return (
@@ -176,12 +177,14 @@ class Home extends React.Component {
     }
 
     render() {
+        const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
         return(
             <div>
                 <Typography variant="h6">{this.state.apiResponse}</Typography>
                 <div className="tic-tac-toe-container">
-                    <Typography variant="h5"> Here's some tic-tac-toe while you wait: </Typography>
+                    <Typography variant="h5" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
                     <Game />
+                    <Typography variant="caption" id="tic-tac-toe-caption"><Link href={reactTutorialLink}>credit: reactjs tutorial</Link></Typography>
                 </div>
 
                 <Typography variant="h5" >Built With:</Typography>

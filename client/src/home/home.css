@@ -70,3 +70,13 @@ body {
     margin-top: 32px;
     margin-bottom: 32px;
 }
+
+#tic-tac-toe-caption {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#tic-tac-toe-title {
+    margin-top:16px;
+    margin-bottom:16px;
+}
