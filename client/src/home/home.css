@@ -32,12 +32,12 @@ body {
     font-size: 30px;
     font-weight: bold;
     line-height: 50px;
-    height: 50px;
+    height: 64px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 50px;
+    width: 64px;
 }
 
 .square:focus {
@@ -86,9 +86,9 @@ body {
 }
 
 #built-with-table {
-    margin-top: 8px;
+    margin-top: 16px;
     margin-inline-end: auto;
     margin-inline-start: auto;
     margin-bottom: 24px;
-    width: 400px;
+    width: 550px;
 }

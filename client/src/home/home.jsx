@@ -3,6 +3,7 @@ import './home.css';
 import reactLogo from '../logo.svg';
 import expressLogo from '../express_logo.png';
 import nodeLogo from '../nodejs_logo.png';
+import materialUILogo from '../material_ui_logo.png';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -181,11 +182,15 @@ class Home extends React.Component {
 
     render() {
         const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
+        const reactLink = `https://reactjs.org/`;
+        const materialUILink = `https://material-ui.com/`;
+        const expressjsLink = `https://expressjs.com/`;
+        const nodejsLink = `https://nodejs.org/`;
         return(
             <div>
-                <Typography variant="h6">{this.state.apiResponse}</Typography>
+                <Typography variant="title">{this.state.apiResponse}</Typography>
                 <div className="tic-tac-toe-container">
-                    <Typography variant="h5" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
+                    <Typography variant="subtitle1" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
                     <Game />
                     <Typography variant="caption" id="tic-tac-toe-caption">
                         <Link color="textPrimary" href={reactTutorialLink}>
@@ -194,34 +199,72 @@ class Home extends React.Component {
                     </Typography>
                 </div>
 
-                <Typography variant="h6" id="built-with-title">Built With:</Typography>
+                <Typography variant="h5" id="built-with-title">Built With:</Typography>
                 <Paper id="built-with-table">
                     <Table>
                         <TableBody>
                             <TableRow key={1}>
-                                <TableCell component="th" scope="row" align="center">
-                                    <Typography variant="subtitle1">
-                                        React
+                                <TableCell component="th" scope="row" align="start">
+                                    <Link href={reactLink}>
+                                        <Typography variant="title">
+                                            React
+                                        </Typography>
+                                    </Link>
+                                </TableCell>
+                                <TableCell align="start">
+                                    <Typography variant="subtitle2">
+                                        frontend framework
                                     </Typography>
                                 </TableCell>
                                 <TableCell align="center">
-                                    <img src={reactLogo} className="profile-logo" alt="react" />
+                                    <img src={reactLogo} className="logo-default" alt="react" />
                                 </TableCell>
                             </TableRow>
                             <TableRow key={2}>
-                                <TableCell component="th" scope="row" align="center">
-                                    <Typography variant="subtitle1">
-                                        Express
+                                <TableCell component="th" scope="row" align="start">
+                                    <Link href={materialUILink}>
+                                        <Typography variant="title">
+                                            Material-UI
+                                        </Typography>
+                                    </Link>
+                                </TableCell>
+                                <TableCell align="start">
+                                    <Typography variant="subtitle2">
+                                        UI framework
+                                    </Typography>
+                                </TableCell>
+                                <TableCell align="center">
+                                    <img src={materialUILogo} className="logo-default" alt="materialui" />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow key={3}>
+                                <TableCell component="th" scope="row" align="start">
+                                    <Link href={expressjsLink}>
+                                        <Typography variant="title">
+                                            Express
+                                        </Typography>
+                                    </Link>
+                                </TableCell>
+                                <TableCell align="start">
+                                    <Typography variant="subtitle2">
+                                        backend framework
                                     </Typography>
                                 </TableCell>
                                 <TableCell align="center">
                                     <img src={expressLogo} className="logo-default" alt="expressjs" />
                                 </TableCell>
                             </TableRow>
-                            <TableRow key={3}>
-                            <TableCell component="th" scope="row" align="center">
-                                    <Typography variant="subtitle1">
-                                        NodeJS
+                            <TableRow key={4}>
+                                <TableCell component="th" scope="row" align="start">
+                                    <Link href={nodejsLink}>
+                                        <Typography variant="title">
+                                            NodeJS
+                                        </Typography>
+                                    </Link>
+                                </TableCell>
+                                <TableCell align="start">
+                                    <Typography variant="subtitle2">
+                                        server environment
                                     </Typography>
                                 </TableCell>
                                 <TableCell align="center">
