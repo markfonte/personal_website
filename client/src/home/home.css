@@ -65,3 +65,8 @@ body {
 .game-info {
     margin-left: 20px;
 }
+
+.tic-tac-toe-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './resume.css';
+import { Typography } from '@material-ui/core';
 
 class Resume extends React.Component {
 
@@ -21,7 +22,7 @@ class Resume extends React.Component {
 
     render() {
         return(
-            <p class="main_text">{this.state.apiResponse}</p>
+            <Typography variant="h6">{this.state.apiResponse}</Typography>
         );
     }
 }

@@ -1,5 +1,15 @@
 import React from 'react';
 import './home.css';
+import reactLogo from '../logo.svg';
+import expressLogo from '../express_logo.png';
+import nodeLogo from '../nodejs_logo.png';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+// import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import 'typeface-roboto';
 import { Typography } from '@material-ui/core';
 
 function Square(props) {
@@ -168,10 +178,37 @@ class Home extends React.Component {
     render() {
         return(
             <div>
-                
                 <Typography variant="h6">{this.state.apiResponse}</Typography>
-                <h2> Here's some tic-tac-toe while you wait: </h2>
-                <Game />
+                <div className="tic-tac-toe-container">
+                    <Typography variant="h5"> Here's some tic-tac-toe while you wait: </Typography>
+                    <Game />
+                </div>
+
+                <Typography variant="h5" >Built With:</Typography>
+                <Paper className="built-with-table">
+                    <Table>
+                        <TableBody>
+                            <TableRow key={1}>
+                                <TableCell component="th" scope="row" align="center">React</TableCell>
+                                <TableCell align="center">
+                                    <img src={reactLogo} className="profile-logo" alt="react" />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow key={2}>
+                                <TableCell component="th" scope="row" align="center">Express</TableCell>
+                                <TableCell align="center">
+                                    <img src={expressLogo} className="logo-default" alt="expressjs" />
+                                </TableCell>
+                            </TableRow>
+                            <TableRow key={3}>
+                                <TableCell component="th" scope="row" align="center">NodeJS</TableCell>
+                                <TableCell align="center">
+                                    <img src={nodeLogo} className="logo-default" alt="nodejs" />
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </Paper>
             </div>
         );
     }
