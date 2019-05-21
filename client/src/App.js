@@ -37,6 +37,7 @@ class App extends React.Component {
                     ) : (
                         <p></p> )
                     }
+                    <h1>Mark Fonte</h1>
                     <nav class="primary-nav">
                         <ul>
                             <li>

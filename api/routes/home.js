@@ -20,7 +20,7 @@ var db = firebase.firestore();
 /* GET home page. */
 router.get('/', function(req, res, next) {
     console.log("home page!");
-    res.send("Mark Fonte: welcome to my website! It is under active development (last updated 5/20/2019). Please check back soon!");
+    res.send("Welcome to my website! It is under active development (last updated 5/21/2019). Please check back soon!");
 });
 
 module.exports = router;

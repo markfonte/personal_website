@@ -168,7 +168,7 @@ class Home extends React.Component {
         return(
             <div>
                 <p class="main_text">{this.state.apiResponse}</p>
-                <h2> Here's some tic tac toe while you wait: </h2>
+                <h2> Here's some tic-tac-toe while you wait: </h2>
                 <Game />
             </div>
         );
