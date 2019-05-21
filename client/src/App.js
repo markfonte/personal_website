@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import profilePicture from './mark_circle.jpg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from './about/about.jsx';
@@ -30,13 +31,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <Router>
-                <div className="App">
-                    { this.state.apiResponse ? (
-                        <img src={logo} className="App-logo" alt="logo" />
-                    ) : (
-                        <p></p> )
-                    }
+            <div className="App">
+                <Router>
+                    <img src={profilePicture} className="profile-logo" alt="profile" />
                     <h1>Mark Fonte</h1>
                     <nav class="primary-nav">
                         <ul>
@@ -85,8 +82,13 @@ class App extends React.Component {
                     <Route path="/contact" component={Contact} />
                     <Route path="/resume" component={Resume} />
 
-                </div>
-            </Router>
+                { this.state.apiResponse ? (
+                    <img src={logo} className="App-logo" alt="logo" />
+                ) : (
+                    <p></p> )
+                }
+                </Router>
+            </div>
           );
     }
 }
