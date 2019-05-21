@@ -87,10 +87,12 @@ body {
 
 #built-with-table-root {
     margin-top: 16px;
+    margin-bottom: 24px;
     margin-inline-end: auto;
     margin-inline-start: auto;
-    margin-bottom: 24px;
-    width: '100%';
+    margin-block-start: auto;
+    margin-block-end: auto;
+    max-width: 640px;
 }
 
 #built-with-table-wrapper {
