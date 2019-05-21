@@ -40,6 +40,8 @@
 
 .App ul {
     list-style: none;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
 }
 
 .App li {
