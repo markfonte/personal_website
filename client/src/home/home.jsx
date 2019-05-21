@@ -162,6 +162,95 @@ function calculateWinner(squares) {
     return null;
 }
 
+class BuiltWithTable extends React.Component {
+    render() {
+        const reactLink = `https://reactjs.org/`;
+        const materialUILink = `https://material-ui.com/`;
+        const expressjsLink = `https://expressjs.com/`;
+        const nodejsLink = `https://nodejs.org/`;
+        return(
+            <div>
+                <Typography variant="h5" id="built-with-title">Built With:</Typography>
+                <Paper id="built-with-table-root">
+                    <div id="built-with-table-wrapper">
+                        <Table id="built-with-table">
+                            <TableBody>
+                                <TableRow key={1}>
+                                    <TableCell component="th" scope="row" align="start">
+                                        <Link href={reactLink}>
+                                            <Typography variant="title">
+                                                React
+                                            </Typography>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell align="center">
+                                        <img src={reactLogo} className="logo-default" alt="react" />
+                                    </TableCell>
+                                    <TableCell align="right">
+                                        <Typography variant="subtitle2">
+                                            frontend framework
+                                        </Typography>
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow key={2}>
+                                    <TableCell component="th" scope="row" align="start">
+                                        <Link href={materialUILink}>
+                                            <Typography variant="title">
+                                                Material-UI
+                                            </Typography>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell align="center">
+                                        <img src={materialUILogo} className="logo-default" alt="materialui" />
+                                    </TableCell>
+                                    <TableCell align="right">
+                                        <Typography variant="subtitle2">
+                                            UI framework
+                                        </Typography>
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow key={3}>
+                                    <TableCell component="th" scope="row" align="start">
+                                        <Link href={expressjsLink}>
+                                            <Typography variant="title">
+                                                Express
+                                            </Typography>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell align="center">
+                                        <img src={expressLogo} className="logo-default" alt="expressjs" />
+                                    </TableCell>
+                                    <TableCell align="right">
+                                        <Typography variant="subtitle2">
+                                            backend framework
+                                        </Typography>
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow key={4}>
+                                    <TableCell component="th" scope="row" align="start">
+                                        <Link href={nodejsLink}>
+                                            <Typography variant="title">
+                                                NodeJS
+                                            </Typography>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell align="center">
+                                        <img src={nodeLogo} className="logo-default" alt="nodejs" />
+                                    </TableCell>
+                                    <TableCell align="right">
+                                        <Typography variant="subtitle2">
+                                            server environment
+                                        </Typography>
+                                    </TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </div>
+                </Paper>
+            </div>
+        );
+    }
+}
 class Home extends React.Component {
 
     constructor(props) {
@@ -182,100 +271,19 @@ class Home extends React.Component {
 
     render() {
         const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
-        const reactLink = `https://reactjs.org/`;
-        const materialUILink = `https://material-ui.com/`;
-        const expressjsLink = `https://expressjs.com/`;
-        const nodejsLink = `https://nodejs.org/`;
         return(
             <div>
                 <Typography variant="title">{this.state.apiResponse}</Typography>
                 <div className="tic-tac-toe-container">
                     <Typography variant="subtitle1" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
                     <Game />
-                    <Typography variant="caption" id="tic-tac-toe-caption">
+                    <Typography variant="caption" id="tic-tac-toe-caption" >
                         <Link color="textPrimary" href={reactTutorialLink}>
                             credit: reactjs tutorial
                         </Link>
                     </Typography>
                 </div>
-
-                <Typography variant="h5" id="built-with-title">Built With:</Typography>
-                <Paper id="built-with-table-root">
-                    <div id="built-with-table-wrapper">
-                        <Table id="built-with-table">
-                            <TableBody>
-                                <TableRow key={1}>
-                                    <TableCell component="th" scope="row" align="start">
-                                        <Link href={reactLink}>
-                                            <Typography variant="title">
-                                                React
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="start">
-                                        <Typography variant="subtitle2">
-                                            frontend framework
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={reactLogo} className="logo-default" alt="react" />
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={2}>
-                                    <TableCell component="th" scope="row" align="start">
-                                        <Link href={materialUILink}>
-                                            <Typography variant="title">
-                                                Material-UI
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="start">
-                                        <Typography variant="subtitle2">
-                                            UI framework
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={materialUILogo} className="logo-default" alt="materialui" />
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={3}>
-                                    <TableCell component="th" scope="row" align="start">
-                                        <Link href={expressjsLink}>
-                                            <Typography variant="title">
-                                                Express
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="start">
-                                        <Typography variant="subtitle2">
-                                            backend framework
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={expressLogo} className="logo-default" alt="expressjs" />
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={4}>
-                                    <TableCell component="th" scope="row" align="start">
-                                        <Link href={nodejsLink}>
-                                            <Typography variant="title">
-                                                NodeJS
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="start">
-                                        <Typography variant="subtitle2">
-                                            server environment
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={nodeLogo} className="logo-default" alt="nodejs" />
-                                    </TableCell>
-                                </TableRow>
-                            </TableBody>
-                        </Table>
-                    </div>
-                </Paper>
+                <BuiltWithTable/>
             </div>
         );
     }
