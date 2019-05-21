@@ -85,10 +85,18 @@ body {
     margin-top: 300px;
 }
 
-#built-with-table {
+#built-with-table-root {
     margin-top: 16px;
     margin-inline-end: auto;
     margin-inline-start: auto;
     margin-bottom: 24px;
-    width: 550px;
+    width: '100%';
+}
+
+#built-with-table-wrapper {
+    overflow-x: auto;
+}
+
+#built-with-table {
+    min-width: 520px;
 }
