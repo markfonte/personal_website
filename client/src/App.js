@@ -37,43 +37,35 @@ class App extends React.Component {
                 <Router>
                     <img src={profilePicture} className="profile-logo" alt="profile" />
                     <Typography variant="h3">Mark Fonte</Typography>
-                    <nav class="primary-nav">
+                    <nav className="primary-nav">
                         <ul>
                             <li>
-                                <Link to="/">
-                                    <LinkStyle>
+                                <LinkStyle component={Link} to="/">
                                         <Button variant="contained" color="primary">
                                             Home
                                         </Button>
-                                    </LinkStyle>
-                                </Link>
+                                </LinkStyle>
                             </li>
                             <li>
-                                <Link to="/about">
-                                    <LinkStyle>
-                                        <Button variant="contained" color="primary">
-                                            About
-                                        </Button>
-                                    </LinkStyle>
-                                </Link>
+                                <LinkStyle component={Link} to="/about">
+                                    <Button variant="contained" color="primary">
+                                        About
+                                    </Button>
+                                </LinkStyle>
                             </li>
                             <li>
-                                <Link to="/resume">
-                                    <LinkStyle>
-                                        <Button variant="contained" color="primary">
-                                            Resume
-                                        </Button>
-                                    </LinkStyle>
-                                </Link>
+                                <LinkStyle component={Link} to="/resume">
+                                    <Button variant="contained" color="primary">
+                                        Resume
+                                    </Button>
+                                </LinkStyle>
                             </li>
                             <li>
-                                <Link to="/contact">
-                                    <LinkStyle>
-                                        <Button variant="contained" color="primary">
-                                            Contact
-                                        </Button>
-                                    </LinkStyle>
-                                </Link>
+                                <LinkStyle component={Link} to="/contact">
+                                    <Button variant="contained" color="primary">
+                                        Contact
+                                    </Button>
+                                </LinkStyle>
                             </li>
                         </ul>
                     </nav>

@@ -180,7 +180,7 @@ class BuiltWithTable extends React.Component {
                         <Table id="built-with-table">
                             <TableBody>
                                 <TableRow key={1}>
-                                    <TableCell component="th" scope="row" align="start">
+                                    <TableCell component="th" scope="row" align="left">
                                         <Link href={reactLink}>
                                             <Typography variant="title">
                                                 React
@@ -197,7 +197,7 @@ class BuiltWithTable extends React.Component {
                                     </TableCell>
                                 </TableRow>
                                 <TableRow key={2}>
-                                    <TableCell component="th" scope="row" align="start">
+                                    <TableCell component="th" scope="row" align="left">
                                         <Link href={materialUILink}>
                                             <Typography variant="title">
                                                 Material-UI
@@ -214,7 +214,7 @@ class BuiltWithTable extends React.Component {
                                     </TableCell>
                                 </TableRow>
                                 <TableRow key={3}>
-                                    <TableCell component="th" scope="row" align="start">
+                                    <TableCell component="th" scope="row" align="left">
                                         <Link href={expressjsLink}>
                                             <Typography variant="title">
                                                 Express
@@ -231,7 +231,7 @@ class BuiltWithTable extends React.Component {
                                     </TableCell>
                                 </TableRow>
                                 <TableRow key={4}>
-                                    <TableCell component="th" scope="row" align="start">
+                                    <TableCell component="th" scope="row" align="left">
                                         <Link href={nodejsLink}>
                                             <Typography variant="title">
                                                 NodeJS
