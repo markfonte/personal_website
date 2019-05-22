@@ -4,3 +4,7 @@ node_js:
     - "stable"
 
 before_install: cd client
+
+cache:
+  directories:
+  - "$HOME/.npm"
