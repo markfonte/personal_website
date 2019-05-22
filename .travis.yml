@@ -2,4 +2,4 @@ language: nodejs
 node_js:
     - "stable"
 
-before_install: cd client
+before_install: cd client && pwd && ls
