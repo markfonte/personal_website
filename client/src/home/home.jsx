@@ -173,138 +173,48 @@ class BuiltWithTable extends React.Component {
     render() {
         const reactLink = `https://reactjs.org/`;
         const materialUILink = `https://material-ui.com/`;
-        const expressjsLink = `https://expressjs.com/`;
-        const nodejsLink = `https://nodejs.org/`;
+        const expressLink = `https://expressjs.com/`;
+        const nodeLink = `https://nodejs.org/`;
         const travisCILink = `https://travis-ci.org/`;
         const nginxLink = `https://www.nginx.com/`;
         const githubLink = `https://github.com/`;
-
-        return(
+        const rows = [
+            { title: 'Express', subtitle: 'backend framework', link: expressLink, logo: expressLogo },
+            { title: 'GitHub', subtitle: 'repository hosting', link: githubLink, logo: githubLogo },
+            { title: 'Material-UI', subtitle: 'UI framework', link: materialUILink, logo: materialUILogo },
+            { title: 'Nginx', subtitle: 'web server', link: nginxLink, logo: nginxLogo },
+            { title: 'NodeJS', subtitle: 'server environment', link: nodeLink, logo: nodeLogo },
+            { title: 'React', subtitle: 'frontend framework', link: reactLink, logo: reactLogo },
+            { title: 'TravisCI', subtitle: 'continuous integration', link: travisCILink, logo: travisCILogo },
+        ];
+        return (
             <div>
-                <Typography variant="h5" id="built-with-title">Built With:</Typography>
+                <Typography variant="h5" id="built-with-title">
+                    Built With:
+                </Typography>
                 <Paper id="built-with-table-root">
                     <div id="built-with-table-wrapper">
                         <Table id="built-with-table">
                             <TableBody>
-                                <TableRow key={1}>
-                                    <TableCell component="th" scope="row" align="left">
-                                        <Link href={expressjsLink}>
-                                            <Typography variant="title">
-                                                Express
+                                {rows.map( row => (
+                                    <TableRow key={row.id}>
+                                        <TableCell component="th" scope="row" align="left">
+                                            <Link href={row.link}>
+                                                <Typography variant="title">
+                                                    {row.title}
+                                                </Typography>
+                                            </Link>
+                                        </TableCell>
+                                        <TableCell align="center">
+                                            <img src={row.logo} className="logo-default" alt="express" />
+                                        </TableCell>
+                                        <TableCell align="right">
+                                            <Typography variant="subtitle2">
+                                                {row.subtitle}
                                             </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={expressLogo} className="logo-default" alt="expressjs" />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Typography variant="subtitle2">
-                                            backend framework
-                                        </Typography>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={2}>
-                                    <TableCell component="th" scope="row" align="left">
-                                        <Link href={githubLink}>
-                                            <Typography variant="title">
-                                                GitHub
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={githubLogo} className="logo-default" alt="react" />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Typography variant="subtitle2">
-                                            repository hosting
-                                        </Typography>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={3}>
-                                    <TableCell component="th" scope="row" align="left">
-                                        <Link href={materialUILink}>
-                                            <Typography variant="title">
-                                                Material-UI
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={materialUILogo} className="logo-default" alt="materialui" />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Typography variant="subtitle2">
-                                            UI framework
-                                        </Typography>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={4}>
-                                    <TableCell component="th" scope="row" align="left">
-                                        <Link href={nginxLink}>
-                                            <Typography variant="title">
-                                                Nginx
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={nginxLogo} className="logo-default" alt="react" />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Typography variant="subtitle2">
-                                            web server
-                                        </Typography>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={5}>
-                                    <TableCell component="th" scope="row" align="left">
-                                        <Link href={nodejsLink}>
-                                            <Typography variant="title">
-                                                NodeJS
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={nodeLogo} className="logo-default" alt="nodejs" />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Typography variant="subtitle2">
-                                            server environment
-                                        </Typography>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={6}>
-                                    <TableCell component="th" scope="row" align="left">
-                                        <Link href={reactLink}>
-                                            <Typography variant="title">
-                                                React
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={reactLogo} className="logo-default" alt="react" />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Typography variant="subtitle2">
-                                            frontend framework
-                                        </Typography>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow key={7}>
-                                    <TableCell component="th" scope="row" align="left">
-                                        <Link href={travisCILink}>
-                                            <Typography variant="title">
-                                                TravisCI
-                                            </Typography>
-                                        </Link>
-                                    </TableCell>
-                                    <TableCell align="center">
-                                        <img src={travisCILogo} className="logo-default" alt="react" />
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Typography variant="subtitle2">
-                                            continuous integration
-                                        </Typography>
-                                    </TableCell>
-                                </TableRow>
+                                        </TableCell>
+                                    </TableRow>
+                                ))}
                             </TableBody>
                         </Table>
                     </div>
