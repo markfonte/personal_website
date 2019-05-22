@@ -1,6 +1,7 @@
 import React from 'react';
 import './resume.css';
 import { Typography } from '@material-ui/core';
+import resumePdf from '../resume.pdf';
 
 class Resume extends React.Component {
 
@@ -22,7 +23,10 @@ class Resume extends React.Component {
 
     render() {
         return(
-            <Typography variant="h6">{this.state.apiResponse}</Typography>
+            <div>
+                <embed id="resume-pdf" type="application/pdf" src={resumePdf} />
+                <Typography id="resume-title" variant="subtitle1" align="right">Last updated: Feb 02 2019</Typography>
+            </div>
         );
     }
 }
