@@ -1,5 +1,9 @@
 language: node_js
+
 node_js:
     - "stable"
 
 before_install: cd client
+
+script:
+    - npm install && npm run test
