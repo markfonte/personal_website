@@ -4,6 +4,9 @@ import reactLogo from '../logo.svg';
 import expressLogo from '../express_logo.png';
 import nodeLogo from '../nodejs_logo.png';
 import materialUILogo from '../material_ui_logo.png';
+import travisCILogo from '../travis_ci_logo.png';
+import nginxLogo from '../nginx_logo.png';
+import githubLogo from '../github_logo.png';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -172,6 +175,10 @@ class BuiltWithTable extends React.Component {
         const materialUILink = `https://material-ui.com/`;
         const expressjsLink = `https://expressjs.com/`;
         const nodejsLink = `https://nodejs.org/`;
+        const travisCILink = `https://travis-ci.org/`;
+        const nginxLink = `https://www.nginx.com/`;
+        const githubLink = `https://github.com/`;
+
         return(
             <div>
                 <Typography variant="h5" id="built-with-title">Built With:</Typography>
@@ -244,6 +251,57 @@ class BuiltWithTable extends React.Component {
                                     <TableCell align="right">
                                         <Typography variant="subtitle2">
                                             server environment
+                                        </Typography>
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow key={5}>
+                                    <TableCell component="th" scope="row" align="left">
+                                        <Link href={travisCILink}>
+                                            <Typography variant="title">
+                                                TravisCI
+                                            </Typography>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell align="center">
+                                        <img src={travisCILogo} className="logo-default" alt="react" />
+                                    </TableCell>
+                                    <TableCell align="right">
+                                        <Typography variant="subtitle2">
+                                            continuous integration
+                                        </Typography>
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow key={6}>
+                                    <TableCell component="th" scope="row" align="left">
+                                        <Link href={nginxLink}>
+                                            <Typography variant="title">
+                                                Nginx
+                                            </Typography>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell align="center">
+                                        <img src={nginxLogo} className="logo-default" alt="react" />
+                                    </TableCell>
+                                    <TableCell align="right">
+                                        <Typography variant="subtitle2">
+                                            web server
+                                        </Typography>
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow key={7}>
+                                    <TableCell component="th" scope="row" align="left">
+                                        <Link href={githubLink}>
+                                            <Typography variant="title">
+                                                GitHub
+                                            </Typography>
+                                        </Link>
+                                    </TableCell>
+                                    <TableCell align="center">
+                                        <img src={githubLogo} className="logo-default" alt="react" />
+                                    </TableCell>
+                                    <TableCell align="right">
+                                        <Typography variant="subtitle2">
+                                            repository hosting
                                         </Typography>
                                     </TableCell>
                                 </TableRow>

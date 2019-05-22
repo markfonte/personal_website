@@ -41,9 +41,9 @@ class App extends React.Component {
                         <ul>
                             <li>
                                 <LinkStyle component={Link} to="/">
-                                        <Button variant="contained" color="primary">
-                                            Home
-                                        </Button>
+                                    <Button variant="contained" color="primary">
+                                        Home
+                                    </Button>
                                 </LinkStyle>
                             </li>
                             <li>
