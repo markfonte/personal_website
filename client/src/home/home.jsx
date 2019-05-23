@@ -225,27 +225,27 @@ class BuiltWithTable extends React.Component {
 }
 class Home extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {apiResponse: ""};
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {apiResponse: ""};
+    // }
 
-    fetchInfo() {
-        fetch(process.env.REACT_APP_API_URL + "home", {credentials: 'same-origin' })
-        .then(res => res.text())
-        .then(res => this.setState({apiResponse: res}))
-        .catch(error => console.log(error));
-    }
+    // fetchInfo() {
+    //     fetch(process.env.REACT_APP_API_URL + "home", {credentials: 'same-origin' })
+    //     .then(res => res.text())
+    //     .then(res => this.setState({apiResponse: res}))
+    //     .catch(error => console.log(error));
+    // }
 
-    componentDidMount() {
-        this.fetchInfo();
-    }
+    // componentDidMount() {
+    //     this.fetchInfo();
+    // }
 
     render() {
         const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
         return(
             <div>
-                <Typography variant="title">{this.state.apiResponse}</Typography>
+                <Typography variant="title">"Welcome to my website! It is under active development (last updated 5/21/2019). Please check back soon!"</Typography>
                 <div className="tic-tac-toe-container">
                     <Typography variant="subtitle1" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
                     <Game />
