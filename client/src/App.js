@@ -32,6 +32,12 @@ class App extends React.Component {
     }
 
     render() {
+        const routes = [
+            {name: "Home", path: "/"},
+            {name: "About", path: "/about"},
+            {name: "Resume", path: "/resume"},
+            {name: "Contact", path: "/contact"}
+        ];
         return (
             <div className="App">
                 <Router>
@@ -39,34 +45,15 @@ class App extends React.Component {
                     <Typography variant="h3">Mark Fonte</Typography>
                     <nav className="primary-nav">
                         <ul>
-                            <li>
-                                <LinkStyle component={Link} to="/">
-                                    <Button variant="contained" color="primary">
-                                        Home
-                                    </Button>
-                                </LinkStyle>
-                            </li>
-                            <li>
-                                <LinkStyle component={Link} to="/about">
-                                    <Button variant="contained" color="primary">
-                                        About
-                                    </Button>
-                                </LinkStyle>
-                            </li>
-                            <li>
-                                <LinkStyle component={Link} to="/resume">
-                                    <Button variant="contained" color="primary">
-                                        Resume
-                                    </Button>
-                                </LinkStyle>
-                            </li>
-                            <li>
-                                <LinkStyle component={Link} to="/contact">
-                                    <Button variant="contained" color="primary">
-                                        Contact
-                                    </Button>
-                                </LinkStyle>
-                            </li>
+                            {routes.map( (route, i) => (
+                                <li key={i} >
+                                    <LinkStyle component={Link} to={route.path}>
+                                        <Button variant="contained" color="primary">
+                                            {route.name}
+                                        </Button>
+                                    </LinkStyle>
+                                </li>
+                            ))}
                         </ul>
                     </nav>
 

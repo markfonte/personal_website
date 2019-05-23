@@ -185,7 +185,7 @@ class BuiltWithTable extends React.Component {
             { title: 'Nginx', subtitle: 'web server', link: nginxLink, logo: nginxLogo },
             { title: 'NodeJS', subtitle: 'server environment', link: nodeLink, logo: nodeLogo },
             { title: 'React', subtitle: 'frontend framework', link: reactLink, logo: reactLogo },
-            { title: 'TravisCI', subtitle: 'continuous integration', link: travisCILink, logo: travisCILogo },
+            { title: 'TravisCI', subtitle: 'continuous integration', link: travisCILink, logo: travisCILogo }
         ];
         return (
             <div>
