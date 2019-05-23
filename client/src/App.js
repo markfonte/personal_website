@@ -21,7 +21,7 @@ class App extends React.Component {
     }
 
     callAPI() {
-        fetch(process.env.REACT_APP_API_URL + "testAPI")
+        fetch(process.env.REACT_APP_API_URL + "api_heartbeat")
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res}))
             .catch(err => err);
