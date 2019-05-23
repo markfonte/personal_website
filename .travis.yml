@@ -6,9 +6,12 @@ node_js:
 before_install: cd client
 
 cache:
-  directories:
-  - "$HOME/.npm"
+    directories:
+    - "$HOME/.npm"
 
 notifications:
-  webhooks:
-    - https://mark.fonte.com/webhook
+    webhooks:
+        urls:
+            - https://mark.fonte.com/webhook
+        on_success: always
+        on_failure: never
