@@ -16,18 +16,27 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {apiResponse: ""};
+        this.state = {apiResponse: false};
     }
 
-    callAPI() {
+    checkForAPIHeartbeat() {
         fetch(process.env.REACT_APP_API_URL + "api_heartbeat")
             .then(res => res.text())
-            .then(res => this.setState({ apiResponse: res}))
-            .catch(err => err);
+            .then(res => this.setState({ apiResponse: res === "success"}))
+            .catch(err => {
+                    this.setState({ apiResponse: false});
+                    console.log(err);
+                }
+            );
     }
 
     componentDidMount() {
-        this.callAPI();
+        this.checkForAPIHeartbeat();
+
+        const timeoutInterval = 30000; // check for API heartbeat every 30 seconds
+        setInterval(function() {
+            this.checkForAPIHeartbeat();
+        }.bind(this), timeoutInterval);
     }
 
     render() {
@@ -65,7 +74,7 @@ class App extends React.Component {
                 { this.state.apiResponse ? (
                     <img src={reactLogo} className="App-logo" alt="logo" />
                 ) : (
-                    <p></p> )
+                    <p>{/* TODO: Display something here link "send report to me" and "retry" */}</p> )
                 }
             </div>
           );
