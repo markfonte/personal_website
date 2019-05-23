@@ -9,8 +9,8 @@ import Resume from './resume/resume.jsx';
 import Home from './home/home.jsx';
 import Button from '@material-ui/core/Button';
 import LinkStyle from '@material-ui/core/Link';
-import 'typeface-roboto';
 import { Typography } from '@material-ui/core';
+import 'typeface-roboto';
 
 class App extends React.Component {
 
