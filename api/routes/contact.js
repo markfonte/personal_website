@@ -4,7 +4,6 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
     console.log("contact page!");
-    res.send("Contact page coming soon...");
 });
 
 module.exports = router;

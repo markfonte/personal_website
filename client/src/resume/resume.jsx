@@ -5,21 +5,21 @@ import resumePdf from '../resume.pdf';
 
 class Resume extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {apiResponse: ""};
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {apiResponse: ""};
+    // }
 
-    fetchInfo() {
-        fetch(process.env.REACT_APP_API_URL + "resume", {credentials: 'same-origin' })
-        .then(res => res.text())
-        .then(res => this.setState({apiResponse: res}))
-        .catch(error => console.log(error));
-    }
+    // fetchInfo() {
+    //     fetch(process.env.REACT_APP_API_URL + "resume", {credentials: 'same-origin' })
+    //     .then(res => res.text())
+    //     .then(res => this.setState({apiResponse: res}))
+    //     .catch(error => console.log(error));
+    // }
 
-    componentDidMount() {
-        this.fetchInfo();
-    }
+    // componentDidMount() {
+    //     this.fetchInfo();
+    // }
 
     render() {
         return(
