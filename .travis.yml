@@ -12,5 +12,3 @@ cache:
 notifications:
   webhooks:
     - https://mark.fonte.com/webhook
-    on_success: always
-    on_failure: never
