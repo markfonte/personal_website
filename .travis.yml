@@ -8,3 +8,9 @@ before_install: cd client
 cache:
   directories:
   - "$HOME/.npm"
+
+notifications:
+  webhooks:
+    - https://mark.fonte.com/webhook
+    on_success: always
+    on_failure: never
