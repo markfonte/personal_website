@@ -196,8 +196,8 @@ class BuiltWithTable extends React.Component {
                     <div id="built-with-table-wrapper">
                         <Table id="built-with-table">
                             <TableBody>
-                                {rows.map( row => (
-                                    <TableRow key={row.id}>
+                                {rows.map( (row, i) => (
+                                    <TableRow key={i}>
                                         <TableCell component="th" scope="row" align="left">
                                             <Link href={row.link}>
                                                 <Typography variant="title">
