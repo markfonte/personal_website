@@ -1,5 +1,5 @@
 import React from 'react';
-import reactLogo from './logo.svg';
+import reactLogo from './static/vectors/react_logo.svg';
 import profilePicture from './static/images/mark_circle.jpg';
 import './App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';

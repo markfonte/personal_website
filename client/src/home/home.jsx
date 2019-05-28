@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import reactLogo from '../logo.svg';
+import reactLogo from '../static/vectors/react_logo.svg';
 import digitalOceanLogo from '../static/images/digital_ocean_logo.png';
 import expressLogo from '../static/images/express_logo.png';
 import nodeLogo from '../static/images/nodejs_logo.png';
