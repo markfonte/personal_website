@@ -1,7 +1,7 @@
 import React from 'react';
 import './resume.css';
 import {Typography} from '@material-ui/core';
-import resumePdf from '../resume.pdf';
+import resumePdf from '../static/documents/resume.pdf';
 
 class Resume extends React.Component {
   // constructor(props) {

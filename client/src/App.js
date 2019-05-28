@@ -1,6 +1,6 @@
 import React from 'react';
 import reactLogo from './logo.svg';
-import profilePicture from './mark_circle.jpg';
+import profilePicture from './static/images/mark_circle.jpg';
 import './App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import About from './about/about.jsx';
