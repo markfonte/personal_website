@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import digitalOceanLogo from '../digital_ocean_logo.png';
 import reactLogo from '../logo.svg';
 import expressLogo from '../express_logo.png';
 import nodeLogo from '../nodejs_logo.png';
@@ -171,6 +172,7 @@ function calculateWinner(squares) {
 
 class BuiltWithTable extends React.Component {
     render() {
+        const digitalOceanLink = `https://www.digitalocean.com/`;
         const reactLink = `https://reactjs.org/`;
         const materialUILink = `https://material-ui.com/`;
         const expressLink = `https://expressjs.com/`;
@@ -179,6 +181,7 @@ class BuiltWithTable extends React.Component {
         const nginxLink = `https://www.nginx.com/`;
         const githubLink = `https://github.com/`;
         const rows = [
+            { title: 'DigitalOcean', subtitle: 'cloud provider', link: digitalOceanLink, logo: digitalOceanLogo },
             { title: 'Express', subtitle: 'backend framework', link: expressLink, logo: expressLogo },
             { title: 'GitHub', subtitle: 'repository hosting', link: githubLink, logo: githubLogo },
             { title: 'Material-UI', subtitle: 'UI framework', link: materialUILink, logo: materialUILogo },
@@ -245,7 +248,7 @@ class Home extends React.Component {
         const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
         return(
             <div>
-                <Typography variant="title">Welcome to my website! It is under active development (last updated 5/24/2019). Please check back soon!</Typography>
+                <Typography variant="title">Welcome to my website! It is under active development (last updated 5/27/2019). Please check back soon!</Typography>
                 <Typography variant="subtitle1">Incoming Software Engineering Intern at J.P. Morgan · 4rd year CSE student at the University of Michigan · Minor in Entrepreneurship · Focus on Web &amp; Android development</Typography>
                 <div className="tic-tac-toe-container">
                     <Typography variant="subtitle1" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
