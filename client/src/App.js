@@ -5,6 +5,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import CurrentWork from './current_work/current_work.jsx';
 import PastProjects from './past_projects/past_projects.jsx';
+import Random from './random/random.jsx';
 import Contact from './contact/contact.jsx';
 import Resume from './resume/resume.jsx';
 import Home from './home/home.jsx';
@@ -45,7 +46,8 @@ class App extends React.Component {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
-      {name: 'Past Projects', path: './past_projects'},
+      {name: 'Past Projects', path: '/past_projects'},
+      {name: 'Random', path: '/random'},
       {name: 'Resume', path: '/resume'},
       {name: 'Contact', path: '/contact'},
     ];
@@ -72,16 +74,17 @@ class App extends React.Component {
           <Route path="/home" component={Home} />
           <Route path="/current_work" component={CurrentWork} />
           <Route path="/past_projects" component={PastProjects} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/random" component={Random} />
           <Route path="/resume" component={Resume} />
+          <Route path="/contact" component={Contact} />
         </Router>
         {this.state.apiResponse
           ? <img src={reactLogo} className="App-logo" alt="logo" />
           : <p>
               {' '}
               {/*
-                        TODO: Display something ie "send report to me" & "retry"
-                        */}
+                    TODO: Display something ie "send report to me" & "retry"
+                */}
             </p>}
       </div>
     );
