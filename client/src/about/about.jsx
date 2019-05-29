@@ -19,9 +19,11 @@ class About extends React.Component {
   //     this.fetchInfo();
   // }
 
-  render() {
+  render () {
     return (
-      <Typography variant="h6">This page is ABOUT to change. Stay tuned..</Typography>
+      <Typography variant="h6">
+        This page is ABOUT to change. Stay tuned..
+      </Typography>
     );
   }
 }

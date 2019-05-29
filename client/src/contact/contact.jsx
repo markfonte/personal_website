@@ -19,10 +19,8 @@ class Contact extends React.Component {
   //     this.fetchInfo();
   // }
 
-  render() {
-    return (
-      <Typography variant="h6">Contact page coming soon...</Typography>
-    );
+  render () {
+    return <Typography variant="h6">Contact page coming soon...</Typography>;
   }
 }
 

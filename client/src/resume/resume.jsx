@@ -20,10 +20,12 @@ class Resume extends React.Component {
   //     this.fetchInfo();
   // }
 
-  render() {
+  render () {
     return (
       <div>
-        <Typography id="resume-title" variant="subtitle1" align="left">Last updated: Feb 02 2019</Typography>
+        <Typography id="resume-title" variant="subtitle1" align="left">
+          Last updated: Feb 02 2019
+        </Typography>
         <embed id="resume-pdf" type="application/pdf" src={resumePdf} />
       </div>
     );

@@ -13,32 +13,34 @@ import {Typography} from '@material-ui/core';
 import 'typeface-roboto';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
     this.state = {apiResponse: false};
   }
 
-  checkForAPIHeartbeat() {
-    fetch(process.env.REACT_APP_API_URL + 'api_heartbeat')
-        .then((res) => res.text())
-        .then((res) => this.setState({apiResponse: res === 'success'}))
-        .catch((err) => {
-          this.setState({apiResponse: false});
-          console.log(err);
-        }
-        );
+  checkForAPIHeartbeat () {
+    fetch (process.env.REACT_APP_API_URL + 'api_heartbeat')
+      .then (res => res.text ())
+      .then (res => this.setState ({apiResponse: res === 'success'}))
+      .catch (err => {
+        this.setState ({apiResponse: false});
+        console.log (err);
+      });
   }
 
-  componentDidMount() {
-    this.checkForAPIHeartbeat();
+  componentDidMount () {
+    this.checkForAPIHeartbeat ();
 
     const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
-    setInterval(function() {
-      this.checkForAPIHeartbeat();
-    }.bind(this), timeoutInterval);
+    setInterval (
+      function () {
+        this.checkForAPIHeartbeat ();
+      }.bind (this),
+      timeoutInterval
+    );
   }
 
-  render() {
+  render () {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'About', path: '/about'},
@@ -52,8 +54,8 @@ class App extends React.Component {
           <Typography variant="h3">Mark Fonte</Typography>
           <nav className="primary-nav">
             <ul>
-              {routes.map( (route, i) => (
-                <li key={i} >
+              {routes.map ((route, i) => (
+                <li key={i}>
                   <LinkStyle component={Link} to={route.path}>
                     <Button variant="contained" color="primary">
                       {route.name}
@@ -70,15 +72,14 @@ class App extends React.Component {
           <Route path="/contact" component={Contact} />
           <Route path="/resume" component={Resume} />
         </Router>
-        { this.state.apiResponse ? (
-                    <img src={reactLogo} className="App-logo" alt="logo" />
-                ) : (
-                    <p> {
-                      /*
+        {this.state.apiResponse
+          ? <img src={reactLogo} className="App-logo" alt="logo" />
+          : <p>
+              {' '}
+              {/*
                         TODO: Display something ie "send report to me" & "retry"
-                        */
-                    }</p> )
-        }
+                        */}
+            </p>}
       </div>
     );
   }
