@@ -62,7 +62,7 @@ class App extends React.Component {
                     <Button
                       variant="contained"
                       color="primary"
-                      style={{marginTop: 4, marginBottom: 4}}
+                      style={{marginTop: 8, marginBottom: 8}}
                     >
                       {route.name}
                     </Button>
