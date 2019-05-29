@@ -1,0 +1,106 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+
+.move-list {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    height: 64px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 64px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+/*
+    Reference: https://stackoverflow.com/questions/6810031/css-center-element-within-a-div-element
+*/
+.game {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+.tic-tac-toe-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#tic-tac-toe-caption {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#tic-tac-toe-title {
+    margin-top:16px;
+    margin-bottom:16px;
+}
+
+#built-with-title {
+    margin-top: 300px;
+    margin-bottom: 8px;
+}
+
+#built-with-table-root {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    max-width: 640px;
+}
+
+#built-with-table-wrapper {
+    overflow-x: auto;
+}
+
+#built-with-table {
+    min-width: 520px;
+    max-width: 640px;
+}
