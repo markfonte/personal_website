@@ -29,4 +29,9 @@ module.exports = {
     // don't require jsdoc for every single function of every single component
     "require-jsdoc" : 0
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 };
