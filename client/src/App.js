@@ -3,7 +3,8 @@ import reactLogo from './static/vectors/react_logo.svg';
 import profilePicture from './static/images/mark_circle.jpg';
 import './App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import About from './about/about.jsx';
+import CurrentWork from './current_work/current_work.jsx';
+import PastProjects from './past_projects/past_projects.jsx';
 import Contact from './contact/contact.jsx';
 import Resume from './resume/resume.jsx';
 import Home from './home/home.jsx';
@@ -43,7 +44,8 @@ class App extends React.Component {
   render () {
     const routes = [
       {name: 'Home', path: '/'},
-      {name: 'About', path: '/about'},
+      {name: 'Current Work', path: '/current_work'},
+      {name: 'Past Projects', path: './past_projects'},
       {name: 'Resume', path: '/resume'},
       {name: 'Contact', path: '/contact'},
     ];
@@ -68,7 +70,8 @@ class App extends React.Component {
 
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/current_work" component={CurrentWork} />
+          <Route path="/past_projects" component={PastProjects} />
           <Route path="/contact" component={Contact} />
           <Route path="/resume" component={Resume} />
         </Router>
