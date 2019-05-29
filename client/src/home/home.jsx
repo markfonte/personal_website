@@ -3,6 +3,7 @@ import './home.css';
 import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import BuiltWithTable from '../random/built_with_table';
+import Resume from './resume.jsx';
 
 class Home extends React.Component {
   render () {
@@ -17,6 +18,8 @@ class Home extends React.Component {
           Minor in Entrepreneurship ·
           Focus on Web &amp; Android development
         </Typography>
+
+        <Resume />
 
         <BuiltWithTable />
 

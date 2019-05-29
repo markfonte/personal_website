@@ -7,7 +7,6 @@ import CurrentWork from './current_work/current_work.jsx';
 import PastProjects from './past_projects/past_projects.jsx';
 import Random from './random/random.jsx';
 import Contact from './contact/contact.jsx';
-import Resume from './resume/resume.jsx';
 import Home from './home/home.jsx';
 import Button from '@material-ui/core/Button';
 import LinkStyle from '@material-ui/core/Link';
@@ -48,7 +47,6 @@ class App extends React.Component {
       {name: 'Current Work', path: '/current_work'},
       {name: 'Past Projects', path: '/past_projects'},
       {name: 'Random', path: '/random'},
-      {name: 'Resume', path: '/resume'},
       {name: 'Contact', path: '/contact'},
     ];
     return (
@@ -75,7 +73,6 @@ class App extends React.Component {
           <Route path="/current_work" component={CurrentWork} />
           <Route path="/past_projects" component={PastProjects} />
           <Route path="/random" component={Random} />
-          <Route path="/resume" component={Resume} />
           <Route path="/contact" component={Contact} />
         </Router>
         {this.state.apiResponse
