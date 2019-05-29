@@ -1,7 +1,6 @@
 import React from 'react';
 import reactLogo from './static/vectors/react_logo.svg';
 import profilePicture from './static/images/mark_circle.jpg';
-import './App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import CurrentWork from './current_work/current_work.jsx';
 import PastProjects from './past_projects/past_projects.jsx';
@@ -11,6 +10,7 @@ import Home from './home/home.jsx';
 import Button from '@material-ui/core/Button';
 import LinkStyle from '@material-ui/core/Link';
 import {Typography} from '@material-ui/core';
+import './App.css';
 import 'typeface-roboto';
 
 class App extends React.Component {
@@ -59,7 +59,11 @@ class App extends React.Component {
               {routes.map ((route, i) => (
                 <li key={i}>
                   <LinkStyle component={Link} to={route.path}>
-                    <Button variant="contained" color="primary">
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      style={{marginTop: 4, marginBottom: 4}}
+                    >
                       {route.name}
                     </Button>
                   </LinkStyle>
