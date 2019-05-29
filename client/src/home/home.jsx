@@ -267,7 +267,7 @@ class Home extends React.Component {
         </Typography>
         <div className="tic-tac-toe-container">
           <Typography variant="subtitle1" id="tic-tac-toe-title">
-              Here's some tic-tac-toe while you wait:
+              Here&apos;s some tic-tac-toe while you wait:
           </Typography>
           <Game />
           <Typography variant="caption" id="tic-tac-toe-caption" >
