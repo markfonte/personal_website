@@ -1,8 +1,10 @@
-#gimble-card {
-    max-width: 400px;
-    margin: auto;
-}
-
 #gimble-card-media {
     height: 200px;
+}
+
+.card {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './tic_tac_toe.css';
-import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import TicTacToeBoard from './tic_tac_toe_board';
