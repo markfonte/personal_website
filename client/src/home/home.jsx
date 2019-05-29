@@ -2,7 +2,7 @@ import React from 'react';
 import './home.css';
 import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
-import BuiltWithTable from '../random/built_with_table';
+import BuiltWithTable from './built_with_table';
 import Resume from './resume.jsx';
 
 class Home extends React.Component {
