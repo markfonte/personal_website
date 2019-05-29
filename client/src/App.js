@@ -12,23 +12,12 @@ import LinkStyle from '@material-ui/core/Link';
 import {Typography} from '@material-ui/core';
 import 'typeface-roboto';
 
-/**
- * Top-level Component for website. Sets up routing and basic navigation.
- */
 class App extends React.Component {
-  /**
-   * Constructor for App component
-   * @param {*} props default constructor no params
-   */
   constructor(props) {
     super(props);
     this.state = {apiResponse: false};
   }
 
-  /**
-   * Checks for heartbeat from API.
-   * Sets state based on response in this.state.apiResponse.
-   */
   checkForAPIHeartbeat() {
     fetch(process.env.REACT_APP_API_URL + 'api_heartbeat')
         .then((res) => res.text())
@@ -40,10 +29,6 @@ class App extends React.Component {
         );
   }
 
-  /**
-   * On component mount, checks for heartbeat from API.
-   * Continually checks for heartbeat at a set interval.
-   */
   componentDidMount() {
     this.checkForAPIHeartbeat();
 
@@ -53,9 +38,6 @@ class App extends React.Component {
     }.bind(this), timeoutInterval);
   }
 
-  /**
-   * Render App Component as JSX.
-   */
   render() {
     const routes = [
       {name: 'Home', path: '/'},

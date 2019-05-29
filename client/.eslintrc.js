@@ -4,6 +4,7 @@ module.exports = {
     'es6': true,
     'node': true,
   },
+  "parser": "babel-eslint",
   'extends': [
       'google',
       'plugin:react/recommended',
@@ -23,5 +24,9 @@ module.exports = {
     'react',
   ],
   'rules': {
+    // increase max-len error to trigger only on lines > 120 characters
+    'max-len': ["error", { "code": 120 }],
+    // don't require jsdoc for every single function of every single component
+    "require-jsdoc" : 0
   },
 };

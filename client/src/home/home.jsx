@@ -17,6 +17,7 @@ import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
+import PropTypes from 'prop-types';
 
 function Square(props) {
   return (
@@ -28,7 +29,16 @@ function Square(props) {
   );
 }
 
+Square.propTypes = {
+  value: PropTypes.string,
+  onClick: PropTypes.func,
+};
+
 class Board extends React.Component {
+  static propTypes = {
+    squares: PropTypes.array,
+    onClick: PropTypes.func,
+  };
   renderSquare(i) {
     return (
       <Square
@@ -246,10 +256,19 @@ class Home extends React.Component {
     const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
     return (
       <div>
-        <Typography variant="title">Welcome to my website! It is under active development (last updated 5/27/2019). Please check back soon!</Typography>
-        <Typography variant="subtitle1">Incoming Software Engineering Intern at J.P. Morgan · 4rd year CSE student at the University of Michigan · Minor in Entrepreneurship · Focus on Web &amp; Android development</Typography>
+        <Typography variant="title">
+            Welcome to my website! It is under active development (last updated 5/27/2019). Please check back soon!
+        </Typography>
+        <Typography variant="subtitle1">
+            Incoming Software Engineering Intern at J.P. Morgan ·
+            4rd year CSE student at the University of Michigan ·
+            Minor in Entrepreneurship ·
+            Focus on Web &amp; Android development
+        </Typography>
         <div className="tic-tac-toe-container">
-          <Typography variant="subtitle1" id="tic-tac-toe-title">Here's some tic-tac-toe while you wait:</Typography>
+          <Typography variant="subtitle1" id="tic-tac-toe-title">
+              Here&apos;s some tic-tac-toe while you wait:
+          </Typography>
           <Game />
           <Typography variant="caption" id="tic-tac-toe-caption" >
             <Link color="textPrimary" href={reactTutorialLink}>
