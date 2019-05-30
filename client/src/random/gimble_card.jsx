@@ -55,10 +55,10 @@ class GimbleCard extends React.Component {
             />
             <iframe
               width="360"
-              height="203"
+              height="201"
               src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
-              frameborder="0"
               title="Fallingwater - Gimble A Cappella"
+              frameBorder="8"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             />
