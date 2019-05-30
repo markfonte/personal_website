@@ -55,3 +55,11 @@
 .route-link {
     margin: 200px;
 }
+
+.card {
+    min-width: 360px;
+    max-width: 720px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
