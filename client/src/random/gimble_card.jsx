@@ -1,5 +1,5 @@
 import React from 'react';
-import './random.css';
+import './gimble_card.css';
 
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -52,6 +52,15 @@ class GimbleCard extends React.Component {
               frameBorder="8"
               allowtransparency="true"
               allow="encrypted-media"
+            />
+            <iframe
+              width="360"
+              height="203"
+              src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
+              frameborder="0"
+              title="Fallingwater - Gimble A Cappella"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
             />
           </CardContent>
           <CardActions>
