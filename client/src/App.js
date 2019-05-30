@@ -52,7 +52,6 @@ class App extends React.Component {
           <Route path="/random" component={Random} />
           <Route path="/contact" component={Contact} />
         </Router>
-
         <Footer />
       </div>
     );

@@ -1,0 +1,17 @@
+
+#built-with-title {
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+#built-with-table-root {
+    margin: 16px;
+}
+
+#built-with-table-wrapper {
+    overflow-x: auto;
+}
+
+#built-with-table {
+    min-width: 520px;
+}

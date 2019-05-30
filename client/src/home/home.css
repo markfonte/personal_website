@@ -81,26 +81,6 @@ body {
     margin-bottom:16px;
 }
 
-#built-with-title {
-    margin-top: 300px;
-    margin-bottom: 8px;
-}
-
-#built-with-table-root {
-    margin-top: 16px;
-    margin-bottom: 24px;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
-    margin-block-start: auto;
-    margin-block-end: auto;
-    max-width: 640px;
-}
-
-#built-with-table-wrapper {
-    overflow-x: auto;
-}
-
-#built-with-table {
-    min-width: 520px;
-    max-width: 640px;
+#instagram-feed-wrapper {
+    margin: 16px;
 }

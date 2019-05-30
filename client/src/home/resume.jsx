@@ -10,7 +10,9 @@ class Resume extends React.Component {
         <Typography id="resume-title" variant="subtitle1" align="left">
           Last updated: Feb 02 2019
         </Typography>
-        <embed id="resume-pdf" type="application/pdf" src={resumePdf} />
+        <div id="resume-wrapper">
+          <embed id="resume-pdf" type="application/pdf" src={resumePdf} />
+        </div>
       </div>
     );
   }

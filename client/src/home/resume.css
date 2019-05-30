@@ -1,9 +1,13 @@
 #resume-pdf {
-    width: 75%;
     min-height: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+#resume-wrapper {
+    margin: 16px;
 }
 
 #resume-title {
-    width: 75%;
-    margin: auto;
+    margin: 16px;
 }
