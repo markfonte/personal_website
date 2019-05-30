@@ -54,7 +54,7 @@ class TicTacToeGame extends React.Component {
       const desc = move ? 'move #' + move : 'game start';
       return (
         <li key={move}>
-          <Button variant="contained" onClick={() => this.jumpTo (move)}>
+          <Button variant="outlined" onClick={() => this.jumpTo (move)}>
             {desc}
           </Button>
         </li>
@@ -81,7 +81,7 @@ class TicTacToeGame extends React.Component {
         </div>
         <div className="game-info">
           <div>
-            <Typography variant="subtitle1" color="primary">
+            <Typography variant="subheading" color="primary">
               {' '}{status}
             </Typography>
           </div>
