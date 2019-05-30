@@ -6,6 +6,7 @@ class Contact extends React.Component {
   render () {
     const emailLink = `mailto:mark@fonte.com`;
     const phoneLink = `tel:406-948-1034`;
+    const venmoLink = `https://venmo.com/Mark-Fonte`;
 
     return (
       <div>
@@ -21,7 +22,7 @@ class Contact extends React.Component {
           variant="outlined"
           color="secondary"
           href={emailLink}
-          style={{margin: 16}}
+          style={{margin: 8}}
         >
           Email
         </Button>
@@ -30,8 +31,18 @@ class Contact extends React.Component {
           variant="outlined"
           color="secondary"
           href={phoneLink}
+          style={{margin: 8}}
         >
           Phone
+        </Button>
+        <Button
+          className="contact-button"
+          variant="outlined"
+          color="secondary"
+          href={venmoLink}
+          style={{margin: 8}}
+        >
+          Venmo
         </Button>
       </div>
     );
