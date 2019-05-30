@@ -3,6 +3,8 @@ import reactLogo from '../static/vectors/react_logo.svg';
 import '../App.css';
 import './footer.css';
 import 'typeface-roboto';
+import {Typography} from '@material-ui/core';
+import Link from '@material-ui/core/Link';
 
 class Footer extends React.Component {
   constructor (props) {
@@ -37,6 +39,7 @@ class Footer extends React.Component {
     const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
     const instagramLink = `https://www.instagram.com/mark_fonte21/`;
     const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
+    const websiteGithubLink = `https://github.com/markfonte/personal_website`;
 
     return (
       <footer id="footer">
@@ -67,6 +70,16 @@ class Footer extends React.Component {
                     TODO: Display something ie "send report to me" & "retry"
                 */}
                 </p>}
+          </div>
+          <div>
+            <Typography variant="caption">
+              Last updated 5/30/2019
+            </Typography>
+          </div>
+          <div>
+            <Link variant="caption" color="default" href={websiteGithubLink}>
+              view source on github
+            </Link>
           </div>
         </div>
       </footer>

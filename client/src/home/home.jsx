@@ -9,11 +9,8 @@ class Home extends React.Component {
   render () {
     return (
       <div>
-        <Typography variant="title">
-          Welcome to my website! It is under active development (last updated 5/30/2019). Please check back soon!
-        </Typography>
-        <Typography variant="subtitle1">
-          Incoming Software Engineering Intern at J.P. Morgan ·
+        <Typography style={{margin: 32}} variant="h6">
+          Software Engineering Intern at J.P. Morgan ·
           4rd year CSE student at the University of Michigan ·
           Minor in Entrepreneurship ·
           Focus on Web &amp; Android development
