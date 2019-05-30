@@ -20,7 +20,30 @@ class Contact extends React.Component {
   // }
 
   render () {
-    return <Typography variant="h6">Contact page coming soon...</Typography>;
+    return (
+      <div>
+        <Typography variant="h6">
+          Contact page coming soon...
+        </Typography>
+        {/* <form
+          action="mailto:mark@fonte.com?subject=yup"
+          method="post"
+          enctype="text/plain"
+        >
+          Name:<br />
+          <input type="text" name="name" /><br />
+          E-mail:<br />
+          <input type="text" name="mail" /><br />
+          Subject:<br />
+          <input type="text" name="subject" /><br />
+          Comment:<br />
+          <input type="text" name="comment" size="50" /><br /><br />
+          <input type="submit" value="Send" />
+          <input type="reset" value="Reset" />
+        </form> */}
+
+      </div>
+    );
   }
 }
 

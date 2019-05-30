@@ -10,7 +10,7 @@ class Home extends React.Component {
     return (
       <div>
         <Typography variant="title">
-          Welcome to my website! It is under active development (last updated 5/29/2019). Please check back soon!
+          Welcome to my website! It is under active development (last updated 5/30/2019). Please check back soon!
         </Typography>
         <Typography variant="subtitle1">
           Incoming Software Engineering Intern at J.P. Morgan ·
@@ -22,7 +22,6 @@ class Home extends React.Component {
         <Resume />
 
         <BuiltWithTable />
-
       </div>
     );
   }

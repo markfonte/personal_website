@@ -1,5 +1,4 @@
 import React from 'react';
-import reactLogo from './static/vectors/react_logo.svg';
 import profilePicture from './static/images/mark_circle.jpg';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import CurrentWork from './current_work/current_work.jsx';
@@ -9,38 +8,12 @@ import Contact from './contact/contact.jsx';
 import Home from './home/home.jsx';
 import Button from '@material-ui/core/Button';
 import LinkStyle from '@material-ui/core/Link';
+import Footer from './footer/footer.jsx';
 import {Typography} from '@material-ui/core';
 import './App.css';
 import 'typeface-roboto';
 
 class App extends React.Component {
-  constructor (props) {
-    super (props);
-    this.state = {apiResponse: false};
-  }
-
-  checkForAPIHeartbeat () {
-    fetch (process.env.REACT_APP_API_URL + 'api_heartbeat')
-      .then (res => res.text ())
-      .then (res => this.setState ({apiResponse: res === 'success'}))
-      .catch (err => {
-        this.setState ({apiResponse: false});
-        console.log (err);
-      });
-  }
-
-  componentDidMount () {
-    this.checkForAPIHeartbeat ();
-
-    const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
-    setInterval (
-      function () {
-        this.checkForAPIHeartbeat ();
-      }.bind (this),
-      timeoutInterval
-    );
-  }
-
   render () {
     const routes = [
       {name: 'Home', path: '/'},
@@ -79,14 +52,8 @@ class App extends React.Component {
           <Route path="/random" component={Random} />
           <Route path="/contact" component={Contact} />
         </Router>
-        {this.state.apiResponse
-          ? <img src={reactLogo} className="App-logo" alt="logo" />
-          : <p>
-              {' '}
-              {/*
-                    TODO: Display something ie "send report to me" & "retry"
-                */}
-            </p>}
+
+        <Footer />
       </div>
     );
   }
