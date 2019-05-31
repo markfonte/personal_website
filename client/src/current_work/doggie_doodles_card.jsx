@@ -18,7 +18,7 @@ class DoggieDoodlesCard extends React.Component {
 
     return (
       <div>
-        <Card className="card">
+        <Card raised="true" className="card">
           <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
           <CardMedia
             id="doggie-doodles-media"

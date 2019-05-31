@@ -14,7 +14,7 @@ class TicTacToeCard extends React.Component {
     const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
 
     return (
-      <Card className="card">
+      <Card raised="true" className="card">
         <CardHeader title="Tic Tac Toe" subheader="because why not?" />
         <CardContent>
           <Typography variant="subtitle1" />

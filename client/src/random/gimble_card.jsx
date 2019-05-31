@@ -15,7 +15,7 @@ class GimbleCard extends React.Component {
 
     return (
       <div>
-        <Card className="card">
+        <Card raised="true" className="card">
           <CardHeader
             title="Gimble A Cappella"
             subheader="My acappella group!"
