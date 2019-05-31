@@ -28,7 +28,7 @@ class GimbleCard extends React.Component {
           <CardContent>
             <iframe
               src="https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K"
-              width="360"
+              width="340"
               height="80"
               title="Dancing On My Own - Gimble A Cappella"
               frameBorder="8"
@@ -37,7 +37,7 @@ class GimbleCard extends React.Component {
             />
             <iframe
               src="https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl"
-              width="360"
+              width="340"
               height="80"
               title="715 - CR∑∑KS - Gimble A Cappella"
               frameBorder="8"
@@ -46,7 +46,7 @@ class GimbleCard extends React.Component {
             />
             <iframe
               src="https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR"
-              width="360"
+              width="340"
               height="201"
               title="XX - Gimble A Cappella"
               frameBorder="8"
@@ -54,7 +54,7 @@ class GimbleCard extends React.Component {
               allow="encrypted-media"
             />
             <iframe
-              width="360"
+              width="340"
               height="201"
               src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
               title="Fallingwater - Gimble A Cappella"
