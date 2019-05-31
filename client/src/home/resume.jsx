@@ -4,7 +4,7 @@ import {Typography} from '@material-ui/core';
 import resumePdf from '../static/documents/resume.pdf';
 
 class Resume extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Typography id="resume-title" variant="subtitle1" align="left">

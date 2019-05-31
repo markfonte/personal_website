@@ -6,11 +6,11 @@ import DoggieDoodlesCard from './doggie_doodles_card.jsx';
 import JPMorganCard from './jpmorgan_card.jsx';
 
 class CurrentWork extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">
-          What is currently on my plate...
+          Current projects and businesses I am working on
         </Typography>
         <JPMorganCard />
         <SpotlightCard />

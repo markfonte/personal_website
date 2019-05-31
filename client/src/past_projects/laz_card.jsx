@@ -1,5 +1,5 @@
 import React from 'react';
-import './jpmorgan_card.css';
+import './laz_card.css';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
@@ -9,29 +9,29 @@ import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 
-class JPMorganCard extends React.Component {
-  render() {
-    const jpmorganLink = `https://www.jpmorganchase.com/`;
+class LAZCard extends React.Component {
+  render () {
+    const lazLink = `https://www.learninga-z.com/`;
 
     return (
       <div>
         <Card raised={true} className="card">
           <CardHeader
-            title="J.P. Morgan Chase"
+            title="Learning A-Z"
             subheader="Software Engineering Intern"
           />
           <CardMedia
-            id="jpmorgan-media"
-            image={require('../static/images/jpmorgan_logo.jpg')}
-            title="J.P. Morgan Chase logo"
+            id="laz-media"
+            image={require ('../static/images/laz_logo.png')}
+            title="Learning A-Z logo"
           />
           <CardContent>
             <Typography variant="body1">
-              Software internship in full stack web development. More details to come!
+              In progress
             </Typography>
           </CardContent>
           <CardActions>
-            <IconButton aria-label="Go to website" href={jpmorganLink}>
+            <IconButton aria-label="Go to website" href={lazLink}>
               <WebIcon />
             </IconButton>
           </CardActions>
@@ -41,4 +41,4 @@ class JPMorganCard extends React.Component {
   }
 }
 
-export default JPMorganCard;
+export default LAZCard;

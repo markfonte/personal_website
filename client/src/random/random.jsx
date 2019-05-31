@@ -5,7 +5,7 @@ import TicTacToeCard from './tic_tac_toe_card.jsx';
 import GimbleCard from './gimble_card.jsx';
 
 class Random extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">

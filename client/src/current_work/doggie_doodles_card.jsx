@@ -11,7 +11,7 @@ import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 
 class DoggieDoodlesCard extends React.Component {
-  render () {
+  render() {
     const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
     const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
     const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
@@ -22,7 +22,7 @@ class DoggieDoodlesCard extends React.Component {
           <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
           <CardMedia
             id="doggie-doodles-media"
-            image={require ('../static/images/doggie_doodles_logo.jpg')}
+            image={require('../static/images/doggie_doodles_logo.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>

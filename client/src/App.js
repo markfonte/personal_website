@@ -14,7 +14,7 @@ import './App.css';
 import 'typeface-roboto';
 
 class App extends React.Component {
-  render () {
+  render() {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
@@ -29,7 +29,7 @@ class App extends React.Component {
           <Typography variant="h3">Mark Fonte</Typography>
           <nav className="primary-nav">
             <ul>
-              {routes.map ((route, i) => (
+              {routes.map((route, i) => (
                 <li key={i}>
                   <LinkStyle component={Link} to={route.path}>
                     <Button

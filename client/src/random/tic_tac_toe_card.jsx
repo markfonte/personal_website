@@ -10,7 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import DescriptionIcon from '@material-ui/icons/Description';
 
 class TicTacToeCard extends React.Component {
-  render () {
+  render() {
     const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
 
     return (

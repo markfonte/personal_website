@@ -6,7 +6,7 @@ import BuiltWithTable from './built_with_table';
 import Resume from './resume.jsx';
 
 class Home extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">
