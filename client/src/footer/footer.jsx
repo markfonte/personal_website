@@ -73,7 +73,7 @@ class Footer extends React.Component {
           </div>
           <div>
             <Typography variant="caption" color="textSecondary">
-              Last updated 5/30/2019
+              Last updated 5/31/2019
             </Typography>
           </div>
           <div>
