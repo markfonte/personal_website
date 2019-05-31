@@ -13,9 +13,8 @@ class Footer extends React.Component {
   }
 
   checkForAPIHeartbeat () {
-    fetch (process.env.REACT_APP_API_URL + 'api_heartbeat')
-      .then (res => res.text ())
-      .then (res => this.setState ({apiResponse: res === 'success'}))
+    fetch (process.env.REACT_APP_API_URL + 'api_heartbeat', {method: 'HEAD'})
+      .then (res => this.setState ({apiResponse: true}))
       .catch (err => {
         this.setState ({apiResponse: false});
         console.log (err);
