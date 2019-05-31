@@ -19,7 +19,10 @@ class SpotlightCard extends React.Component {
     return (
       <div>
         <Card raised="true" className="card">
-          <CardHeader title="Spotlight" subheader="CTO and Android developer" />
+          <CardHeader
+            title="Spotlight"
+            subheader="Lead Android developer and CTO"
+          />
           <CardContent>
             <img
               className="spotlight-screenshot"
