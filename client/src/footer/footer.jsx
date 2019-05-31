@@ -45,20 +45,20 @@ class Footer extends React.Component {
       <footer id="footer">
         <div id="footer-container">
           <div className="icon-bar">
-            <a href={facebookLink} class="facebook">
-              <i class="fa fa-facebook" />
+            <a href={facebookLink} className="facebook">
+              <i className="fa fa-facebook" />
             </a>
-            <a href={githubLink} class="github">
-              <i class="fa fa-github" />
+            <a href={githubLink} className="github">
+              <i className="fa fa-github" />
             </a>
-            <a href={linkedinLink} class="linkedin">
-              <i class="fa fa-linkedin" />
+            <a href={linkedinLink} className="linkedin">
+              <i className="fa fa-linkedin" />
             </a>
-            <a href={instagramLink} class="instagram">
-              <i class="fa fa-instagram" />
+            <a href={instagramLink} className="instagram">
+              <i className="fa fa-instagram" />
             </a>
-            <a href={youtubeLink} class="youtube">
-              <i class="fa fa-youtube" />
+            <a href={youtubeLink} className="youtube">
+              <i className="fa fa-youtube" />
             </a>
           </div>
           <div>
@@ -72,12 +72,16 @@ class Footer extends React.Component {
                 </p>}
           </div>
           <div>
-            <Typography variant="caption">
+            <Typography variant="caption" color="textSecondary">
               Last updated 5/30/2019
             </Typography>
           </div>
           <div>
-            <Link variant="caption" color="default" href={websiteGithubLink}>
+            <Link
+              variant="caption"
+              color="textSecondary"
+              href={websiteGithubLink}
+            >
               view source on github
             </Link>
           </div>
