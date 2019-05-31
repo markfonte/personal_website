@@ -18,6 +18,10 @@ class Contact extends React.Component {
           I am always open to new opportunities - recommendations, contracting work,
           collaborations, job opportunities, etc. Feel free to reach out!
         </Typography>
+        <Typography style={{margin: 16}} variant="body1">
+          If you are looking for my resume, I have intentionally not made it public.
+          However, I would be happy to send it over upon request!
+        </Typography>
         <div>
           <Button
             className="contact-buttons"
