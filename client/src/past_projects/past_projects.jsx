@@ -5,7 +5,7 @@ import {Typography} from '@material-ui/core';
 class PastProjects extends React.Component {
   render () {
     return (
-      <Typography variant="h6">
+      <Typography style={{margin: 16}} variant="h6">
         Past Projects page coming soon...
       </Typography>
     );

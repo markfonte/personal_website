@@ -15,7 +15,7 @@ class GimbleCard extends React.Component {
 
     return (
       <div>
-        <Card raised="true" className="card">
+        <Card raised={true} className="card">
           <CardHeader
             title="Gimble A Cappella"
             subheader="My acappella group!"
@@ -60,7 +60,7 @@ class GimbleCard extends React.Component {
               title="Fallingwater - Gimble A Cappella"
               frameBorder="8"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             />
           </CardContent>
           <CardActions>

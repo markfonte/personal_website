@@ -15,7 +15,7 @@ class JPMorganCard extends React.Component {
 
     return (
       <div>
-        <Card raised="true" className="card">
+        <Card raised={true} className="card">
           <CardHeader
             title="J.P. Morgan Chase"
             subheader="Software Engineering Intern"

@@ -10,10 +10,10 @@ class Contact extends React.Component {
 
     return (
       <div>
-        <Typography variant="h6">
-          Please contact me in the most convenient way for you!
+        <Typography style={{margin: 16}} variant="h6">
+          Let&#39;s get in touch!
         </Typography>
-        <Typography variant="subheading">
+        <Typography style={{margin: 16}} variant="subheading">
           I am always open to new opportunities - recommendations, contracting work,
           collaborations, job opportunities, etc. Feel free to reach out!
         </Typography>

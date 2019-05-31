@@ -9,7 +9,9 @@ class CurrentWork extends React.Component {
   render () {
     return (
       <div>
-        <Typography variant="h6">What is currently on my plate...</Typography>
+        <Typography style={{margin: 16}} variant="h6">
+          What is currently on my plate...
+        </Typography>
         <JPMorganCard />
         <SpotlightCard />
         <DoggieDoodlesCard />
