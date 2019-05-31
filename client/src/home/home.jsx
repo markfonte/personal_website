@@ -16,7 +16,7 @@ class Home extends React.Component {
           Focus on Web &amp; Android development
         </Typography>
         <div id="instagram-feed-wrapper">
-          <div class="elfsight-app-b21d23fa-3bec-42f0-8828-b41cc63cff02" />
+          <div className="elfsight-app-b21d23fa-3bec-42f0-8828-b41cc63cff02" />
         </div>
         <Resume />
 

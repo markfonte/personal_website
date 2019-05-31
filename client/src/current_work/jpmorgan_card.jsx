@@ -8,7 +8,6 @@ import CardHeader from '@material-ui/core/CardHeader';
 import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
 
 class JPMorganCard extends React.Component {
   render () {
