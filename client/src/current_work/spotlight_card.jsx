@@ -30,6 +30,7 @@ class SpotlightCard extends React.Component {
               width="240"
               height="500"
               title="Spotlight screenshot 1"
+              alt="Spotlight screenshot 1"
             />
             <img
               className="spotlight-screenshot"
@@ -37,6 +38,7 @@ class SpotlightCard extends React.Component {
               width="240"
               height="500"
               title="Spotlight screenshot 2"
+              alt="Spotlight screenshot 2"
             />
             <Typography variant="body1">
               We are working on Android and iOS applications to help streamline the sorority recruitment process.
