@@ -36,7 +36,7 @@ class CurrentBooksCard extends React.Component {
     return (
       <div>
         <Card raised={true} className="card">
-          <CardHeader title="Books I&#39;m Reading" />
+          <CardHeader title="Books I&#39;m Reading" subheader="June 2019" />
           <CardContent>
             {currentBooks.map ((currentBook, i) => (
               <Card key={i} className="book-cover">
