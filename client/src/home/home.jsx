@@ -17,7 +17,7 @@ class Home extends React.Component {
         </Typography>
         <Typography style={{margin: 16}} variant="body1">
           Welcome to my personal website! I am a computer science in engineering student at the
-          University of Michigan and this website is designed to show you a little more about myself.
+          University of Michigan and my website is designed to show you a little more about myself.
           Please browse around and feel free to check out my social media accounts or contact me
           directly!
         </Typography>
