@@ -8,6 +8,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import {Typography} from '@material-ui/core';
+import Link from '@material-ui/core/Link';
 
 class CurrentBooksCard extends React.Component {
   render () {
@@ -47,9 +48,14 @@ class CurrentBooksCard extends React.Component {
                   title={currentBook.title}
                   alt={currentBook.title}
                 />
-                <Typography variant="title">
+                <br />
+                <Link
+                  href={currentBook.link}
+                  color="textPrimary"
+                  variant="title"
+                >
                   {currentBook.title}
-                </Typography>
+                </Link>
                 <Typography variant="subtitle1">
                   {currentBook.author}
                 </Typography>
