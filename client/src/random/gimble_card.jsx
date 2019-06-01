@@ -10,7 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 
 class GimbleCard extends React.Component {
-  render() {
+  render () {
     const gimbleAcappellaLink = `https://www.gimbleacappella.com/`;
 
     return (
@@ -22,7 +22,7 @@ class GimbleCard extends React.Component {
           />
           <CardMedia
             id="gimble-card-media"
-            image={require('../static/images/gimble_group_pic.jpg')}
+            image={require ('../static/images/gimble_group_pic.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>
@@ -32,7 +32,7 @@ class GimbleCard extends React.Component {
               height="80"
               title="Dancing On My Own - Gimble A Cappella"
               frameBorder="8"
-              allowTransparency="true"
+              allowtransparency="true"
               allow="encrypted-media"
             />
             <iframe
@@ -41,7 +41,7 @@ class GimbleCard extends React.Component {
               height="80"
               title="715 - CR∑∑KS - Gimble A Cappella"
               frameBorder="8"
-              allowTransparency="true"
+              allowtransparency="true"
               allow="encrypted-media"
             />
             <iframe
@@ -50,7 +50,7 @@ class GimbleCard extends React.Component {
               height="201"
               title="XX - Gimble A Cappella"
               frameBorder="8"
-              allowTransparency="true"
+              allowtransparency="true"
               allow="encrypted-media"
             />
             <iframe
