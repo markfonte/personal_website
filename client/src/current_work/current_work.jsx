@@ -7,7 +7,7 @@ import JPMorganCard from './jpmorgan_card.jsx';
 import CurrentCourseworkCard from './current_coursework_card.jsx';
 
 class CurrentWork extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">

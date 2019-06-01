@@ -10,7 +10,7 @@ import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 
 class Spartahack5Card extends React.Component {
-  render () {
+  render() {
     const spartahack5Link = `https://spartahackv.devpost.com/`;
 
     return (
@@ -22,7 +22,7 @@ class Spartahack5Card extends React.Component {
           />
           <CardMedia
             id="spartahack5-media"
-            image={require ('../static/images/spartahack_logo.png')}
+            image={require('../static/images/spartahack_logo.png')}
             title="SpartaHack V logo"
           />
           <CardContent>

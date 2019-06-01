@@ -4,7 +4,7 @@ import {Typography, Button} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 
 class Contact extends React.Component {
-  render () {
+  render() {
     const emailLink = `mailto:mark@fonte.com`;
     const phoneLink = `tel:406-948-1034`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;

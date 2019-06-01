@@ -10,7 +10,7 @@ import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 
 class RevolutionUC8Card extends React.Component {
-  render () {
+  render() {
     const revolutionuc8Link = `http://revolutionuc.com/`;
 
     return (
@@ -22,7 +22,7 @@ class RevolutionUC8Card extends React.Component {
           />
           <CardMedia
             id="revolutionuc8-media"
-            image={require ('../static/images/revolutionuc_logo.png')}
+            image={require('../static/images/revolutionuc_logo.png')}
             title="RevolutionUC 8 logo"
           />
           <CardContent>
