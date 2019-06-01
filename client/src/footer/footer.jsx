@@ -40,6 +40,7 @@ class Footer extends React.Component {
     const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
     const websiteGithubLink = `https://github.com/markfonte/personal_website`;
     const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
+    const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
 
     return (
       <footer id="footer">
@@ -47,6 +48,9 @@ class Footer extends React.Component {
           <div className="icon-bar">
             <a href={facebookLink} className="facebook">
               <i className="fa fa-facebook" />
+            </a>
+            <a href={stackOverflowLink} className="stack-overflow">
+              <i className="fa fa-stack-overflow" />
             </a>
             <a href={githubLink} className="github">
               <i className="fa fa-github" />

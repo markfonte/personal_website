@@ -15,7 +15,7 @@
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-    background-color: #000;
+    background-color: darkgrey;
 }
 
 .facebook {
@@ -50,6 +50,11 @@
 
 .github {
     background: #000000;
+    color: white;
+}
+
+.stack-overflow {
+    background: #f48024;
     color: white;
 }
 
