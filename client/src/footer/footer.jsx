@@ -107,6 +107,7 @@ class Footer extends React.Component {
               suggest an edit
             </Link>
           </div>
+          {/* go blue */}
           <div>
             <img
               src={universityOfMichiganLogoSmall}
