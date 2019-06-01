@@ -6,6 +6,18 @@ import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 
+function DisplayError (props) {
+  return (
+    <Typography variant="title" style={{margin: 16}}>
+      Oops! Looks like my backend server is down. Please
+      {' '}
+      <Link href="https://mark.fonte.com/contact">contact me</Link>
+      {' '}
+      so I can fix the issue! Thanks!
+    </Typography>
+  );
+}
+
 class Footer extends React.Component {
   constructor (props) {
     super (props);
@@ -68,12 +80,7 @@ class Footer extends React.Component {
           <div>
             {this.state.apiResponse
               ? <img src={reactLogo} className="App-logo" alt="logo" />
-              : <p>
-                  {' '}
-                  {/*
-                    TODO: Display something ie "send report to me" & "retry"
-                */}
-                </p>}
+              : <DisplayError />}
           </div>
           <div>
             <Typography variant="caption" color="textSecondary">
