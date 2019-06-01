@@ -8,6 +8,11 @@ import CardHeader from '@material-ui/core/CardHeader';
 import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
+import parentPortalScreenshotOne
+  from '../static/images/laz_parent_portal_screenshot_1.jpg';
+import parentPortalScreenshotTwo
+  from '../static/images/laz_parent_portal_screenshot_2.jpg';
+import badgeScreenshot from '../static/images/laz_badge_screenshot.PNG';
 
 class LAZCard extends React.Component {
   render () {
@@ -31,6 +36,7 @@ class LAZCard extends React.Component {
               Learning A-Z is a educational software company for elementary school students, so
               both of my projects were features to serve them.
               <br /><br />
+              <b>Summer 2017</b><br />
               In Summer 2017, I worked on the
               Student Badge Project, in which I implemented an incentives program for the students
               for achieving goals such as &#34;reading a book 5 days in a row&#34;. This project was
@@ -38,6 +44,14 @@ class LAZCard extends React.Component {
               in JS/HTML/CSS. I also partially implemented it into the company&#39;s existing Android
               application. The project was picked up by full-time developers and is live in production today!
               <br /><br />
+              <img
+                src={badgeScreenshot}
+                style={{width: '100%', height: 'auto'}}
+                title="LAZ badge screenshot"
+                alt="LAZ badge screenshot"
+              />
+              <br /><br />
+              <b>Summer 2018</b><br />
               In Summer 2018, I worked on the Android Parent Portal project. At the time, parents of
               the students could only view their students information on the web
               {' '}
@@ -51,6 +65,23 @@ class LAZCard extends React.Component {
               Kotlin was much easier to write clean code with, and I would recommend it to any Android
               developer. Plus, it is interoperable with existing Java code! The project was picked up
               by some full-time developers but is not yet live in production.
+              <br /><br />
+              <img
+                className="laz-screenshot"
+                src={parentPortalScreenshotOne}
+                width="240"
+                height="500"
+                title="LAZ parent portal screenshot 1"
+                alt="LAZ parent portal screenshot 1"
+              />
+              <img
+                className="laz-screenshot"
+                src={parentPortalScreenshotTwo}
+                width="240"
+                height="500"
+                title="LAZ parent portal screenshot 2"
+                alt="LAZ parent portal screenshot 2"
+              />
             </Typography>
           </CardContent>
           <CardActions>
