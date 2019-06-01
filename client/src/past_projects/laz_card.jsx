@@ -34,14 +34,18 @@ class LAZCard extends React.Component {
             <Typography variant="body1">
               I worked at Learning A-Z in Summer 2017 and Summer 2018 on two separate projects.
               Learning A-Z is a educational software company for elementary school students, so
-              both of my projects were features to serve them.
-              <br /><br />
-              <b>Summer 2017</b><br />
+              both of my projects were features to serve them. Each summer, outside of the main
+              project I worked on a small project with the other interns and presented on a relevant
+              research topic. I was fortunate enough to have two great mentors
+              and had the opportunity work alongside some awesome coworkers and fellow interns!
+              <br /><br /><b>Summer 2017</b><br />
               In Summer 2017, I worked on the
               Student Badge Project, in which I implemented an incentives program for the students
-              for achieving goals such as &#34;reading a book 5 days in a row&#34;. This project was
+              for achieving goals such as &#34;read at least one book a day for five straight days&#34;.
+              {' '}
+              This project was
               my first formal experience writing server-side code in PHP/MySQL and client-side code
-              in JS/HTML/CSS. I also partially implemented it into the company&#39;s existing Android
+              in JS/HTML/CSS. I also partially integrated it into the company&#39;s existing Android
               application. The project was picked up by full-time developers and is live in production today!
               <br /><br />
               <img
@@ -50,8 +54,7 @@ class LAZCard extends React.Component {
                 title="LAZ badge screenshot"
                 alt="LAZ badge screenshot"
               />
-              <br /><br />
-              <b>Summer 2018</b><br />
+              <br /><br /><b>Summer 2018</b><br />
               In Summer 2018, I worked on the Android Parent Portal project. At the time, parents of
               the students could only view their students information on the web
               {' '}
