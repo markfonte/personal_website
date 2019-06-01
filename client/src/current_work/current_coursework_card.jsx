@@ -9,28 +9,34 @@ import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
+
 class CurrentCourseworkCard extends React.Component {
   render () {
     const universityOfMichiganLink = `https://umich.edu/`;
     const courses = [
       {
-        name: 'EECS 441: Mobile App Development for Entrepreneurs',
+        subject: 'EECS 441',
+        name: 'Mobile App Development for Entrepreneurs',
         link: `https://art.ai.umich.edu/course/EECS%20441/`,
       },
       {
-        name: 'EECS 481: Software Engineering',
+        subject: 'EECS 481',
+        name: 'Software Engineering',
         link: `https://art.ai.umich.edu/course/EECS%20481/`,
       },
       {
-        name: 'EECS 496: Major Design Experience-Professionalism',
+        subject: 'EECS 496',
+        name: 'Major Design Experience-Professionalism',
         link: `https://art.ai.umich.edu/course/EECS%20496/`,
       },
       {
-        name: 'TCHNCLCM 497: Advanced Technical Communication for Computer Science',
+        subject: 'TCHNCLCM 497',
+        name: 'Advanced Technical Communication for Computer Science',
         link: `https://art.ai.umich.edu/course/TCHNCLCM%20497/`,
       },
       {
-        name: `ALA 256: Innovator's Toolkit`,
+        subject: 'ALA 256',
+        name: `Innovator's Toolkit`,
         link: `https://art.ai.umich.edu/course/ALA%20256/`,
       },
     ];
@@ -48,14 +54,17 @@ class CurrentCourseworkCard extends React.Component {
           />
           <CardContent>
             <Typography variant="subheading">
-              {courses.map ((course, i) => (
+              {courses.map (course => (
                 <Typography>
                   <Link
                     variant="subheading"
                     color="textPrimary"
                     href={course.link}
                   >
-                    {course.name}
+                    <b>
+                      {course.subject}
+                    </b>
+                    :{' '}{course.name}
                   </Link>
                 </Typography>
               ))}
