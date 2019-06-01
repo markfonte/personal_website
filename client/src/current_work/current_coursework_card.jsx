@@ -11,7 +11,7 @@ import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 
 class CurrentCourseworkCard extends React.Component {
-  render() {
+  render () {
     const universityOfMichiganLink = `https://umich.edu/`;
     const courses = [
       {
@@ -47,14 +47,16 @@ class CurrentCourseworkCard extends React.Component {
             title="Current Coursework - Fall 2019"
             subheader="University of Michigan"
           />
-          <CardMedia
-            id="current-coursework-media"
-            image={require('../static/images/university_of_michigan_logo.png')}
-            title="University of Michigan banner logo"
-          />
+          <div id="current-coursework-media-wrapper">
+            <CardMedia
+              id="current-coursework-media"
+              image={require ('../static/images/university_of_michigan_logo.png')}
+              title="University of Michigan banner logo"
+            />
+          </div>
           <CardContent>
             <Typography variant="subheading">
-              {courses.map((course, i) => (
+              {courses.map ((course, i) => (
                 <Typography key={i}>
                   <Link
                     variant="subheading"

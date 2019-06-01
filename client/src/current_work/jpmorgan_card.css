@@ -1,4 +1,10 @@
 #jpmorgan-media {
-    height: 0px;
-    padding-top: 25%;
+    margin: 8px;
+    padding-top: 10.8%;
+    width: 50%;
+}
+
+#jpmorgan-media-wrapper {
+    display:flex;
+    justify-content:center;
 }

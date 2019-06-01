@@ -10,7 +10,7 @@ import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 
 class JPMorganCard extends React.Component {
-  render() {
+  render () {
     const jpmorganLink = `https://www.jpmorganchase.com/`;
 
     return (
@@ -20,11 +20,13 @@ class JPMorganCard extends React.Component {
             title="J.P. Morgan Chase"
             subheader="Software Engineering Intern"
           />
-          <CardMedia
-            id="jpmorgan-media"
-            image={require('../static/images/jpmorgan_logo.jpg')}
-            title="J.P. Morgan Chase logo"
-          />
+          <div id="jpmorgan-media-wrapper">
+            <CardMedia
+              id="jpmorgan-media"
+              image={require ('../static/images/jpmorgan_logo.jpg')}
+              title="J.P. Morgan Chase logo"
+            />
+          </div>
           <CardContent>
             <Typography variant="body1">
               Software internship in full stack web development. More details to come!

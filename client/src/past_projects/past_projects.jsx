@@ -16,8 +16,8 @@ class PastProjects extends React.Component {
         </Typography>
         <LAZCard />
         <CompletedCourseworkCard />
-        <RevolutionUC8Card />
         <Spartahack5Card />
+        <RevolutionUC8Card />
         <Grizzhacks3Card />
       </div>
     );
