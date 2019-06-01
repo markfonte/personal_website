@@ -5,6 +5,8 @@ import './footer.css';
 import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
+import universityOfMichiganLogoSmall
+  from '../static/vectors/university_of_michigan_logo_small.svg';
 
 function DisplayError (props) {
   return (
@@ -104,6 +106,16 @@ class Footer extends React.Component {
             >
               suggest an edit
             </Link>
+          </div>
+          <div>
+            <img
+              src={universityOfMichiganLogoSmall}
+              width="20"
+              height="20"
+              style={{margin: 8}}
+              title="University of Michigan logo small"
+              alt="University of Michigan logo small"
+            />
           </div>
         </div>
       </footer>

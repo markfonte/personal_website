@@ -12,9 +12,18 @@ import Footer from './footer/footer.jsx';
 import {Typography} from '@material-ui/core';
 import './App.css';
 import 'typeface-roboto';
+import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+
+const appTheme = createMuiTheme ({
+  palette: {
+    primary: {
+      main: '#00274c', // University of Michigan blue
+    },
+  },
+});
 
 class App extends React.Component {
-  render() {
+  render () {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
@@ -23,37 +32,39 @@ class App extends React.Component {
       {name: 'Contact', path: '/contact'},
     ];
     return (
-      <div className="App">
-        <Router>
-          <img src={profilePicture} className="profile-logo" alt="profile" />
-          <Typography variant="h3">Mark Fonte</Typography>
-          <nav className="primary-nav">
-            <ul>
-              {routes.map((route, i) => (
-                <li key={i}>
-                  <LinkStyle component={Link} to={route.path}>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      style={{marginTop: 8, marginBottom: 8}}
-                    >
-                      {route.name}
-                    </Button>
-                  </LinkStyle>
-                </li>
-              ))}
-            </ul>
-          </nav>
+      <MuiThemeProvider theme={appTheme}>
+        <div className="App">
+          <Router>
+            <img src={profilePicture} className="profile-logo" alt="profile" />
+            <Typography variant="h3">Mark Fonte</Typography>
+            <nav className="primary-nav">
+              <ul>
+                {routes.map ((route, i) => (
+                  <li key={i}>
+                    <LinkStyle component={Link} to={route.path}>
+                      <Button
+                        variant="contained"
+                        color="primary"
+                        style={{marginTop: 8, marginBottom: 8}}
+                      >
+                        {route.name}
+                      </Button>
+                    </LinkStyle>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-          <Route path="/" exact component={Home} />
-          <Route path="/home" component={Home} />
-          <Route path="/current_work" component={CurrentWork} />
-          <Route path="/past_projects" component={PastProjects} />
-          <Route path="/random" component={Random} />
-          <Route path="/contact" component={Contact} />
-        </Router>
-        <Footer />
-      </div>
+            <Route path="/" exact component={Home} />
+            <Route path="/home" component={Home} />
+            <Route path="/current_work" component={CurrentWork} />
+            <Route path="/past_projects" component={PastProjects} />
+            <Route path="/random" component={Random} />
+            <Route path="/contact" component={Contact} />
+          </Router>
+          <Footer />
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
