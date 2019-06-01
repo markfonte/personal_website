@@ -1,4 +1,10 @@
 #completed-coursework-media {
-    height: 0px;
-    padding-top: 20%;
+    margin: 8px;
+    padding-top: 10.8%;
+    width: 50%;
+}
+
+#completed-coursework-media-wrapper {
+    display:flex;
+    justify-content:center;
 }

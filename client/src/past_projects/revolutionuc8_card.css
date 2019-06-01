@@ -1,4 +1,10 @@
 #revolutionuc8-media {
-    height: 0px;
-    padding-top: 22%;
+    margin: 8px;
+    padding-top: 10.8%;
+    width: 50%;
+}
+
+#revolutionuc8-media-wrapper {
+    display:flex;
+    justify-content:center;
 }

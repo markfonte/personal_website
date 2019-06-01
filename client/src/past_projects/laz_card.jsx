@@ -15,7 +15,7 @@ import parentPortalScreenshotTwo
 import badgeScreenshot from '../static/images/laz_badge_screenshot.PNG';
 
 class LAZCard extends React.Component {
-  render() {
+  render () {
     const lazLink = `https://www.learninga-z.com/`;
 
     return (
@@ -25,11 +25,16 @@ class LAZCard extends React.Component {
             title="Learning A-Z"
             subheader="Software Engineering Intern"
           />
-          <CardMedia
-            id="laz-media"
-            image={require('../static/images/laz_logo.png')}
-            title="Learning A-Z logo"
-          />
+          <div id="laz-media-wrapper">
+            <CardMedia
+              id="laz-media"
+              direction="column"
+              alignItems="center"
+              justify="center"
+              image={require ('../static/images/laz_logo.png')}
+              title="Learning A-Z logo"
+            />
+          </div>
           <CardContent>
             <Typography variant="body1">
               I worked at Learning A-Z in Summer 2017 and Summer 2018 on two separate projects.
