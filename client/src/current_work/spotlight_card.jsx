@@ -13,7 +13,7 @@ import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 
 class SpotlightCard extends React.Component {
-  render() {
+  render () {
     const spotlightLink = `https://www.spotlight-app.com/`;
 
     return (
@@ -24,6 +24,13 @@ class SpotlightCard extends React.Component {
             subheader="Lead Android developer and CTO"
           />
           <CardContent>
+            <Typography variant="body1">
+              We are working on Android and iOS applications to help streamline the sorority recruitment process.
+              Both applications are built using Firebase, and the Android application is built using Android Jetpack,
+              architecture components and Google Maps APIs. We plan to beta test the app in Fall 2019 with a smaller
+              recruitment at U of M and start expanding upon the successful beta. The source code is not available to
+              the public at the moment but I am happy to share with anyone upon request!
+            </Typography>
             <img
               className="spotlight-screenshot"
               src={spotlightScreenshotOne}
@@ -40,13 +47,6 @@ class SpotlightCard extends React.Component {
               title="Spotlight screenshot 2"
               alt="Spotlight screenshot 2"
             />
-            <Typography variant="body1">
-              We are working on Android and iOS applications to help streamline the sorority recruitment process.
-              Both applications are built using Firebase, and the Android application is built using Android Jetpack,
-              architecture components and Google Maps APIs. We plan to beta test the app in Fall 2019 with a smaller
-              recruitment at U of M and start expanding upon the successful beta. The source code is not available to
-              the public at the moment but I am happy to share with anyone upon request!
-            </Typography>
           </CardContent>
           <CardActions>
             <IconButton aria-label="Go to website" href={spotlightLink}>

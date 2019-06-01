@@ -1,14 +1,13 @@
 import React from 'react';
 import './contact.css';
 import {Typography, Button} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
 
 class Contact extends React.Component {
-  render() {
+  render () {
     const emailLink = `mailto:mark@fonte.com`;
     const phoneLink = `tel:406-948-1034`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;
-    const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
+
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">
@@ -47,9 +46,6 @@ class Contact extends React.Component {
             Venmo
           </Button>
         </div>
-        <Link variant="caption" color="secondary" href={suggestEditLink}>
-          suggest an edit
-        </Link>
         <Typography style={{margin: 16}} variant="caption">
           If you are looking for my resume, I have intentionally not made it public.
           However, I would be happy to send it over upon request!

@@ -39,6 +39,7 @@ class Footer extends React.Component {
     const instagramLink = `https://www.instagram.com/mark_fonte21/`;
     const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
     const websiteGithubLink = `https://github.com/markfonte/personal_website`;
+    const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
 
     return (
       <footer id="footer">
@@ -82,6 +83,15 @@ class Footer extends React.Component {
               href={websiteGithubLink}
             >
               view source on github
+            </Link>
+          </div>
+          <div>
+            <Link
+              variant="caption"
+              color="textSecondary"
+              href={suggestEditLink}
+            >
+              suggest an edit
             </Link>
           </div>
         </div>
