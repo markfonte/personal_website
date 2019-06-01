@@ -12,7 +12,7 @@ import Link from '@material-ui/core/Link';
 import laughableLyricsLogo from '../static/images/laughable_lyrics_logo.png';
 
 class Spartahack5Card extends React.Component {
-  render () {
+  render() {
     const spartahack5Link = `https://spartahackv.devpost.com/`;
     const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
     const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
@@ -27,7 +27,7 @@ class Spartahack5Card extends React.Component {
           />
           <CardMedia
             id="spartahack5-media"
-            image={require ('../static/images/spartahack_logo.png')}
+            image={require('../static/images/spartahack_logo.png')}
             title="SpartaHack V logo"
           />
           <CardContent>

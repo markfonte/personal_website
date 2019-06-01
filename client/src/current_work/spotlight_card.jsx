@@ -13,7 +13,7 @@ import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 
 class SpotlightCard extends React.Component {
-  render () {
+  render() {
     const spotlightLink = `https://www.spotlight-app.com/`;
 
     return (

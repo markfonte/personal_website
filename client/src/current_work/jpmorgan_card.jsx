@@ -10,7 +10,7 @@ import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 
 class JPMorganCard extends React.Component {
-  render () {
+  render() {
     const jpmorganLink = `https://www.jpmorganchase.com/`;
 
     return (
@@ -23,7 +23,7 @@ class JPMorganCard extends React.Component {
           <div id="jpmorgan-media-wrapper">
             <CardMedia
               id="jpmorgan-media"
-              image={require ('../static/images/jpmorgan_logo.jpg')}
+              image={require('../static/images/jpmorgan_logo.jpg')}
               title="J.P. Morgan Chase logo"
             />
           </div>

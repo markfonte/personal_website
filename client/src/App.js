@@ -14,7 +14,7 @@ import './App.css';
 import 'typeface-roboto';
 import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 
-const appTheme = createMuiTheme ({
+const appTheme = createMuiTheme({
   palette: {
     primary: {
       main: '#00274c', // University of Michigan blue
@@ -23,7 +23,7 @@ const appTheme = createMuiTheme ({
 });
 
 class App extends React.Component {
-  render () {
+  render() {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
@@ -39,7 +39,7 @@ class App extends React.Component {
             <Typography variant="h3">Mark Fonte</Typography>
             <nav className="primary-nav">
               <ul>
-                {routes.map ((route, i) => (
+                {routes.map((route, i) => (
                   <li key={i}>
                     <LinkStyle component={Link} to={route.path}>
                       <Button

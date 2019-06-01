@@ -32,7 +32,6 @@ class GimbleCard extends React.Component {
               height="80"
               title="Dancing On My Own - Gimble A Cappella"
               frameBorder="8"
-              allowtransparency="true"
               allow="encrypted-media"
             />
             <iframe
@@ -41,7 +40,6 @@ class GimbleCard extends React.Component {
               height="80"
               title="715 - CR∑∑KS - Gimble A Cappella"
               frameBorder="8"
-              allowtransparency="true"
               allow="encrypted-media"
             />
             <iframe
@@ -50,7 +48,6 @@ class GimbleCard extends React.Component {
               height="201"
               title="XX - Gimble A Cappella"
               frameBorder="8"
-              allowtransparency="true"
               allow="encrypted-media"
             />
             <iframe

@@ -15,7 +15,7 @@ import parentPortalScreenshotTwo
 import badgeScreenshot from '../static/images/laz_badge_screenshot.PNG';
 
 class LAZCard extends React.Component {
-  render () {
+  render() {
     const lazLink = `https://www.learninga-z.com/`;
 
     return (
@@ -28,7 +28,7 @@ class LAZCard extends React.Component {
           <div id="laz-media-wrapper">
             <CardMedia
               id="laz-media"
-              image={require ('../static/images/laz_logo.png')}
+              image={require('../static/images/laz_logo.png')}
               title="Learning A-Z logo"
             />
           </div>

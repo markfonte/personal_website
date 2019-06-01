@@ -12,7 +12,7 @@ import Link from '@material-ui/core/Link';
 import denialDialLogo from '../static/images/denial_dial_logo.png';
 
 class RevolutionUC8Card extends React.Component {
-  render () {
+  render() {
     const revolutionuc8Link = `http://revolutionuc.com/`;
     const denialDialDevpostLink = `https://devpost.com/software/revolution-banking`;
     const denialDialGithubLink = `https://github.com/nathan815/denial-dial`;
@@ -26,7 +26,7 @@ class RevolutionUC8Card extends React.Component {
           <div id="revolutionuc8-media-wrapper">
             <CardMedia
               id="revolutionuc8-media"
-              image={require ('../static/images/revolutionuc_logo.png')}
+              image={require('../static/images/revolutionuc_logo.png')}
               title="RevolutionUC 8 logo"
             />
           </div>
