@@ -12,7 +12,7 @@ import Link from '@material-ui/core/Link';
 import congoaiLogo from '../static/images/congoai_logo.png';
 
 class Grizzhacks3Card extends React.Component {
-  render() {
+  render () {
     const grizzhacks3Link = `http://grizzhacks.com/`;
     const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
@@ -20,12 +20,12 @@ class Grizzhacks3Card extends React.Component {
       <div>
         <Card raised={true} className="card">
           <CardHeader
-            title="Congo AI @ GrizzHacks 3"
-            subheader="Hackathon Winner"
+            title="Congo AI"
+            subheader="Hackathon Winner @ GrizzHacks 3"
           />
           <CardMedia
             id="grizzhacks3-media"
-            image={require('../static/images/grizzhacks_logo.png')}
+            image={require ('../static/images/grizzhacks_logo.png')}
             title="GrizzHacks 3 logo"
           />
           <CardContent>
