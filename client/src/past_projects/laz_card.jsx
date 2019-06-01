@@ -28,9 +28,6 @@ class LAZCard extends React.Component {
           <div id="laz-media-wrapper">
             <CardMedia
               id="laz-media"
-              direction="column"
-              alignItems="center"
-              justify="center"
               image={require ('../static/images/laz_logo.png')}
               title="Learning A-Z logo"
             />
