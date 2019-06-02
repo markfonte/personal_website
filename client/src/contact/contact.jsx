@@ -3,7 +3,7 @@ import './contact.css';
 import {Typography, Button} from '@material-ui/core';
 
 class Contact extends React.Component {
-  render() {
+  render () {
     const emailLink = `mailto:mark@fonte.com`;
     const phoneLink = `tel:406-948-1034`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;
@@ -13,7 +13,7 @@ class Contact extends React.Component {
         <Typography style={{margin: 16}} variant="h6">
           Let&#39;s get in touch!
         </Typography>
-        <Typography style={{margin: 16}} variant="subheading">
+        <Typography style={{margin: 16}} variant="subtitle1">
           I am always open to new opportunities - recommendations, contracting work,
           collaborations, job opportunities, etc. Feel free to reach out!
         </Typography>

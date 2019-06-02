@@ -18,7 +18,7 @@ import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 
 class BuiltWithTable extends React.Component {
-  render() {
+  render () {
     const digitalOceanLink = `https://www.digitalocean.com/`;
     const reactLink = `https://reactjs.org/`;
     const materialUILink = `https://material-ui.com/`;
@@ -86,11 +86,11 @@ class BuiltWithTable extends React.Component {
           <div id="built-with-table-wrapper">
             <Table id="built-with-table">
               <TableBody>
-                {rows.map((row, i) => (
+                {rows.map ((row, i) => (
                   <TableRow key={i}>
                     <TableCell component="th" scope="row" align="left">
                       <Link href={row.link}>
-                        <Typography variant="title">
+                        <Typography variant="h6">
                           {row.title}
                         </Typography>
                       </Link>

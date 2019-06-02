@@ -11,7 +11,7 @@ import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 
 class CurrentBooksCard extends React.Component {
-  render() {
+  render () {
     // const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const currentBooks = [
       {
@@ -39,7 +39,7 @@ class CurrentBooksCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader title="Books I&#39;m Reading" subheader="June 2019" />
           <CardContent>
-            {currentBooks.map((currentBook, i) => (
+            {currentBooks.map ((currentBook, i) => (
               <Card key={i} className="book-cover">
                 <img
                   src={currentBook.image}
@@ -49,11 +49,7 @@ class CurrentBooksCard extends React.Component {
                   alt={currentBook.title}
                 />
                 <br />
-                <Link
-                  href={currentBook.link}
-                  color="textPrimary"
-                  variant="title"
-                >
+                <Link href={currentBook.link} color="textPrimary" variant="h6">
                   {currentBook.title}
                 </Link>
                 <Typography variant="subtitle1">

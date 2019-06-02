@@ -11,7 +11,7 @@ import Moment from 'react-moment';
 
 function DisplayError (props) {
   return (
-    <Typography variant="title" style={{margin: 16}}>
+    <Typography variant="h6" style={{margin: 16}}>
       Oops! Looks like my backend server is down. Please
       {' '}
       <Link href="https://mark.fonte.com/contact">contact me</Link>
