@@ -12,10 +12,12 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardHeader from '@material-ui/core/CardHeader';
 
 class BuiltWithTable extends React.Component {
   render () {
@@ -79,40 +81,40 @@ class BuiltWithTable extends React.Component {
     ];
     return (
       <div>
-        <Typography variant="h5" id="built-with-title">
-          Built With:
-        </Typography>
-        <Paper id="built-with-table-root">
-          <div id="built-with-table-wrapper">
-            <Table id="built-with-table">
-              <TableBody>
-                {rows.map ((row, i) => (
-                  <TableRow key={i}>
-                    <TableCell component="th" scope="row" align="left">
-                      <Link href={row.link}>
-                        <Typography variant="h6">
-                          {row.title}
+        <Card raised={true} className="card">
+          <CardHeader title="Built With:" />
+          <CardContent>
+            <div id="built-with-table-wrapper">
+              <Table id="built-with-table">
+                <TableBody>
+                  {rows.map ((row, i) => (
+                    <TableRow key={i}>
+                      <TableCell component="th" scope="row" align="left">
+                        <Link href={row.link}>
+                          <Typography variant="h6">
+                            {row.title}
+                          </Typography>
+                        </Link>
+                      </TableCell>
+                      <TableCell align="center">
+                        <img
+                          src={row.logo}
+                          className="logo-default"
+                          alt="express"
+                        />
+                      </TableCell>
+                      <TableCell align="right">
+                        <Typography variant="subtitle2">
+                          {row.subtitle}
                         </Typography>
-                      </Link>
-                    </TableCell>
-                    <TableCell align="center">
-                      <img
-                        src={row.logo}
-                        className="logo-default"
-                        alt="express"
-                      />
-                    </TableCell>
-                    <TableCell align="right">
-                      <Typography variant="subtitle2">
-                        {row.subtitle}
-                      </Typography>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </Paper>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     );
   }
