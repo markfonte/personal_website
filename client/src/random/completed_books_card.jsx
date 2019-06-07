@@ -10,7 +10,7 @@ import Link from '@material-ui/core/Link';
 
 class CompletedBooksCard extends React.Component {
   render () {
-    // const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
+    const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const completedBooks = [
       {
         image: thePhoenixProject,
@@ -54,13 +54,13 @@ class CompletedBooksCard extends React.Component {
               </Card>
             ))}
             <br />
-            {/* <Link
+            <Link
               href={jacobFedrigonWebsiteLink}
               variant="caption"
               color="textSecondary"
             >
               credit: jacob fedrigon&#34;s website
-            </Link> */}
+            </Link>
           </CardContent>
         </Card>
       </div>
