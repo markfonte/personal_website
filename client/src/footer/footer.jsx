@@ -29,7 +29,10 @@ class Footer extends React.Component {
 
   checkForAPIHeartbeat () {
     fetch (process.env.REACT_APP_API_URL + 'api_heartbeat', {method: 'HEAD'})
-      .then (res => this.setState ({apiResponse: true}))
+      .then (res => {
+        if (res.status === 200) this.setState ({apiResponse: true});
+        else this.setState ({apiResponse: false});
+      })
       .catch (err => {
         this.setState ({apiResponse: false});
         console.log (err);
@@ -38,7 +41,6 @@ class Footer extends React.Component {
 
   componentDidMount () {
     this.checkForAPIHeartbeat ();
-    //moment ().startOf ('day').fromNow ();
     const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
     setInterval (
       function () {
