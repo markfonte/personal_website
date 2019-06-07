@@ -56,7 +56,7 @@ class Footer extends React.Component {
     const websiteGithubLink = `https://github.com/markfonte/personal_website`;
     const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
     const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
-    const updatedDate = '06 02 2019';
+    const updatedDate = '06 07 2019';
 
     return (
       <footer id="footer">
