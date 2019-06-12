@@ -6,7 +6,7 @@ import BuiltWithTable from './built_with_table';
 // import Resume from './resume.jsx';
 
 class Home extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">
@@ -21,9 +21,7 @@ class Home extends React.Component {
           Please browse around and feel free to check out my social media accounts or contact me
           directly!
         </Typography>
-        <div id="instagram-feed-wrapper">
-          <div className="elfsight-app-b21d23fa-3bec-42f0-8828-b41cc63cff02" />
-        </div>
+
         <BuiltWithTable />
       </div>
     );
