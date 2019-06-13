@@ -21,7 +21,6 @@ class Home extends React.Component {
           Please browse around and feel free to check out my social media accounts or contact me
           directly!
         </Typography>
-
         <BuiltWithTable />
       </div>
     );
