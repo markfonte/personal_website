@@ -8,7 +8,7 @@ import BuiltWithTable from './built_with_table';
 class Home extends React.Component {
   render () {
     return (
-      <div>
+      <div id="home-root">
         <Typography style={{margin: 16}} variant="h6">
           Software Engineering Intern at J.P. Morgan ·
           4th year CSE student at the University of Michigan ·
