@@ -66,6 +66,7 @@ class App extends React.Component {
             id="toggle-theme-icon"
             src={this.state.themeIcon}
             onClick={this.toggleTheme}
+            alt="toggle theme icon"
           />
           <Router>
             <img src={profilePicture} className="profile-logo" alt="profile" />
