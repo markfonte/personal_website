@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePicture from './static/images/mark_circle.jpg';
+import profilePicture from './static/images/mark_circle.gif';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import CurrentWork from './current_work/current_work.jsx';
 import PastProjects from './past_projects/past_projects.jsx';
@@ -12,18 +12,30 @@ import Footer from './footer/footer.jsx';
 import {Typography} from '@material-ui/core';
 import './App.css';
 import 'typeface-roboto';
-import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+import {createMuiTheme} from '@material-ui/core/styles';
+import {ThemeProvider} from '@material-ui/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
-const appTheme = createMuiTheme({
+const darkTheme = createMuiTheme ({
   palette: {
-    primary: {
-      main: '#00274c', // University of Michigan blue
+    type: 'dark',
+    secondary: {
+      main: '#ffcb05',
     },
   },
 });
 
+// const lightTheme = createMuiTheme ({
+//   palette: {
+//     type: 'light',
+//     primary: {
+//       main: '#00274c',
+//     },
+//   },
+// });
+
 class App extends React.Component {
-  render() {
+  render () {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
@@ -32,14 +44,15 @@ class App extends React.Component {
       {name: 'Contact', path: '/contact'},
     ];
     return (
-      <MuiThemeProvider theme={appTheme}>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
         <div className="App">
           <Router>
             <img src={profilePicture} className="profile-logo" alt="profile" />
             <Typography variant="h3">Mark Fonte</Typography>
             <nav className="primary-nav">
               <ul>
-                {routes.map((route, i) => (
+                {routes.map ((route, i) => (
                   <li key={i}>
                     <LinkStyle component={Link} to={route.path}>
                       <Button
@@ -64,7 +77,7 @@ class App extends React.Component {
           </Router>
           <Footer />
         </div>
-      </MuiThemeProvider>
+      </ThemeProvider>
     );
   }
 }

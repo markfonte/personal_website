@@ -91,7 +91,7 @@ class BuiltWithTable extends React.Component {
                     <TableRow key={i}>
                       <TableCell component="th" scope="row" align="left">
                         <Link href={row.link}>
-                          <Typography variant="h6">
+                          <Typography variant="h6" color="textPrimary">
                             {row.title}
                           </Typography>
                         </Link>
