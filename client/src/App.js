@@ -15,26 +15,40 @@ import 'typeface-roboto';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import whiteSunIcon from './static/images/sun_icon_white.svg';
+import blackSunIcon from './static/images/sun_icon_black.svg';
 
 const darkTheme = createMuiTheme ({
   palette: {
     type: 'dark',
     secondary: {
-      main: '#ffcb05',
+      main: '#ffcb05', // blue
     },
   },
 });
 
-// const lightTheme = createMuiTheme ({
-//   palette: {
-//     type: 'light',
-//     primary: {
-//       main: '#00274c',
-//     },
-//   },
-// });
+const lightTheme = createMuiTheme ({
+  palette: {
+    type: 'light',
+    primary: {
+      main: '#00274c', // maize
+    },
+  },
+});
 
 class App extends React.Component {
+  constructor (props) {
+    super (props);
+    this.state = {theme: lightTheme, themeIcon: blackSunIcon};
+    this.toggleTheme = this.toggleTheme.bind (this);
+  }
+
+  toggleTheme () {
+    this.state.theme === lightTheme
+      ? this.setState ({theme: darkTheme, themeIcon: whiteSunIcon})
+      : this.setState ({theme: lightTheme, themeIcon: blackSunIcon});
+  }
+
   render () {
     const routes = [
       {name: 'Home', path: '/'},
@@ -44,9 +58,15 @@ class App extends React.Component {
       {name: 'Contact', path: '/contact'},
     ];
     return (
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={this.state.theme}>
         <CssBaseline />
+
         <div className="App">
+          <img
+            id="toggle-theme-icon"
+            src={this.state.themeIcon}
+            onClick={this.toggleTheme}
+          />
           <Router>
             <img src={profilePicture} className="profile-logo" alt="profile" />
             <Typography variant="h3">Mark Fonte</Typography>

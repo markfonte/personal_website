@@ -65,3 +65,9 @@
     margin-top: 32px;
     margin-bottom: 72px;
 }
+
+#toggle-theme-icon {
+    position: absolute;
+    left: 10%;
+    top: 16px;
+}
