@@ -59,11 +59,13 @@
 }
 
 .card {
-    min-width: 360px;
+    min-width: 300px;
     max-width: 800px;
     margin: auto;
     margin-top: 32px;
     margin-bottom: 72px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 #toggle-theme-icon {
