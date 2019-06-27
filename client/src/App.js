@@ -39,7 +39,7 @@ const lightTheme = createMuiTheme ({
 class App extends React.Component {
   constructor (props) {
     super (props);
-    this.state = {theme: lightTheme, themeIcon: blackSunIcon};
+    this.state = {theme: darkTheme, themeIcon: whiteSunIcon};
     this.toggleTheme = this.toggleTheme.bind (this);
   }
 
