@@ -4,11 +4,11 @@ var path = require ('path');
 var cookieParser = require ('cookie-parser');
 var logger = require ('morgan');
 var cors = require ('cors');
-var indexRouter = require ('./routes/index');
-var apiHeartbeatRouter = require ('./routes/api_heartbeat');
-var contactRouter = require ('./routes/contact');
-var commentRouter = require ('./routes/comment');
-var likeRouter = require ('./routes/like');
+var indexRouter = require ('./routes/index.js');
+var apiHeartbeatRouter = require ('./routes/api_heartbeat.js');
+var contactRouter = require ('./routes/contact.js');
+var commentRouter = require ('./routes/comment.js');
+var likeRouter = require ('./routes/like.js');
 var app = express ();
 
 // view engine setup
