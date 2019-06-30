@@ -1,16 +1,21 @@
 .icon-bar {
-    display: inline;
+    display: flex;
+    flex-direction: row;
     list-style: none;
     margin: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Style the icon bar links */
 .icon-bar a {
     text-align: center;
-    padding: 16px;
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
+    height: 64px;
+    width: 48px;
+    padding: 16px;
 }
 
 /* Style the social media icons with color, if you want */

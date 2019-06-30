@@ -1,6 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1600px;
+  padding: 12px;
   margin: auto;
 }
 
@@ -12,23 +16,9 @@
   pointer-events: none;
 }
 
-
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* .index-nav {
-    display: inline-block;
-} */
-
 
 .App ul {
     list-style: none;
@@ -41,9 +31,19 @@
     margin: 4px;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .profile-logo {
     height: 100px;
     width: 100px;
+    align-self: center;
 }
 .primary-nav {
     text-align:center;
@@ -64,8 +64,7 @@
     margin: auto;
     margin-top: 32px;
     margin-bottom: 72px;
-    margin-left: 12px;
-    margin-right: 12px;
+    align-self: center;
 }
 
 #toggle-theme-icon {
