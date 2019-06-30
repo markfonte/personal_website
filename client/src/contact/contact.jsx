@@ -3,7 +3,7 @@ import './contact.css';
 import {Typography, Button} from '@material-ui/core';
 
 class Contact extends React.Component {
-  render () {
+  render() {
     const emailLink = `mailto:mark@fonte.com`;
     const phoneLink = `tel:406-948-1034`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;
