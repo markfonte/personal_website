@@ -5,9 +5,10 @@ import TicTacToeCard from './tic_tac_toe_card.jsx';
 import GimbleCard from './gimble_card.jsx';
 import CurrentBooksCard from './current_books_card.jsx';
 import CompletedBooksCard from './completed_books_card.jsx';
+import RecommendedSitesTable from './recommended_sites.jsx';
 
 class Random extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">
@@ -15,6 +16,7 @@ class Random extends React.Component {
         </Typography>
         <GimbleCard />
         <TicTacToeCard />
+        <RecommendedSitesTable />
         <CurrentBooksCard />
         <CompletedBooksCard />
       </div>
