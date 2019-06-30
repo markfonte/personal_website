@@ -7,6 +7,8 @@ var cors = require ('cors');
 var indexRouter = require ('./routes/index');
 var apiHeartbeatRouter = require ('./routes/api_heartbeat');
 var contactRouter = require ('./routes/contact');
+var commentRouter = require ('./routes/comment');
+var likeRouter = require ('./routes/like');
 var app = express ();
 
 // view engine setup
@@ -22,6 +24,8 @@ app.use (cors ());
 app.use ('/api', indexRouter);
 app.use ('/api/api_heartbeat', apiHeartbeatRouter);
 app.use ('/api/contact', contactRouter);
+app.use ('/api/comment', commentRouter);
+app.use ('/api/like', likeRouter);
 
 // removes 304 error
 app.disable ('etag');

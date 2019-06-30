@@ -1,0 +1,50 @@
+#!/bin/bash
+# initial_db_script
+# A single, centralized sqlite3 database for the entire website.
+# Create and destroy scripts are run with this file. After creating, there should be no reason to reset.
+
+set -Eeuo pipefail
+set -e
+set -x
+
+# command line options
+usage() {
+	echo "Usage: $0 (create|destroy|reset)"
+}
+
+create() {
+    if [[ -f "var/personal_website.sqlite3" ]]; then
+		echo "Error: database already exists"
+		exit 1
+	fi
+	rm -rf var/
+    mkdir var/
+    sqlite3 var/personal_website.sqlite3 < sql/create_personal_website.sql
+}
+
+destroy() {
+	rm -rf var/
+}
+
+if [[ $# -ne 1 ]]; then
+	usage
+	exit 1
+fi
+
+# Parse argument. $1 is the first argument
+# destroy and reset have been commented out as a safety measure.
+case $1 in
+	"create")
+	create
+	;;
+
+	"destroy")
+	destroy
+	;;
+
+	"reset")
+	destroy
+	create
+	;;
+
+esac
