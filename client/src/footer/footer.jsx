@@ -58,7 +58,7 @@ class Footer extends React.Component {
     const websiteGithubLink = `https://github.com/markfonte/personal_website`;
     const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
     const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
-    const updatedDate = '06 30 2019';
+    const updatedDate = '06 30 2019 18';
 
     return (
       <footer id="footer">
@@ -92,7 +92,7 @@ class Footer extends React.Component {
             <Typography variant="caption" color="textSecondary">
               Last updated
               {' '}
-              <Moment parse="MM DD YYYY" fromNow>{updatedDate}</Moment>
+              <Moment parse="MM DD YYYY HH" fromNow>{updatedDate}</Moment>
             </Typography>
           </div>
           <div>
