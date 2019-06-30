@@ -1,9 +1,9 @@
 import React from 'react';
 import './current_books_card.css';
-import digitalMinimalismImage from '../static/images/digital_minimalism.jpg';
-import theDevopsHandbookImage from '../static/images/the_devops_handbook.jpg';
+import digitalMinimalismImage from '../static/images/book_covers/digital_minimalism.jpg';
+import theDevopsHandbookImage from '../static/images/book_covers/the_devops_handbook.jpg';
 import howWouldYouMoveMountFujiImage
-  from '../static/images/how_would_you_move_mount_fuji.jpg';
+  from '../static/images/book_covers/how_would_you_move_mount_fuji.jpg';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';

@@ -50,7 +50,7 @@ class CurrentCourseworkCard extends React.Component {
           <div id="current-coursework-media-wrapper">
             <CardMedia
               id="current-coursework-media"
-              image={require('../static/images/university_of_michigan_logo.png')}
+              image={require('../static/images/logos/university_of_michigan_logo.png')}
               title="University of Michigan banner logo"
             />
           </div>

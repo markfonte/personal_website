@@ -22,7 +22,7 @@ class DoggieDoodlesCard extends React.Component {
           <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
           <CardMedia
             id="doggie-doodles-media"
-            image={require('../static/images/doggie_doodles_logo.jpg')}
+            image={require('../static/images/logos/doggie_doodles_logo.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>

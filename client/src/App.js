@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePicture from './static/images/mark_circle.gif';
+import profilePicture from './static/images/photos/mark_circle.gif';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import CurrentWork from './current_work/current_work.jsx';
 import PastProjects from './past_projects/past_projects.jsx';
@@ -15,8 +15,8 @@ import 'typeface-roboto';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import whiteSunIcon from './static/images/sun_icon_white.svg';
-import blackSunIcon from './static/images/sun_icon_black.svg';
+import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
+import blackSunIcon from './static/images/icons/sun_icon_black.svg';
 
 const darkTheme = createMuiTheme({
   palette: {

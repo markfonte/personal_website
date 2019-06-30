@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
-import laughableLyricsLogo from '../static/images/laughable_lyrics_logo.png';
+import laughableLyricsLogo from '../static/images/logos/laughable_lyrics_logo.png';
 
 class Spartahack5Card extends React.Component {
   render() {
@@ -27,7 +27,7 @@ class Spartahack5Card extends React.Component {
           />
           <CardMedia
             id="spartahack5-media"
-            image={require('../static/images/spartahack_logo.png')}
+            image={require('../static/images/logos/spartahack_logo.png')}
             title="SpartaHack V logo"
           />
           <CardContent>

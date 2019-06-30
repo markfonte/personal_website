@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
-import congoaiLogo from '../static/images/congoai_logo.png';
+import congoaiLogo from '../static/images/logos/congoai_logo.png';
 
 class Grizzhacks3Card extends React.Component {
   render() {
@@ -25,7 +25,7 @@ class Grizzhacks3Card extends React.Component {
           />
           <CardMedia
             id="grizzhacks3-media"
-            image={require('../static/images/grizzhacks_logo.png')}
+            image={require('../static/images/logos/grizzhacks_logo.png')}
             title="GrizzHacks 3 logo"
           />
           <CardContent>

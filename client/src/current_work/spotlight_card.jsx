@@ -1,9 +1,9 @@
 import React from 'react';
 import './spotlight_card.css';
 import spotlightScreenshotOne
-  from '../static/images/spotlight_screenshot_1.PNG';
+  from '../static/images/screenshots/spotlight_screenshot_1.PNG';
 import spotlightScreenshotTwo
-  from '../static/images/spotlight_screenshot_2.PNG';
+  from '../static/images/screenshots/spotlight_screenshot_2.PNG';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';

@@ -1,7 +1,7 @@
 import React from 'react';
 import './completed_books_card.css';
-import theStartUpOfYou from '../static/images/the_start_up_of_you.jpg';
-import thePhoenixProject from '../static/images/the_phoenix_project.jpg';
+import theStartUpOfYou from '../static/images/book_covers/the_start_up_of_you.jpg';
+import thePhoenixProject from '../static/images/book_covers/the_phoenix_project.jpg';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';

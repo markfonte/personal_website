@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
-import denialDialLogo from '../static/images/denial_dial_logo.png';
+import denialDialLogo from '../static/images/logos/denial_dial_logo.png';
 
 class RevolutionUC8Card extends React.Component {
   render() {
@@ -26,7 +26,7 @@ class RevolutionUC8Card extends React.Component {
           <div id="revolutionuc8-media-wrapper">
             <CardMedia
               id="revolutionuc8-media"
-              image={require('../static/images/revolutionuc_logo.png')}
+              image={require('../static/images/logos/revolutionuc_logo.png')}
               title="RevolutionUC 8 logo"
             />
           </div>
