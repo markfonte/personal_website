@@ -54,3 +54,29 @@ INSERT INTO pages
     (pagename)
 VALUES
     ('contact');
+
+
+INSERT INTO likes
+    (pageid, numlikes)
+VALUES
+    (1, 0);
+    
+INSERT INTO likes
+    (pageid, numlikes)
+VALUES
+    (2, 0);
+
+INSERT INTO likes
+    (pageid, numlikes)
+VALUES
+    (3, 0);
+
+INSERT INTO likes
+    (pageid, numlikes)
+VALUES
+    (4, 0);
+
+INSERT INTO likes
+    (pageid, numlikes)
+VALUES
+    (5, 0);
