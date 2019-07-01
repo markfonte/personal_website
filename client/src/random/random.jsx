@@ -6,6 +6,7 @@ import GimbleCard from './gimble_card.jsx';
 import CurrentBooksCard from './current_books_card.jsx';
 import CompletedBooksCard from './completed_books_card.jsx';
 import RecommendedSitesTable from './recommended_sites.jsx';
+//import InteractionCard from '../shared/interaction_card.jsx';
 
 class Random extends React.Component {
   render () {
@@ -19,6 +20,7 @@ class Random extends React.Component {
         <RecommendedSitesTable />
         <CurrentBooksCard />
         <CompletedBooksCard />
+        {/* <InteractionCard /> */}
       </div>
     );
   }
