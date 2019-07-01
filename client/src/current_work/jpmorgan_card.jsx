@@ -1,16 +1,18 @@
 import React from 'react';
 import './jpmorgan_card.css';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
-import {Typography} from '@material-ui/core';
+import {
+  Typography,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+} from '@material-ui/core';
 
 class JPMorganCard extends React.Component {
-  render() {
+  render () {
     const jpmorganLink = `https://www.jpmorganchase.com/`;
 
     return (
@@ -23,7 +25,7 @@ class JPMorganCard extends React.Component {
           <div id="jpmorgan-media-wrapper">
             <CardMedia
               id="jpmorgan-media"
-              image={require('../static/images/logos/jpmorgan_logo.jpg')}
+              image={require ('../static/images/logos/jpmorgan_logo.jpg')}
               title="J.P. Morgan Chase logo"
             />
           </div>

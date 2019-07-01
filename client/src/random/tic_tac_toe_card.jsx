@@ -1,16 +1,18 @@
 import React from 'react';
 import './tic_tac_toe.css';
-import {Typography} from '@material-ui/core';
 import TicTacToeGame from './tic_tac_toe_game.jsx';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
-import DescriptionIcon from '@material-ui/icons/Description';
+import {Description} from '@material-ui/icons/Description';
+import {
+  Typography,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+} from '@material-ui/core';
 
 class TicTacToeCard extends React.Component {
-  render() {
+  render () {
     const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
 
     return (
@@ -25,7 +27,7 @@ class TicTacToeCard extends React.Component {
             aria-label="credit: reactjs tutorial"
             href={reactTutorialLink}
           >
-            <DescriptionIcon />
+            <Description />
           </IconButton>
         </CardActions>
       </Card>

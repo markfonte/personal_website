@@ -1,14 +1,16 @@
 import React from 'react';
 import './recommended_sites.css';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
+import {
+  Typography,
+  Table,
+  TableBody,
+  TableCell,
+  TableRow,
+  Link,
+  Card,
+  CardContent,
+  CardHeader,
+} from '@material-ui/core';
 
 class RecommendedSitesTable extends React.Component {
   render () {

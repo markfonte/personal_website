@@ -8,15 +8,17 @@ import materialUILogo from '../static/images/logos/material_ui_logo.png';
 import travisCILogo from '../static/images/logos/travis_ci_logo.png';
 import nginxLogo from '../static/images/logos/nginx_logo.png';
 import githubLogo from '../static/images/logos/github_logo.png';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
+import {
+  Typography,
+  Table,
+  TableBody,
+  TableCell,
+  TableRow,
+  Link,
+  Card,
+  CardContent,
+  CardHeader,
+} from '@material-ui/core';
 
 class BuiltWithTable extends React.Component {
   render () {

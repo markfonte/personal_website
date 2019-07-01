@@ -1,8 +1,7 @@
 import React from 'react';
 import './tic_tac_toe.css';
-import {Typography} from '@material-ui/core';
-import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
+import {Typography, Button} from '@material-ui/core';
 
 function TicTacToeSquare (props) {
   return (

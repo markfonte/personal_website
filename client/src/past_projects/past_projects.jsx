@@ -1,14 +1,14 @@
 import React from 'react';
 import './past_projects.css';
-import {Typography} from '@material-ui/core';
 import LAZCard from './laz_card.jsx';
 import RevolutionUC8Card from './revolutionuc8_card.jsx';
 import Spartahack5Card from './spartahack5_card.jsx';
 import Grizzhacks3Card from './grizzhacks3_card.jsx';
 import CompletedCourseworkCard from './completed_coursework_card.jsx';
+import {Typography} from '@material-ui/core';
 
 class PastProjects extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">

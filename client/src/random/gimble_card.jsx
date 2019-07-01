@@ -1,16 +1,17 @@
 import React from 'react';
 import './gimble_card.css';
-
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
+import {
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+} from '@material-ui/core';
 
 class GimbleCard extends React.Component {
-  render() {
+  render () {
     const gimbleAcappellaLink = `https://www.gimbleacappella.com/`;
 
     return (
@@ -22,7 +23,7 @@ class GimbleCard extends React.Component {
           />
           <CardMedia
             id="gimble-card-media"
-            image={require('../static/images/photos/gimble_group_pic.jpg')}
+            image={require ('../static/images/photos/gimble_group_pic.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>

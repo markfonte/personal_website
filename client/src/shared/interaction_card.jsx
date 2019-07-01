@@ -1,8 +1,7 @@
 import React from 'react';
 import './interaction_card.css';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
 import CommentBox from './comment_box.jsx';
+import {Card, CardContent} from '@material-ui/core';
 
 class InteractionCard extends React.Component {
   render () {

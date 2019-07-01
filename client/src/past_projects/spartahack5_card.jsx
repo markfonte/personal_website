@@ -1,18 +1,21 @@
 import React from 'react';
 import './spartahack5_card.css';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
+import laughableLyricsLogo
+  from '../static/images/logos/laughable_lyrics_logo.png';
 import WebIcon from '@material-ui/icons/Web';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
-import laughableLyricsLogo from '../static/images/logos/laughable_lyrics_logo.png';
+import {
+  Typography,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+  Link,
+} from '@material-ui/core';
 
 class Spartahack5Card extends React.Component {
-  render() {
+  render () {
     const spartahack5Link = `https://spartahackv.devpost.com/`;
     const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
     const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
@@ -27,7 +30,7 @@ class Spartahack5Card extends React.Component {
           />
           <CardMedia
             id="spartahack5-media"
-            image={require('../static/images/logos/spartahack_logo.png')}
+            image={require ('../static/images/logos/spartahack_logo.png')}
             title="SpartaHack V logo"
           />
           <CardContent>

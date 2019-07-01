@@ -1,21 +1,24 @@
 import React from 'react';
 import './laz_card.css';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
-import WebIcon from '@material-ui/icons/Web';
-import {Typography} from '@material-ui/core';
 import parentPortalScreenshotOne
   from '../static/images/screenshots/laz_parent_portal_screenshot_1.jpg';
 import parentPortalScreenshotTwo
   from '../static/images/screenshots/laz_parent_portal_screenshot_2.jpg';
-import badgeScreenshot from '../static/images/screenshots/laz_badge_screenshot.PNG';
+import badgeScreenshot
+  from '../static/images/screenshots/laz_badge_screenshot.PNG';
+import WebIcon from '@material-ui/icons/Web';
+import {
+  Typography,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+} from '@material-ui/core';
 
 class LAZCard extends React.Component {
-  render() {
+  render () {
     const lazLink = `https://www.learninga-z.com/`;
 
     return (
@@ -28,7 +31,7 @@ class LAZCard extends React.Component {
           <div id="laz-media-wrapper">
             <CardMedia
               id="laz-media"
-              image={require('../static/images/logos/laz_logo.png')}
+              image={require ('../static/images/logos/laz_logo.png')}
               title="Learning A-Z logo"
             />
           </div>

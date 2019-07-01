@@ -1,17 +1,19 @@
 import React from 'react';
 import './current_coursework_card.css';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+import {
+  Typography,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+  Link,
+} from '@material-ui/core';
 
 class CurrentCourseworkCard extends React.Component {
-  render() {
+  render () {
     const universityOfMichiganLink = `https://umich.edu/`;
     const courses = [
       {
@@ -50,13 +52,13 @@ class CurrentCourseworkCard extends React.Component {
           <div id="current-coursework-media-wrapper">
             <CardMedia
               id="current-coursework-media"
-              image={require('../static/images/logos/university_of_michigan_logo.png')}
+              image={require ('../static/images/logos/university_of_michigan_logo.png')}
               title="University of Michigan banner logo"
             />
           </div>
           <CardContent>
             <Typography variant="subtitle1">
-              {courses.map((course, i) => (
+              {courses.map ((course, i) => (
                 <Typography key={i}>
                   <Link
                     variant="subtitle1"

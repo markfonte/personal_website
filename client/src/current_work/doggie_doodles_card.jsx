@@ -1,17 +1,19 @@
 import React from 'react';
 import './doggie_doodles_card.css';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
 import WebIcon from '@material-ui/icons/Web';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+import {
+  Typography,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+  Link,
+} from '@material-ui/core';
 
 class DoggieDoodlesCard extends React.Component {
-  render() {
+  render () {
     const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
     const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
     const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
@@ -22,7 +24,7 @@ class DoggieDoodlesCard extends React.Component {
           <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
           <CardMedia
             id="doggie-doodles-media"
-            image={require('../static/images/logos/doggie_doodles_logo.jpg')}
+            image={require ('../static/images/logos/doggie_doodles_logo.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>

@@ -1,24 +1,22 @@
 import React from 'react';
+import 'typeface-roboto';
+import './App.css';
 import profilePicture from './static/images/photos/mark_circle.gif';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
+import blackSunIcon from './static/images/icons/sun_icon_black.svg';
 import CurrentWork from './current_work/current_work.jsx';
 import PastProjects from './past_projects/past_projects.jsx';
 import Random from './random/random.jsx';
 import Contact from './contact/contact.jsx';
 import Home from './home/home.jsx';
-import Button from '@material-ui/core/Button';
-import LinkStyle from '@material-ui/core/Link';
 import Footer from './footer/footer.jsx';
-import {Typography} from '@material-ui/core';
-import './App.css';
-import 'typeface-roboto';
+import LinkStyle from '@material-ui/core/Link';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
-import blackSunIcon from './static/images/icons/sun_icon_black.svg';
+import {Typography, Button, CssBaseline} from '@material-ui/core';
 
-const darkTheme = createMuiTheme({
+const darkTheme = createMuiTheme ({
   palette: {
     type: 'dark',
     secondary: {
@@ -27,7 +25,7 @@ const darkTheme = createMuiTheme({
   },
 });
 
-const lightTheme = createMuiTheme({
+const lightTheme = createMuiTheme ({
   palette: {
     type: 'light',
     primary: {
@@ -37,19 +35,19 @@ const lightTheme = createMuiTheme({
 });
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
     this.state = {theme: darkTheme, themeIcon: whiteSunIcon};
-    this.toggleTheme = this.toggleTheme.bind(this);
+    this.toggleTheme = this.toggleTheme.bind (this);
   }
 
-  toggleTheme() {
+  toggleTheme () {
     this.state.theme === lightTheme
-      ? this.setState({theme: darkTheme, themeIcon: whiteSunIcon})
-      : this.setState({theme: lightTheme, themeIcon: blackSunIcon});
+      ? this.setState ({theme: darkTheme, themeIcon: whiteSunIcon})
+      : this.setState ({theme: lightTheme, themeIcon: blackSunIcon});
   }
 
-  render() {
+  render () {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
@@ -73,7 +71,7 @@ class App extends React.Component {
             <Typography variant="h3">Mark Fonte</Typography>
             <nav className="primary-nav">
               <ul>
-                {routes.map((route, i) => (
+                {routes.map ((route, i) => (
                   <li key={i}>
                     <LinkStyle component={Link} to={route.path}>
                       <Button

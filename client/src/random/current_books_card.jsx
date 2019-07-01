@@ -1,17 +1,21 @@
 import React from 'react';
 import './current_books_card.css';
-import digitalMinimalismImage from '../static/images/book_covers/digital_minimalism.jpg';
-import theDevopsHandbookImage from '../static/images/book_covers/the_devops_handbook.jpg';
+import digitalMinimalismImage
+  from '../static/images/book_covers/digital_minimalism.jpg';
+import theDevopsHandbookImage
+  from '../static/images/book_covers/the_devops_handbook.jpg';
 import howWouldYouMoveMountFujiImage
   from '../static/images/book_covers/how_would_you_move_mount_fuji.jpg';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+import {
+  Typography,
+  Card,
+  CardContent,
+  CardHeader,
+  Link,
+} from '@material-ui/core';
 
 class CurrentBooksCard extends React.Component {
-  render() {
+  render () {
     const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const currentBooks = [
       {
@@ -39,7 +43,7 @@ class CurrentBooksCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader title="Books I&#39;m Reading" subheader="June 2019" />
           <CardContent>
-            {currentBooks.map((currentBook, i) => (
+            {currentBooks.map ((currentBook, i) => (
               <Card key={i} className="book-cover">
                 <img
                   src={currentBook.image}

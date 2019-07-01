@@ -1,18 +1,20 @@
 import React from 'react';
 import './revolutionuc8_card.css';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import IconButton from '@material-ui/core/IconButton';
-import WebIcon from '@material-ui/icons/Web';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
 import denialDialLogo from '../static/images/logos/denial_dial_logo.png';
+import WebIcon from '@material-ui/icons/Web';
+import {
+  Typography,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+  Link,
+} from '@material-ui/core';
 
 class RevolutionUC8Card extends React.Component {
-  render() {
+  render () {
     const revolutionuc8Link = `http://revolutionuc.com/`;
     const denialDialDevpostLink = `https://devpost.com/software/revolution-banking`;
     const denialDialGithubLink = `https://github.com/nathan815/denial-dial`;
@@ -26,7 +28,7 @@ class RevolutionUC8Card extends React.Component {
           <div id="revolutionuc8-media-wrapper">
             <CardMedia
               id="revolutionuc8-media"
-              image={require('../static/images/logos/revolutionuc_logo.png')}
+              image={require ('../static/images/logos/revolutionuc_logo.png')}
               title="RevolutionUC 8 logo"
             />
           </div>

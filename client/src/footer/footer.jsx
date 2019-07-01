@@ -1,12 +1,11 @@
 import React from 'react';
-import reactLogo from '../static/vectors/react_logo.svg';
 import '../App.css';
 import './footer.css';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+import reactLogo from '../static/vectors/react_logo.svg';
 import universityOfMichiganLogoSmall
   from '../static/vectors/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
+import {Typography, Link} from '@material-ui/core';
 
 function DisplayError (props) {
   return (

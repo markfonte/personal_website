@@ -1,15 +1,19 @@
 import React from 'react';
 import './completed_books_card.css';
-import theStartUpOfYou from '../static/images/book_covers/the_start_up_of_you.jpg';
-import thePhoenixProject from '../static/images/book_covers/the_phoenix_project.jpg';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import {Typography} from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+import theStartUpOfYou
+  from '../static/images/book_covers/the_start_up_of_you.jpg';
+import thePhoenixProject
+  from '../static/images/book_covers/the_phoenix_project.jpg';
+import {
+  Typography,
+  Card,
+  CardContent,
+  CardHeader,
+  Link,
+} from '@material-ui/core';
 
 class CompletedBooksCard extends React.Component {
-  render() {
+  render () {
     const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const completedBooks = [
       {
@@ -31,7 +35,7 @@ class CompletedBooksCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader title="Books I Would Recommend" subheader="June 2019" />
           <CardContent>
-            {completedBooks.map((completedBook, i) => (
+            {completedBooks.map ((completedBook, i) => (
               <Card key={i} className="book-cover">
                 <img
                   src={completedBook.image}
