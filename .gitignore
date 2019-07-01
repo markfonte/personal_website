@@ -339,3 +339,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea/
+
+# for sqlite file. Needs to be created on prod
+var/
