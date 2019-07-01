@@ -1,7 +1,7 @@
 import React from 'react';
 import './tic_tac_toe.css';
 import TicTacToeGame from './tic_tac_toe_game.jsx';
-import {Description} from '@material-ui/icons/Description';
+import {Description} from '@material-ui/icons';
 import {
   Typography,
   Card,
