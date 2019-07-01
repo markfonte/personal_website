@@ -2,6 +2,7 @@ var createError = require ('http-errors');
 var express = require ('express');
 var path = require ('path');
 var cookieParser = require ('cookie-parser');
+var bodyParser = require ('body-parser');
 var logger = require ('morgan');
 var cors = require ('cors');
 var indexRouter = require ('./routes/index.js');
@@ -26,6 +27,8 @@ app.use ('/api/api_heartbeat', apiHeartbeatRouter);
 app.use ('/api/contact', contactRouter);
 app.use ('/api/comment', commentRouter);
 app.use ('/api/like', likeRouter);
+app.use (bodyParser.json ());
+app.use (bodyParser.urlencoded ({extended: true}));
 
 // removes 304 error
 app.disable ('etag');

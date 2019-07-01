@@ -2,29 +2,28 @@
 
 CREATE TABLE pages
 (
-    pageid INTEGER PRIMARY KEY,
-    pagename VARCHAR(30) NOT NULL
+    pagename VARCHAR(30) PRIMARY KEY
 );
 
 -- One row per page, updated every time it is liked. Unique users are "enforced" by using cookies
 CREATE TABLE likes
 (
     likeid INTEGER PRIMARY KEY,
-    pageid INTEGER NOT NULL,
+    pagename VARCHAR(30) NOT NULL,
     numlikes INTEGER NOT NULL,
     updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY(pageid) REFERENCES pages(pageid) ON DELETE CASCADE
+    FOREIGN KEY(pagename) REFERENCES pages(pagename) ON DELETE CASCADE
 );
 
 -- One row per comment
 CREATE TABLE comments
 (
     commentid INTEGER PRIMARY KEY,
-    pageid INTEGER NOT NULL,
+    pagename VARCHAR(30) NOT NULL,
     owner VARCHAR(50) NOT NULL,
     text VARCHAR(1024) NOT NULL,
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY(pageid) REFERENCES pages(pageid) ON DELETE CASCADE
+    FOREIGN KEY(pagename) REFERENCES pages(pagename) ON DELETE CASCADE
 );
 
 
@@ -57,26 +56,26 @@ VALUES
 
 
 INSERT INTO likes
-    (pageid, numlikes)
+    (pagename, numlikes)
 VALUES
-    (1, 0);
-    
-INSERT INTO likes
-    (pageid, numlikes)
-VALUES
-    (2, 0);
+    ('home', 0);
 
 INSERT INTO likes
-    (pageid, numlikes)
+    (pagename, numlikes)
 VALUES
-    (3, 0);
+    ('current_work', 0);
 
 INSERT INTO likes
-    (pageid, numlikes)
+    (pagename, numlikes)
 VALUES
-    (4, 0);
+    ('past_projects', 0);
 
 INSERT INTO likes
-    (pageid, numlikes)
+    (pagename, numlikes)
 VALUES
-    (5, 0);
+    ('random', 0);
+
+INSERT INTO likes
+    (pagename, numlikes)
+VALUES
+    ('contact', 0);
