@@ -14,7 +14,6 @@ router.post ('/', function (req, res) {
   const message = req.body.message;
 
   let sql = `INSERT INTO comments(pagename, owner, text) VALUES (?, ?, ?)`;
-  // TODO: Sanitize input
 
   db.run (sql, [page, owner, message], function (err) {
     if (err) {
@@ -28,7 +27,6 @@ router.get ('/', function (req, res) {
   const page = req.body.page;
 
   let sql = `SELECT * FROM comments WHERE pagename = ?`;
-  // TODO: Sanitize input
 
   db.all (sql, [page], (err, rows) => {
     if (err) {
