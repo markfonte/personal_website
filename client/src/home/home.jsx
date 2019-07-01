@@ -1,13 +1,13 @@
 import React from 'react';
 import './home.css';
-import {Typography} from '@material-ui/core';
+import {Typography, CardContent, Card} from '@material-ui/core';
 import BuiltWithTable from './built_with_table';
 // import Resume from './resume.jsx';
 
 class Home extends React.Component {
   render () {
     return (
-      <div id="home-root">
+      <div>
         <Typography style={{margin: 16}} variant="h6">
           Software Engineering Intern at J.P. Morgan ·
           4th year CSE student at the University of Michigan ·
@@ -20,9 +20,11 @@ class Home extends React.Component {
           Please browse around and feel free to check out my social media accounts or contact me
           directly!
         </Typography>
-        <div id="instagram-feed-wrapper">
-          <div className="elfsight-app-b21d23fa-3bec-42f0-8828-b41cc63cff02" />
-        </div>
+        <Card className="card">
+          <CardContent>
+            <div className="elfsight-app-b21d23fa-3bec-42f0-8828-b41cc63cff02" />
+          </CardContent>
+        </Card>
         <BuiltWithTable />
       </div>
     );
