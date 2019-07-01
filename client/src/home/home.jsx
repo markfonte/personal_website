@@ -1,7 +1,8 @@
 import React from 'react';
 import './home.css';
-import {Typography, CardContent, Card} from '@material-ui/core';
-import BuiltWithTable from './built_with_table';
+import {Typography} from '@material-ui/core';
+import BuiltWithTable from './built_with_table.jsx';
+import InstagramFeedCard from './instagram_feed_card.jsx';
 // import Resume from './resume.jsx';
 
 class Home extends React.Component {
@@ -20,11 +21,7 @@ class Home extends React.Component {
           Please browse around and feel free to check out my social media accounts or contact me
           directly!
         </Typography>
-        <Card className="card">
-          <CardContent>
-            <div className="elfsight-app-b21d23fa-3bec-42f0-8828-b41cc63cff02" />
-          </CardContent>
-        </Card>
+        <InstagramFeedCard />
         <BuiltWithTable />
       </div>
     );
