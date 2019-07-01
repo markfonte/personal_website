@@ -2,7 +2,6 @@ import React from 'react';
 import reactLogo from '../static/vectors/react_logo.svg';
 import '../App.css';
 import './footer.css';
-import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 import universityOfMichiganLogoSmall

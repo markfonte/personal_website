@@ -12,7 +12,6 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
-import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 import Card from '@material-ui/core/Card';
@@ -20,7 +19,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 
 class BuiltWithTable extends React.Component {
-  render() {
+  render () {
     const digitalOceanLink = `https://www.digitalocean.com/`;
     const reactLink = `https://reactjs.org/`;
     const materialUILink = `https://material-ui.com/`;
@@ -87,7 +86,7 @@ class BuiltWithTable extends React.Component {
             <div id="built-with-table-wrapper">
               <Table id="built-with-table">
                 <TableBody>
-                  {rows.map((row, i) => (
+                  {rows.map ((row, i) => (
                     <TableRow key={i}>
                       <TableCell component="th" scope="row" align="left">
                         <Link href={row.link}>

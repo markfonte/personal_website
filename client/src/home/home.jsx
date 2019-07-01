@@ -1,12 +1,11 @@
 import React from 'react';
 import './home.css';
-import 'typeface-roboto';
 import {Typography} from '@material-ui/core';
 import BuiltWithTable from './built_with_table';
 // import Resume from './resume.jsx';
 
 class Home extends React.Component {
-  render() {
+  render () {
     return (
       <div id="home-root">
         <Typography style={{margin: 16}} variant="h6">
