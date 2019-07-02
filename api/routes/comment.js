@@ -20,6 +20,7 @@ router.post ('/', function (req, res) {
       return console.log (err.message);
     }
     console.log (`A row has been inserted with rowid ${this.lastID}`);
+    res.send ('success');
   });
 });
 
