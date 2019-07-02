@@ -20,7 +20,7 @@ class Random extends React.Component {
         <RecommendedSitesTable />
         <CurrentBooksCard />
         <CompletedBooksCard />
-        {/* <InteractionCard /> */}
+        {/* <InteractionCard pagename="random" /> */}
       </div>
     );
   }

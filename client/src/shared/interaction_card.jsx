@@ -1,15 +1,18 @@
 import React from 'react';
 import './interaction_card.css';
-import CommentBox from './comment_box.jsx';
+import PropTypes from 'prop-types';
+//import CommentBox from './comment_box.jsx';
 import {Card, CardContent} from '@material-ui/core';
+import LikeButton from './like_button.jsx';
 
-class InteractionCard extends React.Component {
+export default class InteractionCard extends React.Component {
   render () {
     return (
       <div>
         <Card raised={true} className="card">
           <CardContent>
-            <CommentBox />
+            {/* <CommentBox pagename={this.props.pagename} /> */}
+            <LikeButton pagename={this.props.pagename} />
           </CardContent>
         </Card>
       </div>
@@ -17,4 +20,6 @@ class InteractionCard extends React.Component {
   }
 }
 
-export default InteractionCard;
+InteractionCard.propTypes = {
+  pagename: PropTypes.string.isRequired,
+};

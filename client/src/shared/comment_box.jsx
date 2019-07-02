@@ -1,7 +1,8 @@
 import React from 'react';
 import './comment_box.css';
+import PropTypes from 'prop-types';
 
-class CommentBox extends React.Component {
+export default class CommentBox extends React.Component {
   render () {
     return (
       <div>
@@ -11,4 +12,6 @@ class CommentBox extends React.Component {
   }
 }
 
-export default CommentBox;
+CommentBox.propTypes = {
+  pagename: PropTypes.string.isRequired,
+};
