@@ -1,0 +1,11 @@
+#like-button-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#like-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
