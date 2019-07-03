@@ -15,6 +15,29 @@ export default class LikeButton extends React.Component {
     this.toggleLike = this.toggleLike.bind (this);
   }
 
+  /**
+   * The fetch API doesn't allow GET requests to have bodies. This is a really
+   * annoying requirement, and in protest I have just chosen to use a POST request
+   * with a body to do the exact same thing a GET request would do.
+   */
+  componentDidMount () {
+    const url = process.env.REACT_APP_API_URL + 'like/get';
+    const requestText = {page: this.props.pagename};
+    fetch (url, {
+      method: 'post',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify (requestText),
+    })
+      .then (response => response.json ())
+      .then (data => {
+        this.setState ({numLikes: data[0]['numlikes']});
+      })
+      .catch (error => console.log (error)); // eslint-disable-line no-console
+  }
+
   toggleLike () {
     this.state.liked === true
       ? this.setState ({liked: false})

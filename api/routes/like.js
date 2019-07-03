@@ -24,7 +24,7 @@ router.post ('/', function (req, res) {
   });
 });
 
-router.get ('/', function (req, res) {
+router.post ('/get', function (req, res) {
   const page = req.body.page;
 
   let sql = `SELECT numlikes FROM likes WHERE pagename = ?`;
