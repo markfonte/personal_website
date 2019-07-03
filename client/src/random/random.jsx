@@ -9,7 +9,7 @@ import {Typography} from '@material-ui/core';
 import InteractionCard from '../shared/interaction_card.jsx';
 
 class Random extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">

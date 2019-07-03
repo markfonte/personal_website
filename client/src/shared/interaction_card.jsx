@@ -1,15 +1,15 @@
 import React from 'react';
 import './interaction_card.css';
 import PropTypes from 'prop-types';
-//import CommentBox from './comment_box.jsx';
+// import CommentBox from './comment_box.jsx';
 import {Card, CardContent} from '@material-ui/core';
 import LikeButton from './like_button.jsx';
 
 export default class InteractionCard extends React.Component {
-  render () {
+  render() {
     return (
-      <div>
-        <Card raised={true} className="card">
+      <div id="interaction-card-wrapper">
+        <Card raised={true}>
           <CardContent>
             {/* <CommentBox pagename={this.props.pagename} /> */}
             <LikeButton pagename={this.props.pagename} />

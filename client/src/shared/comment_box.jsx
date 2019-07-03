@@ -3,7 +3,7 @@ import './comment_box.css';
 import PropTypes from 'prop-types';
 
 export default class CommentBox extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         Commentbox

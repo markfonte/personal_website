@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 
 class GimbleCard extends React.Component {
-  render () {
+  render() {
     const gimbleAcappellaLink = `https://www.gimbleacappella.com/`;
 
     return (
@@ -23,7 +23,7 @@ class GimbleCard extends React.Component {
           />
           <CardMedia
             id="gimble-card-media"
-            image={require ('../static/images/photos/gimble_group_pic.jpg')}
+            image={require('../static/images/photos/gimble_group_pic.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>

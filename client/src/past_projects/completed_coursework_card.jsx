@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 
 class CompletedCourseworkCard extends React.Component {
-  render () {
+  render() {
     const universityOfMichiganLink = `https://umich.edu/`;
     const courses = [
       {
@@ -102,13 +102,13 @@ class CompletedCourseworkCard extends React.Component {
           <div id="completed-coursework-media-wrapper">
             <CardMedia
               id="completed-coursework-media"
-              image={require ('../static/images/logos/university_of_michigan_logo.png')}
+              image={require('../static/images/logos/university_of_michigan_logo.png')}
               title="University of Michigan banner logo"
             />
           </div>
           <CardContent>
             <Typography variant="subtitle1">
-              {courses.map ((course, i) => (
+              {courses.map((course, i) => (
                 <Typography key={i}>
                   <Link
                     variant="subtitle1"

@@ -5,6 +5,7 @@ import SpotlightCard from './spotlight_card.jsx';
 import DoggieDoodlesCard from './doggie_doodles_card.jsx';
 import JPMorganCard from './jpmorgan_card.jsx';
 import CurrentCourseworkCard from './current_coursework_card.jsx';
+import InteractionCard from '../shared/interaction_card';
 
 class CurrentWork extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class CurrentWork extends React.Component {
         <CurrentCourseworkCard />
         <SpotlightCard />
         <DoggieDoodlesCard />
+        <InteractionCard pagename="current_work" />
       </div>
     );
   }

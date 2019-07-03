@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 
 class TicTacToeCard extends React.Component {
-  render () {
+  render() {
     const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
 
     return (

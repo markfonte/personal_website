@@ -3,7 +3,7 @@ import './tic_tac_toe.css';
 import PropTypes from 'prop-types';
 import {Typography, Button} from '@material-ui/core';
 
-function TicTacToeSquare (props) {
+function TicTacToeSquare(props) {
   return (
     <Button variant="outlined" className="square" onClick={props.onClick}>
       <Typography variant="h5">
@@ -23,32 +23,32 @@ class TicTacToeBoard extends React.Component {
     squares: PropTypes.array,
     onClick: PropTypes.func,
   };
-  renderSquare (i) {
+  renderSquare(i) {
     return (
       <TicTacToeSquare
         value={this.props.squares[i]}
-        onClick={() => this.props.onClick (i)}
+        onClick={() => this.props.onClick(i)}
       />
     );
   }
 
-  render () {
+  render() {
     return (
       <div>
         <div className="board-row">
-          {this.renderSquare (0)}
-          {this.renderSquare (1)}
-          {this.renderSquare (2)}
+          {this.renderSquare(0)}
+          {this.renderSquare(1)}
+          {this.renderSquare(2)}
         </div>
         <div className="board-row">
-          {this.renderSquare (3)}
-          {this.renderSquare (4)}
-          {this.renderSquare (5)}
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
+          {this.renderSquare(5)}
         </div>
         <div className="board-row">
-          {this.renderSquare (6)}
-          {this.renderSquare (7)}
-          {this.renderSquare (8)}
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}
+          {this.renderSquare(8)}
         </div>
       </div>
     );

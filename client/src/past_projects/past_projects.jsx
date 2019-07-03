@@ -6,9 +6,10 @@ import Spartahack5Card from './spartahack5_card.jsx';
 import Grizzhacks3Card from './grizzhacks3_card.jsx';
 import CompletedCourseworkCard from './completed_coursework_card.jsx';
 import {Typography} from '@material-ui/core';
+import InteractionCard from '../shared/interaction_card';
 
 class PastProjects extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">
@@ -19,6 +20,7 @@ class PastProjects extends React.Component {
         <Spartahack5Card />
         <RevolutionUC8Card />
         <Grizzhacks3Card />
+        <InteractionCard pagename="past_projects" />
       </div>
     );
   }

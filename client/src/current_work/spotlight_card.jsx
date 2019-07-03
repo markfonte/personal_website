@@ -15,7 +15,7 @@ import {
 } from '@material-ui/core';
 
 class SpotlightCard extends React.Component {
-  render () {
+  render() {
     const spotlightLink = `https://www.spotlight-app.com/`;
 
     return (

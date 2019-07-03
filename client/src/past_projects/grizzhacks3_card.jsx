@@ -14,7 +14,7 @@ import {
 import congoaiLogo from '../static/images/logos/congoai_logo.png';
 
 class Grizzhacks3Card extends React.Component {
-  render () {
+  render() {
     const grizzhacks3Link = `http://grizzhacks.com/`;
     const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
@@ -27,7 +27,7 @@ class Grizzhacks3Card extends React.Component {
           />
           <CardMedia
             id="grizzhacks3-media"
-            image={require ('../static/images/logos/grizzhacks_logo.png')}
+            image={require('../static/images/logos/grizzhacks_logo.png')}
             title="GrizzHacks 3 logo"
           />
           <CardContent>

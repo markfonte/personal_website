@@ -3,7 +3,7 @@ import './instagram_feed_card.css';
 import {CardContent, Card} from '@material-ui/core';
 
 class InstagramFeedCard extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Card className="card">

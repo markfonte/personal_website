@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core';
 
 class JPMorganCard extends React.Component {
-  render () {
+  render() {
     const jpmorganLink = `https://www.jpmorganchase.com/`;
 
     return (
@@ -25,7 +25,7 @@ class JPMorganCard extends React.Component {
           <div id="jpmorgan-media-wrapper">
             <CardMedia
               id="jpmorgan-media"
-              image={require ('../static/images/logos/jpmorgan_logo.jpg')}
+              image={require('../static/images/logos/jpmorgan_logo.jpg')}
               title="J.P. Morgan Chase logo"
             />
           </div>

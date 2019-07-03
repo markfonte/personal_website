@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 
 class RecommendedSitesTable extends React.Component {
-  render () {
+  render() {
     const jacobFedrigonLink = `http://www-personal.umich.edu/~jacobfed/`;
     const johnFonteLink = `http://johnfonte.com/`;
     const nathanJohnsonLink = `http://www-personal.umich.edu/~jacobfed/`;
@@ -48,7 +48,7 @@ class RecommendedSitesTable extends React.Component {
             <div id="recommended-sites-wrapper">
               <Table>
                 <TableBody>
-                  {rows.map ((row, i) => (
+                  {rows.map((row, i) => (
                     <TableRow key={i}>
                       <TableCell component="th" scope="row" align="center">
                         <Link href={row.link}>

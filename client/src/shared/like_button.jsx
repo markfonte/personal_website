@@ -6,13 +6,56 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import {Typography, Card} from '@material-ui/core';
 
 export default class LikeButton extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       liked: false,
       numLikes: 0,
     };
-    this.toggleLike = this.toggleLike.bind (this);
+    this.toggleLike = this.toggleLike.bind(this);
+    this.setCookie = this.setCookie.bind(this);
+    this.getCookie = this.getCookie.bind(this);
+    this.fetchNumLikes = this.fetchNumLikes.bind(this);
+  }
+
+  setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    const expires = 'expires=' + d.toUTCString();
+    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+  }
+
+  getCookie(cname) {
+    const name = cname + '=';
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return '';
+  }
+
+  fetchNumLikes() {
+    const url = process.env.REACT_APP_API_URL + 'like/get';
+    const requestText = {page: this.props.pagename};
+    fetch(url, {
+      method: 'post',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestText),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+          this.setState({numLikes: data[0]['numlikes']});
+        })
+        .catch((error) => console.log(error)); // eslint-disable-line no-console
   }
 
   /**
@@ -20,57 +63,66 @@ export default class LikeButton extends React.Component {
    * annoying requirement, and in protest I have just chosen to use a POST request
    * with a body to do the exact same thing a GET request would do.
    */
-  componentDidMount () {
-    const url = process.env.REACT_APP_API_URL + 'like/get';
-    const requestText = {page: this.props.pagename};
-    fetch (url, {
-      method: 'post',
-      credentials: 'same-origin',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify (requestText),
-    })
-      .then (response => response.json ())
-      .then (data => {
-        this.setState ({numLikes: data[0]['numlikes']});
+  componentDidMount() {
+    if (this.getCookie(this.props.pagename) === 'liked') {
+      this.setState({liked: true});
+    }
+    this.fetchNumLikes();
+  }
+
+  toggleLike() {
+    if (this.state.liked === false) {
+      const url = process.env.REACT_APP_API_URL + 'like';
+      const requestText = {page: this.props.pagename};
+      fetch(url, {
+        method: 'post',
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestText),
       })
-      .catch (error => console.log (error)); // eslint-disable-line no-console
+          .then(() => {
+            this.fetchNumLikes();
+          })
+          .catch((error) => console.log(error));
+      this.setCookie(this.props.pagename, 'liked', 1000);
+      this.setState({liked: true});
+    }
   }
 
-  toggleLike () {
-    this.state.liked === true
-      ? this.setState ({liked: false})
-      : this.setState ({liked: true});
-  }
-
-  render () {
+  render() {
     const isLiked = this.state.liked;
     let icon;
+    let displayedColor;
     if (isLiked) {
+      displayedColor = 'secondary';
+      icon = <FavoriteIcon color={displayedColor} fontSize="large" />;
+    } else {
+      displayedColor = 'default';
       icon = (
-        <FavoriteIcon
-          color="secondary"
+        <FavoriteBorderIcon
+          color={displayedColor}
           fontSize="large"
           onClick={this.toggleLike}
         />
       );
-    } else {
-      icon = <FavoriteBorderIcon fontSize="large" onClick={this.toggleLike} />;
     }
     return (
       <div id="like-button-root">
         <div id="like-button-wrapper">
           {icon}
           <Card style={{margin: 8}}>
-            <Typography size="small" color="secondary" style={{margin: 16}}>
-              {this.state.numLikes}
+            <Typography
+              variant="caption"
+              size="small"
+              color={displayedColor}
+              style={{margin: 16}}
+            >
+              {this.state.numLikes} likes
             </Typography>
           </Card>
         </div>
-        <Typography variant="caption">
-          likes and comments coming soon..
-        </Typography>
       </div>
     );
   }
