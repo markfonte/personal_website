@@ -57,8 +57,8 @@ class App extends React.Component {
       setCookie ('app_theme', 'dark_theme', 1000);
     }
     this.state = {
-      theme: theme,
-      themeIcon: themeIcon,
+      theme: {theme},
+      themeIcon: {themeIcon},
       displayHeader: {displayHeader},
     };
     this.toggleTheme = this.toggleTheme.bind (this);
