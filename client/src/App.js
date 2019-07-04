@@ -16,6 +16,7 @@ import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import {Typography, Button, CssBaseline} from '@material-ui/core';
 const getCookie = require ('./shared/util/cookies.js').getCookie;
+const setCookie = require ('./shared/util/cookies.js').setCookie;
 
 const darkTheme = createMuiTheme ({
   palette: {
@@ -42,18 +43,35 @@ class App extends React.Component {
     if (getCookie ('pride') === 'true') {
       displayHeader = true;
     }
+    let theme;
+    let themeIcon;
+    if (getCookie ('app_theme') === 'light_theme') {
+      theme = lightTheme;
+      themeIcon = blackSunIcon;
+    } else if (getCookie ('app_theme') === 'dark_theme') {
+      theme = darkTheme;
+      themeIcon = whiteSunIcon;
+    } else {
+      theme = darkTheme; //default
+      theme = whiteSunIcon;
+      setCookie ('app_theme', 'dark_theme', 1000);
+    }
     this.state = {
-      theme: darkTheme,
-      themeIcon: whiteSunIcon,
+      theme: theme,
+      themeIcon: themeIcon,
       displayHeader: {displayHeader},
     };
     this.toggleTheme = this.toggleTheme.bind (this);
   }
 
   toggleTheme () {
-    this.state.theme === lightTheme
-      ? this.setState ({theme: darkTheme, themeIcon: whiteSunIcon})
-      : this.setState ({theme: lightTheme, themeIcon: blackSunIcon});
+    if (this.state.theme === lightTheme) {
+      this.setState ({theme: darkTheme, themeIcon: whiteSunIcon});
+      setCookie ('app_theme', 'dark_theme', 1000);
+    } else {
+      this.setState ({theme: lightTheme, themeIcon: blackSunIcon});
+      setCookie ('app_theme', 'light_theme', 1000);
+    }
   }
 
   render () {
