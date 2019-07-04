@@ -84,7 +84,16 @@
     display: block;
     height: 112px;
     width: 100%;
-    background: linear-gradient(to bottom,#e2453c 0,#e2453c 16%,#e07e39 16%,#e07e39 32%,#e5d667 32%,#e5d667 48%,#51b95b 48%,#51b95b 66%,#1e72b7 66%,#1e72b7 86%,#6f5ba7 86%) no-repeat
+    background: linear-gradient(to bottom,#e2453c90 0,#e2453c90 16%,#e07e3990 16%,#e07e3990 32%,#e5d66790 32%,#e5d66790 48%,#51b95b90 48%,#51b95b90 66%,#1e72b790 66%,#1e72b790 86%,#6f5ba790 86%) no-repeat;
+}
+
+.footer-root {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to bottom,#e2453c90 0,#e2453c90 16%,#e07e3990 16%,#e07e3990 32%,#e5d66790 32%,#e5d66790 48%,#51b95b90 48%,#51b95b90 66%,#1e72b790 66%,#1e72b790 86%,#6f5ba790 86%) no-repeat;
 }
 
 #main-title {

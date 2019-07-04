@@ -91,6 +91,9 @@ class App extends React.Component {
     const rainbowHeader = this.state.displayHeader === true
       ? <header className="header" />
       : <div />;
+    const rainbowFooter = this.state.displayHeader === true
+      ? <footer className="footer-root" />
+      : <div />;
     return (
       <ThemeProvider theme={this.state.theme}>
         <CssBaseline />
@@ -133,6 +136,7 @@ class App extends React.Component {
           </Router>
           <Footer />
         </div>
+        {rainbowFooter}
       </ThemeProvider>
     );
   }
