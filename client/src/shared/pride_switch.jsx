@@ -1,10 +1,10 @@
 import React from 'react';
-import './diversity_button.css';
+import './pride_switch.css';
 import {Card, Typography, Switch, Link} from '@material-ui/core';
-const getCookie = require('../shared/util/cookies.js').getCookie;
-const setCookie = require('../shared/util/cookies.js').setCookie;
+const getCookie = require('./util/cookies.js').getCookie;
+const setCookie = require('./util/cookies.js').setCookie;
 
-export default class DiversityButton extends React.Component {
+export default class PrideSwitch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,7 +46,7 @@ export default class DiversityButton extends React.Component {
     const proud = this.state.proud;
     return (
       <Card className="flat-card">
-        <div id="diversity-button-content">
+        <div id="pride-switch-content">
           <Typography id="pride-title" variant="h5">
             Pride
           </Typography>
