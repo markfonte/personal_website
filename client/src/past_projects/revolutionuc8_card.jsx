@@ -14,7 +14,7 @@ import {
 } from '@material-ui/core';
 
 class RevolutionUC8Card extends React.Component {
-  render() {
+  render () {
     const revolutionuc8Link = `http://revolutionuc.com/`;
     const denialDialDevpostLink = `https://devpost.com/software/revolution-banking`;
     const denialDialGithubLink = `https://github.com/nathan815/denial-dial`;
@@ -28,7 +28,7 @@ class RevolutionUC8Card extends React.Component {
           <div id="revolutionuc8-media-wrapper">
             <CardMedia
               id="revolutionuc8-media"
-              image={require('../static/images/logos/revolutionuc_logo.png')}
+              image={require ('../static/images/logos/revolutionuc_logo.png')}
               title="RevolutionUC 8 logo"
             />
           </div>
@@ -43,9 +43,13 @@ class RevolutionUC8Card extends React.Component {
               played if anyone called the number. We did not win anything with the project, but
               was still fun experimenting with some new technologies! View it on
               {' '}
-              <Link href={denialDialDevpostLink}>
+              <Link color="secondary" href={denialDialDevpostLink}>
                 Devpost
-              </Link> or <Link href={denialDialGithubLink}>Github</Link>
+              </Link>
+              {' '}
+              or
+              {' '}
+              <Link color="secondary" href={denialDialGithubLink}>Github</Link>
             </Typography>
             <img
               src={denialDialLogo}

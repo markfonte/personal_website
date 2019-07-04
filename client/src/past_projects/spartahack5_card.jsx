@@ -15,7 +15,7 @@ import {
 } from '@material-ui/core';
 
 class Spartahack5Card extends React.Component {
-  render() {
+  render () {
     const spartahack5Link = `https://spartahackv.devpost.com/`;
     const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
     const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
@@ -30,7 +30,7 @@ class Spartahack5Card extends React.Component {
           />
           <CardMedia
             id="spartahack5-media"
-            image={require('../static/images/logos/spartahack_logo.png')}
+            image={require ('../static/images/logos/spartahack_logo.png')}
             title="SpartaHack V logo"
           />
           <CardContent>
@@ -44,7 +44,9 @@ class Spartahack5Card extends React.Component {
               {' '}
               <i>&#34;Google Translate Sings&#34;</i>
               {' '}
-              <Link href={googleTranslateSingsLink}>Youtube videos</Link>
+              <Link color="secondary" href={googleTranslateSingsLink}>
+                Youtube videos
+              </Link>
               {' '}
               and decided we could automate that process. Using Google Translate APIs we built an
               Android application that allowed users to translate the Genius Lyrics through a specified
@@ -53,9 +55,15 @@ class Spartahack5Card extends React.Component {
               We won <i>Most Creative/Funniest Hack</i> for the project.
               View it on
               {' '}
-              <Link href={laughableLyricsDevpostLink}>
+              <Link color="secondary" href={laughableLyricsDevpostLink}>
                 Devpost
-              </Link> or <Link href={laughableLyricsGithubLink}>Github</Link>
+              </Link>
+              {' '}
+              or
+              {' '}
+              <Link color="secondary" href={laughableLyricsGithubLink}>
+                Github
+              </Link>
               <br />
               <img
                 src={laughableLyricsLogo}

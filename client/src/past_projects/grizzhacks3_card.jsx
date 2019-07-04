@@ -14,7 +14,7 @@ import {
 import congoaiLogo from '../static/images/logos/congoai_logo.png';
 
 class Grizzhacks3Card extends React.Component {
-  render() {
+  render () {
     const grizzhacks3Link = `http://grizzhacks.com/`;
     const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
@@ -27,7 +27,7 @@ class Grizzhacks3Card extends React.Component {
           />
           <CardMedia
             id="grizzhacks3-media"
-            image={require('../static/images/logos/grizzhacks_logo.png')}
+            image={require ('../static/images/logos/grizzhacks_logo.png')}
             title="GrizzHacks 3 logo"
           />
           <CardContent>
@@ -40,9 +40,16 @@ class Grizzhacks3Card extends React.Component {
               We won <i>Best DevOps Hack, Presented by Ally Financial</i> and <i
               >
                 Best use of Dynatrace
-              </i>. View it on <Link href={grizzhacks3DevpostLink}>
+              </i>. View it on <Link
+                color="secondary"
+                href={grizzhacks3DevpostLink}
+              >
                 Devpost
-              </Link> or <Link href={grizzhacks3GithubLink}>Github</Link>
+              </Link>
+              {' '}
+              or
+              {' '}
+              <Link color="secondary" href={grizzhacks3GithubLink}>Github</Link>
             </Typography>
             <br />
             <img

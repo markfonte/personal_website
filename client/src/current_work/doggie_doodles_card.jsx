@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 
 class DoggieDoodlesCard extends React.Component {
-  render() {
+  render () {
     const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
     const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
     const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
@@ -24,20 +24,22 @@ class DoggieDoodlesCard extends React.Component {
           <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
           <CardMedia
             id="doggie-doodles-media"
-            image={require('../static/images/logos/doggie_doodles_logo.jpg')}
+            image={require ('../static/images/logos/doggie_doodles_logo.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>
             <Typography variant="body1">
               Started from a class project, this business sells custom merchandise using a
-              digital drawing of your animal. <Link
-                href={doggieDoodlesEmailLink}
-              >
+              digital drawing of your animal.
+              {' '}
+              <Link color="secondary" href={doggieDoodlesEmailLink}>
                 Send us a picture of your dog or cat{' '}
               </Link> and we will turn it into a custom
               drawing. Then head over to
               {' '}
-              <Link href={doggieDoodlesRedbubbleLink}>Redbubble</Link>
+              <Link color="secondary" href={doggieDoodlesRedbubbleLink}>
+                Redbubble
+              </Link>
               {' '}
               and you can purchase a
               custom mug, laptop sticker, phone case, and more. I might not be writing software
@@ -46,6 +48,7 @@ class DoggieDoodlesCard extends React.Component {
           </CardContent>
           <CardActions>
             <IconButton
+              color="secondary"
               aria-label="Go to website"
               href={doggieDoodlesWebsiteLink}
             >
