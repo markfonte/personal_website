@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 
 class CompletedBooksCard extends React.Component {
-  render() {
+  render () {
     const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const completedBooks = [
       {
@@ -33,9 +33,9 @@ class CompletedBooksCard extends React.Component {
     return (
       <div>
         <Card raised={true} className="card">
-          <CardHeader title="Books I Would Recommend" subheader="June 2019" />
+          <CardHeader title="Books I Would Recommend" subheader="July 2019" />
           <CardContent>
-            {completedBooks.map((completedBook, i) => (
+            {completedBooks.map ((completedBook, i) => (
               <Card key={i} className="book-cover">
                 <img
                   src={completedBook.image}
