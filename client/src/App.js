@@ -39,29 +39,35 @@ const lightTheme = createMuiTheme ({
 class App extends React.Component {
   constructor (props) {
     super (props);
+    this.state = {
+      theme: darkTheme,
+      themeIcon: whiteSunIcon,
+      displayHeader: false,
+    };
+    this.toggleTheme = this.toggleTheme.bind (this);
+  }
+
+  componentDidMount () {
     let displayHeader = false;
     if (getCookie ('pride') === 'true') {
       displayHeader = true;
     }
-    let theme;
-    let themeIcon;
+    let initialTheme = darkTheme;
+    let initialThemeIcon = whiteSunIcon;
     if (getCookie ('app_theme') === 'light_theme') {
-      theme = lightTheme;
-      themeIcon = blackSunIcon;
+      initialTheme = lightTheme;
+      initialThemeIcon = blackSunIcon;
     } else if (getCookie ('app_theme') === 'dark_theme') {
-      theme = darkTheme;
-      themeIcon = whiteSunIcon;
+      initialTheme = darkTheme;
+      initialThemeIcon = whiteSunIcon;
     } else {
-      theme = darkTheme; //default
-      themeIcon = whiteSunIcon;
       setCookie ('app_theme', 'dark_theme', 1000);
     }
-    this.state = {
-      theme: {theme},
-      themeIcon: {themeIcon},
-      displayHeader: {displayHeader},
-    };
-    this.toggleTheme = this.toggleTheme.bind (this);
+    this.setState ({
+      theme: initialTheme,
+      themeIcon: initialThemeIcon,
+      displayHeader: displayHeader,
+    });
   }
 
   toggleTheme () {
