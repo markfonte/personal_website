@@ -42,15 +42,15 @@ class App extends React.Component {
     this.state = {
       theme: darkTheme,
       themeIcon: whiteSunIcon,
-      displayHeader: false,
+      proud: false,
     };
     this.toggleTheme = this.toggleTheme.bind(this);
   }
 
   componentDidMount() {
-    let displayHeader = false;
+    let proud = false;
     if (getCookie('pride') === 'true') {
-      displayHeader = true;
+      proud = true;
     }
     let initialTheme = darkTheme;
     let initialThemeIcon = whiteSunIcon;
@@ -66,7 +66,7 @@ class App extends React.Component {
     this.setState({
       theme: initialTheme,
       themeIcon: initialThemeIcon,
-      displayHeader: displayHeader,
+      proud: proud,
     });
   }
 
@@ -88,10 +88,10 @@ class App extends React.Component {
       {name: 'Random', path: '/random'},
       {name: 'Contact', path: '/contact'},
     ];
-    const rainbowHeader = this.state.displayHeader === true
+    const rainbowHeader = this.state.proud === true
       ? <header className="header" />
       : <div />;
-    const rainbowFooter = this.state.displayHeader === true
+    const rainbowFooter = this.state.proud === true
       ? <footer className="footer-root" />
       : <div />;
     return (

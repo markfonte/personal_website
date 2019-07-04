@@ -14,25 +14,20 @@ export default class DiversityButton extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.state.proud);
     if (getCookie('pride') === 'true') {
       this.setState({
         proud: true,
       });
-      console.log(20);
     } else if (getCookie('pride') === 'false') {
       this.setState({
         proud: false,
       });
-      console.log(23);
     } else {
       this.setState({
         proud: false,
       });
-      console.log(25);
       setCookie('pride', 'false', 1000);
     }
-    console.log(this.state.proud);
   }
 
   handleChange() {
@@ -53,12 +48,12 @@ export default class DiversityButton extends React.Component {
       <Card className="flat-card">
         <div id="diversity-button-content">
           <Typography id="pride-title" variant="h5">
-        Pride
+            Pride
           </Typography>
           <Switch checked={proud} onClick={this.handleChange} id="pride-switch" color="secondary"/>
         </div>
         <Typography variant="body1">
-    I deeply care about diversity and inclusivity. Show your pride or your solidarity.
+            I deeply care about diversity and inclusivity. Show your pride or your solidarity.
         </Typography>
         <br />
         <Link
@@ -66,7 +61,7 @@ export default class DiversityButton extends React.Component {
           variant="caption"
           color="textSecondary"
         >
-        credit: Travis CI
+            credit: Travis CI
         </Link>
       </Card>
     );
