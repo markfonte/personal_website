@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 
 class DoggieDoodlesCard extends React.Component {
-  render () {
+  render() {
     const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
     const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
     const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
@@ -24,7 +24,7 @@ class DoggieDoodlesCard extends React.Component {
           <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
           <CardMedia
             id="doggie-doodles-media"
-            image={require ('../static/images/logos/doggie_doodles_logo.jpg')}
+            image={require('../static/images/logos/doggie_doodles_logo.jpg')}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>

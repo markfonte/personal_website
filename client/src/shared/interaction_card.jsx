@@ -7,7 +7,7 @@ import LikeButton from './like_button.jsx';
 import DiversityButton from './diversity_button.jsx';
 
 export default class InteractionCard extends React.Component {
-  render () {
+  render() {
     const diversityButton = this.props.pagename === 'rando'
       ? <DiversityButton />
       : <div />;

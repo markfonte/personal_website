@@ -4,72 +4,72 @@ import PropTypes from 'prop-types';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import {Typography, Card} from '@material-ui/core';
-const setCookie = require ('../shared/util/cookies.js').setCookie;
-const getCookie = require ('../shared/util/cookies.js').getCookie;
+const setCookie = require('../shared/util/cookies.js').setCookie;
+const getCookie = require('../shared/util/cookies.js').getCookie;
 
 export default class LikeButton extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       liked: false,
       numLikes: 0,
     };
-    this.toggleLike = this.toggleLike.bind (this);
-    this.fetchNumLikes = this.fetchNumLikes.bind (this);
+    this.toggleLike = this.toggleLike.bind(this);
+    this.fetchNumLikes = this.fetchNumLikes.bind(this);
   }
 
-  fetchNumLikes () {
+  fetchNumLikes() {
     const url = process.env.REACT_APP_API_URL + 'like/get';
     const requestText = {page: this.props.pagename};
-    fetch (url, {
+    fetch(url, {
       method: 'post',
       credentials: 'same-origin',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify (requestText),
+      body: JSON.stringify(requestText),
     })
-      .then (response => response.json ())
-      .then (data => {
-        this.setState ({numLikes: data[0]['numlikes']});
-      })
-      .catch (error => console.log (error)); // eslint-disable-line no-console
+        .then((response) => response.json())
+        .then((data) => {
+          this.setState({numLikes: data[0]['numlikes']});
+        })
+        .catch((error) => console.log(error)); // eslint-disable-line no-console
   }
 
   /**
-   * The fetch API doesn't allow GET requests to have bodies. This is a really
-   * annoying requirement, and in protest I have just chosen to use a POST request
-   * with a body to do the exact same thing a GET request would do.
-   */
-  componentDidMount () {
-    if (getCookie (this.props.pagename) === 'liked') {
-      this.setState ({liked: true});
+             * The fetch API doesn't allow GET requests to have bodies. This is a really
+             * annoying requirement, and in protest I have just chosen to use a POST request
+             * with a body to do the exact same thing a GET request would do.
+             */
+  componentDidMount() {
+    if (getCookie(this.props.pagename) === 'liked') {
+      this.setState({liked: true});
     }
-    this.fetchNumLikes ();
+    this.fetchNumLikes();
   }
 
-  toggleLike () {
+  toggleLike() {
     if (this.state.liked === false) {
       const url = process.env.REACT_APP_API_URL + 'like';
       const requestText = {page: this.props.pagename};
-      fetch (url, {
+      fetch(url, {
         method: 'post',
         credentials: 'same-origin',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify (requestText),
+        body: JSON.stringify(requestText),
       })
-        .then (() => {
-          this.fetchNumLikes ();
-        })
-        .catch (error => console.log (error));
-      setCookie (this.props.pagename, 'liked', 1000);
-      this.setState ({liked: true});
+          .then(() => {
+            this.fetchNumLikes();
+          })
+          .catch((error) => console.log(error));
+      setCookie(this.props.pagename, 'liked', 1000);
+      this.setState({liked: true});
     }
   }
 
-  render () {
+  render() {
     const isLiked = this.state.liked;
     let icon;
     let displayedColor;

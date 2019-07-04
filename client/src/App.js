@@ -15,10 +15,10 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import {Typography, Button, CssBaseline} from '@material-ui/core';
-const getCookie = require ('./shared/util/cookies.js').getCookie;
-const setCookie = require ('./shared/util/cookies.js').setCookie;
+const getCookie = require('./shared/util/cookies.js').getCookie;
+const setCookie = require('./shared/util/cookies.js').setCookie;
 
-const darkTheme = createMuiTheme ({
+const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
     secondary: {
@@ -27,7 +27,7 @@ const darkTheme = createMuiTheme ({
   },
 });
 
-const lightTheme = createMuiTheme ({
+const lightTheme = createMuiTheme({
   palette: {
     type: 'light',
     primary: {
@@ -37,50 +37,50 @@ const lightTheme = createMuiTheme ({
 });
 
 class App extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       theme: darkTheme,
       themeIcon: whiteSunIcon,
       displayHeader: false,
     };
-    this.toggleTheme = this.toggleTheme.bind (this);
+    this.toggleTheme = this.toggleTheme.bind(this);
   }
 
-  componentDidMount () {
+  componentDidMount() {
     let displayHeader = false;
-    if (getCookie ('pride') === 'true') {
+    if (getCookie('pride') === 'true') {
       displayHeader = true;
     }
     let initialTheme = darkTheme;
     let initialThemeIcon = whiteSunIcon;
-    if (getCookie ('app_theme') === 'light_theme') {
+    if (getCookie('app_theme') === 'light_theme') {
       initialTheme = lightTheme;
       initialThemeIcon = blackSunIcon;
-    } else if (getCookie ('app_theme') === 'dark_theme') {
+    } else if (getCookie('app_theme') === 'dark_theme') {
       initialTheme = darkTheme;
       initialThemeIcon = whiteSunIcon;
     } else {
-      setCookie ('app_theme', 'dark_theme', 1000);
+      setCookie('app_theme', 'dark_theme', 1000);
     }
-    this.setState ({
+    this.setState({
       theme: initialTheme,
       themeIcon: initialThemeIcon,
       displayHeader: displayHeader,
     });
   }
 
-  toggleTheme () {
+  toggleTheme() {
     if (this.state.theme === lightTheme) {
-      this.setState ({theme: darkTheme, themeIcon: whiteSunIcon});
-      setCookie ('app_theme', 'dark_theme', 1000);
+      this.setState({theme: darkTheme, themeIcon: whiteSunIcon});
+      setCookie('app_theme', 'dark_theme', 1000);
     } else {
-      this.setState ({theme: lightTheme, themeIcon: blackSunIcon});
-      setCookie ('app_theme', 'light_theme', 1000);
+      this.setState({theme: lightTheme, themeIcon: blackSunIcon});
+      setCookie('app_theme', 'light_theme', 1000);
     }
   }
 
-  render () {
+  render() {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
@@ -108,7 +108,7 @@ class App extends React.Component {
             <Typography id="main-title" variant="h3">Mark Fonte</Typography>
             <nav className="primary-nav">
               <ul>
-                {routes.map ((route, i) => (
+                {routes.map((route, i) => (
                   <li key={i}>
                     <LinkStyle component={Link} to={route.path}>
                       <Button

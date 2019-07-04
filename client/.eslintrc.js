@@ -23,6 +23,7 @@ module.exports = {
     'max-len': ['error', {code: 120}],
     // don't require jsdoc for every single function of every single component
     'require-jsdoc': 0,
+    "linebreak-style": 0,
   },
   settings: {
     react: {

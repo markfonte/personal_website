@@ -80,7 +80,7 @@ class TicTacToeGame extends React.Component {
         </div>
         <div className="game-info">
           <div>
-            <Typography variant="subtitle1" color="primary">
+            <Typography variant="subtitle1" color="secondary">
               {' '}{status}
             </Typography>
           </div>
