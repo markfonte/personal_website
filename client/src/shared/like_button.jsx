@@ -77,7 +77,7 @@ export default class LikeButton extends React.Component {
       displayedColor = 'secondary';
       icon = <FavoriteIcon color={displayedColor} fontSize="large" />;
     } else {
-      displayedColor = 'default';
+      displayedColor = 'inherit';
       icon = (
         <FavoriteBorderIcon
           color={displayedColor}
