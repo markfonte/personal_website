@@ -53,7 +53,7 @@ class App extends React.Component {
       themeIcon = whiteSunIcon;
     } else {
       theme = darkTheme; //default
-      theme = whiteSunIcon;
+      themeIcon = whiteSunIcon;
       setCookie ('app_theme', 'dark_theme', 1000);
     }
     this.state = {
