@@ -26,11 +26,11 @@ class GimbleCard extends React.Component {
             image={require('../static/images/photos/gimble_group_pic.jpg')}
             title="Gimble A Cappella - 2019"
           />
-          <CardContent>
+          <CardContent id="gimble-card-content">
             <iframe
               src="https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K"
               width="320"
-              height="80"
+              height="235"
               title="Dancing On My Own - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
@@ -38,7 +38,7 @@ class GimbleCard extends React.Component {
             <iframe
               src="https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl"
               width="320"
-              height="80"
+              height="235"
               title="715 - CR∑∑KS - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
@@ -46,14 +46,14 @@ class GimbleCard extends React.Component {
             <iframe
               src="https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR"
               width="320"
-              height="201"
+              height="235"
               title="XX - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
             />
             <iframe
               width="320"
-              height="201"
+              height="235"
               src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
               title="Fallingwater - Gimble A Cappella"
               frameBorder="8"
