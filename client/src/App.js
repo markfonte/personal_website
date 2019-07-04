@@ -15,6 +15,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import {Typography, Button, CssBaseline} from '@material-ui/core';
+const getCookie = require ('./shared/util/cookies.js').getCookie;
 
 const darkTheme = createMuiTheme ({
   palette: {
@@ -37,10 +38,14 @@ const lightTheme = createMuiTheme ({
 class App extends React.Component {
   constructor (props) {
     super (props);
+    let displayHeader = false;
+    if (getCookie ('pride') === 'true') {
+      displayHeader = true;
+    }
     this.state = {
       theme: darkTheme,
       themeIcon: whiteSunIcon,
-      displayHeader: false,
+      displayHeader: {displayHeader},
     };
     this.toggleTheme = this.toggleTheme.bind (this);
   }
