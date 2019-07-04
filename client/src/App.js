@@ -16,7 +16,7 @@ import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import {Typography, Button, CssBaseline} from '@material-ui/core';
 
-const darkTheme = createMuiTheme({
+const darkTheme = createMuiTheme ({
   palette: {
     type: 'dark',
     secondary: {
@@ -25,7 +25,7 @@ const darkTheme = createMuiTheme({
   },
 });
 
-const lightTheme = createMuiTheme({
+const lightTheme = createMuiTheme ({
   palette: {
     type: 'light',
     primary: {
@@ -35,19 +35,23 @@ const lightTheme = createMuiTheme({
 });
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {theme: darkTheme, themeIcon: whiteSunIcon};
-    this.toggleTheme = this.toggleTheme.bind(this);
+  constructor (props) {
+    super (props);
+    this.state = {
+      theme: darkTheme,
+      themeIcon: whiteSunIcon,
+      displayHeader: false,
+    };
+    this.toggleTheme = this.toggleTheme.bind (this);
   }
 
-  toggleTheme() {
+  toggleTheme () {
     this.state.theme === lightTheme
-      ? this.setState({theme: darkTheme, themeIcon: whiteSunIcon})
-      : this.setState({theme: lightTheme, themeIcon: blackSunIcon});
+      ? this.setState ({theme: darkTheme, themeIcon: whiteSunIcon})
+      : this.setState ({theme: lightTheme, themeIcon: blackSunIcon});
   }
 
-  render() {
+  render () {
     const routes = [
       {name: 'Home', path: '/'},
       {name: 'Current Work', path: '/current_work'},
@@ -55,11 +59,15 @@ class App extends React.Component {
       {name: 'Random', path: '/random'},
       {name: 'Contact', path: '/contact'},
     ];
+    const rainbowHeader = this.state.displayHeader === true
+      ? <header className="header" />
+      : <div />;
     return (
       <ThemeProvider theme={this.state.theme}>
         <CssBaseline />
 
         <div className="App">
+          {rainbowHeader}
           <img
             id="toggle-theme-icon"
             src={this.state.themeIcon}
@@ -68,10 +76,10 @@ class App extends React.Component {
           />
           <Router>
             <img src={profilePicture} className="profile-logo" alt="profile" />
-            <Typography variant="h3">Mark Fonte</Typography>
+            <Typography id="main-title" variant="h3">Mark Fonte</Typography>
             <nav className="primary-nav">
               <ul>
-                {routes.map((route, i) => (
+                {routes.map ((route, i) => (
                   <li key={i}>
                     <LinkStyle component={Link} to={route.path}>
                       <Button
