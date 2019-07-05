@@ -25,17 +25,23 @@ function DisplayError(props) {
 class Footer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {apiResponse: false};
+    this.state = {apiResponse: false, serverCrashed: false};
   }
 
   checkForAPIHeartbeat() {
     fetch(process.env.REACT_APP_API_URL + 'api_heartbeat', {method: 'HEAD'})
         .then((res) => {
-          if (res.status === 200) this.setState({apiResponse: true});
-          else this.setState({apiResponse: false});
+          if (res.status === 200) {
+            let triggerReload = false;
+            if (this.state.serverCrashed === true) {
+              triggerReload = true; // back online! reload the page
+            }
+            this.setState({apiResponse: true, serverCrashed: false});
+            if (triggerReload === true) window.location.reload();
+          } else this.setState({apiResponse: false, serverCrashed: true});
         })
         .catch((err) => {
-          this.setState({apiResponse: false});
+          this.setState({apiResponse: false, serverCrashed: true});
           console.log(err);
         });
   }
