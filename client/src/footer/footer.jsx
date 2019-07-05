@@ -6,6 +6,7 @@ import universityOfMichiganLogoSmall
   from '../static/vectors/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
 import {Typography, Link} from '@material-ui/core';
+const file = require('../commit_timestamp.txt');
 
 function DisplayError(props) {
   return (
@@ -59,6 +60,7 @@ class Footer extends React.Component {
     const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
     const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
     const updatedDate = '07 04 2019 19';
+    this.readTextFile(file);
 
     return (
       <footer id="footer">
