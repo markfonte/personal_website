@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # git pre-commit script to auto update the 'updated at' timestamp on every commit
-# 
+#  
 
 date 'const timestamp = +%D %H %M %S; export default timestamp;' > client/src/commit_timestamp.txt
 git add client/src/commit_timestamp.txt
