@@ -93,7 +93,7 @@ class Footer extends React.Component {
             <Typography variant="caption" color="textSecondary">
               Last updated
               {' '}
-              <Moment parse="MM/DD/YYYY HH" fromNow>{updatedDate}</Moment>
+              <Moment parse="MM/DD/YYYY HH mm SS" fromNow>{updatedDate}</Moment>
             </Typography>
           </div>
           <div>
