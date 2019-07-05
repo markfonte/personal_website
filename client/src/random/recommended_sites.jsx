@@ -16,7 +16,7 @@ class RecommendedSitesTable extends React.Component {
   render() {
     const jacobFedrigonLink = `http://www-personal.umich.edu/~jacobfed/`;
     const johnFonteLink = `http://johnfonte.com/`;
-    const nathanJohnsonLink = `http://www-personal.umich.edu/~jacobfed/`;
+    const nathanJohnsonLink = `https://nathanieljohnson.me/`;
     const seanBarberLink = `https://seanbarber.me/`;
 
     const rows = [
