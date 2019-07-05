@@ -6,7 +6,7 @@ import universityOfMichiganLogoSmall
   from '../static/vectors/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
 import {Typography, Link} from '@material-ui/core';
-const file = require('../commit_timestamp.txt');
+import timestamp from '../commit_timestamp.js';
 
 function DisplayError(props) {
   return (
@@ -59,8 +59,7 @@ class Footer extends React.Component {
     const websiteGithubLink = `https://github.com/markfonte/personal_website`;
     const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
     const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
-    const updatedDate = '07 04 2019 19';
-    this.readTextFile(file);
+    const updatedDate = timestamp;
 
     return (
       <footer id="footer">
@@ -94,7 +93,7 @@ class Footer extends React.Component {
             <Typography variant="caption" color="textSecondary">
               Last updated
               {' '}
-              <Moment parse="MM DD YYYY HH" fromNow>{updatedDate}</Moment>
+              <Moment parse="MM/DD/YYYY HH" fromNow>{updatedDate}</Moment>
             </Typography>
           </div>
           <div>
