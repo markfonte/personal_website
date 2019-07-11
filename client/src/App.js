@@ -1,7 +1,7 @@
 import React from 'react';
 import 'typeface-roboto';
 import './App.css';
-import profilePicture from './static/images/photos/mark_circle.gif';
+import profilePicture from './static/images/photos/mark_circle.png';
 import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
 import blackSunIcon from './static/images/icons/sun_icon_black.svg';
 import CurrentWork from './current_work/current_work.jsx';
