@@ -2,12 +2,14 @@ import React from 'react';
 import './built_with_table.css';
 import reactLogo from '../static/vectors/react_logo.svg';
 import digitalOceanLogo from '../static/images/logos/digital_ocean_logo.png';
-import expressLogo from '../static/images/logos/express_logo.png';
+import expressLogo from '../static/images/logos/express_logo.svg';
 import nodeLogo from '../static/images/logos/nodejs_logo.png';
-import materialUILogo from '../static/images/logos/material_ui_logo.png';
+import materialUILogo from '../static/images/logos/material_ui_logo.svg';
 import travisCILogo from '../static/images/logos/travis_ci_logo.png';
 import nginxLogo from '../static/images/logos/nginx_logo.png';
 import githubLogo from '../static/images/logos/github_logo.png';
+import trelloLogo from '../static/images/logos/trello_logo.png';
+
 import {
   Typography,
   Table,
@@ -30,6 +32,7 @@ class BuiltWithTable extends React.Component {
     const travisCILink = `https://travis-ci.org/`;
     const nginxLink = `https://www.nginx.com/`;
     const githubLink = `https://github.com/`;
+    const trelloLink = `https://trello.com/`;
     const rows = [
       {
         title: 'DigitalOcean',
@@ -78,6 +81,12 @@ class BuiltWithTable extends React.Component {
         subtitle: 'continuous integration',
         link: travisCILink,
         logo: travisCILogo,
+      },
+      {
+        title: 'Trello',
+        subtitle: 'project management',
+        link: trelloLink,
+        logo: trelloLogo,
       },
     ];
     return (
