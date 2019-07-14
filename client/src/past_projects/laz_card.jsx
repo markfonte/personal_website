@@ -72,7 +72,7 @@ class LAZCard extends React.Component {
               just been officially adopted as an official language by Android at the time. I found that
               Kotlin was much easier to write clean code with, and I would recommend it to any Android
               developer. Plus, it is interoperable with existing Java code! The project was picked up
-              by some full-time developers but is not yet live in production.
+              by a full-time developer and is live in pre-production as of July 2019.
               <br /><br />
               <img
                 className="laz-screenshot"
