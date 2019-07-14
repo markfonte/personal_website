@@ -7,8 +7,11 @@ class InstagramFeedCard extends React.Component {
     return (
       <div>
         <Card className="card">
-          <CardContent>
-            <div className="elfsight-app-b21d23fa-3bec-42f0-8828-b41cc63cff02" />
+          <CardContent style={{height: '100%'}}>
+            <iframe src="https://snapwidget.com/embed/713337" height="auto" width="90%"
+              className="snapwidget-widget"
+              scrolling="no" allowTransparency="true"
+              style={{maxWidth: '100%', maxHeight: '100%', margin: 'auto'}}></iframe>
           </CardContent>
         </Card>
       </div>
