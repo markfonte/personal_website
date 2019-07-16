@@ -4,6 +4,8 @@ import parentPortalScreenshotOne
   from '../static/images/screenshots/laz_parent_portal_screenshot_1.jpg';
 import parentPortalScreenshotTwo
   from '../static/images/screenshots/laz_parent_portal_screenshot_2.jpg';
+import parentPortalScreenshotThree
+  from '../static/images/screenshots/laz_parent_portal_screenshot_3.jpg';
 import badgeScreenshot
   from '../static/images/screenshots/laz_badge_screenshot.PNG';
 import WebIcon from '@material-ui/icons/Web';
@@ -89,6 +91,14 @@ class LAZCard extends React.Component {
                 height="500"
                 title="LAZ parent portal screenshot 2"
                 alt="LAZ parent portal screenshot 2"
+              />
+              <img
+                className="laz-screenshot"
+                src={parentPortalScreenshotThree}
+                width="240"
+                height="500"
+                title="LAZ parent portal screenshot 3"
+                alt="LAZ parent portal screenshot 3"
               />
             </Typography>
           </CardContent>
