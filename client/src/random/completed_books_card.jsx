@@ -1,5 +1,7 @@
 import React from 'react';
 import './completed_books_card.css';
+import theDevopsHandbookImage
+  from '../static/images/book_covers/the_devops_handbook.jpg';
 import theStartUpOfYou
   from '../static/images/book_covers/the_start_up_of_you.jpg';
 import thePhoenixProject
@@ -16,6 +18,12 @@ class CompletedBooksCard extends React.Component {
   render() {
     const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const completedBooks = [
+      {
+        image: theDevopsHandbookImage,
+        title: 'The DevOps Handbook',
+        author: 'Gene Kim',
+        link: `https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations-ebook/dp/B01M9ASFQ3`,
+      },
       {
         image: thePhoenixProject,
         title: 'The Phoenix Project',

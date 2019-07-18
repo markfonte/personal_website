@@ -2,8 +2,6 @@ import React from 'react';
 import './current_books_card.css';
 import digitalMinimalismImage
   from '../static/images/book_covers/digital_minimalism.jpg';
-import theDevopsHandbookImage
-  from '../static/images/book_covers/the_devops_handbook.jpg';
 import howWouldYouMoveMountFujiImage
   from '../static/images/book_covers/how_would_you_move_mount_fuji.jpg';
 import {
@@ -18,12 +16,6 @@ class CurrentBooksCard extends React.Component {
   render() {
     const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const currentBooks = [
-      {
-        image: theDevopsHandbookImage,
-        title: 'The DevOps Handbook',
-        author: 'Gene Kim',
-        link: `https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations-ebook/dp/B01M9ASFQ3`,
-      },
       {
         image: digitalMinimalismImage,
         title: 'Digital Minimalism',
