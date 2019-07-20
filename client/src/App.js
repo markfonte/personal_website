@@ -115,8 +115,8 @@ class App extends React.Component {
                   <li key={i}>
                     <LinkStyle component={Link} to={route.path}>
                       <Button
-                        variant="contained"
-                        color="primary"
+                        variant="outlined"
+                        color="secondary"
                         style={{marginTop: 8, marginBottom: 8}}
                       >
                         {route.name}
