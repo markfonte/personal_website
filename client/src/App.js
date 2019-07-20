@@ -113,7 +113,7 @@ class App extends React.Component {
               <ul>
                 {routes.map((route, i) => (
                   <li key={i}>
-                    <LinkStyle component={Link} to={route.path}>
+                    <LinkStyle style={{textDecoration: 'none'}} component={Link} to={route.path}>
                       <Button
                         variant="outlined"
                         color="secondary"
