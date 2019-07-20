@@ -1,26 +1,26 @@
 {
     "name": "api",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "private": true,
     "scripts": {
         "start": "node ./bin/www"
     },
     "dependencies": {
+        "clean-css": "^4.2.1",
+        "constantinople": "^3.1.2",
         "cookie-parser": "^1.4.4",
         "cors": "^2.8.5",
         "debug": "^4.1.1",
         "express": "^4.17.1",
-        "http-errors": "^1.7.2",
+        "http-errors": "^1.7.3",
+        "lodash": "^4.17.15",
         "morgan": "^1.9.1",
-        "clean-css": "^4.2.1",
-        "constantinople": "^3.1.2",
-        "sqlite3": "^4.0.9",
-        "lodash": "^4.17.11"
+        "sqlite3": "^4.0.9"
     },
     "devDependencies": {
-        "eslint": "^5.16.0",
+        "eslint": "^6.0.1",
         "eslint-config-google": "^0.13.0",
-        "eslint-plugin-react": "^7.13.0",
+        "eslint-plugin-react": "^7.14.2",
         "react-test-renderer": "^16.8.6",
         "react": "^16.8.6",
         "acorn": "^6.1.1",
