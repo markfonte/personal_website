@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 import BuiltWithTable from './built_with_table.jsx';
-// import InstagramFeedCard from './instagram_feed_card.jsx';
+import InstagramFeedCard from './instagram_feed_card.jsx';
 import {Typography} from '@material-ui/core';
 // import Resume from './resume.jsx';
 
@@ -21,7 +21,7 @@ class Home extends React.Component {
           Please browse around and feel free to check out my social media accounts or contact me
           directly!
         </Typography>
-        {/* <InstagramFeedCard /> */}
+        <InstagramFeedCard />
         <BuiltWithTable />
       </div>
     );
