@@ -43,8 +43,14 @@ class App extends React.Component {
       theme: darkTheme,
       themeIcon: whiteSunIcon,
       proud: false,
+      currentlySelected: 0,
     };
     this.toggleTheme = this.toggleTheme.bind(this);
+    this.currentlySelected = this.currentlySelected.bind(this);
+  }
+
+  currentlySelected(id) {
+    this.setState({currentlySelected: id});
   }
 
   componentDidMount() {
@@ -94,6 +100,7 @@ class App extends React.Component {
     const rainbowFooter = this.state.proud === true
       ? <footer className="footer-root" />
       : <div />;
+    const currentlySelected = this.state.currentlySelected;
     return (
       <ThemeProvider theme={this.state.theme}>
         <CssBaseline />
@@ -115,7 +122,8 @@ class App extends React.Component {
                   <li key={i}>
                     <LinkStyle style={{textDecoration: 'none'}} component={Link} to={route.path}>
                       <Button
-                        variant="outlined"
+                        onClick={() => this.currentlySelected(i)}
+                        variant={currentlySelected === i ? 'contained' : 'outlined'}
                         color="secondary"
                         style={{marginTop: 8, marginBottom: 8}}
                       >
