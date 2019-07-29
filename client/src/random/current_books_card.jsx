@@ -1,7 +1,5 @@
 import React from 'react';
 import './current_books_card.css';
-import digitalMinimalismImage
-  from '../static/images/book_covers/digital_minimalism.jpg';
 import howWouldYouMoveMountFujiImage
   from '../static/images/book_covers/how_would_you_move_mount_fuji.jpg';
 import {
@@ -16,12 +14,6 @@ class CurrentBooksCard extends React.Component {
   render() {
     const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
     const currentBooks = [
-      {
-        image: digitalMinimalismImage,
-        title: 'Digital Minimalism',
-        author: 'Cal Newport',
-        link: `https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515`,
-      },
       {
         image: howWouldYouMoveMountFujiImage,
         title: 'How Would You Move Mount Fuji?',

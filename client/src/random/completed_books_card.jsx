@@ -3,6 +3,8 @@ import './completed_books_card.css';
 import dontMakeMeThinkRevisited from '../static/images/book_covers/dont_make_me_think_revisited.jpg';
 import theDevopsHandbookImage
   from '../static/images/book_covers/the_devops_handbook.jpg';
+import digitalMinimalismImage
+  from '../static/images/book_covers/digital_minimalism.jpg';
 import theStartUpOfYou
   from '../static/images/book_covers/the_start_up_of_you.jpg';
 import thePhoenixProject
@@ -30,6 +32,12 @@ class CompletedBooksCard extends React.Component {
         title: 'The DevOps Handbook',
         author: 'Gene Kim',
         link: `https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations-ebook/dp/B01M9ASFQ3`,
+      },
+      {
+        image: digitalMinimalismImage,
+        title: 'Digital Minimalism',
+        author: 'Cal Newport',
+        link: `https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515`,
       },
       {
         image: thePhoenixProject,
