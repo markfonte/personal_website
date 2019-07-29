@@ -56,7 +56,7 @@ class RecommendedSitesTable extends React.Component {
                   {rows.map((row, i) => (
                     <TableRow key={i}>
                       <TableCell component="th" scope="row" align="center">
-                        <Link href={row.link}>
+                        <Link color="textPrimary" href={row.link}>
                           <Typography variant="h6" color="textPrimary">
                             {row.title}
                           </Typography>
