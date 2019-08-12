@@ -31,7 +31,11 @@ class JPMorganCard extends React.Component {
           </div>
           <CardContent>
             <Typography variant="body1">
-              Software internship in full stack web development. More details to come!
+              I worked at JP Morgan Chase in Summer 2019 on a React mobile web application.
+              Unfortunately, the details of this project are private information, but my contributions
+              are expected to go into production at the end of 2019. I learned lots while using a new
+              tech stack and met many good developers and good people throughout the summer. I am very
+              grateful for this experience.
             </Typography>
           </CardContent>
           <CardActions>

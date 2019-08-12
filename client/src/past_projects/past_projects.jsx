@@ -7,6 +7,9 @@ import Grizzhacks3Card from './grizzhacks3_card.jsx';
 import CompletedCourseworkCard from './completed_coursework_card.jsx';
 import {Typography} from '@material-ui/core';
 import InteractionCard from '../shared/interaction_card';
+import SpotlightCard from './spotlight_card';
+import DoggieDoodlesCard from './doggie_doodles_card';
+import JPMorganCard from './jpmorgan_card';
 
 class PastProjects extends React.Component {
   render() {
@@ -15,11 +18,14 @@ class PastProjects extends React.Component {
         <Typography style={{margin: 16}} variant="h6">
           Past internships, side projects and hackathon projects I have worked on
         </Typography>
+        <JPMorganCard />
         <LAZCard />
         <CompletedCourseworkCard />
         <Spartahack5Card />
         <RevolutionUC8Card />
         <Grizzhacks3Card />
+        <SpotlightCard />
+        <DoggieDoodlesCard />
         <InteractionCard pagename="past_projects" />
       </div>
     );

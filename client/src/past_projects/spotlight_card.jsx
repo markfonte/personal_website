@@ -27,11 +27,10 @@ class SpotlightCard extends React.Component {
           />
           <CardContent>
             <Typography variant="body1">
-              We are working on Android and iOS applications to help streamline the sorority recruitment process.
-              Both applications are built using Firebase, and the Android application is built using Android Jetpack,
-              architecture components and Google Maps APIs. We plan to beta test the app in Fall 2019 with a smaller
-              recruitment at U of M and start expanding upon the successful beta. The source code is not available to
-              the public at the moment but I am happy to share with anyone upon request!
+              We worked on Android and iOS applications to help streamline the sorority recruitment process.
+              Both applications were built using Firebase, and the Android application is built using Android Jetpack,
+              architecture components and Google Maps APIs. I built a successful POC for the Android application and successfully
+              onboarded another developer to maintain the project.
             </Typography>
             <img
               className="spotlight-screenshot"
