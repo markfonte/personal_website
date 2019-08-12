@@ -15,6 +15,8 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
 import {Typography, Button, CssBaseline} from '@material-ui/core';
+import ScrollUpButton from 'react-scroll-up-button';
+
 const getCookie = require('./shared/util/cookies.js').getCookie;
 const setCookie = require('./shared/util/cookies.js').setCookie;
 
@@ -142,6 +144,7 @@ class App extends React.Component {
             <Route path="/random" component={Random} />
             <Route path="/contact" component={Contact} />
           </Router>
+          <ScrollUpButton />
           <Footer />
         </div>
         {rainbowFooter}
