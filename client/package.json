@@ -20,7 +20,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "lint": "eslint src/ --ext .js --ext .jsx --fix && npx html-linter --config ./html-linter.json ./**/*.html && npx stylelint \"./**/*.css\" --fix",
+        "lint": "eslint src/ --ext .js --ext .jsx --fix && npx html-linter --config ./html-linter.json ./**/*.html && npx stylelint \"src/**/*.css\" --fix",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {
