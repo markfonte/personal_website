@@ -41,4 +41,6 @@ I drew inspiration from many different sources when building my website. Some of
 *  [shields.io](https://shields.io) for all of the badges on this readme
 *  Every mentor, coworker, project partner, boss, and friend that has helped me along my journey
 
-![GitHub repo size](https://img.shields.io/github/repo-size/markfonte/personal_website) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markfonte/personal_website) ![GitHub issues](https://img.shields.io/github/issues/markfonte/personal_website) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/markfonte/personal_website)
+![GitHub repo size](https://img.shields.io/github/repo-size/markfonte/personal_website) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markfonte/personal_website) ![GitHub issues](https://img.shields.io/github/issues-raw/markfonte/personal_website) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/markfonte/personal_website) ![Website](https://img.shields.io/website/https/mark.fonte.com) ![Maintenance](https://img.shields.io/maintenance/yes/2019)
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/markfonte/personal_website) ![GitHub last commit](https://img.shields.io/github/last-commit/markfonte/personal_website) ![GitHub Release Date](https://img.shields.io/github/release-date/markfonte/personal_website) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/markfonte/personal_website/latest)
