@@ -1,4 +1,4 @@
-# [My website](https://mark.fonte.com) [![Build Status](https://travis-ci.org/markfonte/personal_website.svg?branch=master)](https://travis-ci.org/markfonte/personal_website) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e)
+# [My website](https://mark.fonte.com) ![GitHub release](https://img.shields.io/github/release/markfonte/personal_website) [![Build Status](https://travis-ci.org/markfonte/personal_website.svg?branch=master)](https://travis-ci.org/markfonte/personal_website) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e)
 
 ## Motivation
 
