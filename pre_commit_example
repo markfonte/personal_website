@@ -2,6 +2,7 @@
 #
 # git pre-commit script to auto update the 'updated at' timestamp on every commit
 #
+npm run lint
 echo -n "const timestamp = '" >  client/src/commit_timestamp.js
 echo -n `date +"[%D %H %M %S]"` >> client/src/commit_timestamp.js
 echo "'; export default timestamp;" >>  client/src/commit_timestamp.js

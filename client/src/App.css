@@ -10,6 +10,7 @@
 
 .App-logo {
   animation: App-logo-spin infinite 1.8s linear;
+
   /* height: 40vmin; */
   height: 50px;
   width: 50px;
@@ -21,81 +22,82 @@
 }
 
 .App ul {
-    list-style: none;
-    padding-inline-start: 0px;
-    padding-inline-end: 0px;
+  list-style: none;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
 }
 
 .App li {
-    display: inline;
-    margin: 4px;
+  display: inline;
+  margin: 4px;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 .profile-logo {
-    height: 100px;
-    width: 100px;
-    align-self: center;
-    z-index: 2;
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  z-index: 2;
 }
 
 .primary-nav {
-    text-align:center;
+  text-align: center;
 }
 
 .logo-default {
-    width: 80px;
-    max-height: 80px;
+  width: 80px;
+  max-height: 80px;
 }
 
 .route-link {
-    margin: 200px;
+  margin: 200px;
 }
 
 .card {
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 32px;
-    margin-bottom: 72px;
-    align-self: center;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 72px;
+  align-self: center;
 }
 
 #toggle-theme-icon {
-    position: absolute;
-    left: 10%;
-    top: 16px;
+  position: absolute;
+  left: 10%;
+  top: 16px;
 }
 
 /* credit: https://travis-ci.org/account/preferences */
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    height: 112px;
-    width: 100%;
-    background: linear-gradient(to bottom,#e2453c90 0,#e2453c90 16%,#e07e3990 16%,#e07e3990 32%,#e5d66790 32%,#e5d66790 48%,#51b95b90 48%,#51b95b90 66%,#1e72b790 66%,#1e72b790 86%,#6f5ba790 86%) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 112px;
+  width: 100%;
+  background: linear-gradient(to bottom, #e2453c90 0, #e2453c90 16%, #e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%, #51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat;
 }
 
 .footer-root {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 20px;
-    width: 100%;
-    background: linear-gradient(to bottom,#e2453c90 0,#e2453c90 16%,#e07e3990 16%,#e07e3990 32%,#e5d66790 32%,#e5d66790 48%,#51b95b90 48%,#51b95b90 66%,#1e72b790 66%,#1e72b790 86%,#6f5ba790 86%) no-repeat;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to bottom, #e2453c90 0, #e2453c90 16%, #e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%, #51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat;
 }
 
 #main-title {
-    margin: 8px;
+  margin: 8px;
 }

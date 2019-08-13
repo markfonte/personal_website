@@ -1,19 +1,19 @@
 .flat-card {
-    padding: 12px;
-    margin: 8px;
+  padding: 12px;
+  margin: 8px;
 }
 
 #pride-switch-content {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #pride-title {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 #pride-switch {
-    align-self: flex-end;
+  align-self: flex-end;
 }

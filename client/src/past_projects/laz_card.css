@@ -1,14 +1,14 @@
 #laz-media {
-    margin: 8px;
-    padding-top: 10.8%;
-    width: 50%;
+  margin: 8px;
+  padding-top: 10.8%;
+  width: 50%;
 }
 
-.laz-screenshot{
-    margin: 16px;
+.laz-screenshot {
+  margin: 16px;
 }
 
 #laz-media-wrapper {
-    display:flex;
-    justify-content:center;
+  display: flex;
+  justify-content: center;
 }
