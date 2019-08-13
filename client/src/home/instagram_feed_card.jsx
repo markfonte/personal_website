@@ -1,5 +1,4 @@
 import React from 'react';
-import './instagram_feed_card.css';
 import {CardContent, Card, GridList, GridListTile} from '@material-ui/core';
 import markFeed1 from '../static/images/photos/mark_feed_1.jpg';
 import markFeed2 from '../static/images/photos/mark_feed_2.jpg';

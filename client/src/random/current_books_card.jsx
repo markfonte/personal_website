@@ -1,5 +1,4 @@
 import React from 'react';
-import './current_books_card.css';
 import howWouldYouMoveMountFujiImage
   from '../static/images/book_covers/how_would_you_move_mount_fuji.jpg';
 import {

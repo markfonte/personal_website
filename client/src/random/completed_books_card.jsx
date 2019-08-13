@@ -1,5 +1,4 @@
 import React from 'react';
-import './completed_books_card.css';
 import dontMakeMeThinkRevisited from '../static/images/book_covers/dont_make_me_think_revisited.jpg';
 import theDevopsHandbookImage
   from '../static/images/book_covers/the_devops_handbook.jpg';

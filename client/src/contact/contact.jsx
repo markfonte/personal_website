@@ -1,5 +1,4 @@
 import React from 'react';
-import './contact.css';
 import {Typography, Button} from '@material-ui/core';
 
 class Contact extends React.Component {
