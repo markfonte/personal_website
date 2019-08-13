@@ -19,7 +19,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test",
+        "test": "react-scripts test && npm run lint",
         "lint": "eslint src/ --ext .js --ext .jsx --fix && npx html-linter --config ./html-linter.json ./**/*.html && npx stylelint \"./**/*.css\" --fix",
         "eject": "react-scripts eject"
     },
