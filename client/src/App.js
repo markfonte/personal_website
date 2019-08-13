@@ -19,6 +19,13 @@ import ScrollUpButton from 'react-scroll-up-button';
 
 const getCookie = require('./shared/util/cookies.js').getCookie;
 const setCookie = require('./shared/util/cookies.js').setCookie;
+const routes = [
+  {name: 'Home', path: '/', index: 0},
+  {name: 'Current Work', path: '/current_work', index: 1},
+  {name: 'Past Projects', path: '/past_projects', index: 2},
+  {name: 'Random', path: '/random', index: 3},
+  {name: 'Contact', path: '/contact', index: 4},
+];
 
 const darkTheme = createMuiTheme({
   palette: {
@@ -45,10 +52,11 @@ class App extends React.Component {
       theme: darkTheme,
       themeIcon: whiteSunIcon,
       proud: false,
-      currentlySelected: 0,
+      currentlySelected: -1,
     };
     this.toggleTheme = this.toggleTheme.bind(this);
     this.currentlySelected = this.currentlySelected.bind(this);
+    this.findCurrentRoute = this.findCurrentRoute.bind(this);
   }
 
   currentlySelected(id) {
@@ -56,6 +64,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    routes.forEach(this.findCurrentRoute);
+
     let proud = false;
     if (getCookie('pride') === 'true') {
       proud = true;
@@ -88,14 +98,13 @@ class App extends React.Component {
     }
   }
 
+  findCurrentRoute(value, key, map) {
+    if (value.path === window.location.pathname) {
+      this.setState({currentlySelected: value.index});
+    }
+  }
+
   render() {
-    const routes = [
-      {name: 'Home', path: '/'},
-      {name: 'Current Work', path: '/current_work'},
-      {name: 'Past Projects', path: '/past_projects'},
-      {name: 'Random', path: '/random'},
-      {name: 'Contact', path: '/contact'},
-    ];
     const rainbowHeader = this.state.proud === true
       ? <header className="header" />
       : <div />;
