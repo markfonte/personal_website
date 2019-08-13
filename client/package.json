@@ -42,6 +42,7 @@
         "eslint": "^5.16.0",
         "eslint-config-google": "^0.13.0",
         "eslint-plugin-react": "7.14.3",
+        "html-linter": "^1.1.1",
         "react-test-renderer": "^16.8.6"
     }
 }
