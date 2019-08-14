@@ -19,6 +19,7 @@ class RecommendedSitesTable extends React.Component {
     const nathanJohnsonLink = `https://nathanieljohnson.me/`;
     const seanBarberLink = `https://seanbarber.me/`;
     const salvadorVillalonLink = `https://salvillalon45.github.io/`;
+    const sarahKoopLink = `http://sarah-koop.com/`;
 
     const rows = [
       {
@@ -40,6 +41,10 @@ class RecommendedSitesTable extends React.Component {
       {
         title: `Sean Barber's Website`,
         link: seanBarberLink,
+      },
+      {
+        title: `Sarah Koop's Website`,
+        link: sarahKoopLink,
       },
     ];
     return (
