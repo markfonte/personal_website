@@ -1,4 +1,5 @@
 import React from 'react';
+import './contact.css';
 import {Typography, Button} from '@material-ui/core';
 
 class Contact extends React.Component {
@@ -8,7 +9,7 @@ class Contact extends React.Component {
     const venmoLink = `https://venmo.com/Mark-Fonte`;
 
     return (
-      <div>
+      <div className="contact-root">
         <Typography style={{margin: 16}} variant="h6">
           Let&#39;s get in touch!
         </Typography>
