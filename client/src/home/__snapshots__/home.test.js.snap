@@ -23,7 +23,7 @@ exports[`Home matches snapshot 1`] = `
     Welcome to my personal website! I am a computer science in engineering student at the University of Michigan and my website is designed to show you a little more about myself. Please browse around and feel free to check out my social media accounts or contact me directly!
   </p>
   <div
-    className="MuiPaper-root MuiPaper-elevation1 MuiCard-root card MuiPaper-rounded"
+    className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
   >
     <div
       className="MuiCardContent-root"
@@ -60,8 +60,8 @@ exports[`Home matches snapshot 1`] = `
             className="MuiGridListTile-tile"
           >
             <img
-              alt="Mark Feed 1"
-              src="mark_feed_1.jpg"
+              alt="Mark Feed 7"
+              src="mark_feed_7.jpg"
             />
           </div>
         </li>
@@ -80,8 +80,8 @@ exports[`Home matches snapshot 1`] = `
             className="MuiGridListTile-tile"
           >
             <img
-              alt="Mark Feed 7"
-              src="mark_feed_7.jpg"
+              alt="Mark Feed 5"
+              src="mark_feed_5.jpg"
             />
           </div>
         </li>
@@ -122,46 +122,6 @@ exports[`Home matches snapshot 1`] = `
             <img
               alt="Mark Feed 6"
               src="mark_feed_6.jpg"
-            />
-          </div>
-        </li>
-        <li
-          className="MuiGridListTile-root"
-          style={
-            Object {
-              "height": 324,
-              "margin": 0,
-              "padding": 2,
-              "width": "50%",
-            }
-          }
-        >
-          <div
-            className="MuiGridListTile-tile"
-          >
-            <img
-              alt="Mark Feed 5"
-              src="mark_feed_5.jpg"
-            />
-          </div>
-        </li>
-        <li
-          className="MuiGridListTile-root"
-          style={
-            Object {
-              "height": 324,
-              "margin": 0,
-              "padding": 2,
-              "width": "50%",
-            }
-          }
-        >
-          <div
-            className="MuiGridListTile-tile"
-          >
-            <img
-              alt="Mark Feed 2"
-              src="mark_feed_2.jpg"
             />
           </div>
         </li>
