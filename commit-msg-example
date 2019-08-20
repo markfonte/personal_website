@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+message_file = ARGV[0]
+message = File.read(message_file)
+
+$regex = /(\d+) \- /
+
+if !$regex.match(message)
+  puts "\n\n********************************************************************************************\n\nRejected: Commit message must be in the following format: [task number] - [commit message]\n\nPlease submit a correctly formatted commit message.\n\n********************************************************************************************\n\n"
+  exit 1
+end
