@@ -1,9 +1,9 @@
 import React from 'react';
 import './spotlight_card.css';
 import spotlightScreenshotOne
-  from '../static/images/screenshots/spotlight_screenshot_1.PNG';
+  from '../static/images/screenshots/spotlight_screenshot_1.png';
 import spotlightScreenshotTwo
-  from '../static/images/screenshots/spotlight_screenshot_2.PNG';
+  from '../static/images/screenshots/spotlight_screenshot_2.png';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,

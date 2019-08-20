@@ -40,7 +40,7 @@ class PhotoFeedCard extends React.Component {
         <CardContent style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', overflow: 'hidden'}}>
           <GridList style={{maxWidth: 740}} cellHeight={320} cols={2}>
             {feedData.map((feedDatum) => (
-              <GridListTile style={{margin: 0}} key={feedDatum.image} cols={feedDatum.cols || 1}>
+              <GridListTile key={feedDatum.title} style={{margin: 0}} cols={feedDatum.cols || 1}>
                 <img src={feedDatum.image} alt={feedDatum.title} />
               </GridListTile>
             ))}

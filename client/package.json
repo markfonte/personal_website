@@ -8,6 +8,7 @@
         "babel-eslint": "^10.0.2",
         "fs": "^0.0.1-security",
         "moment": "^2.24.0",
+        "node-fetch": "^2.6.0",
         "react": "^16.9.0",
         "react-dom": "^16.8.6",
         "react-moment": "^0.9.2",
@@ -19,7 +20,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test",
+        "test": "jest --coverage",
         "lint": "eslint src/ --ext .js --ext .jsx --fix && npx html-linter --config ./html-linter.json ./**/*.html && npx stylelint \"src/**/*.css\" --fix",
         "eject": "react-scripts eject"
     },
@@ -39,15 +40,36 @@
         ]
     },
     "devDependencies": {
+        "@babel/preset-env": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "babel-jest": "^24.8.0",
+        "jest": "^24.8.0",
         "eslint": "^6.1.0",
         "eslint-config-google": "^0.13.0",
         "eslint-plugin-react": "^7.14.3",
         "html-linter": "^1.1.1",
         "react-test-renderer": "^16.9.0",
         "stylelint": "^10.1.0",
-        "stylelint-config-standard": "^18.3.0"
+        "stylelint-config-standard": "^18.3.0",
+        "identity-obj-proxy": "^3.0.0"
     },
     "stylelint": {
         "extends": "stylelint-config-standard"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties"
+        ]
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileTransformer.js",
+            "\\.(css|less)$": "identity-obj-proxy"
+        }
     }
 }

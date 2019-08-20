@@ -7,6 +7,7 @@ import universityOfMichiganLogoSmall
 import Moment from 'react-moment';
 import {Typography, Link} from '@material-ui/core';
 import timestamp from '../commit_timestamp.js';
+const fetch = require('node-fetch');
 
 function DisplayError(props) {
   return (
@@ -26,115 +27,128 @@ class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {apiResponse: false, serverCrashed: false};
+    this.checkForAPIHeartbeat = this.checkForAPIHeartbeat.bind(this);
   }
 
-  checkForAPIHeartbeat() {
-    fetch(process.env.REACT_APP_API_URL + 'api_heartbeat', {method: 'HEAD'})
-        .then((res) => {
-          if (res.status === 200) {
-            let triggerReload = false;
-            if (this.state.serverCrashed === true) {
-              triggerReload = true; // back online! reload the page
-            }
-            this.setState({apiResponse: true, serverCrashed: false});
-            if (triggerReload === true) window.location.reload();
-          } else this.setState({apiResponse: false, serverCrashed: true});
-        })
-        .catch((err) => {
-          this.setState({apiResponse: false, serverCrashed: true});
-          console.log(err);
-        });
-  }
+ abortController = new window.AbortController();
 
-  componentDidMount() {
-    this.checkForAPIHeartbeat();
-    const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
-    setInterval(
-        function() {
-          this.checkForAPIHeartbeat();
-        }.bind(this),
-        timeoutInterval
-    );
-  }
-  render() {
-    const facebookLink = `https://www.facebook.com/mark.fonte.397`;
-    const githubLink = `https://github.com/markfonte`;
-    const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
-    const instagramLink = `https://www.instagram.com/mark_fonte21/`;
-    const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
-    const websiteGithubLink = `https://github.com/markfonte/personal_website`;
-    const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
-    const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
-    const updatedDate = timestamp;
+ checkForAPIHeartbeat() {
+   const apiUrl = process.env.REACT_APP_API_URL + 'api_heartbeat';
+   fetch(apiUrl, {method: 'HEAD', signal: this.abortController.signal})
+       .then((res) => {
+         if (res.status === 200) {
+           let triggerReload = false;
+           if (this.state.serverCrashed === true) {
+             triggerReload = true; // back online! reload the page
+           }
+           this.setState({apiResponse: true, serverCrashed: false});
+           if (triggerReload === true) window.location.reload();
+         } else this.setState({apiResponse: false, serverCrashed: true});
+       })
+       .catch((err) => {
+         if (err.name === 'AbortError' || err.name === 'TypeError') {
+           return;
+         }
+         this.setState({apiResponse: false, serverCrashed: true});
+         console.log(err);
+       });
+ }
 
-    return (
-      <footer id="footer">
-        <div id="footer-container">
-          <div className="icon-bar">
-            <a href={facebookLink} className="facebook">
-              <i className="fa fa-facebook" />
-            </a>
-            <a href={stackOverflowLink} className="stack-overflow">
-              <i className="fa fa-stack-overflow" />
-            </a>
-            <a href={githubLink} className="github">
-              <i className="fa fa-github" />
-            </a>
-            <a href={linkedinLink} className="linkedin">
-              <i className="fa fa-linkedin" />
-            </a>
-            <a href={instagramLink} className="instagram">
-              <i className="fa fa-instagram" />
-            </a>
-            <a href={youtubeLink} className="youtube">
-              <i className="fa fa-youtube" />
-            </a>
-          </div>
-          <div>
-            {this.state.apiResponse
+ componentDidMount() {
+   this.checkForAPIHeartbeat();
+   const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
+   setInterval(
+       function() {
+         this.checkForAPIHeartbeat();
+       }.bind(this),
+       timeoutInterval
+       , 1000);
+ }
+
+ componentWillUnmount() {
+   clearInterval(1000);
+   this.abortController.abort();
+ }
+
+ render() {
+   const facebookLink = `https://www.facebook.com/mark.fonte.397`;
+   const githubLink = `https://github.com/markfonte`;
+   const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
+   const instagramLink = `https://www.instagram.com/mark_fonte21/`;
+   const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
+   const websiteGithubLink = `https://github.com/markfonte/personal_website`;
+   const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
+   const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
+   const updatedDate = timestamp;
+
+   return (
+     <footer id="footer">
+       <div id="footer-container">
+         <div className="icon-bar">
+           <a href={facebookLink} className="facebook">
+             <i className="fa fa-facebook" />
+           </a>
+           <a href={stackOverflowLink} className="stack-overflow">
+             <i className="fa fa-stack-overflow" />
+           </a>
+           <a href={githubLink} className="github">
+             <i className="fa fa-github" />
+           </a>
+           <a href={linkedinLink} className="linkedin">
+             <i className="fa fa-linkedin" />
+           </a>
+           <a href={instagramLink} className="instagram">
+             <i className="fa fa-instagram" />
+           </a>
+           <a href={youtubeLink} className="youtube">
+             <i className="fa fa-youtube" />
+           </a>
+         </div>
+         <div>
+           {this.state.apiResponse
               ? <img src={reactLogo} className="App-logo" alt="logo" />
               : <DisplayError />}
-          </div>
-          <div>
-            <Typography variant="caption" color="textSecondary">
+         </div>
+         <div>
+           <Typography variant="caption" color="textSecondary">
               Last updated
-              {' '}
-              <Moment parse="MM/DD/YYYY HH mm SS" fromNow>{updatedDate}</Moment>
-            </Typography>
-          </div>
-          <div>
-            <Link
-              variant="caption"
-              color="textSecondary"
-              href={websiteGithubLink}
-            >
+             {' '}
+             <Moment parse="MM/DD/YYYY HH mm SS" fromNow>{updatedDate}</Moment>
+           </Typography>
+         </div>
+         <div>
+           <Link
+             variant="caption"
+             color="textSecondary"
+             href={websiteGithubLink}
+           >
               view source on github
-            </Link>
-          </div>
-          <div>
-            <Link
-              variant="caption"
-              color="textSecondary"
-              href={suggestEditLink}
-            >
+           </Link>
+         </div>
+         <div>
+           <Link
+             variant="caption"
+             color="textSecondary"
+             href={suggestEditLink}
+           >
               suggest an edit
-            </Link>
-          </div>
-          {/* go blue */}
-          <div>
-            <img
-              src={universityOfMichiganLogoSmall}
-              width="20"
-              height="20"
-              style={{margin: 8}}
-              title="University of Michigan logo small"
-              alt="University of Michigan logo small"
-            />
-          </div>
-        </div>
-      </footer>
-    );
-  }
+           </Link>
+         </div>
+         {/* go blue */}
+         <div>
+           <img
+             src={universityOfMichiganLogoSmall}
+             width="20"
+             height="20"
+             style={{margin: 8}}
+             title="University of Michigan logo small"
+             alt="University of Michigan logo small"
+           />
+         </div>
+       </div>
+     </footer>
+   );
+ }
 }
 
 export default Footer;

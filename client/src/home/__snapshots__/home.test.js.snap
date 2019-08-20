@@ -61,7 +61,11 @@ exports[`Home matches snapshot 1`] = `
           >
             <img
               alt="Mark Feed 7"
-              src="mark_feed_7.jpg"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
             />
           </div>
         </li>
@@ -81,7 +85,11 @@ exports[`Home matches snapshot 1`] = `
           >
             <img
               alt="Mark Feed 5"
-              src="mark_feed_5.jpg"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
             />
           </div>
         </li>
@@ -101,7 +109,11 @@ exports[`Home matches snapshot 1`] = `
           >
             <img
               alt="Mark Feed 3"
-              src="mark_feed_3.jpg"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
             />
           </div>
         </li>
@@ -121,7 +133,11 @@ exports[`Home matches snapshot 1`] = `
           >
             <img
               alt="Mark Feed 6"
-              src="mark_feed_6.jpg"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
             />
           </div>
         </li>
@@ -141,7 +157,11 @@ exports[`Home matches snapshot 1`] = `
           >
             <img
               alt="Mark Feed 4"
-              src="mark_feed_4.jpg"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
             />
           </div>
         </li>
@@ -206,7 +226,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="digital_ocean_logo.png"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -248,7 +272,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="express_logo.svg"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -290,7 +318,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="github_logo.png"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -332,7 +364,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="material_ui_logo.svg"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -374,7 +410,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="nginx_logo.png"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -416,7 +456,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="nodejs_logo.png"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -458,7 +502,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="react_logo.svg"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -500,7 +548,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="travis_ci_logo.png"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td
@@ -542,7 +594,11 @@ exports[`Home matches snapshot 1`] = `
                   <img
                     alt="express"
                     className="logo-default"
-                    src="trello_logo.png"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
                   />
                 </td>
                 <td

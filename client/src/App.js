@@ -1,5 +1,4 @@
 import React from 'react';
-import 'typeface-roboto';
 import './App.css';
 import profilePicture from './static/images/photos/mark_circle.png';
 import whiteSunIcon from './static/images/icons/sun_icon_white.svg';

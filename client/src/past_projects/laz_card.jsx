@@ -7,7 +7,7 @@ import parentPortalScreenshotTwo
 import parentPortalScreenshotThree
   from '../static/images/screenshots/laz_parent_portal_screenshot_3.jpg';
 import badgeScreenshot
-  from '../static/images/screenshots/laz_badge_screenshot.PNG';
+  from '../static/images/screenshots/laz_badge_screenshot.png';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
