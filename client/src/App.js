@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import PropTypes from 'prop-types';
 import profilePicture from './static/images/photos/mark_circle.png';
 import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
 import blackSunIcon from './static/images/icons/sun_icon_black.svg';
@@ -12,8 +13,8 @@ import Footer from './footer/footer.jsx';
 import LinkStyle from '@material-ui/core/Link';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
-import {ThemeProvider} from '@material-ui/styles';
-import {Typography, Button, CssBaseline} from '@material-ui/core';
+import {ThemeProvider, withStyles} from '@material-ui/styles';
+import {Typography, Button, CssBaseline, List, ListItem} from '@material-ui/core';
 import ScrollUpButton from 'react-scroll-up-button';
 
 const getCookie = require('./shared/util/cookies.js').getCookie;
@@ -43,6 +44,101 @@ const lightTheme = createMuiTheme({
     },
   },
 });
+
+const styles = {
+  'App': {
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    maxWidth: '1200px',
+    padding: '12px',
+    margin: 'auto',
+  },
+  'AppLogo': {
+    animation: 'App-logo-spin infinite 1.8s linear',
+    height: '50px',
+    width: '50px',
+    pointerEvents: 'none',
+  },
+  'AppLink': {
+    color: '#61dafb',
+  },
+  'AppList': {
+    listStyle: 'none',
+    paddingInlineStart: 0,
+    paddingInlineEnd: 0,
+  },
+  'AppListItem': {
+    display: 'inline',
+    margin: '4px',
+    paddingInlineStart: 0,
+    paddingInlineEnd: 0,
+  },
+  '@keyframes App-logo-spin': {
+    'from': {
+      transform: 'rotate(0deg)',
+    },
+    'to': {
+      transform: 'rotate(360deg)',
+    },
+  },
+  'profileLogo': {
+    height: '100px',
+    width: '100px',
+    alignSelf: 'center',
+    zIndex: 2,
+  },
+  'primaryNav': {
+    textAlign: 'center',
+  },
+  'logoDefault': {
+    width: '80px',
+    maxHeight: '80px',
+  },
+  'routeLink': {
+    margin: '200px',
+  },
+  'card': {
+    minWidth: '300px',
+    maxWidth: '1000px',
+    margin: 'auto',
+    marginTop: '32px',
+    marginBottom: '72px',
+    alignSelf: 'center',
+  },
+  'toggleThemeIcon': {
+    position: 'absolute',
+    left: '10%',
+    top: '16px',
+  },
+  /* credit: https://travis-ci.org/account/preferences */
+  'headerRoot': {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    display: 'block',
+    height: '112px',
+    width: '100%',
+    background: 'linear-gradient(to bottom, #e2453c90 0, #e2453c90 16%,' +
+        '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,' +
+        '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
+  },
+  'footerRoot': {
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '20px',
+    width: '100%',
+    background: 'linear-gradient(to bottom, #e2453c90 0, #e2453c90 16%,'+
+        '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,'+
+        '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
+  },
+  'mainTitle': {
+    margin: '8px',
+  },
+};
 
 class App extends React.Component {
   constructor(props) {
@@ -104,18 +200,19 @@ class App extends React.Component {
   }
 
   render() {
+    const {classes} = this.props;
     const rainbowHeader = this.state.proud === true
-      ? <header className="header" />
+      ? <header className={classes.headerRoot} />
       : <div />;
     const rainbowFooter = this.state.proud === true
-      ? <footer className="footer-root" />
+      ? <footer className={classes.footerRoot} />
       : <div />;
     const currentlySelected = this.state.currentlySelected;
     return (
       <ThemeProvider theme={this.state.theme}>
         <CssBaseline />
 
-        <div className="App">
+        <div className={classes.App}>
           {rainbowHeader}
           <img
             id="toggle-theme-icon"
@@ -124,12 +221,12 @@ class App extends React.Component {
             alt="toggle theme icon"
           />
           <Router>
-            <img src={profilePicture} className="profile-logo" alt="profile" />
+            <img src={profilePicture} className={classes.profileLogo} alt="profile" />
             <Typography id="main-title" variant="h3">Mark Fonte</Typography>
-            <nav className="primary-nav">
-              <ul>
+            <nav className={classes.primaryNav}>
+              <List className={classes.AppList}>
                 {routes.map((route, i) => (
-                  <li key={i}>
+                  <ListItem className={classes.AppListItem} key={i}>
                     <LinkStyle style={{textDecoration: 'none'}} component={Link} to={route.path}>
                       <Button
                         onClick={() => this.currentlySelected(i)}
@@ -140,9 +237,9 @@ class App extends React.Component {
                         {route.name}
                       </Button>
                     </LinkStyle>
-                  </li>
+                  </ListItem>
                 ))}
-              </ul>
+              </List>
             </nav>
 
             <Route path="/" exact component={Home} />
@@ -161,4 +258,8 @@ class App extends React.Component {
   }
 }
 
-export default App;
+App.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(App);
