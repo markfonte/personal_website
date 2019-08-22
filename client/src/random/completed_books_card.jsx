@@ -16,6 +16,11 @@ import {
   Link,
 } from '@material-ui/core';
 
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {};
+
 class CompletedBooksCard extends React.Component {
   render() {
     const jacobFedrigonWebsiteLink = `http://www-personal.umich.edu/~jacobfed/books.html`;
@@ -94,4 +99,8 @@ class CompletedBooksCard extends React.Component {
   }
 }
 
-export default CompletedBooksCard;
+CompletedBooksCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(CompletedBooksCard);

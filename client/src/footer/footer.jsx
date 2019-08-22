@@ -7,7 +7,26 @@ import universityOfMichiganLogoSmall
 import Moment from 'react-moment';
 import {Typography, Link} from '@material-ui/core';
 import timestamp from '../commit_timestamp.js';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
 const fetch = require('node-fetch');
+
+const styles = {
+  'reactLogo': {
+    animation: `react-logo-spin infinite 1.8s linear`,
+    height: '50px',
+    width: '50px',
+    pointerEvents: 'none',
+  },
+  '@keyframes react-logo-spin': {
+    from: {
+      transform: 'rotate(0deg)',
+    },
+    to: {
+      transform: 'rotate(360deg)',
+    },
+  },
+};
 
 function DisplayError(props) {
   return (
@@ -71,6 +90,7 @@ class Footer extends React.Component {
  }
 
  render() {
+   const {classes} = this.props;
    const facebookLink = `https://www.facebook.com/mark.fonte.397`;
    const githubLink = `https://github.com/markfonte`;
    const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
@@ -106,7 +126,7 @@ class Footer extends React.Component {
          </div>
          <div>
            {this.state.apiResponse
-              ? <img src={reactLogo} className="App-logo" alt="logo" />
+              ? <img src={reactLogo} className={classes.reactLogo} alt="logo" />
               : <DisplayError />}
          </div>
          <div>
@@ -151,4 +171,8 @@ class Footer extends React.Component {
  }
 }
 
-export default Footer;
+Footer.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Footer);

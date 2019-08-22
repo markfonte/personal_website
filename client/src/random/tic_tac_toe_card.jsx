@@ -1,5 +1,4 @@
 import React from 'react';
-import './tic_tac_toe.css';
 import TicTacToeGame from './tic_tac_toe_game.jsx';
 import {Description} from '@material-ui/icons';
 import {
@@ -10,6 +9,10 @@ import {
   CardHeader,
   IconButton,
 } from '@material-ui/core';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {};
 
 class TicTacToeCard extends React.Component {
   render() {
@@ -35,4 +38,8 @@ class TicTacToeCard extends React.Component {
   }
 }
 
-export default TicTacToeCard;
+TicTacToeCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(TicTacToeCard);

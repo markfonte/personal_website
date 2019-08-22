@@ -8,6 +8,10 @@ import {
   CardHeader,
   Link,
 } from '@material-ui/core';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {};
 
 class CurrentBooksCard extends React.Component {
   render() {
@@ -59,4 +63,8 @@ class CurrentBooksCard extends React.Component {
   }
 }
 
-export default CurrentBooksCard;
+CurrentBooksCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(CurrentBooksCard);

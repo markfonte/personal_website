@@ -19,6 +19,7 @@ import ScrollUpButton from 'react-scroll-up-button';
 
 const getCookie = require('./shared/util/cookies.js').getCookie;
 const setCookie = require('./shared/util/cookies.js').setCookie;
+
 const routes = [
   {name: 'Home', path: '/', index: 0},
   {name: 'Current Work', path: '/current_work', index: 1},
@@ -46,7 +47,7 @@ const lightTheme = createMuiTheme({
 });
 
 const styles = {
-  'App': {
+  root: {
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
@@ -55,65 +56,33 @@ const styles = {
     padding: '12px',
     margin: 'auto',
   },
-  'AppLogo': {
-    animation: 'App-logo-spin infinite 1.8s linear',
-    height: '50px',
-    width: '50px',
-    pointerEvents: 'none',
-  },
-  'AppLink': {
-    color: '#61dafb',
-  },
-  'AppList': {
+  AppList: {
     listStyle: 'none',
     paddingInlineStart: 0,
     paddingInlineEnd: 0,
   },
-  'AppListItem': {
+  AppListItem: {
     display: 'inline',
     margin: '4px',
     paddingInlineStart: 0,
     paddingInlineEnd: 0,
   },
-  '@keyframes App-logo-spin': {
-    'from': {
-      transform: 'rotate(0deg)',
-    },
-    'to': {
-      transform: 'rotate(360deg)',
-    },
-  },
-  'profileLogo': {
+  profileLogo: {
     height: '100px',
     width: '100px',
     alignSelf: 'center',
     zIndex: 2,
   },
-  'primaryNav': {
+  primaryNav: {
     textAlign: 'center',
   },
-  'logoDefault': {
-    width: '80px',
-    maxHeight: '80px',
-  },
-  'routeLink': {
-    margin: '200px',
-  },
-  'card': {
-    minWidth: '300px',
-    maxWidth: '1000px',
-    margin: 'auto',
-    marginTop: '32px',
-    marginBottom: '72px',
-    alignSelf: 'center',
-  },
-  'toggleThemeIcon': {
+  toggleThemeIcon: {
     position: 'absolute',
     left: '10%',
     top: '16px',
   },
   /* credit: https://travis-ci.org/account/preferences */
-  'headerRoot': {
+  headerRoot: {
     position: 'absolute',
     top: 0,
     left: 0,
@@ -125,7 +94,7 @@ const styles = {
         '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,' +
         '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
   },
-  'footerRoot': {
+  footerRoot: {
     bottom: 0,
     left: 0,
     right: 0,
@@ -135,7 +104,7 @@ const styles = {
         '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,'+
         '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
   },
-  'mainTitle': {
+  mainTitle: {
     margin: '8px',
   },
 };
@@ -212,17 +181,17 @@ class App extends React.Component {
       <ThemeProvider theme={this.state.theme}>
         <CssBaseline />
 
-        <div className={classes.App}>
+        <div className={classes.root}>
           {rainbowHeader}
           <img
-            id="toggle-theme-icon"
+            className={classes.toggleThemeIcon}
             src={this.state.themeIcon}
             onClick={this.toggleTheme}
             alt="toggle theme icon"
           />
           <Router>
             <img src={profilePicture} className={classes.profileLogo} alt="profile" />
-            <Typography id="main-title" variant="h3">Mark Fonte</Typography>
+            <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
             <nav className={classes.primaryNav}>
               <List className={classes.AppList}>
                 {routes.map((route, i) => (

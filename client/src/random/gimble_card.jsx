@@ -1,5 +1,4 @@
 import React from 'react';
-import './gimble_card.css';
 import WebIcon from '@material-ui/icons/Web';
 import spotifyLogo from '../static/images/logos/spotify_logo.png';
 import googlePlayMusicLogo from '../static/images/logos/google_play_music.svg';
@@ -10,6 +9,8 @@ import youtubeLogo from '../static/images/logos/youtube_logo.png';
 import youtubeMusicLogo from '../static/images/logos/youtube_music_logo.png';
 import facebookLogo from '../static/images/logos/facebook_logo.png';
 import instagramLogo from '../static/images/logos/instagram_logo.png';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
 
 import {
   Card,
@@ -20,8 +21,20 @@ import {
   IconButton,
 } from '@material-ui/core';
 
+const styles = {
+  gimbleCardMedia: {
+    height: 0,
+    paddingTop: '56%',
+  },
+  gimbleCardActionIcon: {
+    width: '24px',
+    height: '24px',
+  },
+};
+
 class GimbleCard extends React.Component {
   render() {
+    const {classes} = this.props;
     const websiteLink = `https://www.gimbleacappella.com/`;
     const spotifyLink = `https://open.spotify.com/artist/0CgETTTImSmkeCBkoUJiMg?autoplay=true&v=A`;
     const googlePlayMusicLink = `https://play.google.com/music/m/A6i265eewm2mhu5p2fvikdbf5tm?play=1`;
@@ -53,11 +66,11 @@ class GimbleCard extends React.Component {
             subheader="My acappella group!"
           />
           <CardMedia
-            id="gimble-card-media"
+            id={classes.gimbleCardMedia}
             image={require('../static/images/photos/gimble_group_pic.jpg')}
             title="Gimble A Cappella - 2019"
           />
-          <CardContent id="gimble-card-content">
+          <CardContent>
             <iframe
               src="https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K"
               width="320"
@@ -100,7 +113,7 @@ class GimbleCard extends React.Component {
               <IconButton key={i} aria-label={link.name} href={link.link}>
                 <img
                   src={link.image}
-                  style={{width: '24px', height: '24px'}}
+                  className={classes.gimbleCardActionIcon}
                   title={link.name}
                   alt={link.name}
                 />
@@ -115,4 +128,8 @@ class GimbleCard extends React.Component {
   }
 }
 
-export default GimbleCard;
+GimbleCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(GimbleCard);

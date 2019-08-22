@@ -1,28 +1,11 @@
 import React from 'react';
-import './tic_tac_toe.css';
 import PropTypes from 'prop-types';
-import {Typography, Button} from '@material-ui/core';
+import {withStyles} from '@material-ui/styles';
+import TicTacToeSquare from './tic_tac_toe_square.jsx';
 
-function TicTacToeSquare(props) {
-  return (
-    <Button variant="outlined" className="square" onClick={props.onClick}>
-      <Typography variant="h5">
-        {props.value}
-      </Typography>
-    </Button>
-  );
-}
-
-TicTacToeSquare.propTypes = {
-  value: PropTypes.string,
-  onClick: PropTypes.func,
-};
+const styles = {};
 
 class TicTacToeBoard extends React.Component {
-  static propTypes = {
-    squares: PropTypes.array,
-    onClick: PropTypes.func,
-  };
   renderSquare(i) {
     return (
       <TicTacToeSquare
@@ -35,17 +18,17 @@ class TicTacToeBoard extends React.Component {
   render() {
     return (
       <div>
-        <div className="board-row">
+        <div>
           {this.renderSquare(0)}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
         </div>
-        <div className="board-row">
+        <div>
           {this.renderSquare(3)}
           {this.renderSquare(4)}
           {this.renderSquare(5)}
         </div>
-        <div className="board-row">
+        <div>
           {this.renderSquare(6)}
           {this.renderSquare(7)}
           {this.renderSquare(8)}
@@ -55,4 +38,10 @@ class TicTacToeBoard extends React.Component {
   }
 }
 
-export default TicTacToeBoard;
+TicTacToeBoard.propTypes = {
+  classes: PropTypes.object.isRequired,
+  squares: PropTypes.array.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
+export default withStyles(styles)(TicTacToeBoard);

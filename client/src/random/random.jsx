@@ -7,6 +7,10 @@ import CompletedBooksCard from './completed_books_card.jsx';
 import RecommendedSitesTable from './recommended_sites.jsx';
 import {Typography} from '@material-ui/core';
 import InteractionCard from '../shared/interaction_card.jsx';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {};
 
 class Random extends React.Component {
   render() {
@@ -26,4 +30,8 @@ class Random extends React.Component {
   }
 }
 
-export default Random;
+Random.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Random);

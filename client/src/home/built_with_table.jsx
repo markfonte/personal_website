@@ -9,6 +9,8 @@ import travisCILogo from '../static/images/logos/travis_ci_logo.png';
 import nginxLogo from '../static/images/logos/nginx_logo.png';
 import githubLogo from '../static/images/logos/github_logo.png';
 import trelloLogo from '../static/images/logos/trello_logo.png';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
 
 import {
   Typography,
@@ -22,8 +24,16 @@ import {
   CardHeader,
 } from '@material-ui/core';
 
+const styles = {
+  logoDefault: {
+    width: '80px',
+    maxHeight: '80px',
+  },
+};
+
 class BuiltWithTable extends React.Component {
   render() {
+    const {classes} = this.props;
     const digitalOceanLink = `https://www.digitalocean.com/`;
     const reactLink = `https://reactjs.org/`;
     const materialUILink = `https://material-ui.com/`;
@@ -109,7 +119,7 @@ class BuiltWithTable extends React.Component {
                       <TableCell align="center">
                         <img
                           src={row.logo}
-                          className="logo-default"
+                          className={classes.logoDefault}
                           alt="express"
                         />
                       </TableCell>
@@ -130,4 +140,8 @@ class BuiltWithTable extends React.Component {
   }
 }
 
-export default BuiltWithTable;
+BuiltWithTable.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(BuiltWithTable);

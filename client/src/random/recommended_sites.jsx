@@ -1,5 +1,4 @@
 import React from 'react';
-import './recommended_sites.css';
 import {
   Typography,
   Table,
@@ -11,9 +10,18 @@ import {
   CardContent,
   CardHeader,
 } from '@material-ui/core';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {
+  recommendedSitesWrapper: {
+    overflowX: 'auto',
+  },
+};
 
 class RecommendedSitesTable extends React.Component {
   render() {
+    const {classes} = this.props;
     const jacobFedrigonLink = `http://www-personal.umich.edu/~jacobfed/`;
     const johnFonteLink = `http://johnfonte.com/`;
     const nathanJohnsonLink = `https://nathanieljohnson.me/`;
@@ -55,11 +63,11 @@ class RecommendedSitesTable extends React.Component {
             subheader="Check out these amazing people's websites!"
           />
           <CardContent>
-            <div id="recommended-sites-wrapper">
+            <div className={classes.recommendedSitesWrapper}>
               <Table>
                 <TableBody>
-                  {rows.map((row, i) => (
-                    <TableRow key={i}>
+                  {rows.map((row) => (
+                    <TableRow key={row.title}>
                       <TableCell component="th" scope="row" align="center">
                         <Link color="textPrimary" href={row.link}>
                           <Typography variant="h6" color="textPrimary">
@@ -79,4 +87,8 @@ class RecommendedSitesTable extends React.Component {
   }
 }
 
-export default RecommendedSitesTable;
+RecommendedSitesTable.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(RecommendedSitesTable);
