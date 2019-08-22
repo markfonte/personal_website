@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import './footer.css';
 import reactLogo from '../static/vectors/react_logo.svg';
 import universityOfMichiganLogoSmall
   from '../static/vectors/university_of_michigan_logo_small.svg';
@@ -12,25 +11,75 @@ import PropTypes from 'prop-types';
 const fetch = require('node-fetch');
 
 const styles = {
-  'reactLogo': {
+  reactLogo: {
     animation: `react-logo-spin infinite 1.8s linear`,
     height: '50px',
     width: '50px',
     pointerEvents: 'none',
   },
-  '@keyframes react-logo-spin': {
-    from: {
-      transform: 'rotate(0deg)',
+  iconBar: {
+    'display': 'flex',
+    'flexDirection': 'row',
+    'listStyle': 'none',
+    'margin': '24px',
+    'flexWrap': 'wrap',
+    'justifyContent': 'center',
+    '& a': {
+      'textAlign': 'center',
+      'transition': 'all 0.3s ease',
+      'color': 'white',
+      'fontSize': '20px',
+      'height': '64px',
+      'width': '48px',
+      'padding': '16px',
+      '&:hover': {
+        backgroundColor: 'darkgrey',
+      },
     },
-    to: {
-      transform: 'rotate(360deg)',
-    },
+  },
+  facebook: {
+    background: '#3b5998',
+    color: 'white',
+  },
+  linkedin: {
+    background: '#007bb5',
+    color: 'white',
+  },
+  youtube: {
+    background: '#b00',
+    color: 'white',
+  },
+  instagram: {
+    background: '#125688',
+    color: 'white',
+  },
+  github: {
+    background: '#000',
+    color: 'white',
+  },
+  stackOverflow: {
+    background: '#f48024',
+    color: 'white',
+  },
+  footerContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
+    marginTop: '64px',
+    marginBottom: '24px',
+    justifyContent: 'center',
+  },
+  logoDefault: {
+    margin: '8px',
+  },
+  errorMessageRoot: {
+    margin: '16px',
   },
 };
 
-function DisplayError(props) {
+const DisplayError = (props) => {
   return (
-    <Typography variant="h6" style={{margin: 16}}>
+    <Typography variant="h6" className={props.classes.errorMessageRoot} >
       Oops! Looks like my backend server is down. Please
       {' '}
       <Link color="secondary" href="https://mark.fonte.com/contact">
@@ -40,7 +89,11 @@ function DisplayError(props) {
       so I can fix the issue! Thanks!
     </Typography>
   );
-}
+};
+
+DisplayError.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 class Footer extends React.Component {
   constructor(props) {
@@ -102,32 +155,32 @@ class Footer extends React.Component {
    const updatedDate = timestamp;
 
    return (
-     <footer id="footer">
-       <div id="footer-container">
-         <div className="icon-bar">
-           <a href={facebookLink} className="facebook">
+     <footer>
+       <div className={classes.footerContainer}>
+         <div className={classes.iconBar}>
+           <a href={facebookLink} className={classes.facebook}>
              <i className="fa fa-facebook" />
            </a>
-           <a href={stackOverflowLink} className="stack-overflow">
+           <a href={stackOverflowLink} className={classes.stackOverflow}>
              <i className="fa fa-stack-overflow" />
            </a>
-           <a href={githubLink} className="github">
+           <a href={githubLink} className={classes.github}>
              <i className="fa fa-github" />
            </a>
-           <a href={linkedinLink} className="linkedin">
+           <a href={linkedinLink} className={classes.linkedin}>
              <i className="fa fa-linkedin" />
            </a>
-           <a href={instagramLink} className="instagram">
+           <a href={instagramLink} className={classes.instagram}>
              <i className="fa fa-instagram" />
            </a>
-           <a href={youtubeLink} className="youtube">
+           <a href={youtubeLink} className={classes.youtube}>
              <i className="fa fa-youtube" />
            </a>
          </div>
          <div>
            {this.state.apiResponse
               ? <img src={reactLogo} className={classes.reactLogo} alt="logo" />
-              : <DisplayError />}
+              : <DisplayError classes={classes} />}
          </div>
          <div>
            <Typography variant="caption" color="textSecondary">
@@ -160,7 +213,7 @@ class Footer extends React.Component {
              src={universityOfMichiganLogoSmall}
              width="20"
              height="20"
-             style={{margin: 8}}
+             className={classes.logoDefault}
              title="University of Michigan logo small"
              alt="University of Michigan logo small"
            />

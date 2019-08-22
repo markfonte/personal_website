@@ -7,3 +7,14 @@
   margin-bottom: 72px;
   align-self: center;
 }
+
+/* Global */
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
