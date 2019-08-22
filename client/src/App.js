@@ -201,7 +201,7 @@ class App extends React.Component {
             <nav className={classes.primaryNav}>
               <List className={classes.AppList}>
                 {routes.map((route, i) => (
-                  <ListItem className={classes.AppListItem} key={i}>
+                  <ListItem className={classes.AppListItem} key={route.name}>
                     <LinkStyle style={{textDecoration: 'none'}}
                       className={classes.routerLink} component={Link} to={route.path}>
                       <Button

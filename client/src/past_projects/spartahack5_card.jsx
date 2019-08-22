@@ -1,5 +1,4 @@
 import React from 'react';
-import './spartahack5_card.css';
 import laughableLyricsLogo
   from '../static/images/logos/laughable_lyrics_logo.png';
 import WebIcon from '@material-ui/icons/Web';
@@ -13,9 +12,22 @@ import {
   IconButton,
   Link,
 } from '@material-ui/core';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {
+  media: {
+    height: '0px',
+    paddingTop: '30%',
+  },
+  logo: {
+    width: '40%', height: 'auto',
+  },
+};
 
 class Spartahack5Card extends React.Component {
   render() {
+    const {classes} = this.props;
     const spartahack5Link = `https://spartahackv.devpost.com/`;
     const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
     const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
@@ -29,7 +41,7 @@ class Spartahack5Card extends React.Component {
             subheader="Hackathon Winner @ Spartahack V"
           />
           <CardMedia
-            id="spartahack5-media"
+            className={classes.media}
             image={require('../static/images/logos/spartahack_logo.png')}
             title="SpartaHack V logo"
           />
@@ -67,7 +79,7 @@ class Spartahack5Card extends React.Component {
               <br />
               <img
                 src={laughableLyricsLogo}
-                style={{width: '40%', height: 'auto'}}
+                className={classes.logo}
                 title="Laughable Lyrics logo"
                 alt="Laughable Lyrics logo"
               />
@@ -84,4 +96,8 @@ class Spartahack5Card extends React.Component {
   }
 }
 
-export default Spartahack5Card;
+Spartahack5Card.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Spartahack5Card);

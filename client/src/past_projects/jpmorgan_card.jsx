@@ -1,5 +1,4 @@
 import React from 'react';
-import './jpmorgan_card.css';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -9,10 +8,25 @@ import {
   CardContent,
   CardHeader,
   IconButton,
+  withStyles,
 } from '@material-ui/core';
+import PropTypes from 'prop-types';
+
+const styles = {
+  media: {
+    margin: '8px',
+    paddingTop: '10.8%',
+    width: '50%',
+  },
+  mediaWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+};
 
 class JPMorganCard extends React.Component {
   render() {
+    const {classes} = this.props;
     const jpmorganLink = `https://www.jpmorganchase.com/`;
 
     return (
@@ -22,9 +36,9 @@ class JPMorganCard extends React.Component {
             title="J.P. Morgan Chase"
             subheader="Software Engineering Intern"
           />
-          <div id="jpmorgan-media-wrapper">
+          <div className={classes.mediaWrapper}>
             <CardMedia
-              id="jpmorgan-media"
+              className={classes.media}
               image={require('../static/images/logos/jpmorgan_logo.jpg')}
               title="J.P. Morgan Chase logo"
             />
@@ -49,4 +63,8 @@ class JPMorganCard extends React.Component {
   }
 }
 
-export default JPMorganCard;
+JPMorganCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(JPMorganCard);

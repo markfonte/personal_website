@@ -30,8 +30,8 @@ class CurrentBooksCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader title="Books I&#39;m Reading" subheader="August 2019" />
           <CardContent>
-            {currentBooks.map((currentBook, i) => (
-              <Card key={i} className="book-cover">
+            {currentBooks.map((currentBook) => (
+              <Card key={currentBook.title} className="book-cover">
                 <img
                   src={currentBook.image}
                   width="320"

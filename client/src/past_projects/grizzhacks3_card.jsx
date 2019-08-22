@@ -1,5 +1,4 @@
 import React from 'react';
-import './grizzhacks3_card.css';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -10,11 +9,25 @@ import {
   CardHeader,
   IconButton,
   Link,
+  withStyles,
 } from '@material-ui/core';
 import congoaiLogo from '../static/images/logos/congoai_logo.png';
+import PropTypes from 'prop-types';
+
+const styles = {
+  media: {
+    height: 0,
+    paddingTop: '30%',
+  },
+  logo: {
+    width: '50%',
+    height: 'auto',
+  },
+};
 
 class Grizzhacks3Card extends React.Component {
   render() {
+    const {classes} = this.props;
     const grizzhacks3Link = `http://grizzhacks.com/`;
     const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
@@ -26,7 +39,7 @@ class Grizzhacks3Card extends React.Component {
             subheader="Hackathon Winner @ GrizzHacks 3"
           />
           <CardMedia
-            id="grizzhacks3-media"
+            className={classes.media}
             image={require('../static/images/logos/grizzhacks_logo.png')}
             title="GrizzHacks 3 logo"
           />
@@ -54,7 +67,7 @@ class Grizzhacks3Card extends React.Component {
             <br />
             <img
               src={congoaiLogo}
-              style={{width: '50%', height: 'auto'}}
+              className={classes.logo}
               title="CongoAI logo"
               alt="CongoAI logo"
             />
@@ -70,4 +83,8 @@ class Grizzhacks3Card extends React.Component {
   }
 }
 
-export default Grizzhacks3Card;
+Grizzhacks3Card.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Grizzhacks3Card);

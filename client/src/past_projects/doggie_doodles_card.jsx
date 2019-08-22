@@ -1,5 +1,4 @@
 import React from 'react';
-import './doggie_doodles_card.css';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -11,9 +10,19 @@ import {
   IconButton,
   Link,
 } from '@material-ui/core';
+import PropTypes from 'prop-types';
+import {withStyles} from '@material-ui/styles';
+
+const styles = {
+  media: {
+    height: '0px',
+    paddingTop: '25%',
+  },
+};
 
 class DoggieDoodlesCard extends React.Component {
   render() {
+    const {classes} = this.props;
     const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
     const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
     const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
@@ -23,7 +32,7 @@ class DoggieDoodlesCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
           <CardMedia
-            id="doggie-doodles-media"
+            className={classes.media}
             image={require('../static/images/logos/doggie_doodles_logo.jpg')}
             title="Gimble A Cappella - 2019"
           />
@@ -61,4 +70,8 @@ class DoggieDoodlesCard extends React.Component {
   }
 }
 
-export default DoggieDoodlesCard;
+DoggieDoodlesCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(DoggieDoodlesCard);

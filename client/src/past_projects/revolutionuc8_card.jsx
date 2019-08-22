@@ -1,5 +1,4 @@
 import React from 'react';
-import './revolutionuc8_card.css';
 import denialDialLogo from '../static/images/logos/denial_dial_logo.png';
 import WebIcon from '@material-ui/icons/Web';
 import {
@@ -12,9 +11,29 @@ import {
   IconButton,
   Link,
 } from '@material-ui/core';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {
+  media: {
+    margin: '8px',
+    paddingTop: '10.8%',
+    width: '50%',
+  },
+  mediaWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  logo: {
+    width: '40%',
+    height: 'auto',
+    margin: '16px',
+  },
+};
 
 class RevolutionUC8Card extends React.Component {
   render() {
+    const {classes} = this.props;
     const revolutionuc8Link = `http://revolutionuc.com/`;
     const denialDialDevpostLink = `https://devpost.com/software/revolution-banking`;
     const denialDialGithubLink = `https://github.com/nathan815/denial-dial`;
@@ -25,9 +44,9 @@ class RevolutionUC8Card extends React.Component {
             title="Denial Dial"
             subheader="Hackathon Project @ RevolutionUC 8"
           />
-          <div id="revolutionuc8-media-wrapper">
+          <div className={classes.mediaWrapper}>
             <CardMedia
-              id="revolutionuc8-media"
+              className={classes.media}
               image={require('../static/images/logos/revolutionuc_logo.png')}
               title="RevolutionUC 8 logo"
             />
@@ -53,7 +72,7 @@ class RevolutionUC8Card extends React.Component {
             </Typography>
             <img
               src={denialDialLogo}
-              style={{width: '40%', height: 'auto', margin: 16}}
+              className={classes.logo}
               title="CongoAI logo"
               alt="CongoAI logo"
             />
@@ -69,4 +88,8 @@ class RevolutionUC8Card extends React.Component {
   }
 }
 
-export default RevolutionUC8Card;
+RevolutionUC8Card.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(RevolutionUC8Card);

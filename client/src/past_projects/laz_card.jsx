@@ -1,5 +1,4 @@
 import React from 'react';
-import './laz_card.css';
 import parentPortalScreenshotOne
   from '../static/images/screenshots/laz_parent_portal_screenshot_1.jpg';
 import parentPortalScreenshotTwo
@@ -18,9 +17,31 @@ import {
   CardHeader,
   IconButton,
 } from '@material-ui/core';
+import PropTypes from 'prop-types';
+import {withStyles} from '@material-ui/styles';
+
+const styles = {
+  media: {
+    margin: '8px',
+    paddingTop: '10.8%',
+    width: '50%',
+  },
+  mediaWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  mobileScreenshot: {
+    margin: '16px',
+  },
+  webScreenshot: {
+    width: '100%',
+    height: 'auto',
+  },
+};
 
 class LAZCard extends React.Component {
   render() {
+    const {classes} = this.props;
     const lazLink = `https://www.learninga-z.com/`;
 
     return (
@@ -30,9 +51,9 @@ class LAZCard extends React.Component {
             title="Learning A-Z"
             subheader="Software Engineering Intern"
           />
-          <div id="laz-media-wrapper">
+          <div className={classes.mediaWrapper}>
             <CardMedia
-              id="laz-media"
+              className={classes.media}
               image={require('../static/images/logos/laz_logo.png')}
               title="Learning A-Z logo"
             />
@@ -57,7 +78,7 @@ class LAZCard extends React.Component {
               <br /><br />
               <img
                 src={badgeScreenshot}
-                style={{width: '100%', height: 'auto'}}
+                className={classes.webScreenshot}
                 title="LAZ badge screenshot"
                 alt="LAZ badge screenshot"
               />
@@ -77,7 +98,7 @@ class LAZCard extends React.Component {
               by a full-time developer and is live in pre-production as of July 2019.
               <br /><br />
               <img
-                className="laz-screenshot"
+                className={classes.mobileScreenshot}
                 src={parentPortalScreenshotOne}
                 width="240"
                 height="500"
@@ -85,7 +106,7 @@ class LAZCard extends React.Component {
                 alt="LAZ parent portal screenshot 1"
               />
               <img
-                className="laz-screenshot"
+                className={classes.mobileScreenshot}
                 src={parentPortalScreenshotTwo}
                 width="240"
                 height="500"
@@ -93,7 +114,7 @@ class LAZCard extends React.Component {
                 alt="LAZ parent portal screenshot 2"
               />
               <img
-                className="laz-screenshot"
+                className={classes.mobileScreenshot}
                 src={parentPortalScreenshotThree}
                 width="240"
                 height="500"
@@ -113,4 +134,8 @@ class LAZCard extends React.Component {
   }
 }
 
-export default LAZCard;
+LAZCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(LAZCard);

@@ -1,5 +1,4 @@
 import React from 'react';
-import './spotlight_card.css';
 import spotlightScreenshotOne
   from '../static/images/screenshots/spotlight_screenshot_1.png';
 import spotlightScreenshotTwo
@@ -12,10 +11,19 @@ import {
   CardContent,
   CardHeader,
   IconButton,
+  withStyles,
 } from '@material-ui/core';
+import PropTypes from 'prop-types';
+
+const styles = {
+  screenshot: {
+    margin: '16px',
+  },
+};
 
 class SpotlightCard extends React.Component {
   render() {
+    const {classes} = this.props;
     const spotlightLink = `https://www.spotlight-app.com/`;
 
     return (
@@ -33,7 +41,7 @@ class SpotlightCard extends React.Component {
               successfully onboarded another developer to maintain the project.
             </Typography>
             <img
-              className="spotlight-screenshot"
+              className={classes.screenshot}
               src={spotlightScreenshotOne}
               width="240"
               height="500"
@@ -41,7 +49,7 @@ class SpotlightCard extends React.Component {
               alt="Spotlight screenshot 1"
             />
             <img
-              className="spotlight-screenshot"
+              className={classes.screenshot}
               src={spotlightScreenshotTwo}
               width="240"
               height="500"
@@ -60,4 +68,8 @@ class SpotlightCard extends React.Component {
   }
 }
 
-export default SpotlightCard;
+SpotlightCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(SpotlightCard);

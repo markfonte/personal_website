@@ -109,8 +109,8 @@ class GimbleCard extends React.Component {
             <IconButton aria-label="Go to website" href={websiteLink}>
               <WebIcon />
             </IconButton>
-            {links.map((link, i) => (
-              <IconButton key={i} aria-label={link.name} href={link.link}>
+            {links.map((link) => (
+              <IconButton key={link.name} aria-label={link.name} href={link.link}>
                 <img
                   src={link.image}
                   className={classes.gimbleCardActionIcon}

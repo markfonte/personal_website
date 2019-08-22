@@ -62,8 +62,8 @@ class CompletedBooksCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader title="Books I Would Recommend" subheader="August 2019" />
           <CardContent>
-            {completedBooks.map((completedBook, i) => (
-              <Card key={i} className="book-cover">
+            {completedBooks.map((completedBook) => (
+              <Card key={completedBook.title} className="book-cover">
                 <img
                   src={completedBook.image}
                   width="320"

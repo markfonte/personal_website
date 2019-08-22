@@ -1,5 +1,4 @@
 import React from 'react';
-import './past_projects.css';
 import LAZCard from './laz_card.jsx';
 import RevolutionUC8Card from './revolutionuc8_card.jsx';
 import Spartahack5Card from './spartahack5_card.jsx';
@@ -10,12 +9,21 @@ import InteractionCard from '../shared/interaction_card';
 import SpotlightCard from './spotlight_card';
 import DoggieDoodlesCard from './doggie_doodles_card';
 import JPMorganCard from './jpmorgan_card';
+import {withStyles} from '@material-ui/styles';
+import PropTypes from 'prop-types';
+
+const styles = {
+  title: {
+    margin: '16px',
+  },
+};
 
 class PastProjects extends React.Component {
   render() {
+    const {classes} = this.props;
     return (
       <div>
-        <Typography style={{margin: 16}} variant="h6">
+        <Typography className={classes.title} variant="h6">
           Past internships, side projects and hackathon projects I have worked on
         </Typography>
         <JPMorganCard />
@@ -32,4 +40,8 @@ class PastProjects extends React.Component {
   }
 }
 
-export default PastProjects;
+PastProjects.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(PastProjects);
