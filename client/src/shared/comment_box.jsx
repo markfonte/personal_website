@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {withStyles} from '@material-ui/styles';
 
-export default class CommentBox extends React.Component {
+const styles = {};
+
+class CommentBox extends React.Component {
   render() {
     return (
       <div>
@@ -12,5 +15,8 @@ export default class CommentBox extends React.Component {
 }
 
 CommentBox.propTypes = {
+  classes: PropTypes.object.isRequired,
   pagename: PropTypes.string.isRequired,
 };
+
+export default withStyles(styles)(CommentBox);

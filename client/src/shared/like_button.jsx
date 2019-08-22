@@ -1,13 +1,34 @@
 import React from 'react';
-import './like_button.css';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import {Typography, Card} from '@material-ui/core';
+import {withStyles} from '@material-ui/styles';
+
 const setCookie = require('../shared/util/cookies.js').setCookie;
 const getCookie = require('../shared/util/cookies.js').getCookie;
 
-export default class LikeButton extends React.Component {
+const styles = {
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: '16px',
+  },
+  likeButtonWrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  captionRoot: {
+    margin: '8px',
+  },
+  captionText: {
+    margin: '16px',
+  },
+};
+
+class LikeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,10 +58,10 @@ export default class LikeButton extends React.Component {
   }
 
   /**
-             * The fetch API doesn't allow GET requests to have bodies. This is a really
-             * annoying requirement, and in protest I have just chosen to use a POST request
-             * with a body to do the exact same thing a GET request would do.
-             */
+     * The fetch API doesn't allow GET requests to have bodies. This is a really
+     * annoying requirement, and in protest I have just chosen to use a POST request
+     * with a body to do the exact same thing a GET request would do.
+     */
   componentDidMount() {
     if (getCookie(this.props.pagename) === 'liked') {
       this.setState({liked: true});
@@ -70,6 +91,7 @@ export default class LikeButton extends React.Component {
   }
 
   render() {
+    const {classes} = this.props;
     const isLiked = this.state.liked;
     let icon;
     let displayedColor;
@@ -87,15 +109,15 @@ export default class LikeButton extends React.Component {
       );
     }
     return (
-      <div id="like-button-root">
-        <div id="like-button-wrapper">
+      <div className={classes.root}>
+        <div className={classes.likeButtonWrapper}>
           {icon}
-          <Card style={{margin: 8}}>
+          <Card className={classes.captionRoot}>
             <Typography
               variant="caption"
               size="small"
               color={displayedColor}
-              style={{margin: 16}}
+              className={classes.captionText}
             >
               {this.state.numLikes} likes
             </Typography>
@@ -107,5 +129,8 @@ export default class LikeButton extends React.Component {
 }
 
 LikeButton.propTypes = {
+  classes: PropTypes.object.isRequired,
   pagename: PropTypes.string.isRequired,
 };
+
+export default withStyles(styles)(LikeButton);
