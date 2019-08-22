@@ -14,7 +14,7 @@ import LinkStyle from '@material-ui/core/Link';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider, withStyles} from '@material-ui/styles';
-import {Typography, Button, CssBaseline, List, ListItem} from '@material-ui/core';
+import {Typography, Button, CssBaseline, List, ListItem, Grid} from '@material-ui/core';
 import ScrollUpButton from 'react-scroll-up-button';
 
 const getCookie = require('./shared/util/cookies.js').getCookie;
@@ -107,6 +107,12 @@ const styles = {
   mainTitle: {
     margin: '8px',
   },
+  routerLink: {
+    textDecoration: 'none',
+  },
+  routerButton: {
+    marginTop: 8, marginBottom: 8,
+  },
 };
 
 class App extends React.Component {
@@ -181,7 +187,7 @@ class App extends React.Component {
       <ThemeProvider theme={this.state.theme}>
         <CssBaseline />
 
-        <div className={classes.root}>
+        <Grid className={classes.root}>
           {rainbowHeader}
           <img
             className={classes.toggleThemeIcon}
@@ -196,12 +202,12 @@ class App extends React.Component {
               <List className={classes.AppList}>
                 {routes.map((route, i) => (
                   <ListItem className={classes.AppListItem} key={i}>
-                    <LinkStyle style={{textDecoration: 'none'}} component={Link} to={route.path}>
+                    <LinkStyle style={{textDecoration: 'none'}} className={classes.routerLink} component={Link} to={route.path}>
                       <Button
                         onClick={() => this.currentlySelected(i)}
                         variant={currentlySelected === i ? 'contained' : 'outlined'}
                         color="secondary"
-                        style={{marginTop: 8, marginBottom: 8}}
+                        className={classes.routerButton}
                       >
                         {route.name}
                       </Button>
@@ -220,7 +226,7 @@ class App extends React.Component {
           </Router>
           <ScrollUpButton />
           <Footer />
-        </div>
+        </Grid>
         {rainbowFooter}
       </ThemeProvider>
     );
