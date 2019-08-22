@@ -202,7 +202,8 @@ class App extends React.Component {
               <List className={classes.AppList}>
                 {routes.map((route, i) => (
                   <ListItem className={classes.AppListItem} key={i}>
-                    <LinkStyle style={{textDecoration: 'none'}} className={classes.routerLink} component={Link} to={route.path}>
+                    <LinkStyle style={{textDecoration: 'none'}}
+                      className={classes.routerLink} component={Link} to={route.path}>
                       <Button
                         onClick={() => this.currentlySelected(i)}
                         variant={currentlySelected === i ? 'contained' : 'outlined'}
