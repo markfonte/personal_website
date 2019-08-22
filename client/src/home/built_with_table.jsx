@@ -1,5 +1,4 @@
 import React from 'react';
-import './built_with_table.css';
 import reactLogo from '../static/vectors/react_logo.svg';
 import digitalOceanLogo from '../static/images/logos/digital_ocean_logo.png';
 import expressLogo from '../static/images/logos/express_logo.svg';
@@ -28,6 +27,12 @@ const styles = {
   logoDefault: {
     width: '80px',
     maxHeight: '80px',
+  },
+  builtWithTableWrapper: {
+    overflowX: 'auto',
+  },
+  builtWithTable: {
+    minWidth: '520px',
   },
 };
 
@@ -104,11 +109,11 @@ class BuiltWithTable extends React.Component {
         <Card raised={true} className="card">
           <CardHeader title="Built With:" />
           <CardContent>
-            <div id="built-with-table-wrapper">
-              <Table id="built-with-table">
+            <div className={classes.builtWithTableWrapper}>
+              <Table className={classes.builtWithTable}>
                 <TableBody>
-                  {rows.map((row, i) => (
-                    <TableRow key={i}>
+                  {rows.map((row) => (
+                    <TableRow key={row.title}>
                       <TableCell component="th" scope="row" align="left">
                         <Link href={row.link}>
                           <Typography variant="h6" color="textPrimary">

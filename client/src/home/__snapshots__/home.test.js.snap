@@ -3,22 +3,12 @@
 exports[`Home matches snapshot 1`] = `
 <div>
   <h6
-    className="MuiTypography-root MuiTypography-h6"
-    style={
-      Object {
-        "margin": 16,
-      }
-    }
+    className="MuiTypography-root Home-title-1 MuiTypography-h6"
   >
     Software Engineering Intern at J.P. Morgan · 4th year CSE student at the University of Michigan · Minor in Entrepreneurship · Focus on Web & Android development
   </h6>
   <p
-    className="MuiTypography-root MuiTypography-body1"
-    style={
-      Object {
-        "margin": 16,
-      }
-    }
+    className="MuiTypography-root Home-subtitle-2 MuiTypography-body1"
   >
     Welcome to my personal website! I am a computer science in engineering student at the University of Michigan and my website is designed to show you a little more about myself. Please browse around and feel free to check out my social media accounts or contact me directly!
   </p>
@@ -26,31 +16,21 @@ exports[`Home matches snapshot 1`] = `
     className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
   >
     <div
-      className="MuiCardContent-root"
-      style={
-        Object {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "justifyContent": "space-around",
-          "overflow": "hidden",
-        }
-      }
+      className="MuiCardContent-root PhotoFeedCard-cardContent-33"
     >
       <ul
-        className="MuiGridList-root"
+        className="MuiGridList-root PhotoFeedCard-photoGrid-34"
         style={
           Object {
             "margin": -2,
-            "maxWidth": 740,
           }
         }
       >
         <li
-          className="MuiGridListTile-root"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
           style={
             Object {
               "height": 324,
-              "margin": 0,
               "padding": 2,
               "width": "50%",
             }
@@ -70,11 +50,10 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
           style={
             Object {
               "height": 324,
-              "margin": 0,
               "padding": 2,
               "width": "50%",
             }
@@ -94,11 +73,10 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
           style={
             Object {
               "height": 324,
-              "margin": 0,
               "padding": 2,
               "width": "100%",
             }
@@ -118,11 +96,10 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
           style={
             Object {
               "height": 324,
-              "margin": 0,
               "padding": 2,
               "width": "100%",
             }
@@ -142,11 +119,10 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
           style={
             Object {
               "height": 324,
-              "margin": 0,
               "padding": 2,
               "width": "100%",
             }
@@ -189,11 +165,10 @@ exports[`Home matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          id="built-with-table-wrapper"
+          className="BuiltWithTable-builtWithTableWrapper-71"
         >
           <table
-            className="MuiTable-root"
-            id="built-with-table"
+            className="MuiTable-root BuiltWithTable-builtWithTable-72"
           >
             <tbody
               className="MuiTableBody-root"
@@ -225,7 +200,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -271,7 +246,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -317,7 +292,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -363,7 +338,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -409,7 +384,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -455,7 +430,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -501,7 +476,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -547,7 +522,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
@@ -593,7 +568,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="logo-default"
+                    className="BuiltWithTable-logoDefault-70"
                     src={
                       Object {
                         "process": [Function],
