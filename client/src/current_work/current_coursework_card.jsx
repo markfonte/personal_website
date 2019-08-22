@@ -1,6 +1,6 @@
 import React from 'react';
-import './current_coursework_card.css';
 import WebIcon from '@material-ui/icons/Web';
+import PropTypes from 'prop-types';
 import {
   Typography,
   Card,
@@ -10,10 +10,24 @@ import {
   CardHeader,
   IconButton,
   Link,
+  withStyles,
 } from '@material-ui/core';
+
+const styles = {
+  mediaRoot: {
+    margin: '8px',
+    paddingTop: '10.8%',
+    width: '50%',
+  },
+  mediaWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+};
 
 class CurrentCourseworkCard extends React.Component {
   render() {
+    const {classes} = this.props;
     const universityOfMichiganLink = `https://umich.edu/`;
     const courses = [
       {
@@ -49,17 +63,17 @@ class CurrentCourseworkCard extends React.Component {
             title="Current Coursework - Fall 2019"
             subheader="University of Michigan"
           />
-          <div id="current-coursework-media-wrapper">
+          <div className={classes.mediaWrapper}>
             <CardMedia
-              id="current-coursework-media"
+              className={classes.mediaRoot}
               image={require('../static/images/logos/university_of_michigan_logo.png')}
               title="University of Michigan banner logo"
             />
           </div>
           <CardContent>
             <Typography variant="subtitle1">
-              {courses.map((course, i) => (
-                <Typography key={i}>
+              {courses.map((course) => (
+                <Typography key={course.name}>
                   <Link
                     variant="subtitle1"
                     color="textPrimary"
@@ -88,4 +102,8 @@ class CurrentCourseworkCard extends React.Component {
   }
 }
 
-export default CurrentCourseworkCard;
+CurrentCourseworkCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(CurrentCourseworkCard);

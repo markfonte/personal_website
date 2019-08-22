@@ -1,14 +1,21 @@
 import React from 'react';
-import './current_work.css';
-import {Typography} from '@material-ui/core';
+import {Typography, withStyles} from '@material-ui/core';
 import CurrentCourseworkCard from './current_coursework_card.jsx';
 import InteractionCard from '../shared/interaction_card';
+import PropTypes from 'prop-types';
+
+const styles = {
+  title: {
+    margin: '16px',
+  },
+};
 
 class CurrentWork extends React.Component {
   render() {
+    const {classes} = this.props;
     return (
       <div>
-        <Typography style={{margin: 16}} variant="h6">
+        <Typography className={classes.title} variant="h6">
           Current coursework, projects and businesses I am working on
         </Typography>
         <CurrentCourseworkCard />
@@ -18,4 +25,8 @@ class CurrentWork extends React.Component {
   }
 }
 
-export default CurrentWork;
+CurrentWork.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(CurrentWork);
