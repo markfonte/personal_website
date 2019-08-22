@@ -1,58 +1,78 @@
 import React from 'react';
 import './contact.css';
-import {Typography, Button} from '@material-ui/core';
+import {Typography, Button, withStyles} from '@material-ui/core';
+import PropTypes from 'prop-types';
+
+const styles = {
+  root: {
+    minHeight: '70vh',
+  },
+  title: {
+    margin: '16px',
+  },
+  subtitle: {
+    margin: '16px',
+  },
+  paragraph: {
+    margin: '16px',
+  },
+  buttonDefault: {
+    margin: '8px',
+  },
+};
 
 class Contact extends React.Component {
   render() {
+    const {classes} = this.props;
     const emailLink = `mailto:mark@fonte.com`;
     const phoneLink = `tel:406-948-1034`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;
 
     return (
-      <div className="contact-root">
-        <Typography style={{margin: 16}} variant="h6">
+      <div className={classes.root}>
+        <Typography className={classes.title} variant="h6">
           Let&#39;s get in touch!
         </Typography>
-        <Typography style={{margin: 16}} variant="subtitle1">
+        <Typography className={classes.subtitle} variant="subtitle1">
           I am always open to new opportunities - recommendations, contracting work,
           collaborations, job opportunities, etc. Feel free to reach out!
         </Typography>
         <div>
           <Button
-            className="contact-buttons"
+            className={classes.buttonDefault}
             variant="outlined"
             color="secondary"
             href={emailLink}
-            style={{margin: 8}}
           >
             Email
           </Button>
           <Button
-            className="contact-button"
+            className={classes.buttonDefault}
             variant="outlined"
             color="secondary"
             href={phoneLink}
-            style={{margin: 8}}
           >
             Phone
           </Button>
           <Button
-            className="contact-button"
+            className={classes.buttonDefault}
             variant="outlined"
             color="secondary"
             href={venmoLink}
-            style={{margin: 8}}
           >
             Venmo
           </Button>
         </div>
-        <Typography style={{margin: 16}} variant="caption">
-          If you are looking for my resume, I have intentionally not made it public.
-          However, I would be happy to send it over upon request!
+        <Typography className={classes.paragraph} variant="caption">
+          My resume is available upon request!
         </Typography>
       </div>
     );
   }
 }
 
-export default Contact;
+Contact.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Contact);
