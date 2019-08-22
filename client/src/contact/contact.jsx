@@ -1,5 +1,4 @@
 import React from 'react';
-import './contact.css';
 import {Typography, Button, withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types';
 
