@@ -4,7 +4,7 @@ import {Typography, Button, List, ListItem, Grid} from '@material-ui/core';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';
 
-const styles = (theme) => ({
+const styles = {
   moveList: {
     paddingLeft: '0',
     paddingRight: '0',
@@ -17,7 +17,7 @@ const styles = (theme) => ({
   },
   moveListItem: {
     justifyContent: 'center',
-    margin: theme.spacing(0),
+    margin: '8px',
   },
   gameBoard: {
     display: 'flex', /* NEW, Spec - Firefox, Chrome, Opera */
@@ -31,9 +31,9 @@ const styles = (theme) => ({
     flexDirection: 'column',
   },
   gameInfo: {
-    margin: theme.spacing(2),
+    margin: '24px',
   },
-});
+};
 
 function calculateTicTacToeWinner(squares) {
   const lines = [

@@ -67,7 +67,7 @@ class GimbleCard extends React.Component {
           />
           <CardMedia
             id={classes.gimbleCardMedia}
-            image={require('../static/images/photos/gimble_group_pic.jpg')}
+            image={'../static/images/photos/gimble_group_pic.jpg'}
             title="Gimble A Cappella - 2019"
           />
           <CardContent>

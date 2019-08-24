@@ -116,7 +116,7 @@ class CompletedCourseworkCard extends React.Component {
           <div className={classes.mediaWrapper}>
             <CardMedia
               className={classes.media}
-              image={require('../static/images/logos/university_of_michigan_logo.png')}
+              image={'../static/images/logos/university_of_michigan_logo.png'}
               title="University of Michigan banner logo"
             />
           </div>

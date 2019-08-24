@@ -4,6 +4,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import {Typography, Card} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
+const fetch = require('node-fetch');
 
 const setCookie = require('../shared/util/cookies.js').setCookie;
 const getCookie = require('../shared/util/cookies.js').getCookie;

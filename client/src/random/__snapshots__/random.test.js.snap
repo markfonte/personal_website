@@ -1,0 +1,1343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Random matches snapshot 1`] = `
+<div>
+  <h6
+    className="MuiTypography-root MuiTypography-h6"
+    style={
+      Object {
+        "margin": 16,
+      }
+    }
+  >
+    My sandbox for trying random stuff - enjoy!
+  </h6>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Gimble A Cappella
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            My acappella group!
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardMedia-root"
+        id="GimbleCard-gimbleCardMedia-31"
+        style={
+          Object {
+            "backgroundImage": "url(\\"../static/images/photos/gimble_group_pic.jpg\\")",
+          }
+        }
+        title="Gimble A Cappella - 2019"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <iframe
+          allow="encrypted-media"
+          frameBorder="8"
+          height="235"
+          src="https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K"
+          title="Dancing On My Own - Gimble A Cappella"
+          width="320"
+        />
+        <iframe
+          allow="encrypted-media"
+          frameBorder="8"
+          height="235"
+          src="https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl"
+          title="715 - CR∑∑KS - Gimble A Cappella"
+          width="320"
+        />
+        <iframe
+          allow="encrypted-media"
+          frameBorder="8"
+          height="235"
+          src="https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR"
+          title="XX - Gimble A Cappella"
+          width="320"
+        />
+        <iframe
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+          frameBorder="8"
+          height="235"
+          src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
+          title="Fallingwater - Gimble A Cappella"
+          width="320"
+        />
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.gimbleacappella.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on Apple Music"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://itunes.apple.com/us/artist/gimble-a-cappella/1221861150?ign-gact=3&ls=1"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on Apple Music"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on Apple Music"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on Facebook"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.facebook.com/gimbleacappella/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on Facebook"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on Facebook"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on Spotify"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://open.spotify.com/artist/0CgETTTImSmkeCBkoUJiMg?autoplay=true&v=A"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on Spotify"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on Spotify"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on Google Play Music"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://play.google.com/music/m/A6i265eewm2mhu5p2fvikdbf5tm?play=1"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on Google Play Music"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on Google Play Music"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on SoundCloud"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://soundcloud.com/gimble-a-cappella"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on SoundCloud"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on SoundCloud"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on YouTube"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.youtube.com/channel/UCH2dQr26tAWVijoYdKHcgdg"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on YouTube"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on YouTube"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on YouTube Music"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.youtube.com/channel/UCzwG1_hJ5hRCMqzNlTJj2ZQ"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on YouTube Music"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on YouTube Music"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on Instagram"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.instagram.com/gimbleacappella/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on Instagram"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on Instagram"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+        <a
+          aria-disabled={false}
+          aria-label="Gimble A Cappella on Amazon Music"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://music.amazon.com/artists/B06XZ8143C?tab=LIBRARY&ref=dm_wcp_artist_link_s"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <img
+              alt="Gimble A Cappella on Amazon Music"
+              className="GimbleCard-gimbleCardActionIcon-32"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              title="Gimble A Cappella on Amazon Music"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardHeader-root"
+    >
+      <div
+        className="MuiCardHeader-content"
+      >
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        >
+          Tic Tac Toe
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          because why not?
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCardContent-root"
+    >
+      <h6
+        className="MuiTypography-root MuiTypography-subtitle1"
+      />
+      <div
+        className="MuiGrid-root TicTacToeGame-game-96"
+      >
+        <div
+          className="MuiGrid-root TicTacToeGame-gameBoard-95"
+        >
+          <div>
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiGrid-root TicTacToeGame-gameInfo-97"
+        >
+          <div>
+            <h6
+              className="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorSecondary"
+            >
+               
+              Next player: X
+            </h6>
+          </div>
+          <p />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiCardActions-root MuiCardActions-spacing"
+    >
+      <a
+        aria-disabled={false}
+        aria-label="credit: reactjs tutorial"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://reactjs.org/tutorial/tutorial.html#overview"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Recommended Sites
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Check out these amazing people's websites!
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <div
+          className="RecommendedSitesTable-recommendedSitesWrapper-219"
+        >
+          <table
+            className="MuiTable-root"
+          >
+            <tbody
+              className="MuiTableBody-root"
+            >
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  scope="row"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    href="http://www-personal.umich.edu/~jacobfed/"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <h6
+                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    >
+                      Jacob Fedrigon's Website
+                    </h6>
+                  </a>
+                </th>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  scope="row"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    href="http://johnfonte.com/"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <h6
+                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    >
+                      John Fonte's Website
+                    </h6>
+                  </a>
+                </th>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  scope="row"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    href="https://nathanieljohnson.me/"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <h6
+                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    >
+                      Nathan Johnson's Website
+                    </h6>
+                  </a>
+                </th>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  scope="row"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    href="https://salvillalon45.github.io/"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <h6
+                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    >
+                      Salvador Villalon's Website
+                    </h6>
+                  </a>
+                </th>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  scope="row"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    href="https://seanbarber.me/"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <h6
+                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    >
+                      Sean Barber's Website
+                    </h6>
+                  </a>
+                </th>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  scope="row"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    href="http://sarah-koop.com/"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <h6
+                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    >
+                      Sarah Koop's Website
+                    </h6>
+                  </a>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Books I'm Reading
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            August 2019
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
+        >
+          <img
+            alt="How Would You Move Mount Fuji?"
+            height="auto"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="How Would You Move Mount Fuji?"
+            width="320"
+          />
+          <br />
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
+            href="https://www.amazon.com/How-Would-Move-Mount-Fuji/dp/0316778494"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            How Would You Move Mount Fuji?
+          </a>
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1"
+          >
+            William Poundstone
+          </h6>
+        </div>
+        <br />
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
+          href="http://www-personal.umich.edu/~jacobfed/books.html"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          credit: jacob fedrigon"s website
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Books I Would Recommend
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            August 2019
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
+        >
+          <img
+            alt="Don't Make Me Think"
+            height="auto"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="Don't Make Me Think"
+            width="320"
+          />
+          <br />
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
+            href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Don't Make Me Think
+          </a>
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1"
+          >
+            Steve Krug
+          </h6>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
+        >
+          <img
+            alt="The DevOps Handbook"
+            height="auto"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="The DevOps Handbook"
+            width="320"
+          />
+          <br />
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
+            href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations-ebook/dp/B01M9ASFQ3"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            The DevOps Handbook
+          </a>
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1"
+          >
+            Gene Kim
+          </h6>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
+        >
+          <img
+            alt="Digital Minimalism"
+            height="auto"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="Digital Minimalism"
+            width="320"
+          />
+          <br />
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
+            href="https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Digital Minimalism
+          </a>
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1"
+          >
+            Cal Newport
+          </h6>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
+        >
+          <img
+            alt="The Phoenix Project"
+            height="auto"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="The Phoenix Project"
+            width="320"
+          />
+          <br />
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
+            href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            The Phoenix Project
+          </a>
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1"
+          >
+            Gene Kim
+          </h6>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
+        >
+          <img
+            alt="The Start-up of You"
+            height="auto"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="The Start-up of You"
+            width="320"
+          />
+          <br />
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
+            href="https://www.amazon.com/Start-up-You-Future-Yourself-Transform-ebook/dp/B0050DIWHU"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            The Start-up of You
+          </a>
+          <h6
+            className="MuiTypography-root MuiTypography-subtitle1"
+          >
+            Reid Hoffman
+          </h6>
+        </div>
+        <br />
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
+          href="http://www-personal.umich.edu/~jacobfed/books.html"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          credit: jacob fedrigon"s website
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="InteractionCard-root-244"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardContent-root"
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root PrideSwitch-flatCard-245 MuiPaper-rounded"
+        >
+          <div
+            className="PrideSwitch-prideSwitchContent-246"
+          >
+            <h5
+              className="MuiTypography-root PrideSwitch-prideTitle-247 MuiTypography-h5"
+            >
+              Pride
+            </h5>
+            <span
+              className="MuiSwitch-root PrideSwitch-prideSwitch-248"
+            >
+              <span
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-260 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <span
+                    className="MuiSwitch-thumb"
+                  />
+                  <input
+                    checked={false}
+                    className="PrivateSwitchBase-input-263 MuiSwitch-input"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </span>
+              <span
+                className="MuiSwitch-track"
+              />
+            </span>
+          </div>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            I deeply care about diversity and inclusivity. Show your pride or your solidarity.
+          </p>
+          <br />
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
+            href="https://travis-ci.org/account/preferences"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            credit: Travis CI
+          </a>
+        </div>
+        <div
+          className="LikeButton-root-264"
+        >
+          <div
+            className="LikeButton-likeButtonWrapper-265"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+              focusable="false"
+              onClick={[Function]}
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+              />
+            </svg>
+            <div
+              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-266 MuiPaper-rounded"
+            >
+              <span
+                className="MuiTypography-root LikeButton-captionText-267 MuiTypography-caption MuiTypography-colorInherit"
+                size="small"
+              >
+                0
+                 likes
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentWork matches snapshot 1`] = `
+<div>
+  <h6
+    className="MuiTypography-root CurrentWork-title-1 MuiTypography-h6"
+  >
+    Current coursework, projects and businesses I am working on
+  </h6>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Current Coursework - Fall 2019
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            University of Michigan
+          </span>
+        </div>
+      </div>
+      <div
+        className="CurrentCourseworkCard-mediaWrapper-33"
+      >
+        <div
+          className="MuiCardMedia-root CurrentCourseworkCard-mediaRoot-32"
+          style={
+            Object {
+              "backgroundImage": "url(\\"../static/images/logos/university_of_michigan_logo.png\\")",
+            }
+          }
+          title="University of Michigan banner logo"
+        />
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle1"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20441/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 441
+              </b>
+              :
+               
+              Mobile App Development for Entrepreneurs
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20481/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 481
+              </b>
+              :
+               
+              Software Engineering
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20496/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 496
+              </b>
+              :
+               
+              Major Design Experience-Professionalism
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/TCHNCLCM%20497/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                TCHNCLCM 497
+              </b>
+              :
+               
+              Advanced Technical Communication for Computer Science
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/ALA%20256/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                ALA 256
+              </b>
+              :
+               
+              Innovator's Toolkit
+            </a>
+          </p>
+        </h6>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://umich.edu/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="InteractionCard-root-100"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardContent-root"
+      >
+        <div />
+        <div
+          className="LikeButton-root-101"
+        >
+          <div
+            className="LikeButton-likeButtonWrapper-102"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+              focusable="false"
+              onClick={[Function]}
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+              />
+            </svg>
+            <div
+              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-103 MuiPaper-rounded"
+            >
+              <span
+                className="MuiTypography-root LikeButton-captionText-104 MuiTypography-caption MuiTypography-colorInherit"
+                size="small"
+              >
+                0
+                 likes
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

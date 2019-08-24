@@ -40,7 +40,7 @@ class Grizzhacks3Card extends React.Component {
           />
           <CardMedia
             className={classes.media}
-            image={require('../static/images/logos/grizzhacks_logo.png')}
+            image={'../static/images/logos/grizzhacks_logo.png'}
             title="GrizzHacks 3 logo"
           />
           <CardContent>

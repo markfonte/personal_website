@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches snapshot 1`] = `
+<footer>
+  <div
+    className="Footer-footerContainer-9"
+  >
+    <div
+      className="Footer-iconBar-2"
+    >
+      <a
+        className="Footer-facebook-3"
+        href="https://www.facebook.com/mark.fonte.397"
+      >
+        <i
+          className="fa fa-facebook"
+        />
+      </a>
+      <a
+        className="Footer-stackOverflow-8"
+        href="https://stackoverflow.com/users/8266770/mark-fonte"
+      >
+        <i
+          className="fa fa-stack-overflow"
+        />
+      </a>
+      <a
+        className="Footer-github-7"
+        href="https://github.com/markfonte"
+      >
+        <i
+          className="fa fa-github"
+        />
+      </a>
+      <a
+        className="Footer-linkedin-4"
+        href="https://linkedin.com/in/mark-fonte/"
+      >
+        <i
+          className="fa fa-linkedin"
+        />
+      </a>
+      <a
+        className="Footer-instagram-6"
+        href="https://www.instagram.com/mark_fonte21/"
+      >
+        <i
+          className="fa fa-instagram"
+        />
+      </a>
+      <a
+        className="Footer-youtube-5"
+        href="https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ"
+      >
+        <i
+          className="fa fa-youtube"
+        />
+      </a>
+    </div>
+    <div>
+      <h6
+        className="MuiTypography-root Footer-errorMessageRoot-11 MuiTypography-h6"
+      >
+        Oops! Looks like my backend server is down. Please
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://mark.fonte.com/contact"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          contact me
+        </a>
+         
+        so I can fix the issue! Thanks!
+      </h6>
+    </div>
+    <div>
+      <span
+        className="MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary"
+      >
+        Last updated
+         
+        <time
+          dateTime={"2019-08-22T22:57:00.340Z"}
+        >
+          2 days ago
+        </time>
+      </span>
+    </div>
+    <div>
+      <a
+        className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
+        href="https://github.com/markfonte/personal_website"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        view source on github
+      </a>
+    </div>
+    <div>
+      <a
+        className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
+        href="mailto:mark@fonte.com?subject=Website edit suggestion"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        suggest an edit
+      </a>
+    </div>
+    <div>
+      <img
+        alt="University of Michigan logo small"
+        className="Footer-logoDefault-10"
+        height="20"
+        src={
+          Object {
+            "process": [Function],
+          }
+        }
+        title="University of Michigan logo small"
+        width="20"
+      />
+    </div>
+  </div>
+</footer>
+`;

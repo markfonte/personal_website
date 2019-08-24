@@ -1,0 +1,1198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PastProjects matches snapshot 1`] = `
+<div>
+  <h6
+    className="MuiTypography-root PastProjects-title-1 MuiTypography-h6"
+  >
+    Past internships, side projects and hackathon projects I have worked on
+  </h6>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            J.P. Morgan Chase
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Software Engineering Intern
+          </span>
+        </div>
+      </div>
+      <div
+        className="JPMorganCard-mediaWrapper-33"
+      >
+        <div
+          className="MuiCardMedia-root JPMorganCard-media-32"
+          style={
+            Object {
+              "backgroundImage": "url(\\"../static/images/logos/jpmorgan_logo.jpg\\")",
+            }
+          }
+          title="J.P. Morgan Chase logo"
+        />
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          I worked at JP Morgan Chase in Summer 2019 on a React mobile web application. Unfortunately, the details of this project are private information, but my contributions are expected to go into production at the end of 2019. I learned lots while using a new tech stack and met many good developers and good people throughout the summer. I am very grateful for this experience.
+        </p>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.jpmorganchase.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Learning A-Z
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Software Engineering Intern
+          </span>
+        </div>
+      </div>
+      <div
+        className="LAZCard-mediaWrapper-95"
+      >
+        <div
+          className="MuiCardMedia-root LAZCard-media-94"
+          style={
+            Object {
+              "backgroundImage": "url(\\"../static/images/logos/laz_logo.png\\")",
+            }
+          }
+          title="Learning A-Z logo"
+        />
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          I worked at Learning A-Z in Summer 2017 and Summer 2018 on two separate projects. Learning A-Z is a educational software company for elementary school students, so both of my projects were features to serve them. Each summer, outside of the main project I worked on a small project with the other interns and presented on a relevant research topic. I was fortunate enough to have two great mentors and had the opportunity work alongside some awesome coworkers and fellow interns!
+          <br />
+          <br />
+          <b>
+            Summer 2017
+          </b>
+          <br />
+          In Summer 2017, I worked on the Student Badge Project, in which I implemented an incentives program for the students for achieving goals such as "read at least one book a day for five straight days".
+           
+          This project was my first formal experience writing server-side code in PHP/MySQL and client-side code in JS/HTML/CSS. I also partially integrated it into the company's existing Android application. The project was picked up by full-time developers and is live in production today!
+          <br />
+          <br />
+          <img
+            alt="LAZ badge screenshot"
+            className="LAZCard-webScreenshot-97"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="LAZ badge screenshot"
+          />
+          <br />
+          <br />
+          <b>
+            Summer 2018
+          </b>
+          <br />
+          In Summer 2018, I worked on the Android Parent Portal project. At the time, parents of the students could only view their students information on the web
+           
+          <i>
+            (fun fact: that was a project started by my brother John several years ago)
+          </i>
+          . My task was to bring that functionality to mobile. I built an Android app using the same APIs as the web application, but this time it was into a separate application than the existing Learning A-Z Android app. I actually built it using Kotlin, which had just been officially adopted as an official language by Android at the time. I found that Kotlin was much easier to write clean code with, and I would recommend it to any Android developer. Plus, it is interoperable with existing Java code! The project was picked up by a full-time developer and is live in pre-production as of July 2019.
+          <br />
+          <br />
+          <img
+            alt="LAZ parent portal screenshot 1"
+            className="LAZCard-mobileScreenshot-96"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="LAZ parent portal screenshot 1"
+            width="240"
+          />
+          <img
+            alt="LAZ parent portal screenshot 2"
+            className="LAZCard-mobileScreenshot-96"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="LAZ parent portal screenshot 2"
+            width="240"
+          />
+          <img
+            alt="LAZ parent portal screenshot 3"
+            className="LAZCard-mobileScreenshot-96"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="LAZ parent portal screenshot 3"
+            width="240"
+          />
+        </p>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.learninga-z.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Completed Coursework
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            University of Michigan
+          </span>
+        </div>
+      </div>
+      <div
+        className="CompletedCourseworkCard-mediaWrapper-99"
+      >
+        <div
+          className="MuiCardMedia-root CompletedCourseworkCard-media-98"
+          style={
+            Object {
+              "backgroundImage": "url(\\"../static/images/logos/university_of_michigan_logo.png\\")",
+            }
+          }
+          title="University of Michigan banner logo"
+        />
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle1"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20482/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 482
+              </b>
+              :
+               
+              Introduction to Operating Systems
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20485/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 485
+              </b>
+              :
+               
+              Web Systems
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20388/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 388
+              </b>
+              :
+               
+              Introduction to Computer Security
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20376/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 376
+              </b>
+              :
+               
+              Foundations of Computer Science
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20370/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 370
+              </b>
+              :
+               
+              Introduction to Computer Organization
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20281/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 281
+              </b>
+              :
+               
+              Data Structures and Algorithms
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20280/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 280
+              </b>
+              :
+               
+              Programming and Introductory Data Structures
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20203/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 203
+              </b>
+              :
+               
+              Discrete Math
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/MATH%20214/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                Math 214
+              </b>
+              :
+               
+              Applied Linear Algebra
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/MATH%20425/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                Math 425
+              </b>
+              :
+               
+              Introduction to Probability
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/MATH%20215/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                Math 215
+              </b>
+              :
+               
+              Calculus III
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/ENTR%20411/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                Entrepreneurship 411
+              </b>
+              :
+               
+              Entrepreneurship Practicum
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/PHYSICS%20240/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                Physics 240
+              </b>
+              :
+               
+              Electricity and Magnetism
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/PHYSICS%20140/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                Physics 140
+              </b>
+              :
+               
+              Mechanics
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/ENGR%20100/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                Engineering 100
+              </b>
+              :
+               
+              Wireless Communication Design
+            </a>
+          </p>
+        </h6>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://umich.edu/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Laughable Lyrics
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Hackathon Winner @ Spartahack V
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardMedia-root Spartahack5Card-media-106"
+        style={
+          Object {
+            "backgroundImage": "url(\\"../static/images/logos/spartahack_logo.png\\")",
+          }
+        }
+        title="SpartaHack V logo"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          This hackathon project,
+           
+          <i>
+            Laughable Lyrics
+          </i>
+          , is one of my favorites.
+           
+          We took inspiration from the popular
+           
+          <i>
+            "Google Translate Sings"
+          </i>
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.youtube.com/watch?v=2bVAoVlFYf0"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Youtube videos
+          </a>
+           
+          and decided we could automate that process. Using Google Translate APIs we built an Android application that allowed users to translate the Genius Lyrics through a specified number of languages, and back to English. The result was always hilarious, and the user interface we built (using Android Jetpack) made it very easy to do. We won 
+          <i>
+            Most Creative/Funniest Hack
+          </i>
+           for the project. View it on
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://devpost.com/software/laughable-lyrics"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Devpost
+          </a>
+           
+          or
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/nathan815/Laughable-Lyrics"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+          <br />
+          <img
+            alt="Laughable Lyrics logo"
+            className="Spartahack5Card-logo-107"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="Laughable Lyrics logo"
+          />
+        </p>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://spartahackv.devpost.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Denial Dial
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Hackathon Project @ RevolutionUC 8
+          </span>
+        </div>
+      </div>
+      <div
+        className="RevolutionUC8Card-mediaWrapper-109"
+      >
+        <div
+          className="MuiCardMedia-root RevolutionUC8Card-media-108"
+          style={
+            Object {
+              "backgroundImage": "url(\\"../static/images/logos/revolutionuc_logo.png\\")",
+            }
+          }
+          title="RevolutionUC 8 logo"
+        />
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          This hackathon was not as successful as the other two, but it was still a great experience. We spent at least the first 12 hours of the 24-hour hackathon bouncing between a bunch of different ideas. We ended up building a clever rejection hotline called Denial Dial using Twilio's APIs. It connected two people who were given the fake phone number we set up, and had them communicate for awhile before breaking the news to them. It also had some cool side features like an automated message that played if anyone called the number. We did not win anything with the project, but was still fun experimenting with some new technologies! View it on
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://devpost.com/software/revolution-banking"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Devpost
+          </a>
+           
+          or
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/nathan815/denial-dial"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+        </p>
+        <img
+          alt="CongoAI logo"
+          className="RevolutionUC8Card-logo-110"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="CongoAI logo"
+        />
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="http://revolutionuc.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Congo AI
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Hackathon Winner @ GrizzHacks 3
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardMedia-root Grizzhacks3Card-media-111"
+        style={
+          Object {
+            "backgroundImage": "url(\\"../static/images/logos/grizzhacks_logo.png\\")",
+          }
+        }
+        title="GrizzHacks 3 logo"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          This was the first hackathon I ever competed in. We built an online store to buy and sell pre-trained machine learning models, using Vue.js and MongoDB. While we did not completely finish, the idea was to be able to test out the machine learning models first in the store before purchasing from the person that made it. Most of the credit on this project goes to my team. We won 
+          <i>
+            Best DevOps Hack, Presented by Ally Financial
+          </i>
+           and 
+          <i>
+            Best use of Dynatrace
+          </i>
+          . View it on 
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://devpost.com/software/congoai"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Devpost
+          </a>
+           
+          or
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/nathan815/CongoAI"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+        </p>
+        <br />
+        <img
+          alt="CongoAI logo"
+          className="Grizzhacks3Card-logo-112"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="CongoAI logo"
+        />
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="http://grizzhacks.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Spotlight
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Lead Android developer and CTO
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          We worked on Android and iOS applications to help streamline the sorority recruitment process. Both applications were built using Firebase, and the Android application is built using Android Jetpack, architecture components and Google Maps APIs. I built a successful POC for the Android application and successfully onboarded another developer to maintain the project.
+        </p>
+        <img
+          alt="Spotlight screenshot 1"
+          className="SpotlightCard-screenshot-113"
+          height="500"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="Spotlight screenshot 1"
+          width="240"
+        />
+        <img
+          alt="Spotlight screenshot 2"
+          className="SpotlightCard-screenshot-113"
+          height="500"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="Spotlight screenshot 2"
+          width="240"
+        />
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://www.spotlight-app.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Doggie Doodles
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Entrepreneur
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardMedia-root DoggieDoodlesCard-media-114"
+        style={
+          Object {
+            "backgroundImage": "url(\\"../static/images/logos/doggie_doodles_logo.jpg\\")",
+          }
+        }
+        title="Gimble A Cappella - 2019"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          Started from a class project, this business sells custom merchandise using a digital drawing of your animal.
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="mailto:dopedoggiedoodles@gmail.com"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Send us a picture of your dog or cat
+             
+          </a>
+           and we will turn it into a custom drawing. Then head over to
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.redbubble.com/people/doggiedoodles"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Redbubble
+          </a>
+           
+          and you can purchase a custom mug, laptop sticker, phone case, and more. I might not be writing software for this business, but it is still lots of fun!
+        </p>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary"
+          href="https://dopedoggiedoodles.wixsite.com/home"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="InteractionCard-root-115"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardContent-root"
+      >
+        <div />
+        <div
+          className="LikeButton-root-116"
+        >
+          <div
+            className="LikeButton-likeButtonWrapper-117"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+              focusable="false"
+              onClick={[Function]}
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+              />
+            </svg>
+            <div
+              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-118 MuiPaper-rounded"
+            >
+              <span
+                className="MuiTypography-root LikeButton-captionText-119 MuiTypography-caption MuiTypography-colorInherit"
+                size="small"
+              >
+                0
+                 likes
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact matches snapshot 1`] = `
+<div
+  className="Contact-root-1"
+>
+  <h6
+    className="MuiTypography-root Contact-title-2 MuiTypography-h6"
+  >
+    Let's get in touch!
+  </h6>
+  <h6
+    className="MuiTypography-root Contact-subtitle-3 MuiTypography-subtitle1"
+  >
+    I am always open to new opportunities - recommendations, contracting work, collaborations, job opportunities, etc. Feel free to reach out!
+  </h6>
+  <div>
+    <a
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiButton-root Contact-buttonDefault-5 MuiButton-outlined MuiButton-outlinedSecondary"
+      href="mailto:mark@fonte.com"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Email
+      </span>
+    </a>
+    <a
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiButton-root Contact-buttonDefault-5 MuiButton-outlined MuiButton-outlinedSecondary"
+      href="tel:406-948-1034"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Phone
+      </span>
+    </a>
+    <a
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiButton-root Contact-buttonDefault-5 MuiButton-outlined MuiButton-outlinedSecondary"
+      href="https://venmo.com/Mark-Fonte"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Venmo
+      </span>
+    </a>
+  </div>
+  <span
+    className="MuiTypography-root Contact-paragraph-4 MuiTypography-caption"
+  >
+    My resume is available upon request!
+  </span>
+</div>
+`;

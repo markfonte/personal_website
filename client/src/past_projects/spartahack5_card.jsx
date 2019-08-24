@@ -42,7 +42,7 @@ class Spartahack5Card extends React.Component {
           />
           <CardMedia
             className={classes.media}
-            image={require('../static/images/logos/spartahack_logo.png')}
+            image={'../static/images/logos/spartahack_logo.png'}
             title="SpartaHack V logo"
           />
           <CardContent>
