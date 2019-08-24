@@ -40,6 +40,8 @@ class LikeButton extends React.Component {
     this.fetchNumLikes = this.fetchNumLikes.bind(this);
   }
 
+  abortController = new window.AbortController();
+
   fetchNumLikes() {
     const url = process.env.REACT_APP_API_URL + 'like/get';
     const requestText = {page: this.props.pagename};
@@ -50,12 +52,18 @@ class LikeButton extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(requestText),
+      signal: this.abortController.signal,
     })
         .then((response) => response.json())
         .then((data) => {
           this.setState({numLikes: data[0]['numlikes']});
         })
-        .catch((error) => console.log(error)); // eslint-disable-line no-console
+        .catch((error) => {
+          if (error.name === 'AbortError' || error.name === 'TypeError') {
+            return;
+          }
+          console.log(error);
+        }); // eslint-disable-line no-console
   }
 
   /**
@@ -81,14 +89,24 @@ class LikeButton extends React.Component {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(requestText),
+        signal: this.abortController.signal,
       })
           .then(() => {
             this.fetchNumLikes();
           })
-          .catch((error) => console.log(error));
+          .catch((error) => {
+            if (error.name === 'AbortError' || error.name === 'TypeError') {
+              return;
+            }
+            console.log(error);
+          });
       setCookie(this.props.pagename, 'liked', 1000);
       this.setState({liked: true});
     }
+  }
+
+  componentWillUnmount() {
+    this.abortController.abort();
   }
 
   render() {
