@@ -15,7 +15,8 @@
         "http-errors": "^1.7.3",
         "lodash": "^4.17.15",
         "morgan": "^1.9.1",
-        "sqlite3": "^4.0.9"
+        "sqlite3": "^4.0.9",
+        "eslint-utils": "^1.4.2"
     },
     "devDependencies": {
         "eslint": "^6.0.1",
