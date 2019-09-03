@@ -36,7 +36,7 @@ exports[`CurrentWork matches snapshot 1`] = `
           className="MuiCardMedia-root CurrentCourseworkCard-mediaRoot-32"
           style={
             Object {
-              "backgroundImage": "url(\\"../static/images/logos/university_of_michigan_logo.png\\")",
+              "backgroundImage": "url(\\"/images/university_of_michigan_logo.png\\")",
             }
           }
           title="University of Michigan banner logo"

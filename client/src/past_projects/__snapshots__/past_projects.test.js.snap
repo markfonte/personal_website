@@ -36,7 +36,7 @@ exports[`PastProjects matches snapshot 1`] = `
           className="MuiCardMedia-root JPMorganCard-media-32"
           style={
             Object {
-              "backgroundImage": "url(\\"../static/images/logos/jpmorgan_logo.jpg\\")",
+              "backgroundImage": "url(\\"/images/jpmorgan_logo.jpg\\")",
             }
           }
           title="J.P. Morgan Chase logo"
@@ -120,7 +120,7 @@ exports[`PastProjects matches snapshot 1`] = `
           className="MuiCardMedia-root LAZCard-media-94"
           style={
             Object {
-              "backgroundImage": "url(\\"../static/images/logos/laz_logo.png\\")",
+              "backgroundImage": "url(\\"/images/laz_logo.png\\")",
             }
           }
           title="Learning A-Z logo"
@@ -275,7 +275,7 @@ exports[`PastProjects matches snapshot 1`] = `
           className="MuiCardMedia-root CompletedCourseworkCard-media-98"
           style={
             Object {
-              "backgroundImage": "url(\\"../static/images/logos/university_of_michigan_logo.png\\")",
+              "backgroundImage": "url(\\"images/university_of_michigan_logo.png\\")",
             }
           }
           title="University of Michigan banner logo"
@@ -610,7 +610,7 @@ exports[`PastProjects matches snapshot 1`] = `
         className="MuiCardMedia-root Spartahack5Card-media-106"
         style={
           Object {
-            "backgroundImage": "url(\\"../static/images/logos/spartahack_logo.png\\")",
+            "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
           }
         }
         title="SpartaHack V logo"
@@ -750,7 +750,7 @@ exports[`PastProjects matches snapshot 1`] = `
           className="MuiCardMedia-root RevolutionUC8Card-media-108"
           style={
             Object {
-              "backgroundImage": "url(\\"../static/images/logos/revolutionuc_logo.png\\")",
+              "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
             }
           }
           title="RevolutionUC 8 logo"
@@ -861,7 +861,7 @@ exports[`PastProjects matches snapshot 1`] = `
         className="MuiCardMedia-root Grizzhacks3Card-media-111"
         style={
           Object {
-            "backgroundImage": "url(\\"../static/images/logos/grizzhacks_logo.png\\")",
+            "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
           }
         }
         title="GrizzHacks 3 logo"
@@ -1074,7 +1074,7 @@ exports[`PastProjects matches snapshot 1`] = `
         className="MuiCardMedia-root DoggieDoodlesCard-media-114"
         style={
           Object {
-            "backgroundImage": "url(\\"../static/images/logos/doggie_doodles_logo.jpg\\")",
+            "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
           }
         }
         title="Gimble A Cappella - 2019"

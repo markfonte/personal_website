@@ -39,7 +39,7 @@ class JPMorganCard extends React.Component {
           <div className={classes.mediaWrapper}>
             <CardMedia
               className={classes.media}
-              image={'../static/images/logos/jpmorgan_logo.jpg'}
+              image="/images/jpmorgan_logo.jpg"
               title="J.P. Morgan Chase logo"
             />
           </div>

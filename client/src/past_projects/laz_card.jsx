@@ -54,7 +54,7 @@ class LAZCard extends React.Component {
           <div className={classes.mediaWrapper}>
             <CardMedia
               className={classes.media}
-              image={'../static/images/logos/laz_logo.png'}
+              image="/images/laz_logo.png"
               title="Learning A-Z logo"
             />
           </div>
