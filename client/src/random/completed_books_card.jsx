@@ -60,7 +60,7 @@ class CompletedBooksCard extends React.Component {
     return (
       <div>
         <Card raised={true} className="card">
-          <CardHeader title="Books I Would Recommend" subheader="August 2019" />
+          <CardHeader title="Books I Would Recommend" subheader="September 2019" />
           <CardContent>
             {completedBooks.map((completedBook) => (
               <Card key={completedBook.title} className="book-cover">

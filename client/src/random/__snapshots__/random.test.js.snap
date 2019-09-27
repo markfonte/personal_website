@@ -30,7 +30,7 @@ exports[`Random matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            My acappella group!
+            My acappella group - check out our new single: Fallingwater!
           </span>
         </div>
       </div>
@@ -47,6 +47,31 @@ exports[`Random matches snapshot 1`] = `
       <div
         className="MuiCardContent-root"
       >
+        <iframe
+          allow="encrypted-media"
+          frameBorder="8"
+          height="235"
+          src="https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK"
+          title="Fallingwater - Gimble A Cappella"
+          width="320"
+        />
+        <iframe
+          allow="autoplay *; encrypted-media *;"
+          frameBorder="0"
+          height="235"
+          src="https://embed.music.apple.com/us/album/fallingwater-single/1479474008?app=music"
+          title="Fallingwater Apple Music - Gimble A Cappella"
+          width="320"
+        />
+        <iframe
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+          frameBorder="8"
+          height="235"
+          src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
+          title="Fallingwater Video - Gimble A Cappella"
+          width="320"
+        />
         <iframe
           allow="encrypted-media"
           frameBorder="8"
@@ -69,15 +94,6 @@ exports[`Random matches snapshot 1`] = `
           height="235"
           src="https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR"
           title="XX - Gimble A Cappella"
-          width="320"
-        />
-        <iframe
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen={true}
-          frameBorder="8"
-          height="235"
-          src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
-          title="Fallingwater - Gimble A Cappella"
           width="320"
         />
       </div>
@@ -977,254 +993,6 @@ exports[`Random matches snapshot 1`] = `
             </tbody>
           </table>
         </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
-        >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Books I'm Reading
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            August 2019
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <div
-          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
-        >
-          <img
-            alt="How Would You Move Mount Fuji?"
-            height="auto"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="How Would You Move Mount Fuji?"
-            width="320"
-          />
-          <br />
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
-            href="https://www.amazon.com/How-Would-Move-Mount-Fuji/dp/0316778494"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            How Would You Move Mount Fuji?
-          </a>
-          <h6
-            className="MuiTypography-root MuiTypography-subtitle1"
-          >
-            William Poundstone
-          </h6>
-        </div>
-        <br />
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
-          href="http://www-personal.umich.edu/~jacobfed/books.html"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          credit: jacob fedrigon"s website
-        </a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
-        >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Books I Would Recommend
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            August 2019
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <div
-          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
-        >
-          <img
-            alt="Don't Make Me Think"
-            height="auto"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Don't Make Me Think"
-            width="320"
-          />
-          <br />
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
-            href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Don't Make Me Think
-          </a>
-          <h6
-            className="MuiTypography-root MuiTypography-subtitle1"
-          >
-            Steve Krug
-          </h6>
-        </div>
-        <div
-          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
-        >
-          <img
-            alt="The DevOps Handbook"
-            height="auto"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="The DevOps Handbook"
-            width="320"
-          />
-          <br />
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
-            href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations-ebook/dp/B01M9ASFQ3"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            The DevOps Handbook
-          </a>
-          <h6
-            className="MuiTypography-root MuiTypography-subtitle1"
-          >
-            Gene Kim
-          </h6>
-        </div>
-        <div
-          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
-        >
-          <img
-            alt="Digital Minimalism"
-            height="auto"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Digital Minimalism"
-            width="320"
-          />
-          <br />
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
-            href="https://www.amazon.com/Digital-Minimalism-Choosing-Focused-Noisy/dp/0525536515"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Digital Minimalism
-          </a>
-          <h6
-            className="MuiTypography-root MuiTypography-subtitle1"
-          >
-            Cal Newport
-          </h6>
-        </div>
-        <div
-          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
-        >
-          <img
-            alt="The Phoenix Project"
-            height="auto"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="The Phoenix Project"
-            width="320"
-          />
-          <br />
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
-            href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            The Phoenix Project
-          </a>
-          <h6
-            className="MuiTypography-root MuiTypography-subtitle1"
-          >
-            Gene Kim
-          </h6>
-        </div>
-        <div
-          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root book-cover MuiPaper-rounded"
-        >
-          <img
-            alt="The Start-up of You"
-            height="auto"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="The Start-up of You"
-            width="320"
-          />
-          <br />
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h6 MuiTypography-colorTextPrimary"
-            href="https://www.amazon.com/Start-up-You-Future-Yourself-Transform-ebook/dp/B0050DIWHU"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            The Start-up of You
-          </a>
-          <h6
-            className="MuiTypography-root MuiTypography-subtitle1"
-          >
-            Reid Hoffman
-          </h6>
-        </div>
-        <br />
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
-          href="http://www-personal.umich.edu/~jacobfed/books.html"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          credit: jacob fedrigon"s website
-        </a>
       </div>
     </div>
   </div>

@@ -21,7 +21,6 @@ class Home extends React.Component {
     return (
       <div>
         <Typography className={classes.title} variant="h6">
-          Software Engineering Intern at J.P. Morgan ·
           4th year CSE student at the University of Michigan ·
           Minor in Entrepreneurship ·
           Focus on Web &amp; Android development

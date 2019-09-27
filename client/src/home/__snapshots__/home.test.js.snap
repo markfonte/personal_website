@@ -5,7 +5,7 @@ exports[`Home matches snapshot 1`] = `
   <h6
     className="MuiTypography-root Home-title-1 MuiTypography-h6"
   >
-    Software Engineering Intern at J.P. Morgan · 4th year CSE student at the University of Michigan · Minor in Entrepreneurship · Focus on Web & Android development
+    4th year CSE student at the University of Michigan · Minor in Entrepreneurship · Focus on Web & Android development
   </h6>
   <p
     className="MuiTypography-root Home-subtitle-2 MuiTypography-body1"
