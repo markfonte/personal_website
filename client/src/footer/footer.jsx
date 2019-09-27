@@ -178,9 +178,9 @@ class Footer extends React.Component {
            </a>
          </div>
          <div>
-           {this.state.apiResponse
-              ? <img src={reactLogo} className={classes.reactLogo} alt="logo" />
-              : <DisplayError classes={classes} />}
+           {this.state.apiResponse ?
+              <img src={reactLogo} className={classes.reactLogo} alt="logo" /> :
+              <DisplayError classes={classes} />}
          </div>
          <div>
            <Typography variant="caption" color="textSecondary">

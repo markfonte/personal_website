@@ -1039,14 +1039,14 @@ exports[`Random matches snapshot 1`] = `
                 <span
                   className="MuiIconButton-label"
                 >
-                  <span
-                    className="MuiSwitch-thumb"
-                  />
                   <input
                     checked={false}
                     className="PrivateSwitchBase-input-266 MuiSwitch-input"
                     onChange={[Function]}
                     type="checkbox"
+                  />
+                  <span
+                    className="MuiSwitch-thumb"
                   />
                 </span>
                 <span

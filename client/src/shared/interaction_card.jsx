@@ -17,9 +17,9 @@ const styles = {
 class InteractionCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const prideSwitch = this.props.pagename === 'random'
-      ? <PrideSwitch />
-      : <div />;
+    const prideSwitch = this.props.pagename === 'random' ?
+      <PrideSwitch /> :
+      <div />;
     return (
       <div className={classes.root}>
         <Card raised={true}>

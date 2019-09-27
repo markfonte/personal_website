@@ -176,12 +176,12 @@ export class App extends React.Component {
 
   render() {
     const {classes} = this.props;
-    const rainbowHeader = this.state.proud === true
-      ? <header className={classes.headerRoot} />
-      : <div />;
-    const rainbowFooter = this.state.proud === true
-      ? <footer className={classes.footerRoot} />
-      : <div />;
+    const rainbowHeader = this.state.proud === true ?
+      <header className={classes.headerRoot} /> :
+      <div />;
+    const rainbowFooter = this.state.proud === true ?
+      <footer className={classes.footerRoot} /> :
+      <div />;
     const currentlySelected = this.state.currentlySelected;
     return (
       <ThemeProvider theme={this.state.theme}>
