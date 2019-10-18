@@ -176,7 +176,7 @@ exports[`CurrentWork matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-100"
+    className="InteractionCard-root-101"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
@@ -186,10 +186,10 @@ exports[`CurrentWork matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-101"
+          className="LikeButton-root-102"
         >
           <div
-            className="LikeButton-likeButtonWrapper-102"
+            className="LikeButton-likeButtonWrapper-103"
           >
             <svg
               aria-hidden="true"
@@ -204,10 +204,10 @@ exports[`CurrentWork matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-103 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-104 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-104 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-105 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

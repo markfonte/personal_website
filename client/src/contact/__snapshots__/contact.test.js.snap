@@ -17,7 +17,7 @@ exports[`Contact matches snapshot 1`] = `
   <div>
     <a
       aria-disabled={false}
-      className="MuiButtonBase-root MuiButton-root Contact-buttonDefault-5 MuiButton-outlined MuiButton-outlinedSecondary"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary Contact-buttonDefault-5"
       href="mailto:mark@fonte.com"
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -40,7 +40,7 @@ exports[`Contact matches snapshot 1`] = `
     </a>
     <a
       aria-disabled={false}
-      className="MuiButtonBase-root MuiButton-root Contact-buttonDefault-5 MuiButton-outlined MuiButton-outlinedSecondary"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary Contact-buttonDefault-5"
       href="tel:406-948-1034"
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -63,7 +63,7 @@ exports[`Contact matches snapshot 1`] = `
     </a>
     <a
       aria-disabled={false}
-      className="MuiButtonBase-root MuiButton-root Contact-buttonDefault-5 MuiButton-outlined MuiButton-outlinedSecondary"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary Contact-buttonDefault-5"
       href="https://venmo.com/Mark-Fonte"
       onBlur={[Function]}
       onDragLeave={[Function]}

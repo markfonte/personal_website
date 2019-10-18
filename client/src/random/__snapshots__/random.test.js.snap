@@ -492,15 +492,15 @@ exports[`Random matches snapshot 1`] = `
         className="MuiTypography-root MuiTypography-subtitle1"
       />
       <div
-        className="MuiGrid-root TicTacToeGame-game-96"
+        className="MuiGrid-root TicTacToeGame-game-97"
       >
         <div
-          className="MuiGrid-root TicTacToeGame-gameBoard-95"
+          className="MuiGrid-root TicTacToeGame-gameBoard-96"
         >
           <div>
             <div>
               <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -529,7 +529,7 @@ exports[`Random matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -558,96 +558,7 @@ exports[`Random matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-            </div>
-            <div>
-              <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -678,7 +589,7 @@ exports[`Random matches snapshot 1`] = `
             </div>
             <div>
               <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -707,7 +618,7 @@ exports[`Random matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -736,7 +647,96 @@ exports[`Random matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root TicTacToeSquare-square-201 MuiButton-outlined"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlined TicTacToeSquare-square-202"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -768,7 +768,7 @@ exports[`Random matches snapshot 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root TicTacToeGame-gameInfo-97"
+          className="MuiGrid-root TicTacToeGame-gameInfo-98"
         >
           <div>
             <h6
@@ -850,7 +850,7 @@ exports[`Random matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="RecommendedSitesTable-recommendedSitesWrapper-219"
+          className="RecommendedSitesTable-recommendedSitesWrapper-231"
         >
           <table
             className="MuiTable-root"
@@ -997,7 +997,7 @@ exports[`Random matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-246"
+    className="InteractionCard-root-258"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
@@ -1006,22 +1006,22 @@ exports[`Random matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root PrideSwitch-flatCard-247 MuiPaper-rounded"
+          className="MuiPaper-root MuiPaper-elevation1 MuiCard-root PrideSwitch-flatCard-259 MuiPaper-rounded"
         >
           <div
-            className="PrideSwitch-prideSwitchContent-248"
+            className="PrideSwitch-prideSwitchContent-260"
           >
             <h5
-              className="MuiTypography-root PrideSwitch-prideTitle-249 MuiTypography-h5"
+              className="MuiTypography-root PrideSwitch-prideTitle-261 MuiTypography-h5"
             >
               Pride
             </h5>
             <span
-              className="MuiSwitch-root PrideSwitch-prideSwitch-250"
+              className="MuiSwitch-root PrideSwitch-prideSwitch-262"
             >
               <span
                 aria-disabled={false}
-                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-263 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-275 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onDragLeave={[Function]}
@@ -1041,7 +1041,7 @@ exports[`Random matches snapshot 1`] = `
                 >
                   <input
                     checked={false}
-                    className="PrivateSwitchBase-input-266 MuiSwitch-input"
+                    className="PrivateSwitchBase-input-278 MuiSwitch-input"
                     onChange={[Function]}
                     type="checkbox"
                   />
@@ -1074,10 +1074,10 @@ exports[`Random matches snapshot 1`] = `
           </a>
         </div>
         <div
-          className="LikeButton-root-267"
+          className="LikeButton-root-279"
         >
           <div
-            className="LikeButton-likeButtonWrapper-268"
+            className="LikeButton-likeButtonWrapper-280"
           >
             <svg
               aria-hidden="true"
@@ -1092,10 +1092,10 @@ exports[`Random matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-269 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-281 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-270 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-282 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

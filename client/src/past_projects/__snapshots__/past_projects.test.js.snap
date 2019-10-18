@@ -114,10 +114,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="LAZCard-mediaWrapper-95"
+        className="LAZCard-mediaWrapper-96"
       >
         <div
-          className="MuiCardMedia-root LAZCard-media-94"
+          className="MuiCardMedia-root LAZCard-media-95"
           style={
             Object {
               "backgroundImage": "url(\\"/images/laz_logo.png\\")",
@@ -146,7 +146,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="LAZ badge screenshot"
-            className="LAZCard-webScreenshot-97"
+            className="LAZCard-webScreenshot-98"
             src={
               Object {
                 "process": [Function],
@@ -170,7 +170,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="LAZ parent portal screenshot 1"
-            className="LAZCard-mobileScreenshot-96"
+            className="LAZCard-mobileScreenshot-97"
             height="500"
             src={
               Object {
@@ -182,7 +182,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="LAZ parent portal screenshot 2"
-            className="LAZCard-mobileScreenshot-96"
+            className="LAZCard-mobileScreenshot-97"
             height="500"
             src={
               Object {
@@ -194,7 +194,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="LAZ parent portal screenshot 3"
-            className="LAZCard-mobileScreenshot-96"
+            className="LAZCard-mobileScreenshot-97"
             height="500"
             src={
               Object {
@@ -269,10 +269,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="CompletedCourseworkCard-mediaWrapper-99"
+        className="CompletedCourseworkCard-mediaWrapper-100"
       >
         <div
-          className="MuiCardMedia-root CompletedCourseworkCard-media-98"
+          className="MuiCardMedia-root CompletedCourseworkCard-media-99"
           style={
             Object {
               "backgroundImage": "url(\\"images/university_of_michigan_logo.png\\")",
@@ -607,7 +607,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Spartahack5Card-media-106"
+        className="MuiCardMedia-root Spartahack5Card-media-107"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
@@ -671,7 +671,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-107"
+            className="Spartahack5Card-logo-108"
             src={
               Object {
                 "process": [Function],
@@ -744,10 +744,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-109"
+        className="RevolutionUC8Card-mediaWrapper-110"
       >
         <div
-          className="MuiCardMedia-root RevolutionUC8Card-media-108"
+          className="MuiCardMedia-root RevolutionUC8Card-media-109"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
@@ -786,7 +786,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-110"
+          className="RevolutionUC8Card-logo-111"
           src={
             Object {
               "process": [Function],
@@ -858,7 +858,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Grizzhacks3Card-media-111"
+        className="MuiCardMedia-root Grizzhacks3Card-media-112"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
@@ -904,7 +904,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-112"
+          className="Grizzhacks3Card-logo-113"
           src={
             Object {
               "process": [Function],
@@ -985,7 +985,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-113"
+          className="SpotlightCard-screenshot-114"
           height="500"
           src={
             Object {
@@ -997,7 +997,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-113"
+          className="SpotlightCard-screenshot-114"
           height="500"
           src={
             Object {
@@ -1071,7 +1071,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root DoggieDoodlesCard-media-114"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-115"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
@@ -1151,7 +1151,7 @@ exports[`PastProjects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-115"
+    className="InteractionCard-root-116"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
@@ -1161,10 +1161,10 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-116"
+          className="LikeButton-root-117"
         >
           <div
-            className="LikeButton-likeButtonWrapper-117"
+            className="LikeButton-likeButtonWrapper-118"
           >
             <svg
               aria-hidden="true"
@@ -1179,10 +1179,10 @@ exports[`PastProjects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-118 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-119 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-119 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-120 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
