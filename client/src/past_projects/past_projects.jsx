@@ -11,6 +11,7 @@ import DoggieDoodlesCard from './doggie_doodles_card';
 import JPMorganCard from './jpmorgan_card';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
+import MHacks12Card from './mhacks12_card';
 
 const styles = {
   title: {
@@ -29,6 +30,7 @@ class PastProjects extends React.Component {
         <JPMorganCard />
         <LAZCard />
         <CompletedCourseworkCard />
+        <MHacks12Card />
         <Spartahack5Card />
         <RevolutionUC8Card />
         <Grizzhacks3Card />
