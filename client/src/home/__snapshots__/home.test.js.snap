@@ -5,21 +5,173 @@ exports[`Home matches snapshot 1`] = `
   <h6
     className="MuiTypography-root Home-title-1 MuiTypography-h6"
   >
-    4th year CSE student at the University of Michigan · Minor in Entrepreneurship · Focus on Web & Android development
+    Senior Computer Science in Engineering student at the University of Michigan · Minor in Entrepreneurship · Focus on Web & Android development
   </h6>
-  <p
-    className="MuiTypography-root Home-subtitle-2 MuiTypography-body1"
-  >
-    Welcome to my personal website! I am a computer science in engineering student at the University of Michigan and my website is designed to show you a little more about myself. Please browse around and feel free to check out my social media accounts or contact me directly!
-  </p>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Recent Highlight: MHacks 12
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Check out my MHacks 12 hackathon project, InstEvents!
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardMedia-root HighlightsCard-media-33"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/images/mhacks_logo.png\\")",
+          }
+        }
+        title="MHacks 12 logo"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          This project was definitely my favorite hackathon project. Nathan and I had 36 hours at MHacks to make a very solid project, and I thought we delivered on our own high expectations. The idea for the app came out of one of my entrepreneurship classes where we were asked to "explore" something new every week. It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app features a Google Maps view that immediately opens to show today's current and upcoming events. In addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users can add events with an interface that features date pickers, time pickers, address autocomplete using the Google Maps Places API, the ability to add a cover photo and more!
+          <br />
+           
+          <br />
+          For this app, we focused on making sure all of the features that we completed were done well. For example, we put lots of extra time into making sure the "Add Event" flow was as seamless as possible, instead of using that time to partially complete some of our stretch goals. The advantage of this is a good UX, even with just the app we made during the hackathon. Going forward, we plan to continue working on other features like web-scraping for popular events, and an eventual release to the Google Play Store. More details on upcoming features and more on our
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/markfonte/InstEvents"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+          ! We also believe that the app has significant value as-is, because of the fact that anyone can post an event. This, in combination with the built-in Google Maps view, allows for a location-based sorting of events as opposed to the normal popularity-based sorting of events. In other words, events with only 30 people attending get the same weight on the map as those with 5,000. This allows for an even playing field and is a concept we have not really seen before.
+          <br />
+           
+          <br />
+          View it on
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://devpost.com/software/instevent"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Devpost
+          </a>
+           
+          or
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/markfonte/InstEvents"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+          <br />
+           
+          <br />
+          <img
+            alt="InstEvents Screenshot 3"
+            className="HighlightsCard-screenshot-35"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="InstEvents Screenshot 3"
+            width="240"
+          />
+          <img
+            alt="InstEvents Screenshot 1"
+            className="HighlightsCard-screenshot-35"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="InstEvents Screenshot 1"
+            width="240"
+          />
+          <img
+            alt="InstEvents Screenshot 2"
+            className="HighlightsCard-screenshot-35"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="InstEvents Screenshot 2"
+            width="240"
+          />
+        </p>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://mhacks12.devpost.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
   <div
     className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
   >
     <div
-      className="MuiCardContent-root PhotoFeedCard-cardContent-33"
+      className="MuiCardContent-root PhotoFeedCard-cardContent-103"
     >
       <ul
-        className="MuiGridList-root PhotoFeedCard-photoGrid-34"
+        className="MuiGridList-root PhotoFeedCard-photoGrid-104"
         style={
           Object {
             "margin": -2,
@@ -27,7 +179,7 @@ exports[`Home matches snapshot 1`] = `
         }
       >
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-105"
           style={
             Object {
               "height": 324,
@@ -50,7 +202,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-105"
           style={
             Object {
               "height": 324,
@@ -73,7 +225,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-105"
           style={
             Object {
               "height": 324,
@@ -96,7 +248,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-105"
           style={
             Object {
               "height": 324,
@@ -119,7 +271,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-35"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-105"
           style={
             Object {
               "height": 324,
@@ -165,10 +317,10 @@ exports[`Home matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="BuiltWithTable-builtWithTableWrapper-71"
+          className="BuiltWithTable-builtWithTableWrapper-112"
         >
           <table
-            className="MuiTable-root BuiltWithTable-builtWithTable-72"
+            className="MuiTable-root BuiltWithTable-builtWithTable-113"
           >
             <tbody
               className="MuiTableBody-root"
@@ -200,7 +352,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -246,7 +398,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -292,7 +444,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -308,6 +460,52 @@ exports[`Home matches snapshot 1`] = `
                     className="MuiTypography-root MuiTypography-subtitle2"
                   >
                     repository hosting
+                  </h6>
+                </td>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-alignLeft MuiTableCell-body"
+                  scope="row"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                    href="https://jestjs.io/"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    <h6
+                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    >
+                      Jest
+                    </h6>
+                  </a>
+                </th>
+                <td
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-alignCenter MuiTableCell-body"
+                >
+                  <img
+                    alt="express"
+                    className="BuiltWithTable-logoDefault-111"
+                    src={
+                      Object {
+                        "process": [Function],
+                      }
+                    }
+                  />
+                </td>
+                <td
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-alignRight MuiTableCell-body"
+                >
+                  <h6
+                    className="MuiTypography-root MuiTypography-subtitle2"
+                  >
+                    UI testing
                   </h6>
                 </td>
               </tr>
@@ -338,7 +536,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -384,7 +582,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -430,7 +628,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -476,7 +674,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -522,7 +720,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],
@@ -568,7 +766,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-70"
+                    className="BuiltWithTable-logoDefault-111"
                     src={
                       Object {
                         "process": [Function],

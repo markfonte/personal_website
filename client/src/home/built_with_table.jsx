@@ -8,6 +8,7 @@ import travisCILogo from '../static/images/logos/travis_ci_logo.png';
 import nginxLogo from '../static/images/logos/nginx_logo.png';
 import githubLogo from '../static/images/logos/github_logo.png';
 import trelloLogo from '../static/images/logos/trello_logo.png';
+import jestLogo from '../static/images/logos/jest_logo.png';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 
@@ -48,6 +49,8 @@ class BuiltWithTable extends React.Component {
     const nginxLink = `https://www.nginx.com/`;
     const githubLink = `https://github.com/`;
     const trelloLink = `https://trello.com/`;
+    const jestLink = `https://jestjs.io/`;
+
     const rows = [
       {
         title: 'DigitalOcean',
@@ -66,6 +69,12 @@ class BuiltWithTable extends React.Component {
         subtitle: 'repository hosting',
         link: githubLink,
         logo: githubLogo,
+      },
+      {
+        title: 'Jest',
+        subtitle: 'UI testing',
+        link: jestLink,
+        logo: jestLogo,
       },
       {
         title: 'Material-UI',

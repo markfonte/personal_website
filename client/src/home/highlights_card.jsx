@@ -24,7 +24,7 @@ import PropTypes from 'prop-types';
 const styles = {
   media: {
     height: '0px',
-    paddingTop: '30%',
+    paddingTop: '25%',
   },
   logo: {
     width: '40%', height: 'auto',
@@ -34,7 +34,7 @@ const styles = {
   },
 };
 
-class MHacks12Card extends React.Component {
+class HighlightsCard extends React.Component {
   render() {
     const {classes} = this.props;
     const mhacks12Link = `https://mhacks12.devpost.com/`;
@@ -45,8 +45,8 @@ class MHacks12Card extends React.Component {
       <div>
         <Card raised={true} className="card">
           <CardHeader
-            title="InstEvents"
-            subheader="Hackathon Project @ MHacks 12"
+            title="Recent Highlight: MHacks 12"
+            subheader="Check out my MHacks 12 hackathon project, InstEvents!"
           />
           <CardMedia
             className={classes.media}
@@ -125,6 +125,7 @@ class MHacks12Card extends React.Component {
                 title="InstEvents Screenshot 2"
                 alt="InstEvents Screenshot 2"
               />
+
             </Typography>
           </CardContent>
           <CardActions>
@@ -138,8 +139,8 @@ class MHacks12Card extends React.Component {
   }
 }
 
-MHacks12Card.propTypes = {
+HighlightsCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MHacks12Card);
+export default withStyles(styles)(HighlightsCard);
