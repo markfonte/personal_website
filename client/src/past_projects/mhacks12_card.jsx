@@ -52,7 +52,7 @@ class MHacks12Card extends React.Component {
               something new every week.
               It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to
               us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app
-              features a Google Maps view that immediately opens to show today's current and upcoming events. In
+              features a Google Maps view that immediately opens to show today`&apos;`s current and upcoming events. In
               addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users
               can add events with an interface that features date pickers, time pickers, address autocomplete using the
               Google Maps Places API, the ability to add a cover photo and more!
@@ -71,7 +71,7 @@ class MHacks12Card extends React.Component {
               can post an event. This, in combination with the built-in Google Maps view, allows for a location-based
               sorting of events as opposed to the normal popularity-based sorting of events. In other words, events
               with only 30 people attending get the same weight on the map as those with 5,000. This allows for an
-              even playing field and is a concept we havent really seen before in practice.
+              even playing field and is a concept we have not really seen before in practice.
               <br /> <br/>
               View it on
               {' '}
