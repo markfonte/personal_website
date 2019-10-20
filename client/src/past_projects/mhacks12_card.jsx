@@ -1,6 +1,12 @@
 import React from 'react';
-import instEventsLogo
-  from '../static/images/logos/instevents_logo.jpg';
+// import instEventsLogo
+//   from '../static/images/logos/instevents_logo.jpg';
+import instEventsScreenshot1
+  from '../static/images/screenshots/instevents_screenshot_1.jpg';
+import instEventsScreenshot2
+  from '../static/images/screenshots/instevents_screenshot_2.jpg';
+import instEventsScreenshot3
+  from '../static/images/screenshots/instevents_screenshot_3.jpg';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -22,6 +28,9 @@ const styles = {
   },
   logo: {
     width: '40%', height: 'auto',
+  },
+  screenshot: {
+    margin: '16px',
   },
 };
 
@@ -71,7 +80,7 @@ class MHacks12Card extends React.Component {
               can post an event. This, in combination with the built-in Google Maps view, allows for a location-based
               sorting of events as opposed to the normal popularity-based sorting of events. In other words, events
               with only 30 people attending get the same weight on the map as those with 5,000. This allows for an
-              even playing field and is a concept we have not really seen before in practice.
+              even playing field and is a concept we have not really seen before.
               <br /> <br/>
               View it on
               {' '}
@@ -84,13 +93,39 @@ class MHacks12Card extends React.Component {
               <Link color="secondary" href={instEventsGithubLink}>
                 Github
               </Link>
-              <br />
+              {/* <br /> <br />
               <img
                 src={instEventsLogo}
                 className={classes.logo}
                 title="InstEvents logo"
                 alt="InstEvents logo"
+              /> */}
+              <br /> <br />
+              <img
+                className={classes.screenshot}
+                src={instEventsScreenshot3}
+                width="240"
+                height="500"
+                title="InstEvents Screenshot 3"
+                alt="InstEvents Screenshot 3"
               />
+              <img
+                className={classes.screenshot}
+                src={instEventsScreenshot1}
+                width="240"
+                height="500"
+                title="InstEvents Screenshot 1"
+                alt="InstEvents Screenshot 1"
+              />
+              <img
+                className={classes.screenshot}
+                src={instEventsScreenshot2}
+                width="240"
+                height="500"
+                title="InstEvents Screenshot 2"
+                alt="InstEvents Screenshot 2"
+              />
+
             </Typography>
           </CardContent>
           <CardActions>
