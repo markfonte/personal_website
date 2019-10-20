@@ -19,7 +19,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "jest --coverage",
+        "test": "jest --coverage -u",
         "lint": "eslint src/ --ext .js --ext .jsx --fix && npx html-linter --config ./html-linter.json ./**/*.html && npx stylelint \"src/**/*.css\" --fix",
         "eject": "react-scripts eject"
     },

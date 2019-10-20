@@ -597,6 +597,163 @@ exports[`PastProjects matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
           >
+            InstEvents
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Hackathon Project @ MHacks 12
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardMedia-root MHacks12Card-media-107"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/images/mhacks_logo.png\\")",
+          }
+        }
+        title="MHacks 12 logo"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          This project was definitely my favorite hackathon project. Nathan and I had 36 hours at MHacks to make a very solid project, and I thought we delivered on our own high expectations. The idea for the app came out of one of my entrepreneurship classes where we were asked to \`"\`explore\`"\` something new every week. It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app features a Google Maps view that immediately opens to show today\`'\`s current and upcoming events. In addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users can add events with an interface that features date pickers, time pickers, address autocomplete using the Google Maps Places API, the ability to add a cover photo and more!
+          <br />
+           
+          <br />
+          For this app, we focused on making sure all of the features that we completed were done well. For example, we put lots of extra time into making sure the \`"\`Add Event\`"\` flow was as seamless as possible, instead of using that time to partially complete some of our stretch goals. The advantage of this is a good UX, even with just the app we made during the hackathon. Going forward, we plan to continue working on other features like web-scraping for popular events, and an eventual release to the Google Play Store. More details on upcoming features and more on our
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/markfonte/InstEvents"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+          ! We also believe that the app has significant value as-is, because of the fact that anyone can post an event. This, in combination with the built-in Google Maps view, allows for a location-based sorting of events as opposed to the normal popularity-based sorting of events. In other words, events with only 30 people attending get the same weight on the map as those with 5,000. This allows for an even playing field and is a concept we have not really seen before.
+          <br />
+           
+          <br />
+          View it on
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://devpost.com/software/instevent"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Devpost
+          </a>
+           
+          or
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/markfonte/InstEvents"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+          <br />
+           
+          <br />
+          <img
+            alt="InstEvents Screenshot 3"
+            className="MHacks12Card-screenshot-109"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="InstEvents Screenshot 3"
+            width="240"
+          />
+          <img
+            alt="InstEvents Screenshot 1"
+            className="MHacks12Card-screenshot-109"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="InstEvents Screenshot 1"
+            width="240"
+          />
+          <img
+            alt="InstEvents Screenshot 2"
+            className="MHacks12Card-screenshot-109"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="InstEvents Screenshot 2"
+            width="240"
+          />
+        </p>
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to website"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://mhacks12.devpost.com/"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
             Laughable Lyrics
           </span>
           <span
@@ -607,7 +764,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Spartahack5Card-media-107"
+        className="MuiCardMedia-root Spartahack5Card-media-110"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
@@ -671,7 +828,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-108"
+            className="Spartahack5Card-logo-111"
             src={
               Object {
                 "process": [Function],
@@ -744,10 +901,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-110"
+        className="RevolutionUC8Card-mediaWrapper-113"
       >
         <div
-          className="MuiCardMedia-root RevolutionUC8Card-media-109"
+          className="MuiCardMedia-root RevolutionUC8Card-media-112"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
@@ -786,7 +943,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-111"
+          className="RevolutionUC8Card-logo-114"
           src={
             Object {
               "process": [Function],
@@ -858,7 +1015,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Grizzhacks3Card-media-112"
+        className="MuiCardMedia-root Grizzhacks3Card-media-115"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
@@ -904,7 +1061,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-113"
+          className="Grizzhacks3Card-logo-116"
           src={
             Object {
               "process": [Function],
@@ -985,7 +1142,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-114"
+          className="SpotlightCard-screenshot-117"
           height="500"
           src={
             Object {
@@ -997,7 +1154,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-114"
+          className="SpotlightCard-screenshot-117"
           height="500"
           src={
             Object {
@@ -1071,7 +1228,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root DoggieDoodlesCard-media-115"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-118"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
@@ -1151,7 +1308,7 @@ exports[`PastProjects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-116"
+    className="InteractionCard-root-119"
   >
     <div
       className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
@@ -1161,10 +1318,10 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-117"
+          className="LikeButton-root-120"
         >
           <div
-            className="LikeButton-likeButtonWrapper-118"
+            className="LikeButton-likeButtonWrapper-121"
           >
             <svg
               aria-hidden="true"
@@ -1179,10 +1336,10 @@ exports[`PastProjects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-119 MuiPaper-rounded"
+              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-122 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-120 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-123 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
