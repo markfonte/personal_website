@@ -41,6 +41,16 @@ class CompletedCourseworkCard extends React.Component {
         link: `https://art.ai.umich.edu/course/EECS%20485/`,
       },
       {
+        subject: 'EECS 441',
+        name: 'Mobile App Development for Entrepreneurs',
+        link: `https://art.ai.umich.edu/course/EECS%20441/`,
+      },
+      {
+        subject: 'EECS 481',
+        name: 'Software Engineering',
+        link: `https://art.ai.umich.edu/course/EECS%20481/`,
+      },
+      {
         subject: 'EECS 388',
         name: 'Introduction to Computer Security',
         link: `https://art.ai.umich.edu/course/EECS%20388/`,
@@ -71,6 +81,11 @@ class CompletedCourseworkCard extends React.Component {
         link: `https://art.ai.umich.edu/course/EECS%20203/`,
       },
       {
+        subject: 'EECS 496',
+        name: 'Major Design Experience-Professionalism',
+        link: `https://art.ai.umich.edu/course/EECS%20496/`,
+      },
+      {
         subject: 'Math 214',
         name: 'Applied Linear Algebra',
         link: `https://art.ai.umich.edu/course/MATH%20214/`,
@@ -89,6 +104,11 @@ class CompletedCourseworkCard extends React.Component {
         subject: 'Entrepreneurship 411',
         name: 'Entrepreneurship Practicum',
         link: `https://art.ai.umich.edu/course/ENTR%20411/`,
+      },
+      {
+        subject: 'ALA 256',
+        name: `Innovator's Toolkit`,
+        link: `https://art.ai.umich.edu/course/ALA%20256/`,
       },
       {
         subject: 'Physics 240',

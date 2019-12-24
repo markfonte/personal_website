@@ -31,36 +31,31 @@ class CurrentCourseworkCard extends React.Component {
     const universityOfMichiganLink = `https://umich.edu/`;
     const courses = [
       {
-        subject: 'EECS 441',
-        name: 'Mobile App Development for Entrepreneurs',
-        link: `https://art.ai.umich.edu/course/EECS%20441/`,
+        subject: 'EECS 490',
+        name: 'Programming Languages',
+        link: `https://atlas.ai.umich.edu/course/EECS%20490/`,
       },
       {
-        subject: 'EECS 481',
-        name: 'Software Engineering',
-        link: `https://art.ai.umich.edu/course/EECS%20481/`,
+        subject: 'EECS 493',
+        name: 'User Interface Development',
+        link: `https://atlas.ai.umich.edu/course/EECS%20493/`,
       },
       {
-        subject: 'EECS 496',
-        name: 'Major Design Experience-Professionalism',
-        link: `https://art.ai.umich.edu/course/EECS%20496/`,
+        subject: 'EECS 201',
+        name: 'Computer Science Pragmatics',
+        link: `https://atlas.ai.umich.edu/course/EECS%20201/`,
       },
       {
-        subject: 'TCHNCLCM 497',
-        name: 'Advanced Technical Communication for Computer Science',
-        link: `https://art.ai.umich.edu/course/TCHNCLCM%20497/`,
-      },
-      {
-        subject: 'ALA 256',
-        name: `Innovator's Toolkit`,
-        link: `https://art.ai.umich.edu/course/ALA%20256/`,
+        subject: 'GERMAN 386',
+        name: 'Fairy Tales',
+        link: `https://atlas.ai.umich.edu/course/GERMAN%20386/`,
       },
     ];
     return (
       <div>
         <Card raised={true} className="card">
           <CardHeader
-            title="Current Coursework - Fall 2019"
+            title="Current Coursework - Winter 2020"
             subheader="University of Michigan"
           />
           <div className={classes.mediaWrapper}>
