@@ -9,7 +9,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </h6>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -93,7 +93,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -114,10 +114,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="LAZCard-mediaWrapper-96"
+        className="LAZCard-mediaWrapper-97"
       >
         <div
-          className="MuiCardMedia-root LAZCard-media-95"
+          className="MuiCardMedia-root LAZCard-media-96"
           style={
             Object {
               "backgroundImage": "url(\\"/images/laz_logo.png\\")",
@@ -146,7 +146,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="LAZ badge screenshot"
-            className="LAZCard-webScreenshot-98"
+            className="LAZCard-webScreenshot-99"
             src={
               Object {
                 "process": [Function],
@@ -170,7 +170,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="LAZ parent portal screenshot 1"
-            className="LAZCard-mobileScreenshot-97"
+            className="LAZCard-mobileScreenshot-98"
             height="500"
             src={
               Object {
@@ -182,7 +182,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="LAZ parent portal screenshot 2"
-            className="LAZCard-mobileScreenshot-97"
+            className="LAZCard-mobileScreenshot-98"
             height="500"
             src={
               Object {
@@ -194,7 +194,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="LAZ parent portal screenshot 3"
-            className="LAZCard-mobileScreenshot-97"
+            className="LAZCard-mobileScreenshot-98"
             height="500"
             src={
               Object {
@@ -248,7 +248,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -269,10 +269,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="CompletedCourseworkCard-mediaWrapper-100"
+        className="CompletedCourseworkCard-mediaWrapper-101"
       >
         <div
-          className="MuiCardMedia-root CompletedCourseworkCard-media-99"
+          className="MuiCardMedia-root CompletedCourseworkCard-media-100"
           style={
             Object {
               "backgroundImage": "url(\\"images/university_of_michigan_logo.png\\")",
@@ -319,6 +319,40 @@ exports[`PastProjects matches snapshot 1`] = `
               :
                
               Web Systems
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20441/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 441
+              </b>
+              :
+               
+              Mobile App Development for Entrepreneurs
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20481/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 481
+              </b>
+              :
+               
+              Software Engineering
             </a>
           </p>
           <p
@@ -428,6 +462,23 @@ exports[`PastProjects matches snapshot 1`] = `
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/EECS%20496/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 496
+              </b>
+              :
+               
+              Major Design Experience-Professionalism
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
               href="https://art.ai.umich.edu/course/MATH%20214/"
               onBlur={[Function]}
               onFocus={[Function]}
@@ -489,6 +540,23 @@ exports[`PastProjects matches snapshot 1`] = `
               :
                
               Entrepreneurship Practicum
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://art.ai.umich.edu/course/ALA%20256/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                ALA 256
+              </b>
+              :
+               
+              Innovator's Toolkit
             </a>
           </p>
           <p
@@ -586,7 +654,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -607,7 +675,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root MHacks12Card-media-107"
+        className="MuiCardMedia-root MHacks12Card-media-108"
         style={
           Object {
             "backgroundImage": "url(\\"/images/mhacks_logo.png\\")",
@@ -665,7 +733,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="InstEvents Screenshot 3"
-            className="MHacks12Card-screenshot-109"
+            className="MHacks12Card-screenshot-110"
             height="500"
             src={
               Object {
@@ -677,7 +745,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents Screenshot 1"
-            className="MHacks12Card-screenshot-109"
+            className="MHacks12Card-screenshot-110"
             height="500"
             src={
               Object {
@@ -689,7 +757,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents Screenshot 2"
-            className="MHacks12Card-screenshot-109"
+            className="MHacks12Card-screenshot-110"
             height="500"
             src={
               Object {
@@ -743,7 +811,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -764,7 +832,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Spartahack5Card-media-110"
+        className="MuiCardMedia-root Spartahack5Card-media-111"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
@@ -828,7 +896,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-111"
+            className="Spartahack5Card-logo-112"
             src={
               Object {
                 "process": [Function],
@@ -880,7 +948,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -901,10 +969,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-113"
+        className="RevolutionUC8Card-mediaWrapper-114"
       >
         <div
-          className="MuiCardMedia-root RevolutionUC8Card-media-112"
+          className="MuiCardMedia-root RevolutionUC8Card-media-113"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
@@ -943,7 +1011,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-114"
+          className="RevolutionUC8Card-logo-115"
           src={
             Object {
               "process": [Function],
@@ -994,7 +1062,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -1015,7 +1083,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Grizzhacks3Card-media-115"
+        className="MuiCardMedia-root Grizzhacks3Card-media-116"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
@@ -1061,7 +1129,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-116"
+          className="Grizzhacks3Card-logo-117"
           src={
             Object {
               "process": [Function],
@@ -1112,7 +1180,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -1142,7 +1210,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-117"
+          className="SpotlightCard-screenshot-118"
           height="500"
           src={
             Object {
@@ -1154,7 +1222,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-117"
+          className="SpotlightCard-screenshot-118"
           height="500"
           src={
             Object {
@@ -1207,7 +1275,7 @@ exports[`PastProjects matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -1228,7 +1296,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root DoggieDoodlesCard-media-118"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-119"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
@@ -1308,20 +1376,20 @@ exports[`PastProjects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-119"
+    className="InteractionCard-root-120"
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardContent-root"
       >
         <div />
         <div
-          className="LikeButton-root-120"
+          className="LikeButton-root-121"
         >
           <div
-            className="LikeButton-likeButtonWrapper-121"
+            className="LikeButton-likeButtonWrapper-122"
           >
             <svg
               aria-hidden="true"
@@ -1336,10 +1404,10 @@ exports[`PastProjects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-122 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-123 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-123 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-124 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

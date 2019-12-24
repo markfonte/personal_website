@@ -1,22 +1,9 @@
 import React from 'react';
-// import instEventsLogo
-//   from '../static/images/logos/instevents_logo.jpg';
-import instEventsScreenshot1
-  from '../static/images/screenshots/instevents_screenshot_1.jpg';
-import instEventsScreenshot2
-  from '../static/images/screenshots/instevents_screenshot_2.jpg';
-import instEventsScreenshot3
-  from '../static/images/screenshots/instevents_screenshot_3.jpg';
-import WebIcon from '@material-ui/icons/Web';
 import {
-  Typography,
   Card,
-  CardMedia,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
-  Link,
+  Button,
 } from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
@@ -32,107 +19,53 @@ const styles = {
   screenshot: {
     margin: '16px',
   },
+  buttonDefault: {
+    margin: '8px',
+  },
 };
 
 class HighlightsCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const mhacks12Link = `https://mhacks12.devpost.com/`;
-    const instEventsDevpostLink = `https://devpost.com/software/instevent`;
-    const instEventsGithubLink = `https://github.com/markfonte/InstEvents`;
+    const currentWorkLink = `https://mark.fonte.com/current_work`;
+    const pastProjectsLink = `https://mark.fonte.com/past_projects`;
+    const randomLink = `https://mark.fonte.com/random`;
 
     return (
       <div>
         <Card raised={true} className="card">
           <CardHeader
-            title="Recent Highlight: MHacks 12"
-            subheader="Check out my MHacks 12 hackathon project, InstEvents!"
-          />
-          <CardMedia
-            className={classes.media}
-            image="/images/mhacks_logo.png"
-            title="MHacks 12 logo"
+            title="Recent Highlights"
+            subheader="Check out &quot;Current Work&quot; or &quot;Past Projects&quot;
+            to see what I have been working on, or head over to &quot;Random&quot;
+            for new songs from my acappella group!"
           />
           <CardContent>
-            <Typography variant="body1">
-              This project was definitely my favorite hackathon project. Nathan and I had 36 hours at MHacks to make
-              a very solid project, and I thought we delivered on our own high expectations. The idea for the app
-              came out of one of my entrepreneurship classes where we were asked to &quot;explore&quot;
-              something new every week.
-              It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to
-              us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app
-              features a Google Maps view that immediately opens to show today&apos;s current and upcoming events. In
-              addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users
-              can add events with an interface that features date pickers, time pickers, address autocomplete using the
-              Google Maps Places API, the ability to add a cover photo and more!
-              <br /> <br/>
-              For this app, we focused on making sure all of the features that we completed were done well. For example,
-              we put lots of extra time into making sure the &quot;Add Event&quot; flow was as seamless as possible,
-              instead of
-              using that time to partially complete some of our stretch goals. The advantage of this is a good UX, even
-              with just the app we made during the hackathon. Going forward, we plan to continue working on other
-              features like web-scraping for popular events, and an eventual release to the Google Play Store. More
-              details on upcoming features and more on our
-              {' '}
-              <Link color="secondary" href={instEventsGithubLink}>
-                Github
-              </Link>! We also believe that the app has significant value as-is, because of the fact that anyone
-              can post an event. This, in combination with the built-in Google Maps view, allows for a location-based
-              sorting of events as opposed to the normal popularity-based sorting of events. In other words, events
-              with only 30 people attending get the same weight on the map as those with 5,000. This allows for an
-              even playing field and is a concept we have not really seen before.
-              <br /> <br/>
-              View it on
-              {' '}
-              <Link color="secondary" href={instEventsDevpostLink}>
-                Devpost
-              </Link>
-              {' '}
-              or
-              {' '}
-              <Link color="secondary" href={instEventsGithubLink}>
-                Github
-              </Link>
-              {/* <br /> <br />
-              <img
-                src={instEventsLogo}
-                className={classes.logo}
-                title="InstEvents logo"
-                alt="InstEvents logo"
-              /> */}
-              <br /> <br />
-              <img
-                className={classes.screenshot}
-                src={instEventsScreenshot3}
-                width="240"
-                height="500"
-                title="InstEvents Screenshot 3"
-                alt="InstEvents Screenshot 3"
-              />
-              <img
-                className={classes.screenshot}
-                src={instEventsScreenshot1}
-                width="240"
-                height="500"
-                title="InstEvents Screenshot 1"
-                alt="InstEvents Screenshot 1"
-              />
-              <img
-                className={classes.screenshot}
-                src={instEventsScreenshot2}
-                width="240"
-                height="500"
-                title="InstEvents Screenshot 2"
-                alt="InstEvents Screenshot 2"
-              />
-
-            </Typography>
+            <Button
+              className={classes.buttonDefault}
+              variant="outlined"
+              color="secondary"
+              href={currentWorkLink}
+            >
+                Current Work
+            </Button>
+            <Button
+              className={classes.buttonDefault}
+              variant="outlined"
+              color="secondary"
+              href={pastProjectsLink}
+            >
+                Past Projects
+            </Button>
+            <Button
+              className={classes.buttonDefault}
+              variant="outlined"
+              color="secondary"
+              href={randomLink}
+            >
+                Random
+            </Button>
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to website" href={mhacks12Link}>
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );

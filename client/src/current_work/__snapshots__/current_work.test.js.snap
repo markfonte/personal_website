@@ -9,7 +9,7 @@ exports[`CurrentWork matches snapshot 1`] = `
   </h6>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -20,7 +20,7 @@ exports[`CurrentWork matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
           >
-            Current Coursework - Fall 2019
+            Current Coursework - Winter 2020
           </span>
           <span
             className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
@@ -53,16 +53,16 @@ exports[`CurrentWork matches snapshot 1`] = `
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20441/"
+              href="https://atlas.ai.umich.edu/course/EECS%20490/"
               onBlur={[Function]}
               onFocus={[Function]}
             >
               <b>
-                EECS 441
+                EECS 490
               </b>
               :
                
-              Mobile App Development for Entrepreneurs
+              Programming Languages
             </a>
           </p>
           <p
@@ -70,16 +70,16 @@ exports[`CurrentWork matches snapshot 1`] = `
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20481/"
+              href="https://atlas.ai.umich.edu/course/EECS%20493/"
               onBlur={[Function]}
               onFocus={[Function]}
             >
               <b>
-                EECS 481
+                EECS 493
               </b>
               :
                
-              Software Engineering
+              User Interface Development
             </a>
           </p>
           <p
@@ -87,16 +87,16 @@ exports[`CurrentWork matches snapshot 1`] = `
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20496/"
+              href="https://atlas.ai.umich.edu/course/EECS%20201/"
               onBlur={[Function]}
               onFocus={[Function]}
             >
               <b>
-                EECS 496
+                EECS 201
               </b>
               :
                
-              Major Design Experience-Professionalism
+              Computer Science Pragmatics
             </a>
           </p>
           <p
@@ -104,33 +104,16 @@ exports[`CurrentWork matches snapshot 1`] = `
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/TCHNCLCM%20497/"
+              href="https://atlas.ai.umich.edu/course/GERMAN%20386/"
               onBlur={[Function]}
               onFocus={[Function]}
             >
               <b>
-                TCHNCLCM 497
+                GERMAN 386
               </b>
               :
                
-              Advanced Technical Communication for Computer Science
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root MuiTypography-body1"
-          >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/ALA%20256/"
-              onBlur={[Function]}
-              onFocus={[Function]}
-            >
-              <b>
-                ALA 256
-              </b>
-              :
-               
-              Innovator's Toolkit
+              Fairy Tales
             </a>
           </p>
         </h6>
@@ -177,7 +160,7 @@ exports[`CurrentWork matches snapshot 1`] = `
   </div>
   <div>
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root card MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardHeader-root"
@@ -205,7 +188,7 @@ exports[`CurrentWork matches snapshot 1`] = `
         >
           <img
             alt="Clipp logo"
-            className="ClippCard-logo-102"
+            className="ClippCard-logo-103"
             src={
               Object {
                 "process": [Function],
@@ -222,20 +205,20 @@ exports[`CurrentWork matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-103"
+    className="InteractionCard-root-104"
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation8 MuiCard-root MuiPaper-rounded"
+      className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
     >
       <div
         className="MuiCardContent-root"
       >
         <div />
         <div
-          className="LikeButton-root-104"
+          className="LikeButton-root-105"
         >
           <div
-            className="LikeButton-likeButtonWrapper-105"
+            className="LikeButton-likeButtonWrapper-106"
           >
             <svg
               aria-hidden="true"
@@ -250,10 +233,10 @@ exports[`CurrentWork matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiPaper-elevation1 MuiCard-root LikeButton-captionRoot-106 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-107 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-107 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-108 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
