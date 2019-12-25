@@ -27,7 +27,7 @@ const styles = {
 class HighlightsCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const currentWorkLink = process.env.REACT_APP_CLIENT_UR + 'current_work';
+    const currentWorkLink = process.env.REACT_APP_CLIENT_URL + 'current_work';
     const pastProjectsLink = process.env.REACT_APP_CLIENT_URL + 'past_projects';
     const randomLink = process.env.REACT_APP_CLIENT_URL + 'random';
 
