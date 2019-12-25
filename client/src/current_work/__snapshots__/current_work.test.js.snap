@@ -199,13 +199,60 @@ exports[`CurrentWork matches snapshot 1`] = `
           <br />
            
           <br />
-          Clipp, a startup at Michigan, is a mobile application for exchanging items without any exchange of money. Our 6-person development team is working hard to begin alpha testing our React Native application in November 2019. The project requires full-stack awareness, careful planning and great teamwork to achieve our release date and feature goals. Public details on Clipp are scarce at the moment, but I will continue to update this blurb as more information becomes available! We are very excited to share our product with the world!
+          Clipp, a startup at Michigan, is a mobile application for trading pre-owned items without monetary exchange. Our 6-person development team started building the React Native application in September 2019, and started beta testing on December 5th, 2019. Users can upload items that they would like to trade, then "swipe" on items they would trade each item for. If two people "swipe right" on each other's items, they get matched in a custom messenger where they can coordinate a meeting to exchange items. No money involved! Right now, it is only limited to University of Michigan students.
+          <br />
+           
+          <br />
+          The project requires full-stack work, from the front-end development of the Javascript mobile applications to the back-end development of the MongoDB and Firebase databases. Each developer contributes to different parts of the project at different times, working on any task that is currently critical to development progress. This gives all of us full-stack awareness and requires teamwork and communication. Until this point, we were working to build a Minimum Viable Product that would allow us to validate our value proposition. Once we are sure that people will use this product, we will begin building fully-fledged native mobile Android and iOS applications. We are very excited to share Clipp with the world!
         </p>
+        <span
+          className="MuiTypography-root MuiTypography-caption"
+        >
+          <br />
+          <img
+            alt="Clipp wireframe screenshot 1"
+            className="ClippCard-mobileScreenshot-104"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="Clipp wireframe screenshot 1"
+            width="240"
+          />
+          <img
+            alt="Clipp wireframe screenshot 2"
+            className="ClippCard-mobileScreenshot-104"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="Clipp wireframe screenshot 2"
+            width="240"
+          />
+          <img
+            alt="Clipp wireframe screenshot 3"
+            className="ClippCard-mobileScreenshot-104"
+            height="500"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="Clipp wireframe screenshot 3"
+            width="240"
+          />
+          <br />
+          (note: these are just wireframes, not actual screenshots from the mobile application)
+        </span>
       </div>
     </div>
   </div>
   <div
-    className="InteractionCard-root-104"
+    className="InteractionCard-root-105"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -215,10 +262,10 @@ exports[`CurrentWork matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-105"
+          className="LikeButton-root-106"
         >
           <div
-            className="LikeButton-likeButtonWrapper-106"
+            className="LikeButton-likeButtonWrapper-107"
           >
             <svg
               aria-hidden="true"
@@ -233,10 +280,10 @@ exports[`CurrentWork matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-107 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-108 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-108 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-109 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

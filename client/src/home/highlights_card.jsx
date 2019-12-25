@@ -27,9 +27,9 @@ const styles = {
 class HighlightsCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const currentWorkLink = `https://mark.fonte.com/current_work`;
-    const pastProjectsLink = `https://mark.fonte.com/past_projects`;
-    const randomLink = `https://mark.fonte.com/random`;
+    const currentWorkLink = process.env.REACT_APP_CLIENT_UR + 'current_work';
+    const pastProjectsLink = process.env.REACT_APP_CLIENT_URL + 'past_projects';
+    const randomLink = process.env.REACT_APP_CLIENT_URL + 'random';
 
     return (
       <div>
@@ -44,7 +44,7 @@ class HighlightsCard extends React.Component {
             <Button
               className={classes.buttonDefault}
               variant="outlined"
-              color="secondary"
+              color="default"
               href={currentWorkLink}
             >
                 Current Work
@@ -52,7 +52,7 @@ class HighlightsCard extends React.Component {
             <Button
               className={classes.buttonDefault}
               variant="outlined"
-              color="secondary"
+              color="default"
               href={pastProjectsLink}
             >
                 Past Projects
@@ -60,7 +60,7 @@ class HighlightsCard extends React.Component {
             <Button
               className={classes.buttonDefault}
               variant="outlined"
-              color="secondary"
+              color="default"
               href={randomLink}
             >
                 Random

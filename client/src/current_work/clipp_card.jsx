@@ -1,6 +1,12 @@
 import React from 'react';
 import clippLogo
   from '../static/images/logos/clipp_logo.png';
+import clippWireframeScreenshotOne
+  from '../static/images/screenshots/clipp_wireframe_screenshot_1.png';
+import clippWireframeScreenshotTwo
+  from '../static/images/screenshots/clipp_wireframe_screenshot_2.png';
+import clippWireframeScreenshotThree
+  from '../static/images/screenshots/clipp_wireframe_screenshot_3.png';
 import {
   Typography,
   Card,
@@ -15,8 +21,12 @@ const styles = {
     margin: '16px',
   },
   logo: {
-    width: '30%', height: 'auto',
+    width: '20%', height: 'auto',
   },
+  mobileScreenshot: {
+    margin: '16px',
+  },
+
 };
 
 class ClippCard extends React.Component {
@@ -40,13 +50,51 @@ class ClippCard extends React.Component {
                 alt="Clipp logo"
               />
               <br /> <br />
-              Clipp, a startup at Michigan, is a mobile application for exchanging items without any
-              exchange of money. Our 6-person development team is working hard to begin alpha testing
-              our React Native application in November 2019. The project requires full-stack awareness,
-              careful planning and great teamwork to achieve our release date and feature goals.
-              Public details on Clipp are scarce at the moment, but I will continue to update this
-              blurb as more information becomes available! We are very excited to share our product with
-              the world!
+              Clipp, a startup at Michigan, is a mobile application for trading pre-owned items without
+              monetary exchange. Our 6-person development team started building the React Native application
+              in September 2019, and started beta testing on December 5th, 2019. Users can upload items that
+              they would like to trade, then &quot;swipe&quot; on items they would trade each item for. If two people
+              &quot;swipe right&quot; on each other&apos;s items, they get matched in a custom messenger where they can
+              coordinate a meeting to exchange items. No money involved! Right now, it is only limited to
+              University of Michigan students.
+              <br /> <br />
+              The project requires full-stack work, from the front-end development of the Javascript
+              mobile applications to the back-end development of the MongoDB and Firebase databases. Each
+              developer contributes to different parts of the project at different times, working on
+              any task that is currently critical to development progress. This gives all of us full-stack
+              awareness and requires teamwork and communication. Until this point, we were working to build
+              a Minimum Viable Product that would allow us to validate our value proposition. Once we are
+              sure that people will use this product, we will begin building fully-fledged native mobile
+              Android and iOS applications. We are very excited to share Clipp with the world!
+            </Typography>
+            <Typography variant="caption">
+              <br />
+              <img
+                className={classes.mobileScreenshot}
+                src={clippWireframeScreenshotOne}
+                width="240"
+                height="500"
+                title="Clipp wireframe screenshot 1"
+                alt="Clipp wireframe screenshot 1"
+              />
+              <img
+                className={classes.mobileScreenshot}
+                src={clippWireframeScreenshotTwo}
+                width="240"
+                height="500"
+                title="Clipp wireframe screenshot 2"
+                alt="Clipp wireframe screenshot 2"
+              />
+              <img
+                className={classes.mobileScreenshot}
+                src={clippWireframeScreenshotThree}
+                width="240"
+                height="500"
+                title="Clipp wireframe screenshot 3"
+                alt="Clipp wireframe screenshot 3"
+              />
+              < br/>
+              (note: these are just wireframes, not actual screenshots from the mobile application)
             </Typography>
           </CardContent>
         </Card>

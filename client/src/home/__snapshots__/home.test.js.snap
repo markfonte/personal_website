@@ -34,8 +34,8 @@ exports[`Home matches snapshot 1`] = `
       >
         <a
           aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36 MuiButton-outlinedSecondary"
-          href="https://mark.fonte.com/current_work"
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36"
+          href="undefinedcurrent_work"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -57,8 +57,8 @@ exports[`Home matches snapshot 1`] = `
         </a>
         <a
           aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36 MuiButton-outlinedSecondary"
-          href="https://mark.fonte.com/past_projects"
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36"
+          href="undefinedpast_projects"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -80,8 +80,8 @@ exports[`Home matches snapshot 1`] = `
         </a>
         <a
           aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36 MuiButton-outlinedSecondary"
-          href="https://mark.fonte.com/random"
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36"
+          href="undefinedrandom"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
