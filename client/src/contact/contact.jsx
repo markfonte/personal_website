@@ -68,7 +68,7 @@ class Contact extends React.Component {
           </Button>
         </div>
         <Typography className={classes.paragraph} variant="caption">
-          My resume is available upon request!
+          My resume is available upon request
         </Typography>
         <div className={classes.paragraph}>
           <img style={styles.contactImage} src={markFeed8} alt="Temp"/>

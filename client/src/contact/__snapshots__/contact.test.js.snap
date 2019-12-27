@@ -88,7 +88,7 @@ exports[`Contact matches snapshot 1`] = `
   <span
     className="MuiTypography-root Contact-paragraph-4 MuiTypography-caption"
   >
-    My resume is available upon request!
+    My resume is available upon request
   </span>
   <div
     className="Contact-paragraph-4"

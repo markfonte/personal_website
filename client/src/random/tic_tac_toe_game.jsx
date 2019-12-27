@@ -17,7 +17,6 @@ const styles = {
   },
   moveListItem: {
     justifyContent: 'center',
-    margin: '8px',
   },
   gameBoard: {
     display: 'flex', /* NEW, Spec - Firefox, Chrome, Opera */
