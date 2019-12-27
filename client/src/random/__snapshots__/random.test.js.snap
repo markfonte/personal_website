@@ -891,17 +891,59 @@ exports[`Random matches snapshot 1`] = `
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   scope="row"
                 >
+                  <h5
+                    className="MuiTypography-root RecommendedSitesTable-nameText-236 MuiTypography-h5"
+                  >
+                    Jacob Fedrigon
+                  </h5>
+                  <div>
+                    <a
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="http://www-personal.umich.edu/~jacobfed/"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <img
+                        alt="undefined's website"
+                        src={
+                          Object {
+                            "process": [Function],
+                          }
+                        }
+                        style={
+                          Object {
+                            "maxHeight": "400px",
+                            "maxWidth": "80%",
+                          }
+                        }
+                      />
+                    </a>
+                  </div>
                   <a
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    aria-disabled={false}
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-235 MuiButton-outlinedSecondary"
                     href="http://www-personal.umich.edu/~jacobfed/"
                     onBlur={[Function]}
+                    onDragLeave={[Function]}
                     onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
                   >
-                    <h6
-                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    <span
+                      className="MuiButton-label"
                     >
-                      Jacob Fedrigon's Website
-                    </h6>
+                      Go To Jacob's Website
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root"
+                    />
                   </a>
                 </th>
               </tr>
@@ -913,39 +955,59 @@ exports[`Random matches snapshot 1`] = `
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   scope="row"
                 >
-                  <a
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
-                    href="http://johnfonte.com/"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
+                  <h5
+                    className="MuiTypography-root RecommendedSitesTable-nameText-236 MuiTypography-h5"
                   >
-                    <h6
-                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    Nathan Johnson
+                  </h5>
+                  <div>
+                    <a
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="https://nathanieljohnson.me/"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
                     >
-                      John Fonte's Website
-                    </h6>
-                  </a>
-                </th>
-              </tr>
-              <tr
-                className="MuiTableRow-root"
-              >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  scope="row"
-                >
+                      <img
+                        alt="undefined's website"
+                        src={
+                          Object {
+                            "process": [Function],
+                          }
+                        }
+                        style={
+                          Object {
+                            "maxHeight": "400px",
+                            "maxWidth": "80%",
+                          }
+                        }
+                      />
+                    </a>
+                  </div>
                   <a
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    aria-disabled={false}
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-235 MuiButton-outlinedSecondary"
                     href="https://nathanieljohnson.me/"
                     onBlur={[Function]}
+                    onDragLeave={[Function]}
                     onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
                   >
-                    <h6
-                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    <span
+                      className="MuiButton-label"
                     >
-                      Nathan Johnson's Website
-                    </h6>
+                      Go To Nathan's Website
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root"
+                    />
                   </a>
                 </th>
               </tr>
@@ -957,17 +1019,59 @@ exports[`Random matches snapshot 1`] = `
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   scope="row"
                 >
+                  <h5
+                    className="MuiTypography-root RecommendedSitesTable-nameText-236 MuiTypography-h5"
+                  >
+                    Salvador Villalon
+                  </h5>
+                  <div>
+                    <a
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="https://salvillalon45.github.io/"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <img
+                        alt="undefined's website"
+                        src={
+                          Object {
+                            "process": [Function],
+                          }
+                        }
+                        style={
+                          Object {
+                            "maxHeight": "400px",
+                            "maxWidth": "80%",
+                          }
+                        }
+                      />
+                    </a>
+                  </div>
                   <a
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    aria-disabled={false}
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-235 MuiButton-outlinedSecondary"
                     href="https://salvillalon45.github.io/"
                     onBlur={[Function]}
+                    onDragLeave={[Function]}
                     onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
                   >
-                    <h6
-                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    <span
+                      className="MuiButton-label"
                     >
-                      Salvador Villalon's Website
-                    </h6>
+                      Go To Sal's Website
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root"
+                    />
                   </a>
                 </th>
               </tr>
@@ -979,39 +1083,123 @@ exports[`Random matches snapshot 1`] = `
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   scope="row"
                 >
-                  <a
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
-                    href="https://seanbarber.me/"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
+                  <h5
+                    className="MuiTypography-root RecommendedSitesTable-nameText-236 MuiTypography-h5"
                   >
-                    <h6
-                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    Sarah Koop
+                  </h5>
+                  <div>
+                    <a
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="http://sarah-koop.com/"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
                     >
-                      Sean Barber's Website
-                    </h6>
-                  </a>
-                </th>
-              </tr>
-              <tr
-                className="MuiTableRow-root"
-              >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  scope="row"
-                >
+                      <img
+                        alt="undefined's website"
+                        src={
+                          Object {
+                            "process": [Function],
+                          }
+                        }
+                        style={
+                          Object {
+                            "maxHeight": "400px",
+                            "maxWidth": "80%",
+                          }
+                        }
+                      />
+                    </a>
+                  </div>
                   <a
-                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextPrimary"
+                    aria-disabled={false}
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-235 MuiButton-outlinedSecondary"
                     href="http://sarah-koop.com/"
                     onBlur={[Function]}
+                    onDragLeave={[Function]}
                     onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
                   >
-                    <h6
-                      className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+                    <span
+                      className="MuiButton-label"
                     >
-                      Sarah Koop's Website
-                    </h6>
+                      Go To Sarah's Website
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root"
+                    />
+                  </a>
+                </th>
+              </tr>
+              <tr
+                className="MuiTableRow-root"
+              >
+                <th
+                  aria-sort={null}
+                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  scope="row"
+                >
+                  <h5
+                    className="MuiTypography-root RecommendedSitesTable-nameText-236 MuiTypography-h5"
+                  >
+                    Sean Barber
+                  </h5>
+                  <div>
+                    <a
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="https://seanbarber.me/"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <img
+                        alt="undefined's website"
+                        src={
+                          Object {
+                            "process": [Function],
+                          }
+                        }
+                        style={
+                          Object {
+                            "maxHeight": "400px",
+                            "maxWidth": "80%",
+                          }
+                        }
+                      />
+                    </a>
+                  </div>
+                  <a
+                    aria-disabled={false}
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-235 MuiButton-outlinedSecondary"
+                    href="https://seanbarber.me/"
+                    onBlur={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={0}
+                  >
+                    <span
+                      className="MuiButton-label"
+                    >
+                      Go To Sean's Website
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root"
+                    />
                   </a>
                 </th>
               </tr>
@@ -1022,7 +1210,7 @@ exports[`Random matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-260"
+    className="InteractionCard-root-263"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1031,22 +1219,22 @@ exports[`Random matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-261 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-264 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
-            className="PrideSwitch-prideSwitchContent-262"
+            className="PrideSwitch-prideSwitchContent-265"
           >
             <h5
-              className="MuiTypography-root PrideSwitch-prideTitle-263 MuiTypography-h5"
+              className="MuiTypography-root PrideSwitch-prideTitle-266 MuiTypography-h5"
             >
               Pride
             </h5>
             <span
-              className="MuiSwitch-root PrideSwitch-prideSwitch-264"
+              className="MuiSwitch-root PrideSwitch-prideSwitch-267"
             >
               <span
                 aria-disabled={false}
-                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-277 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-280 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onDragLeave={[Function]}
@@ -1066,7 +1254,7 @@ exports[`Random matches snapshot 1`] = `
                 >
                   <input
                     checked={false}
-                    className="PrivateSwitchBase-input-280 MuiSwitch-input"
+                    className="PrivateSwitchBase-input-283 MuiSwitch-input"
                     disabled={false}
                     onChange={[Function]}
                     type="checkbox"
@@ -1100,10 +1288,10 @@ exports[`Random matches snapshot 1`] = `
           </a>
         </div>
         <div
-          className="LikeButton-root-281"
+          className="LikeButton-root-284"
         >
           <div
-            className="LikeButton-likeButtonWrapper-282"
+            className="LikeButton-likeButtonWrapper-285"
           >
             <svg
               aria-hidden="true"
@@ -1118,10 +1306,10 @@ exports[`Random matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-283 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-286 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-284 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-287 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
