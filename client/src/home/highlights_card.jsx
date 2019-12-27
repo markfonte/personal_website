@@ -43,24 +43,24 @@ class HighlightsCard extends React.Component {
           <CardContent>
             <Button
               className={classes.buttonDefault}
-              variant="outlined"
-              color="default"
+              variant="contained"
+              color="primary"
               href={currentWorkLink}
             >
                 Current Work
             </Button>
             <Button
               className={classes.buttonDefault}
-              variant="outlined"
-              color="default"
+              variant="contained"
+              color="primary"
               href={pastProjectsLink}
             >
                 Past Projects
             </Button>
             <Button
               className={classes.buttonDefault}
-              variant="outlined"
-              color="default"
+              variant="contained"
+              color="primary"
               href={randomLink}
             >
                 Random

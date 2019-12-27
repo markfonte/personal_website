@@ -1,6 +1,7 @@
 import React from 'react';
 import {Typography, Button, withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types';
+import markFeed8 from '../static/images/photos/mark_feed_8.jpg';
 
 const styles = {
   root: {
@@ -17,6 +18,10 @@ const styles = {
   },
   buttonDefault: {
     margin: '8px',
+  },
+  contactImage: {
+    maxHeight: '500px',
+    maxWidth: '100%',
   },
 };
 
@@ -65,6 +70,9 @@ class Contact extends React.Component {
         <Typography className={classes.paragraph} variant="caption">
           My resume is available upon request!
         </Typography>
+        <div className={classes.paragraph}>
+          <img style={styles.contactImage} src={markFeed8} alt="Temp"/>
+        </div>
       </div>
     );
   }

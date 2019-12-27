@@ -90,5 +90,23 @@ exports[`Contact matches snapshot 1`] = `
   >
     My resume is available upon request!
   </span>
+  <div
+    className="Contact-paragraph-4"
+  >
+    <img
+      alt="Temp"
+      src={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "maxHeight": "500px",
+          "maxWidth": "100%",
+        }
+      }
+    />
+  </div>
 </div>
 `;

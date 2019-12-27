@@ -34,7 +34,7 @@ exports[`Home matches snapshot 1`] = `
       >
         <a
           aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36"
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained HighlightsCard-buttonDefault-36 MuiButton-containedPrimary"
           href="undefinedcurrent_work"
           onBlur={[Function]}
           onDragLeave={[Function]}
@@ -57,7 +57,7 @@ exports[`Home matches snapshot 1`] = `
         </a>
         <a
           aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36"
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained HighlightsCard-buttonDefault-36 MuiButton-containedPrimary"
           href="undefinedpast_projects"
           onBlur={[Function]}
           onDragLeave={[Function]}
@@ -80,7 +80,7 @@ exports[`Home matches snapshot 1`] = `
         </a>
         <a
           aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined HighlightsCard-buttonDefault-36"
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained HighlightsCard-buttonDefault-36 MuiButton-containedPrimary"
           href="undefinedrandom"
           onBlur={[Function]}
           onDragLeave={[Function]}
@@ -118,6 +118,121 @@ exports[`Home matches snapshot 1`] = `
           }
         }
       >
+        <li
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-107"
+          style={
+            Object {
+              "height": 324,
+              "padding": 2,
+              "width": "50%",
+            }
+          }
+        >
+          <div
+            className="MuiGridListTile-tile"
+          >
+            <img
+              alt="Mark Feed 1"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </li>
+        <li
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-107"
+          style={
+            Object {
+              "height": 324,
+              "padding": 2,
+              "width": "50%",
+            }
+          }
+        >
+          <div
+            className="MuiGridListTile-tile"
+          >
+            <img
+              alt="Mark Feed 2"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </li>
+        <li
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-107"
+          style={
+            Object {
+              "height": 644,
+              "padding": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="MuiGridListTile-tile"
+          >
+            <img
+              alt="Mark Feed 10"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </li>
+        <li
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-107"
+          style={
+            Object {
+              "height": 324,
+              "padding": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="MuiGridListTile-tile"
+          >
+            <img
+              alt="Mark Feed 9"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </li>
+        <li
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-107"
+          style={
+            Object {
+              "height": 644,
+              "padding": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="MuiGridListTile-tile"
+          >
+            <img
+              alt="Mark Feed 11"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
+          </div>
+        </li>
         <li
           className="MuiGridListTile-root PhotoFeedCard-photoGridTile-107"
           style={
