@@ -822,6 +822,215 @@ exports[`PastProjects matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
           >
+            WalkLens
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Android application
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <img
+          alt="WalkLens logo"
+          className="WalklensCard-logo-112"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="WalkLens logo"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          This project was built in my
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://art.ai.umich.edu/course/EECS%20441/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            EECS 441: Mobile App Development for Entrepreneurs
+          </a>
+           
+          class during senior year. The idea is that users give permission to the application to periodically poll their location to see if they are approaching a crosswalk. If the app determines that a user is approaching a road, they receive a pop-up notification. This alerts the user to look up from their phone to help ensure that they are not wandering into the street and putting themselves in danger. The application comes from the idea that pedestrian safety is an issue that can be addressed by encouraging smartphone users to look up while they are walking. A more perfect solution would be for people to simply look while they are walking, but this does not always happen so we tried to combat it from the technology side.
+          <br />
+           
+          <br />
+          WalkLens is able to do all of the work it needs inside the logic of the Android application; it does not require a custom backend database. It uses the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developers.google.com/maps/documentation/android-sdk/intro"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Google Maps SDK for Android
+          </a>
+           
+          to display the map UI when opening the application, and the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developers.google.com/maps/documentation/roads/intro"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Google Roads API
+          </a>
+           
+          to find the nearest road to a user. It runs as a background process that wakes up in set intervals (between 5 and 30 seconds), then determines the user's current latitude/longitude and calculates if it is near a road. If it is close to the nearest road (between 30-70 feet) then it sends a notification to the user. Additionally, as an implementation of dead reckoning, if a user is approaching a crosswalk it delays sending the notification until they have almost reached it. WalkLens uses
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.android.com/topic/libraries/architecture/livedata"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            LiveData
+          </a>
+          , the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.android.com/guide/navigation"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Navigation Architecture component
+          </a>
+          , data binding, coroutines, ViewModels,
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://square.github.io/okhttp/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            OkHttp
+          </a>
+           
+          and much more. At the time of writing, it is available on the Google Play Store. There are no plans to make an iOS version of WalkLens.
+          <br />
+           
+          <br />
+          View it on
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://github.com/markfonte/WalkLens"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Github
+          </a>
+           
+          or the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Google Play Store
+          </a>
+        </p>
+        <img
+          alt="WalkLens screenshot 1"
+          className="WalklensCard-screenshot-111"
+          height="500"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="WalkLens screenshot 1"
+          width="240"
+        />
+        <img
+          alt="WalkLens screenshot 2"
+          className="WalklensCard-screenshot-111"
+          height="500"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="WalkLens screenshot 2"
+          width="240"
+        />
+        <img
+          alt="WalkLens screenshot 2"
+          className="WalklensCard-screenshot-111"
+          height="500"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="WalkLens screenshot 2"
+          width="240"
+        />
+      </div>
+      <div
+        className="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <a
+          aria-disabled={false}
+          aria-label="Go to Google Play Store listing"
+          className="MuiButtonBase-root MuiIconButton-root"
+          href="https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
             Laughable Lyrics
           </span>
           <span
@@ -832,7 +1041,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Spartahack5Card-media-111"
+        className="MuiCardMedia-root Spartahack5Card-media-113"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
@@ -896,7 +1105,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-112"
+            className="Spartahack5Card-logo-114"
             src={
               Object {
                 "process": [Function],
@@ -969,10 +1178,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-114"
+        className="RevolutionUC8Card-mediaWrapper-116"
       >
         <div
-          className="MuiCardMedia-root RevolutionUC8Card-media-113"
+          className="MuiCardMedia-root RevolutionUC8Card-media-115"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
@@ -1011,7 +1220,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-115"
+          className="RevolutionUC8Card-logo-117"
           src={
             Object {
               "process": [Function],
@@ -1083,7 +1292,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Grizzhacks3Card-media-116"
+        className="MuiCardMedia-root Grizzhacks3Card-media-118"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
@@ -1129,7 +1338,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-117"
+          className="Grizzhacks3Card-logo-119"
           src={
             Object {
               "process": [Function],
@@ -1210,7 +1419,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-118"
+          className="SpotlightCard-screenshot-120"
           height="500"
           src={
             Object {
@@ -1222,7 +1431,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-118"
+          className="SpotlightCard-screenshot-120"
           height="500"
           src={
             Object {
@@ -1296,7 +1505,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root DoggieDoodlesCard-media-119"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-121"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
@@ -1376,7 +1585,7 @@ exports[`PastProjects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-120"
+    className="InteractionCard-root-122"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1386,10 +1595,10 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-121"
+          className="LikeButton-root-123"
         >
           <div
-            className="LikeButton-likeButtonWrapper-122"
+            className="LikeButton-likeButtonWrapper-124"
           >
             <svg
               aria-hidden="true"
@@ -1404,10 +1613,10 @@ exports[`PastProjects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-123 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-125 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-124 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-126 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

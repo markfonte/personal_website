@@ -12,6 +12,7 @@ import JPMorganCard from './jpmorgan_card';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import MHacks12Card from './mhacks12_card';
+import WalklensCard from './walklens_card.jsx';
 
 const styles = {
   title: {
@@ -31,6 +32,7 @@ class PastProjects extends React.Component {
         <LAZCard />
         <CompletedCourseworkCard />
         <MHacks12Card />
+        <WalklensCard />
         <Spartahack5Card />
         <RevolutionUC8Card />
         <Grizzhacks3Card />

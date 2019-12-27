@@ -22,9 +22,9 @@ class Home extends React.Component {
     return (
       <div>
         <Typography className={classes.title} variant="h6">
-          Senior Computer Science in Engineering student at the University of Michigan ·
-          Minor in Entrepreneurship ·
-          Focus on Web &amp; Android development
+          Senior <i>Computer Science in Engineering</i> student at the University of Michigan ·
+          Minor in <i>Entrepreneurship</i> ·
+          Focus on <i>Web &amp; Android</i> development
         </Typography>
         <HighlightsCard />
         <PhotoFeedCard />
