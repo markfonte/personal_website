@@ -5,7 +5,11 @@ exports[`Home matches snapshot 1`] = `
   <h6
     className="MuiTypography-root Home-title-1 MuiTypography-h6"
   >
-    Senior 
+    Incoming Software Development Engineer at 
+    <i>
+      Amazon
+    </i>
+     · Senior 
     <i>
       Computer Science in Engineering
     </i>

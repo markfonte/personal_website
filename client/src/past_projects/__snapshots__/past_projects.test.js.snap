@@ -767,6 +767,18 @@ exports[`PastProjects matches snapshot 1`] = `
             title="InstEvents Screenshot 2"
             width="240"
           />
+          <img
+            alt="Nathan and Mark MHacks 12"
+            className="MHacks12Card-screenshot-110"
+            height="360"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="Nathan and Mark MHacks 12"
+            width="240"
+          />
         </p>
       </div>
       <div

@@ -7,6 +7,8 @@ import instEventsScreenshot2
   from '../static/images/screenshots/instevents_screenshot_2.jpg';
 import instEventsScreenshot3
   from '../static/images/screenshots/instevents_screenshot_3.jpg';
+import mhacksNathanAndMark
+  from '../static/images/photos/mhacks_mark_and_nathan.jpg';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -124,6 +126,14 @@ class MHacks12Card extends React.Component {
                 height="500"
                 title="InstEvents Screenshot 2"
                 alt="InstEvents Screenshot 2"
+              />
+              <img
+                className={classes.screenshot}
+                src={mhacksNathanAndMark}
+                width="240"
+                height="360"
+                title="Nathan and Mark MHacks 12"
+                alt="Nathan and Mark MHacks 12"
               />
             </Typography>
           </CardContent>
