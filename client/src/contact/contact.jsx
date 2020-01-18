@@ -73,7 +73,8 @@ class Contact extends React.Component {
         <div>
           <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
             data-type="horizontal" data-theme="dark" data-vanity="mark-fonte">
-            <a className="LI-simple-link" href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>Mark Fonte
+            <a className="LI-simple-link" href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
+                Mark Fonte on LinkedIn
             </a></div>
         </div>
         <div className={classes.paragraph}>
