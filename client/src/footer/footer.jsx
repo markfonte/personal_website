@@ -152,6 +152,7 @@ class Footer extends React.Component {
    const websiteGithubLink = `https://github.com/markfonte/personal_website`;
    const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
    const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
+   const travisCILink = `https://travis-ci.org/markfonte/personal_website`;
    const updatedDate = timestamp;
 
    return (
@@ -196,6 +197,15 @@ class Footer extends React.Component {
              href={websiteGithubLink}
            >
               view source on github
+           </Link>
+         </div>
+         <div>
+           <Link
+             variant="caption"
+             color="textSecondary"
+             href={travisCILink}
+           >
+                 view build history
            </Link>
          </div>
          <div>
