@@ -70,6 +70,12 @@ class Contact extends React.Component {
         <Typography className={classes.paragraph} variant="caption">
           My resume is available upon request
         </Typography>
+        <div>
+          <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
+            data-type="horizontal" data-theme="dark" data-vanity="mark-fonte">
+            <a className="LI-simple-link" href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>Mark Fonte
+            </a></div>
+        </div>
         <div className={classes.paragraph}>
           <img style={styles.contactImage} src={markFeed8} alt="Temp"/>
         </div>
