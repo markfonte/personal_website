@@ -4,9 +4,14 @@ import {
   CardContent,
   CardHeader,
   Button,
+  Typography,
+  Link,
 } from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
+import homeCoverArt
+  from '../static/images/photos/home_cover_art.jpg';
+
 
 const styles = {
   media: {
@@ -41,6 +46,19 @@ class HighlightsCard extends React.Component {
             for new songs from my acappella group!"
           />
           <CardContent>
+            <div>
+              <img
+                src={homeCoverArt}
+                width="360"
+                height="360"
+                title="home Cover Art"
+                alt="home Cover Art"
+              />
+              <Typography variant="body1">
+                  New EP out now! Head to {' '}
+                <Link color="secondary" href={randomLink}><i>Random</i></Link> to check it out..
+              </Typography>
+            </div>
             <Button
               className={classes.buttonDefault}
               variant="contained"

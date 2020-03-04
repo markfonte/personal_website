@@ -63,7 +63,7 @@ class GimbleCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader
             title="Gimble A Cappella"
-            subheader={`My acappella group - check out our new single: "when the party's over"!`}
+            subheader={`My acappella group - check out our new EP: "home"!`}
           />
           <CardMedia
             id={classes.gimbleCardMedia}
@@ -71,6 +71,14 @@ class GimbleCard extends React.Component {
             title="Gimble A Cappella - 2019"
           />
           <CardContent>
+            <iframe
+              src="https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo"
+              width="320"
+              height="235"
+              title="Fallingwater - Gimble A Cappella"
+              frameBorder="8"
+              allow="encrypted-media"
+            />
             <iframe
               src="https://open.spotify.com/embed/track/0WteMpcOWgCTUnMfiBwJXC"
               width="320"
