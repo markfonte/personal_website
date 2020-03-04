@@ -30,7 +30,7 @@ exports[`Random matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            My acappella group - check out our new single: "when the party's over"!
+            My acappella group - check out our new EP: "home"!
           </span>
         </div>
       </div>
@@ -47,6 +47,14 @@ exports[`Random matches snapshot 1`] = `
       <div
         className="MuiCardContent-root"
       >
+        <iframe
+          allow="encrypted-media"
+          frameBorder="8"
+          height="235"
+          src="https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo"
+          title="Fallingwater - Gimble A Cappella"
+          width="320"
+        />
         <iframe
           allow="encrypted-media"
           frameBorder="8"

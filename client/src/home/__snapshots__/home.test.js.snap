@@ -86,6 +86,36 @@ exports[`Home matches snapshot 1`] = `
       <div
         className="MuiCardContent-root"
       >
+        <div>
+          <img
+            alt="home Cover Art"
+            height="360"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="home Cover Art"
+            width="360"
+          />
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            New EP out now! Head to 
+             
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+              href="undefinedrandom"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <i>
+                Random
+              </i>
+            </a>
+             to check it out..
+          </p>
+        </div>
         <a
           aria-disabled={false}
           className="MuiButtonBase-root MuiButton-root MuiButton-contained HighlightsCard-buttonDefault-43 MuiButton-containedPrimary"
@@ -162,10 +192,10 @@ exports[`Home matches snapshot 1`] = `
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
     <div
-      className="MuiCardContent-root PhotoFeedCard-cardContent-112"
+      className="MuiCardContent-root PhotoFeedCard-cardContent-118"
     >
       <ul
-        className="MuiGridList-root PhotoFeedCard-photoGrid-113"
+        className="MuiGridList-root PhotoFeedCard-photoGrid-119"
         style={
           Object {
             "margin": -2,
@@ -173,7 +203,7 @@ exports[`Home matches snapshot 1`] = `
         }
       >
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -196,7 +226,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -219,7 +249,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 644,
@@ -242,7 +272,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -265,7 +295,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 644,
@@ -288,7 +318,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -311,7 +341,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -334,7 +364,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -357,7 +387,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -380,7 +410,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-114"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
           style={
             Object {
               "height": 324,
@@ -426,10 +456,10 @@ exports[`Home matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="BuiltWithTable-builtWithTableWrapper-121"
+          className="BuiltWithTable-builtWithTableWrapper-127"
         >
           <table
-            className="MuiTable-root BuiltWithTable-builtWithTable-122"
+            className="MuiTable-root BuiltWithTable-builtWithTable-128"
           >
             <tbody
               className="MuiTableBody-root"
@@ -461,7 +491,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -507,7 +537,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -553,7 +583,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -599,7 +629,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -645,7 +675,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -691,7 +721,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -737,7 +767,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -783,7 +813,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -829,7 +859,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
@@ -875,7 +905,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-120"
+                    className="BuiltWithTable-logoDefault-126"
                     src={
                       Object {
                         "process": [Function],
