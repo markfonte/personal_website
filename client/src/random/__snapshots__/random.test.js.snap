@@ -1263,7 +1263,6 @@ exports[`Random matches snapshot 1`] = `
                   <input
                     checked={false}
                     className="PrivateSwitchBase-input-283 MuiSwitch-input"
-                    disabled={false}
                     onChange={[Function]}
                     type="checkbox"
                   />
