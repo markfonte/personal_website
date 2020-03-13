@@ -24,7 +24,7 @@
         "eslint-plugin-react": "^7.16.0",
         "react-test-renderer": "^16.10.2",
         "react": "^16.10.2",
-        "acorn": "^7.1.0",
+        "acorn": "^7.1.1",
         "uglify-js": "^3.6.1"
     }
 }
