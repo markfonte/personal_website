@@ -87,12 +87,12 @@ class GimbleCard extends React.Component {
               frameBorder="8"
               allow="encrypted-media"
             />
-            <iframe allow="autoplay *; encrypted-media *;"
+            {/* <iframe allow="autoplay *; encrypted-media *;"
               frameBorder="0"
               height="235"
               width="320"
               title="when the party's over Apple Music - Gimble A Cappella"
-              src="https://embed.music.apple.com/us/album/when-the-partys-over-single/1488378903"/>
+              src="https://embed.music.apple.com/us/album/when-the-partys-over-single/1488378903"/> */}
             <iframe
               width="320"
               height="235"
@@ -110,12 +110,12 @@ class GimbleCard extends React.Component {
               frameBorder="8"
               allow="encrypted-media"
             />
-            <iframe allow="autoplay *; encrypted-media *;"
+            {/* <iframe allow="autoplay *; encrypted-media *;"
               frameBorder="0"
               height="235"
               width="320"
               title="Fallingwater Apple Music - Gimble A Cappella"
-              src="https://embed.music.apple.com/us/album/fallingwater-single/1479474008"/>
+              src="https://embed.music.apple.com/us/album/fallingwater-single/1479474008"/> */}
             <iframe
               width="320"
               height="235"

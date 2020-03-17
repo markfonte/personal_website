@@ -64,14 +64,6 @@ exports[`Random matches snapshot 1`] = `
           width="320"
         />
         <iframe
-          allow="autoplay *; encrypted-media *;"
-          frameBorder="0"
-          height="235"
-          src="https://embed.music.apple.com/us/album/when-the-partys-over-single/1488378903"
-          title="when the party's over Apple Music - Gimble A Cappella"
-          width="320"
-        />
-        <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}
           frameBorder="8"
@@ -86,14 +78,6 @@ exports[`Random matches snapshot 1`] = `
           height="235"
           src="https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK"
           title="Fallingwater - Gimble A Cappella"
-          width="320"
-        />
-        <iframe
-          allow="autoplay *; encrypted-media *;"
-          frameBorder="0"
-          height="235"
-          src="https://embed.music.apple.com/us/album/fallingwater-single/1479474008"
-          title="Fallingwater Apple Music - Gimble A Cappella"
           width="320"
         />
         <iframe
