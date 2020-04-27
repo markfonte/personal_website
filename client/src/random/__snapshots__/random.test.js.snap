@@ -142,7 +142,6 @@ exports[`Random matches snapshot 1`] = `
               aria-hidden="true"
               className="MuiSvgIcon-root"
               focusable="false"
-              role="presentation"
               viewBox="0 0 24 24"
             >
               <path
@@ -827,7 +826,6 @@ exports[`Random matches snapshot 1`] = `
             aria-hidden="true"
             className="MuiSvgIcon-root"
             focusable="false"
-            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -871,16 +869,20 @@ exports[`Random matches snapshot 1`] = `
         >
           <table
             className="MuiTable-root"
+            role={null}
           >
             <tbody
               className="MuiTableBody-root"
+              role={null}
             >
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  role="cell"
                   scope="row"
                 >
                   <h5
@@ -941,10 +943,12 @@ exports[`Random matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  role="cell"
                   scope="row"
                 >
                   <h5
@@ -1005,10 +1009,12 @@ exports[`Random matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  role="cell"
                   scope="row"
                 >
                   <h5
@@ -1069,10 +1075,12 @@ exports[`Random matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  role="cell"
                   scope="row"
                 >
                   <h5
@@ -1133,10 +1141,12 @@ exports[`Random matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  role="cell"
                   scope="row"
                 >
                   <h5
@@ -1289,7 +1299,6 @@ exports[`Random matches snapshot 1`] = `
               className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
               focusable="false"
               onClick={[Function]}
-              role="presentation"
               viewBox="0 0 24 24"
             >
               <path

@@ -146,7 +146,6 @@ exports[`CurrentWork matches snapshot 1`] = `
               aria-hidden="true"
               className="MuiSvgIcon-root"
               focusable="false"
-              role="presentation"
               viewBox="0 0 24 24"
             >
               <path
@@ -272,7 +271,6 @@ exports[`CurrentWork matches snapshot 1`] = `
               className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
               focusable="false"
               onClick={[Function]}
-              role="presentation"
               viewBox="0 0 24 24"
             >
               <path

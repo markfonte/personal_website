@@ -460,16 +460,20 @@ exports[`Home matches snapshot 1`] = `
         >
           <table
             className="MuiTable-root BuiltWithTable-builtWithTable-128"
+            role={null}
           >
             <tbody
               className="MuiTableBody-root"
+              role={null}
             >
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -512,10 +516,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -558,10 +564,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -604,10 +612,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -650,10 +660,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -696,10 +708,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -742,10 +756,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -788,10 +804,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -834,10 +852,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
@@ -880,10 +900,12 @@ exports[`Home matches snapshot 1`] = `
               </tr>
               <tr
                 className="MuiTableRow-root"
+                role={null}
               >
                 <th
                   aria-sort={null}
                   className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+                  role="cell"
                   scope="row"
                 >
                   <a
