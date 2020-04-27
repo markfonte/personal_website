@@ -56,7 +56,7 @@ class HighlightsCard extends React.Component {
               />
               <Typography variant="body1">
                   New EP out now! Head to {' '}
-                <Link color="secondary" href={randomLink}><i>Random</i></Link> to check it out..
+                <Link color="secondary" href={randomLink}><i>Extra</i></Link> to check it out..
               </Typography>
             </div>
             <Button
@@ -81,7 +81,7 @@ class HighlightsCard extends React.Component {
               color="primary"
               href={randomLink}
             >
-                Random
+                Extra
             </Button>
           </CardContent>
         </Card>

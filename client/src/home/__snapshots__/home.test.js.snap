@@ -5,197 +5,107 @@ exports[`Home matches snapshot 1`] = `
   <h6
     className="MuiTypography-root Home-title-1 MuiTypography-h6"
   >
-    Incoming Software Development Engineer at 
-    <i
-      className="Home-amazon-3"
-    >
-      Amazon
-    </i>
-     · Senior 
-    <i
-      className="Home-computerScience-8"
-    >
-      Computer Science in Engineering
-    </i>
+    Incoming
      
-     
-    student at the 
-     
-    <span
-      className="Home-michigan-4"
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextSecondary"
+      href="https://amazon.jobs/en/job_categories/software-development"
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
-      University of Michigan
-    </span>
+      <i>
+        Software Development Engineer
+      </i>
+    </a>
      
-    <img
-      alt="University of Michigan logo small"
-      className="Home-michiganLogo-5"
-      height="20"
-      src={
-        Object {
-          "process": [Function],
-        }
-      }
-      title="University of Michigan logo small"
-      width="20"
-    />
+    at
      
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-amazon-3 MuiTypography-colorSecondary"
+      href="https://www.amazon.com/"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <i>
+        Amazon
+      </i>
+    </a>
      
-    · Minor in 
-    <i
-      className="Home-entrepreneurship-9"
+    · Senior
+     
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-compSci-8 MuiTypography-colorTextSecondary"
+      href="https://majors.engin.umich.edu/program/computer-science/"
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
-      Entrepreneurship
-    </i>
-     · Focus on 
-    <i
-      className="Home-web-6"
+      <i>
+        Computer Science in Engineering
+      </i>
+    </a>
+     
+    student at the
+     
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-michigan-4 MuiTypography-colorPrimary"
+      href="https://umich.edu/"
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
-      Web
-    </i>
-     &
-    <i
-      className="Home-android-7"
+      <i>
+        University of Michigan
+      </i>
+    </a>
+     
+    · Minor in
+     
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-entrepreneurship-9 MuiTypography-colorTextSecondary"
+      href="https://innovateblue.umich.edu/academics/minor-in-entrepreneurship/"
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
-       Android
-    </i>
-     development
+      <i>
+        Entrepreneurship
+      </i>
+    </a>
+     
+    · Focus on
+     
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-web-6 MuiTypography-colorPrimary"
+      href="https://en.wikipedia.org/wiki/Web_development"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <i>
+        Web
+      </i>
+    </a>
+     
+    &
+     
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-android-7 MuiTypography-colorPrimary"
+      href="https://developer.android.com/"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <i>
+        Android
+      </i>
+    </a>
+     
+    development
   </h6>
-  <div>
-    <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
-        >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Recent Highlights
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Check out "Current Work" or "Past Projects" to see what I have been working on, or head over to "Random" for new songs from my acappella group!
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <div>
-          <img
-            alt="home Cover Art"
-            height="360"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="home Cover Art"
-            width="360"
-          />
-          <p
-            className="MuiTypography-root MuiTypography-body1"
-          >
-            New EP out now! Head to 
-             
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-              href="undefinedrandom"
-              onBlur={[Function]}
-              onFocus={[Function]}
-            >
-              <i>
-                Random
-              </i>
-            </a>
-             to check it out..
-          </p>
-        </div>
-        <a
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-contained HighlightsCard-buttonDefault-43 MuiButton-containedPrimary"
-          href="undefinedcurrent_work"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiButton-label"
-          >
-            Current Work
-          </span>
-        </a>
-        <a
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-contained HighlightsCard-buttonDefault-43 MuiButton-containedPrimary"
-          href="undefinedpast_projects"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiButton-label"
-          >
-            Past Projects
-          </span>
-        </a>
-        <a
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiButton-root MuiButton-contained HighlightsCard-buttonDefault-43 MuiButton-containedPrimary"
-          href="undefinedrandom"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiButton-label"
-          >
-            Random
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
     <div
-      className="MuiCardContent-root PhotoFeedCard-cardContent-118"
+      className="MuiCardContent-root PhotoFeedCard-cardContent-46"
     >
       <ul
-        className="MuiGridList-root PhotoFeedCard-photoGrid-119"
+        className="MuiGridList-root PhotoFeedCard-photoGrid-47"
         style={
           Object {
             "margin": -2,
@@ -203,7 +113,7 @@ exports[`Home matches snapshot 1`] = `
         }
       >
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -226,7 +136,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -249,7 +159,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 644,
@@ -272,7 +182,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -295,7 +205,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 644,
@@ -318,7 +228,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -341,7 +251,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -364,7 +274,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -387,7 +297,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -410,7 +320,7 @@ exports[`Home matches snapshot 1`] = `
           </div>
         </li>
         <li
-          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-120"
+          className="MuiGridListTile-root PhotoFeedCard-photoGridTile-48"
           style={
             Object {
               "height": 324,
@@ -456,10 +366,10 @@ exports[`Home matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="BuiltWithTable-builtWithTableWrapper-127"
+          className="BuiltWithTable-builtWithTableWrapper-85"
         >
           <table
-            className="MuiTable-root BuiltWithTable-builtWithTable-128"
+            className="MuiTable-root BuiltWithTable-builtWithTable-86"
             role={null}
           >
             <tbody
@@ -495,7 +405,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -543,7 +453,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -591,7 +501,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -639,7 +549,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -687,7 +597,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -735,7 +645,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -783,7 +693,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -831,7 +741,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -879,7 +789,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],
@@ -927,7 +837,7 @@ exports[`Home matches snapshot 1`] = `
                 >
                   <img
                     alt="express"
-                    className="BuiltWithTable-logoDefault-126"
+                    className="BuiltWithTable-logoDefault-84"
                     src={
                       Object {
                         "process": [Function],

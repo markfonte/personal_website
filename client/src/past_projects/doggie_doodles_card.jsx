@@ -57,7 +57,6 @@ class DoggieDoodlesCard extends React.Component {
           </CardContent>
           <CardActions>
             <IconButton
-              color="secondary"
               aria-label="Go to website"
               href={doggieDoodlesWebsiteLink}
             >

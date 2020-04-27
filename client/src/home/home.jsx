@@ -2,11 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BuiltWithTable from './built_with_table.jsx';
 import PhotoFeedCard from './photo_feed_card.jsx';
-import {Typography} from '@material-ui/core';
+import {Typography, Link} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
-import HighlightsCard from './highlights_card.jsx';
-import universityOfMichiganLogoSmall
-  from '../static/vectors/university_of_michigan_logo_small.svg';
+// import HighlightsCard from './highlights_card.jsx';
 // import Resume from './resume.jsx';
 
 const styles = {
@@ -31,7 +29,7 @@ const styles = {
   android: {
     color: '#A4C639',
   },
-  computerScience: {
+  compSci: {
   },
   entrepreneurship: {
   },
@@ -39,28 +37,63 @@ const styles = {
 
 class Home extends React.Component {
   render() {
+    const sdeAmazonLink = 'https://amazon.jobs/en/job_categories/software-development';
+    const amazonLink = 'https://www.amazon.com/';
+    const compSciEnginUmichLink = 'https://majors.engin.umich.edu/program/computer-science/';
+    const umichLink = 'https://umich.edu/';
+    const entrepreneurshipLink = 'https://innovateblue.umich.edu/academics/minor-in-entrepreneurship/';
+    const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
+    const androidDevLink = 'https://developer.android.com/';
+
     const {classes} = this.props;
     return (
       <div>
         <Typography className={classes.title} variant="h6">
-          Incoming Software Development Engineer at <i className={classes.amazon}>Amazon</i> ·
-          Senior <i className={classes.computerScience}>Computer Science in Engineering</i> {' '}
-          student at the {' '}
-          <span className={classes.michigan}>University of Michigan</span>
-          {' '}
-          <img
-            src={universityOfMichiganLogoSmall}
-            width="20"
-            height="20"
-            className={classes.michiganLogo}
-            title="University of Michigan logo small"
-            alt="University of Michigan logo small"
-          /> {' '}·
-          Minor in <i className={classes.entrepreneurship}>Entrepreneurship</i> ·
-          Focus on <i className={classes.web}>Web</i> &amp;
-          <i className={classes.android}> Android</i> development
+          Incoming
+
+          {' '}<Link color="textSecondary" href={sdeAmazonLink}>
+            <i>Software Development Engineer</i>
+          </Link>{' '}
+
+          at
+
+          {' '}<Link color="secondary" href={amazonLink} className={classes.amazon}>
+            <i>Amazon</i>
+          </Link>{' '}
+
+          · Senior
+
+          {' '}<Link color="textSecondary" href={compSciEnginUmichLink} className={classes.compSci}>
+            <i>Computer Science in Engineering</i>
+          </Link>{' '}
+
+          student at the
+
+          {' '}<Link href={umichLink} className={classes.michigan}>
+            <i>University of Michigan</i>
+          </Link>{' '}
+
+          · Minor in
+
+          {' '}<Link color="textSecondary" href={entrepreneurshipLink} className={classes.entrepreneurship}>
+            <i>Entrepreneurship</i>
+          </Link>{' '}
+
+          · Focus on
+
+          {' '}<Link href={webDevLink} className={classes.web}>
+            <i>Web</i>
+          </Link>{' '}
+
+          &amp;
+
+          {' '}<Link href={androidDevLink} className={classes.android}>
+            <i>Android</i>
+          </Link>{' '}
+
+          development
         </Typography>
-        <HighlightsCard />
+        {/* <HighlightsCard /> */}
         <PhotoFeedCard />
         <BuiltWithTable />
       </div>

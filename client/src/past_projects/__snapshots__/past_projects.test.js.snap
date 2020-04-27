@@ -1587,7 +1587,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <a
           aria-disabled={false}
           aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary"
+          className="MuiButtonBase-root MuiIconButton-root"
           href="https://dopedoggiedoodles.wixsite.com/home"
           onBlur={[Function]}
           onDragLeave={[Function]}
