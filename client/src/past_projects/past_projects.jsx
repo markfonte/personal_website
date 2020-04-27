@@ -26,7 +26,7 @@ class PastProjects extends React.Component {
     return (
       <div>
         <Typography className={classes.title} variant="h6">
-          Past internships, side projects and hackathon projects I have worked on
+          Internships, side projects and hackathon projects I have worked on
         </Typography>
         <JPMorganCard />
         <LAZCard />

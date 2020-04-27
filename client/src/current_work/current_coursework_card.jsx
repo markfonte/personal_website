@@ -30,26 +30,7 @@ class CurrentCourseworkCard extends React.Component {
     const {classes} = this.props;
     const universityOfMichiganLink = `https://umich.edu/`;
     const courses = [
-      {
-        subject: 'EECS 490',
-        name: 'Programming Languages',
-        link: `https://atlas.ai.umich.edu/course/EECS%20490/`,
-      },
-      {
-        subject: 'EECS 493',
-        name: 'User Interface Development',
-        link: `https://atlas.ai.umich.edu/course/EECS%20493/`,
-      },
-      {
-        subject: 'EECS 201',
-        name: 'Computer Science Pragmatics',
-        link: `https://atlas.ai.umich.edu/course/EECS%20201/`,
-      },
-      {
-        subject: 'GERMAN 386',
-        name: 'Fairy Tales',
-        link: `https://atlas.ai.umich.edu/course/GERMAN%20386/`,
-      },
+
     ];
     return (
       <div>

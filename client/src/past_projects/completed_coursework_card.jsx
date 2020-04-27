@@ -41,6 +41,16 @@ class CompletedCourseworkCard extends React.Component {
         link: `https://art.ai.umich.edu/course/EECS%20485/`,
       },
       {
+        subject: 'EECS 490',
+        name: 'Programming Languages',
+        link: `https://atlas.ai.umich.edu/course/EECS%20490/`,
+      },
+      {
+        subject: 'EECS 493',
+        name: 'User Interface Development',
+        link: `https://atlas.ai.umich.edu/course/EECS%20493/`,
+      },
+      {
         subject: 'EECS 441',
         name: 'Mobile App Development for Entrepreneurs',
         link: `https://art.ai.umich.edu/course/EECS%20441/`,

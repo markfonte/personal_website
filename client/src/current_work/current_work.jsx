@@ -1,8 +1,6 @@
 import React from 'react';
 import {Typography, withStyles} from '@material-ui/core';
-import CurrentCourseworkCard from './current_coursework_card.jsx';
 import InteractionCard from '../shared/interaction_card';
-import ClippCard from './clipp_card.jsx';
 import PropTypes from 'prop-types';
 
 const styles = {
@@ -19,8 +17,6 @@ class CurrentWork extends React.Component {
         <Typography className={classes.title} variant="h6">
           Current coursework, projects and businesses I am working on
         </Typography>
-        <CurrentCourseworkCard />
-        <ClippCard />
         <InteractionCard pagename="current_work" />
       </div>
     );

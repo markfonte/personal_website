@@ -17,7 +17,7 @@ class Random extends React.Component {
     return (
       <div>
         <Typography style={{margin: 16}} variant="h6">
-          My sandbox for trying random stuff - enjoy!
+         Some other fun stuff - enjoy!
         </Typography>
         <GimbleCard />
         <TicTacToeCard />

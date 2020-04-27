@@ -5,7 +5,7 @@ exports[`PastProjects matches snapshot 1`] = `
   <h6
     className="MuiTypography-root PastProjects-title-1 MuiTypography-h6"
   >
-    Past internships, side projects and hackathon projects I have worked on
+    Internships, side projects and hackathon projects I have worked on
   </h6>
   <div>
     <div
@@ -317,6 +317,40 @@ exports[`PastProjects matches snapshot 1`] = `
               :
                
               Web Systems
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://atlas.ai.umich.edu/course/EECS%20490/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 490
+              </b>
+              :
+               
+              Programming Languages
+            </a>
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1"
+          >
+            <a
+              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
+              href="https://atlas.ai.umich.edu/course/EECS%20493/"
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <b>
+                EECS 493
+              </b>
+              :
+               
+              User Interface Development
             </a>
           </p>
           <p

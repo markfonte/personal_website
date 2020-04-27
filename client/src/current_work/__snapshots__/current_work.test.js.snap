@@ -7,251 +7,8 @@ exports[`CurrentWork matches snapshot 1`] = `
   >
     Current coursework, projects and businesses I am working on
   </h6>
-  <div>
-    <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
-        >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Current Coursework - Winter 2020
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            University of Michigan
-          </span>
-        </div>
-      </div>
-      <div
-        className="CurrentCourseworkCard-mediaWrapper-33"
-      >
-        <div
-          className="MuiCardMedia-root CurrentCourseworkCard-mediaRoot-32"
-          style={
-            Object {
-              "backgroundImage": "url(\\"/images/university_of_michigan_logo.png\\")",
-            }
-          }
-          title="University of Michigan banner logo"
-        />
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <h6
-          className="MuiTypography-root MuiTypography-subtitle1"
-        >
-          <p
-            className="MuiTypography-root MuiTypography-body1"
-          >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://atlas.ai.umich.edu/course/EECS%20490/"
-              onBlur={[Function]}
-              onFocus={[Function]}
-            >
-              <b>
-                EECS 490
-              </b>
-              :
-               
-              Programming Languages
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root MuiTypography-body1"
-          >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://atlas.ai.umich.edu/course/EECS%20493/"
-              onBlur={[Function]}
-              onFocus={[Function]}
-            >
-              <b>
-                EECS 493
-              </b>
-              :
-               
-              User Interface Development
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root MuiTypography-body1"
-          >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://atlas.ai.umich.edu/course/EECS%20201/"
-              onBlur={[Function]}
-              onFocus={[Function]}
-            >
-              <b>
-                EECS 201
-              </b>
-              :
-               
-              Computer Science Pragmatics
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root MuiTypography-body1"
-          >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://atlas.ai.umich.edu/course/GERMAN%20386/"
-              onBlur={[Function]}
-              onFocus={[Function]}
-            >
-              <b>
-                GERMAN 386
-              </b>
-              :
-               
-              Fairy Tales
-            </a>
-          </p>
-        </h6>
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://umich.edu/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
-        >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Clipp
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Full Stack Software Developer (Part Time)
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1"
-        >
-          <img
-            alt="Clipp logo"
-            className="ClippCard-logo-103"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Clipp logo"
-          />
-          <br />
-           
-          <br />
-          Clipp, a startup at Michigan, is a mobile application for trading pre-owned items without monetary exchange. Our 6-person development team started building the React Native application in September 2019, and started beta testing on December 5th, 2019. Users can upload items that they would like to trade, then "swipe" on items they would trade each item for. If two people "swipe right" on each other's items, they get matched in a custom messenger where they can coordinate a meeting to exchange items. No money involved! Right now, it is only limited to University of Michigan students.
-          <br />
-           
-          <br />
-          The project requires full-stack work, from the front-end development of the Javascript mobile applications to the back-end development of the MongoDB and Firebase databases. Each developer contributes to different parts of the project at different times, working on any task that is currently critical to development progress. This gives all of us full-stack awareness and requires teamwork and communication. Until this point, we were working to build a Minimum Viable Product that would allow us to validate our value proposition. Once we are sure that people will use this product, we will begin building fully-fledged native mobile Android and iOS applications. We are very excited to share Clipp with the world!
-        </p>
-        <span
-          className="MuiTypography-root MuiTypography-caption"
-        >
-          <br />
-          <img
-            alt="Clipp wireframe screenshot 1"
-            className="ClippCard-mobileScreenshot-104"
-            height="500"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Clipp wireframe screenshot 1"
-            width="240"
-          />
-          <img
-            alt="Clipp wireframe screenshot 2"
-            className="ClippCard-mobileScreenshot-104"
-            height="500"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Clipp wireframe screenshot 2"
-            width="240"
-          />
-          <img
-            alt="Clipp wireframe screenshot 3"
-            className="ClippCard-mobileScreenshot-104"
-            height="500"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Clipp wireframe screenshot 3"
-            width="240"
-          />
-          <br />
-          (note: these are just wireframes, not actual screenshots from the mobile application)
-        </span>
-      </div>
-    </div>
-  </div>
   <div
-    className="InteractionCard-root-105"
+    className="InteractionCard-root-32"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -261,10 +18,10 @@ exports[`CurrentWork matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-106"
+          className="LikeButton-root-63"
         >
           <div
-            className="LikeButton-likeButtonWrapper-107"
+            className="LikeButton-likeButtonWrapper-64"
           >
             <svg
               aria-hidden="true"
@@ -278,10 +35,10 @@ exports[`CurrentWork matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-108 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-65 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-109 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-66 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
