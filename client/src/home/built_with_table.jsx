@@ -26,8 +26,8 @@ import {
 
 const styles = {
   logoDefault: {
-    width: '80px',
-    maxHeight: '80px',
+    width: 'auto',
+    height: '80px',
   },
   builtWithTableWrapper: {
     overflowX: 'auto',
