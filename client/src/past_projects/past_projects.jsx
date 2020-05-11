@@ -13,6 +13,7 @@ import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import MHacks12Card from './mhacks12_card';
 import WalklensCard from './walklens_card.jsx';
+import MetaTags from 'react-meta-tags';
 
 const styles = {
   title: {
@@ -25,6 +26,10 @@ class PastProjects extends React.Component {
     const {classes} = this.props;
     return (
       <div>
+        <MetaTags>
+          <title>Projects</title>
+          <meta name="description" content="Internships, side projects and hackathon projects I have worked on"/>
+        </MetaTags>
         <Typography className={classes.title} variant="h6">
           Internships, side projects and hackathon projects I have worked on
         </Typography>

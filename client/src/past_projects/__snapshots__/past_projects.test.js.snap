@@ -286,7 +286,7 @@ exports[`PastProjects matches snapshot 1`] = `
           className="MuiTypography-root MuiTypography-subtitle1"
         >
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -303,7 +303,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -320,7 +320,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -337,7 +337,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -354,7 +354,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -371,7 +371,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -388,7 +388,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -405,7 +405,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -422,7 +422,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -439,7 +439,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -456,7 +456,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -473,7 +473,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -490,7 +490,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -507,7 +507,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -524,7 +524,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -541,7 +541,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -558,7 +558,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -575,7 +575,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -592,7 +592,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -609,7 +609,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -626,7 +626,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -706,7 +706,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root MHacks12Card-media-108"
+        className="MuiCardMedia-root MHacks12Card-media-109"
         style={
           Object {
             "backgroundImage": "url(\\"/images/mhacks_logo.png\\")",
@@ -764,7 +764,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="InstEvents Screenshot 3"
-            className="MHacks12Card-screenshot-110"
+            className="MHacks12Card-screenshot-111"
             height="500"
             src={
               Object {
@@ -776,7 +776,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents Screenshot 1"
-            className="MHacks12Card-screenshot-110"
+            className="MHacks12Card-screenshot-111"
             height="500"
             src={
               Object {
@@ -788,7 +788,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents Screenshot 2"
-            className="MHacks12Card-screenshot-110"
+            className="MHacks12Card-screenshot-111"
             height="500"
             src={
               Object {
@@ -800,7 +800,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-110"
+            className="MHacks12Card-screenshot-111"
             height="360"
             src={
               Object {
@@ -878,7 +878,7 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <img
           alt="WalkLens logo"
-          className="WalklensCard-logo-112"
+          className="WalklensCard-logo-113"
           src={
             Object {
               "process": [Function],
@@ -985,7 +985,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-111"
+          className="WalklensCard-screenshot-112"
           height="500"
           src={
             Object {
@@ -997,7 +997,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-111"
+          className="WalklensCard-screenshot-112"
           height="500"
           src={
             Object {
@@ -1009,7 +1009,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-111"
+          className="WalklensCard-screenshot-112"
           height="500"
           src={
             Object {
@@ -1082,7 +1082,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Spartahack5Card-media-113"
+        className="MuiCardMedia-root Spartahack5Card-media-114"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
@@ -1146,7 +1146,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-114"
+            className="Spartahack5Card-logo-115"
             src={
               Object {
                 "process": [Function],
@@ -1218,10 +1218,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-116"
+        className="RevolutionUC8Card-mediaWrapper-117"
       >
         <div
-          className="MuiCardMedia-root RevolutionUC8Card-media-115"
+          className="MuiCardMedia-root RevolutionUC8Card-media-116"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
@@ -1260,7 +1260,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-117"
+          className="RevolutionUC8Card-logo-118"
           src={
             Object {
               "process": [Function],
@@ -1331,7 +1331,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Grizzhacks3Card-media-118"
+        className="MuiCardMedia-root Grizzhacks3Card-media-119"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
@@ -1377,7 +1377,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-119"
+          className="Grizzhacks3Card-logo-120"
           src={
             Object {
               "process": [Function],
@@ -1457,7 +1457,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-120"
+          className="SpotlightCard-screenshot-121"
           height="500"
           src={
             Object {
@@ -1469,7 +1469,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-120"
+          className="SpotlightCard-screenshot-121"
           height="500"
           src={
             Object {
@@ -1542,7 +1542,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root DoggieDoodlesCard-media-121"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-122"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
@@ -1621,7 +1621,7 @@ exports[`PastProjects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-122"
+    className="InteractionCard-root-123"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1631,10 +1631,10 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-123"
+          className="LikeButton-root-124"
         >
           <div
-            className="LikeButton-likeButtonWrapper-124"
+            className="LikeButton-likeButtonWrapper-125"
           >
             <svg
               aria-hidden={true}
@@ -1648,10 +1648,10 @@ exports[`PastProjects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-125 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-126 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-126 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-127 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
