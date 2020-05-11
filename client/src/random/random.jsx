@@ -9,6 +9,7 @@ import {Typography} from '@material-ui/core';
 import InteractionCard from '../shared/interaction_card.jsx';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
+import MetaTags from 'react-meta-tags';
 
 const styles = {};
 
@@ -16,6 +17,10 @@ class Random extends React.Component {
   render() {
     return (
       <div>
+        <MetaTags>
+          <title>Extra</title>
+          <meta name="description" content="Some other fun stuff - enjoy!"/>
+        </MetaTags>
         <Typography style={{margin: 16}} variant="h6">
          Some other fun stuff - enjoy!
         </Typography>

@@ -2,6 +2,7 @@ import React from 'react';
 import {Typography, Button, withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types';
 import markFeed8 from '../static/images/photos/mark_feed_8.jpg';
+import MetaTags from 'react-meta-tags';
 
 const styles = {
   root: {
@@ -34,6 +35,10 @@ class Contact extends React.Component {
 
     return (
       <div className={classes.root}>
+        <MetaTags>
+          <title>Contact</title>
+          <meta name="description" content="Let's get in touch!"/>
+        </MetaTags>
         <Typography className={classes.title} variant="h6">
           Let&#39;s get in touch!
         </Typography>

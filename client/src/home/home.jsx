@@ -4,6 +4,7 @@ import BuiltWithTable from './built_with_table.jsx';
 import PhotoFeedCard from './photo_feed_card.jsx';
 import {Typography, Link} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
+import MetaTags from 'react-meta-tags';
 // import HighlightsCard from './highlights_card.jsx';
 // import Resume from './resume.jsx';
 
@@ -48,6 +49,12 @@ class Home extends React.Component {
     const {classes} = this.props;
     return (
       <div>
+        <MetaTags>
+          <title>Home</title>
+          <meta
+            name="description"
+            content="Incoming Software Development Engineer at Amazon · Student at the University of Michigan"/>
+        </MetaTags>
         <Typography className={classes.title} variant="h6">
           Incoming
 
