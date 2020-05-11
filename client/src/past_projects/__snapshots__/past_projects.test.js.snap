@@ -170,38 +170,32 @@ exports[`PastProjects matches snapshot 1`] = `
           <img
             alt="LAZ parent portal screenshot 1"
             className="LAZCard-mobileScreenshot-98"
-            height="500"
             src={
               Object {
                 "process": [Function],
               }
             }
             title="LAZ parent portal screenshot 1"
-            width="240"
           />
           <img
             alt="LAZ parent portal screenshot 2"
             className="LAZCard-mobileScreenshot-98"
-            height="500"
             src={
               Object {
                 "process": [Function],
               }
             }
             title="LAZ parent portal screenshot 2"
-            width="240"
           />
           <img
             alt="LAZ parent portal screenshot 3"
             className="LAZCard-mobileScreenshot-98"
-            height="500"
             src={
               Object {
                 "process": [Function],
               }
             }
             title="LAZ parent portal screenshot 3"
-            width="240"
           />
         </p>
       </div>
@@ -986,38 +980,32 @@ exports[`PastProjects matches snapshot 1`] = `
         <img
           alt="WalkLens screenshot 1"
           className="WalklensCard-screenshot-112"
-          height="500"
           src={
             Object {
               "process": [Function],
             }
           }
           title="WalkLens screenshot 1"
-          width="240"
         />
         <img
           alt="WalkLens screenshot 2"
           className="WalklensCard-screenshot-112"
-          height="500"
           src={
             Object {
               "process": [Function],
             }
           }
           title="WalkLens screenshot 2"
-          width="240"
         />
         <img
           alt="WalkLens screenshot 2"
           className="WalklensCard-screenshot-112"
-          height="500"
           src={
             Object {
               "process": [Function],
             }
           }
           title="WalkLens screenshot 2"
-          width="240"
         />
       </div>
       <div
@@ -1458,26 +1446,22 @@ exports[`PastProjects matches snapshot 1`] = `
         <img
           alt="Spotlight screenshot 1"
           className="SpotlightCard-screenshot-121"
-          height="500"
           src={
             Object {
               "process": [Function],
             }
           }
           title="Spotlight screenshot 1"
-          width="240"
         />
         <img
           alt="Spotlight screenshot 2"
           className="SpotlightCard-screenshot-121"
-          height="500"
           src={
             Object {
               "process": [Function],
             }
           }
           title="Spotlight screenshot 2"
-          width="240"
         />
       </div>
       <div

@@ -18,7 +18,10 @@ import PropTypes from 'prop-types';
 
 const styles = {
   screenshot: {
-    margin: '16px',
+    marginTop: '12px',
+    marginBottom: '12px',
+    height: 'auto',
+    width: '100%',
   },
   logo: {
     maxHeight: '200px',
@@ -122,24 +125,18 @@ class WalklensCard extends React.Component {
             <img
               className={classes.screenshot}
               src={walklensScreenshotOne}
-              width="240"
-              height="500"
               title="WalkLens screenshot 1"
               alt="WalkLens screenshot 1"
             />
             <img
               className={classes.screenshot}
               src={walklensScreenshotTwo}
-              width="240"
-              height="500"
               title="WalkLens screenshot 2"
               alt="WalkLens screenshot 2"
             />
             <img
               className={classes.screenshot}
               src={walklensScreenshotThree}
-              width="240"
-              height="500"
               title="WalkLens screenshot 2"
               alt="WalkLens screenshot 2"
             />

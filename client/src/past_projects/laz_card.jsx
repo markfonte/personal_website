@@ -31,11 +31,14 @@ const styles = {
     justifyContent: 'center',
   },
   mobileScreenshot: {
-    margin: '16px',
+    marginTop: '12px',
+    marginBottom: '12px',
+    height: 'auto',
+    width: '100%',
   },
   webScreenshot: {
-    width: '100%',
     height: 'auto',
+    width: '100%',
   },
 };
 
@@ -100,24 +103,18 @@ class LAZCard extends React.Component {
               <img
                 className={classes.mobileScreenshot}
                 src={parentPortalScreenshotOne}
-                width="240"
-                height="500"
                 title="LAZ parent portal screenshot 1"
                 alt="LAZ parent portal screenshot 1"
               />
               <img
                 className={classes.mobileScreenshot}
                 src={parentPortalScreenshotTwo}
-                width="240"
-                height="500"
                 title="LAZ parent portal screenshot 2"
                 alt="LAZ parent portal screenshot 2"
               />
               <img
                 className={classes.mobileScreenshot}
                 src={parentPortalScreenshotThree}
-                width="240"
-                height="500"
                 title="LAZ parent portal screenshot 3"
                 alt="LAZ parent portal screenshot 3"
               />

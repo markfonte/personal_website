@@ -32,7 +32,10 @@ const styles = {
     width: '40%', height: 'auto',
   },
   screenshot: {
-    margin: '16px',
+    marginTop: '12px',
+    marginBottom: '12px',
+    height: 'auto',
+    width: '100%',
   },
 };
 

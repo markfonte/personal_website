@@ -24,8 +24,8 @@ const styles = {
     overflowX: 'auto',
   },
   websiteScreenshot: {
-    maxWidth: '80%',
-    maxHeight: '400px',
+    width: '100%',
+    maxWidth: '400px',
   },
   websiteButton: {
     margin: '4px',

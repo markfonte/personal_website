@@ -17,7 +17,10 @@ import PropTypes from 'prop-types';
 
 const styles = {
   screenshot: {
-    margin: '16px',
+    marginTop: '12px',
+    marginBottom: '12px',
+    height: 'auto',
+    width: '100%',
   },
 };
 
@@ -43,16 +46,12 @@ class SpotlightCard extends React.Component {
             <img
               className={classes.screenshot}
               src={spotlightScreenshotOne}
-              width="240"
-              height="500"
               title="Spotlight screenshot 1"
               alt="Spotlight screenshot 1"
             />
             <img
               className={classes.screenshot}
               src={spotlightScreenshotTwo}
-              width="240"
-              height="500"
               title="Spotlight screenshot 2"
               alt="Spotlight screenshot 2"
             />

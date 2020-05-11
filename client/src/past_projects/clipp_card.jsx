@@ -24,7 +24,10 @@ const styles = {
     width: '20%', height: 'auto',
   },
   mobileScreenshot: {
-    margin: '16px',
+    marginTop: '12px',
+    marginBottom: '12px',
+    height: 'auto',
+    width: '100%',
   },
 
 };
@@ -72,24 +75,18 @@ class ClippCard extends React.Component {
               <img
                 className={classes.mobileScreenshot}
                 src={clippWireframeScreenshotOne}
-                width="240"
-                height="500"
                 title="Clipp wireframe screenshot 1"
                 alt="Clipp wireframe screenshot 1"
               />
               <img
                 className={classes.mobileScreenshot}
                 src={clippWireframeScreenshotTwo}
-                width="240"
-                height="500"
                 title="Clipp wireframe screenshot 2"
                 alt="Clipp wireframe screenshot 2"
               />
               <img
                 className={classes.mobileScreenshot}
                 src={clippWireframeScreenshotThree}
-                width="240"
-                height="500"
                 title="Clipp wireframe screenshot 3"
                 alt="Clipp wireframe screenshot 3"
               />

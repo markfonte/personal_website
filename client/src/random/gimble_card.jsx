@@ -30,6 +30,11 @@ const styles = {
     width: '24px',
     height: '24px',
   },
+  iframeStyle: {
+    height: '235px',
+    width: '100%',
+    maxWidth: '400px',
+  },
 };
 
 class GimbleCard extends React.Component {
@@ -73,29 +78,25 @@ class GimbleCard extends React.Component {
           <CardContent>
             <iframe
               src="https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo"
-              width="320"
-              height="235"
-              title="Fallingwater - Gimble A Cappella"
+              className={classes.iframeStyle}
+              title="Home - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
             />
             <iframe
               src="https://open.spotify.com/embed/track/0WteMpcOWgCTUnMfiBwJXC"
-              width="320"
-              height="235"
+              className={classes.iframeStyle}
               title="Fallingwater - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
             />
             {/* <iframe allow="autoplay *; encrypted-media *;"
               frameBorder="0"
-              height="235"
-              width="320"
+              className={classes.iframeStyle}
               title="when the party's over Apple Music - Gimble A Cappella"
               src="https://embed.music.apple.com/us/album/when-the-partys-over-single/1488378903"/> */}
             <iframe
-              width="320"
-              height="235"
+              className={classes.iframeStyle}
               src="https://www.youtube.com/embed/Iiy4V1oq1QU"
               title="when the party's over Video - Gimble A Cappella"
               frameBorder="8"
@@ -104,8 +105,7 @@ class GimbleCard extends React.Component {
             />
             <iframe
               src="https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK"
-              width="320"
-              height="235"
+              className={classes.iframeStyle}
               title="Fallingwater - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
@@ -117,8 +117,7 @@ class GimbleCard extends React.Component {
               title="Fallingwater Apple Music - Gimble A Cappella"
               src="https://embed.music.apple.com/us/album/fallingwater-single/1479474008"/> */}
             <iframe
-              width="320"
-              height="235"
+              className={classes.iframeStyle}
               src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
               title="Fallingwater Video - Gimble A Cappella"
               frameBorder="8"
@@ -127,24 +126,21 @@ class GimbleCard extends React.Component {
             />
             <iframe
               src="https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K"
-              width="320"
-              height="235"
+              className={classes.iframeStyle}
               title="Dancing On My Own - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
             />
             <iframe
               src="https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl"
-              width="320"
-              height="235"
+              className={classes.iframeStyle}
               title="715 - CR∑∑KS - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
             />
             <iframe
               src="https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR"
-              width="320"
-              height="235"
+              className={classes.iframeStyle}
               title="XX - Gimble A Cappella"
               frameBorder="8"
               allow="encrypted-media"
