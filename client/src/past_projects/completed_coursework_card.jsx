@@ -23,6 +23,9 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
   },
+  course: {
+    margin: '4px',
+  },
 };
 
 class CompletedCourseworkCard extends React.Component {
@@ -153,7 +156,7 @@ class CompletedCourseworkCard extends React.Component {
           <CardContent>
             <Typography variant="subtitle1">
               {courses.map((course) => (
-                <Typography key={course.name}>
+                <Typography className={classes.course} key={course.name}>
                   <Link
                     variant="subtitle1"
                     color="textPrimary"
