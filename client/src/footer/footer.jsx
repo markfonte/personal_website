@@ -39,7 +39,9 @@ const styles = {
   },
   facebook: {
     background: '#3b5998',
-    color: 'white',
+    color: 'black',
+    lineHeight: '0px',
+    fontSize: '0px',
   },
   linkedin: {
     background: '#007bb5',
@@ -159,23 +161,41 @@ class Footer extends React.Component {
      <footer>
        <div className={classes.footerContainer}>
          <div className={classes.iconBar}>
-           <a href={facebookLink} className={classes.facebook}>
-             <i className="fa fa-facebook" />
+           <a href={facebookLink} className={classes.facebook} alt="Facebook Link">
+             <i className="fa fa-facebook" alt="Facebook Link" />
+             <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
+                 For SEO
+             </div>
            </a>
-           <a href={stackOverflowLink} className={classes.stackOverflow}>
+           <a href={stackOverflowLink} className={classes.stackOverflow} alt="Stack Overflow Link">
              <i className="fa fa-stack-overflow" />
+             <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
+                 For SEO
+             </div>
            </a>
-           <a href={githubLink} className={classes.github}>
+           <a href={githubLink} className={classes.github} alt="GitHub Link">
              <i className="fa fa-github" />
+             <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
+                 For SEO
+             </div>
            </a>
-           <a href={linkedinLink} className={classes.linkedin}>
+           <a href={linkedinLink} className={classes.linkedin} alt="LinkedIn Link">
              <i className="fa fa-linkedin" />
+             <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
+                 For SEO
+             </div>
            </a>
-           <a href={instagramLink} className={classes.instagram}>
+           <a href={instagramLink} className={classes.instagram} alt="Instagram Link">
              <i className="fa fa-instagram" />
+             <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
+                 For SEO
+             </div>
            </a>
-           <a href={youtubeLink} className={classes.youtube}>
+           <a href={youtubeLink} className={classes.youtube} alt="YouTube Link">
              <i className="fa fa-youtube" />
+             <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
+                 For SEO
+             </div>
            </a>
          </div>
          <div>
