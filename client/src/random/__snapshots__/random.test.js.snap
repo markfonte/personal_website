@@ -139,7 +139,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <svg
-              aria-hidden="true"
+              aria-hidden={true}
               className="MuiSvgIcon-root"
               focusable="false"
               viewBox="0 0 24 24"
@@ -823,7 +823,7 @@ exports[`Random matches snapshot 1`] = `
           className="MuiIconButton-label"
         >
           <svg
-            aria-hidden="true"
+            aria-hidden={true}
             className="MuiSvgIcon-root"
             focusable="false"
             viewBox="0 0 24 24"
@@ -1295,7 +1295,7 @@ exports[`Random matches snapshot 1`] = `
             className="LikeButton-likeButtonWrapper-285"
           >
             <svg
-              aria-hidden="true"
+              aria-hidden={true}
               className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
               focusable="false"
               onClick={[Function]}

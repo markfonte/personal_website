@@ -1,17 +1,7 @@
 import React from 'react';
-import {CardContent, Card, GridList, GridListTile, withStyles} from '@material-ui/core';
-import markFeed1 from '../static/images/photos/mark_feed_1.jpg';
-import markFeed2 from '../static/images/photos/mark_feed_2.jpg';
-import markFeed3 from '../static/images/photos/mark_feed_3.jpg';
-import markFeed4 from '../static/images/photos/mark_feed_4.jpg';
-import markFeed5 from '../static/images/photos/mark_feed_5.jpg';
-import markFeed6 from '../static/images/photos/mark_feed_6.jpg';
-import markFeed7 from '../static/images/photos/mark_feed_7.jpg';
-import markFeed9 from '../static/images/photos/mark_feed_9.jpg';
-import markFeed10 from '../static/images/photos/mark_feed_10.jpg';
-import markFeed11 from '../static/images/photos/mark_feed_11.jpg';
+import {CardContent, Card, GridList, GridListTile, withStyles, Typography} from '@material-ui/core';
 import PropTypes from 'prop-types';
-
+import InstagramPost from './instagram_post.jsx';
 const styles = {
   cardContent: {
     display: 'flex',
@@ -20,10 +10,16 @@ const styles = {
     overflow: 'hidden',
   },
   photoGrid: {
-    maxWidth: '740px',
+    // maxWidth: '740px',
+    flexWrap: 'nowrap',
+    transform: 'translateZ(0)',
   },
   photoGridTile: {
-    margin: '0',
+    marginTop: '16px',
+    marginBottom: '8px',
+  },
+  scrollTip: {
+    marginTop: '8px',
   },
 };
 
@@ -32,69 +28,42 @@ class PhotoFeedCard extends React.Component {
     const {classes} = this.props;
     const feedData = [
       {
-        image: markFeed1,
-        cols: 1,
-        title: 'Mark Feed 1',
+        postId: 'B_yokGTgNUK/',
+      },
+      //   {
+      //     postId: "B_timDZAYes/"
+      //   },
+      {
+        postId: 'B9K_P5AAQp6/',
+      },
+      //   {
+      //     postId: "B8nAI1RgDbE/"
+      //   },
+      {
+        postId: 'B6RFvKXA69I/',
       },
       {
-        image: markFeed2,
-        cols: 1,
-        title: 'Mark Feed 2',
+        postId: 'Bz1m6oGgh4j/',
       },
       {
-        image: markFeed10,
-        cols: 2,
-        title: 'Mark Feed 10',
-        rows: 2,
-      },
-      {
-        image: markFeed9,
-        cols: 2,
-        title: 'Mark Feed 9',
-      },
-      {
-        image: markFeed11,
-        cols: 2,
-        title: 'Mark Feed 11',
-        rows: 2,
-      },
-      {
-        image: markFeed7,
-        cols: 1,
-        title: 'Mark Feed 7',
-      },
-      {
-        image: markFeed5,
-        cols: 1,
-        title: 'Mark Feed 5',
-      },
-      {
-        image: markFeed3,
-        cols: 2,
-        title: 'Mark Feed 3',
-      },
-      {
-        image: markFeed6,
-        cols: 2,
-        title: 'Mark Feed 6',
-      },
-      {
-        image: markFeed4,
-        cols: 2,
-        title: 'Mark Feed 4',
+        postId: 'BZ-SbmLBhhk/',
       },
     ];
     return (
       <Card raised={true} className="card">
+
         <CardContent className={classes.cardContent}>
-          <GridList className={classes.photoGrid} cellHeight={320} cols={2}>
+          <GridList className={classes.photoGrid} cellHeight="auto" cols={1.3}>
             {feedData.map((feedDatum) => (
-              <GridListTile key={feedDatum.title} className={classes.photoGridTile}
+              <GridListTile key={feedDatum.postId} className={classes.photoGridTile}
                 cols={feedDatum.cols || 1} rows={feedDatum.rows || 1}>
-                <img src={feedDatum.image} alt={feedDatum.title} />
+                <InstagramPost postId={feedDatum.postId}/>
               </GridListTile>
             ))}
           </GridList>
+          <Typography className={classes.scrollTip} variant="caption" color="textSecondary">
+                  Scroll horizontally to view all photos!
+          </Typography>
         </CardContent>
       </Card>
     );

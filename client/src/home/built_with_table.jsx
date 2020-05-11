@@ -35,6 +35,9 @@ const styles = {
   builtWithTable: {
     minWidth: '520px',
   },
+  scrollTip: {
+    marginTop: '8px',
+  },
 };
 
 class BuiltWithTable extends React.Component {
@@ -147,6 +150,9 @@ class BuiltWithTable extends React.Component {
                 </TableBody>
               </Table>
             </div>
+            <Typography className={classes.scrollTip} variant="caption" color="textSecondary">
+                This table scrolls horizontally on smaller-width devices!
+            </Typography>
           </CardContent>
         </Card>
       </div>
