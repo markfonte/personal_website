@@ -183,8 +183,8 @@ class Footer extends React.Component {
               <img src={reactLogo} className={classes.reactLogo} alt="logo" /> :
               <DisplayError classes={classes} />}
          </div>
-         <div>
-           <Typography variant="caption" color="textSecondary">
+         <div style={{margin: 4}}>
+           <Typography variant="caption" color="textSecondary" >
               Last updated
              {' '}
              <Link color="secondary" href={commitHistoryLink}>
@@ -194,7 +194,7 @@ class Footer extends React.Component {
              </Link>
            </Typography>
          </div>
-         <div>
+         <div style={{margin: 4}}>
            <Link
              variant="caption"
              color="textSecondary"
@@ -203,7 +203,7 @@ class Footer extends React.Component {
               view source on github
            </Link>
          </div>
-         <div>
+         <div style={{margin: 4}}>
            <Link
              variant="caption"
              color="textSecondary"
@@ -212,7 +212,7 @@ class Footer extends React.Component {
                  view build history
            </Link>
          </div>
-         <div>
+         <div style={{margin: 4}}>
            <Link
              variant="caption"
              color="textSecondary"
