@@ -35,14 +35,13 @@ exports[`Random matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root"
-        id="GimbleCard-gimbleCardMedia-31"
+        className="MuiCardMedia-root GimbleCard-gimbleCardMedia-31"
         style={
           Object {
-            "backgroundImage": "url(\\"../static/images/photos/gimble_group_pic.jpg\\")",
+            "backgroundImage": "url(\\"/images/gimble_group_pic.webp\\")",
           }
         }
-        title="Gimble A Cappella - 2019"
+        title="MHacks 12 logo"
       />
       <div
         className="MuiCardContent-root"
