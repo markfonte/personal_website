@@ -9,8 +9,8 @@ import {
 } from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
-import homeCoverArt
-  from '../static/images/photos/home_cover_art.jpg';
+// import homeCoverArt
+//   from '../static/images/photos/home_cover_art.webp';
 
 
 const styles = {
@@ -47,13 +47,13 @@ class HighlightsCard extends React.Component {
           />
           <CardContent>
             <div>
-              <img
+              {/* <img
                 src={homeCoverArt}
                 width="360"
                 height="360"
                 title="home Cover Art"
                 alt="home Cover Art"
-              />
+              /> */}
               <Typography variant="body1">
                   New EP out now! Head to {' '}
                 <Link color="secondary" href={randomLink}><i>Extra</i></Link> to check it out..

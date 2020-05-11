@@ -1,8 +1,8 @@
 import React from 'react';
 import spotlightScreenshotOne
-  from '../static/images/screenshots/spotlight_screenshot_1.png';
+  from '../static/images/screenshots/spotlight_screenshot_1.webp';
 import spotlightScreenshotTwo
-  from '../static/images/screenshots/spotlight_screenshot_2.png';
+  from '../static/images/screenshots/spotlight_screenshot_2.webp';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -19,8 +19,11 @@ const styles = {
   screenshot: {
     marginTop: '12px',
     marginBottom: '12px',
+    marginLeft: '4px',
+    marginRight: '4px',
     height: 'auto',
     width: '100%',
+    maxWidth: '300px',
   },
 };
 

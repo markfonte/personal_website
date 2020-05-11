@@ -1,13 +1,13 @@
 import React from 'react';
-import dontMakeMeThinkRevisited from '../static/images/book_covers/dont_make_me_think_revisited.jpg';
+import dontMakeMeThinkRevisited from '../static/images/book_covers/dont_make_me_think_revisited.webp';
 import theDevopsHandbookImage
-  from '../static/images/book_covers/the_devops_handbook.jpg';
+  from '../static/images/book_covers/the_devops_handbook.webp';
 import digitalMinimalismImage
-  from '../static/images/book_covers/digital_minimalism.jpg';
+  from '../static/images/book_covers/digital_minimalism.webp';
 import theStartUpOfYou
-  from '../static/images/book_covers/the_start_up_of_you.jpg';
+  from '../static/images/book_covers/the_start_up_of_you.webp';
 import thePhoenixProject
-  from '../static/images/book_covers/the_phoenix_project.jpg';
+  from '../static/images/book_covers/the_phoenix_project.webp';
 import {
   Typography,
   Card,

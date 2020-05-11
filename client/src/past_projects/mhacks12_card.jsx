@@ -1,14 +1,14 @@
 import React from 'react';
 // import instEventsLogo
-//   from '../static/images/logos/instevents_logo.jpg';
+//   from '../static/images/logos/instevents_logo.webp';
 import instEventsScreenshot1
-  from '../static/images/screenshots/instevents_screenshot_1.jpg';
+  from '../static/images/screenshots/instevents_screenshot_1.webp';
 import instEventsScreenshot2
-  from '../static/images/screenshots/instevents_screenshot_2.jpg';
+  from '../static/images/screenshots/instevents_screenshot_2.webp';
 import instEventsScreenshot3
-  from '../static/images/screenshots/instevents_screenshot_3.jpg';
+  from '../static/images/screenshots/instevents_screenshot_3.webp';
 import mhacksNathanAndMark
-  from '../static/images/photos/mhacks_mark_and_nathan.jpg';
+  from '../static/images/photos/mhacks_mark_and_nathan.webp';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -34,8 +34,11 @@ const styles = {
   screenshot: {
     marginTop: '12px',
     marginBottom: '12px',
+    marginLeft: '4px',
+    marginRight: '4px',
     height: 'auto',
     width: '100%',
+    maxWidth: '300px',
   },
 };
 
@@ -55,7 +58,7 @@ class MHacks12Card extends React.Component {
           />
           <CardMedia
             className={classes.media}
-            image="/images/mhacks_logo.png"
+            image="/images/mhacks_logo.webp"
             title="MHacks 12 logo"
           />
           <CardContent>

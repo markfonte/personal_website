@@ -1,12 +1,12 @@
 import React from 'react';
 import parentPortalScreenshotOne
-  from '../static/images/screenshots/laz_parent_portal_screenshot_1.jpg';
+  from '../static/images/screenshots/laz_parent_portal_screenshot_1.webp';
 import parentPortalScreenshotTwo
-  from '../static/images/screenshots/laz_parent_portal_screenshot_2.jpg';
+  from '../static/images/screenshots/laz_parent_portal_screenshot_2.webp';
 import parentPortalScreenshotThree
-  from '../static/images/screenshots/laz_parent_portal_screenshot_3.jpg';
+  from '../static/images/screenshots/laz_parent_portal_screenshot_3.webp';
 import badgeScreenshot
-  from '../static/images/screenshots/laz_badge_screenshot.png';
+  from '../static/images/screenshots/laz_badge_screenshot.webp';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -33,8 +33,11 @@ const styles = {
   mobileScreenshot: {
     marginTop: '12px',
     marginBottom: '12px',
+    marginLeft: '4px',
+    marginRight: '4px',
     height: 'auto',
     width: '100%',
+    maxWidth: '300px',
   },
   webScreenshot: {
     height: 'auto',
@@ -57,7 +60,7 @@ class LAZCard extends React.Component {
           <div className={classes.mediaWrapper}>
             <CardMedia
               className={classes.media}
-              image="/images/laz_logo.png"
+              image="/images/laz_logo.webp"
               title="Learning A-Z logo"
             />
           </div>

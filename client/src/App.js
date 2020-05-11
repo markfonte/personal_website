@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
-import profilePicture from './static/images/photos/mark_circle.png';
+import profilePicture from './static/images/photos/mark_circle.webp';
 import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
 import blackSunIcon from './static/images/icons/sun_icon_black.svg';
 // import CurrentWork from './current_work/current_work.jsx';

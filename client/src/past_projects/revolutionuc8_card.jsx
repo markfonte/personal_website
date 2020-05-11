@@ -1,5 +1,5 @@
 import React from 'react';
-import denialDialLogo from '../static/images/logos/denial_dial_logo.png';
+import denialDialLogo from '../static/images/logos/denial_dial_logo.webp';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -47,7 +47,7 @@ class RevolutionUC8Card extends React.Component {
           <div className={classes.mediaWrapper}>
             <CardMedia
               className={classes.media}
-              image="/images/revolutionuc_logo.png"
+              image="/images/revolutionuc_logo.webp"
               title="RevolutionUC 8 logo"
             />
           </div>

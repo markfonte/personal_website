@@ -1,9 +1,14 @@
 import React from 'react';
-import walklensScreenshotOne from '../static/images/screenshots/walklens_screenshot_1.jpg';
-import walklensScreenshotTwo from '../static/images/screenshots/walklens_screenshot_2.jpg';
-import walklensScreenshotThree from '../static/images/screenshots/walklens_screenshot_3.jpg';
-import WebIcon from '@material-ui/icons/PlayCircleFilledSharp';
-import walklensLogo from '../static/images/logos/walk_lens_logo_cropped.png';
+import walklensScreenshotOne
+  from '../static/images/screenshots/walklens_screenshot_1.webp';
+import walklensScreenshotTwo
+  from '../static/images/screenshots/walklens_screenshot_2.webp';
+import walklensScreenshotThree
+  from '../static/images/screenshots/walklens_screenshot_3.webp';
+import WebIcon
+  from '@material-ui/icons/PlayCircleFilledSharp';
+import walklensLogo
+  from '../static/images/logos/walk_lens_logo_cropped.webp';
 import {
   Typography,
   Card,
@@ -20,8 +25,11 @@ const styles = {
   screenshot: {
     marginTop: '12px',
     marginBottom: '12px',
+    marginLeft: '4px',
+    marginRight: '4px',
     height: 'auto',
     width: '100%',
+    maxWidth: '300px',
   },
   logo: {
     maxHeight: '200px',

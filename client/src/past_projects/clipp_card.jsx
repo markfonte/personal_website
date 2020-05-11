@@ -1,12 +1,12 @@
 import React from 'react';
 import clippLogo
-  from '../static/images/logos/clipp_logo.png';
+  from '../static/images/logos/clipp_logo.webp';
 import clippWireframeScreenshotOne
-  from '../static/images/screenshots/clipp_wireframe_screenshot_1.png';
+  from '../static/images/screenshots/clipp_wireframe_screenshot_1.webp';
 import clippWireframeScreenshotTwo
-  from '../static/images/screenshots/clipp_wireframe_screenshot_2.png';
+  from '../static/images/screenshots/clipp_wireframe_screenshot_2.webp';
 import clippWireframeScreenshotThree
-  from '../static/images/screenshots/clipp_wireframe_screenshot_3.png';
+  from '../static/images/screenshots/clipp_wireframe_screenshot_3.webp';
 import {
   Typography,
   Card,
@@ -26,8 +26,11 @@ const styles = {
   mobileScreenshot: {
     marginTop: '12px',
     marginBottom: '12px',
+    marginLeft: '4px',
+    marginRight: '4px',
     height: 'auto',
     width: '100%',
+    maxWidth: '300px',
   },
 
 };

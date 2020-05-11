@@ -1,6 +1,6 @@
 import React from 'react';
 import laughableLyricsLogo
-  from '../static/images/logos/laughable_lyrics_logo.png';
+  from '../static/images/logos/laughable_lyrics_logo.webp';
 import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
@@ -42,7 +42,7 @@ class Spartahack5Card extends React.Component {
           />
           <CardMedia
             className={classes.media}
-            image="/images/spartahack_logo.png"
+            image="/images/spartahack_logo.webp"
             title="SpartaHack V logo"
           />
           <CardContent>

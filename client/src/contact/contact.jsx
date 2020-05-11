@@ -1,7 +1,7 @@
 import React from 'react';
 import {Typography, Button, withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types';
-import markFeed8 from '../static/images/photos/mark_feed_8.jpg';
+import markFeed8 from '../static/images/photos/mark_feed_8.webp';
 import MetaTags from 'react-meta-tags';
 
 const styles = {

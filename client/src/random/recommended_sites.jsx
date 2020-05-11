@@ -11,11 +11,11 @@ import {
   Link,
   Typography,
 } from '@material-ui/core';
-import sarahKoopScreenshot from '../static/images/screenshots/sarah_website_screenshot.png';
-import salvadorVillalonScreenshot from '../static/images/screenshots/sal_website_screenshot.png';
-import jacobFedrigonScreenshot from '../static/images/screenshots/jacob_website_screenshot.png';
-import seanBarberScreenshot from '../static/images/screenshots/sean_website_screenshot.png';
-import nathanJohnsonScreenshot from '../static/images/screenshots/nathan_website_screenshot.png';
+import sarahKoopScreenshot from '../static/images/screenshots/sarah_website_screenshot.webp';
+import salvadorVillalonScreenshot from '../static/images/screenshots/sal_website_screenshot.webp';
+import jacobFedrigonScreenshot from '../static/images/screenshots/jacob_website_screenshot.webp';
+import seanBarberScreenshot from '../static/images/screenshots/sean_website_screenshot.webp';
+import nathanJohnsonScreenshot from '../static/images/screenshots/nathan_website_screenshot.webp';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 

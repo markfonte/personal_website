@@ -1,14 +1,14 @@
 import React from 'react';
 import WebIcon from '@material-ui/icons/Web';
-import spotifyLogo from '../static/images/logos/spotify_logo.png';
+import spotifyLogo from '../static/images/logos/spotify_logo.webp';
 import googlePlayMusicLogo from '../static/images/logos/google_play_music.svg';
-import appleMusicLogo from '../static/images/logos/apple_music_logo.png';
-import amazonMusicLogo from '../static/images/logos/amazon_music_logo.png';
-import soundcloudLogo from '../static/images/logos/soundcloud_logo.png';
-import youtubeLogo from '../static/images/logos/youtube_logo.png';
-import youtubeMusicLogo from '../static/images/logos/youtube_music_logo.png';
-import facebookLogo from '../static/images/logos/facebook_logo.png';
-import instagramLogo from '../static/images/logos/instagram_logo.png';
+import appleMusicLogo from '../static/images/logos/apple_music_logo.webp';
+import amazonMusicLogo from '../static/images/logos/amazon_music_logo.webp';
+import soundcloudLogo from '../static/images/logos/soundcloud_logo.webp';
+import youtubeLogo from '../static/images/logos/youtube_logo.webp';
+import youtubeMusicLogo from '../static/images/logos/youtube_music_logo.webp';
+import facebookLogo from '../static/images/logos/facebook_logo.webp';
+import instagramLogo from '../static/images/logos/instagram_logo.webp';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 
@@ -23,8 +23,8 @@ import {
 
 const styles = {
   gimbleCardMedia: {
-    height: 0,
-    paddingTop: '56%',
+    height: '0px',
+    paddingTop: '46%',
   },
   gimbleCardActionIcon: {
     width: '24px',
@@ -71,9 +71,9 @@ class GimbleCard extends React.Component {
             subheader={`My acappella group - check out our new EP: "home"!`}
           />
           <CardMedia
-            id={classes.gimbleCardMedia}
-            image={'../static/images/photos/gimble_group_pic.jpg'}
-            title="Gimble A Cappella - 2019"
+            className={classes.gimbleCardMedia}
+            image="/images/gimble_group_pic.webp"
+            title="MHacks 12 logo"
           />
           <CardContent>
             <iframe
