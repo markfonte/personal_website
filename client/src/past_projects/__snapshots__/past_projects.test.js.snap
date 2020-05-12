@@ -45,48 +45,143 @@ exports[`PastProjects matches snapshot 1`] = `
       <div
         className="MuiCardContent-root"
       >
+        <h5
+          className="MuiTypography-root MuiTypography-h5"
+        >
+          Summer 2019
+        </h5>
         <p
           className="MuiTypography-root MuiTypography-body1"
         >
-          I worked at JP Morgan Chase in Summer 2019 on a React mobile web application. Unfortunately, the details of this project are private information, but my contributions are expected to go into production at the end of 2019. I learned lots while using a new tech stack and met many good developers and good people throughout the summer. I am very grateful for this experience.
-        </p>
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.jpmorganchase.com/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
+          <br />
+          I worked at
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.jpmorganchase.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-        </a>
+            J.P. Morgan Chase
+          </a>
+           
+          throughout Summer 2019 on a mobile application for J.P. Morgan corporate cardholders (for example, Amazon employees who have been given a Chase credit card to use on business trips). The application, called
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://m.jpmorgan.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            PaymentNet® Mobile
+          </a>
+          , is a mobile webview for these corporate clients to track their payment history, enter receipts, and perform other necessary cardholder functions. Built in
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://reactjs.org/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            React
+          </a>
+           
+          and
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://spring.io/projects/spring-boot"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Java Spring Boot
+          </a>
+          , there was no 
+          <i>
+            native
+          </i>
+           mobile application for PaymentNet®, and they asked us to make a proof of concept for one using
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://reactnative.dev/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            React Native
+          </a>
+          .
+          <br />
+          <br />
+          After working in React Native for the first half of the summer, I moved my focus to refactoring and cleaning up the React webview. There was lots of legacy code, spaghetti code and a strong dependency on
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://getbootstrap.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Bootstrap
+          </a>
+           
+          and
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://jquery.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            JQuery
+          </a>
+           
+          . Given my previous knowledge in React, I was able to refactor and reshape much of the codebase to remove the dependency on third party libraries like JQuery. I replaced legacy React components with an internal J.P. Morgan adaptation of the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://material-ui.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Material-UI
+          </a>
+           
+          library. These custom components were much more responsive, reusable and accessible. For example, I replaced Boostrap modal pop-ups throughout the application with J.P. Morgan-branded version of
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://material-ui.com/components/dialogs/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Material-UI Dialog
+          </a>
+           
+          pop-ups.
+          <br />
+          <img
+            alt="J.P. Morgan screenshot 1"
+            className="JPMorganCard-mobileScreenshot-34"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="J.P. Morgan screenshot 1"
+          />
+          <br />
+          Although this was not one of my most challenging technical experiences, I did learn a lot about work cultures where there are lots of manual steps surrounding development. I believe that learning how to navigate these types of situations while maintaining productivity is a crucial skill for me going forward. My main takeaways from J.P. Morgan were:
+          <br />
+          <br />
+          - Adapting to and refactoring legacy code
+          <br />
+          - Navigating corporate red tape
+          <br />
+          - Extensive work with React and React Native
+          <br />
+          - Some awesome friends!
+          <br />
+        </p>
       </div>
     </div>
   </div>
@@ -113,10 +208,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="LAZCard-mediaWrapper-97"
+        className="LAZCard-mediaWrapper-81"
       >
         <div
-          className="MuiCardMedia-root LAZCard-media-96"
+          className="MuiCardMedia-root LAZCard-media-80"
           style={
             Object {
               "backgroundImage": "url(\\"/images/laz_logo.webp\\")",
@@ -132,32 +227,16 @@ exports[`PastProjects matches snapshot 1`] = `
           className="MuiTypography-root MuiTypography-body1"
         >
           I worked at Learning A-Z in Summer 2017 and Summer 2018 on two separate projects. Learning A-Z is a educational software company for elementary school students, so both of my projects were features to serve them. Each summer, outside of the main project I worked on a small project with the other interns and presented on a relevant research topic. I was fortunate enough to have two great mentors and had the opportunity work alongside some awesome coworkers and fellow interns!
+        </p>
+        <h5
+          className="MuiTypography-root MuiTypography-h5"
+        >
           <br />
-          <br />
-          <b>
-            Summer 2017
-          </b>
-          <br />
-          In Summer 2017, I worked on the Student Badge Project, in which I implemented an incentives program for the students for achieving goals such as "read at least one book a day for five straight days".
-           
-          This project was my first formal experience writing server-side code in PHP/MySQL and client-side code in JS/HTML/CSS. I also partially integrated it into the company's existing Android application. The project was picked up by full-time developers and is live in production today!
-          <br />
-          <br />
-          <img
-            alt="LAZ badge screenshot"
-            className="LAZCard-webScreenshot-99"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="LAZ badge screenshot"
-          />
-          <br />
-          <br />
-          <b>
-            Summer 2018
-          </b>
+          Summer 2018
+        </h5>
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
           <br />
           In Summer 2018, I worked on the Android Parent Portal project. At the time, parents of the students could only view their students information on the web
            
@@ -169,7 +248,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="LAZ parent portal screenshot 1"
-            className="LAZCard-mobileScreenshot-98"
+            className="LAZCard-mobileScreenshot-82"
             src={
               Object {
                 "process": [Function],
@@ -179,7 +258,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="LAZ parent portal screenshot 2"
-            className="LAZCard-mobileScreenshot-98"
+            className="LAZCard-mobileScreenshot-82"
             src={
               Object {
                 "process": [Function],
@@ -189,13 +268,39 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="LAZ parent portal screenshot 3"
-            className="LAZCard-mobileScreenshot-98"
+            className="LAZCard-mobileScreenshot-82"
             src={
               Object {
                 "process": [Function],
               }
             }
             title="LAZ parent portal screenshot 3"
+          />
+        </p>
+        <h5
+          className="MuiTypography-root MuiTypography-h5"
+        >
+          <br />
+          Summer 2017
+        </h5>
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          <br />
+          In Summer 2017, I worked on the Student Badge Project, in which I implemented an incentives program for the students for achieving goals such as "read at least one book a day for five straight days".
+           
+          This project was my first formal experience writing server-side code in PHP/MySQL and client-side code in JS/HTML/CSS. I also partially integrated it into the company's existing Android application. The project was picked up by full-time developers and is live in production today!
+          <br />
+          <br />
+          <img
+            alt="LAZ badge screenshot"
+            className="LAZCard-webScreenshot-83"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+            title="LAZ badge screenshot"
           />
         </p>
       </div>
@@ -261,10 +366,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="CompletedCourseworkCard-mediaWrapper-101"
+        className="CompletedCourseworkCard-mediaWrapper-108"
       >
         <div
-          className="MuiCardMedia-root CompletedCourseworkCard-media-100"
+          className="MuiCardMedia-root CompletedCourseworkCard-media-107"
           style={
             Object {
               "backgroundImage": "url(\\"images/university_of_michigan_logo.webp\\")",
@@ -280,7 +385,7 @@ exports[`PastProjects matches snapshot 1`] = `
           className="MuiTypography-root MuiTypography-subtitle1"
         >
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -297,7 +402,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -314,7 +419,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -331,7 +436,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -348,7 +453,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -365,7 +470,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -382,7 +487,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -399,7 +504,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -416,7 +521,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -433,7 +538,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -450,7 +555,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -467,7 +572,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -484,7 +589,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -501,7 +606,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -518,7 +623,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -535,7 +640,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -552,7 +657,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -569,7 +674,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -586,7 +691,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -603,7 +708,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -620,7 +725,7 @@ exports[`PastProjects matches snapshot 1`] = `
             </a>
           </p>
           <p
-            className="MuiTypography-root CompletedCourseworkCard-course-102 MuiTypography-body1"
+            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
           >
             <a
               className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
@@ -700,7 +805,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root MHacks12Card-media-109"
+        className="MuiCardMedia-root MHacks12Card-media-110"
         style={
           Object {
             "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
@@ -758,7 +863,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="InstEvents Screenshot 3"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-112"
             height="500"
             src={
               Object {
@@ -770,7 +875,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents Screenshot 1"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-112"
             height="500"
             src={
               Object {
@@ -782,7 +887,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents Screenshot 2"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-112"
             height="500"
             src={
               Object {
@@ -794,7 +899,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-112"
             height="360"
             src={
               Object {
@@ -872,7 +977,7 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <img
           alt="WalkLens logo"
-          className="WalklensCard-logo-113"
+          className="WalklensCard-logo-114"
           src={
             Object {
               "process": [Function],
@@ -979,7 +1084,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-112"
+          className="WalklensCard-screenshot-113"
           src={
             Object {
               "process": [Function],
@@ -989,7 +1094,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-112"
+          className="WalklensCard-screenshot-113"
           src={
             Object {
               "process": [Function],
@@ -999,7 +1104,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-112"
+          className="WalklensCard-screenshot-113"
           src={
             Object {
               "process": [Function],
@@ -1070,7 +1175,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Spartahack5Card-media-114"
+        className="MuiCardMedia-root Spartahack5Card-media-115"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
@@ -1134,7 +1239,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-115"
+            className="Spartahack5Card-logo-116"
             src={
               Object {
                 "process": [Function],
@@ -1206,10 +1311,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-117"
+        className="RevolutionUC8Card-mediaWrapper-118"
       >
         <div
-          className="MuiCardMedia-root RevolutionUC8Card-media-116"
+          className="MuiCardMedia-root RevolutionUC8Card-media-117"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.webp\\")",
@@ -1248,7 +1353,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-118"
+          className="RevolutionUC8Card-logo-119"
           src={
             Object {
               "process": [Function],
@@ -1319,7 +1424,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Grizzhacks3Card-media-119"
+        className="MuiCardMedia-root Grizzhacks3Card-media-120"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
@@ -1365,7 +1470,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-120"
+          className="Grizzhacks3Card-logo-121"
           src={
             Object {
               "process": [Function],
@@ -1445,7 +1550,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-121"
+          className="SpotlightCard-screenshot-122"
           src={
             Object {
               "process": [Function],
@@ -1455,7 +1560,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-121"
+          className="SpotlightCard-screenshot-122"
           src={
             Object {
               "process": [Function],
@@ -1526,7 +1631,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root DoggieDoodlesCard-media-122"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-123"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
@@ -1605,7 +1710,7 @@ exports[`PastProjects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-123"
+    className="InteractionCard-root-124"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1615,10 +1720,10 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-124"
+          className="LikeButton-root-125"
         >
           <div
-            className="LikeButton-likeButtonWrapper-125"
+            className="LikeButton-likeButtonWrapper-126"
           >
             <svg
               aria-hidden={true}
@@ -1632,10 +1737,10 @@ exports[`PastProjects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-126 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-127 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-127 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-128 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
