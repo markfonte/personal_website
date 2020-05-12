@@ -22,13 +22,17 @@ class InstagramPost extends React.Component {
           padding: 0,
           width: 'calc(100% - 2px)',
         }}>
-        <div style={{padding: '8px'}}>
-          <div style={{background: '#F8F8F8',
+        <div style={{
+          padding: '8px',
+        }}>
+          <div style={{
+            background: '#F8F8F8',
             lineHeight: 0,
             marginTop: '40px',
             padding: '28.2638888889% 0',
             textAlign: 'center',
-            width: '100%'}}>
+            width: '100%',
+          }}>
             <div style={{
               background: 'url(data:image/png',
               display: 'block',
@@ -36,7 +40,8 @@ class InstagramPost extends React.Component {
               margin: '0 auto -44px',
               position: 'relative',
               top: '-22px',
-              width: '44px'}} />
+              width: '44px',
+            }} />
           </div>
           <p style={{
             color: '#c9c8cd',
@@ -49,7 +54,8 @@ class InstagramPost extends React.Component {
             padding: '8px 0 7px',
             textAlign: 'center',
             textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap'}}>
+            whiteSpace: 'nowrap',
+          }}>
             <a loading="lazy"
               href={postUrl}
               style={{color: '#c9c8cd',
@@ -58,7 +64,8 @@ class InstagramPost extends React.Component {
                 fontStyle: 'normal',
                 fontWeight: 'normal',
                 lineHeight: '17px',
-                textDecoration: 'none'}}
+                textDecoration: 'none',
+              }}
               target="_blank"
               rel="noopener noreferrer">
                                Mark Fonte (@mark_fonte21)
@@ -69,7 +76,10 @@ class InstagramPost extends React.Component {
               lineHeight: '17px',
             }}
             dateTime="2020-05-05T20:53:11+00:00">
-            </time></p></div></blockquote> );
+            </time>
+          </p>
+        </div>
+      </blockquote> );
   }
 }
 

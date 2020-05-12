@@ -68,13 +68,13 @@ class Home extends React.Component {
             <i>Amazon</i>
           </Link>{' '}
 
-          · Senior
+          ·
 
           {' '}<Link color="textSecondary" href={compSciEnginUmichLink} className={classes.compSci}>
             <i>Computer Science in Engineering</i>
           </Link>{' '}
 
-          student at the
+          degree from the
 
           {' '}<Link href={umichLink} className={classes.michigan}>
             <i>University of Michigan</i>
