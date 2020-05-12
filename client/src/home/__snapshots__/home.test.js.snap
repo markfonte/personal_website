@@ -31,7 +31,7 @@ exports[`Home matches snapshot 1`] = `
       </i>
     </a>
      
-    · Senior
+    ·
      
     <a
       className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-compSci-8 MuiTypography-colorTextSecondary"
@@ -44,7 +44,7 @@ exports[`Home matches snapshot 1`] = `
       </i>
     </a>
      
-    student at the
+    degree from the
      
     <a
       className="MuiTypography-root MuiLink-root MuiLink-underlineHover Home-michigan-4 MuiTypography-colorPrimary"
