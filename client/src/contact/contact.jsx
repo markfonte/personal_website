@@ -83,7 +83,7 @@ class Contact extends React.Component {
             </a></div>
         </div>
         <div className={classes.paragraph}>
-          <img style={styles.contactImage} src={markFeed8} alt="Temp"/>
+          <img style={styles.contactImage} src={markFeed8} alt="Gimble by the fountain"/>
         </div>
       </div>
     );

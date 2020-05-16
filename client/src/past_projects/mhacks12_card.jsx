@@ -114,24 +114,24 @@ class MHacks12Card extends React.Component {
                 src={instEventsScreenshot3}
                 width="240"
                 height="500"
-                title="InstEvents Screenshot 3"
-                alt="InstEvents Screenshot 3"
+                title="InstEvents screenshot 3"
+                alt="InstEvents screenshot 3"
               />
               <img
                 className={classes.screenshot}
                 src={instEventsScreenshot1}
                 width="240"
                 height="500"
-                title="InstEvents Screenshot 1"
-                alt="InstEvents Screenshot 1"
+                title="InstEvents screenshot 1"
+                alt="InstEvents screenshot 1"
               />
               <img
                 className={classes.screenshot}
                 src={instEventsScreenshot2}
                 width="240"
                 height="500"
-                title="InstEvents Screenshot 2"
-                alt="InstEvents Screenshot 2"
+                title="InstEvents screenshot 2"
+                alt="InstEvents screenshot 2"
               />
               <img
                 className={classes.screenshot}

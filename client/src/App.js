@@ -193,10 +193,10 @@ export class App extends React.Component {
             className={classes.toggleThemeIcon}
             src={this.state.themeIcon}
             onClick={this.toggleTheme}
-            alt="toggle theme icon"
+            alt="toggle theme button"
           />
           <Router>
-            <img src={profilePicture} className={classes.profileLogo} alt="profile" />
+            <img src={profilePicture} className={classes.profileLogo} alt="headshot" />
             <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
             <nav className={classes.primaryNav}>
               <List className={classes.AppList}>

@@ -137,7 +137,7 @@ class BuiltWithTable extends React.Component {
                         <img
                           src={row.logo}
                           className={classes.logoDefault}
-                          alt="express"
+                          alt={row.title + ' logo'}
                         />
                       </TableCell>
                       <TableCell align="right">

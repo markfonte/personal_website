@@ -145,8 +145,8 @@ class WalklensCard extends React.Component {
             <img
               className={classes.screenshot}
               src={walklensScreenshotThree}
-              title="WalkLens screenshot 2"
-              alt="WalkLens screenshot 2"
+              title="WalkLens screenshot 3"
+              alt="WalkLens screenshot 3"
             />
           </CardContent>
           <CardActions>

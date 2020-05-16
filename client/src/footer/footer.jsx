@@ -200,7 +200,7 @@ class Footer extends React.Component {
          </div>
          <div>
            {this.state.apiResponse ?
-              <img src={reactLogo} className={classes.reactLogo} alt="logo" /> :
+              <img src={reactLogo} className={classes.reactLogo} alt="React logo" /> :
               <DisplayError classes={classes} />}
          </div>
          <div style={{margin: 4}}>

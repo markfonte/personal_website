@@ -156,7 +156,7 @@ class GimbleCard extends React.Component {
                   src={link.image}
                   className={classes.gimbleCardActionIcon}
                   title={link.name}
-                  alt={link.name}
+                  alt={link.name + ' button'}
                 />
               </IconButton>
             ))}
