@@ -5,7 +5,7 @@ import profilePicture from './static/images/photos/mark_circle.webp';
 import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
 import blackSunIcon from './static/images/icons/sun_icon_black.svg';
 import Projects from './projects/projects.jsx';
-import Random from './random/random.jsx';
+import Extra from './extra/extra.jsx';
 import Contact from './contact/contact.jsx';
 import Home from './home/home.jsx';
 import Footer from './footer/footer.jsx';
@@ -219,7 +219,7 @@ export class App extends React.Component {
             <Route path="/" exact component={Home} />
             <Route path="/home" component={Home} />
             <Route path="/projects" component={Projects} />
-            <Route path="/extra" component={Random} />
+            <Route path="/extra" component={Extra} />
             <Route path="/contact" component={Contact} />
           </Router>
           <ScrollUpButton />

@@ -1,10 +1,10 @@
 import React from 'react';
-import Random from './random.jsx';
+import Extra from './extra.jsx';
 import renderer from 'react-test-renderer';
 
-test('Random matches snapshot', () => {
+test('Extra matches snapshot', () => {
   const component = renderer.create(
-      <Random/>,
+      <Extra/>,
   );
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();

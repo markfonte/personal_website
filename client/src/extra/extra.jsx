@@ -1,5 +1,4 @@
 import React from 'react';
-import './random.css';
 import TicTacToeCard from './tic_tac_toe_card.jsx';
 import GimbleCard from './gimble_card.jsx';
 // import CurrentBooksCard from './current_books_card.jsx';
@@ -13,7 +12,7 @@ import MetaTags from 'react-meta-tags';
 
 const styles = {};
 
-class Random extends React.Component {
+class Extra extends React.Component {
   render() {
     return (
       <div>
@@ -29,14 +28,14 @@ class Random extends React.Component {
         {/* <CurrentBooksCard />
         <CompletedBooksCard /> */}
         <RecommendedSitesTable />
-        <InteractionCard pagename="random" />
+        <InteractionCard pagename="extra" />
       </div>
     );
   }
 }
 
-Random.propTypes = {
+Extra.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Random);
+export default withStyles(styles)(Extra);
