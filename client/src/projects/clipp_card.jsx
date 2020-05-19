@@ -48,7 +48,6 @@ class ClippCard extends React.Component {
           />
           <CardContent>
             <Typography variant="body1">
-
               <img
                 src={clippLogo}
                 className={classes.logo}
