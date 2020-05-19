@@ -61,11 +61,10 @@ class JPMorganCard extends React.Component {
             />
           </div>
           <CardContent>
-            <Typography variant="h5">
+            <Typography variant="h5" gutterBottom>
                 Summer 2019
             </Typography>
             <Typography variant="body1">
-              <br />
               I worked at
               {' '}
               <Link color="secondary" href={jpmorganLink}>

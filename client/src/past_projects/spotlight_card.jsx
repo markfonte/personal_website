@@ -3,14 +3,11 @@ import spotlightScreenshotOne
   from '../static/images/screenshots/spotlight_screenshot_1.webp';
 import spotlightScreenshotTwo
   from '../static/images/screenshots/spotlight_screenshot_2.webp';
-import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
   Card,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   withStyles,
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
@@ -30,14 +27,13 @@ const styles = {
 class SpotlightCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const spotlightLink = `https://www.spotlight-app.com/`;
 
     return (
       <div>
         <Card raised={true} className="card">
           <CardHeader
             title="Spotlight"
-            subheader="Lead Android developer and CTO"
+            subheader="Lead Android developer"
           />
           <CardContent>
             <Typography variant="body1">
@@ -59,11 +55,6 @@ class SpotlightCard extends React.Component {
               alt="Spotlight screenshot 2"
             />
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to website" href={spotlightLink}>
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );

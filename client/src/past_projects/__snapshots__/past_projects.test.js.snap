@@ -46,14 +46,13 @@ exports[`PastProjects matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <h5
-          className="MuiTypography-root MuiTypography-h5"
+          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
         >
           Summer 2019
         </h5>
         <p
           className="MuiTypography-root MuiTypography-body1"
         >
-          <br />
           I worked at
            
           <a
@@ -226,120 +225,322 @@ exports[`PastProjects matches snapshot 1`] = `
         <p
           className="MuiTypography-root MuiTypography-body1"
         >
-          I worked at Learning A-Z in Summer 2017 and Summer 2018 on two separate projects. Learning A-Z is a educational software company for elementary school students, so both of my projects were features to serve them. Each summer, outside of the main project I worked on a small project with the other interns and presented on a relevant research topic. I was fortunate enough to have two great mentors and had the opportunity work alongside some awesome coworkers and fellow interns!
+          I worked at
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.learninga-z.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Learning A-Z
+          </a>
+           
+          in Summer 2017 and Summer 2018 on two separate projects. Learning A-Z is a educational software company for elementary school students, and both of my projects were features to serve the students. Each summer, outside of the main project I worked on a small project with the other interns and presented on a computer science-related research topic. I was fortunate enough to have two great mentors and had the opportunity work alongside some awesome coworkers and fellow interns!
         </p>
         <h5
-          className="MuiTypography-root MuiTypography-h5"
+          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
         >
           <br />
           Summer 2018
         </h5>
         <p
-          className="MuiTypography-root MuiTypography-body1"
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
         >
-          <br />
-          In Summer 2018, I worked on the Android Parent Portal project. At the time, parents of the students could only view their students information on the web
+          In Summer 2018, I worked on the Android
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.kidsa-z.com/main/ParentHome"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Parent Portal
+          </a>
+           
+          project. The Parent Portal is a dashboard for each student's parents to view their child's activity on the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.kidsa-z.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Kids A-Z
+          </a>
+           
+          website. At the time, the Parent Portal only existed as a web app.
            
           <i>
             (fun fact: that was a project started by my brother John several years ago)
           </i>
-          . My task was to bring that functionality to mobile. I built an Android app using the same APIs as the web application, but this time it was into a separate application than the existing Learning A-Z Android app. I actually built it using Kotlin, which had just been officially adopted as an official language by Android at the time. I found that Kotlin was much easier to write clean code with, and I would recommend it to any Android developer. Plus, it is interoperable with existing Java code! The project was picked up by a full-time developer and is live in pre-production as of July 2019.
+          . My task was to bring that functionality to native mobile. I built an
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.android.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Android
+          </a>
+           
+          app using the same APIs as the web application. I built a separate application than the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://play.google.com/store/apps/details?id=com.learninga_z.onyourown"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            existing Learning A-Z Android application
+          </a>
+           
+          because I wanted parents to have a streamlined way of viewing their children's activity instead of adding another user segment to the existing application. Later, they merged my code into the existing Android application, which now has seperate logins for students, their parents, and their teachers.
           <br />
           <br />
-          <img
-            alt="LAZ parent portal screenshot 1"
-            className="LAZCard-mobileScreenshot-82"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="LAZ parent portal screenshot 1"
-          />
-          <img
-            alt="LAZ parent portal screenshot 2"
-            className="LAZCard-mobileScreenshot-82"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="LAZ parent portal screenshot 2"
-          />
-          <img
-            alt="LAZ parent portal screenshot 3"
-            className="LAZCard-mobileScreenshot-82"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="LAZ parent portal screenshot 3"
-          />
+          I built it using
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://kotlinlang.org/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Kotlin
+          </a>
+           
+          (as opposed to
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.java.com/en/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Java
+          </a>
+          ), which had
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.android.com/kotlin"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            just been officially adopted as an official language for Android
+          </a>
+           
+          at the time. I found that Kotlin was much easier to write clean code with. It supports many
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            gradual typing concepts
+          </a>
+          , modern features like
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://kotlinlang.org/docs/reference/lambdas.html"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            lamda functions
+          </a>
+           
+          and
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://kotlinlang.org/docs/reference/null-safety.html"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            nullable types/null safety
+          </a>
+          , and Android-specific features like the ability to
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.android.com/kotlin"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            refer directly to XML objects
+          </a>
+          . Plus, it is
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.android.com/kotlin/interop"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            interoperable with Java code
+          </a>
+           
+          (meaning you can have part-Kotlin, part-Java projects)! I would, without question, recommend that any Android developer use Kotlin instead of Java for all of their projects.
+          <br />
+          <br />
+          The project was picked up by a full-time developer and is
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://play.google.com/store/apps/details?id=com.learninga_z.onyourown"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            live in production
+          </a>
+          ! The following screenshots are from the production application:
         </p>
+        <img
+          alt="LAZ parent portal screenshot 1"
+          className="LAZCard-mobileScreenshot-82"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="LAZ parent portal screenshot 1"
+        />
+        <img
+          alt="LAZ parent portal screenshot 2"
+          className="LAZCard-mobileScreenshot-82"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="LAZ parent portal screenshot 2"
+        />
+        <img
+          alt="LAZ parent portal screenshot 3"
+          className="LAZCard-mobileScreenshot-82"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="LAZ parent portal screenshot 3"
+        />
         <h5
-          className="MuiTypography-root MuiTypography-h5"
+          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
         >
           <br />
           Summer 2017
         </h5>
         <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+        >
+          In Summer 2017, I worked on the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.learninga-z.com/site/breakroom/kidsaz-student-badges"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Student Badge Project
+          </a>
+          . This is an incentives program for the students in which they receive "badges" for achieving goals such as "Read at least one book a day for five straight days" or "Complete eight 100% quizzes in a row"
+           
+          <br />
+          <br />
+          This badge program was only an idea at the time that I took it on, so much of the work was in planning. I particularly learned a lot from the struggle with how to represent the badges in the database in a way that minimizes load, and where to hook in the code that could tell us when students earned badges while still minimizing the number of API calls. I am so thankful that I had great engineers around me that could fix and help me learn from my numerous mistakes throughout that summer. This project was my first formal experience writing server-side code in
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.php.net/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            PHP
+          </a>
+          /
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.mysql.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            MySQL
+          </a>
+           
+          and client-side code in
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.javascript.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            JavaScript
+          </a>
+          /
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            HTML
+          </a>
+          /
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            CSS
+          </a>
+          . I also partially integrated it into the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://play.google.com/store/apps/details?id=com.learninga_z.onyourown"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            existing Kids A-Z Android application
+          </a>
+          .
+          <br />
+          <br />
+          The project was picked up by full-time developers and is
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://play.google.com/store/apps/details?id=com.learninga_z.onyourown"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            live in production
+          </a>
+           
+          today! The following screenshot is from the production site:
+        </p>
+        <img
+          alt="LAZ badge screenshot"
+          className="LAZCard-webScreenshot-83"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="LAZ badge screenshot"
+        />
+        <p
           className="MuiTypography-root MuiTypography-body1"
         >
           <br />
-          In Summer 2017, I worked on the Student Badge Project, in which I implemented an incentives program for the students for achieving goals such as "read at least one book a day for five straight days".
-           
-          This project was my first formal experience writing server-side code in PHP/MySQL and client-side code in JS/HTML/CSS. I also partially integrated it into the company's existing Android application. The project was picked up by full-time developers and is live in production today!
-          <br />
-          <br />
-          <img
-            alt="LAZ badge screenshot"
-            className="LAZCard-webScreenshot-83"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="LAZ badge screenshot"
-          />
+          As a final note, I met some of the best people I have ever known during my two summers at Learning A-Z. They are welcoming, encouraging, great engineers and just good people. I am very thankful for my time there. To anyone looking for a job in Ann Arbor, I would certainly recommend Learning A-Z. Feel free to contact me and I would be happy to give more details on what my experience was like working there!
         </p>
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.learninga-z.com/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-        </a>
       </div>
     </div>
   </div>
@@ -366,10 +567,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="CompletedCourseworkCard-mediaWrapper-108"
+        className="CompletedCourseworkCard-mediaWrapper-85"
       >
         <div
-          className="MuiCardMedia-root CompletedCourseworkCard-media-107"
+          className="MuiCardMedia-root CompletedCourseworkCard-media-84"
           style={
             Object {
               "backgroundImage": "url(\\"images/university_of_michigan_logo.webp\\")",
@@ -845,7 +1046,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root MHacks12Card-media-109"
+        className="MuiCardMedia-root MHacks12Card-media-86"
         style={
           Object {
             "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
@@ -903,7 +1104,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="InstEvents screenshot 3"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-88"
             height="500"
             src={
               Object {
@@ -915,7 +1116,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 1"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-88"
             height="500"
             src={
               Object {
@@ -927,7 +1128,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 2"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-88"
             height="500"
             src={
               Object {
@@ -939,7 +1140,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-111"
+            className="MHacks12Card-screenshot-88"
             height="360"
             src={
               Object {
@@ -1576,7 +1777,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            Lead Android developer and CTO
+            Lead Android developer
           </span>
         </div>
       </div>
@@ -1608,43 +1809,6 @@ exports[`PastProjects matches snapshot 1`] = `
           }
           title="Spotlight screenshot 2"
         />
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.spotlight-app.com/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-        </a>
       </div>
     </div>
   </div>
