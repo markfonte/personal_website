@@ -77,7 +77,7 @@ class Home extends React.Component {
           open={isOpen}
           onClose={this.handleClose}
           TransitionComponent={Fade} >
-          <MuiAlert elevation={6} variant="filled" onClose={this.handleClose} severity="warning" >
+          <MuiAlert elevation={10} variant="filled" onClose={this.handleClose} severity="warning" >
             <Link color="textPrimary"
               href="https://trello.com/c/dAlQUBgH/145-145-webp-images-not-rendering-in-ios">
                     Many images are not displaying on Apple devices at the moment.

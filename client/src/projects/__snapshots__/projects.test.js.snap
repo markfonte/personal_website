@@ -5,8 +5,58 @@ exports[`Projects matches snapshot 1`] = `
   <h6
     className="MuiTypography-root Projects-title-1 MuiTypography-h6"
   >
-    Internships, side projects and hackathon projects I have worked on
+    My work experiences, internships, side projects and hackathon projects
   </h6>
+  <div>
+    <div
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
+            Amazon
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Software Engineer
+          </span>
+        </div>
+      </div>
+      <img
+        alt="Amazon logo"
+        className="MuiCardMedia-root AmazonCard-amazonLogo-32 MuiCardMedia-media MuiCardMedia-img"
+        src="/images/amazon_logo.svg"
+        title="Amazon logo"
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          I will become a software engineer at
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.amazon.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Amazon
+          </a>
+           
+          in Seattle later this year. I can't wait!
+        </p>
+      </div>
+    </div>
+  </div>
   <div>
     <div
       className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
@@ -30,10 +80,10 @@ exports[`Projects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="JPMorganCard-mediaWrapper-33"
+        className="JPMorganCard-mediaWrapper-79"
       >
         <div
-          className="MuiCardMedia-root JPMorganCard-media-32"
+          className="MuiCardMedia-root JPMorganCard-media-78"
           style={
             Object {
               "backgroundImage": "url(\\"/images/jpmorgan_logo.webp\\")",
@@ -160,7 +210,7 @@ exports[`Projects matches snapshot 1`] = `
           <br />
           <img
             alt="J.P. Morgan screenshot 1"
-            className="JPMorganCard-mobileScreenshot-34"
+            className="JPMorganCard-mobileScreenshot-80"
             src={
               Object {
                 "process": [Function],
@@ -206,19 +256,12 @@ exports[`Projects matches snapshot 1`] = `
           </span>
         </div>
       </div>
-      <div
-        className="LAZCard-mediaWrapper-81"
-      >
-        <div
-          className="MuiCardMedia-root LAZCard-media-80"
-          style={
-            Object {
-              "backgroundImage": "url(\\"/images/laz_logo.webp\\")",
-            }
-          }
-          title="Learning A-Z logo"
-        />
-      </div>
+      <img
+        alt="Learning A-Z logo"
+        className="MuiCardMedia-root LAZCard-lazLogo-81 MuiCardMedia-media MuiCardMedia-img"
+        src="/images/laz_logo.svg"
+        title="Learning A-Z logo"
+      />
       <div
         className="MuiCardContent-root"
       >

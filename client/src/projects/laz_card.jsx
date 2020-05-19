@@ -19,14 +19,9 @@ import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';
 
 const styles = {
-  media: {
-    margin: '8px',
-    paddingTop: '10.8%',
-    width: '50%',
-  },
-  mediaWrapper: {
-    display: 'flex',
-    justifyContent: 'center',
+  lazLogo: {
+    paddingLeft: '20%',
+    paddingRight: '20%',
   },
   mobileScreenshot: {
     marginTop: '12px',
@@ -73,13 +68,13 @@ class LAZCard extends React.Component {
             title="Learning A-Z"
             subheader="Software Engineering Intern"
           />
-          <div className={classes.mediaWrapper}>
-            <CardMedia
-              className={classes.media}
-              image="/images/laz_logo.webp"
-              title="Learning A-Z logo"
-            />
-          </div>
+          <CardMedia
+            className={classes.lazLogo}
+            image="/images/laz_logo.svg"
+            title="Learning A-Z logo"
+            component="img"
+            alt="Learning A-Z logo"
+          />
           <CardContent>
             <Typography variant="body1">
               I worked at

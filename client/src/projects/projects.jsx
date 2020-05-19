@@ -5,13 +5,14 @@ import Spartahack5Card from './spartahack5_card.jsx';
 import Grizzhacks3Card from './grizzhacks3_card.jsx';
 import CompletedCourseworkCard from './completed_coursework_card.jsx';
 import {Typography} from '@material-ui/core';
-import InteractionCard from '../shared/interaction_card';
-import SpotlightCard from './spotlight_card';
-import DoggieDoodlesCard from './doggie_doodles_card';
-import JPMorganCard from './jpmorgan_card';
+import InteractionCard from '../shared/interaction_card.jsx';
+import SpotlightCard from './spotlight_card.jsx';
+import DoggieDoodlesCard from './doggie_doodles_card.jsx';
+import JPMorganCard from './jpmorgan_card.jsx';
+import AmazonCard from './amazon_card.jsx';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
-import MHacks12Card from './mhacks12_card';
+import MHacks12Card from './mhacks12_card.jsx';
 import WalklensCard from './walklens_card.jsx';
 import MetaTags from 'react-meta-tags';
 
@@ -28,11 +29,15 @@ class Projects extends React.Component {
       <div>
         <MetaTags>
           <title>Projects</title>
-          <meta name="description" content="Internships, side projects and hackathon projects I have worked on"/>
+          <meta
+            name="description"
+            content="My work experiences, internships, side projects and hackathon projects"
+          />
         </MetaTags>
         <Typography className={classes.title} variant="h6">
-          Internships, side projects and hackathon projects I have worked on
+          My work experiences, internships, side projects and hackathon projects
         </Typography>
+        <AmazonCard />
         <JPMorganCard />
         <LAZCard />
         <CompletedCourseworkCard />
