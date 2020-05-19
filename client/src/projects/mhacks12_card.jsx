@@ -60,6 +60,7 @@ class MHacks12Card extends React.Component {
             className={classes.media}
             image="/images/mhacks_logo.webp"
             title="MHacks 12 logo"
+            alt="MHacks 12 logo"
           />
           <CardContent>
             <Typography variant="body1">

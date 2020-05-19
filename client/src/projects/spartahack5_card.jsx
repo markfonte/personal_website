@@ -44,6 +44,7 @@ class Spartahack5Card extends React.Component {
             className={classes.media}
             image="/images/spartahack_logo.webp"
             title="SpartaHack V logo"
+            alt="SpartaHack V logo"
           />
           <CardContent>
             <Typography variant="body1">

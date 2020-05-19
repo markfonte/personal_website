@@ -12,8 +12,9 @@ import PropTypes from 'prop-types';
 
 const styles = {
   amazonLogo: {
-    paddingLeft: '20%',
-    paddingRight: '20%',
+    margin: 'auto',
+    maxWidth: '600px',
+    padding: '4px',
   },
 };
 

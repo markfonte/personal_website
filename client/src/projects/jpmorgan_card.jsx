@@ -13,14 +13,10 @@ import {
 import PropTypes from 'prop-types';
 
 const styles = {
-  media: {
-    margin: '8px',
-    paddingTop: '10.8%',
-    width: '50%',
-  },
-  mediaWrapper: {
-    display: 'flex',
-    justifyContent: 'center',
+  jpMorganLogo: {
+    margin: 'auto',
+    maxWidth: '640px',
+    padding: '4px',
   },
   mobileScreenshot: {
     marginTop: '12px',
@@ -53,13 +49,13 @@ class JPMorganCard extends React.Component {
             title="J.P. Morgan Chase"
             subheader="Software Engineering Intern"
           />
-          <div className={classes.mediaWrapper}>
-            <CardMedia
-              className={classes.media}
-              image="/images/jpmorgan_logo.webp"
-              title="J.P. Morgan Chase logo"
-            />
-          </div>
+          <CardMedia
+            className={classes.jpMorganLogo}
+            image="/images/jpmorgan_logo.svg"
+            title="J.P. Morgan Chase logo"
+            alt="J.P. Morgan Chase logo"
+            component="img"
+          />
           <CardContent>
             <Typography variant="h5" gutterBottom>
                 Summer 2019

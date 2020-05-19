@@ -42,6 +42,7 @@ class Grizzhacks3Card extends React.Component {
             className={classes.media}
             image="/images/grizzhacks_logo.webp"
             title="GrizzHacks 3 logo"
+            alt="GrizzHacks 3 logo"
           />
           <CardContent>
             <Typography variant="body1">

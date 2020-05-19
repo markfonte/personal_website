@@ -35,6 +35,7 @@ class DoggieDoodlesCard extends React.Component {
             className={classes.media}
             image="/images/doggie_doodles_logo.webp"
             title="Gimble A Cappella - 2019"
+            alt="Gimble A Cappella - 2019"
           />
           <CardContent>
             <Typography variant="body1">

@@ -11,14 +11,10 @@ import {
 import PropTypes from 'prop-types';
 
 const styles = {
-  media: {
-    margin: '8px',
-    paddingTop: '10.8%',
-    width: '50%',
-  },
-  mediaWrapper: {
-    display: 'flex',
-    justifyContent: 'center',
+  universityOfMichiganLogo: {
+    margin: 'auto',
+    maxWidth: '600px',
+    padding: '4px',
   },
 };
 
@@ -141,19 +137,20 @@ class CompletedCourseworkCard extends React.Component {
             subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
             and a minor in Entrepreneurship"
           />
-          <div className={classes.mediaWrapper}>
-            <CardMedia
-              className={classes.media}
-              image="images/university_of_michigan_logo.webp"
-              title="University of Michigan banner logo"
-            />
-          </div>
+          <CardMedia
+            className={classes.universityOfMichiganLogo}
+            image="images/university_of_michigan_logo.svg"
+            title="University of Michigan banner logo"
+            alt="University of Michigan banner logo"
+            component="img"
+          />
           <CardContent>
             <Link
               color="textPrimary"
               href={universityOfMichiganLink}
               gutterBottom
-              variant="h4">
+              variant="h5"
+            >
                   Completed coursework:
             </Link>
             <br/>

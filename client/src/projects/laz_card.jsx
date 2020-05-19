@@ -20,8 +20,9 @@ import {withStyles} from '@material-ui/styles';
 
 const styles = {
   lazLogo: {
-    paddingLeft: '20%',
-    paddingRight: '20%',
+    margin: 'auto',
+    maxWidth: '600px',
+    padding: '4px',
   },
   mobileScreenshot: {
     marginTop: '12px',
@@ -35,6 +36,7 @@ const styles = {
   webScreenshot: {
     height: 'auto',
     width: '100%',
+    maxWidth: '900px',
   },
 };
 
