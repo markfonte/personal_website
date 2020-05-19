@@ -112,7 +112,7 @@ exports[`Contact matches snapshot 1`] = `
     className="Contact-paragraph-4"
   >
     <img
-      alt="Temp"
+      alt="Gimble by the fountain"
       src={
         Object {
           "process": [Function],

@@ -166,7 +166,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on Apple Music"
+              alt="Gimble A Cappella on Apple Music button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -202,7 +202,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on Facebook"
+              alt="Gimble A Cappella on Facebook button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -238,7 +238,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on Spotify"
+              alt="Gimble A Cappella on Spotify button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -274,7 +274,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on Google Play Music"
+              alt="Gimble A Cappella on Google Play Music button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -310,7 +310,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on SoundCloud"
+              alt="Gimble A Cappella on SoundCloud button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -346,7 +346,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on YouTube"
+              alt="Gimble A Cappella on YouTube button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -382,7 +382,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on YouTube Music"
+              alt="Gimble A Cappella on YouTube Music button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -418,7 +418,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on Instagram"
+              alt="Gimble A Cappella on Instagram button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {
@@ -454,7 +454,7 @@ exports[`Random matches snapshot 1`] = `
             className="MuiIconButton-label"
           >
             <img
-              alt="Gimble A Cappella on Amazon Music"
+              alt="Gimble A Cappella on Amazon Music button"
               className="GimbleCard-gimbleCardActionIcon-32"
               src={
                 Object {

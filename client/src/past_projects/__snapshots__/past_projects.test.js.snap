@@ -862,7 +862,7 @@ exports[`PastProjects matches snapshot 1`] = `
            
           <br />
           <img
-            alt="InstEvents Screenshot 3"
+            alt="InstEvents screenshot 3"
             className="MHacks12Card-screenshot-112"
             height="500"
             src={
@@ -870,11 +870,11 @@ exports[`PastProjects matches snapshot 1`] = `
                 "process": [Function],
               }
             }
-            title="InstEvents Screenshot 3"
+            title="InstEvents screenshot 3"
             width="240"
           />
           <img
-            alt="InstEvents Screenshot 1"
+            alt="InstEvents screenshot 1"
             className="MHacks12Card-screenshot-112"
             height="500"
             src={
@@ -882,11 +882,11 @@ exports[`PastProjects matches snapshot 1`] = `
                 "process": [Function],
               }
             }
-            title="InstEvents Screenshot 1"
+            title="InstEvents screenshot 1"
             width="240"
           />
           <img
-            alt="InstEvents Screenshot 2"
+            alt="InstEvents screenshot 2"
             className="MHacks12Card-screenshot-112"
             height="500"
             src={
@@ -894,7 +894,7 @@ exports[`PastProjects matches snapshot 1`] = `
                 "process": [Function],
               }
             }
-            title="InstEvents Screenshot 2"
+            title="InstEvents screenshot 2"
             width="240"
           />
           <img
@@ -1103,14 +1103,14 @@ exports[`PastProjects matches snapshot 1`] = `
           title="WalkLens screenshot 2"
         />
         <img
-          alt="WalkLens screenshot 2"
+          alt="WalkLens screenshot 3"
           className="WalklensCard-screenshot-113"
           src={
             Object {
               "process": [Function],
             }
           }
-          title="WalkLens screenshot 2"
+          title="WalkLens screenshot 3"
         />
       </div>
       <div
