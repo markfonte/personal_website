@@ -1,13 +1,10 @@
 import React from 'react';
-import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
   Card,
   CardMedia,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   Link,
   withStyles,
 } from '@material-ui/core';
@@ -22,9 +19,6 @@ const styles = {
   mediaWrapper: {
     display: 'flex',
     justifyContent: 'center',
-  },
-  course: {
-    margin: '4px',
   },
 };
 
@@ -143,8 +137,9 @@ class CompletedCourseworkCard extends React.Component {
       <div>
         <Card raised={true} className="card">
           <CardHeader
-            title="Completed Coursework"
-            subheader="University of Michigan"
+            title="University of Michigan"
+            subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
+            and a minor in Entrepreneurship"
           />
           <div className={classes.mediaWrapper}>
             <CardMedia
@@ -154,31 +149,40 @@ class CompletedCourseworkCard extends React.Component {
             />
           </div>
           <CardContent>
+            <Link
+              color="textPrimary"
+              href={universityOfMichiganLink}
+              gutterBottom
+              variant="h4">
+                  Completed coursework:
+            </Link>
+            <br/>
             <Typography variant="subtitle1">
               {courses.map((course) => (
-                <Typography className={classes.course} key={course.name}>
-                  <Link
-                    variant="subtitle1"
-                    color="textPrimary"
-                    href={course.link}
-                  >
-                    <b>
-                      {course.subject}
-                    </b>
-                    :{' '}{course.name}
-                  </Link>
-                </Typography>
+                <Link
+                  gutterBottom
+                  variant="subtitle1"
+                  color="textPrimary"
+                  key={course.name}
+                  href={course.link}
+                  display={'block'}
+                >
+                  <Typography color="secondary" variant="h6" display={'inline'}>
+                    {course.subject}
+                  </Typography>
+                    :
+                  <Typography color="textSecondary" display={'inline'}>
+                    <i>
+                      {' ' + course.name}
+                    </i>
+                  </Typography>
+                </Link>
               ))}
             </Typography>
+            <Typography variant="caption" color="textSecondary" gutterBottom>
+                note: this is only the most relevant coursework, not an exhaustive list
+            </Typography>
           </CardContent>
-          <CardActions>
-            <IconButton
-              aria-label="Go to website"
-              href={universityOfMichiganLink}
-            >
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );
