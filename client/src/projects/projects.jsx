@@ -21,7 +21,7 @@ const styles = {
   },
 };
 
-class PastProjects extends React.Component {
+class Projects extends React.Component {
   render() {
     const {classes} = this.props;
     return (
@@ -43,14 +43,14 @@ class PastProjects extends React.Component {
         <Grizzhacks3Card />
         <SpotlightCard />
         <DoggieDoodlesCard />
-        <InteractionCard pagename="past_projects" />
+        <InteractionCard pagename="projects" />
       </div>
     );
   }
 }
 
-PastProjects.propTypes = {
+Projects.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(PastProjects);
+export default withStyles(styles)(Projects);

@@ -1,10 +1,10 @@
 import React from 'react';
-import PastProjects from './past_projects.jsx';
+import Projects from './projects.jsx';
 import renderer from 'react-test-renderer';
 
-test('PastProjects matches snapshot', () => {
+test('Projects matches snapshot', () => {
   const component = renderer.create(
-      <PastProjects/>,
+      <Projects/>,
   );
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
