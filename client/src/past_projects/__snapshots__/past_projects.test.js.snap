@@ -356,12 +356,12 @@ exports[`PastProjects matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
           >
-            Completed Coursework
+            University of Michigan
           </span>
           <span
             className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            University of Michigan
+            Graduated May 2020 with a Bachelor's in Computer Science in Engineering and a minor in Entrepreneurship
           </span>
         </div>
       </div>
@@ -381,404 +381,444 @@ exports[`PastProjects matches snapshot 1`] = `
       <div
         className="MuiCardContent-root"
       >
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-h4 MuiTypography-colorTextPrimary MuiTypography-gutterBottom"
+          href="https://umich.edu/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Completed coursework:
+        </a>
+        <br />
         <h6
           className="MuiTypography-root MuiTypography-subtitle1"
         >
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20482/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20482/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 482
-              </b>
-              :
-               
-              Introduction to Operating Systems
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 482
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Introduction to Operating Systems
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20485/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20485/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 485
-              </b>
-              :
-               
-              Web Systems
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 485
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Web Systems
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://atlas.ai.umich.edu/course/EECS%20490/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://atlas.ai.umich.edu/course/EECS%20490/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 490
-              </b>
-              :
-               
-              Programming Languages
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 490
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Programming Languages
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://atlas.ai.umich.edu/course/EECS%20493/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://atlas.ai.umich.edu/course/EECS%20493/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 493
-              </b>
-              :
-               
-              User Interface Development
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 493
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 User Interface Development
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20441/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20441/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 441
-              </b>
-              :
-               
-              Mobile App Development for Entrepreneurs
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 441
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Mobile App Development for Entrepreneurs
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20481/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20481/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 481
-              </b>
-              :
-               
-              Software Engineering
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 481
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Software Engineering
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20388/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20388/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 388
-              </b>
-              :
-               
-              Introduction to Computer Security
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 388
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Introduction to Computer Security
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20376/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20376/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 376
-              </b>
-              :
-               
-              Foundations of Computer Science
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 376
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Foundations of Computer Science
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20370/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20370/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 370
-              </b>
-              :
-               
-              Introduction to Computer Organization
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 370
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Introduction to Computer Organization
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20281/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20281/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 281
-              </b>
-              :
-               
-              Data Structures and Algorithms
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 281
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Data Structures and Algorithms
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20280/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20280/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 280
-              </b>
-              :
-               
-              Programming and Introductory Data Structures
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 280
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Programming and Introductory Data Structures
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20203/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20203/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 203
-              </b>
-              :
-               
-              Discrete Math
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 203
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Discrete Math
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/EECS%20496/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/EECS%20496/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                EECS 496
-              </b>
-              :
-               
-              Major Design Experience-Professionalism
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              EECS 496
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Major Design Experience-Professionalism
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/MATH%20214/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/MATH%20214/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                Math 214
-              </b>
-              :
-               
-              Applied Linear Algebra
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              Math 214
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Applied Linear Algebra
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/MATH%20425/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/MATH%20425/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                Math 425
-              </b>
-              :
-               
-              Introduction to Probability
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              Math 425
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Introduction to Probability
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/MATH%20215/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/MATH%20215/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                Math 215
-              </b>
-              :
-               
-              Calculus III
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              Math 215
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Calculus III
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/ENTR%20411/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/ENTR%20411/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                Entrepreneurship 411
-              </b>
-              :
-               
-              Entrepreneurship Practicum
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              Entrepreneurship 411
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Entrepreneurship Practicum
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/ALA%20256/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/ALA%20256/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                ALA 256
-              </b>
-              :
-               
-              Innovator's Toolkit
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              ALA 256
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Innovator's Toolkit
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/PHYSICS%20240/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/PHYSICS%20240/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                Physics 240
-              </b>
-              :
-               
-              Electricity and Magnetism
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              Physics 240
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Electricity and Magnetism
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/PHYSICS%20140/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/PHYSICS%20140/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                Physics 140
-              </b>
-              :
-               
-              Mechanics
-            </a>
-          </p>
-          <p
-            className="MuiTypography-root CompletedCourseworkCard-course-109 MuiTypography-body1"
+              Physics 140
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Mechanics
+              </i>
+            </p>
+          </a>
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
+            href="https://art.ai.umich.edu/course/ENGR%20100/"
+            onBlur={[Function]}
+            onFocus={[Function]}
           >
-            <a
-              className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary"
-              href="https://art.ai.umich.edu/course/ENGR%20100/"
-              onBlur={[Function]}
-              onFocus={[Function]}
+            <h6
+              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
             >
-              <b>
-                Engineering 100
-              </b>
-              :
-               
-              Wireless Communication Design
-            </a>
-          </p>
+              Engineering 100
+            </h6>
+            :
+            <p
+              className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayInline"
+            >
+              <i>
+                 Wireless Communication Design
+              </i>
+            </p>
+          </a>
         </h6>
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://umich.edu/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
+        <span
+          className="MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
         >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-        </a>
+          note: this is only the most relevant coursework, not an exhaustive list
+        </span>
       </div>
     </div>
   </div>
@@ -805,7 +845,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root MHacks12Card-media-110"
+        className="MuiCardMedia-root MHacks12Card-media-109"
         style={
           Object {
             "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
@@ -863,7 +903,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="InstEvents screenshot 3"
-            className="MHacks12Card-screenshot-112"
+            className="MHacks12Card-screenshot-111"
             height="500"
             src={
               Object {
@@ -875,7 +915,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 1"
-            className="MHacks12Card-screenshot-112"
+            className="MHacks12Card-screenshot-111"
             height="500"
             src={
               Object {
@@ -887,7 +927,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 2"
-            className="MHacks12Card-screenshot-112"
+            className="MHacks12Card-screenshot-111"
             height="500"
             src={
               Object {
@@ -899,7 +939,7 @@ exports[`PastProjects matches snapshot 1`] = `
           />
           <img
             alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-112"
+            className="MHacks12Card-screenshot-111"
             height="360"
             src={
               Object {
@@ -977,7 +1017,7 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <img
           alt="WalkLens logo"
-          className="WalklensCard-logo-114"
+          className="WalklensCard-logo-113"
           src={
             Object {
               "process": [Function],
@@ -1084,7 +1124,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-113"
+          className="WalklensCard-screenshot-112"
           src={
             Object {
               "process": [Function],
@@ -1094,7 +1134,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-113"
+          className="WalklensCard-screenshot-112"
           src={
             Object {
               "process": [Function],
@@ -1104,7 +1144,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 3"
-          className="WalklensCard-screenshot-113"
+          className="WalklensCard-screenshot-112"
           src={
             Object {
               "process": [Function],
@@ -1175,7 +1215,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Spartahack5Card-media-115"
+        className="MuiCardMedia-root Spartahack5Card-media-114"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
@@ -1239,7 +1279,7 @@ exports[`PastProjects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-116"
+            className="Spartahack5Card-logo-115"
             src={
               Object {
                 "process": [Function],
@@ -1311,10 +1351,10 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-118"
+        className="RevolutionUC8Card-mediaWrapper-117"
       >
         <div
-          className="MuiCardMedia-root RevolutionUC8Card-media-117"
+          className="MuiCardMedia-root RevolutionUC8Card-media-116"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.webp\\")",
@@ -1353,7 +1393,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-119"
+          className="RevolutionUC8Card-logo-118"
           src={
             Object {
               "process": [Function],
@@ -1424,7 +1464,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root Grizzhacks3Card-media-120"
+        className="MuiCardMedia-root Grizzhacks3Card-media-119"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
@@ -1470,7 +1510,7 @@ exports[`PastProjects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-121"
+          className="Grizzhacks3Card-logo-120"
           src={
             Object {
               "process": [Function],
@@ -1550,7 +1590,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-122"
+          className="SpotlightCard-screenshot-121"
           src={
             Object {
               "process": [Function],
@@ -1560,7 +1600,7 @@ exports[`PastProjects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-122"
+          className="SpotlightCard-screenshot-121"
           src={
             Object {
               "process": [Function],
@@ -1631,7 +1671,7 @@ exports[`PastProjects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiCardMedia-root DoggieDoodlesCard-media-123"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-122"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
@@ -1710,7 +1750,7 @@ exports[`PastProjects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-124"
+    className="InteractionCard-root-123"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1720,10 +1760,10 @@ exports[`PastProjects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-125"
+          className="LikeButton-root-124"
         >
           <div
-            className="LikeButton-likeButtonWrapper-126"
+            className="LikeButton-likeButtonWrapper-125"
           >
             <svg
               aria-hidden={true}
@@ -1737,10 +1777,10 @@ exports[`PastProjects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-127 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-126 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-128 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-127 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
