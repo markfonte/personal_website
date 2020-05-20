@@ -10,6 +10,7 @@ import SpotlightCard from './spotlight_card.jsx';
 import DoggieDoodlesCard from './doggie_doodles_card.jsx';
 import JPMorganCard from './jpmorgan_card.jsx';
 import RoadMapper from './road_mapper.jsx';
+import MISymptomsCard from './mi_symptoms_card.jsx';
 import AmazonCard from './amazon_card.jsx';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
@@ -42,6 +43,7 @@ class Projects extends React.Component {
         <JPMorganCard />
         <LAZCard />
         <CompletedCourseworkCard />
+        <MISymptomsCard />
         <MHacks12Card />
         <WalklensCard />
         <Spartahack5Card />

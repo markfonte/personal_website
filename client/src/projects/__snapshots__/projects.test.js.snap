@@ -1070,6 +1070,351 @@ exports[`Projects matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
           >
+            MI Symptoms Project
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            Testing Team Lead[object Object]                                               hell
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+        >
+          I was asked to join this project, along with many others from the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://umich.edu/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            University of Michigan
+          </a>
+          , in response to the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            COVID-19 pandemic
+          </a>
+          . This web application, known as
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://misymptomapp.state.mi.us/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            MI Symptoms
+          </a>
+          , is a project issued by the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.michigan.gov/som/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            State of Michigan
+          </a>
+           
+          to track the spread of the coronavirus and give residents resources they need to fight it. Residents can take a survey each day through the application which asks about current symptoms, current temperature, test results and more. Users who are determined "at-risk" based on their symptoms are given the resources they need and can even be contacted directly by health professionals. No sensitive user data is stored by the application (it is sent straight to the State of Michigan).
+          <br />
+           
+          <br />
+          It is backed by the highest levels of the Michigan government and is being developed by about 30 University of Michigan computer science juniors and seniors, along with a few professors, government workers, the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://caen.engin.umich.edu/about/senior-management-team/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            University of Michigan CAEN team
+          </a>
+           
+          and the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://its.umich.edu/about/leadership"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            University of Michigan ITS team
+          </a>
+          . At the time of writing (May 20th, 2020), it is being tested in production with larger and larger groups of people.
+        </p>
+        <picture>
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/jpg"
+          />
+          <img
+            alt="MI Symptoms screenshot 1"
+            className="MISymptomsCard-mobileScreenshot-84"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+            title="MI Symptoms screenshot 1"
+          />
+        </picture>
+        <picture>
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/jpg"
+          />
+          <img
+            alt="MI Symptoms screenshot 2"
+            className="MISymptomsCard-mobileScreenshot-84"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+            title="MI Symptoms screenshot 2"
+          />
+        </picture>
+        <picture>
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/jpg"
+          />
+          <img
+            alt="MI Symptoms screenshot 3"
+            className="MISymptomsCard-mobileScreenshot-84"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+            title="MI Symptoms screenshot 3"
+          />
+        </picture>
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+        >
+          As testing team lead, I was responsible for the day-to-day operations of the testing team. This was another great opportunity to improve on my leadership skills, especially with the added challenge of only being able to communicate remotely. I managed building out testing tools to cover different domains like
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://en.wikipedia.org/wiki/Unit_testing"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            unit testing
+          </a>
+          ,
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.cypress.io/how-it-works/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            end-to-end testing
+          </a>
+          ,
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://en.wikipedia.org/wiki/Penetration_test"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            security/pen testing
+          </a>
+           
+          and
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://en.wikipedia.org/wiki/Stress_testing"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            performance/stress testing
+          </a>
+          . We built a
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://jestjs.io/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Jest
+          </a>
+           
+          test suite for unit testing, a
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.cypress.io/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Cypress
+          </a>
+           
+          test suite for end-to-end testing and a
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://jmeter.apache.org/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            JMeter
+          </a>
+           
+          test suite for stress testing. We put in place a process for continuously
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://en.wikipedia.org/wiki/Smoke_testing_(software)"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            smoke testing
+          </a>
+           
+          the application and putting actionable, reproducible issues in front of the development team on our
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://trello.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Trello
+          </a>
+           
+          board. Everything required constant communication with all parts of the team to ensure that we were responding as quickly as possible to frequent requirements changes. We used tools like
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://analytics.google.com/analytics/web/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Google Analytics
+          </a>
+          ,
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://firebase.google.com/docs/perf-mon"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Firebase Performance Monitoring
+          </a>
+          ,
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://developers.google.com/speed/pagespeed/insights/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Google PageSpeed Insights
+          </a>
+          , and facilitated the use of security tools like
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.ibm.com/developerworks/library/se-scan/index.html"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            IBM AppScan
+          </a>
+           
+          from the University of Michigan ITS team - anything that would help the product become as robust as possible, as quickly as possible.
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+        >
+          I am so thankful for this experience. In my opinion, the most special part about the project was the way that everyone came together and sacrificed their time and energy out of the goodness of their hearts - simply for the prospect that they might be able to help some people. Thank you all!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
             InstEvents
           </span>
           <span
@@ -1081,7 +1426,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="MHacks 12 logo"
-        className="MuiCardMedia-root MHacks12Card-media-84"
+        className="MuiCardMedia-root MHacks12Card-media-85"
         style={
           Object {
             "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
@@ -1139,7 +1484,7 @@ exports[`Projects matches snapshot 1`] = `
           <br />
           <img
             alt="InstEvents screenshot 3"
-            className="MHacks12Card-screenshot-86"
+            className="MHacks12Card-screenshot-87"
             height="500"
             src={
               Object {
@@ -1151,7 +1496,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 1"
-            className="MHacks12Card-screenshot-86"
+            className="MHacks12Card-screenshot-87"
             height="500"
             src={
               Object {
@@ -1163,7 +1508,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 2"
-            className="MHacks12Card-screenshot-86"
+            className="MHacks12Card-screenshot-87"
             height="500"
             src={
               Object {
@@ -1175,7 +1520,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-86"
+            className="MHacks12Card-screenshot-87"
             height="360"
             src={
               Object {
@@ -1270,7 +1615,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="WalkLens logo"
-            className="WalklensCard-logo-111"
+            className="WalklensCard-logo-112"
             srcSet={
               Array [
                 Object {
@@ -1383,7 +1728,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-110"
+          className="WalklensCard-screenshot-111"
           src={
             Object {
               "process": [Function],
@@ -1393,7 +1738,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-110"
+          className="WalklensCard-screenshot-111"
           src={
             Object {
               "process": [Function],
@@ -1403,7 +1748,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 3"
-          className="WalklensCard-screenshot-110"
+          className="WalklensCard-screenshot-111"
           src={
             Object {
               "process": [Function],
@@ -1475,7 +1820,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="SpartaHack V logo"
-        className="MuiCardMedia-root Spartahack5Card-media-112"
+        className="MuiCardMedia-root Spartahack5Card-media-113"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
@@ -1539,7 +1884,7 @@ exports[`Projects matches snapshot 1`] = `
           <br />
           <img
             alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-113"
+            className="Spartahack5Card-logo-114"
             src={
               Object {
                 "process": [Function],
@@ -1716,7 +2061,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="Road Mappers screenshot 1"
-            className="RoadMapperCard-screenshotOne-114"
+            className="RoadMapperCard-screenshotOne-115"
             srcSet={
               Array [
                 Object {
@@ -1762,11 +2107,11 @@ exports[`Projects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-116"
+        className="RevolutionUC8Card-mediaWrapper-117"
       >
         <div
           alt="RevolutionUC 8 logo"
-          className="MuiCardMedia-root RevolutionUC8Card-media-115"
+          className="MuiCardMedia-root RevolutionUC8Card-media-116"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.webp\\")",
@@ -1805,7 +2150,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-117"
+          className="RevolutionUC8Card-logo-118"
           src={
             Object {
               "process": [Function],
@@ -1877,7 +2222,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="GrizzHacks 3 logo"
-        className="MuiCardMedia-root Grizzhacks3Card-media-118"
+        className="MuiCardMedia-root Grizzhacks3Card-media-119"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
@@ -1923,7 +2268,7 @@ exports[`Projects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-119"
+          className="Grizzhacks3Card-logo-120"
           src={
             Object {
               "process": [Function],
@@ -2003,7 +2348,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-120"
+          className="SpotlightCard-screenshot-121"
           src={
             Object {
               "process": [Function],
@@ -2013,7 +2358,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-120"
+          className="SpotlightCard-screenshot-121"
           src={
             Object {
               "process": [Function],
@@ -2048,7 +2393,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="Gimble A Cappella - 2019"
-        className="MuiCardMedia-root DoggieDoodlesCard-media-121"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-122"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
@@ -2127,7 +2472,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-122"
+    className="InteractionCard-root-123"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -2137,10 +2482,10 @@ exports[`Projects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-123"
+          className="LikeButton-root-124"
         >
           <div
-            className="LikeButton-likeButtonWrapper-124"
+            className="LikeButton-likeButtonWrapper-125"
           >
             <svg
               aria-hidden={true}
@@ -2154,10 +2499,10 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-125 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-126 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-126 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-127 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
