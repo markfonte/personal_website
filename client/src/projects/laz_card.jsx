@@ -31,12 +31,12 @@ const styles = {
     marginRight: '4px',
     height: 'auto',
     width: '100%',
-    maxWidth: '300px',
+    maxWidth: '280px',
   },
   webScreenshot: {
     height: 'auto',
     width: '100%',
-    maxWidth: '900px',
+    maxWidth: '800px',
   },
 };
 

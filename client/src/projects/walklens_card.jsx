@@ -9,6 +9,8 @@ import WebIcon
   from '@material-ui/icons/PlayCircleFilledSharp';
 import walklensLogo
   from '../static/images/logos/walk_lens_logo_cropped.webp';
+import walklensLogoFallback
+  from '../static/images/logos/walk_lens_logo_cropped.png';
 import {
   Typography,
   Card,
@@ -29,7 +31,7 @@ const styles = {
     marginRight: '4px',
     height: 'auto',
     width: '100%',
-    maxWidth: '300px',
+    maxWidth: '280px',
   },
   logo: {
     maxHeight: '200px',
@@ -39,6 +41,18 @@ const styles = {
 };
 
 class WalklensCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      walkLensLogoSrc: walklensLogo,
+    };
+    this.imageNotLoading = this.imageNotLoading.bind(this);
+  }
+
+  imageNotLoading() {
+    this.setState({walkLensLogoSrc: walklensLogoFallback});
+  }
+
   render() {
     const {classes} = this.props;
     const walklensGooglePlayLink = `https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US`;
@@ -63,6 +77,7 @@ class WalklensCard extends React.Component {
               className={classes.logo}
               title="WalkLens logo"
               alt="WalkLens logo"
+              onError={this.imageNotLoading}
             />
             <Typography variant="body1">
               This project was built in my
