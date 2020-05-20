@@ -153,7 +153,6 @@ class CompletedCourseworkCard extends React.Component {
             >
                   Completed coursework:
             </Link>
-            <br/>
             <Typography variant="subtitle1">
               {courses.map((course) => (
                 <Link
