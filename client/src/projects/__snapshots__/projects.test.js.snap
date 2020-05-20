@@ -619,7 +619,6 @@ exports[`Projects matches snapshot 1`] = `
         >
           Completed coursework:
         </a>
-        <br />
         <h6
           className="MuiTypography-root MuiTypography-subtitle1"
         >
@@ -1249,6 +1248,7 @@ exports[`Projects matches snapshot 1`] = `
         <img
           alt="WalkLens logo"
           className="WalklensCard-logo-111"
+          onError={[Function]}
           src={
             Object {
               "process": [Function],
