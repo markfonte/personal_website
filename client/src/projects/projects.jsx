@@ -9,6 +9,7 @@ import InteractionCard from '../shared/interaction_card.jsx';
 import SpotlightCard from './spotlight_card.jsx';
 import DoggieDoodlesCard from './doggie_doodles_card.jsx';
 import JPMorganCard from './jpmorgan_card.jsx';
+import RoadMapper from './road_mapper.jsx';
 import AmazonCard from './amazon_card.jsx';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
@@ -44,6 +45,7 @@ class Projects extends React.Component {
         <MHacks12Card />
         <WalklensCard />
         <Spartahack5Card />
+        <RoadMapper />
         <RevolutionUC8Card />
         <Grizzhacks3Card />
         <SpotlightCard />

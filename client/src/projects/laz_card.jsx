@@ -234,7 +234,9 @@ class LAZCard extends React.Component {
               <Link color="secondary" href={phpLink}>
               PHP
               </Link>
+              {' '}
               /
+              {' '}
               <Link color="secondary" href={mySqlLink}>
               MySQL
               </Link>
@@ -244,11 +246,15 @@ class LAZCard extends React.Component {
               <Link color="secondary" href={javascriptLink}>
               JavaScript
               </Link>
+              {' '}
               /
+              {' '}
               <Link color="secondary" href={htmlLink}>
               HTML
               </Link>
+              {' '}
               /
+              {' '}
               <Link color="secondary" href={cssLink}>
               CSS
               </Link>

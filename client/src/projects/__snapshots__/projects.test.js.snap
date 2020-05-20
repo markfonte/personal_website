@@ -497,7 +497,9 @@ exports[`Projects matches snapshot 1`] = `
           >
             PHP
           </a>
+           
           /
+           
           <a
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
             href="https://www.mysql.com/"
@@ -517,7 +519,9 @@ exports[`Projects matches snapshot 1`] = `
           >
             JavaScript
           </a>
+           
           /
+           
           <a
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
             href="https://developer.mozilla.org/en-US/docs/Web/HTML"
@@ -526,7 +530,9 @@ exports[`Projects matches snapshot 1`] = `
           >
             HTML
           </a>
+           
           /
+           
           <a
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
             href="https://developer.mozilla.org/en-US/docs/Web/CSS"
@@ -1595,6 +1601,157 @@ exports[`Projects matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
           >
+            Road Mapper
+          </span>
+          <span
+            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          >
+            EECS 493 class project
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCardContent-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+        >
+          This was just a small project that we worked on for
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://atlas.ai.umich.edu/course/EECS%20493/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            EECS 493
+          </a>
+           
+          during my final semester in college. It was really fun because I got to use
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://vuejs.org/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Vue.js
+          </a>
+           
+          for the first time on an actual web application. It was very simple to use, and I loved how lightweight it was (with a single import you can start using Vue right away in any web application).
+          <br />
+          <br />
+          The application was modeled off of how applications like
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.waze.com/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Waze
+          </a>
+           
+          allow users to indicate driving hazards and speed traps that they find. We used the same concept to crowdsource the presence of (primarily winter) walking hazards like ice, snow and mud. Using the
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://docs.mapbox.com/api/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Mapbox API
+          </a>
+           
+          we had a map that allowed users to create, read, update and delete different walking hazards. They could enter a description, drag markers to a spot, select the type of hazard, and even use built-in walking directions. We stored the currently-active hazards in a
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://docs.python.org/2/library/sqlite3.html"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            SQLite
+          </a>
+           
+          database managed by a
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://www.python.org/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Python
+          </a>
+           
+          <a
+            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+            href="https://flask.palletsprojects.com/en/1.1.x/"
+            onBlur={[Function]}
+            onFocus={[Function]}
+          >
+            Flask
+          </a>
+           
+          application.
+        </p>
+        <picture>
+          <br />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/png"
+          />
+          <img
+            alt="Road Mappers screenshot 1"
+            className="RoadMapperCard-screenshotOne-114"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+            title="Road Mappers screenshot 1"
+          />
+        </picture>
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+        >
+          <br />
+          Although we never released it to the public, it was a great experience with a new framework and a new API. It was also a testament to how smoothly a project can be built if the team is on the same page, despite being made entirely during quarantine!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+    >
+      <div
+        className="MuiCardHeader-root"
+      >
+        <div
+          className="MuiCardHeader-content"
+        >
+          <span
+            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          >
             Denial Dial
           </span>
           <span
@@ -1605,11 +1762,11 @@ exports[`Projects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-115"
+        className="RevolutionUC8Card-mediaWrapper-116"
       >
         <div
           alt="RevolutionUC 8 logo"
-          className="MuiCardMedia-root RevolutionUC8Card-media-114"
+          className="MuiCardMedia-root RevolutionUC8Card-media-115"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.webp\\")",
@@ -1648,7 +1805,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-116"
+          className="RevolutionUC8Card-logo-117"
           src={
             Object {
               "process": [Function],
@@ -1720,7 +1877,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="GrizzHacks 3 logo"
-        className="MuiCardMedia-root Grizzhacks3Card-media-117"
+        className="MuiCardMedia-root Grizzhacks3Card-media-118"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
@@ -1766,7 +1923,7 @@ exports[`Projects matches snapshot 1`] = `
         <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-118"
+          className="Grizzhacks3Card-logo-119"
           src={
             Object {
               "process": [Function],
@@ -1846,7 +2003,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-119"
+          className="SpotlightCard-screenshot-120"
           src={
             Object {
               "process": [Function],
@@ -1856,7 +2013,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-119"
+          className="SpotlightCard-screenshot-120"
           src={
             Object {
               "process": [Function],
@@ -1891,7 +2048,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="Gimble A Cappella - 2019"
-        className="MuiCardMedia-root DoggieDoodlesCard-media-120"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-121"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
@@ -1970,7 +2127,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-121"
+    className="InteractionCard-root-122"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1980,10 +2137,10 @@ exports[`Projects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-122"
+          className="LikeButton-root-123"
         >
           <div
-            className="LikeButton-likeButtonWrapper-123"
+            className="LikeButton-likeButtonWrapper-124"
           >
             <svg
               aria-hidden={true}
@@ -1997,10 +2154,10 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-124 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-125 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-125 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-126 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
