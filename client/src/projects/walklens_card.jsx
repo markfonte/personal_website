@@ -41,18 +41,6 @@ const styles = {
 };
 
 class WalklensCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      walkLensLogoSrc: walklensLogo,
-    };
-    this.imageNotLoading = this.imageNotLoading.bind(this);
-  }
-
-  imageNotLoading() {
-    this.setState({walkLensLogoSrc: walklensLogoFallback});
-  }
-
   render() {
     const {classes} = this.props;
     const walklensGooglePlayLink = `https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US`;
@@ -72,13 +60,16 @@ class WalklensCard extends React.Component {
             subheader="Android application"
           />
           <CardContent>
-            <img
-              src={walklensLogo}
-              className={classes.logo}
-              title="WalkLens logo"
-              alt="WalkLens logo"
-              onError={this.imageNotLoading}
-            />
+            <picture>
+              <source srcSet={walklensLogo} type="image/webp"/>
+              <source srcSet={walklensLogoFallback} type="image/png"/>
+              <img
+                srcSet={[walklensLogo, walklensLogoFallback]}
+                className={classes.logo}
+                title="WalkLens logo"
+                alt="WalkLens logo"
+              />
+            </picture>
             <Typography variant="body1">
               This project was built in my
               {' '}

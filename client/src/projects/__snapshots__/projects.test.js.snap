@@ -1245,17 +1245,39 @@ exports[`Projects matches snapshot 1`] = `
       <div
         className="MuiCardContent-root"
       >
-        <img
-          alt="WalkLens logo"
-          className="WalklensCard-logo-111"
-          onError={[Function]}
-          src={
-            Object {
-              "process": [Function],
+        <picture>
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
             }
-          }
-          title="WalkLens logo"
-        />
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/png"
+          />
+          <img
+            alt="WalkLens logo"
+            className="WalklensCard-logo-111"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+            title="WalkLens logo"
+          />
+        </picture>
         <p
           className="MuiTypography-root MuiTypography-body1"
         >
