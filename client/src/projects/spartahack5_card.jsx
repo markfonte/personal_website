@@ -58,7 +58,7 @@ class Spartahack5Card extends React.Component {
               <i>&#34;Google Translate Sings&#34;</i>
               {' '}
               <Link color="secondary" href={googleTranslateSingsLink}>
-                Youtube videos
+                YouTube videos
               </Link>
               {' '}
               and decided we could automate that process. Using Google Translate APIs we built an

@@ -13,7 +13,7 @@ import LinkStyle from '@material-ui/core/Link';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider, withStyles} from '@material-ui/styles';
-import {Typography, Button, CssBaseline, List, ListItem, Grid} from '@material-ui/core';
+import {Typography, Button, CssBaseline, List, ListItem, Grid, Tooltip} from '@material-ui/core';
 import ScrollUpButton from 'react-scroll-up-button';
 
 const getCookie = require('./shared/util/cookies.js').getCookie;
@@ -187,12 +187,14 @@ export class App extends React.Component {
 
         <Grid className={classes.root}>
           {rainbowHeader}
-          <img
-            className={classes.toggleThemeIcon}
-            src={this.state.themeIcon}
-            onClick={this.toggleTheme}
-            alt="toggle theme button"
-          />
+          <Tooltip title="Toggle light/dark mode" arrow>
+            <img
+              className={classes.toggleThemeIcon}
+              src={this.state.themeIcon}
+              onClick={this.toggleTheme}
+              alt="Toggle light/dark mode"
+            />
+          </Tooltip>
           <Router>
             <img src={profilePicture} className={classes.profileLogo} alt="headshot" />
             <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
@@ -202,14 +204,16 @@ export class App extends React.Component {
                   <ListItem className={classes.AppListItem} key={route.name}>
                     <LinkStyle style={{textDecoration: 'none'}}
                       className={classes.routerLink} component={Link} to={route.path}>
-                      <Button
-                        onClick={() => this.currentlySelected(i)}
-                        variant={currentlySelected === i ? 'contained' : 'outlined'}
-                        color="secondary"
-                        className={classes.routerButton}
-                      >
-                        {route.name}
-                      </Button>
+                      <Tooltip title={'Go to ' + route.name + ' page'} arrow>
+                        <Button
+                          onClick={() => this.currentlySelected(i)}
+                          variant={currentlySelected === i ? 'contained' : 'outlined'}
+                          color="secondary"
+                          className={classes.routerButton}
+                        >
+                          {route.name}
+                        </Button>
+                      </Tooltip>
                     </LinkStyle>
                   </ListItem>
                 ))}
