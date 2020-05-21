@@ -1,15 +1,12 @@
 import React from 'react';
 import laughableLyricsLogo
-  from '../static/images/logos/laughable_lyrics_logo.webp';
-import WebIcon from '@material-ui/icons/Web';
+  from '../static/images/logos/laughable_lyrics_logo.svg';
 import {
   Typography,
   Card,
   CardMedia,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   Link,
 } from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
@@ -28,7 +25,7 @@ const styles = {
 class Spartahack5Card extends React.Component {
   render() {
     const {classes} = this.props;
-    const spartahack5Link = `https://spartahackv.devpost.com/`;
+    // const spartahack5Link = `https://spartahackv.devpost.com/`;
     const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
     const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
     const googleTranslateSingsLink = `https://www.youtube.com/watch?v=2bVAoVlFYf0`;
@@ -47,7 +44,7 @@ class Spartahack5Card extends React.Component {
             alt="SpartaHack V logo"
           />
           <CardContent>
-            <Typography variant="body1">
+            <Typography variant="body1" paragraph>
               This hackathon project,
               {' '}
               <i>Laughable Lyrics</i>
@@ -77,20 +74,14 @@ class Spartahack5Card extends React.Component {
               <Link color="secondary" href={laughableLyricsGithubLink}>
                 Github
               </Link>
-              <br />
-              <img
-                src={laughableLyricsLogo}
-                className={classes.logo}
-                title="Laughable Lyrics logo"
-                alt="Laughable Lyrics logo"
-              />
             </Typography>
+            <img
+              src={laughableLyricsLogo}
+              className={classes.logo}
+              title="Laughable Lyrics logo"
+              alt="Laughable Lyrics logo"
+            />
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to website" href={spartahack5Link}>
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );

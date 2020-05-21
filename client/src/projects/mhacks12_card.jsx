@@ -9,15 +9,12 @@ import instEventsScreenshot3
   from '../static/images/screenshots/instevents_screenshot_3.webp';
 import mhacksNathanAndMark
   from '../static/images/photos/mhacks_mark_and_nathan.webp';
-import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
   Card,
   CardMedia,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   Link,
 } from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
@@ -45,7 +42,7 @@ const styles = {
 class MHacks12Card extends React.Component {
   render() {
     const {classes} = this.props;
-    const mhacks12Link = `https://mhacks12.devpost.com/`;
+    // const mhacks12Link = `https://mhacks12.devpost.com/`;
     const instEventsDevpostLink = `https://devpost.com/software/instevent`;
     const instEventsGithubLink = `https://github.com/markfonte/InstEvents`;
 
@@ -144,11 +141,6 @@ class MHacks12Card extends React.Component {
               />
             </Typography>
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to website" href={mhacks12Link}>
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );

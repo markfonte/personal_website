@@ -1,14 +1,11 @@
 import React from 'react';
-import denialDialLogo from '../static/images/logos/denial_dial_logo.webp';
-import WebIcon from '@material-ui/icons/Web';
+import denialDialLogo from '../static/images/logos/denial_dial_logo.svg';
 import {
   Typography,
   Card,
   CardMedia,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   Link,
 } from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
@@ -27,14 +24,13 @@ const styles = {
   logo: {
     width: '40%',
     height: 'auto',
-    margin: '16px',
   },
 };
 
 class RevolutionUC8Card extends React.Component {
   render() {
     const {classes} = this.props;
-    const revolutionuc8Link = `http://revolutionuc.com/`;
+    // const revolutionuc8Link = `http://revolutionuc.com/`;
     const denialDialDevpostLink = `https://devpost.com/software/revolution-banking`;
     const denialDialGithubLink = `https://github.com/nathan815/denial-dial`;
     return (
@@ -53,7 +49,7 @@ class RevolutionUC8Card extends React.Component {
             />
           </div>
           <CardContent>
-            <Typography variant="body1">
+            <Typography variant="body1" paragraph>
               This hackathon was not as successful as the other two, but it was still a great
               experience. We spent at least the first 12 hours of the 24-hour hackathon bouncing
               between a bunch of different ideas. We ended up building a clever rejection hotline
@@ -78,11 +74,6 @@ class RevolutionUC8Card extends React.Component {
               alt="CongoAI logo"
             />
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to website" href={revolutionuc8Link}>
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );

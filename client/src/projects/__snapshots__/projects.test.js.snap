@@ -1532,46 +1532,6 @@ exports[`Projects matches snapshot 1`] = `
           />
         </p>
       </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://mhacks12.devpost.com/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-      </div>
     </div>
   </div>
   <div>
@@ -1599,39 +1559,16 @@ exports[`Projects matches snapshot 1`] = `
       <div
         className="MuiCardContent-root"
       >
-        <picture>
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
+        <img
+          alt="WalkLens logo"
+          className="WalklensCard-logo-89"
+          src={
+            Object {
+              "process": [Function],
             }
-            type="image/webp"
-          />
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/png"
-          />
-          <img
-            alt="WalkLens logo"
-            className="WalklensCard-logo-112"
-            srcSet={
-              Array [
-                Object {
-                  "process": [Function],
-                },
-                Object {
-                  "process": [Function],
-                },
-              ]
-            }
-            title="WalkLens logo"
-          />
-        </picture>
+          }
+          title="WalkLens logo"
+        />
         <p
           className="MuiTypography-root MuiTypography-body1"
         >
@@ -1731,7 +1668,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-111"
+          className="WalklensCard-screenshot-88"
           src={
             Object {
               "process": [Function],
@@ -1741,7 +1678,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-111"
+          className="WalklensCard-screenshot-88"
           src={
             Object {
               "process": [Function],
@@ -1751,7 +1688,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 3"
-          className="WalklensCard-screenshot-111"
+          className="WalklensCard-screenshot-88"
           src={
             Object {
               "process": [Function],
@@ -1759,46 +1696,6 @@ exports[`Projects matches snapshot 1`] = `
           }
           title="WalkLens screenshot 3"
         />
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to Google Play Store listing"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-              />
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
       </div>
     </div>
   </div>
@@ -1826,7 +1723,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="SpartaHack V logo"
-        className="MuiCardMedia-root Spartahack5Card-media-113"
+        className="MuiCardMedia-root Spartahack5Card-media-90"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
@@ -1838,7 +1735,7 @@ exports[`Projects matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1"
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
         >
           This hackathon project,
            
@@ -1887,58 +1784,17 @@ exports[`Projects matches snapshot 1`] = `
           >
             Github
           </a>
-          <br />
-          <img
-            alt="Laughable Lyrics logo"
-            className="Spartahack5Card-logo-114"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Laughable Lyrics logo"
-          />
         </p>
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://spartahackv.devpost.com/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
+        <img
+          alt="Laughable Lyrics logo"
+          className="Spartahack5Card-logo-91"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="Laughable Lyrics logo"
+        />
       </div>
     </div>
   </div>
@@ -2070,7 +1926,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="Road Mappers screenshot 1"
-            className="RoadMapperCard-screenshotOne-115"
+            className="RoadMapperCard-screenshotOne-92"
             srcSet={
               Array [
                 Object {
@@ -2116,11 +1972,11 @@ exports[`Projects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-117"
+        className="RevolutionUC8Card-mediaWrapper-94"
       >
         <div
           alt="RevolutionUC 8 logo"
-          className="MuiCardMedia-root RevolutionUC8Card-media-116"
+          className="MuiCardMedia-root RevolutionUC8Card-media-93"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.webp\\")",
@@ -2133,7 +1989,7 @@ exports[`Projects matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1"
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
         >
           This hackathon was not as successful as the other two, but it was still a great experience. We spent at least the first 12 hours of the 24-hour hackathon bouncing between a bunch of different ideas. We ended up building a clever rejection hotline called Denial Dial using Twilio's APIs. It connected two people who were given the fake phone number we set up, and had them communicate for awhile before breaking the news to them. It also had some cool side features like an automated message that played if anyone called the number. We did not win anything with the project, but was still fun experimenting with some new technologies! View it on
            
@@ -2159,7 +2015,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-118"
+          className="RevolutionUC8Card-logo-95"
           src={
             Object {
               "process": [Function],
@@ -2167,46 +2023,6 @@ exports[`Projects matches snapshot 1`] = `
           }
           title="CongoAI logo"
         />
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="http://revolutionuc.com/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
       </div>
     </div>
   </div>
@@ -2234,7 +2050,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="GrizzHacks 3 logo"
-        className="MuiCardMedia-root Grizzhacks3Card-media-119"
+        className="MuiCardMedia-root Grizzhacks3Card-media-96"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
@@ -2246,7 +2062,7 @@ exports[`Projects matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1"
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
         >
           This was the first hackathon I ever competed in. We built an online store to buy and sell pre-trained machine learning models, using Vue.js and MongoDB. While we did not completely finish, the idea was to be able to test out the machine learning models first in the store before purchasing from the person that made it. Most of the credit on this project goes to my team. We won 
           <i>
@@ -2277,10 +2093,9 @@ exports[`Projects matches snapshot 1`] = `
             Github
           </a>
         </p>
-        <br />
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-120"
+          className="Grizzhacks3Card-logo-97"
           src={
             Object {
               "process": [Function],
@@ -2288,46 +2103,6 @@ exports[`Projects matches snapshot 1`] = `
           }
           title="CongoAI logo"
         />
-      </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="http://grizzhacks.com/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
       </div>
     </div>
   </div>
@@ -2363,7 +2138,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-121"
+          className="SpotlightCard-screenshot-98"
           src={
             Object {
               "process": [Function],
@@ -2373,7 +2148,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-121"
+          className="SpotlightCard-screenshot-98"
           src={
             Object {
               "process": [Function],
@@ -2408,7 +2183,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="Gimble A Cappella - 2019"
-        className="MuiCardMedia-root DoggieDoodlesCard-media-122"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-99"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
@@ -2447,50 +2222,10 @@ exports[`Projects matches snapshot 1`] = `
           and you can purchase a custom mug, laptop sticker, phone case, and more. I might not be writing software for this business, but it is still lots of fun!
         </p>
       </div>
-      <div
-        className="MuiCardActions-root MuiCardActions-spacing"
-      >
-        <a
-          aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://dopedoggiedoodles.wixsite.com/home"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-      </div>
     </div>
   </div>
   <div
-    className="InteractionCard-root-123"
+    className="InteractionCard-root-100"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -2500,10 +2235,10 @@ exports[`Projects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-124"
+          className="LikeButton-root-101"
         >
           <div
-            className="LikeButton-likeButtonWrapper-125"
+            className="LikeButton-likeButtonWrapper-102"
           >
             <svg
               aria-describedby={null}
@@ -2525,10 +2260,10 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-126 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-103 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-127 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-104 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

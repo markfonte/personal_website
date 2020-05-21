@@ -1,6 +1,6 @@
 import React from 'react';
 import clippLogo
-  from '../static/images/logos/clipp_logo.webp';
+  from '../static/images/logos/clipp_logo.svg';
 import clippWireframeScreenshotOne
   from '../static/images/screenshots/clipp_wireframe_screenshot_1.webp';
 import clippWireframeScreenshotTwo

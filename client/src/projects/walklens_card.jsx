@@ -5,19 +5,13 @@ import walklensScreenshotTwo
   from '../static/images/screenshots/walklens_screenshot_2.webp';
 import walklensScreenshotThree
   from '../static/images/screenshots/walklens_screenshot_3.webp';
-import WebIcon
-  from '@material-ui/icons/PlayCircleFilledSharp';
 import walklensLogo
-  from '../static/images/logos/walk_lens_logo_cropped.webp';
-import walklensLogoFallback
-  from '../static/images/logos/walk_lens_logo_cropped.png';
+  from '../static/images/logos/walklens_logo.svg';
 import {
   Typography,
   Card,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   withStyles,
   Link,
 } from '@material-ui/core';
@@ -36,7 +30,6 @@ const styles = {
   logo: {
     maxHeight: '200px',
     maxWidth: '50%',
-    marginBottom: '8px',
   },
 };
 
@@ -60,16 +53,13 @@ class WalklensCard extends React.Component {
             subheader="Android application"
           />
           <CardContent>
-            <picture>
-              <source srcSet={walklensLogo} type="image/webp"/>
-              <source srcSet={walklensLogoFallback} type="image/png"/>
-              <img
-                srcSet={[walklensLogo, walklensLogoFallback]}
-                className={classes.logo}
-                title="WalkLens logo"
-                alt="WalkLens logo"
-              />
-            </picture>
+            {/* TODO: move to CardMedia */}
+            <img
+              src={walklensLogo}
+              className={classes.logo}
+              title="WalkLens logo"
+              alt="WalkLens logo"
+            />
             <Typography variant="body1">
               This project was built in my
               {' '}
@@ -155,11 +145,6 @@ class WalklensCard extends React.Component {
               alt="WalkLens screenshot 3"
             />
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to Google Play Store listing" href={walklensGooglePlayLink}>
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );

@@ -1,17 +1,14 @@
 import React from 'react';
-import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
   Card,
   CardMedia,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   Link,
   withStyles,
 } from '@material-ui/core';
-import congoaiLogo from '../static/images/logos/congoai_logo.webp';
+import congoaiLogo from '../static/images/logos/congoai_logo.svg';
 import PropTypes from 'prop-types';
 
 const styles = {
@@ -28,7 +25,7 @@ const styles = {
 class Grizzhacks3Card extends React.Component {
   render() {
     const {classes} = this.props;
-    const grizzhacks3Link = `http://grizzhacks.com/`;
+    // const grizzhacks3Link = `http://grizzhacks.com/`;
     const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
     return (
@@ -45,7 +42,7 @@ class Grizzhacks3Card extends React.Component {
             alt="GrizzHacks 3 logo"
           />
           <CardContent>
-            <Typography variant="body1">
+            <Typography variant="body1" paragraph>
               This was the first hackathon I ever competed in. We built an online
               store to buy and sell pre-trained machine learning models, using Vue.js and MongoDB.
               While we did not completely finish, the idea was to be able to test out
@@ -65,7 +62,6 @@ class Grizzhacks3Card extends React.Component {
               {' '}
               <Link color="secondary" href={grizzhacks3GithubLink}>Github</Link>
             </Typography>
-            <br />
             <img
               src={congoaiLogo}
               className={classes.logo}
@@ -73,11 +69,6 @@ class Grizzhacks3Card extends React.Component {
               alt="CongoAI logo"
             />
           </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to website" href={grizzhacks3Link}>
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );

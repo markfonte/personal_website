@@ -1,13 +1,10 @@
 import React from 'react';
-import WebIcon from '@material-ui/icons/Web';
 import {
   Typography,
   Card,
   CardMedia,
-  CardActions,
   CardContent,
   CardHeader,
-  IconButton,
   Link,
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
@@ -23,7 +20,7 @@ const styles = {
 class DoggieDoodlesCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
+    // const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
     const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
     const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
 
@@ -56,14 +53,6 @@ class DoggieDoodlesCard extends React.Component {
               for this business, but it is still lots of fun!
             </Typography>
           </CardContent>
-          <CardActions>
-            <IconButton
-              aria-label="Go to website"
-              href={doggieDoodlesWebsiteLink}
-            >
-              <WebIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );
