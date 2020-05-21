@@ -15,7 +15,7 @@ const styles = {
     marginTop: '-1px',
     padding: '0',
     textAlign: 'center',
-    width: '64px',
+    width: '10%',
   },
 };
 

@@ -90,41 +90,54 @@ exports[`Contact matches snapshot 1`] = `
   >
     My resume is available upon request
   </span>
-  <div>
-    <div
-      className="LI-profile-badge"
-      data-locale="en_US"
-      data-size="large"
-      data-theme="dark"
-      data-type="horizontal"
-      data-vanity="mark-fonte"
-      data-version="v1"
-    >
-      <a
-        className="LI-simple-link"
-        href="https://www.linkedin.com/in/mark-fonte?trk=profile-badge"
-      >
-        Mark Fonte on LinkedIn
-      </a>
-    </div>
-  </div>
   <div
-    className="Contact-paragraph-4"
+    className="LI-profile-badge"
+    data-locale="en_US"
+    data-size="large"
+    data-theme="dark"
+    data-type="horizontal"
+    data-vanity="mark-fonte"
+    data-version="v1"
   >
-    <img
-      alt="Gimble by the fountain"
-      src={
+    <a
+      className="LI-simple-link"
+      href="https://www.linkedin.com/in/mark-fonte?trk=profile-badge"
+    >
+      Mark Fonte on LinkedIn (reload to show)
+    </a>
+  </div>
+  <picture>
+    <source
+      srcSet={
         Object {
           "process": [Function],
         }
       }
-      style={
+      type="image/webp"
+    />
+    <source
+      srcSet={
         Object {
-          "maxHeight": "500px",
-          "maxWidth": "100%",
+          "process": [Function],
         }
       }
+      type="image/jpg"
     />
-  </div>
+    <img
+      alt="Gimble by the fountain"
+      className="Contact-contactImage-6"
+      srcSet={
+        Array [
+          Object {
+            "process": [Function],
+          },
+          Object {
+            "process": [Function],
+          },
+        ]
+      }
+      title="Gimble by the fountain"
+    />
+  </picture>
 </div>
 `;

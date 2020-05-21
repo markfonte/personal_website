@@ -1,7 +1,8 @@
 import React from 'react';
 import {Typography, Button, withStyles} from '@material-ui/core';
 import PropTypes from 'prop-types';
-import markFeed8 from '../static/images/photos/mark_feed_8.webp';
+import gimbleCoverPhoto from '../static/images/photos/gimble_cover_photo.webp';
+import gimbleCoverPhotoFallback from '../static/images/photos/gimble_cover_photo.jpg';
 import MetaTags from 'react-meta-tags';
 
 const styles = {
@@ -75,16 +76,22 @@ class Contact extends React.Component {
         <Typography className={classes.paragraph} variant="caption">
           My resume is available upon request
         </Typography>
-        <div>
-          <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
-            data-type="horizontal" data-theme="dark" data-vanity="mark-fonte">
-            <a className="LI-simple-link" href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
-                Mark Fonte on LinkedIn
-            </a></div>
+        <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
+          data-type="horizontal" data-theme="dark" data-vanity="mark-fonte">
+          <a className="LI-simple-link" href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
+                Mark Fonte on LinkedIn (reload to show)
+          </a>
         </div>
-        <div className={classes.paragraph}>
-          <img style={styles.contactImage} src={markFeed8} alt="Gimble by the fountain"/>
-        </div>
+        <picture>
+          <source srcSet={gimbleCoverPhoto} type="image/webp"/>
+          <source srcSet={gimbleCoverPhotoFallback} type="image/jpg"/>
+          <img
+            srcSet={[gimbleCoverPhoto, gimbleCoverPhotoFallback]}
+            className={classes.contactImage}
+            title="Gimble by the fountain"
+            alt="Gimble by the fountain"
+          />
+        </picture>
       </div>
     );
   }

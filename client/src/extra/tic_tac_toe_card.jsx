@@ -12,16 +12,21 @@ import {
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 
-const styles = {};
+const styles = {
+  cardContent: {
+    padding: '0px',
+  },
+};
 
 class TicTacToeCard extends React.Component {
   render() {
+    const {classes} = this.props;
     const reactTutorialLink = `https://reactjs.org/tutorial/tutorial.html#overview`;
 
     return (
       <Card raised={true} className="card">
-        <CardHeader title="Tic Tac Toe" subheader="because why not?" />
-        <CardContent>
+        <CardHeader title="Tic Tac Toe" subheader="just for fun!" />
+        <CardContent className={classes.cardContent}>
           <Typography variant="subtitle1" />
           <TicTacToeGame />
         </CardContent>

@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
-import profilePicture from './static/images/photos/mark_circle.webp';
+import profilePicture
+  from './static/images/photos/mark_circle.webp';
+import profilePictureFallback
+  from './static/images/photos/mark_circle.png';
 import Projects from './projects/projects.jsx';
 import Extra from './extra/extra.jsx';
 import Contact from './contact/contact.jsx';
@@ -194,7 +197,16 @@ export class App extends React.Component {
             /> */}
           </Tooltip>
           <Router>
-            <img src={profilePicture} className={classes.profileLogo} alt="headshot" />
+            <picture>
+              <source srcSet={profilePicture} type="image/webp"/>
+              <source srcSet={profilePictureFallback} type="image/png"/>
+              <img
+                srcSet={[profilePicture, profilePictureFallback]}
+                className={classes.profileLogo}
+                title="headshot"
+                alt="headshot"
+              />
+            </picture>
             <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
             <nav className={classes.primaryNav}>
               <List className={classes.AppList}>

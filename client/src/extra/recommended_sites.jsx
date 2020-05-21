@@ -10,12 +10,33 @@ import {
   Button,
   Link,
   Typography,
+  Tooltip,
 } from '@material-ui/core';
-import sarahKoopScreenshot from '../static/images/screenshots/sarah_website_screenshot.webp';
-import salvadorVillalonScreenshot from '../static/images/screenshots/sal_website_screenshot.webp';
-import jacobFedrigonScreenshot from '../static/images/screenshots/jacob_website_screenshot.webp';
-import seanBarberScreenshot from '../static/images/screenshots/sean_website_screenshot.webp';
-import nathanJohnsonScreenshot from '../static/images/screenshots/nathan_website_screenshot.webp';
+import sarahKoopScreenshot
+  from '../static/images/screenshots/sarah_website_screenshot.webp';
+import sarahKoopScreenshotFallback
+  from '../static/images/screenshots/sarah_website_screenshot.png';
+
+import salvadorVillalonScreenshot
+  from '../static/images/screenshots/sal_website_screenshot.webp';
+import salvadorVillalonScreenshotFallback
+  from '../static/images/screenshots/sal_website_screenshot.png';
+
+import jacobFedrigonScreenshot
+  from '../static/images/screenshots/jacob_website_screenshot.webp';
+import jacobFedrigonScreenshotFallback
+  from '../static/images/screenshots/jacob_website_screenshot.png';
+
+import seanBarberScreenshot
+  from '../static/images/screenshots/sean_website_screenshot.webp';
+import seanBarberScreenshotFallback
+  from '../static/images/screenshots/sean_website_screenshot.png';
+
+import nathanJohnsonScreenshot
+  from '../static/images/screenshots/nathan_website_screenshot.webp';
+import nathanJohnsonScreenshotFallback
+  from '../static/images/screenshots/nathan_website_screenshot.png';
+
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 
@@ -40,7 +61,6 @@ class RecommendedSitesTable extends React.Component {
   render() {
     const {classes} = this.props;
     const jacobFedrigonLink = `http://www-personal.umich.edu/~jacobfed/`;
-    // const johnFonteLink = `http://johnfonte.com/`;
     const nathanJohnsonLink = `https://nathanieljohnson.me/`;
     const seanBarberLink = `https://seanbarber.me/`;
     const salvadorVillalonLink = `https://salvillalon45.github.io/`;
@@ -52,34 +72,35 @@ class RecommendedSitesTable extends React.Component {
         title: `Go To Jacob's Website`,
         link: jacobFedrigonLink,
         image: jacobFedrigonScreenshot,
+        fallbackImage: jacobFedrigonScreenshotFallback,
       },
-      //   {
-      //     title: `John Fonte's Website`,
-      //     link: johnFonteLink,
-      //   },
       {
         name: 'Nathan Johnson',
         title: `Go To Nathan's Website`,
         link: nathanJohnsonLink,
         image: nathanJohnsonScreenshot,
+        fallbackImage: nathanJohnsonScreenshotFallback,
       },
       {
         name: 'Salvador Villalon',
         title: `Go To Sal's Website`,
         link: salvadorVillalonLink,
         image: salvadorVillalonScreenshot,
+        fallbackImage: salvadorVillalonScreenshotFallback,
       },
       {
         name: 'Sarah Koop',
         title: `Go To Sarah's Website`,
         link: sarahKoopLink,
         image: sarahKoopScreenshot,
+        fallbackImage: sarahKoopScreenshotFallback,
       },
       {
         name: 'Sean Barber',
         title: `Go To Sean's Website`,
         link: seanBarberLink,
         image: seanBarberScreenshot,
+        fallbackImage: seanBarberScreenshotFallback,
       },
     ];
     return (
@@ -96,22 +117,39 @@ class RecommendedSitesTable extends React.Component {
                   {rows.map((row) => (
                     <TableRow key={row.title}>
                       <TableCell component="th" scope="row" align="center">
-                        <Typography className={classes.nameText} variant="h5">
+                        <Typography
+                          className={classes.nameText}
+                          variant="h5"
+                          paragraph>
                           {row.name}
                         </Typography>
                         <div>
                           <Link href={row.link}>
-                            <img src={row.image} style={styles.websiteScreenshot} alt={row.Name + '\'s website'} />
+                            <picture>
+                              <source srcSet={row.image} type="image/webp"/>
+                              <source srcSet={row.fallbackImage} type="image/png"/>
+                              <Tooltip
+                                placement="right"
+                                title={row.title} >
+                                <img
+                                  srcSet={[row.image, row.fallbackImage]}
+                                  className={classes.websiteScreenshot}
+                                  alt="row.name + '\'s website'"
+                                />
+                              </Tooltip>
+                            </picture>
                           </Link>
                         </div>
-                        <Button
-                          className={classes.websiteButton}
-                          variant="outlined"
-                          color="secondary"
-                          href={row.link}
-                        >
-                          {row.title}
-                        </Button>
+                        <Tooltip title={row.title} >
+                          <Button
+                            className={classes.websiteButton}
+                            variant="outlined"
+                            color="secondary"
+                            href={row.link}
+                          >
+                            {row.title}
+                          </Button>
+                        </Tooltip>
                       </TableCell>
                     </TableRow>
                   ))}

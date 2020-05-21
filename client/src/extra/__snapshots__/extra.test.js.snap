@@ -488,26 +488,26 @@ exports[`Extra matches snapshot 1`] = `
         <span
           className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
         >
-          because why not?
+          just for fun!
         </span>
       </div>
     </div>
     <div
-      className="MuiCardContent-root"
+      className="MuiCardContent-root TicTacToeCard-cardContent-96"
     >
       <h6
         className="MuiTypography-root MuiTypography-subtitle1"
       />
       <div
-        className="MuiGrid-root TicTacToeGame-game-99"
+        className="MuiGrid-root TicTacToeGame-game-100"
       >
         <div
-          className="MuiGrid-root TicTacToeGame-gameBoard-98"
+          className="MuiGrid-root TicTacToeGame-gameBoard-99"
         >
           <div>
             <div>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -536,7 +536,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -565,96 +565,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-            </div>
-            <div>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -685,7 +596,7 @@ exports[`Extra matches snapshot 1`] = `
             </div>
             <div>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -714,7 +625,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -743,7 +654,96 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-204"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -775,7 +775,7 @@ exports[`Extra matches snapshot 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root TicTacToeGame-gameInfo-100"
+          className="MuiGrid-root TicTacToeGame-gameInfo-101"
         >
           <div>
             <h6
@@ -856,7 +856,7 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="RecommendedSitesTable-recommendedSitesWrapper-234"
+          className="RecommendedSitesTable-recommendedSitesWrapper-235"
         >
           <table
             className="MuiTable-root"
@@ -876,11 +876,11 @@ exports[`Extra matches snapshot 1`] = `
                   role="cell"
                   scope="row"
                 >
-                  <h5
-                    className="MuiTypography-root RecommendedSitesTable-nameText-237 MuiTypography-h5"
+                  <p
+                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Jacob Fedrigon
-                  </h5>
+                  </p>
                   <div>
                     <a
                       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
@@ -888,25 +888,52 @@ exports[`Extra matches snapshot 1`] = `
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
-                      <img
-                        alt="undefined's website"
-                        src={
-                          Object {
-                            "process": [Function],
+                      <picture>
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                        style={
-                          Object {
-                            "maxWidth": "400px",
-                            "width": "100%",
+                          type="image/webp"
+                        />
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                      />
+                          type="image/png"
+                        />
+                        <img
+                          alt="row.name + '\\\\'s website'"
+                          aria-describedby={null}
+                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseOver={[Function]}
+                          onTouchEnd={[Function]}
+                          onTouchStart={[Function]}
+                          srcSet={
+                            Array [
+                              Object {
+                                "process": [Function],
+                              },
+                              Object {
+                                "process": [Function],
+                              },
+                            ]
+                          }
+                          title="Go To Jacob's Website"
+                        />
+                      </picture>
                     </a>
                   </div>
                   <a
+                    aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-236 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
                     href="http://www-personal.umich.edu/~jacobfed/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -915,11 +942,13 @@ exports[`Extra matches snapshot 1`] = `
                     onKeyUp={[Function]}
                     onMouseDown={[Function]}
                     onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
                     onMouseUp={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
                     tabIndex={0}
+                    title="Go To Jacob's Website"
                   >
                     <span
                       className="MuiButton-label"
@@ -942,11 +971,11 @@ exports[`Extra matches snapshot 1`] = `
                   role="cell"
                   scope="row"
                 >
-                  <h5
-                    className="MuiTypography-root RecommendedSitesTable-nameText-237 MuiTypography-h5"
+                  <p
+                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Nathan Johnson
-                  </h5>
+                  </p>
                   <div>
                     <a
                       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
@@ -954,25 +983,52 @@ exports[`Extra matches snapshot 1`] = `
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
-                      <img
-                        alt="undefined's website"
-                        src={
-                          Object {
-                            "process": [Function],
+                      <picture>
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                        style={
-                          Object {
-                            "maxWidth": "400px",
-                            "width": "100%",
+                          type="image/webp"
+                        />
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                      />
+                          type="image/png"
+                        />
+                        <img
+                          alt="row.name + '\\\\'s website'"
+                          aria-describedby={null}
+                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseOver={[Function]}
+                          onTouchEnd={[Function]}
+                          onTouchStart={[Function]}
+                          srcSet={
+                            Array [
+                              Object {
+                                "process": [Function],
+                              },
+                              Object {
+                                "process": [Function],
+                              },
+                            ]
+                          }
+                          title="Go To Nathan's Website"
+                        />
+                      </picture>
                     </a>
                   </div>
                   <a
+                    aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-236 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
                     href="https://nathanieljohnson.me/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -981,11 +1037,13 @@ exports[`Extra matches snapshot 1`] = `
                     onKeyUp={[Function]}
                     onMouseDown={[Function]}
                     onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
                     onMouseUp={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
                     tabIndex={0}
+                    title="Go To Nathan's Website"
                   >
                     <span
                       className="MuiButton-label"
@@ -1008,11 +1066,11 @@ exports[`Extra matches snapshot 1`] = `
                   role="cell"
                   scope="row"
                 >
-                  <h5
-                    className="MuiTypography-root RecommendedSitesTable-nameText-237 MuiTypography-h5"
+                  <p
+                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Salvador Villalon
-                  </h5>
+                  </p>
                   <div>
                     <a
                       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
@@ -1020,25 +1078,52 @@ exports[`Extra matches snapshot 1`] = `
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
-                      <img
-                        alt="undefined's website"
-                        src={
-                          Object {
-                            "process": [Function],
+                      <picture>
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                        style={
-                          Object {
-                            "maxWidth": "400px",
-                            "width": "100%",
+                          type="image/webp"
+                        />
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                      />
+                          type="image/png"
+                        />
+                        <img
+                          alt="row.name + '\\\\'s website'"
+                          aria-describedby={null}
+                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseOver={[Function]}
+                          onTouchEnd={[Function]}
+                          onTouchStart={[Function]}
+                          srcSet={
+                            Array [
+                              Object {
+                                "process": [Function],
+                              },
+                              Object {
+                                "process": [Function],
+                              },
+                            ]
+                          }
+                          title="Go To Sal's Website"
+                        />
+                      </picture>
                     </a>
                   </div>
                   <a
+                    aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-236 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
                     href="https://salvillalon45.github.io/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -1047,11 +1132,13 @@ exports[`Extra matches snapshot 1`] = `
                     onKeyUp={[Function]}
                     onMouseDown={[Function]}
                     onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
                     onMouseUp={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
                     tabIndex={0}
+                    title="Go To Sal's Website"
                   >
                     <span
                       className="MuiButton-label"
@@ -1074,11 +1161,11 @@ exports[`Extra matches snapshot 1`] = `
                   role="cell"
                   scope="row"
                 >
-                  <h5
-                    className="MuiTypography-root RecommendedSitesTable-nameText-237 MuiTypography-h5"
+                  <p
+                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Sarah Koop
-                  </h5>
+                  </p>
                   <div>
                     <a
                       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
@@ -1086,25 +1173,52 @@ exports[`Extra matches snapshot 1`] = `
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
-                      <img
-                        alt="undefined's website"
-                        src={
-                          Object {
-                            "process": [Function],
+                      <picture>
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                        style={
-                          Object {
-                            "maxWidth": "400px",
-                            "width": "100%",
+                          type="image/webp"
+                        />
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                      />
+                          type="image/png"
+                        />
+                        <img
+                          alt="row.name + '\\\\'s website'"
+                          aria-describedby={null}
+                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseOver={[Function]}
+                          onTouchEnd={[Function]}
+                          onTouchStart={[Function]}
+                          srcSet={
+                            Array [
+                              Object {
+                                "process": [Function],
+                              },
+                              Object {
+                                "process": [Function],
+                              },
+                            ]
+                          }
+                          title="Go To Sarah's Website"
+                        />
+                      </picture>
                     </a>
                   </div>
                   <a
+                    aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-236 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
                     href="http://sarah-koop.com/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -1113,11 +1227,13 @@ exports[`Extra matches snapshot 1`] = `
                     onKeyUp={[Function]}
                     onMouseDown={[Function]}
                     onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
                     onMouseUp={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
                     tabIndex={0}
+                    title="Go To Sarah's Website"
                   >
                     <span
                       className="MuiButton-label"
@@ -1140,11 +1256,11 @@ exports[`Extra matches snapshot 1`] = `
                   role="cell"
                   scope="row"
                 >
-                  <h5
-                    className="MuiTypography-root RecommendedSitesTable-nameText-237 MuiTypography-h5"
+                  <p
+                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Sean Barber
-                  </h5>
+                  </p>
                   <div>
                     <a
                       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
@@ -1152,25 +1268,52 @@ exports[`Extra matches snapshot 1`] = `
                       onBlur={[Function]}
                       onFocus={[Function]}
                     >
-                      <img
-                        alt="undefined's website"
-                        src={
-                          Object {
-                            "process": [Function],
+                      <picture>
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                        style={
-                          Object {
-                            "maxWidth": "400px",
-                            "width": "100%",
+                          type="image/webp"
+                        />
+                        <source
+                          srcSet={
+                            Object {
+                              "process": [Function],
+                            }
                           }
-                        }
-                      />
+                          type="image/png"
+                        />
+                        <img
+                          alt="row.name + '\\\\'s website'"
+                          aria-describedby={null}
+                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseOver={[Function]}
+                          onTouchEnd={[Function]}
+                          onTouchStart={[Function]}
+                          srcSet={
+                            Array [
+                              Object {
+                                "process": [Function],
+                              },
+                              Object {
+                                "process": [Function],
+                              },
+                            ]
+                          }
+                          title="Go To Sean's Website"
+                        />
+                      </picture>
                     </a>
                   </div>
                   <a
+                    aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-236 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
                     href="https://seanbarber.me/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -1179,11 +1322,13 @@ exports[`Extra matches snapshot 1`] = `
                     onKeyUp={[Function]}
                     onMouseDown={[Function]}
                     onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
                     onMouseUp={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
                     tabIndex={0}
+                    title="Go To Sean's Website"
                   >
                     <span
                       className="MuiButton-label"
@@ -1203,7 +1348,7 @@ exports[`Extra matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-264"
+    className="InteractionCard-root-276"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1212,22 +1357,22 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-265 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-277 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
-            className="PrideSwitch-prideSwitchContent-266"
+            className="PrideSwitch-prideSwitchContent-278"
           >
             <h5
-              className="MuiTypography-root PrideSwitch-prideTitle-267 MuiTypography-h5"
+              className="MuiTypography-root PrideSwitch-prideTitle-279 MuiTypography-h5"
             >
               Pride
             </h5>
             <span
-              className="MuiSwitch-root PrideSwitch-prideSwitch-268"
+              className="MuiSwitch-root PrideSwitch-prideSwitch-280"
             >
               <span
                 aria-disabled={false}
-                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-281 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-293 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onDragLeave={[Function]}
@@ -1247,7 +1392,7 @@ exports[`Extra matches snapshot 1`] = `
                 >
                   <input
                     checked={false}
-                    className="PrivateSwitchBase-input-284 MuiSwitch-input"
+                    className="PrivateSwitchBase-input-296 MuiSwitch-input"
                     onChange={[Function]}
                     type="checkbox"
                   />
@@ -1280,10 +1425,10 @@ exports[`Extra matches snapshot 1`] = `
           </a>
         </div>
         <div
-          className="LikeButton-root-285"
+          className="LikeButton-root-297"
         >
           <div
-            className="LikeButton-likeButtonWrapper-286"
+            className="LikeButton-likeButtonWrapper-298"
           >
             <button
               aria-describedby={null}
@@ -1325,10 +1470,10 @@ exports[`Extra matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-287 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-299 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-288 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-300 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

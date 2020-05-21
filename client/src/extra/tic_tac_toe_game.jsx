@@ -28,6 +28,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
+    minWidth: '189px',
   },
   gameInfo: {
     margin: '24px',
