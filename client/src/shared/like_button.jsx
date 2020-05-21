@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import {Typography, Card, Tooltip} from '@material-ui/core';
+import {Typography, Card, Tooltip, IconButton} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 const fetch = require('node-fetch');
 
@@ -131,7 +131,9 @@ class LikeButton extends React.Component {
       <div className={classes.root}>
         <div className={classes.likeButtonWrapper}>
           <Tooltip title="Click to like page" arrow>
-            {icon}
+            <IconButton>
+              {icon}
+            </IconButton>
           </Tooltip>
           <Card className={classes.captionRoot}>
             <Typography

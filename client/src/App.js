@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import profilePicture from './static/images/photos/mark_circle.webp';
-import whiteSunIcon from './static/images/icons/sun_icon_white.svg';
-import blackSunIcon from './static/images/icons/sun_icon_black.svg';
 import Projects from './projects/projects.jsx';
 import Extra from './extra/extra.jsx';
 import Contact from './contact/contact.jsx';
@@ -13,7 +11,16 @@ import LinkStyle from '@material-ui/core/Link';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider, withStyles} from '@material-ui/styles';
-import {Typography, Button, CssBaseline, List, ListItem, Grid, Tooltip} from '@material-ui/core';
+import {WbSunny} from '@material-ui/icons';
+import {
+  Typography,
+  Button,
+  CssBaseline,
+  List,
+  ListItem,
+  Grid,
+  Tooltip,
+} from '@material-ui/core';
 import ScrollUpButton from 'react-scroll-up-button';
 
 const getCookie = require('./shared/util/cookies.js').getCookie;
@@ -74,11 +81,6 @@ const styles = {
   primaryNav: {
     textAlign: 'center',
   },
-  toggleThemeIcon: {
-    position: 'absolute',
-    left: '10%',
-    top: '16px',
-  },
   /* credit: https://travis-ci.org/account/preferences */
   headerRoot: {
     position: 'absolute',
@@ -118,7 +120,6 @@ export class App extends React.Component {
     super(props);
     this.state = {
       theme: darkTheme,
-      themeIcon: whiteSunIcon,
       proud: false,
       currentlySelected: -1,
     };
@@ -139,29 +140,25 @@ export class App extends React.Component {
       proud = true;
     }
     let initialTheme = darkTheme;
-    let initialThemeIcon = whiteSunIcon;
     if (getCookie('app_theme') === 'light_theme') {
       initialTheme = lightTheme;
-      initialThemeIcon = blackSunIcon;
     } else if (getCookie('app_theme') === 'dark_theme') {
       initialTheme = darkTheme;
-      initialThemeIcon = whiteSunIcon;
     } else {
       setCookie('app_theme', 'dark_theme', 1000);
     }
     this.setState({
       theme: initialTheme,
-      themeIcon: initialThemeIcon,
       proud: proud,
     });
   }
 
   toggleTheme() {
     if (this.state.theme === lightTheme) {
-      this.setState({theme: darkTheme, themeIcon: whiteSunIcon});
+      this.setState({theme: darkTheme});
       setCookie('app_theme', 'dark_theme', 1000);
     } else {
-      this.setState({theme: lightTheme, themeIcon: blackSunIcon});
+      this.setState({theme: lightTheme});
       setCookie('app_theme', 'light_theme', 1000);
     }
   }
@@ -188,12 +185,14 @@ export class App extends React.Component {
         <Grid className={classes.root}>
           {rainbowHeader}
           <Tooltip title="Toggle light/dark mode" arrow>
-            <img
+            <WbSunny
+              onClick={this.toggleTheme}/>
+            {/* <img
               className={classes.toggleThemeIcon}
               src={this.state.themeIcon}
               onClick={this.toggleTheme}
               alt="Toggle light/dark mode"
-            />
+            /> */}
           </Tooltip>
           <Router>
             <img src={profilePicture} className={classes.profileLogo} alt="headshot" />
