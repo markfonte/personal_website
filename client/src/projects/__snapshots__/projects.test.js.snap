@@ -1075,7 +1075,7 @@ exports[`Projects matches snapshot 1`] = `
           <span
             className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           >
-            Testing Team Lead[object Object]                                               hell
+            Testing Team Lead
           </span>
         </div>
       </div>

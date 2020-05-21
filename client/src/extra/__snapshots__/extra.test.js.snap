@@ -540,6 +540,7 @@ exports[`Extra matches snapshot 1`] = `
           <div>
             <div>
               <button
+                aria-describedby={null}
                 className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
@@ -550,11 +551,13 @@ exports[`Extra matches snapshot 1`] = `
                 onKeyUp={[Function]}
                 onMouseDown={[Function]}
                 onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 tabIndex={0}
+                title="Play at this square!"
                 type="button"
               >
                 <span
@@ -569,6 +572,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
+                aria-describedby={null}
                 className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
@@ -579,11 +583,13 @@ exports[`Extra matches snapshot 1`] = `
                 onKeyUp={[Function]}
                 onMouseDown={[Function]}
                 onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 tabIndex={0}
+                title="Play at this square!"
                 type="button"
               >
                 <span
@@ -598,6 +604,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
+                aria-describedby={null}
                 className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
@@ -608,100 +615,13 @@ exports[`Extra matches snapshot 1`] = `
                 onKeyUp={[Function]}
                 onMouseDown={[Function]}
                 onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-            </div>
-            <div>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
+                title="Play at this square!"
                 type="button"
               >
                 <span
@@ -718,6 +638,7 @@ exports[`Extra matches snapshot 1`] = `
             </div>
             <div>
               <button
+                aria-describedby={null}
                 className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
@@ -728,11 +649,13 @@ exports[`Extra matches snapshot 1`] = `
                 onKeyUp={[Function]}
                 onMouseDown={[Function]}
                 onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 tabIndex={0}
+                title="Play at this square!"
                 type="button"
               >
                 <span
@@ -747,6 +670,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
+                aria-describedby={null}
                 className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
@@ -757,11 +681,13 @@ exports[`Extra matches snapshot 1`] = `
                 onKeyUp={[Function]}
                 onMouseDown={[Function]}
                 onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 tabIndex={0}
+                title="Play at this square!"
                 type="button"
               >
                 <span
@@ -776,6 +702,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
+                aria-describedby={null}
                 className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
@@ -786,11 +713,111 @@ exports[`Extra matches snapshot 1`] = `
                 onKeyUp={[Function]}
                 onMouseDown={[Function]}
                 onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 tabIndex={0}
+                title="Play at this square!"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div>
+              <button
+                aria-describedby={null}
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                title="Play at this square!"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-describedby={null}
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                title="Play at this square!"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-describedby={null}
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                title="Play at this square!"
                 type="button"
               >
                 <span
@@ -826,6 +853,7 @@ exports[`Extra matches snapshot 1`] = `
       className="MuiCardActions-root MuiCardActions-spacing"
     >
       <a
+        aria-describedby={null}
         aria-disabled={false}
         aria-label="credit: reactjs tutorial"
         className="MuiButtonBase-root MuiIconButton-root"
@@ -837,11 +865,13 @@ exports[`Extra matches snapshot 1`] = `
         onKeyUp={[Function]}
         onMouseDown={[Function]}
         onMouseLeave={[Function]}
+        onMouseOver={[Function]}
         onMouseUp={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
         tabIndex={0}
+        title="Go to React Tutorial (where I got most of this code)"
       >
         <span
           className="MuiIconButton-label"
@@ -1404,6 +1434,7 @@ exports[`Extra matches snapshot 1`] = `
               className="MuiSwitch-root PrideSwitch-prideSwitch-281"
             >
               <span
+                aria-describedby={null}
                 aria-disabled={false}
                 className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-294 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                 onBlur={[Function]}
@@ -1414,11 +1445,13 @@ exports[`Extra matches snapshot 1`] = `
                 onKeyUp={[Function]}
                 onMouseDown={[Function]}
                 onMouseLeave={[Function]}
+                onMouseOver={[Function]}
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
                 tabIndex={null}
+                title="Click to add a rainbow header and footer to the page"
               >
                 <span
                   className="MuiIconButton-label"
@@ -1445,14 +1478,20 @@ exports[`Extra matches snapshot 1`] = `
           <p
             className="MuiTypography-root MuiTypography-body1"
           >
-            I deeply care about diversity and inclusivity. Show your pride or your solidarity.
+            I deeply care about diversity and inclusivity. Click the switch to show your pride or your solidarity.
           </p>
           <br />
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-caption MuiTypography-colorTextSecondary"
             href="https://travis-ci.org/account/preferences"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="Go to Travis CI (where I got this idea)"
           >
             credit: Travis CI
           </a>

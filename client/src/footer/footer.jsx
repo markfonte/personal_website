@@ -84,9 +84,13 @@ const DisplayError = (props) => {
     <Typography variant="h6" className={props.classes.errorMessageRoot} >
       Oops! Looks like my backend server is down. Please
       {' '}
-      <Link color="secondary" href="https://mark.fonte.com/contact">
+      <Tooltip
+        arrow
+        title="Go to Contact page">
+        <Link color="secondary" href="https://mark.fonte.com/contact">
         contact me
-      </Link>
+        </Link>
+      </Tooltip>
       {' '}
       so I can fix the issue! Thanks!
     </Typography>
@@ -219,50 +223,75 @@ class Footer extends React.Component {
            <Typography variant="caption" color="textSecondary" >
               Last updated
              {' '}
-             <Link color="secondary" href={commitHistoryLink}>
-               <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
-                 {updatedDate}
-               </Moment>
-             </Link>
+             <Tooltip
+               arrow
+               placement="right"
+               title="Go to most recent commit on GitHub">
+               <Link color="secondary" href={commitHistoryLink}>
+                 <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
+                   {updatedDate}
+                 </Moment>
+               </Link>
+             </Tooltip>
            </Typography>
          </div>
          <div style={{margin: 4}}>
-           <Link
-             variant="caption"
-             color="textSecondary"
-             href={websiteGithubLink}
-           >
+           <Tooltip
+             arrow
+             placement="right"
+             title="Go to source code on GitHub">
+             <Link
+               variant="caption"
+               color="textSecondary"
+               href={websiteGithubLink}
+             >
               view source on github
-           </Link>
+             </Link>
+           </Tooltip>
          </div>
          <div style={{margin: 4}}>
-           <Link
-             variant="caption"
-             color="textSecondary"
-             href={travisCILink}
-           >
+           <Tooltip
+             arrow
+             placement="right"
+             title="Go to build history on Travis CI">
+             <Link
+               variant="caption"
+               color="textSecondary"
+               href={travisCILink}
+             >
                  view build history
-           </Link>
+             </Link>
+           </Tooltip>
          </div>
          <div style={{margin: 4}}>
-           <Link
-             variant="caption"
-             color="textSecondary"
-             href={suggestEditLink}
-           >
+           <Tooltip
+             arrow
+             placement="right"
+             title="Email me with website edit suggestions!">
+             <Link
+               variant="caption"
+               color="textSecondary"
+               href={suggestEditLink}
+             >
               suggest an edit
-           </Link>
+             </Link>
+           </Tooltip>
          </div>
          {/* go blue */}
          <div>
-           <img
-             src={universityOfMichiganLogoSmall}
-             width="20"
-             height="20"
-             className={classes.logoDefault}
-             title="University of Michigan logo small"
-             alt="University of Michigan logo small"
-           />
+           <Tooltip
+             arrow
+             placement="right"
+             title="Go blue!!">
+             <img
+               src={universityOfMichiganLogoSmall}
+               width="25"
+               height="25"
+               className={classes.logoDefault}
+               title="University of Michigan logo small"
+               alt="University of Michigan logo small"
+             />
+           </Tooltip>
          </div>
        </div>
      </footer>

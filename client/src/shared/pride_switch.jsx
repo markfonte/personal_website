@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Typography, Switch, Link} from '@material-ui/core';
+import {Card, Typography, Switch, Link, Tooltip} from '@material-ui/core';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';
 
@@ -72,19 +72,28 @@ class PrideSwitch extends React.Component {
           <Typography className={classes.prideTitle} variant="h5">
             Pride
           </Typography>
-          <Switch checked={proud} onClick={this.handleChange} className={classes.prideSwitch} color="secondary"/>
+          <Tooltip
+            placement="top"
+            arrow
+            title="Click to add a rainbow header and footer to the page">
+            <Switch checked={proud} onClick={this.handleChange} className={classes.prideSwitch} color="secondary"/>
+          </Tooltip>
         </div>
         <Typography variant="body1">
-            I deeply care about diversity and inclusivity. Show your pride or your solidarity.
+            I deeply care about diversity and inclusivity. Click the switch to show your pride or your solidarity.
         </Typography>
         <br />
-        <Link
-          href={travisCILink}
-          variant="caption"
-          color="textSecondary"
-        >
+        <Tooltip
+          arrow
+          title="Go to Travis CI (where I got this idea)">
+          <Link
+            href={travisCILink}
+            variant="caption"
+            color="textSecondary"
+          >
             credit: Travis CI
-        </Link>
+          </Link>
+        </Tooltip>
       </Card>
     );
   }

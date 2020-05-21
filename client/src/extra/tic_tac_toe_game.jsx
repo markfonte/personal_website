@@ -1,6 +1,6 @@
 import React from 'react';
 import TicTacToeBoard from './tic_tac_toe_board';
-import {Typography, Button, List, ListItem, Grid} from '@material-ui/core';
+import {Typography, Button, List, ListItem, Grid, Tooltip} from '@material-ui/core';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';
 
@@ -106,9 +106,14 @@ class TicTacToeGame extends React.Component {
       const desc = move ? 'move #' + move : 'game start';
       return (
         <ListItem className={classes.moveListItem} key={move}>
-          <Button variant="outlined" onClick={() => this.jumpTo(move)}>
-            {desc}
-          </Button>
+          <Tooltip
+            placement="right"
+            arrow
+            title="Return to this move">
+            <Button variant="outlined" onClick={() => this.jumpTo(move)}>
+              {desc}
+            </Button>
+          </Tooltip>
         </ListItem>
       );
     });

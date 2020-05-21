@@ -8,6 +8,7 @@ import {
   CardContent,
   CardHeader,
   IconButton,
+  Tooltip,
 } from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
@@ -31,12 +32,16 @@ class TicTacToeCard extends React.Component {
           <TicTacToeGame />
         </CardContent>
         <CardActions>
-          <IconButton
-            aria-label="credit: reactjs tutorial"
-            href={reactTutorialLink}
-          >
-            <Description />
-          </IconButton>
+          <Tooltip
+            arrow
+            title="Go to React Tutorial (where I got most of this code)">
+            <IconButton
+              aria-label="credit: reactjs tutorial"
+              href={reactTutorialLink}
+            >
+              <Description />
+            </IconButton>
+          </Tooltip>
         </CardActions>
       </Card>
     );

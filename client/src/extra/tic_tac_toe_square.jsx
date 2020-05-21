@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Typography, Button} from '@material-ui/core';
+import {Typography, Button, Tooltip} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 
 const styles = {
@@ -24,11 +24,16 @@ class TicTacToeSquare extends React.Component {
     const {classes} = this.props;
 
     return (
-      <Button variant="outlined" className={classes.square} onClick={this.props.onClick}>
-        <Typography variant="h5">
-          {this.props.value}
-        </Typography>
-      </Button>
+      <Tooltip
+        arrow
+        title="Play at this square!"
+        placement="right">
+        <Button variant="outlined" className={classes.square} onClick={this.props.onClick}>
+          <Typography variant="h5">
+            {this.props.value}
+          </Typography>
+        </Button>
+      </Tooltip>
     );
   }
 }

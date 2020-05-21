@@ -61,7 +61,7 @@ class MISymptomsCard extends React.Component {
         <Card raised={true} className="card">
           <CardHeader
             title="MI Symptoms Project"
-            subheader={'Testing Team Lead'+ <br/> + '                                               hell' }
+            subheader={'Testing Team Lead'}
           />
           <CardContent>
             <Typography variant="body1" paragraph>

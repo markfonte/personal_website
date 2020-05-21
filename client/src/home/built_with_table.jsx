@@ -22,6 +22,7 @@ import {
   Card,
   CardContent,
   CardHeader,
+  Tooltip,
 } from '@material-ui/core';
 
 const styles = {
@@ -127,10 +128,12 @@ class BuiltWithTable extends React.Component {
                   {rows.map((row) => (
                     <TableRow key={row.title}>
                       <TableCell component="th" scope="row" align="left">
-                        <Link href={row.link}>
-                          <Typography variant="h6" color="textPrimary">
-                            {row.title}
-                          </Typography>
+                        <Link href={row.link} color="textPrimary">
+                          <Tooltip title={'Go to ' + row.title} placement="bottom-start">
+                            <Typography variant="h6" color="textPrimary">
+                              {row.title}
+                            </Typography>
+                          </Tooltip>
                         </Link>
                       </TableCell>
                       <TableCell align="center">

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BuiltWithTable from './built_with_table.jsx';
 import PhotoFeedCard from './photo_feed_card.jsx';
-import {Typography, Link, Snackbar, Fade} from '@material-ui/core';
+import {Typography, Link, Snackbar, Fade, Tooltip} from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
 import {withStyles} from '@material-ui/styles';
 import MetaTags from 'react-meta-tags';
@@ -81,52 +81,59 @@ class Home extends React.Component {
             <Link color="textPrimary"
               href="https://trello.com/c/dAlQUBgH/145-145-webp-images-not-rendering-in-ios">
                     Many images are not displaying on Apple devices at the moment.
-                    Stay tuned for a fix. Click here for updates!
+                    Stay tuned for a fix and click here for updates!
             </Link>
           </MuiAlert>
         </Snackbar>
         <Typography className={classes.title} variant="h6">
           Incoming
 
-          {' '}<Link color="textSecondary" href={sdeAmazonLink}>
-            <i>Software Development Engineer</i>
-          </Link>{' '}
+          {' '}<Tooltip arrow placement="top" title="Go to Amazon Software Jobs page">
+            <Link color="textSecondary" href={sdeAmazonLink}>
+              <i>Software Development Engineer</i>
+            </Link></Tooltip>{' '}
 
           at
 
-          {' '}<Link color="secondary" href={amazonLink} className={classes.amazon}>
-            <i>Amazon</i>
-          </Link>{' '}
+          {' '}<Tooltip arrow placement="top" title="Go to Amazon.com">
+            <Link color="secondary" href={amazonLink} className={classes.amazon}>
+              <i>Amazon</i>
+            </Link></Tooltip>{' '}
 
           ·
 
-          {' '}<Link color="textSecondary" href={compSciEnginUmichLink} className={classes.compSci}>
-            <i>Computer Science in Engineering</i>
-          </Link>{' '}
+          {' '}<Tooltip arrow placement="top" title="Go to U of M computer science page">
+            <Link color="textSecondary" href={compSciEnginUmichLink} className={classes.compSci}>
+              <i>Computer Science in Engineering</i>
+            </Link></Tooltip>{' '}
 
           degree from the
 
-          {' '}<Link href={umichLink} className={classes.michigan}>
-            <i>University of Michigan</i>
-          </Link>{' '}
+          {' '}<Tooltip arrow placement="bottom" title="Go to U of M website">
+            <Link href={umichLink} className={classes.michigan}>
+              <i>University of Michigan</i>
+            </Link></Tooltip>{' '}
 
           · Minor in
 
-          {' '}<Link color="textSecondary" href={entrepreneurshipLink} className={classes.entrepreneurship}>
-            <i>Entrepreneurship</i>
-          </Link>{' '}
+          {' '}<Tooltip arrow placement="bottom" title="Go to U of M Entrepreneurship page">
+            <Link color="textSecondary" href={entrepreneurshipLink} className={classes.entrepreneurship}>
+              <i>Entrepreneurship</i>
+            </Link></Tooltip>{' '}
 
           · Focus on
 
-          {' '}<Link href={webDevLink} className={classes.web}>
-            <i>Web</i>
-          </Link>{' '}
+          {' '}<Tooltip arrow placement="bottom" title="Go to web development page">
+            <Link href={webDevLink} className={classes.web}>
+              <i>Web</i>
+            </Link></Tooltip>{' '}
 
           &amp;
 
-          {' '}<Link href={androidDevLink} className={classes.android}>
-            <i>Android</i>
-          </Link>{' '}
+          {' '}<Tooltip arrow placement="bottom" title="Go to Android Developers page">
+            <Link href={androidDevLink} className={classes.android}>
+              <i>Android</i>
+            </Link></Tooltip>{' '}
 
           development
         </Typography>
