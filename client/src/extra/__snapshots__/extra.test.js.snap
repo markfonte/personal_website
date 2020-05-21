@@ -47,31 +47,34 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <iframe
-          allow="encrypted-media"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
           className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
+          frameBorder="0"
           src="https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo"
           title="Home - Gimble A Cappella"
-        />
-        <iframe
-          allow="encrypted-media"
-          className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
-          src="https://open.spotify.com/embed/track/0WteMpcOWgCTUnMfiBwJXC"
-          title="Fallingwater - Gimble A Cappella"
         />
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}
           className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
+          frameBorder="0"
+          src="https://open.spotify.com/embed/track/0WteMpcOWgCTUnMfiBwJXC"
+          title="when the party's over - Gimble A Cappella"
+        />
+        <iframe
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+          className="GimbleCard-iframeStyle-33"
+          frameBorder="0"
           src="https://www.youtube.com/embed/Iiy4V1oq1QU"
           title="when the party's over Video - Gimble A Cappella"
         />
         <iframe
-          allow="encrypted-media"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
           className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
+          frameBorder="0"
           src="https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK"
           title="Fallingwater - Gimble A Cappella"
         />
@@ -79,36 +82,46 @@ exports[`Extra matches snapshot 1`] = `
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}
           className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
+          frameBorder="0"
           src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
           title="Fallingwater Video - Gimble A Cappella"
         />
         <iframe
-          allow="encrypted-media"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
           className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
+          frameBorder="0"
           src="https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K"
           title="Dancing On My Own - Gimble A Cappella"
         />
         <iframe
-          allow="encrypted-media"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
           className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
+          frameBorder="0"
           src="https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl"
           title="715 - CR∑∑KS - Gimble A Cappella"
         />
         <iframe
-          allow="encrypted-media"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
           className="GimbleCard-iframeStyle-33"
-          frameBorder="8"
+          frameBorder="0"
           src="https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR"
           title="XX - Gimble A Cappella"
         />
+        <br />
       </div>
+      <span
+        className="MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary"
+      >
+        These social media buttons scroll horizontally on smaller-width devices!
+      </span>
       <div
-        className="MuiCardActions-root MuiCardActions-spacing"
+        className="MuiCardActions-root GimbleCard-cardActions-34 MuiCardActions-spacing"
       >
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Go to website"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -120,11 +133,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella's website"
         >
           <span
             className="MuiIconButton-label"
@@ -145,6 +160,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on Apple Music"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -156,11 +172,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on Apple Music"
         >
           <span
             className="MuiIconButton-label"
@@ -173,7 +191,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on Apple Music"
             />
           </span>
           <span
@@ -181,6 +198,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on Facebook"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -192,11 +210,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on Facebook"
         >
           <span
             className="MuiIconButton-label"
@@ -209,7 +229,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on Facebook"
             />
           </span>
           <span
@@ -217,6 +236,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on Spotify"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -228,11 +248,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on Spotify"
         >
           <span
             className="MuiIconButton-label"
@@ -245,7 +267,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on Spotify"
             />
           </span>
           <span
@@ -253,6 +274,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on Google Play Music"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -264,11 +286,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on Google Play Music"
         >
           <span
             className="MuiIconButton-label"
@@ -281,7 +305,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on Google Play Music"
             />
           </span>
           <span
@@ -289,6 +312,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on SoundCloud"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -300,11 +324,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on SoundCloud"
         >
           <span
             className="MuiIconButton-label"
@@ -317,7 +343,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on SoundCloud"
             />
           </span>
           <span
@@ -325,6 +350,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on YouTube"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -336,11 +362,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on YouTube"
         >
           <span
             className="MuiIconButton-label"
@@ -353,7 +381,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on YouTube"
             />
           </span>
           <span
@@ -361,6 +388,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on YouTube Music"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -372,11 +400,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on YouTube Music"
         >
           <span
             className="MuiIconButton-label"
@@ -389,7 +419,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on YouTube Music"
             />
           </span>
           <span
@@ -397,6 +426,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on Instagram"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -408,11 +438,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on Instagram"
         >
           <span
             className="MuiIconButton-label"
@@ -425,7 +457,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on Instagram"
             />
           </span>
           <span
@@ -433,6 +464,7 @@ exports[`Extra matches snapshot 1`] = `
           />
         </a>
         <a
+          aria-describedby={null}
           aria-disabled={false}
           aria-label="Gimble A Cappella on Amazon Music"
           className="MuiButtonBase-root MuiIconButton-root"
@@ -444,11 +476,13 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={0}
+          title="Go to Gimble A Cappella on Amazon Music"
         >
           <span
             className="MuiIconButton-label"
@@ -461,7 +495,6 @@ exports[`Extra matches snapshot 1`] = `
                   "process": [Function],
                 }
               }
-              title="Gimble A Cappella on Amazon Music"
             />
           </span>
           <span
@@ -493,21 +526,21 @@ exports[`Extra matches snapshot 1`] = `
       </div>
     </div>
     <div
-      className="MuiCardContent-root TicTacToeCard-cardContent-96"
+      className="MuiCardContent-root TicTacToeCard-cardContent-108"
     >
       <h6
         className="MuiTypography-root MuiTypography-subtitle1"
       />
       <div
-        className="MuiGrid-root TicTacToeGame-game-100"
+        className="MuiGrid-root TicTacToeGame-game-112"
       >
         <div
-          className="MuiGrid-root TicTacToeGame-gameBoard-99"
+          className="MuiGrid-root TicTacToeGame-gameBoard-111"
         >
           <div>
             <div>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -536,7 +569,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -565,96 +598,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-            </div>
-            <div>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -685,7 +629,7 @@ exports[`Extra matches snapshot 1`] = `
             </div>
             <div>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -714,7 +658,7 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -743,7 +687,96 @@ exports[`Extra matches snapshot 1`] = `
                 />
               </button>
               <button
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-205"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-217"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -775,7 +808,7 @@ exports[`Extra matches snapshot 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root TicTacToeGame-gameInfo-101"
+          className="MuiGrid-root TicTacToeGame-gameInfo-113"
         >
           <div>
             <h6
@@ -856,7 +889,7 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="RecommendedSitesTable-recommendedSitesWrapper-235"
+          className="RecommendedSitesTable-recommendedSitesWrapper-247"
         >
           <table
             className="MuiTable-root"
@@ -877,7 +910,7 @@ exports[`Extra matches snapshot 1`] = `
                   scope="row"
                 >
                   <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
+                    className="MuiTypography-root RecommendedSitesTable-nameText-250 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Jacob Fedrigon
                   </p>
@@ -908,7 +941,7 @@ exports[`Extra matches snapshot 1`] = `
                         <img
                           alt="row.name + '\\\\'s website'"
                           aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          className="RecommendedSitesTable-websiteScreenshot-248"
                           onBlur={[Function]}
                           onFocus={[Function]}
                           onMouseLeave={[Function]}
@@ -933,7 +966,7 @@ exports[`Extra matches snapshot 1`] = `
                   <a
                     aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-249 MuiButton-outlinedSecondary"
                     href="http://www-personal.umich.edu/~jacobfed/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -972,7 +1005,7 @@ exports[`Extra matches snapshot 1`] = `
                   scope="row"
                 >
                   <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
+                    className="MuiTypography-root RecommendedSitesTable-nameText-250 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Nathan Johnson
                   </p>
@@ -1003,7 +1036,7 @@ exports[`Extra matches snapshot 1`] = `
                         <img
                           alt="row.name + '\\\\'s website'"
                           aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          className="RecommendedSitesTable-websiteScreenshot-248"
                           onBlur={[Function]}
                           onFocus={[Function]}
                           onMouseLeave={[Function]}
@@ -1028,7 +1061,7 @@ exports[`Extra matches snapshot 1`] = `
                   <a
                     aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-249 MuiButton-outlinedSecondary"
                     href="https://nathanieljohnson.me/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -1067,7 +1100,7 @@ exports[`Extra matches snapshot 1`] = `
                   scope="row"
                 >
                   <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
+                    className="MuiTypography-root RecommendedSitesTable-nameText-250 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Salvador Villalon
                   </p>
@@ -1098,7 +1131,7 @@ exports[`Extra matches snapshot 1`] = `
                         <img
                           alt="row.name + '\\\\'s website'"
                           aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          className="RecommendedSitesTable-websiteScreenshot-248"
                           onBlur={[Function]}
                           onFocus={[Function]}
                           onMouseLeave={[Function]}
@@ -1123,7 +1156,7 @@ exports[`Extra matches snapshot 1`] = `
                   <a
                     aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-249 MuiButton-outlinedSecondary"
                     href="https://salvillalon45.github.io/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -1162,7 +1195,7 @@ exports[`Extra matches snapshot 1`] = `
                   scope="row"
                 >
                   <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
+                    className="MuiTypography-root RecommendedSitesTable-nameText-250 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Sarah Koop
                   </p>
@@ -1193,7 +1226,7 @@ exports[`Extra matches snapshot 1`] = `
                         <img
                           alt="row.name + '\\\\'s website'"
                           aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          className="RecommendedSitesTable-websiteScreenshot-248"
                           onBlur={[Function]}
                           onFocus={[Function]}
                           onMouseLeave={[Function]}
@@ -1218,7 +1251,7 @@ exports[`Extra matches snapshot 1`] = `
                   <a
                     aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-249 MuiButton-outlinedSecondary"
                     href="http://sarah-koop.com/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -1257,7 +1290,7 @@ exports[`Extra matches snapshot 1`] = `
                   scope="row"
                 >
                   <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-238 MuiTypography-h5 MuiTypography-paragraph"
+                    className="MuiTypography-root RecommendedSitesTable-nameText-250 MuiTypography-h5 MuiTypography-paragraph"
                   >
                     Sean Barber
                   </p>
@@ -1288,7 +1321,7 @@ exports[`Extra matches snapshot 1`] = `
                         <img
                           alt="row.name + '\\\\'s website'"
                           aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-236"
+                          className="RecommendedSitesTable-websiteScreenshot-248"
                           onBlur={[Function]}
                           onFocus={[Function]}
                           onMouseLeave={[Function]}
@@ -1313,7 +1346,7 @@ exports[`Extra matches snapshot 1`] = `
                   <a
                     aria-describedby={null}
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-237 MuiButton-outlinedSecondary"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-249 MuiButton-outlinedSecondary"
                     href="https://seanbarber.me/"
                     onBlur={[Function]}
                     onDragLeave={[Function]}
@@ -1348,7 +1381,7 @@ exports[`Extra matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-276"
+    className="InteractionCard-root-277"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1357,22 +1390,22 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-277 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-278 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
-            className="PrideSwitch-prideSwitchContent-278"
+            className="PrideSwitch-prideSwitchContent-279"
           >
             <h5
-              className="MuiTypography-root PrideSwitch-prideTitle-279 MuiTypography-h5"
+              className="MuiTypography-root PrideSwitch-prideTitle-280 MuiTypography-h5"
             >
               Pride
             </h5>
             <span
-              className="MuiSwitch-root PrideSwitch-prideSwitch-280"
+              className="MuiSwitch-root PrideSwitch-prideSwitch-281"
             >
               <span
                 aria-disabled={false}
-                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-293 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-294 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onDragLeave={[Function]}
@@ -1392,7 +1425,7 @@ exports[`Extra matches snapshot 1`] = `
                 >
                   <input
                     checked={false}
-                    className="PrivateSwitchBase-input-296 MuiSwitch-input"
+                    className="PrivateSwitchBase-input-297 MuiSwitch-input"
                     onChange={[Function]}
                     type="checkbox"
                   />
@@ -1425,10 +1458,10 @@ exports[`Extra matches snapshot 1`] = `
           </a>
         </div>
         <div
-          className="LikeButton-root-297"
+          className="LikeButton-root-298"
         >
           <div
-            className="LikeButton-likeButtonWrapper-298"
+            className="LikeButton-likeButtonWrapper-299"
           >
             <button
               aria-describedby={null}
@@ -1470,10 +1503,10 @@ exports[`Extra matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-299 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-300 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-300 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-301 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

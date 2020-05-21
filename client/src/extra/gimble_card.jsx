@@ -19,6 +19,8 @@ import {
   CardContent,
   CardHeader,
   IconButton,
+  Tooltip,
+  Typography,
 } from '@material-ui/core';
 
 const styles = {
@@ -34,6 +36,9 @@ const styles = {
     height: '235px',
     width: '100%',
     maxWidth: '400px',
+  },
+  cardActions: {
+    overflowX: 'auto',
   },
 };
 
@@ -63,6 +68,49 @@ class GimbleCard extends React.Component {
       {name: 'Gimble A Cappella on Amazon Music', image: amazonMusicLogo, link: amazonMusicLink},
     ];
 
+    const mediaPlayers = [
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo`,
+        title: `Home - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/track/0WteMpcOWgCTUnMfiBwJXC`,
+        title: `when the party's over - Gimble A Cappella`,
+      },
+      {
+        type: 'YouTube',
+        src: `https://www.youtube.com/embed/Iiy4V1oq1QU`,
+        title: `when the party's over Video - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK`,
+        title: `Fallingwater - Gimble A Cappella`,
+      },
+      {
+        type: 'YouTube',
+        src: `https://www.youtube-nocookie.com/embed/6Qge12ldMqU`,
+        title: `Fallingwater Video - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K`,
+        title: `Dancing On My Own - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl`,
+        title: `715 - CR∑∑KS - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR`,
+        title: `XX - Gimble A Cappella`,
+      },
+    ];
+
     return (
       <div>
         <Card raised={true} className="card">
@@ -76,92 +124,48 @@ class GimbleCard extends React.Component {
             title="MHacks 12 logo"
           />
           <CardContent>
-            <iframe
-              src="https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo"
-              className={classes.iframeStyle}
-              title="Home - Gimble A Cappella"
-              frameBorder="8"
-              allow="encrypted-media"
-            />
-            <iframe
-              src="https://open.spotify.com/embed/track/0WteMpcOWgCTUnMfiBwJXC"
-              className={classes.iframeStyle}
-              title="Fallingwater - Gimble A Cappella"
-              frameBorder="8"
-              allow="encrypted-media"
-            />
-            {/* <iframe allow="autoplay *; encrypted-media *;"
-              frameBorder="0"
-              className={classes.iframeStyle}
-              title="when the party's over Apple Music - Gimble A Cappella"
-              src="https://embed.music.apple.com/us/album/when-the-partys-over-single/1488378903"/> */}
-            <iframe
-              className={classes.iframeStyle}
-              src="https://www.youtube.com/embed/Iiy4V1oq1QU"
-              title="when the party's over Video - Gimble A Cappella"
-              frameBorder="8"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <iframe
-              src="https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK"
-              className={classes.iframeStyle}
-              title="Fallingwater - Gimble A Cappella"
-              frameBorder="8"
-              allow="encrypted-media"
-            />
-            {/* <iframe allow="autoplay *; encrypted-media *;"
-              frameBorder="0"
-              height="235"
-              width="320"
-              title="Fallingwater Apple Music - Gimble A Cappella"
-              src="https://embed.music.apple.com/us/album/fallingwater-single/1479474008"/> */}
-            <iframe
-              className={classes.iframeStyle}
-              src="https://www.youtube-nocookie.com/embed/6Qge12ldMqU"
-              title="Fallingwater Video - Gimble A Cappella"
-              frameBorder="8"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            <iframe
-              src="https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K"
-              className={classes.iframeStyle}
-              title="Dancing On My Own - Gimble A Cappella"
-              frameBorder="8"
-              allow="encrypted-media"
-            />
-            <iframe
-              src="https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl"
-              className={classes.iframeStyle}
-              title="715 - CR∑∑KS - Gimble A Cappella"
-              frameBorder="8"
-              allow="encrypted-media"
-            />
-            <iframe
-              src="https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR"
-              className={classes.iframeStyle}
-              title="XX - Gimble A Cappella"
-              frameBorder="8"
-              allow="encrypted-media"
-            />
-          </CardContent>
-          <CardActions>
-            <IconButton aria-label="Go to website" href={websiteLink}>
-              <WebIcon />
-            </IconButton>
-            {links.map((link) => (
-              <IconButton key={link.name} aria-label={link.name} href={link.link}>
-                <img
-                  src={link.image}
-                  className={classes.gimbleCardActionIcon}
-                  title={link.name}
-                  alt={link.name + ' button'}
-                />
-              </IconButton>
+            {mediaPlayers.map((mediaPlayer) => (
+              <iframe
+                className={classes.iframeStyle}
+                src={mediaPlayer.src}
+                title={mediaPlayer.title}
+                key={mediaPlayer.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             ))}
-
-
+            <br/>
+          </CardContent>
+          <Typography variant="caption" color="textSecondary">
+            These social media buttons scroll horizontally on smaller-width devices!
+          </Typography>
+          <CardActions className={classes.cardActions}>
+            <Tooltip
+              title="Go to Gimble A Cappella's website"
+              arrow>
+              <IconButton
+                aria-label="Go to website"
+                href={websiteLink}>
+                <WebIcon />
+              </IconButton>
+            </Tooltip>
+            {links.map((link) => (
+              <Tooltip
+                title={'Go to ' + link.name}
+                key={link.name}
+                arrow>
+                <IconButton
+                  aria-label={link.name}
+                  href={link.link}>
+                  <img
+                    src={link.image}
+                    className={classes.gimbleCardActionIcon}
+                    alt={link.name + ' button'}
+                  />
+                </IconButton>
+              </Tooltip>
+            ))}
           </CardActions>
         </Card>
       </div>
