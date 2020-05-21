@@ -9,7 +9,7 @@ import InteractionCard from '../shared/interaction_card.jsx';
 import SpotlightCard from './spotlight_card.jsx';
 import DoggieDoodlesCard from './doggie_doodles_card.jsx';
 import JPMorganCard from './jpmorgan_card.jsx';
-import RoadMapper from './road_mapper.jsx';
+import RoadMapper from './road_mapper_card.jsx';
 import MISymptomsCard from './mi_symptoms_card.jsx';
 import AmazonCard from './amazon_card.jsx';
 import {withStyles} from '@material-ui/styles';

@@ -16,6 +16,7 @@ exports[`Contact matches snapshot 1`] = `
   </h6>
   <div>
     <a
+      aria-describedby={null}
       aria-disabled={false}
       className="MuiButtonBase-root MuiButton-root MuiButton-outlined Contact-buttonDefault-5 MuiButton-outlinedSecondary"
       href="mailto:mark@fonte.com"
@@ -26,19 +27,25 @@ exports[`Contact matches snapshot 1`] = `
       onKeyUp={[Function]}
       onMouseDown={[Function]}
       onMouseLeave={[Function]}
+      onMouseOver={[Function]}
       onMouseUp={[Function]}
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       tabIndex={0}
+      title="Send me an email"
     >
       <span
         className="MuiButton-label"
       >
         Email
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </a>
     <a
+      aria-describedby={null}
       aria-disabled={false}
       className="MuiButtonBase-root MuiButton-root MuiButton-outlined Contact-buttonDefault-5 MuiButton-outlinedSecondary"
       href="tel:406-948-1034"
@@ -49,19 +56,25 @@ exports[`Contact matches snapshot 1`] = `
       onKeyUp={[Function]}
       onMouseDown={[Function]}
       onMouseLeave={[Function]}
+      onMouseOver={[Function]}
       onMouseUp={[Function]}
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       tabIndex={0}
+      title="Call/text me"
     >
       <span
         className="MuiButton-label"
       >
         Phone
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </a>
     <a
+      aria-describedby={null}
       aria-disabled={false}
       className="MuiButtonBase-root MuiButton-root MuiButton-outlined Contact-buttonDefault-5 MuiButton-outlinedSecondary"
       href="https://venmo.com/Mark-Fonte"
@@ -72,17 +85,22 @@ exports[`Contact matches snapshot 1`] = `
       onKeyUp={[Function]}
       onMouseDown={[Function]}
       onMouseLeave={[Function]}
+      onMouseOver={[Function]}
       onMouseUp={[Function]}
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
       tabIndex={0}
+      title="Venmo me?"
     >
       <span
         className="MuiButton-label"
       >
         Venmo
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </a>
   </div>
   <span
@@ -103,7 +121,7 @@ exports[`Contact matches snapshot 1`] = `
       className="LI-simple-link"
       href="https://www.linkedin.com/in/mark-fonte?trk=profile-badge"
     >
-      Mark Fonte on LinkedIn (reload to show)
+      LinkedIn badge (reload to show)
     </a>
   </div>
   <picture>

@@ -90,6 +90,7 @@ const styles = {
     top: 0,
     left: 0,
     right: 0,
+    zIndex: '-100',
     display: 'block',
     height: '112px',
     width: '100%',

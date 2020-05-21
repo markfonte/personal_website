@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography, Button, withStyles} from '@material-ui/core';
+import {Typography, Button, withStyles, Tooltip} from '@material-ui/core';
 import PropTypes from 'prop-types';
 import gimbleCoverPhoto from '../static/images/photos/gimble_cover_photo.webp';
 import gimbleCoverPhotoFallback from '../static/images/photos/gimble_cover_photo.jpg';
@@ -48,30 +48,45 @@ class Contact extends React.Component {
           collaborations, job opportunities, etc. Feel free to reach out!
         </Typography>
         <div>
-          <Button
-            className={classes.buttonDefault}
-            variant="outlined"
-            color="secondary"
-            href={emailLink}
-          >
+          <Tooltip
+            arrow
+            placement="top"
+            title="Send me an email">
+            <Button
+              className={classes.buttonDefault}
+              variant="outlined"
+              color="secondary"
+              href={emailLink}
+            >
             Email
-          </Button>
-          <Button
-            className={classes.buttonDefault}
-            variant="outlined"
-            color="secondary"
-            href={phoneLink}
-          >
+            </Button>
+          </Tooltip>
+          <Tooltip
+            arrow
+            placement="top"
+            title="Call/text me">
+            <Button
+              className={classes.buttonDefault}
+              variant="outlined"
+              color="secondary"
+              href={phoneLink}
+            >
             Phone
-          </Button>
-          <Button
-            className={classes.buttonDefault}
-            variant="outlined"
-            color="secondary"
-            href={venmoLink}
-          >
+            </Button>
+          </Tooltip>
+          <Tooltip
+            arrow
+            placement="top"
+            title="Venmo me?">
+            <Button
+              className={classes.buttonDefault}
+              variant="outlined"
+              color="secondary"
+              href={venmoLink}
+            >
             Venmo
-          </Button>
+            </Button>
+          </Tooltip>
         </div>
         <Typography className={classes.paragraph} variant="caption">
           My resume is available upon request
@@ -79,7 +94,7 @@ class Contact extends React.Component {
         <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
           data-type="horizontal" data-theme="dark" data-vanity="mark-fonte">
           <a className="LI-simple-link" href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
-                Mark Fonte on LinkedIn (reload to show)
+                LinkedIn badge (reload to show)
           </a>
         </div>
         <picture>

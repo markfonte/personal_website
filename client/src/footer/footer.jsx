@@ -288,7 +288,6 @@ class Footer extends React.Component {
                width="25"
                height="25"
                className={classes.logoDefault}
-               title="University of Michigan logo small"
                alt="University of Michigan logo small"
              />
            </Tooltip>
