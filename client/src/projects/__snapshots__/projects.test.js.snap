@@ -1567,6 +1567,9 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </a>
       </div>
     </div>
@@ -1792,6 +1795,9 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </a>
       </div>
     </div>
@@ -1853,7 +1859,7 @@ exports[`Projects matches snapshot 1`] = `
             onBlur={[Function]}
             onFocus={[Function]}
           >
-            Youtube videos
+            YouTube videos
           </a>
            
           and decided we could automate that process. Using Google Translate APIs we built an Android application that allowed users to translate the Genius Lyrics through a specified number of languages, and back to English. The result was always hilarious, and the user interface we built (using Android Jetpack) made it very easy to do. We won 
@@ -1929,6 +1935,9 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </a>
       </div>
     </div>
@@ -2194,6 +2203,9 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </a>
       </div>
     </div>
@@ -2312,6 +2324,9 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </a>
       </div>
     </div>
@@ -2467,6 +2482,9 @@ exports[`Projects matches snapshot 1`] = `
               />
             </svg>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </a>
       </div>
     </div>
@@ -2488,10 +2506,18 @@ exports[`Projects matches snapshot 1`] = `
             className="LikeButton-likeButtonWrapper-125"
           >
             <svg
+              aria-describedby={null}
               aria-hidden={true}
               className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
               focusable="false"
+              onBlur={[Function]}
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              title="Click to like page"
               viewBox="0 0 24 24"
             >
               <path

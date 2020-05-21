@@ -1286,10 +1286,18 @@ exports[`Extra matches snapshot 1`] = `
             className="LikeButton-likeButtonWrapper-286"
           >
             <svg
+              aria-describedby={null}
               aria-hidden={true}
               className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
               focusable="false"
+              onBlur={[Function]}
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+              title="Click to like page"
               viewBox="0 0 24 24"
             >
               <path
