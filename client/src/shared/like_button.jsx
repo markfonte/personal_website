@@ -123,14 +123,16 @@ class LikeButton extends React.Component {
         <FavoriteBorderIcon
           color={displayedColor}
           fontSize="large"
-          onClick={this.toggleLike}
         />
       );
     }
     return (
       <div className={classes.root}>
         <div className={classes.likeButtonWrapper}>
-          <Tooltip title="Click to like page" arrow>
+          <Tooltip
+            title="Click to like page"
+            arrow
+            onClick={this.toggleLike}>
             <IconButton>
               {icon}
             </IconButton>

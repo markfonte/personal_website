@@ -184,9 +184,8 @@ export class App extends React.Component {
 
         <Grid className={classes.root}>
           {rainbowHeader}
-          <Tooltip title="Toggle light/dark mode" arrow>
-            <WbSunny
-              onClick={this.toggleTheme}/>
+          <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
+            <WbSunny />
             {/* <img
               className={classes.toggleThemeIcon}
               src={this.state.themeIcon}
