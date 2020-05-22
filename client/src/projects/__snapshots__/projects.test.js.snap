@@ -2,228 +2,505 @@
 
 exports[`Projects matches snapshot 1`] = `
 <div>
-  <h6
-    className="MuiTypography-root Projects-title-1 MuiTypography-h6"
+  <p
+    className="MuiTypography-root Projects-title-1 MuiTypography-h6 MuiTypography-paragraph"
   >
     My work experiences, internships, side projects and hackathon projects
-  </h6>
-  <div>
+  </p>
+  <p
+    className="MuiTypography-root MuiTypography-body1 MuiTypography-colorSecondary"
+  >
+    <b>
+      Click to expand/collapse cards
+    </b>
+  </p>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-root"
+        aria-disabled={false}
+        aria-expanded={false}
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
         <div
-          className="MuiCardHeader-content"
+          className="MuiExpansionPanelSummary-content"
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          <div
+            className="AmazonCard-expansionHeaderContainer-34"
           >
-            Amazon
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Software Engineer
-          </span>
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Amazon
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Software Engineer
+                </span>
+              </div>
+            </div>
+            <img
+              alt="Amazon logo"
+              className="MuiCardMedia-root AmazonCard-amazonLogo-32 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/amazon_logo.svg"
+              title="Amazon logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root AmazonCard-tags-33 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  August 2020 → Present
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root AmazonCard-tags-33 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Full-Time
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <img
-        alt="Amazon logo"
-        className="MuiCardMedia-root AmazonCard-amazonLogo-32 MuiCardMedia-media MuiCardMedia-img"
-        src="/images/amazon_logo.svg"
-        title="Amazon logo"
-      />
-      <div
-        className="MuiCardContent-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1"
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          I will become a software engineer at
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://www.amazon.com/"
-            onBlur={[Function]}
-            onFocus={[Function]}
+          <span
+            className="MuiIconButton-label"
           >
-            Amazon
-          </a>
-           
-          in Seattle later this year. I can't wait!
-        </p>
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-root"
+        aria-disabled={false}
+        aria-expanded={false}
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
         <div
-          className="MuiCardHeader-content"
+          className="MuiExpansionPanelSummary-content"
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          <div
+            className="JPMorganCard-expansionHeaderContainer-154"
           >
-            J.P. Morgan Chase
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Software Engineering Intern
-          </span>
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  J.P. Morgan Chase
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Software Engineering Intern
+                </span>
+              </div>
+            </div>
+            <img
+              alt="J.P. Morgan Chase logo"
+              className="MuiCardMedia-root JPMorganCard-jpMorganLogo-151 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/jpmorgan_logo.svg"
+              title="J.P. Morgan Chase logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  June 2019 → August 2019
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Internship
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Java Spring Boot
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Material UI
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  React
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  React Native
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <img
-        alt="J.P. Morgan Chase logo"
-        className="MuiCardMedia-root JPMorganCard-jpMorganLogo-78 MuiCardMedia-media MuiCardMedia-img"
-        src="/images/jpmorgan_logo.svg"
-        title="J.P. Morgan Chase logo"
-      />
-      <div
-        className="MuiCardContent-root"
-      >
-        <h5
-          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Summer 2019
-        </h5>
-        <p
-          className="MuiTypography-root MuiTypography-body1"
-        >
-          I worked at
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://www.jpmorganchase.com/"
-            onBlur={[Function]}
-            onFocus={[Function]}
+          <span
+            className="MuiIconButton-label"
           >
-            J.P. Morgan Chase
-          </a>
-           
-          throughout Summer 2019 on a mobile application for J.P. Morgan corporate cardholders (for example, Amazon employees who have been given a Chase credit card to use on business trips). The application, called
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://m.jpmorgan.com/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            PaymentNet® Mobile
-          </a>
-          , is a mobile webview for these corporate clients to track their payment history, enter receipts, and perform other necessary cardholder functions. Built in
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://reactjs.org/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            React
-          </a>
-           
-          and
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://spring.io/projects/spring-boot"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Java Spring Boot
-          </a>
-          , there was no 
-          <i>
-            native
-          </i>
-           mobile application for PaymentNet®, and they asked us to make a proof of concept for one using
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://reactnative.dev/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            React Native
-          </a>
-          .
-          <br />
-          <br />
-          After working in React Native for the first half of the summer, I moved my focus to refactoring and cleaning up the React webview. There was lots of legacy code, spaghetti code and a strong dependency on
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://getbootstrap.com/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Bootstrap
-          </a>
-           
-          and
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://jquery.com/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            JQuery
-          </a>
-           
-          . Given my previous knowledge in React, I was able to refactor and reshape much of the codebase to remove the dependency on third party libraries like JQuery. I replaced legacy React components with an internal J.P. Morgan adaptation of the
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://material-ui.com/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Material-UI
-          </a>
-           
-          library. These custom components were much more responsive, reusable and accessible. For example, I replaced Boostrap modal pop-ups throughout the application with J.P. Morgan-branded version of
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://material-ui.com/components/dialogs/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Material-UI Dialog
-          </a>
-           
-          pop-ups.
-          <br />
-          <img
-            alt="J.P. Morgan screenshot 1"
-            className="JPMorganCard-mobileScreenshot-79"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="J.P. Morgan screenshot 1"
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
           />
-          <br />
-          Although this was not one of my most challenging technical experiences, I did learn a lot about work cultures where there are lots of manual steps surrounding development. I believe that learning how to navigate these types of situations while maintaining productivity is a crucial skill for me going forward. My main takeaways from J.P. Morgan were:
-          <br />
-          <br />
-          - Adapting to and refactoring legacy code
-          <br />
-          - Navigating corporate red tape
-          <br />
-          - Extensive work with React and React Native
-          <br />
-          - Some awesome friends!
-          <br />
-        </p>
+        </div>
       </div>
     </div>
   </div>
@@ -251,7 +528,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <img
         alt="Learning A-Z logo"
-        className="MuiCardMedia-root LAZCard-lazLogo-80 MuiCardMedia-media MuiCardMedia-img"
+        className="MuiCardMedia-root LAZCard-lazLogo-155 MuiCardMedia-media MuiCardMedia-img"
         src="/images/laz_logo.svg"
         title="Learning A-Z logo"
       />
@@ -436,7 +713,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="LAZ parent portal screenshot 1"
-          className="LAZCard-mobileScreenshot-81"
+          className="LAZCard-mobileScreenshot-156"
           src={
             Object {
               "process": [Function],
@@ -446,7 +723,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="LAZ parent portal screenshot 2"
-          className="LAZCard-mobileScreenshot-81"
+          className="LAZCard-mobileScreenshot-156"
           src={
             Object {
               "process": [Function],
@@ -456,7 +733,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="LAZ parent portal screenshot 3"
-          className="LAZCard-mobileScreenshot-81"
+          className="LAZCard-mobileScreenshot-156"
           src={
             Object {
               "process": [Function],
@@ -569,7 +846,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="LAZ badge screenshot"
-          className="LAZCard-webScreenshot-82"
+          className="LAZCard-webScreenshot-157"
           src={
             Object {
               "process": [Function],
@@ -610,7 +887,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <img
         alt="University of Michigan banner logo"
-        className="MuiCardMedia-root CompletedCourseworkCard-universityOfMichiganLogo-83 MuiCardMedia-media MuiCardMedia-img"
+        className="MuiCardMedia-root CompletedCourseworkCard-universityOfMichiganLogo-165 MuiCardMedia-media MuiCardMedia-img"
         src="images/university_of_michigan_logo.svg"
         title="University of Michigan banner logo"
       />
@@ -1172,7 +1449,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="MI Symptoms screenshot 1"
-            className="MISymptomsCard-mobileScreenshot-84"
+            className="MISymptomsCard-mobileScreenshot-166"
             srcSet={
               Array [
                 Object {
@@ -1205,7 +1482,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="MI Symptoms screenshot 2"
-            className="MISymptomsCard-mobileScreenshot-84"
+            className="MISymptomsCard-mobileScreenshot-166"
             srcSet={
               Array [
                 Object {
@@ -1238,7 +1515,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="MI Symptoms screenshot 3"
-            className="MISymptomsCard-mobileScreenshot-84"
+            className="MISymptomsCard-mobileScreenshot-166"
             srcSet={
               Array [
                 Object {
@@ -1426,7 +1703,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="MHacks 12 logo"
-        className="MuiCardMedia-root MHacks12Card-media-85"
+        className="MuiCardMedia-root MHacks12Card-media-167"
         style={
           Object {
             "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
@@ -1484,7 +1761,7 @@ exports[`Projects matches snapshot 1`] = `
           <br />
           <img
             alt="InstEvents screenshot 3"
-            className="MHacks12Card-screenshot-87"
+            className="MHacks12Card-screenshot-169"
             height="500"
             src={
               Object {
@@ -1496,7 +1773,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 1"
-            className="MHacks12Card-screenshot-87"
+            className="MHacks12Card-screenshot-169"
             height="500"
             src={
               Object {
@@ -1508,7 +1785,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="InstEvents screenshot 2"
-            className="MHacks12Card-screenshot-87"
+            className="MHacks12Card-screenshot-169"
             height="500"
             src={
               Object {
@@ -1520,7 +1797,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-87"
+            className="MHacks12Card-screenshot-169"
             height="360"
             src={
               Object {
@@ -1561,7 +1838,7 @@ exports[`Projects matches snapshot 1`] = `
       >
         <img
           alt="WalkLens logo"
-          className="WalklensCard-logo-89"
+          className="WalklensCard-logo-171"
           src={
             Object {
               "process": [Function],
@@ -1668,7 +1945,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-88"
+          className="WalklensCard-screenshot-170"
           src={
             Object {
               "process": [Function],
@@ -1678,7 +1955,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-88"
+          className="WalklensCard-screenshot-170"
           src={
             Object {
               "process": [Function],
@@ -1688,7 +1965,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="WalkLens screenshot 3"
-          className="WalklensCard-screenshot-88"
+          className="WalklensCard-screenshot-170"
           src={
             Object {
               "process": [Function],
@@ -1723,7 +2000,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="SpartaHack V logo"
-        className="MuiCardMedia-root Spartahack5Card-media-90"
+        className="MuiCardMedia-root Spartahack5Card-media-172"
         style={
           Object {
             "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
@@ -1787,7 +2064,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="Laughable Lyrics logo"
-          className="Spartahack5Card-logo-91"
+          className="Spartahack5Card-logo-173"
           src={
             Object {
               "process": [Function],
@@ -1926,7 +2203,7 @@ exports[`Projects matches snapshot 1`] = `
           />
           <img
             alt="Road Mappers screenshot 1"
-            className="RoadMapperCard-screenshotOne-92"
+            className="RoadMapperCard-screenshotOne-174"
             srcSet={
               Array [
                 Object {
@@ -1972,11 +2249,11 @@ exports[`Projects matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="RevolutionUC8Card-mediaWrapper-94"
+        className="RevolutionUC8Card-mediaWrapper-176"
       >
         <div
           alt="RevolutionUC 8 logo"
-          className="MuiCardMedia-root RevolutionUC8Card-media-93"
+          className="MuiCardMedia-root RevolutionUC8Card-media-175"
           style={
             Object {
               "backgroundImage": "url(\\"/images/revolutionuc_logo.webp\\")",
@@ -2015,7 +2292,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-95"
+          className="RevolutionUC8Card-logo-177"
           src={
             Object {
               "process": [Function],
@@ -2050,7 +2327,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="GrizzHacks 3 logo"
-        className="MuiCardMedia-root Grizzhacks3Card-media-96"
+        className="MuiCardMedia-root Grizzhacks3Card-media-178"
         style={
           Object {
             "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
@@ -2095,7 +2372,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-97"
+          className="Grizzhacks3Card-logo-179"
           src={
             Object {
               "process": [Function],
@@ -2138,7 +2415,7 @@ exports[`Projects matches snapshot 1`] = `
         </p>
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-98"
+          className="SpotlightCard-screenshot-180"
           src={
             Object {
               "process": [Function],
@@ -2148,7 +2425,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-98"
+          className="SpotlightCard-screenshot-180"
           src={
             Object {
               "process": [Function],
@@ -2183,7 +2460,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
       <div
         alt="Gimble A Cappella - 2019"
-        className="MuiCardMedia-root DoggieDoodlesCard-media-99"
+        className="MuiCardMedia-root DoggieDoodlesCard-media-181"
         style={
           Object {
             "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
@@ -2225,7 +2502,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-100"
+    className="InteractionCard-root-182"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -2235,10 +2512,10 @@ exports[`Projects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-101"
+          className="LikeButton-root-183"
         >
           <div
-            className="LikeButton-likeButtonWrapper-102"
+            className="LikeButton-likeButtonWrapper-184"
           >
             <button
               aria-describedby={null}
@@ -2280,10 +2557,10 @@ exports[`Projects matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-103 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-185 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-104 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-186 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
