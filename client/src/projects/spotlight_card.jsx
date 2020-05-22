@@ -1,8 +1,14 @@
 import React from 'react';
 import spotlightScreenshotOne
   from '../static/images/screenshots/spotlight_screenshot_1.webp';
+import spotlightScreenshotOneFallback
+  from '../static/images/screenshots/spotlight_screenshot_1.png';
+
 import spotlightScreenshotTwo
   from '../static/images/screenshots/spotlight_screenshot_2.webp';
+import spotlightScreenshotTwoFallback
+  from '../static/images/screenshots/spotlight_screenshot_2.png';
+
 import {
   Typography,
   Card,
@@ -27,36 +33,39 @@ const styles = {
 class SpotlightCard extends React.Component {
   render() {
     const {classes} = this.props;
-
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader
-            title="Spotlight"
-            subheader="Lead Android developer"
-          />
-          <CardContent>
-            <Typography variant="body1">
+      <Card raised={true} className="card">
+        <CardHeader
+          title="Spotlight"
+          subheader="Lead Android developer"
+        />
+        <CardContent>
+          <Typography variant="body1">
               We worked on Android and iOS applications to help streamline the sorority recruitment process.
               Both applications were built using Firebase, and the Android application is built using Android Jetpack,
               architecture components and Google Maps APIs. I built a successful POC for the Android application and
               successfully onboarded another developer to maintain the project.
-            </Typography>
+          </Typography>
+          <picture>
+            <source srcSet={spotlightScreenshotOne} type="image/webp"/>
+            <source srcSet={spotlightScreenshotOneFallback} type="image/png"/>
             <img
+              srcSet={[spotlightScreenshotOne, spotlightScreenshotOneFallback]}
               className={classes.screenshot}
-              src={spotlightScreenshotOne}
-              title="Spotlight screenshot 1"
               alt="Spotlight screenshot 1"
             />
+          </picture>
+          <picture>
+            <source srcSet={spotlightScreenshotTwo} type="image/webp"/>
+            <source srcSet={spotlightScreenshotTwoFallback} type="image/png"/>
             <img
+              srcSet={[spotlightScreenshotTwo, spotlightScreenshotTwoFallback]}
               className={classes.screenshot}
-              src={spotlightScreenshotTwo}
-              title="Spotlight screenshot 2"
               alt="Spotlight screenshot 2"
             />
-          </CardContent>
-        </Card>
-      </div>
+          </picture>
+        </CardContent>
+      </Card>
     );
   }
 }

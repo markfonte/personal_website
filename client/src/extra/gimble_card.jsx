@@ -133,87 +133,84 @@ class GimbleCard extends React.Component {
     ];
 
     return (
-      <div>
-        <Card raised={true} className="card">
-          <ExpansionPanel
-            TransitionProps={{unmountOnExit: true}}>
-            <ExpansionPanelSummary
-              aria-label="Gimble"
-              aria-controls="gimble-content"
-              id="gimble-header"
-              expandIcon={
-                <Tooltip
-                  title="Expand/collapse card"
-                  arrow>
-                  <IconButton>
-                    <ExpandMoreIcon />
-                  </IconButton>
-                </Tooltip>
-              }>
-              <div
-                className={classes.expansionHeaderContainer}>
-                <CardHeader
-                  title="Gimble A Cappella"
-                  subheader={`My acappella group!`}
-                />
-                <CardMedia
-                  className={classes.gimbleCardMedia}
-                  image="/images/gimble_group_pic.webp"
-                  title="Gimble group pic"
-                  component="img"
-                />
-              </div>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-              <CardContent>
-                {mediaPlayers.map((mediaPlayer) => (
-                  <iframe
-                    className={classes.iframeStyle}
-                    src={mediaPlayer.src}
-                    title={mediaPlayer.title}
-                    key={mediaPlayer.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                ))}
-                <br/>
-              </CardContent>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
-          <Typography className={classes.buttonExplanation} variant="caption" color="textSecondary">
-            These buttons scroll horizontally on smaller-width devices!
-          </Typography>
-          <CardActions className={classes.cardActions}>
-            <Tooltip
-              title="Go to Gimble A Cappella's website"
-              arrow>
-              <IconButton
-                aria-label="Go to website"
-                href={websiteLink}>
-                <WebIcon />
-              </IconButton>
-            </Tooltip>
-            {links.map((link) => (
+      <Card raised={true} className="card">
+        <ExpansionPanel
+          TransitionProps={{unmountOnExit: true}}>
+          <ExpansionPanelSummary
+            aria-label="Gimble"
+            aria-controls="gimble-content"
+            id="gimble-header"
+            expandIcon={
               <Tooltip
-                title={'Go to ' + link.name}
-                key={link.name}
+                title="Expand/collapse card"
                 arrow>
-                <IconButton
-                  aria-label={link.name}
-                  href={link.link}>
-                  <img
-                    src={link.image}
-                    className={classes.gimbleCardActionIcon}
-                    alt={link.name + ' button'}
-                  />
+                <IconButton>
+                  <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
-            ))}
-          </CardActions>
-
-        </Card>
-      </div>
+            }>
+            <div
+              className={classes.expansionHeaderContainer}>
+              <CardHeader
+                title="Gimble A Cappella"
+                subheader={`My acappella group!`}
+              />
+              <CardMedia
+                className={classes.gimbleCardMedia}
+                image="/images/gimble_group_pic.webp"
+                title="Gimble group pic"
+                component="img"
+              />
+            </div>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <CardContent>
+              {mediaPlayers.map((mediaPlayer) => (
+                <iframe
+                  className={classes.iframeStyle}
+                  src={mediaPlayer.src}
+                  title={mediaPlayer.title}
+                  key={mediaPlayer.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              ))}
+              <br/>
+            </CardContent>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+        <Typography className={classes.buttonExplanation} variant="caption" color="textSecondary">
+            These buttons scroll horizontally on smaller-width devices!
+        </Typography>
+        <CardActions className={classes.cardActions}>
+          <Tooltip
+            title="Go to Gimble A Cappella's website"
+            arrow>
+            <IconButton
+              aria-label="Go to website"
+              href={websiteLink}>
+              <WebIcon />
+            </IconButton>
+          </Tooltip>
+          {links.map((link) => (
+            <Tooltip
+              title={'Go to ' + link.name}
+              key={link.name}
+              arrow>
+              <IconButton
+                aria-label={link.name}
+                href={link.link}>
+                <img
+                  src={link.image}
+                  className={classes.gimbleCardActionIcon}
+                  alt={link.name + ' button'}
+                />
+              </IconButton>
+            </Tooltip>
+          ))}
+        </CardActions>
+      </Card>
     );
   }
 }

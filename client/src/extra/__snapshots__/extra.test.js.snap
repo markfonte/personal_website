@@ -19,146 +19,69 @@ exports[`Extra matches snapshot 1`] = `
       Click to expand/collapse cards
     </b>
   </p>
-  <div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
+        aria-controls="gimble-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="Gimble"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="gimble-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
         <div
-          aria-controls="gimble-content"
-          aria-disabled={false}
-          aria-expanded={false}
-          aria-label="Gimble"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
-          id="gimble-header"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex={0}
+          className="MuiExpansionPanelSummary-content"
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="GimbleCard-expansionHeaderContainer-35"
           >
             <div
-              className="GimbleCard-expansionHeaderContainer-35"
+              className="MuiCardHeader-root"
             >
               <div
-                className="MuiCardHeader-root"
-              >
-                <div
-                  className="MuiCardHeader-content"
-                >
-                  <span
-                    className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-                  >
-                    Gimble A Cappella
-                  </span>
-                  <span
-                    className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-                  >
-                    My acappella group!
-                  </span>
-                </div>
-              </div>
-              <img
-                className="MuiCardMedia-root GimbleCard-gimbleCardMedia-31 MuiCardMedia-media MuiCardMedia-img"
-                src="/images/gimble_group_pic.webp"
-                title="Gimble group pic"
-              />
-            </div>
-          </div>
-          <div
-            aria-disabled={false}
-            aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
-            onBlur={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role={null}
-            tabIndex={null}
-          >
-            <span
-              className="MuiIconButton-label"
-            >
-              <button
-                aria-describedby={null}
-                className="MuiButtonBase-root MuiIconButton-root"
-                disabled={false}
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                title="Expand/collapse card"
-                type="button"
+                className="MuiCardHeader-content"
               >
                 <span
-                  className="MuiIconButton-label"
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
                 >
-                  <svg
-                    aria-hidden={true}
-                    className="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                    />
-                  </svg>
+                  Gimble A Cappella
                 </span>
                 <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-            </span>
-            <span
-              className="MuiTouchRipple-root"
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  My acappella group!
+                </span>
+              </div>
+            </div>
+            <img
+              className="MuiCardMedia-root GimbleCard-gimbleCardMedia-31 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/gimble_group_pic.webp"
+              title="Gimble group pic"
             />
           </div>
         </div>
-      </div>
-      <span
-        className="MuiTypography-root GimbleCard-buttonExplanation-36 MuiTypography-caption MuiTypography-colorTextSecondary"
-      >
-        These buttons scroll horizontally on smaller-width devices!
-      </span>
-      <div
-        className="MuiCardActions-root GimbleCard-cardActions-34 MuiCardActions-spacing"
-      >
-        <a
-          aria-describedby={null}
+        <div
           aria-disabled={false}
-          aria-label="Go to website"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.gimbleacappella.com/"
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -166,375 +89,450 @@ exports[`Extra matches snapshot 1`] = `
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
-          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella's website"
+          role={null}
+          tabIndex={null}
         >
           <span
             className="MuiIconButton-label"
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
             >
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
               />
-            </svg>
+            </button>
           </span>
           <span
             className="MuiTouchRipple-root"
           />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on Apple Music"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://itunes.apple.com/us/artist/gimble-a-cappella/1221861150?ign-gact=3&ls=1"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on Apple Music"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on Apple Music button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on Facebook"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.facebook.com/gimbleacappella/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on Facebook"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on Facebook button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on Spotify"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://open.spotify.com/artist/0CgETTTImSmkeCBkoUJiMg?autoplay=true&v=A"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on Spotify"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on Spotify button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on Google Play Music"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://play.google.com/music/m/A6i265eewm2mhu5p2fvikdbf5tm?play=1"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on Google Play Music"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on Google Play Music button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on SoundCloud"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://soundcloud.com/gimble-a-cappella"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on SoundCloud"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on SoundCloud button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on YouTube"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.youtube.com/channel/UCH2dQr26tAWVijoYdKHcgdg"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on YouTube"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on YouTube button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on YouTube Music"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.youtube.com/channel/UCzwG1_hJ5hRCMqzNlTJj2ZQ"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on YouTube Music"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on YouTube Music button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on Instagram"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://www.instagram.com/gimbleacappella/"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on Instagram"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on Instagram button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
-        <a
-          aria-describedby={null}
-          aria-disabled={false}
-          aria-label="Gimble A Cappella on Amazon Music"
-          className="MuiButtonBase-root MuiIconButton-root"
-          href="https://music.amazon.com/artists/B06XZ8143C?tab=LIBRARY&ref=dm_wcp_artist_link_s"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          title="Go to Gimble A Cappella on Amazon Music"
-        >
-          <span
-            className="MuiIconButton-label"
-          >
-            <img
-              alt="Gimble A Cappella on Amazon Music button"
-              className="GimbleCard-gimbleCardActionIcon-32"
-              src={
-                Object {
-                  "process": [Function],
-                }
-              }
-            />
-          </span>
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </a>
+        </div>
       </div>
+    </div>
+    <span
+      className="MuiTypography-root GimbleCard-buttonExplanation-36 MuiTypography-caption MuiTypography-colorTextSecondary"
+    >
+      These buttons scroll horizontally on smaller-width devices!
+    </span>
+    <div
+      className="MuiCardActions-root GimbleCard-cardActions-34 MuiCardActions-spacing"
+    >
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Go to website"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://www.gimbleacappella.com/"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella's website"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on Apple Music"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://itunes.apple.com/us/artist/gimble-a-cappella/1221861150?ign-gact=3&ls=1"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on Apple Music"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on Apple Music button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on Facebook"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://www.facebook.com/gimbleacappella/"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on Facebook"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on Facebook button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on Spotify"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://open.spotify.com/artist/0CgETTTImSmkeCBkoUJiMg?autoplay=true&v=A"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on Spotify"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on Spotify button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on Google Play Music"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://play.google.com/music/m/A6i265eewm2mhu5p2fvikdbf5tm?play=1"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on Google Play Music"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on Google Play Music button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on SoundCloud"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://soundcloud.com/gimble-a-cappella"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on SoundCloud"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on SoundCloud button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on YouTube"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://www.youtube.com/channel/UCH2dQr26tAWVijoYdKHcgdg"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on YouTube"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on YouTube button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on YouTube Music"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://www.youtube.com/channel/UCzwG1_hJ5hRCMqzNlTJj2ZQ"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on YouTube Music"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on YouTube Music button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on Instagram"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://www.instagram.com/gimbleacappella/"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on Instagram"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on Instagram button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
+      <a
+        aria-describedby={null}
+        aria-disabled={false}
+        aria-label="Gimble A Cappella on Amazon Music"
+        className="MuiButtonBase-root MuiIconButton-root"
+        href="https://music.amazon.com/artists/B06XZ8143C?tab=LIBRARY&ref=dm_wcp_artist_link_s"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Go to Gimble A Cappella on Amazon Music"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <img
+            alt="Gimble A Cappella on Amazon Music button"
+            className="GimbleCard-gimbleCardActionIcon-32"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </a>
     </div>
   </div>
   <div
@@ -958,7 +956,7 @@ exports[`Extra matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <div
-            className="RecommendedSitesTable-expansionHeaderContainer-267"
+            className="RecommendedSitesCard-expansionHeaderContainer-267"
           >
             <div
               className="MuiCardHeader-root"

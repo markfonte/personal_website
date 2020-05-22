@@ -74,7 +74,7 @@ const styles = {
   },
 };
 
-class RecommendedSitesTable extends React.Component {
+class RecommendedSitesCard extends React.Component {
   render() {
     const {classes} = this.props;
     const jacobFedrigonLink = `http://www-personal.umich.edu/~jacobfed/`;
@@ -198,8 +198,8 @@ class RecommendedSitesTable extends React.Component {
   }
 }
 
-RecommendedSitesTable.propTypes = {
+RecommendedSitesCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(RecommendedSitesTable);
+export default withStyles(styles)(RecommendedSitesCard);

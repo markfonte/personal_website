@@ -1,12 +1,23 @@
 import React from 'react';
 import parentPortalScreenshotOne
   from '../static/images/screenshots/laz_parent_portal_screenshot_1.webp';
+import parentPortalScreenshotOneFallback
+  from '../static/images/screenshots/laz_parent_portal_screenshot_1.jpg';
+
 import parentPortalScreenshotTwo
   from '../static/images/screenshots/laz_parent_portal_screenshot_2.webp';
+import parentPortalScreenshotTwoFallback
+  from '../static/images/screenshots/laz_parent_portal_screenshot_2.jpg';
+
 import parentPortalScreenshotThree
   from '../static/images/screenshots/laz_parent_portal_screenshot_3.webp';
+import parentPortalScreenshotThreeFallback
+  from '../static/images/screenshots/laz_parent_portal_screenshot_3.jpg';
+
 import badgeScreenshot
   from '../static/images/screenshots/laz_badge_screenshot.webp';
+import badgeScreenshotFallback
+  from '../static/images/screenshots/laz_badge_screenshot.png';
 import {
   Typography,
   Card,
@@ -268,24 +279,33 @@ class LAZCard extends React.Component {
               ! The following screenshots are from
               the production application:
               </Typography>
-              <img
-                className={classes.mobileScreenshot}
-                src={parentPortalScreenshotOne}
-                title="LAZ parent portal screenshot 1"
-                alt="LAZ parent portal screenshot 1"
-              />
-              <img
-                className={classes.mobileScreenshot}
-                src={parentPortalScreenshotTwo}
-                title="LAZ parent portal screenshot 2"
-                alt="LAZ parent portal screenshot 2"
-              />
-              <img
-                className={classes.mobileScreenshot}
-                src={parentPortalScreenshotThree}
-                title="LAZ parent portal screenshot 3"
-                alt="LAZ parent portal screenshot 3"
-              />
+              <picture>
+                <source srcSet={parentPortalScreenshotOne} type="image/webp"/>
+                <source srcSet={parentPortalScreenshotOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[parentPortalScreenshotOne, parentPortalScreenshotOneFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="LAZ parent portal screenshot 1"
+                />
+              </picture>
+              <picture>
+                <source srcSet={parentPortalScreenshotTwo} type="image/webp"/>
+                <source srcSet={parentPortalScreenshotTwoFallback} type="image/jpg"/>
+                <img
+                  srcSet={[parentPortalScreenshotTwo, parentPortalScreenshotTwoFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="LAZ parent portal screenshot 2"
+                />
+              </picture>
+              <picture>
+                <source srcSet={parentPortalScreenshotThree} type="image/webp"/>
+                <source srcSet={parentPortalScreenshotThreeFallback} type="image/jpg"/>
+                <img
+                  srcSet={[parentPortalScreenshotThree, parentPortalScreenshotThreeFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="LAZ parent portal screenshot 3"
+                />
+              </picture>
               <Typography variant="h5" gutterBottom>
                 <br />Summer 2017
               </Typography>
@@ -350,12 +370,15 @@ class LAZCard extends React.Component {
                 {' '}
               today! The following screenshot is from the production site:
               </Typography>
-              <img
-                src={badgeScreenshot}
-                className={classes.webScreenshot}
-                title="LAZ badge screenshot"
-                alt="LAZ badge screenshot"
-              />
+              <picture>
+                <source srcSet={badgeScreenshot} type="image/webp"/>
+                <source srcSet={badgeScreenshotFallback} type="image/png"/>
+                <img
+                  srcSet={[badgeScreenshot, badgeScreenshotFallback]}
+                  className={classes.webScreenshot}
+                  alt="LAZ badge screenshot"
+                />
+              </picture>
               <Typography variant="body1">
                 <br/>As a final note, I met some of the best people I have ever known during my two
                 summers at Learning A-Z. They are welcoming, encouraging, great engineers and just

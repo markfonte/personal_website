@@ -1,10 +1,19 @@
 import React from 'react';
 import walklensScreenshotOne
   from '../static/images/screenshots/walklens_screenshot_1.webp';
+import walklensScreenshotOneFallback
+  from '../static/images/screenshots/walklens_screenshot_1.jpg';
+
 import walklensScreenshotTwo
   from '../static/images/screenshots/walklens_screenshot_2.webp';
+import walklensScreenshotTwoFallback
+  from '../static/images/screenshots/walklens_screenshot_2.jpg';
+
 import walklensScreenshotThree
   from '../static/images/screenshots/walklens_screenshot_3.webp';
+import walklensScreenshotThreeFallback
+  from '../static/images/screenshots/walklens_screenshot_3.jpg';
+
 import walklensLogo
   from '../static/images/logos/walklens_logo.svg';
 import {
@@ -46,27 +55,26 @@ class WalklensCard extends React.Component {
     const liveDataLink = `https://developer.android.com/topic/libraries/architecture/livedata`;
 
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader
-            title="WalkLens"
-            subheader="Android application"
+      <Card raised={true} className="card">
+        <CardHeader
+          title="WalkLens"
+          subheader="Android application"
+        />
+        <CardContent>
+          {/* TODO: move to CardMedia */}
+          <img
+            src={walklensLogo}
+            className={classes.logo}
+            title="WalkLens logo"
+            alt="WalkLens logo"
           />
-          <CardContent>
-            {/* TODO: move to CardMedia */}
-            <img
-              src={walklensLogo}
-              className={classes.logo}
-              title="WalkLens logo"
-              alt="WalkLens logo"
-            />
-            <Typography variant="body1">
+          <Typography variant="body1">
               This project was built in my
-              {' '}
-              <Link color="secondary" href={eecs441Link}>
+            {' '}
+            <Link color="secondary" href={eecs441Link}>
                 EECS 441: Mobile App Development for Entrepreneurs
-              </Link>
-              {' '}
+            </Link>
+            {' '}
               class during senior year.
               The idea is that users give permission to the application to periodically poll their location
               to see if they are approaching a crosswalk. If the app determines that a user is approaching
@@ -76,77 +84,85 @@ class WalklensCard extends React.Component {
               safety is an issue that can be addressed by encouraging smartphone users to look up while they
               are walking. A more perfect solution would be for people to simply look while they are walking,
               but this does not always happen so we tried to combat it from the technology side.
-              <br/> <br/>
+            <br/> <br/>
               WalkLens is able to do all of the work it needs inside the logic of the Android application; it
               does not require a custom backend database. It uses the
-              {' '}
-              <Link color="secondary" href={mapsSdkForAndroidLink}>
+            {' '}
+            <Link color="secondary" href={mapsSdkForAndroidLink}>
                 Google Maps SDK for Android
-              </Link>
-              {' '}
+            </Link>
+            {' '}
               to display the map UI when opening the application, and the
-              {' '}
-              <Link color="secondary" href={roadsAPILink}>
+            {' '}
+            <Link color="secondary" href={roadsAPILink}>
                 Google Roads API
-              </Link>
-              {' '}
+            </Link>
+            {' '}
               to find the nearest road to a
               user. It runs as a background process that wakes up in set intervals (between 5 and 30 seconds),
               then determines the user&apos;s current latitude/longitude and calculates if it is near a road. If
               it is close to the nearest road (between 30-70 feet) then it sends a notification to the
               user. Additionally, as an implementation of dead reckoning, if a user is approaching a crosswalk
               it delays sending the notification until they have almost reached it. WalkLens uses
-              {' '}
-              <Link color="secondary" href={liveDataLink}>
+            {' '}
+            <Link color="secondary" href={liveDataLink}>
                 LiveData
-              </Link>
+            </Link>
               , the
-              {' '}
-              <Link color="secondary" href={navigationArchitectureComponentLink}>
+            {' '}
+            <Link color="secondary" href={navigationArchitectureComponentLink}>
                 Navigation Architecture component
-              </Link>
+            </Link>
               , data binding, coroutines, ViewModels,
-              {' '}
-              <Link color="secondary" href={okHttpLink}>
+            {' '}
+            <Link color="secondary" href={okHttpLink}>
                 OkHttp
-              </Link>
-              {' '}
+            </Link>
+            {' '}
               and much more. At the time of writing, it is available on the Google Play Store.
               There are no plans to make an iOS version of WalkLens.
-              <br /> < br/>
+            <br /> < br/>
               View it on
-              {' '}
-              <Link color="secondary" href={walklensGithubLink}>
+            {' '}
+            <Link color="secondary" href={walklensGithubLink}>
                 Github
-              </Link>
-              {' '}
+            </Link>
+            {' '}
               or the
-              {' '}
-              <Link color="secondary" href={walklensGooglePlayLink}>
+            {' '}
+            <Link color="secondary" href={walklensGooglePlayLink}>
                 Google Play Store
-              </Link>
-            </Typography>
+            </Link>
+          </Typography>
+          <picture>
+            <source srcSet={walklensScreenshotOne} type="image/webp"/>
+            <source srcSet={walklensScreenshotOneFallback} type="image/jpg"/>
             <img
+              srcSet={[walklensScreenshotOne, walklensScreenshotOneFallback]}
               className={classes.screenshot}
-              src={walklensScreenshotOne}
-              title="WalkLens screenshot 1"
               alt="WalkLens screenshot 1"
             />
+          </picture>
+          <picture>
+            <source srcSet={walklensScreenshotTwo} type="image/webp"/>
+            <source srcSet={walklensScreenshotTwoFallback} type="image/jpg"/>
             <img
+              srcSet={[walklensScreenshotTwo, walklensScreenshotTwoFallback]}
               className={classes.screenshot}
-              src={walklensScreenshotTwo}
-              title="WalkLens screenshot 2"
               alt="WalkLens screenshot 2"
             />
+          </picture>
+          <picture>
+            <source srcSet={walklensScreenshotThree} type="image/webp"/>
+            <source srcSet={walklensScreenshotThreeFallback} type="image/jpg"/>
             <img
+              srcSet={[walklensScreenshotThree, walklensScreenshotThreeFallback]}
               className={classes.screenshot}
-              src={walklensScreenshotThree}
-              title="WalkLens screenshot 3"
               alt="WalkLens screenshot 3"
             />
-          </CardContent>
-        </Card>
-      </div>
+          </picture>
+        </CardContent>
+      </Card>
     );
   }
 }

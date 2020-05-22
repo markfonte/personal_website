@@ -58,43 +58,41 @@ class CompletedBooksCard extends React.Component {
     ];
 
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader title="Books I Would Recommend" subheader="September 2019" />
-          <CardContent>
-            {completedBooks.map((completedBook) => (
-              <Card key={completedBook.title} className="book-cover">
-                <img
-                  src={completedBook.image}
-                  width="320"
-                  height="auto"
-                  title={completedBook.title}
-                  alt={completedBook.title}
-                />
-                <br />
-                <Link
-                  href={completedBook.link}
-                  color="textPrimary"
-                  variant="h6"
-                >
-                  {completedBook.title}
-                </Link>
-                <Typography variant="subtitle1">
-                  {completedBook.author}
-                </Typography>
-              </Card>
-            ))}
-            <br />
-            <Link
-              href={jacobFedrigonWebsiteLink}
-              variant="caption"
-              color="textSecondary"
-            >
+      <Card raised={true} className="card">
+        <CardHeader title="Books I Would Recommend" subheader="September 2019" />
+        <CardContent>
+          {completedBooks.map((completedBook) => (
+            <Card key={completedBook.title} className="book-cover">
+              <img
+                src={completedBook.image}
+                width="320"
+                height="auto"
+                title={completedBook.title}
+                alt={completedBook.title}
+              />
+              <br />
+              <Link
+                href={completedBook.link}
+                color="textPrimary"
+                variant="h6"
+              >
+                {completedBook.title}
+              </Link>
+              <Typography variant="subtitle1">
+                {completedBook.author}
+              </Typography>
+            </Card>
+          ))}
+          <br />
+          <Link
+            href={jacobFedrigonWebsiteLink}
+            variant="caption"
+            color="textSecondary"
+          >
               credit: jacob fedrigon&#34;s website
-            </Link>
-          </CardContent>
-        </Card>
-      </div>
+          </Link>
+        </CardContent>
+      </Card>
     );
   }
 }

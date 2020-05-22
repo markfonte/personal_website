@@ -1332,512 +1332,86 @@ exports[`Projects matches snapshot 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiCardHeader-root"
     >
       <div
-        className="MuiCardHeader-root"
+        className="MuiCardHeader-content"
       >
-        <div
-          className="MuiCardHeader-content"
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            InstEvents
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Hackathon Project @ MHacks 12
-          </span>
-        </div>
+          InstEvents
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          Hackathon Project @ MHacks 12
+        </span>
       </div>
-      <div
-        alt="MHacks 12 logo"
-        className="MuiCardMedia-root MHacks12Card-media-167"
-        style={
-          Object {
-            "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
-          }
+    </div>
+    <div
+      alt="MHacks 12 logo"
+      className="MuiCardMedia-root MHacks12Card-media-167"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
         }
-        title="MHacks 12 logo"
-      />
-      <div
-        className="MuiCardContent-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1"
-        >
-          This project was definitely my favorite hackathon project. Nathan and I had 36 hours at MHacks to make a very solid project, and I thought we delivered on our own high expectations. The idea for the app came out of one of my entrepreneurship classes where we were asked to "explore" something new every week. It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app features a Google Maps view that immediately opens to show today's current and upcoming events. In addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users can add events with an interface that features date pickers, time pickers, address autocomplete using the Google Maps Places API, the ability to add a cover photo and more!
-          <br />
-           
-          <br />
-          For this app, we focused on making sure all of the features that we completed were done well. For example, we put lots of extra time into making sure the "Add Event" flow was as seamless as possible, instead of using that time to partially complete some of our stretch goals. The advantage of this is a good UX, even with just the app we made during the hackathon. Going forward, we plan to continue working on other features like web-scraping for popular events, and an eventual release to the Google Play Store. More details on upcoming features and more on our
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://github.com/markfonte/InstEvents"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Github
-          </a>
-          ! We also believe that the app has significant value as-is, because of the fact that anyone can post an event. This, in combination with the built-in Google Maps view, allows for a location-based sorting of events as opposed to the normal popularity-based sorting of events. In other words, events with only 30 people attending get the same weight on the map as those with 5,000. This allows for an even playing field and is a concept we have not really seen before.
-          <br />
-           
-          <br />
-          View it on
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://devpost.com/software/instevent"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Devpost
-          </a>
-           
-          or
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://github.com/markfonte/InstEvents"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Github
-          </a>
-          <br />
-           
-          <br />
-          <img
-            alt="InstEvents screenshot 3"
-            className="MHacks12Card-screenshot-169"
-            height="500"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="InstEvents screenshot 3"
-            width="240"
-          />
-          <img
-            alt="InstEvents screenshot 1"
-            className="MHacks12Card-screenshot-169"
-            height="500"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="InstEvents screenshot 1"
-            width="240"
-          />
-          <img
-            alt="InstEvents screenshot 2"
-            className="MHacks12Card-screenshot-169"
-            height="500"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="InstEvents screenshot 2"
-            width="240"
-          />
-          <img
-            alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-169"
-            height="360"
-            src={
-              Object {
-                "process": [Function],
-              }
-            }
-            title="Nathan and Mark MHacks 12"
-            width="240"
-          />
-        </p>
-      </div>
-    </div>
-  </div>
-  <div>
+      }
+      title="MHacks 12 logo"
+    />
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiCardContent-root"
     >
-      <div
-        className="MuiCardHeader-root"
+      <p
+        className="MuiTypography-root MuiTypography-body1"
       >
-        <div
-          className="MuiCardHeader-content"
+        This project was definitely my favorite hackathon project. Nathan and I had 36 hours at MHacks to make a very solid project, and I thought we delivered on our own high expectations. The idea for the app came out of one of my entrepreneurship classes where we were asked to "explore" something new every week. It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app features a Google Maps view that immediately opens to show today's current and upcoming events. In addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users can add events with an interface that features date pickers, time pickers, address autocomplete using the Google Maps Places API, the ability to add a cover photo and more!
+        <br />
+         
+        <br />
+        For this app, we focused on making sure all of the features that we completed were done well. For example, we put lots of extra time into making sure the "Add Event" flow was as seamless as possible, instead of using that time to partially complete some of our stretch goals. The advantage of this is a good UX, even with just the app we made during the hackathon. Going forward, we plan to continue working on other features like web-scraping for popular events, and an eventual release to the Google Play Store. More details on upcoming features and more on our
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://github.com/markfonte/InstEvents"
+          onBlur={[Function]}
+          onFocus={[Function]}
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            WalkLens
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Android application
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <img
-          alt="WalkLens logo"
-          className="WalklensCard-logo-178"
-          src={
-            Object {
-              "process": [Function],
-            }
-          }
-          title="WalkLens logo"
-        />
-        <p
-          className="MuiTypography-root MuiTypography-body1"
+          Github
+        </a>
+        ! We also believe that the app has significant value as-is, because of the fact that anyone can post an event. This, in combination with the built-in Google Maps view, allows for a location-based sorting of events as opposed to the normal popularity-based sorting of events. In other words, events with only 30 people attending get the same weight on the map as those with 5,000. This allows for an even playing field and is a concept we have not really seen before.
+        <br />
+         
+        <br />
+        View it on
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://devpost.com/software/instevent"
+          onBlur={[Function]}
+          onFocus={[Function]}
         >
-          This project was built in my
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://art.ai.umich.edu/course/EECS%20441/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            EECS 441: Mobile App Development for Entrepreneurs
-          </a>
-           
-          class during senior year. The idea is that users give permission to the application to periodically poll their location to see if they are approaching a crosswalk. If the app determines that a user is approaching a road, they receive a pop-up notification. This alerts the user to look up from their phone to help ensure that they are not wandering into the street and putting themselves in danger. The application comes from the idea that pedestrian safety is an issue that can be addressed by encouraging smartphone users to look up while they are walking. A more perfect solution would be for people to simply look while they are walking, but this does not always happen so we tried to combat it from the technology side.
-          <br />
-           
-          <br />
-          WalkLens is able to do all of the work it needs inside the logic of the Android application; it does not require a custom backend database. It uses the
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://developers.google.com/maps/documentation/android-sdk/intro"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Google Maps SDK for Android
-          </a>
-           
-          to display the map UI when opening the application, and the
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://developers.google.com/maps/documentation/roads/intro"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Google Roads API
-          </a>
-           
-          to find the nearest road to a user. It runs as a background process that wakes up in set intervals (between 5 and 30 seconds), then determines the user's current latitude/longitude and calculates if it is near a road. If it is close to the nearest road (between 30-70 feet) then it sends a notification to the user. Additionally, as an implementation of dead reckoning, if a user is approaching a crosswalk it delays sending the notification until they have almost reached it. WalkLens uses
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://developer.android.com/topic/libraries/architecture/livedata"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            LiveData
-          </a>
-          , the
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://developer.android.com/guide/navigation"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Navigation Architecture component
-          </a>
-          , data binding, coroutines, ViewModels,
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://square.github.io/okhttp/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            OkHttp
-          </a>
-           
-          and much more. At the time of writing, it is available on the Google Play Store. There are no plans to make an iOS version of WalkLens.
-          <br />
-           
-          <br />
-          View it on
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://github.com/markfonte/WalkLens"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Github
-          </a>
-           
-          or the
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Google Play Store
-          </a>
-        </p>
-        <img
-          alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-177"
-          src={
-            Object {
-              "process": [Function],
-            }
-          }
-          title="WalkLens screenshot 1"
-        />
-        <img
-          alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-177"
-          src={
-            Object {
-              "process": [Function],
-            }
-          }
-          title="WalkLens screenshot 2"
-        />
-        <img
-          alt="WalkLens screenshot 3"
-          className="WalklensCard-screenshot-177"
-          src={
-            Object {
-              "process": [Function],
-            }
-          }
-          title="WalkLens screenshot 3"
-        />
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
+          Devpost
+        </a>
+         
+        or
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://github.com/markfonte/InstEvents"
+          onBlur={[Function]}
+          onFocus={[Function]}
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Laughable Lyrics
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Hackathon Winner @ Spartahack V
-          </span>
-        </div>
-      </div>
-      <div
-        alt="SpartaHack V logo"
-        className="MuiCardMedia-root Spartahack5Card-media-179"
-        style={
-          Object {
-            "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
-          }
-        }
-        title="SpartaHack V logo"
-      />
-      <div
-        className="MuiCardContent-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
-        >
-          This hackathon project,
-           
-          <i>
-            Laughable Lyrics
-          </i>
-          , is one of my favorites.
-           
-          We took inspiration from the popular
-           
-          <i>
-            "Google Translate Sings"
-          </i>
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://www.youtube.com/watch?v=2bVAoVlFYf0"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            YouTube videos
-          </a>
-           
-          and decided we could automate that process. Using Google Translate APIs we built an Android application that allowed users to translate the Genius Lyrics through a specified number of languages, and back to English. The result was always hilarious, and the user interface we built (using Android Jetpack) made it very easy to do. We won 
-          <i>
-            Most Creative/Funniest Hack
-          </i>
-           for the project. View it on
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://devpost.com/software/laughable-lyrics"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Devpost
-          </a>
-           
-          or
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://github.com/nathan815/Laughable-Lyrics"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Github
-          </a>
-        </p>
-        <img
-          alt="Laughable Lyrics logo"
-          className="Spartahack5Card-logo-180"
-          src={
-            Object {
-              "process": [Function],
-            }
-          }
-          title="Laughable Lyrics logo"
-        />
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
-        >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Road Mapper
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            EECS 493 class project
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
-        >
-          This was just a small project that we worked on for
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://atlas.ai.umich.edu/course/EECS%20493/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            EECS 493
-          </a>
-           
-          during my final semester in college. It was really fun because I got to use
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://vuejs.org/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Vue.js
-          </a>
-           
-          for the first time on an actual web application. It was very simple to use, and I loved how lightweight it was (with a single import you can start using Vue right away in any web application).
-          <br />
-          <br />
-          The application was modeled off of how applications like
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://www.waze.com/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Waze
-          </a>
-           
-          allow users to indicate driving hazards and speed traps that they find. We used the same concept to crowdsource the presence of (primarily winter) walking hazards like ice, snow and mud. Using the
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://docs.mapbox.com/api/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Mapbox API
-          </a>
-           
-          we had a map that allowed users to create, read, update and delete different walking hazards. They could enter a description, drag markers to a spot, select the type of hazard, and even use built-in walking directions. We stored the currently-active hazards in a
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://docs.python.org/2/library/sqlite3.html"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            SQLite
-          </a>
-           
-          database managed by a
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://www.python.org/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Python
-          </a>
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://flask.palletsprojects.com/en/1.1.x/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Flask
-          </a>
-           
-          application.
-        </p>
+          Github
+        </a>
+        <br />
+         
+        <br />
         <picture>
-          <br />
           <source
             srcSet={
               Object {
@@ -1852,11 +1426,11 @@ exports[`Projects matches snapshot 1`] = `
                 "process": [Function],
               }
             }
-            type="image/png"
+            type="image/jpg"
           />
           <img
-            alt="Road Mappers screenshot 1"
-            className="RoadMapperCard-screenshotOne-181"
+            alt="InstEvents screenshot 3"
+            className="MHacks12Card-screenshot-169"
             srcSet={
               Array [
                 Object {
@@ -1867,16 +1441,580 @@ exports[`Projects matches snapshot 1`] = `
                 },
               ]
             }
-            title="Road Mappers screenshot 1"
           />
         </picture>
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+        <picture>
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/jpg"
+          />
+          <img
+            alt="InstEvents screenshot 1"
+            className="MHacks12Card-screenshot-169"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+          />
+        </picture>
+        <picture>
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/jpg"
+          />
+          <img
+            alt="InstEvents screenshot 2"
+            className="MHacks12Card-screenshot-169"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+          />
+        </picture>
+        <picture>
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              Object {
+                "process": [Function],
+              }
+            }
+            type="image/jpg"
+          />
+          <img
+            alt="Nathan and Mark MHacks 12"
+            className="MHacks12Card-screenshot-169"
+            srcSet={
+              Array [
+                Object {
+                  "process": [Function],
+                },
+                Object {
+                  "process": [Function],
+                },
+              ]
+            }
+          />
+        </picture>
+      </p>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardHeader-root"
+    >
+      <div
+        className="MuiCardHeader-content"
+      >
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
         >
-          <br />
-          Although we never released it to the public, it was a great experience with a new framework and a new API. It was also a testament to how smoothly a project can be built if the team is on the same page, despite being made entirely during quarantine!
-        </p>
+          WalkLens
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          Android application
+        </span>
       </div>
+    </div>
+    <div
+      className="MuiCardContent-root"
+    >
+      <img
+        alt="WalkLens logo"
+        className="WalklensCard-logo-178"
+        src={
+          Object {
+            "process": [Function],
+          }
+        }
+        title="WalkLens logo"
+      />
+      <p
+        className="MuiTypography-root MuiTypography-body1"
+      >
+        This project was built in my
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://art.ai.umich.edu/course/EECS%20441/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          EECS 441: Mobile App Development for Entrepreneurs
+        </a>
+         
+        class during senior year. The idea is that users give permission to the application to periodically poll their location to see if they are approaching a crosswalk. If the app determines that a user is approaching a road, they receive a pop-up notification. This alerts the user to look up from their phone to help ensure that they are not wandering into the street and putting themselves in danger. The application comes from the idea that pedestrian safety is an issue that can be addressed by encouraging smartphone users to look up while they are walking. A more perfect solution would be for people to simply look while they are walking, but this does not always happen so we tried to combat it from the technology side.
+        <br />
+         
+        <br />
+        WalkLens is able to do all of the work it needs inside the logic of the Android application; it does not require a custom backend database. It uses the
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://developers.google.com/maps/documentation/android-sdk/intro"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Google Maps SDK for Android
+        </a>
+         
+        to display the map UI when opening the application, and the
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://developers.google.com/maps/documentation/roads/intro"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Google Roads API
+        </a>
+         
+        to find the nearest road to a user. It runs as a background process that wakes up in set intervals (between 5 and 30 seconds), then determines the user's current latitude/longitude and calculates if it is near a road. If it is close to the nearest road (between 30-70 feet) then it sends a notification to the user. Additionally, as an implementation of dead reckoning, if a user is approaching a crosswalk it delays sending the notification until they have almost reached it. WalkLens uses
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://developer.android.com/topic/libraries/architecture/livedata"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          LiveData
+        </a>
+        , the
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://developer.android.com/guide/navigation"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Navigation Architecture component
+        </a>
+        , data binding, coroutines, ViewModels,
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://square.github.io/okhttp/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          OkHttp
+        </a>
+         
+        and much more. At the time of writing, it is available on the Google Play Store. There are no plans to make an iOS version of WalkLens.
+        <br />
+         
+        <br />
+        View it on
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://github.com/markfonte/WalkLens"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Github
+        </a>
+         
+        or the
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Google Play Store
+        </a>
+      </p>
+      <picture>
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/webp"
+        />
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/jpg"
+        />
+        <img
+          alt="WalkLens screenshot 1"
+          className="WalklensCard-screenshot-177"
+          srcSet={
+            Array [
+              Object {
+                "process": [Function],
+              },
+              Object {
+                "process": [Function],
+              },
+            ]
+          }
+        />
+      </picture>
+      <picture>
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/webp"
+        />
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/jpg"
+        />
+        <img
+          alt="WalkLens screenshot 2"
+          className="WalklensCard-screenshot-177"
+          srcSet={
+            Array [
+              Object {
+                "process": [Function],
+              },
+              Object {
+                "process": [Function],
+              },
+            ]
+          }
+        />
+      </picture>
+      <picture>
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/webp"
+        />
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/jpg"
+        />
+        <img
+          alt="WalkLens screenshot 3"
+          className="WalklensCard-screenshot-177"
+          srcSet={
+            Array [
+              Object {
+                "process": [Function],
+              },
+              Object {
+                "process": [Function],
+              },
+            ]
+          }
+        />
+      </picture>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardHeader-root"
+    >
+      <div
+        className="MuiCardHeader-content"
+      >
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        >
+          Laughable Lyrics
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          Hackathon Winner @ Spartahack V
+        </span>
+      </div>
+    </div>
+    <div
+      alt="SpartaHack V logo"
+      className="MuiCardMedia-root Spartahack5Card-media-179"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
+        }
+      }
+      title="SpartaHack V logo"
+    />
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+      >
+        This hackathon project,
+         
+        <i>
+          Laughable Lyrics
+        </i>
+        , is one of my favorites.
+         
+        We took inspiration from the popular
+         
+        <i>
+          "Google Translate Sings"
+        </i>
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://www.youtube.com/watch?v=2bVAoVlFYf0"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          YouTube videos
+        </a>
+         
+        and decided we could automate that process. Using Google Translate APIs we built an Android application that allowed users to translate the Genius Lyrics through a specified number of languages, and back to English. The result was always hilarious, and the user interface we built (using Android Jetpack) made it very easy to do. We won 
+        <i>
+          Most Creative/Funniest Hack
+        </i>
+         for the project. View it on
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://devpost.com/software/laughable-lyrics"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Devpost
+        </a>
+         
+        or
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://github.com/nathan815/Laughable-Lyrics"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Github
+        </a>
+      </p>
+      <img
+        alt="Laughable Lyrics logo"
+        className="Spartahack5Card-logo-180"
+        src={
+          Object {
+            "process": [Function],
+          }
+        }
+        title="Laughable Lyrics logo"
+      />
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardHeader-root"
+    >
+      <div
+        className="MuiCardHeader-content"
+      >
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        >
+          Road Mapper
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          EECS 493 class project
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+      >
+        This was just a small project that we worked on for
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://atlas.ai.umich.edu/course/EECS%20493/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          EECS 493
+        </a>
+         
+        during my final semester in college. It was really fun because I got to use
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://vuejs.org/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Vue.js
+        </a>
+         
+        for the first time on an actual web application. It was very simple to use, and I loved how lightweight it was (with a single import you can start using Vue right away in any web application).
+        <br />
+        <br />
+        The application was modeled off of how applications like
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://www.waze.com/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Waze
+        </a>
+         
+        allow users to indicate driving hazards and speed traps that they find. We used the same concept to crowdsource the presence of (primarily winter) walking hazards like ice, snow and mud. Using the
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://docs.mapbox.com/api/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Mapbox API
+        </a>
+         
+        we had a map that allowed users to create, read, update and delete different walking hazards. They could enter a description, drag markers to a spot, select the type of hazard, and even use built-in walking directions. We stored the currently-active hazards in a
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://docs.python.org/2/library/sqlite3.html"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          SQLite
+        </a>
+         
+        database managed by a
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://www.python.org/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Python
+        </a>
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://flask.palletsprojects.com/en/1.1.x/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Flask
+        </a>
+         
+        application.
+      </p>
+      <picture>
+        <br />
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/webp"
+        />
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/png"
+        />
+        <img
+          alt="Road Mappers screenshot 1"
+          className="RoadMapperCard-screenshotOne-181"
+          srcSet={
+            Array [
+              Object {
+                "process": [Function],
+              },
+              Object {
+                "process": [Function],
+              },
+            ]
+          }
+          title="Road Mappers screenshot 1"
+        />
+      </picture>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+      >
+        <br />
+        Although we never released it to the public, it was a great experience with a new framework and a new API. It was also a testament to how smoothly a project can be built if the team is on the same page, despite being made entirely during quarantine!
+      </p>
     </div>
   </div>
   <div>
@@ -1956,202 +2094,240 @@ exports[`Projects matches snapshot 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiCardHeader-root"
     >
       <div
-        className="MuiCardHeader-root"
+        className="MuiCardHeader-content"
       >
-        <div
-          className="MuiCardHeader-content"
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Congo AI
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Hackathon Winner @ GrizzHacks 3
-          </span>
-        </div>
+          Congo AI
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          Hackathon Winner @ GrizzHacks 3
+        </span>
       </div>
-      <div
-        alt="GrizzHacks 3 logo"
-        className="MuiCardMedia-root Grizzhacks3Card-media-185"
-        style={
+    </div>
+    <div
+      alt="GrizzHacks 3 logo"
+      className="MuiCardMedia-root Grizzhacks3Card-media-185"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
+        }
+      }
+      title="GrizzHacks 3 logo"
+    />
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+      >
+        This was the first hackathon I ever competed in. We built an online store to buy and sell pre-trained machine learning models, using Vue.js and MongoDB. While we did not completely finish, the idea was to be able to test out the machine learning models first in the store before purchasing from the person that made it. Most of the credit on this project goes to my team. We won 
+        <i>
+          Best DevOps Hack, Presented by Ally Financial
+        </i>
+         and 
+        <i>
+          Best use of Dynatrace
+        </i>
+        . View it on 
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://devpost.com/software/congoai"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Devpost
+        </a>
+         
+        or
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://github.com/nathan815/CongoAI"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Github
+        </a>
+      </p>
+      <img
+        alt="CongoAI logo"
+        className="Grizzhacks3Card-logo-186"
+        src={
           Object {
-            "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
+            "process": [Function],
           }
         }
-        title="GrizzHacks 3 logo"
+        title="CongoAI logo"
       />
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardHeader-root"
+    >
       <div
-        className="MuiCardContent-root"
+        className="MuiCardHeader-content"
       >
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
         >
-          This was the first hackathon I ever competed in. We built an online store to buy and sell pre-trained machine learning models, using Vue.js and MongoDB. While we did not completely finish, the idea was to be able to test out the machine learning models first in the store before purchasing from the person that made it. Most of the credit on this project goes to my team. We won 
-          <i>
-            Best DevOps Hack, Presented by Ally Financial
-          </i>
-           and 
-          <i>
-            Best use of Dynatrace
-          </i>
-          . View it on 
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://devpost.com/software/congoai"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Devpost
-          </a>
-           
-          or
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://github.com/nathan815/CongoAI"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Github
-          </a>
-        </p>
-        <img
-          alt="CongoAI logo"
-          className="Grizzhacks3Card-logo-186"
-          src={
+          Spotlight
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          Lead Android developer
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1"
+      >
+        We worked on Android and iOS applications to help streamline the sorority recruitment process. Both applications were built using Firebase, and the Android application is built using Android Jetpack, architecture components and Google Maps APIs. I built a successful POC for the Android application and successfully onboarded another developer to maintain the project.
+      </p>
+      <picture>
+        <source
+          srcSet={
             Object {
               "process": [Function],
             }
           }
-          title="CongoAI logo"
+          type="image/webp"
         />
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
-    >
-      <div
-        className="MuiCardHeader-root"
-      >
-        <div
-          className="MuiCardHeader-content"
-        >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Spotlight
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Lead Android developer
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1"
-        >
-          We worked on Android and iOS applications to help streamline the sorority recruitment process. Both applications were built using Firebase, and the Android application is built using Android Jetpack, architecture components and Google Maps APIs. I built a successful POC for the Android application and successfully onboarded another developer to maintain the project.
-        </p>
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/png"
+        />
         <img
           alt="Spotlight screenshot 1"
           className="SpotlightCard-screenshot-187"
-          src={
+          srcSet={
+            Array [
+              Object {
+                "process": [Function],
+              },
+              Object {
+                "process": [Function],
+              },
+            ]
+          }
+        />
+      </picture>
+      <picture>
+        <source
+          srcSet={
             Object {
               "process": [Function],
             }
           }
-          title="Spotlight screenshot 1"
+          type="image/webp"
+        />
+        <source
+          srcSet={
+            Object {
+              "process": [Function],
+            }
+          }
+          type="image/png"
         />
         <img
           alt="Spotlight screenshot 2"
           className="SpotlightCard-screenshot-187"
-          src={
-            Object {
-              "process": [Function],
-            }
+          srcSet={
+            Array [
+              Object {
+                "process": [Function],
+              },
+              Object {
+                "process": [Function],
+              },
+            ]
           }
-          title="Spotlight screenshot 2"
         />
-      </div>
+      </picture>
     </div>
   </div>
-  <div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiCardHeader-root"
     >
       <div
-        className="MuiCardHeader-root"
+        className="MuiCardHeader-content"
       >
-        <div
-          className="MuiCardHeader-content"
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Doggie Doodles
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Entrepreneur
-          </span>
-        </div>
+          Doggie Doodles
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        >
+          Entrepreneur
+        </span>
       </div>
-      <div
-        alt="Gimble A Cappella - 2019"
-        className="MuiCardMedia-root DoggieDoodlesCard-media-188"
-        style={
-          Object {
-            "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
-          }
+    </div>
+    <div
+      alt="Gimble A Cappella - 2019"
+      className="MuiCardMedia-root DoggieDoodlesCard-media-188"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
         }
-        title="Gimble A Cappella - 2019"
-      />
-      <div
-        className="MuiCardContent-root"
+      }
+      title="Gimble A Cappella - 2019"
+    />
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1"
       >
-        <p
-          className="MuiTypography-root MuiTypography-body1"
+        Started from a class project, this business sells custom merchandise using a digital drawing of your animal.
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="mailto:dopedoggiedoodles@gmail.com"
+          onBlur={[Function]}
+          onFocus={[Function]}
         >
-          Started from a class project, this business sells custom merchandise using a digital drawing of your animal.
+          Send us a picture of your dog or cat
            
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="mailto:dopedoggiedoodles@gmail.com"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Send us a picture of your dog or cat
-             
-          </a>
-           and we will turn it into a custom drawing. Then head over to
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://www.redbubble.com/people/doggiedoodles"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Redbubble
-          </a>
-           
-          and you can purchase a custom mug, laptop sticker, phone case, and more. I might not be writing software for this business, but it is still lots of fun!
-        </p>
-      </div>
+        </a>
+         and we will turn it into a custom drawing. Then head over to
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://www.redbubble.com/people/doggiedoodles"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Redbubble
+        </a>
+         
+        and you can purchase a custom mug, laptop sticker, phone case, and more. I might not be writing software for this business, but it is still lots of fun!
+      </p>
     </div>
   </div>
   <div

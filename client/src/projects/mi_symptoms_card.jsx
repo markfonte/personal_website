@@ -20,10 +20,12 @@ import miSymptomsScreenshotOne
   from '../static/images/screenshots/mi_symptoms_screenshot_1.webp';
 import miSymptomsScreenshotOneFallback
   from '../static/images/screenshots/mi_symptoms_screenshot_1.jpg';
+
 import miSymptomsScreenshotTwo
   from '../static/images/screenshots/mi_symptoms_screenshot_2.webp';
 import miSymptomsScreenshotTwoFallback
   from '../static/images/screenshots/mi_symptoms_screenshot_2.jpg';
+
 import miSymptomsScreenshotThree
   from '../static/images/screenshots/mi_symptoms_screenshot_3.webp';
 import miSymptomsScreenshotThreeFallback

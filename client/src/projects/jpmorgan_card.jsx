@@ -1,6 +1,8 @@
 import React from 'react';
-import JPMorganScreenshot1
+import JPMorganScreenshotOne
   from '../static/images/screenshots/jpmorgan_screenshot_1.webp';
+import JPMorganScreenshotOneFallback
+  from '../static/images/screenshots/jpmorgan_screenshot_1.jpg';
 import {
   Typography,
   Card,
@@ -202,12 +204,15 @@ class JPMorganCard extends React.Component {
                 {' '}
               pop-ups.
                 <br/>
-                <img
-                  className={classes.mobileScreenshot}
-                  src={JPMorganScreenshot1}
-                  title="J.P. Morgan screenshot 1"
-                  alt="J.P. Morgan screenshot 1"
-                />
+                <picture>
+                  <source srcSet={JPMorganScreenshotOne} type="image/webp"/>
+                  <source srcSet={JPMorganScreenshotOneFallback} type="image/jpg"/>
+                  <img
+                    srcSet={[JPMorganScreenshotOne, JPMorganScreenshotOneFallback]}
+                    className={classes.mobileScreenshot}
+                    alt="J.P. Morgan screenshot 1"
+                  />
+                </picture>
                 <br/>
               Although this was not one of my most challenging technical experiences, I did learn a lot about
               work cultures where there are lots of manual steps surrounding development. I believe that learning how

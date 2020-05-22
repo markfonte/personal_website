@@ -26,39 +26,37 @@ class CurrentBooksCard extends React.Component {
     ];
 
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader title="Books I&#39;m Reading" subheader="September 2019" />
-          <CardContent>
-            {currentBooks.map((currentBook) => (
-              <Card key={currentBook.title} className="book-cover">
-                <img
-                  src={currentBook.image}
-                  width="320"
-                  height="auto"
-                  title={currentBook.title}
-                  alt={currentBook.title}
-                />
-                <br />
-                <Link href={currentBook.link} color="textPrimary" variant="h6">
-                  {currentBook.title}
-                </Link>
-                <Typography variant="subtitle1">
-                  {currentBook.author}
-                </Typography>
-              </Card>
-            ))}
-            <br />
-            <Link
-              href={jacobFedrigonWebsiteLink}
-              variant="caption"
-              color="textSecondary"
-            >
+      <Card raised={true} className="card">
+        <CardHeader title="Books I&#39;m Reading" subheader="September 2019" />
+        <CardContent>
+          {currentBooks.map((currentBook) => (
+            <Card key={currentBook.title} className="book-cover">
+              <img
+                src={currentBook.image}
+                width="320"
+                height="auto"
+                title={currentBook.title}
+                alt={currentBook.title}
+              />
+              <br />
+              <Link href={currentBook.link} color="textPrimary" variant="h6">
+                {currentBook.title}
+              </Link>
+              <Typography variant="subtitle1">
+                {currentBook.author}
+              </Typography>
+            </Card>
+          ))}
+          <br />
+          <Link
+            href={jacobFedrigonWebsiteLink}
+            variant="caption"
+            color="textSecondary"
+          >
               credit: jacob fedrigon&#34;s website
-            </Link>
-          </CardContent>
-        </Card>
-      </div>
+          </Link>
+        </CardContent>
+      </Card>
     );
   }
 }
