@@ -2116,14 +2116,7 @@ exports[`Projects matches snapshot 1`] = `
       </div>
     </div>
     <div
-      alt="GrizzHacks 3 logo"
-      className="MuiCardMedia-root Grizzhacks3Card-media-185"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
-        }
-      }
-      title="GrizzHacks 3 logo"
+      className="MuiCardMedia-root"
     />
     <div
       className="MuiCardContent-root"

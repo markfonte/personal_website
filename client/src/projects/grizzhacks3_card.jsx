@@ -9,6 +9,11 @@ import {
   withStyles,
 } from '@material-ui/core';
 import congoaiLogo from '../static/images/logos/congoai_logo.svg';
+import grizzhacksLogo
+  from '../static/images/logos/grizzhacks_logo.webp';
+import grizzhacksLogoFallback
+  from '../static/images/logos/grizzhacks_logo.png';
+
 import PropTypes from 'prop-types';
 
 const styles = {
@@ -35,10 +40,21 @@ class Grizzhacks3Card extends React.Component {
           subheader="Hackathon Winner @ GrizzHacks 3"
         />
         <CardMedia
-          className={classes.media}
-          image="/images/grizzhacks_logo.webp"
-          title="GrizzHacks 3 logo"
-          alt="GrizzHacks 3 logo"
+        //   className={classes.media}
+        //   image="/images/grizzhacks_logo.webp"
+        //   title="GrizzHacks 3 logo"
+        //   alt="GrizzHacks 3 logo"
+          src={
+            <picture>
+              <source srcSet={grizzhacksLogo} type="image/webp"/>
+              <source srcSet={grizzhacksLogoFallback} type="image/png"/>
+              <img
+                srcSet={[grizzhacksLogo, grizzhacksLogoFallback]}
+                className={classes.media}
+                alt="GrizzHacks 3 logo"
+              />
+            </picture>
+          }
         />
         <CardContent>
           <Typography variant="body1" paragraph>
