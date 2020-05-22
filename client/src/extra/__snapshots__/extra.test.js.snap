@@ -12,6 +12,13 @@ exports[`Extra matches snapshot 1`] = `
   >
     Some other fun stuff - enjoy!
   </h6>
+  <p
+    className="MuiTypography-root MuiTypography-body1 MuiTypography-colorSecondary"
+  >
+    <b>
+      Click to expand/collapse cards
+    </b>
+  </p>
   <div>
     <div
       className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
@@ -20,9 +27,12 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
+          aria-controls="gimble-content"
           aria-disabled={false}
           aria-expanded={false}
+          aria-label="Gimble"
           className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          id="gimble-header"
           onBlur={[Function]}
           onClick={[Function]}
           onDragLeave={[Function]}
@@ -916,525 +926,129 @@ exports[`Extra matches snapshot 1`] = `
       </a>
     </div>
   </div>
-  <div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-root"
+        aria-controls="recommended-sites-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="Recommended Sites"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="recommended-sites-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
         <div
-          className="MuiCardHeader-content"
+          className="MuiExpansionPanelSummary-content"
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+          <div
+            className="RecommendedSitesTable-expansionHeaderContainer-267"
           >
-            Recommended Sites
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Check out these amazing people's websites!
-          </span>
-        </div>
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <div
-          className="RecommendedSitesTable-recommendedSitesWrapper-264"
-        >
-          <table
-            className="MuiTable-root"
-            role={null}
-          >
-            <tbody
-              className="MuiTableBody-root"
-              role={null}
+            <div
+              className="MuiCardHeader-root"
             >
-              <tr
-                className="MuiTableRow-root"
-                role={null}
+              <div
+                className="MuiCardHeader-content"
               >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  role="cell"
-                  scope="row"
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
                 >
-                  <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-267 MuiTypography-h5 MuiTypography-paragraph"
-                  >
-                    Jacob Fedrigon
-                  </p>
-                  <div>
-                    <a
-                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                      href="http://www-personal.umich.edu/~jacobfed/"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                    >
-                      <picture>
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/webp"
-                        />
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/png"
-                        />
-                        <img
-                          alt="row.name + '\\\\'s website'"
-                          aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-265"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseOver={[Function]}
-                          onTouchEnd={[Function]}
-                          onTouchStart={[Function]}
-                          srcSet={
-                            Array [
-                              Object {
-                                "process": [Function],
-                              },
-                              Object {
-                                "process": [Function],
-                              },
-                            ]
-                          }
-                          title="Go To Jacob's Website"
-                        />
-                      </picture>
-                    </a>
-                  </div>
-                  <a
-                    aria-describedby={null}
-                    aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-266 MuiButton-outlinedSecondary"
-                    href="http://www-personal.umich.edu/~jacobfed/"
-                    onBlur={[Function]}
-                    onDragLeave={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    onMouseUp={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchMove={[Function]}
-                    onTouchStart={[Function]}
-                    tabIndex={0}
-                    title="Go To Jacob's Website"
-                  >
-                    <span
-                      className="MuiButton-label"
-                    >
-                      Go To Jacob's Website
-                    </span>
-                    <span
-                      className="MuiTouchRipple-root"
-                    />
-                  </a>
-                </th>
-              </tr>
-              <tr
-                className="MuiTableRow-root"
-                role={null}
+                  Recommended Sites
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Check out these amazing people's websites!
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
               >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  role="cell"
-                  scope="row"
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
                 >
-                  <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-267 MuiTypography-h5 MuiTypography-paragraph"
-                  >
-                    Nathan Johnson
-                  </p>
-                  <div>
-                    <a
-                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                      href="https://nathanieljohnson.me/"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                    >
-                      <picture>
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/webp"
-                        />
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/png"
-                        />
-                        <img
-                          alt="row.name + '\\\\'s website'"
-                          aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-265"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseOver={[Function]}
-                          onTouchEnd={[Function]}
-                          onTouchStart={[Function]}
-                          srcSet={
-                            Array [
-                              Object {
-                                "process": [Function],
-                              },
-                              Object {
-                                "process": [Function],
-                              },
-                            ]
-                          }
-                          title="Go To Nathan's Website"
-                        />
-                      </picture>
-                    </a>
-                  </div>
-                  <a
-                    aria-describedby={null}
-                    aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-266 MuiButton-outlinedSecondary"
-                    href="https://nathanieljohnson.me/"
-                    onBlur={[Function]}
-                    onDragLeave={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    onMouseUp={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchMove={[Function]}
-                    onTouchStart={[Function]}
-                    tabIndex={0}
-                    title="Go To Nathan's Website"
-                  >
-                    <span
-                      className="MuiButton-label"
-                    >
-                      Go To Nathan's Website
-                    </span>
-                    <span
-                      className="MuiTouchRipple-root"
-                    />
-                  </a>
-                </th>
-              </tr>
-              <tr
-                className="MuiTableRow-root"
-                role={null}
-              >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  role="cell"
-                  scope="row"
-                >
-                  <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-267 MuiTypography-h5 MuiTypography-paragraph"
-                  >
-                    Salvador Villalon
-                  </p>
-                  <div>
-                    <a
-                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                      href="https://salvillalon45.github.io/"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                    >
-                      <picture>
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/webp"
-                        />
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/png"
-                        />
-                        <img
-                          alt="row.name + '\\\\'s website'"
-                          aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-265"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseOver={[Function]}
-                          onTouchEnd={[Function]}
-                          onTouchStart={[Function]}
-                          srcSet={
-                            Array [
-                              Object {
-                                "process": [Function],
-                              },
-                              Object {
-                                "process": [Function],
-                              },
-                            ]
-                          }
-                          title="Go To Sal's Website"
-                        />
-                      </picture>
-                    </a>
-                  </div>
-                  <a
-                    aria-describedby={null}
-                    aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-266 MuiButton-outlinedSecondary"
-                    href="https://salvillalon45.github.io/"
-                    onBlur={[Function]}
-                    onDragLeave={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    onMouseUp={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchMove={[Function]}
-                    onTouchStart={[Function]}
-                    tabIndex={0}
-                    title="Go To Sal's Website"
-                  >
-                    <span
-                      className="MuiButton-label"
-                    >
-                      Go To Sal's Website
-                    </span>
-                    <span
-                      className="MuiTouchRipple-root"
-                    />
-                  </a>
-                </th>
-              </tr>
-              <tr
-                className="MuiTableRow-root"
-                role={null}
-              >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  role="cell"
-                  scope="row"
-                >
-                  <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-267 MuiTypography-h5 MuiTypography-paragraph"
-                  >
-                    Sarah Koop
-                  </p>
-                  <div>
-                    <a
-                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                      href="http://sarah-koop.com/"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                    >
-                      <picture>
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/webp"
-                        />
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/png"
-                        />
-                        <img
-                          alt="row.name + '\\\\'s website'"
-                          aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-265"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseOver={[Function]}
-                          onTouchEnd={[Function]}
-                          onTouchStart={[Function]}
-                          srcSet={
-                            Array [
-                              Object {
-                                "process": [Function],
-                              },
-                              Object {
-                                "process": [Function],
-                              },
-                            ]
-                          }
-                          title="Go To Sarah's Website"
-                        />
-                      </picture>
-                    </a>
-                  </div>
-                  <a
-                    aria-describedby={null}
-                    aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-266 MuiButton-outlinedSecondary"
-                    href="http://sarah-koop.com/"
-                    onBlur={[Function]}
-                    onDragLeave={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    onMouseUp={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchMove={[Function]}
-                    onTouchStart={[Function]}
-                    tabIndex={0}
-                    title="Go To Sarah's Website"
-                  >
-                    <span
-                      className="MuiButton-label"
-                    >
-                      Go To Sarah's Website
-                    </span>
-                    <span
-                      className="MuiTouchRipple-root"
-                    />
-                  </a>
-                </th>
-              </tr>
-              <tr
-                className="MuiTableRow-root"
-                role={null}
-              >
-                <th
-                  aria-sort={null}
-                  className="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  role="cell"
-                  scope="row"
-                >
-                  <p
-                    className="MuiTypography-root RecommendedSitesTable-nameText-267 MuiTypography-h5 MuiTypography-paragraph"
-                  >
-                    Sean Barber
-                  </p>
-                  <div>
-                    <a
-                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                      href="https://seanbarber.me/"
-                      onBlur={[Function]}
-                      onFocus={[Function]}
-                    >
-                      <picture>
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/webp"
-                        />
-                        <source
-                          srcSet={
-                            Object {
-                              "process": [Function],
-                            }
-                          }
-                          type="image/png"
-                        />
-                        <img
-                          alt="row.name + '\\\\'s website'"
-                          aria-describedby={null}
-                          className="RecommendedSitesTable-websiteScreenshot-265"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseOver={[Function]}
-                          onTouchEnd={[Function]}
-                          onTouchStart={[Function]}
-                          srcSet={
-                            Array [
-                              Object {
-                                "process": [Function],
-                              },
-                              Object {
-                                "process": [Function],
-                              },
-                            ]
-                          }
-                          title="Go To Sean's Website"
-                        />
-                      </picture>
-                    </a>
-                  </div>
-                  <a
-                    aria-describedby={null}
-                    aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined RecommendedSitesTable-websiteButton-266 MuiButton-outlinedSecondary"
-                    href="https://seanbarber.me/"
-                    onBlur={[Function]}
-                    onDragLeave={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    onMouseUp={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchMove={[Function]}
-                    onTouchStart={[Function]}
-                    tabIndex={0}
-                    title="Go To Sean's Website"
-                  >
-                    <span
-                      className="MuiButton-label"
-                    >
-                      Go To Sean's Website
-                    </span>
-                    <span
-                      className="MuiTouchRipple-root"
-                    />
-                  </a>
-                </th>
-              </tr>
-            </tbody>
-          </table>
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </div>
     </div>
   </div>
   <div
-    className="InteractionCard-root-294"
+    className="InteractionCard-root-269"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1443,23 +1057,23 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-295 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-270 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
-            className="PrideSwitch-prideSwitchContent-296"
+            className="PrideSwitch-prideSwitchContent-271"
           >
             <h5
-              className="MuiTypography-root PrideSwitch-prideTitle-297 MuiTypography-h5"
+              className="MuiTypography-root PrideSwitch-prideTitle-272 MuiTypography-h5"
             >
               Pride
             </h5>
             <span
-              className="MuiSwitch-root PrideSwitch-prideSwitch-298"
+              className="MuiSwitch-root PrideSwitch-prideSwitch-273"
             >
               <span
                 aria-describedby={null}
                 aria-disabled={false}
-                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-311 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-286 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onDragLeave={[Function]}
@@ -1481,7 +1095,7 @@ exports[`Extra matches snapshot 1`] = `
                 >
                   <input
                     checked={false}
-                    className="PrivateSwitchBase-input-314 MuiSwitch-input"
+                    className="PrivateSwitchBase-input-289 MuiSwitch-input"
                     onChange={[Function]}
                     type="checkbox"
                   />
@@ -1520,10 +1134,10 @@ exports[`Extra matches snapshot 1`] = `
           </a>
         </div>
         <div
-          className="LikeButton-root-315"
+          className="LikeButton-root-296"
         >
           <div
-            className="LikeButton-likeButtonWrapper-316"
+            className="LikeButton-likeButtonWrapper-297"
           >
             <button
               aria-describedby={null}
@@ -1565,10 +1179,10 @@ exports[`Extra matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-317 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-298 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-318 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-299 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

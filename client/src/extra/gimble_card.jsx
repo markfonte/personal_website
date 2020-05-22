@@ -138,6 +138,9 @@ class GimbleCard extends React.Component {
           <ExpansionPanel
             TransitionProps={{unmountOnExit: true}}>
             <ExpansionPanelSummary
+              aria-label="Gimble"
+              aria-controls="gimble-content"
+              id="gimble-header"
               expandIcon={
                 <Tooltip
                   title="Expand/collapse card"

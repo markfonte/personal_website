@@ -11,7 +11,13 @@ import {
   Link,
   Typography,
   Tooltip,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
+  IconButton,
 } from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import sarahKoopScreenshot
   from '../static/images/screenshots/sarah_website_screenshot.webp';
 import sarahKoopScreenshotFallback
@@ -41,9 +47,6 @@ import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 
 const styles = {
-  recommendedSitesWrapper: {
-    overflowX: 'auto',
-  },
   websiteScreenshot: {
     width: '100%',
     maxWidth: '400px',
@@ -54,6 +57,20 @@ const styles = {
   },
   nameText: {
     marginBottom: '4px',
+  },
+  expansionHeaderContainer: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  cardContent: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
   },
 };
 
@@ -104,14 +121,32 @@ class RecommendedSitesTable extends React.Component {
       },
     ];
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader
-            title="Recommended Sites"
-            subheader="Check out these amazing people's websites!"
-          />
-          <CardContent>
-            <div className={classes.recommendedSitesWrapper}>
+      <Card raised={true} className="card">
+        <ExpansionPanel
+          TransitionProps={{unmountOnExit: true}}>
+          <ExpansionPanelSummary
+            aria-label="Recommended Sites"
+            aria-controls="recommended-sites-content"
+            id="recommended-sites-header"
+            expandIcon={
+              <Tooltip
+                title="Expand/collapse card"
+                arrow>
+                <IconButton>
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Tooltip>
+            }>
+            <div
+              className={classes.expansionHeaderContainer}>
+              <CardHeader
+                title="Recommended Sites"
+                subheader="Check out these amazing people's websites!"
+              />
+            </div>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <CardContent className={classes.cardContent}>
               <Table>
                 <TableBody>
                   {rows.map((row) => (
@@ -155,10 +190,10 @@ class RecommendedSitesTable extends React.Component {
                   ))}
                 </TableBody>
               </Table>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+            </CardContent>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+      </Card>
     );
   }
 }

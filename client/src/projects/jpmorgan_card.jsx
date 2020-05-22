@@ -92,6 +92,9 @@ class JPMorganCard extends React.Component {
         <ExpansionPanel
           TransitionProps={{unmountOnExit: true}}>
           <ExpansionPanelSummary
+            aria-label="JPMorgan"
+            aria-controls="jpmorgan-content"
+            id="jpmorgan-header"
             expandIcon={
               <Tooltip
                 title="Expand/collapse card"

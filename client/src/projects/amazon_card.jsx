@@ -69,6 +69,9 @@ class AmazonCard extends React.Component {
         <ExpansionPanel
           TransitionProps={{unmountOnExit: true}}>
           <ExpansionPanelSummary
+            aria-label="Amazon"
+            aria-controls="amazon-content"
+            id="amazon-header"
             expandIcon={
               <Tooltip
                 title="Expand/collapse card"

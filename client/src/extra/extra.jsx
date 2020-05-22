@@ -23,6 +23,11 @@ class Extra extends React.Component {
         <Typography style={{margin: 16}} variant="h6">
          Some other fun stuff - enjoy!
         </Typography>
+        <Typography variant="body1" color="secondary">
+          <b>
+              Click to expand/collapse cards
+          </b>
+        </Typography>
         <GimbleCard />
         <TicTacToeCard />
         {/* <CurrentBooksCard />

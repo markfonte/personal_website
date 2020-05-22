@@ -40,7 +40,9 @@ class Projects extends React.Component {
           My work experiences, internships, side projects and hackathon projects
         </Typography>
         <Typography variant="body1" color="secondary">
-          <b>Click to expand/collapse cards</b>
+          <b>
+              Click to expand/collapse cards
+          </b>
         </Typography>
         <AmazonCard />
         <JPMorganCard />

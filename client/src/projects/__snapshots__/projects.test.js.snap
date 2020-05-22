@@ -21,9 +21,12 @@ exports[`Projects matches snapshot 1`] = `
       className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
+        aria-controls="amazon-content"
         aria-disabled={false}
         aria-expanded={false}
+        aria-label="Amazon"
         className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="amazon-header"
         onBlur={[Function]}
         onClick={[Function]}
         onDragLeave={[Function]}
@@ -210,9 +213,12 @@ exports[`Projects matches snapshot 1`] = `
       className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
+        aria-controls="jpmorgan-content"
         aria-disabled={false}
         aria-expanded={false}
+        aria-label="JPMorgan"
         className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="jpmorgan-header"
         onBlur={[Function]}
         onClick={[Function]}
         onDragLeave={[Function]}
