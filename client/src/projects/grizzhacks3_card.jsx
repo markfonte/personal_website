@@ -9,11 +9,6 @@ import {
   withStyles,
 } from '@material-ui/core';
 import congoaiLogo from '../static/images/logos/congoai_logo.svg';
-// import grizzhacksLogo
-//   from '../static/images/logos/grizzhacks_logo.webp';
-// import grizzhacksLogoFallback
-//   from '../static/images/logos/grizzhacks_logo.png';
-
 import PropTypes from 'prop-types';
 
 const styles = {
@@ -41,14 +36,9 @@ class Grizzhacks3Card extends React.Component {
         />
         <CardMedia
           className={classes.media}
-          image="/images/grizzhacks_logo.webp"
+          image="/images/grizzhacks_logo.png"
           title="GrizzHacks 3 logo"
           alt="GrizzHacks 3 logo"
-          onError={
-            (e) => {
-              e.target.src = '/images/grizzhacks_logo.png';
-            }
-          }
         />
         <CardContent>
           <Typography variant="body1" paragraph>

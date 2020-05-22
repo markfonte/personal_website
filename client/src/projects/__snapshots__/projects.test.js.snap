@@ -1358,7 +1358,7 @@ exports[`Projects matches snapshot 1`] = `
       className="MuiCardMedia-root MHacks12Card-media-167"
       style={
         Object {
-          "backgroundImage": "url(\\"/images/mhacks_logo.webp\\")",
+          "backgroundImage": "url(\\"/images/mhacks_logo.png\\")",
         }
       }
       title="MHacks 12 logo"
@@ -1797,7 +1797,7 @@ exports[`Projects matches snapshot 1`] = `
       className="MuiCardMedia-root Spartahack5Card-media-179"
       style={
         Object {
-          "backgroundImage": "url(\\"/images/spartahack_logo.webp\\")",
+          "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
         }
       }
       title="SpartaHack V logo"
@@ -2047,7 +2047,7 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiCardMedia-root RevolutionUC8Card-media-182"
           style={
             Object {
-              "backgroundImage": "url(\\"/images/revolutionuc_logo.webp\\")",
+              "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
             }
           }
           title="RevolutionUC 8 logo"
@@ -2118,10 +2118,9 @@ exports[`Projects matches snapshot 1`] = `
     <div
       alt="GrizzHacks 3 logo"
       className="MuiCardMedia-root Grizzhacks3Card-media-185"
-      onError={[Function]}
       style={
         Object {
-          "backgroundImage": "url(\\"/images/grizzhacks_logo.webp\\")",
+          "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
         }
       }
       title="GrizzHacks 3 logo"
@@ -2294,7 +2293,7 @@ exports[`Projects matches snapshot 1`] = `
       className="MuiCardMedia-root DoggieDoodlesCard-media-188"
       style={
         Object {
-          "backgroundImage": "url(\\"/images/doggie_doodles_logo.webp\\")",
+          "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
         }
       }
       title="Gimble A Cappella - 2019"

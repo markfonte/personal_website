@@ -73,7 +73,7 @@ exports[`Extra matches snapshot 1`] = `
             </div>
             <img
               className="MuiCardMedia-root GimbleCard-gimbleCardMedia-31 MuiCardMedia-media MuiCardMedia-img"
-              src="/images/gimble_group_pic.webp"
+              src="/images/gimble_group_pic.jpeg"
               title="Gimble group pic"
             />
           </div>

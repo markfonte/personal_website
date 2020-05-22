@@ -157,7 +157,7 @@ class GimbleCard extends React.Component {
               />
               <CardMedia
                 className={classes.gimbleCardMedia}
-                image="/images/gimble_group_pic.webp"
+                image="/images/gimble_group_pic.jpeg"
                 title="Gimble group pic"
                 component="img"
               />

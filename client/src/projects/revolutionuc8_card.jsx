@@ -43,7 +43,7 @@ class RevolutionUC8Card extends React.Component {
           <div className={classes.mediaWrapper}>
             <CardMedia
               className={classes.media}
-              image="/images/revolutionuc_logo.webp"
+              image="/images/revolutionuc_logo.png"
               title="RevolutionUC 8 logo"
               alt="RevolutionUC 8 logo"
             />
