@@ -116,6 +116,12 @@ exports[`Contact matches snapshot 1`] = `
     data-type="horizontal"
     data-vanity="mark-fonte"
     data-version="v1"
+    style={
+      Object {
+        "marginBottom": 16,
+        "marginTop": 16,
+      }
+    }
   >
     <a
       className="LI-simple-link"

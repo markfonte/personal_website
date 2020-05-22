@@ -2,12 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BuiltWithTable from './built_with_table.jsx';
 import PhotoFeedCard from './photo_feed_card.jsx';
-import {Typography, Link, Snackbar, Fade, Tooltip} from '@material-ui/core';
-import MuiAlert from '@material-ui/lab/Alert';
+import {Typography, Link, Tooltip} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import MetaTags from 'react-meta-tags';
-// import HighlightsCard from './highlights_card.jsx';
-// import Resume from './resume.jsx';
 
 const styles = {
   title: {
@@ -38,20 +35,20 @@ const styles = {
 };
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      open: true,
-    };
-    this.handleClose = this.handleClose.bind(this);
-  }
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       open: true,
+//     };
+//     this.handleClose = this.handleClose.bind(this);
+//   }
 
-  handleClose(event, reason) {
-    if (reason === 'clickaway') {
-      return;
-    }
-    this.setState({open: false});
-  }
+  //   handleClose(event, reason) {
+  //     if (reason === 'clickaway') {
+  //       return;
+  //     }
+  //     this.setState({open: false});
+  //   }
 
   render() {
     const sdeAmazonLink = 'https://amazon.jobs/en/job_categories/software-development';
@@ -63,7 +60,7 @@ class Home extends React.Component {
     const androidDevLink = 'https://developer.android.com/';
 
     const {classes} = this.props;
-    const isOpen = this.state.open;
+    // const isOpen = this.state.open;
 
     return (
       <div>
@@ -73,7 +70,7 @@ class Home extends React.Component {
             name="description"
             content="Incoming Software Development Engineer at Amazon · Student at the University of Michigan"/>
         </MetaTags>
-        <Snackbar
+        {/* <Snackbar
           open={isOpen}
           onClose={this.handleClose}
           TransitionComponent={Fade} >
@@ -84,7 +81,7 @@ class Home extends React.Component {
                     Stay tuned for a fix and click here for updates!
             </Link>
           </MuiAlert>
-        </Snackbar>
+        </Snackbar> */}
         <Typography className={classes.title} variant="h6">
           Incoming
 
