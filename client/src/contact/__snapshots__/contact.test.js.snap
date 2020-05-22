@@ -121,7 +121,7 @@ exports[`Contact matches snapshot 1`] = `
       className="LI-simple-link"
       href="https://www.linkedin.com/in/mark-fonte?trk=profile-badge"
     >
-      LinkedIn badge (reload to show)
+      LinkedIn
     </a>
   </div>
   <picture>

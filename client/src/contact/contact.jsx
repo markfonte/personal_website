@@ -101,7 +101,7 @@ class Contact extends React.Component {
         <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
           data-type="horizontal" data-theme="dark" data-vanity="mark-fonte">
           <a className="LI-simple-link" href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
-                LinkedIn badge (reload to show)
+                LinkedIn
           </a>
         </div>
         <picture>

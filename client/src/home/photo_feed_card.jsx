@@ -32,7 +32,10 @@ class PhotoFeedCard extends React.Component {
   componentDidMount() {
     // ignore this during Jest tests
     if (process.env.NODE_ENV !== 'test') {
-      window.instgrm.Embeds.process();
+      if (window !== undefined && window.instgrm !== undefined &&
+            window.instgrm.Embeds !== undefined) {
+        window.instgrm.Embeds.process();
+      }
     }
   }
   render() {
