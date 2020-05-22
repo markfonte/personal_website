@@ -906,10 +906,16 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiTypography-root MuiTypography-subtitle1"
         >
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20482/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -926,10 +932,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20485/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -946,10 +958,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://atlas.ai.umich.edu/course/EECS%20490/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -966,10 +984,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://atlas.ai.umich.edu/course/EECS%20493/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -986,10 +1010,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20441/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1006,10 +1036,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20481/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1026,10 +1062,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20388/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1046,10 +1088,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20376/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1066,10 +1114,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20370/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1086,10 +1140,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20281/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1106,10 +1166,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20280/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1126,10 +1192,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20203/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1146,10 +1218,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/EECS%20496/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1166,10 +1244,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/MATH%20214/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1186,10 +1270,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/MATH%20425/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1206,10 +1296,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/MATH%20215/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1226,10 +1322,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/ENTR%20411/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1246,10 +1348,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/ALA%20256/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1266,10 +1374,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/PHYSICS%20240/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1286,10 +1400,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/PHYSICS%20140/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"
@@ -1306,10 +1426,16 @@ exports[`Projects matches snapshot 1`] = `
             </p>
           </a>
           <a
+            aria-describedby={null}
             className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-gutterBottom MuiTypography-displayBlock"
             href="https://art.ai.umich.edu/course/ENGR%20100/"
             onBlur={[Function]}
             onFocus={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            title="View course profile on Atlas"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-displayInline"

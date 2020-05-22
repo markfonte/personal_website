@@ -7,6 +7,7 @@ import {
   CardHeader,
   Link,
   withStyles,
+  Tooltip,
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
@@ -155,24 +156,28 @@ class CompletedCourseworkCard extends React.Component {
             </Link>
             <Typography variant="subtitle1">
               {courses.map((course) => (
-                <Link
-                  gutterBottom
-                  variant="subtitle1"
-                  color="textPrimary"
-                  key={course.name}
-                  href={course.link}
-                  display={'block'}
-                >
-                  <Typography color="secondary" variant="h6" display={'inline'}>
-                    {course.subject}
-                  </Typography>
+                <Tooltip
+                  arrow
+                  title="View course profile on Atlas"
+                  key={course.name}>
+                  <Link
+                    gutterBottom
+                    variant="subtitle1"
+                    color="textPrimary"
+                    href={course.link}
+                    display={'block'}
+                  >
+                    <Typography color="secondary" variant="h6" display={'inline'}>
+                      {course.subject}
+                    </Typography>
                     :
-                  <Typography color="textSecondary" display={'inline'}>
-                    <i>
-                      {' ' + course.name}
-                    </i>
-                  </Typography>
-                </Link>
+                    <Typography color="textSecondary" display={'inline'}>
+                      <i>
+                        {' ' + course.name}
+                      </i>
+                    </Typography>
+                  </Link>
+                </Tooltip>
               ))}
             </Typography>
             <Typography variant="caption" color="textSecondary" gutterBottom>
