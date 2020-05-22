@@ -18,15 +18,21 @@ import {
   CardActions,
   CardContent,
   CardHeader,
+  Typography,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
   IconButton,
   Tooltip,
-  Typography,
 } from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = {
   gimbleCardMedia: {
-    height: '0px',
-    paddingTop: '46%',
+    width: '100%',
+    margin: 'auto',
+    maxWidth: '500px',
+    marginBottom: '12px',
   },
   gimbleCardActionIcon: {
     width: '24px',
@@ -39,6 +45,21 @@ const styles = {
   },
   cardActions: {
     overflowX: 'auto',
+  },
+  expansionHeaderContainer: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  buttonExplanation: {
+    display: 'flex',
+    alignItems: 'start',
+    justifyContent: 'left',
+    marginLeft: '16px',
+    marginRight: '16px',
+    marginTop: '12px',
   },
 };
 
@@ -114,31 +135,51 @@ class GimbleCard extends React.Component {
     return (
       <div>
         <Card raised={true} className="card">
-          <CardHeader
-            title="Gimble A Cappella"
-            subheader={`My acappella group - check out our new EP: "home"!`}
-          />
-          <CardMedia
-            className={classes.gimbleCardMedia}
-            image="/images/gimble_group_pic.webp"
-            title="MHacks 12 logo"
-          />
-          <CardContent>
-            {mediaPlayers.map((mediaPlayer) => (
-              <iframe
-                className={classes.iframeStyle}
-                src={mediaPlayer.src}
-                title={mediaPlayer.title}
-                key={mediaPlayer.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            ))}
-            <br/>
-          </CardContent>
-          <Typography variant="caption" color="textSecondary">
-            These social media buttons scroll horizontally on smaller-width devices!
+          <ExpansionPanel
+            TransitionProps={{unmountOnExit: true}}>
+            <ExpansionPanelSummary
+              expandIcon={
+                <Tooltip
+                  title="Expand/collapse card"
+                  arrow>
+                  <IconButton>
+                    <ExpandMoreIcon />
+                  </IconButton>
+                </Tooltip>
+              }>
+              <div
+                className={classes.expansionHeaderContainer}>
+                <CardHeader
+                  title="Gimble A Cappella"
+                  subheader={`My acappella group!`}
+                />
+                <CardMedia
+                  className={classes.gimbleCardMedia}
+                  image="/images/gimble_group_pic.webp"
+                  title="Gimble group pic"
+                  component="img"
+                />
+              </div>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <CardContent>
+                {mediaPlayers.map((mediaPlayer) => (
+                  <iframe
+                    className={classes.iframeStyle}
+                    src={mediaPlayer.src}
+                    title={mediaPlayer.title}
+                    key={mediaPlayer.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ))}
+                <br/>
+              </CardContent>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+          <Typography className={classes.buttonExplanation} variant="caption" color="textSecondary">
+            These buttons scroll horizontally on smaller-width devices!
           </Typography>
           <CardActions className={classes.cardActions}>
             <Tooltip
@@ -167,6 +208,7 @@ class GimbleCard extends React.Component {
               </Tooltip>
             ))}
           </CardActions>
+
         </Card>
       </div>
     );
