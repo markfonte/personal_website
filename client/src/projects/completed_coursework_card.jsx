@@ -8,14 +8,39 @@ import {
   Link,
   withStyles,
   Tooltip,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
+  Chip,
+  IconButton,
 } from '@material-ui/core';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 
 const styles = {
   universityOfMichiganLogo: {
+    width: '100%',
     margin: 'auto',
-    maxWidth: '600px',
-    padding: '4px',
+    maxWidth: '500px',
+    marginBottom: '12px',
+  },
+  tags: {
+    margin: '4px',
+  },
+  expansionHeaderContainer: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  cardContent: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
   },
 };
 
@@ -130,62 +155,101 @@ class CompletedCourseworkCard extends React.Component {
         link: `https://art.ai.umich.edu/course/ENGR%20100/`,
       },
     ];
+    const tags = [
+      {
+        label: 'September 2016 → May 2020',
+        color: 'default',
+        variant: 'default',
+        icon: <DateRangeIcon />,
+      },
+    ];
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader
-            title="University of Michigan"
-            subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
+      <Card raised={true} className="card">
+        <ExpansionPanel
+          TransitionProps={{unmountOnExit: true}}>
+          <ExpansionPanelSummary
+            aria-label="Michigan"
+            aria-controls="michigan-content"
+            id="michigan-header"
+            expandIcon={
+              <Tooltip
+                title="Expand/collapse card"
+                arrow>
+                <IconButton>
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Tooltip>
+            }>
+            <div className={classes.expansionHeaderContainer}>
+              <CardHeader
+                title="University of Michigan"
+                subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
             and a minor in Entrepreneurship"
-          />
-          <CardMedia
-            className={classes.universityOfMichiganLogo}
-            image="images/university_of_michigan_logo.svg"
-            title="University of Michigan banner logo"
-            alt="University of Michigan banner logo"
-            component="img"
-          />
-          <CardContent>
-            <Link
-              color="textPrimary"
-              href={universityOfMichiganLink}
-              gutterBottom
-              variant="h5"
-            >
+              />
+              <CardMedia
+                className={classes.universityOfMichiganLogo}
+                image="images/university_of_michigan_logo.svg"
+                title="University of Michigan banner logo"
+                alt="University of Michigan banner logo"
+                component="img"
+              />
+              <div>
+                {tags.map((tag) => (
+                  <Chip
+                    className={classes.tags}
+                    key={tag.label}
+                    icon={tag.icon ? tag.icon : <div/>}
+                    label={tag.label}
+                    variant={tag.variant ? tag.variant : 'outlined'}
+                    color={tag.color ? tag.color : 'secondary'}
+                    clickable />
+                ))}
+              </div>
+            </div>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <CardContent className={classes.cardContent}>
+              <Link
+                color="textPrimary"
+                href={universityOfMichiganLink}
+                gutterBottom
+                variant="h5"
+              >
                   Completed coursework:
-            </Link>
-            <Typography variant="subtitle1">
-              {courses.map((course) => (
-                <Tooltip
-                  arrow
-                  title="View course profile on Atlas"
-                  key={course.name}>
-                  <Link
-                    gutterBottom
-                    variant="subtitle1"
-                    color="textPrimary"
-                    href={course.link}
-                    display={'block'}
-                  >
-                    <Typography color="secondary" variant="h6" display={'inline'}>
-                      {course.subject}
-                    </Typography>
+              </Link>
+              <Typography variant="subtitle1">
+                {courses.map((course) => (
+                  <Tooltip
+                    arrow
+                    title="View course profile on Atlas"
+                    key={course.name}>
+                    <Link
+                      gutterBottom
+                      variant="subtitle1"
+                      color="textPrimary"
+                      href={course.link}
+                      display={'block'}
+                    >
+                      <Typography color="secondary" variant="h6" display={'inline'}>
+                        {course.subject}
+                      </Typography>
                     :
-                    <Typography color="textSecondary" display={'inline'}>
-                      <i>
-                        {' ' + course.name}
-                      </i>
-                    </Typography>
-                  </Link>
-                </Tooltip>
-              ))}
-            </Typography>
-            <Typography variant="caption" color="textSecondary" gutterBottom>
+                      <Typography color="textSecondary" display={'inline'}>
+                        <i>
+                          {' ' + course.name}
+                        </i>
+                      </Typography>
+                    </Link>
+                  </Tooltip>
+                ))}
+              </Typography>
+              <Typography variant="caption" color="textSecondary" gutterBottom>
                 note: this is only the most relevant coursework, not an exhaustive list
-            </Typography>
-          </CardContent>
-        </Card>
-      </div>
+              </Typography>
+            </CardContent>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+      </Card>
     );
   }
 }

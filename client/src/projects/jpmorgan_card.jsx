@@ -104,8 +104,7 @@ class JPMorganCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <div
-              className={classes.expansionHeaderContainer}>
+            <div className={classes.expansionHeaderContainer}>
               <CardHeader
                 title="J.P. Morgan Chase"
                 subheader="Software Engineering Intern"

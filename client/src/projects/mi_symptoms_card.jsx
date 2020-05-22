@@ -6,7 +6,16 @@ import {
   Link,
   CardContent,
   withStyles,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
+  Chip,
+  IconButton,
+  Tooltip,
 } from '@material-ui/core';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import miSymptomsScreenshotOne
   from '../static/images/screenshots/mi_symptoms_screenshot_1.webp';
 import miSymptomsScreenshotOneFallback
@@ -30,6 +39,16 @@ const styles = {
     height: 'auto',
     width: '100%',
     maxWidth: '280px',
+  },
+  tags: {
+    margin: '4px',
+  },
+  expansionHeaderContainer: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
   },
 };
 
@@ -55,182 +74,244 @@ class MISymptomsCard extends React.Component {
     const firebasePerformanceLink = `https://firebase.google.com/docs/perf-mon`;
     const appScanLink = `https://www.ibm.com/developerworks/library/se-scan/index.html`;
     const pagespeedInsightsLink = `https://developers.google.com/speed/pagespeed/insights/`;
+    const tags = [
+      {
+        label: 'April 2020 → May 2020',
+        color: 'default',
+        variant: 'default',
+        icon: <DateRangeIcon />,
+      },
+      {
+        label: 'Part-Time',
+        color: 'primary',
+        variant: 'default',
+      },
+      {
+        label: 'Startup',
+        color: 'primary',
+        variant: 'default',
+      },
+      {
+        label: 'Cypress',
 
+      },
+      {
+        label: 'Firebase',
+      },
+      {
+        label: 'Jest',
+      },
+      {
+        label: 'JMeter',
+      },
+
+    ];
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader
-            title="MI Symptoms Project"
-            subheader={'Testing Team Lead'}
-          />
-          <CardContent>
-            <Typography variant="body1" paragraph>
+      <Card raised={true} className="card">
+        <ExpansionPanel
+          TransitionProps={{unmountOnExit: true}}>
+          <ExpansionPanelSummary
+            aria-label="MI Symptoms"
+            aria-controls="mi-symptoms-content"
+            id="mi-symptoms-header"
+            expandIcon={
+              <Tooltip
+                title="Expand/collapse card"
+                arrow>
+                <IconButton>
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Tooltip>
+            }>
+            <div className={classes.expansionHeaderContainer}>
+              <CardHeader
+                title="MI Symptoms Project"
+                subheader={'Testing Team Lead'}
+              />
+              <div>
+                {tags.map((tag) => (
+                  <Chip
+                    className={classes.tags}
+                    key={tag.label}
+                    icon={tag.icon ? tag.icon : <div/>}
+                    label={tag.label}
+                    variant={tag.variant ? tag.variant : 'outlined'}
+                    color={tag.color ? tag.color : 'secondary'}
+                    clickable />
+                ))}
+              </div>
+            </div>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <CardContent>
+              <Typography variant="body1" paragraph>
                 I was asked to join this project, along with many others from the
-              {' '}
-              <Link color="secondary" href={universityOfMichiganLink}>
+                {' '}
+                <Link color="secondary" href={universityOfMichiganLink}>
               University of Michigan
-              </Link>
+                </Link>
               , in response to the
-              {' '}
-              <Link color="secondary" href={covid19Link}>
+                {' '}
+                <Link color="secondary" href={covid19Link}>
               COVID-19 pandemic
-              </Link>
+                </Link>
               . This web application, known as
-              {' '}
-              <Link color="secondary" href={miSymptomsLink}>
+                {' '}
+                <Link color="secondary" href={miSymptomsLink}>
               MI Symptoms
-              </Link>
+                </Link>
               , is a project issued by the
-              {' '}
-              <Link color="secondary" href={stateOfMichiganLink}>
+                {' '}
+                <Link color="secondary" href={stateOfMichiganLink}>
               State of Michigan
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               to track the spread of the coronavirus and give residents resources they need to fight it.
               Residents can take a survey each day through the application which asks about current symptoms,
               current temperature, test results and more. Users who are determined &#34;at-risk&#34; based on their
               symptoms are given the resources they need and can even be contacted directly by health
               professionals. No sensitive user data is stored by the application (it is sent straight to
               the State of Michigan).
-              <br/> <br/>
+                <br/> <br/>
               It is backed by the highest levels of the Michigan government and is being developed by
               about 30 University of Michigan computer science juniors and seniors, along with a few professors,
               government workers, the
-              {' '}
-              <Link color="secondary" href={umichCAENTeamLink}>
+                {' '}
+                <Link color="secondary" href={umichCAENTeamLink}>
               University of Michigan CAEN team
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               and the
-              {' '}
-              <Link color="secondary" href={umichITSTeamLink}>
+                {' '}
+                <Link color="secondary" href={umichITSTeamLink}>
               University of Michigan ITS team
-              </Link>
+                </Link>
               . At the time of writing (May 20th, 2020), it is being tested in production with
               larger and larger groups of people.
-            </Typography>
-            <picture>
-              <source srcSet={miSymptomsScreenshotOne} type="image/webp"/>
-              <source srcSet={miSymptomsScreenshotOneFallback} type="image/jpg"/>
-              <img
-                srcSet={[miSymptomsScreenshotOne, miSymptomsScreenshotOneFallback]}
-                className={classes.mobileScreenshot}
-                title="MI Symptoms screenshot 1"
-                alt="MI Symptoms screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={miSymptomsScreenshotTwo} type="image/webp"/>
-              <source srcSet={miSymptomsScreenshotTwoFallback} type="image/jpg"/>
-              <img
-                srcSet={[miSymptomsScreenshotTwo, miSymptomsScreenshotTwoFallback]}
-                className={classes.mobileScreenshot}
-                title="MI Symptoms screenshot 2"
-                alt="MI Symptoms screenshot 2"
-              />
-            </picture>
-            <picture>
-              <source srcSet={miSymptomsScreenshotThree} type="image/webp"/>
-              <source srcSet={miSymptomsScreenshotThreeFallback} type="image/jpg"/>
-              <img
-                srcSet={[miSymptomsScreenshotThree, miSymptomsScreenshotThreeFallback]}
-                className={classes.mobileScreenshot}
-                title="MI Symptoms screenshot 3"
-                alt="MI Symptoms screenshot 3"
-              />
-            </picture>
-            <Typography variant="body1" paragraph>
+              </Typography>
+              <picture>
+                <source srcSet={miSymptomsScreenshotOne} type="image/webp"/>
+                <source srcSet={miSymptomsScreenshotOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[miSymptomsScreenshotOne, miSymptomsScreenshotOneFallback]}
+                  className={classes.mobileScreenshot}
+                  title="MI Symptoms screenshot 1"
+                  alt="MI Symptoms screenshot 1"
+                />
+              </picture>
+              <picture>
+                <source srcSet={miSymptomsScreenshotTwo} type="image/webp"/>
+                <source srcSet={miSymptomsScreenshotTwoFallback} type="image/jpg"/>
+                <img
+                  srcSet={[miSymptomsScreenshotTwo, miSymptomsScreenshotTwoFallback]}
+                  className={classes.mobileScreenshot}
+                  title="MI Symptoms screenshot 2"
+                  alt="MI Symptoms screenshot 2"
+                />
+              </picture>
+              <picture>
+                <source srcSet={miSymptomsScreenshotThree} type="image/webp"/>
+                <source srcSet={miSymptomsScreenshotThreeFallback} type="image/jpg"/>
+                <img
+                  srcSet={[miSymptomsScreenshotThree, miSymptomsScreenshotThreeFallback]}
+                  className={classes.mobileScreenshot}
+                  title="MI Symptoms screenshot 3"
+                  alt="MI Symptoms screenshot 3"
+                />
+              </picture>
+              <Typography variant="body1" paragraph>
               As testing team lead, I was responsible for the day-to-day operations of the testing team.
               This was another great opportunity to improve on my leadership skills, especially with
               the added challenge of only being able to communicate remotely. I managed building out testing
               tools to cover different domains like
-              {' '}
-              <Link color="secondary" href={unitTestingLink}>
+                {' '}
+                <Link color="secondary" href={unitTestingLink}>
               unit testing
-              </Link>
+                </Link>
               ,
-              {' '}
-              <Link color="secondary" href={endToEndTestingLink}>
+                {' '}
+                <Link color="secondary" href={endToEndTestingLink}>
               end-to-end testing
-              </Link>
+                </Link>
               ,
-              {' '}
-              <Link color="secondary" href={penTestingLink}>
+                {' '}
+                <Link color="secondary" href={penTestingLink}>
               security/pen testing
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               and
-              {' '}
-              <Link color="secondary" href={stressTestingLink}>
+                {' '}
+                <Link color="secondary" href={stressTestingLink}>
               performance/stress testing
-              </Link>
+                </Link>
               . We built a
-              {' '}
-              <Link color="secondary" href={jestLink}>
+                {' '}
+                <Link color="secondary" href={jestLink}>
              Jest
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               test suite for unit testing, a
-              {' '}
-              <Link color="secondary" href={cypressLink}>
+                {' '}
+                <Link color="secondary" href={cypressLink}>
               Cypress
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               test suite for end-to-end testing and a
-              {' '}
-              <Link color="secondary" href={jmeterLink}>
+                {' '}
+                <Link color="secondary" href={jmeterLink}>
               JMeter
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               test suite for stress testing. We put in place a process for continuously
-              {' '}
-              <Link color="secondary" href={smokeTestingLink}>
+                {' '}
+                <Link color="secondary" href={smokeTestingLink}>
               smoke testing
-              </Link>
-              {' '}
+                </Link>
+                {' '}
                 the application and putting actionable, reproducible issues in front of the development
                 team on our
-              {' '}
-              <Link color="secondary" href={trelloLink}>
+                {' '}
+                <Link color="secondary" href={trelloLink}>
               Trello
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               board. Everything required constant communication with all parts of the team to ensure that
               we were responding as quickly as possible to frequent requirements changes. We used tools like
-              {' '}
-              <Link color="secondary" href={googleAnalyticsLink}>
+                {' '}
+                <Link color="secondary" href={googleAnalyticsLink}>
               Google Analytics
-              </Link>
+                </Link>
               ,
-              {' '}
-              <Link color="secondary" href={firebasePerformanceLink}>
+                {' '}
+                <Link color="secondary" href={firebasePerformanceLink}>
               Firebase Performance Monitoring
-              </Link>
+                </Link>
               ,
-              {' '}
-              <Link color="secondary" href={pagespeedInsightsLink}>
+                {' '}
+                <Link color="secondary" href={pagespeedInsightsLink}>
               Google PageSpeed Insights
-              </Link>
+                </Link>
               , and facilitated
               the use of security tools like
-              {' '}
-              <Link color="secondary" href={appScanLink}>
+                {' '}
+                <Link color="secondary" href={appScanLink}>
               IBM AppScan
-              </Link>
-              {' '}
+                </Link>
+                {' '}
               from the University of Michigan ITS team - anything
               that would help the product become as robust as possible, as quickly as possible.
-            </Typography>
-            <Typography variant="body1" paragraph>
+              </Typography>
+              <Typography variant="body1" paragraph>
                 I am so thankful for this experience. In my opinion, the most special part about the project
                 was the way that everyone came together and sacrificed their time and energy out of the
                 goodness of their hearts - simply for the prospect that they might be able to help some people.
                 Thank you all!
-            </Typography>
+              </Typography>
 
-          </CardContent>
-        </Card>
-      </div>
+            </CardContent>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+      </Card>
     );
   }
 }
