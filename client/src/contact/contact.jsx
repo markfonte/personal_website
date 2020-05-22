@@ -31,9 +31,12 @@ class Contact extends React.Component {
   componentDidMount() {
     // reload LinkedIn Badge
     // ignore this during Jest tests
-    if (process.env.NODE_ENV !== 'test')
-    // eslint-disable-next-line
-    {window.LIRenderAll();}
+    if (process.env.NODE_ENV !== 'test' &&
+    window !== undefined &&
+    window.LIRenderAll !== undefined ) {
+      // eslint-disable-next-line
+        window.LIRenderAll();
+    }
   }
   render() {
     const {classes} = this.props;
