@@ -1,5 +1,11 @@
 import React from 'react';
-import {CardContent, Card, GridList, GridListTile, withStyles, Typography} from '@material-ui/core';
+import {CardContent,
+  Card,
+  GridList,
+  GridListTile,
+  withStyles,
+  Typography,
+} from '@material-ui/core';
 import PropTypes from 'prop-types';
 import InstagramPost from './instagram_post.jsx';
 const styles = {
@@ -10,7 +16,6 @@ const styles = {
     overflow: 'hidden',
   },
   photoGrid: {
-    // maxWidth: '740px',
     flexWrap: 'nowrap',
     transform: 'translateZ(0)',
   },
@@ -24,21 +29,21 @@ const styles = {
 };
 
 class PhotoFeedCard extends React.Component {
+  componentDidMount() {
+    // ignore this during Jest tests
+    if (process.env.NODE_ENV !== 'test') {
+      window.instgrm.Embeds.process();
+    }
+  }
   render() {
     const {classes} = this.props;
     const feedData = [
       {
         postId: 'B_yokGTgNUK/',
       },
-      //   {
-      //     postId: "B_timDZAYes/"
-      //   },
       {
         postId: 'B9K_P5AAQp6/',
       },
-      //   {
-      //     postId: "B8nAI1RgDbE/"
-      //   },
       {
         postId: 'B6RFvKXA69I/',
       },
