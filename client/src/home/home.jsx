@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BuiltWithTable from './built_with_table.jsx';
-import PhotoFeedCard from './photo_feed_card.jsx';
+import BuiltWithTableCard from './built_with_table_card.jsx';
+import WelcomeCard from './welcome_card.jsx';
 import {Typography, Link, Tooltip} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import MetaTags from 'react-meta-tags';
@@ -134,9 +134,8 @@ class Home extends React.Component {
 
           development
         </Typography>
-        {/* <HighlightsCard /> */}
-        <PhotoFeedCard />
-        <BuiltWithTable />
+        <WelcomeCard />
+        <BuiltWithTableCard />
       </div>
     );
   }

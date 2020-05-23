@@ -64,7 +64,7 @@ const styles = {
   },
 };
 
-class BuiltWithTable extends React.Component {
+class BuiltWithTableCard extends React.Component {
   render() {
     const {classes} = this.props;
     const digitalOceanLink = `https://www.digitalocean.com/`;
@@ -253,8 +253,8 @@ class BuiltWithTable extends React.Component {
   }
 }
 
-BuiltWithTable.propTypes = {
+BuiltWithTableCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(BuiltWithTable);
+export default withStyles(styles)(BuiltWithTableCard);
