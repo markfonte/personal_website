@@ -22,8 +22,14 @@ import {
   Card,
   CardContent,
   CardHeader,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
+  IconButton,
   Tooltip,
+  Chip,
 } from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = {
   logoDefault: {
@@ -38,6 +44,23 @@ const styles = {
   },
   scrollTip: {
     marginTop: '8px',
+  },
+  expansionHeaderContainer: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  cardContent: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  tags: {
+    margin: '4px',
   },
 };
 
@@ -117,48 +140,115 @@ class BuiltWithTable extends React.Component {
         logo: trelloLogo,
       },
     ];
+
+    const tags = [
+      {
+        label: 'DigitalOcean',
+      },
+      {
+        label: 'Express',
+      },
+      {
+        label: 'GitHub',
+      },
+      {
+        label: 'Jest',
+      },
+      {
+        label: 'Material-UI',
+      },
+      {
+        label: 'Nginx',
+      },
+      {
+        label: 'NodeJS',
+      },
+      {
+        label: 'React',
+      },
+      {
+        label: 'TravisCI',
+      },
+      {
+        label: 'Trello',
+      },
+    ];
     return (
-      <div>
-        <Card raised={true} className="card">
-          <CardHeader title="Built With:" />
-          <CardContent>
-            <div className={classes.builtWithTableWrapper}>
-              <Table className={classes.builtWithTable}>
-                <TableBody>
-                  {rows.map((row) => (
-                    <TableRow key={row.title}>
-                      <TableCell component="th" scope="row" align="left">
-                        <Link href={row.link} color="textPrimary">
-                          <Tooltip title={'Go to ' + row.title} placement="bottom-start">
-                            <Typography variant="h6" color="textPrimary">
-                              {row.title}
-                            </Typography>
-                          </Tooltip>
-                        </Link>
-                      </TableCell>
-                      <TableCell align="center">
-                        <img
-                          src={row.logo}
-                          className={classes.logoDefault}
-                          alt={row.title + ' logo'}
-                        />
-                      </TableCell>
-                      <TableCell align="right">
-                        <Typography variant="subtitle2">
-                          {row.subtitle}
-                        </Typography>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
+      <Card
+        raised={true}
+        className="card">
+        <ExpansionPanel
+          TransitionProps={{unmountOnExit: true}}>
+          <ExpansionPanelSummary
+            aria-label="Built With Table"
+            aria-controls="built-with-table-content"
+            id="built-with-table-header"
+            expandIcon={
+              <Tooltip
+                title="Expand/collapse card"
+                arrow>
+                <IconButton>
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Tooltip>
+            }>
+            <div className={classes.expansionHeaderContainer}>
+              <CardHeader title="🛠️ Built With:"
+                subheader="What I used to build this website" />
+              <div>
+                {tags.map((tag) => (
+                  <Chip
+                    className={classes.tags}
+                    key={tag.label}
+                    icon={tag.icon ? tag.icon : <div/>}
+                    label={tag.label}
+                    variant={tag.variant ? tag.variant : 'outlined'}
+                    color={tag.color ? tag.color : 'secondary'}
+                    clickable />
+                ))}
+              </div>
             </div>
-            <Typography className={classes.scrollTip} variant="caption" color="textSecondary">
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <CardContent className={classes.cardContent}>
+              <div className={classes.builtWithTableWrapper}>
+                <Table className={classes.builtWithTable}>
+                  <TableBody>
+                    {rows.map((row) => (
+                      <TableRow key={row.title}>
+                        <TableCell component="th" scope="row" align="left">
+                          <Link href={row.link} color="textPrimary">
+                            <Tooltip title={'Go to ' + row.title} placement="bottom-start">
+                              <Typography variant="h6" color="textPrimary">
+                                {row.title}
+                              </Typography>
+                            </Tooltip>
+                          </Link>
+                        </TableCell>
+                        <TableCell align="center">
+                          <img
+                            src={row.logo}
+                            className={classes.logoDefault}
+                            alt={row.title + ' logo'}
+                          />
+                        </TableCell>
+                        <TableCell align="right">
+                          <Typography variant="subtitle2">
+                            {row.subtitle}
+                          </Typography>
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+              <Typography className={classes.scrollTip} variant="caption" color="textSecondary">
                 This table scrolls horizontally on smaller-width devices!
-            </Typography>
-          </CardContent>
-        </Card>
-      </div>
+              </Typography>
+            </CardContent>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+      </Card>
     );
   }
 }
