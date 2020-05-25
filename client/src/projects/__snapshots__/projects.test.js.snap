@@ -2595,274 +2595,720 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#grizzhacks3_card"
-      name="grizzhacks3_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      Grizzhacks 3 Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="grizzhacks3-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="GrizzHacks 3"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="grizzhacks3-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          Congo AI
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#grizzhacks3_card"
+            name="grizzhacks3_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Grizzhacks 3 Card
+          </a>
+          <div
+            className="Grizzhacks3Card-expansionHeaderContainer-190"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Congo AI
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Hackathon Winner @ GrizzHacks 3
+                </span>
+              </div>
+            </div>
+            <img
+              alt="GrizzHacks 3 logo"
+              className="MuiCardMedia-root Grizzhacks3Card-grizzhacks3Logo-187 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/grizzhacks_logo.png"
+              title="GrizzHacks 3 logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-189 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  September 2018
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-189 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Hackathon
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Hackathon Winner @ GrizzHacks 3
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      alt="GrizzHacks 3 logo"
-      className="MuiCardMedia-root Grizzhacks3Card-media-187"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
-        }
-      }
-      title="GrizzHacks 3 logo"
-    />
-    <div
-      className="MuiCardContent-root"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
-      >
-        This was the first hackathon I ever competed in. We built an online store to buy and sell pre-trained machine learning models, using Vue.js and MongoDB. While we did not completely finish, the idea was to be able to test out the machine learning models first in the store before purchasing from the person that made it. Most of the credit on this project goes to my team. We won 
-        <i>
-          Best DevOps Hack, Presented by Ally Financial
-        </i>
-         and 
-        <i>
-          Best use of Dynatrace
-        </i>
-        . View it on 
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://devpost.com/software/congoai"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Devpost
-        </a>
-         
-        or
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://github.com/nathan815/CongoAI"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Github
-        </a>
-      </p>
-      <img
-        alt="CongoAI logo"
-        className="Grizzhacks3Card-logo-188"
-        src={
-          Object {
-            "process": [Function],
-          }
-        }
-        title="CongoAI logo"
-      />
     </div>
   </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#spotlight_card"
-      name="spotlight_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      Spotlight Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="spotlight-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="Spotlight"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="spotlight-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          Spotlight
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#spotlight_card"
+            name="spotlight_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Spotlight Card
+          </a>
+          <div
+            className="SpotlightCard-expansionHeaderContainer-193"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Spotlight
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Lead Android developer
+                </span>
+              </div>
+            </div>
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-192 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  September 2018 → July 2019
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-192 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Part-Time
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-192 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Startup
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-192 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Android
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Lead Android developer
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="MuiCardContent-root"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1"
-      >
-        We worked on Android and iOS applications to help streamline the sorority recruitment process. Both applications were built using Firebase, and the Android application is built using Android Jetpack, architecture components and Google Maps APIs. I built a successful POC for the Android application and successfully onboarded another developer to maintain the project.
-      </p>
-      <picture>
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/webp"
-        />
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/png"
-        />
-        <img
-          alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-196"
-          srcSet={
-            Array [
-              Object {
-                "process": [Function],
-              },
-              Object {
-                "process": [Function],
-              },
-            ]
-          }
-        />
-      </picture>
-      <picture>
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/webp"
-        />
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/png"
-        />
-        <img
-          alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-196"
-          srcSet={
-            Array [
-              Object {
-                "process": [Function],
-              },
-              Object {
-                "process": [Function],
-              },
-            ]
-          }
-        />
-      </picture>
     </div>
   </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#doggie_doodles_card"
-      name="doggie_doodles_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      Doggie Doodles Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="doggie-doodles-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="Doggie Doodles"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="doggie-doodles-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          Doggie Doodles
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#doggie_doodles_card"
+            name="doggie_doodles_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Doggie Doodles Card
+          </a>
+          <div
+            className="DoggieDoodlesCard-expansionHeaderContainer-196"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Doggie Doodles
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Entrepreneur
+                </span>
+              </div>
+            </div>
+            <img
+              alt="Doggie Doodles logo"
+              className="MuiCardMedia-root DoggieDoodlesCard-doggieDoodlesLogo-194 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/doggie_doodles_logo.jpg"
+              title="Doggie Doodles logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-195 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  March 2019 → May 2019
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-195 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Part-Time
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-195 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Startup
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-195 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Entrepreneurship
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Entrepreneur
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      alt="Gimble A Cappella - 2019"
-      className="MuiCardMedia-root DoggieDoodlesCard-media-197"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
-        }
-      }
-      title="Gimble A Cappella - 2019"
-    />
-    <div
-      className="MuiCardContent-root"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1"
-      >
-        Started from a class project, this business sells custom merchandise using a digital drawing of your animal.
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="mailto:dopedoggiedoodles@gmail.com"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Send us a picture of your dog or cat
-           
-        </a>
-         and we will turn it into a custom drawing. Then head over to
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://www.redbubble.com/people/doggiedoodles"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Redbubble
-        </a>
-         
-        and you can purchase a custom mug, laptop sticker, phone case, and more. I might not be writing software for this business, but it is still lots of fun!
-      </p>
     </div>
   </div>
   <div
-    className="InteractionCard-root-198"
+    className="InteractionCard-root-197"
   >
     <a
       href="#interaction_card"
