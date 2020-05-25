@@ -1,8 +1,10 @@
 import React from 'react';
+
 import JPMorganScreenshotOne
   from '../static/images/screenshots/jpmorgan_screenshot_1.webp';
 import JPMorganScreenshotOneFallback
   from '../static/images/screenshots/jpmorgan_screenshot_1.jpg';
+
 import {
   Typography,
   Card,
@@ -62,6 +64,7 @@ class JPMorganCard extends React.Component {
     const jqueryLink = `https://jquery.com/`;
     const materialUILink = `https://material-ui.com/`;
     const materialUIDialogLink = `https://material-ui.com/components/dialogs/`;
+
     const tags = [
       {
         label: 'June 2019 → August 2019',
@@ -87,6 +90,7 @@ class JPMorganCard extends React.Component {
         label: 'React Native',
       },
     ];
+
     return (
       <Card
         raised={true}

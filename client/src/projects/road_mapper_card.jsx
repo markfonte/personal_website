@@ -6,7 +6,16 @@ import {
   Link,
   CardContent,
   withStyles,
+  ExpansionPanel,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
+  Chip,
+  IconButton,
+  Tooltip,
 } from '@material-ui/core';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import roadMapperScreenshotOne
   from '../static/images/screenshots/ice_road_mappers_screenshot_1.webp';
 import roadMapperScreenshotOneFallback
@@ -19,6 +28,16 @@ const styles = {
     height: 'auto',
     width: '100%',
     maxWidth: '560px',
+  },
+  tags: {
+    margin: '4px',
+  },
+  expansionHeaderContainer: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
   },
 };
 
@@ -33,86 +52,145 @@ class RoadMapperCard extends React.Component {
     const flaskLink = `https://flask.palletsprojects.com/en/1.1.x/`;
     const sqliteLink = `https://docs.python.org/2/library/sqlite3.html`;
 
+    const tags = [
+      {
+        label: 'March 2020 → April 2020',
+        color: 'default',
+        variant: 'default',
+        icon: <DateRangeIcon />,
+      },
+      {
+        label: 'Class Project',
+        color: 'primary',
+        variant: 'default',
+      },
+      {
+        label: 'JavaScript',
+      },
+      {
+        label: 'Python Flask',
+      },
+      {
+        label: 'SQLite',
+      },
+      {
+        label: 'Vue.js',
+      },
+    ];
+
     return (
       <Card raised={true} className="card">
-        <a name="road_mapper_card" href="#road_mapper_card" style={{visibility: 'hidden'}}>
+        <ExpansionPanel
+          TransitionProps={{unmountOnExit: true}}>
+          <ExpansionPanelSummary
+            aria-label="Road Mapper"
+            aria-controls="road-mapper-content"
+            id="road-mapper-header"
+            expandIcon={
+              <Tooltip
+                title="Expand/collapse card"
+                arrow>
+                <IconButton>
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Tooltip>
+            }>
+            <a name="road_mapper_card" href="#road_mapper_card" style={{visibility: 'hidden'}}>
             Road Mapper Card
-        </a>
-        <CardHeader
-          title="Road Mapper"
-          subheader="EECS 493 class project"
-        />
-        <CardContent>
-          <Typography variant="body1" gutterBottom>
+            </a>
+            <div className={classes.expansionHeaderContainer}>
+              <CardHeader
+                title="Road Mapper"
+                subheader="EECS 493 class project"
+              />
+              <div>
+                {tags.map((tag) => (
+                  <Chip
+                    className={classes.tags}
+                    key={tag.label}
+                    icon={tag.icon ? tag.icon : <div/>}
+                    label={tag.label}
+                    variant={tag.variant ? tag.variant : 'outlined'}
+                    color={tag.color ? tag.color : 'secondary'}
+                    clickable />
+                ))}
+              </div>
+            </div>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <CardContent>
+              <Typography variant="body1" gutterBottom>
                This was just a small project that we worked on for
-            {' '}
-            <Link color="secondary" href={eecs493Link}>
+                {' '}
+                <Link color="secondary" href={eecs493Link}>
                 EECS 493
-            </Link>
-            {' '}
+                </Link>
+                {' '}
                 during my final semester in college. It was really fun because I got to use
-            {' '}
-            <Link color="secondary" href={vueLink}>
+                {' '}
+                <Link color="secondary" href={vueLink}>
                 Vue.js
-            </Link>
-            {' '}
+                </Link>
+                {' '}
                 for the first time on an actual web application. It was very simple to use, and I loved
                 how lightweight it was (with a single import you can start using Vue right away
                 in any web application).
-            <br/><br/>
+                <br/><br/>
                 The application was modeled off of how applications like
-            {' '}
-            <Link color="secondary" href={wazeLink}>
+                {' '}
+                <Link color="secondary" href={wazeLink}>
                 Waze
-            </Link>
-            {' '}
+                </Link>
+                {' '}
               allow users to indicate driving hazards and speed traps that they find. We used the same
               concept to crowdsource the presence of (primarily winter) walking hazards like ice,
               snow and mud. Using the
-            {' '}
-            <Link color="secondary" href={mapboxApiLink}>
+                {' '}
+                <Link color="secondary" href={mapboxApiLink}>
                 Mapbox API
-            </Link>
-            {' '}
+                </Link>
+                {' '}
               we had a map that allowed users to create, read, update and delete different walking
               hazards. They could enter a description, drag markers to a spot, select the type of
               hazard, and even use built-in walking directions. We stored the currently-active hazards
               in a
-            {' '}
-            <Link color="secondary" href={sqliteLink}>
+                {' '}
+                <Link color="secondary" href={sqliteLink}>
                 SQLite
-            </Link>
-            {' '}
+                </Link>
+                {' '}
               database managed by a
-            {' '}
-            <Link color="secondary" href={pythonLink}>
+                {' '}
+                <Link color="secondary" href={pythonLink}>
                 Python
-            </Link>
-            {' '}
-            <Link color="secondary" href={flaskLink}>
+                </Link>
+                {' '}
+                <Link color="secondary" href={flaskLink}>
                 Flask
-            </Link>
-            {' '}
+                </Link>
+                {' '}
               application.
-          </Typography>
-          <picture>
-            <br/>
-            <source srcSet={roadMapperScreenshotOne} type="image/webp"/>
-            <source srcSet={roadMapperScreenshotOneFallback} type="image/png"/>
-            <img
-              srcSet={[roadMapperScreenshotOne, roadMapperScreenshotOneFallback]}
-              className={classes.screenshotOne}
-              title="Road Mappers screenshot 1"
-              alt="Road Mappers screenshot 1"
-            />
-          </picture>
-          <Typography variant="body1" gutterBottom>
-            <br/>
+              </Typography>
+              <picture>
+                <br/>
+                <source srcSet={roadMapperScreenshotOne} type="image/webp"/>
+                <source srcSet={roadMapperScreenshotOneFallback} type="image/png"/>
+                <img
+                  srcSet={[roadMapperScreenshotOne, roadMapperScreenshotOneFallback]}
+                  className={classes.screenshotOne}
+                  title="Road Mappers screenshot 1"
+                  alt="Road Mappers screenshot 1"
+                />
+              </picture>
+              <Typography variant="body1" gutterBottom>
+                <br/>
                Although we never released it to the public, it was a great experience with a new
               framework and a new API. It was also a testament to how smoothly a project can be built
               if the team is on the same page, despite being made entirely during quarantine!
-          </Typography>
-        </CardContent>
+              </Typography>
+            </CardContent>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
       </Card>
     );
   }

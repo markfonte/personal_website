@@ -1390,816 +1390,1206 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#mhack12_card"
-      name="mhacks12_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      MHacks 12 Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="mhacks12-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="MHacks 12"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="mhacks12-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          InstEvents
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#mhack12_card"
+            name="mhacks12_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            MHacks 12 Card
+          </a>
+          <div
+            className="MHacks12Card-expansionHeaderContainer-171"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  InstEvents
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Hackathon Project @ MHacks 12
+                </span>
+              </div>
+            </div>
+            <img
+              alt="MHacks 12 logo"
+              className="MuiCardMedia-root MHacks12Card-media-167 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/mhacks_logo.png"
+              title="MHacks 12 logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-170 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  October 2019
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-170 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Hackathon
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-170 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Android
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Hackathon Project @ MHacks 12
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      alt="MHacks 12 logo"
-      className="MuiCardMedia-root MHacks12Card-media-167"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/mhacks_logo.png\\")",
-        }
-      }
-      title="MHacks 12 logo"
-    />
-    <div
-      className="MuiCardContent-root"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1"
-      >
-        This project was definitely my favorite hackathon project. Nathan and I had 36 hours at MHacks to make a very solid project, and I thought we delivered on our own high expectations. The idea for the app came out of one of my entrepreneurship classes where we were asked to "explore" something new every week. It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app features a Google Maps view that immediately opens to show today's current and upcoming events. In addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users can add events with an interface that features date pickers, time pickers, address autocomplete using the Google Maps Places API, the ability to add a cover photo and more!
-        <br />
-         
-        <br />
-        For this app, we focused on making sure all of the features that we completed were done well. For example, we put lots of extra time into making sure the "Add Event" flow was as seamless as possible, instead of using that time to partially complete some of our stretch goals. The advantage of this is a good UX, even with just the app we made during the hackathon. Going forward, we plan to continue working on other features like web-scraping for popular events, and an eventual release to the Google Play Store. More details on upcoming features and more on our
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://github.com/markfonte/InstEvents"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Github
-        </a>
-        ! We also believe that the app has significant value as-is, because of the fact that anyone can post an event. This, in combination with the built-in Google Maps view, allows for a location-based sorting of events as opposed to the normal popularity-based sorting of events. In other words, events with only 30 people attending get the same weight on the map as those with 5,000. This allows for an even playing field and is a concept we have not really seen before.
-        <br />
-         
-        <br />
-        View it on
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://devpost.com/software/instevent"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Devpost
-        </a>
-         
-        or
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://github.com/markfonte/InstEvents"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Github
-        </a>
-        <br />
-         
-        <br />
-        <picture>
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/webp"
-          />
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/jpg"
-          />
-          <img
-            alt="InstEvents screenshot 3"
-            className="MHacks12Card-screenshot-169"
-            srcSet={
-              Array [
-                Object {
-                  "process": [Function],
-                },
-                Object {
-                  "process": [Function],
-                },
-              ]
-            }
-          />
-        </picture>
-        <picture>
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/webp"
-          />
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/jpg"
-          />
-          <img
-            alt="InstEvents screenshot 1"
-            className="MHacks12Card-screenshot-169"
-            srcSet={
-              Array [
-                Object {
-                  "process": [Function],
-                },
-                Object {
-                  "process": [Function],
-                },
-              ]
-            }
-          />
-        </picture>
-        <picture>
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/webp"
-          />
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/jpg"
-          />
-          <img
-            alt="InstEvents screenshot 2"
-            className="MHacks12Card-screenshot-169"
-            srcSet={
-              Array [
-                Object {
-                  "process": [Function],
-                },
-                Object {
-                  "process": [Function],
-                },
-              ]
-            }
-          />
-        </picture>
-        <picture>
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/webp"
-          />
-          <source
-            srcSet={
-              Object {
-                "process": [Function],
-              }
-            }
-            type="image/jpg"
-          />
-          <img
-            alt="Nathan and Mark MHacks 12"
-            className="MHacks12Card-screenshot-169"
-            srcSet={
-              Array [
-                Object {
-                  "process": [Function],
-                },
-                Object {
-                  "process": [Function],
-                },
-              ]
-            }
-          />
-        </picture>
-      </p>
     </div>
   </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#walklens_card"
-      name="walklens_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      WalkLens Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="walklens-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="WalkLens"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="walklens-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          WalkLens
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#walklens_card"
+            name="walklens_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            WalkLens Card
+          </a>
+          <div
+            className="WalklensCard-expansionHeaderContainer-175"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  WalkLens
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Android application
+                </span>
+              </div>
+            </div>
+            <img
+              alt="WalkLens logo"
+              className="MuiCardMedia-root WalklensCard-walklensLogo-173 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/walklens_logo.svg"
+              title="WalkLens logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-174 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  September 2019 → December 2019
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-174 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Class Project
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-174 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Android
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Android application
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="MuiCardContent-root"
-    >
-      <img
-        alt="WalkLens logo"
-        className="WalklensCard-logo-178"
-        src={
-          Object {
-            "process": [Function],
-          }
-        }
-        title="WalkLens logo"
-      />
-      <p
-        className="MuiTypography-root MuiTypography-body1"
-      >
-        This project was built in my
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://art.ai.umich.edu/course/EECS%20441/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          EECS 441: Mobile App Development for Entrepreneurs
-        </a>
-         
-        class during senior year. The idea is that users give permission to the application to periodically poll their location to see if they are approaching a crosswalk. If the app determines that a user is approaching a road, they receive a pop-up notification. This alerts the user to look up from their phone to help ensure that they are not wandering into the street and putting themselves in danger. The application comes from the idea that pedestrian safety is an issue that can be addressed by encouraging smartphone users to look up while they are walking. A more perfect solution would be for people to simply look while they are walking, but this does not always happen so we tried to combat it from the technology side.
-        <br />
-         
-        <br />
-        WalkLens is able to do all of the work it needs inside the logic of the Android application; it does not require a custom backend database. It uses the
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://developers.google.com/maps/documentation/android-sdk/intro"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Google Maps SDK for Android
-        </a>
-         
-        to display the map UI when opening the application, and the
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://developers.google.com/maps/documentation/roads/intro"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Google Roads API
-        </a>
-         
-        to find the nearest road to a user. It runs as a background process that wakes up in set intervals (between 5 and 30 seconds), then determines the user's current latitude/longitude and calculates if it is near a road. If it is close to the nearest road (between 30-70 feet) then it sends a notification to the user. Additionally, as an implementation of dead reckoning, if a user is approaching a crosswalk it delays sending the notification until they have almost reached it. WalkLens uses
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://developer.android.com/topic/libraries/architecture/livedata"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          LiveData
-        </a>
-        , the
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://developer.android.com/guide/navigation"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Navigation Architecture component
-        </a>
-        , data binding, coroutines, ViewModels,
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://square.github.io/okhttp/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          OkHttp
-        </a>
-         
-        and much more. At the time of writing, it is available on the Google Play Store. There are no plans to make an iOS version of WalkLens.
-        <br />
-         
-        <br />
-        View it on
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://github.com/markfonte/WalkLens"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Github
-        </a>
-         
-        or the
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Google Play Store
-        </a>
-      </p>
-      <picture>
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/webp"
-        />
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/jpg"
-        />
-        <img
-          alt="WalkLens screenshot 1"
-          className="WalklensCard-screenshot-177"
-          srcSet={
-            Array [
-              Object {
-                "process": [Function],
-              },
-              Object {
-                "process": [Function],
-              },
-            ]
-          }
-        />
-      </picture>
-      <picture>
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/webp"
-        />
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/jpg"
-        />
-        <img
-          alt="WalkLens screenshot 2"
-          className="WalklensCard-screenshot-177"
-          srcSet={
-            Array [
-              Object {
-                "process": [Function],
-              },
-              Object {
-                "process": [Function],
-              },
-            ]
-          }
-        />
-      </picture>
-      <picture>
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/webp"
-        />
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/jpg"
-        />
-        <img
-          alt="WalkLens screenshot 3"
-          className="WalklensCard-screenshot-177"
-          srcSet={
-            Array [
-              Object {
-                "process": [Function],
-              },
-              Object {
-                "process": [Function],
-              },
-            ]
-          }
-        />
-      </picture>
     </div>
   </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#spartahack5_card"
-      name="spartahack5_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      Sparthack 5 Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="spartahack5-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="SpartaHack V"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="spartahack5-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          Laughable Lyrics
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#spartahack5_card"
+            name="spartahack5_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            SpartHack V Card
+          </a>
+          <div
+            className="Spartahack5Card-expansionHeaderContainer-179"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Laughable Lyrics
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Hackathon Winner @ SpartaHack V
+                </span>
+              </div>
+            </div>
+            <img
+              alt="SpartaHack V logo"
+              className="MuiCardMedia-root Spartahack5Card-spartahack5_logo-176 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/spartahack_logo.png"
+              title="SpartaHack V logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-178 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  January 2019
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-178 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Hackathon
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-178 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Android
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Hackathon Winner @ Spartahack V
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      alt="SpartaHack V logo"
-      className="MuiCardMedia-root Spartahack5Card-media-179"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/spartahack_logo.png\\")",
-        }
-      }
-      title="SpartaHack V logo"
-    />
-    <div
-      className="MuiCardContent-root"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
-      >
-        This hackathon project,
-         
-        <i>
-          Laughable Lyrics
-        </i>
-        , is one of my favorites.
-         
-        We took inspiration from the popular
-         
-        <i>
-          "Google Translate Sings"
-        </i>
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://www.youtube.com/watch?v=2bVAoVlFYf0"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          YouTube videos
-        </a>
-         
-        and decided we could automate that process. Using Google Translate APIs we built an Android application that allowed users to translate the Genius Lyrics through a specified number of languages, and back to English. The result was always hilarious, and the user interface we built (using Android Jetpack) made it very easy to do. We won 
-        <i>
-          Most Creative/Funniest Hack
-        </i>
-         for the project. View it on
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://devpost.com/software/laughable-lyrics"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Devpost
-        </a>
-         
-        or
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://github.com/nathan815/Laughable-Lyrics"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Github
-        </a>
-      </p>
-      <img
-        alt="Laughable Lyrics logo"
-        className="Spartahack5Card-logo-180"
-        src={
-          Object {
-            "process": [Function],
-          }
-        }
-        title="Laughable Lyrics logo"
-      />
     </div>
   </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#road_mapper_card"
-      name="road_mapper_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      Road Mapper Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="road-mapper-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="Road Mapper"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="road-mapper-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          Road Mapper
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#road_mapper_card"
+            name="road_mapper_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Road Mapper Card
+          </a>
+          <div
+            className="RoadMapperCard-expansionHeaderContainer-182"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Road Mapper
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  EECS 493 class project
+                </span>
+              </div>
+            </div>
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-181 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  March 2020 → April 2020
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-181 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Class Project
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-181 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  JavaScript
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-181 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Python Flask
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-181 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  SQLite
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-181 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Vue.js
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          EECS 493 class project
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="MuiCardContent-root"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
-      >
-        This was just a small project that we worked on for
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://atlas.ai.umich.edu/course/EECS%20493/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          EECS 493
-        </a>
-         
-        during my final semester in college. It was really fun because I got to use
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://vuejs.org/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Vue.js
-        </a>
-         
-        for the first time on an actual web application. It was very simple to use, and I loved how lightweight it was (with a single import you can start using Vue right away in any web application).
-        <br />
-        <br />
-        The application was modeled off of how applications like
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://www.waze.com/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Waze
-        </a>
-         
-        allow users to indicate driving hazards and speed traps that they find. We used the same concept to crowdsource the presence of (primarily winter) walking hazards like ice, snow and mud. Using the
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://docs.mapbox.com/api/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Mapbox API
-        </a>
-         
-        we had a map that allowed users to create, read, update and delete different walking hazards. They could enter a description, drag markers to a spot, select the type of hazard, and even use built-in walking directions. We stored the currently-active hazards in a
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://docs.python.org/2/library/sqlite3.html"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          SQLite
-        </a>
-         
-        database managed by a
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://www.python.org/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Python
-        </a>
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://flask.palletsprojects.com/en/1.1.x/"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Flask
-        </a>
-         
-        application.
-      </p>
-      <picture>
-        <br />
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/webp"
-        />
-        <source
-          srcSet={
-            Object {
-              "process": [Function],
-            }
-          }
-          type="image/png"
-        />
-        <img
-          alt="Road Mappers screenshot 1"
-          className="RoadMapperCard-screenshotOne-181"
-          srcSet={
-            Array [
-              Object {
-                "process": [Function],
-              },
-              Object {
-                "process": [Function],
-              },
-            ]
-          }
-          title="Road Mappers screenshot 1"
-        />
-      </picture>
-      <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
-      >
-        <br />
-        Although we never released it to the public, it was a great experience with a new framework and a new API. It was also a testament to how smoothly a project can be built if the team is on the same page, despite being made entirely during quarantine!
-      </p>
     </div>
   </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
-    <a
-      href="#revolutionuc8_card"
-      name="revolutionuc8_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      RevolutionUC 8 Card
-    </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="MuiCardHeader-content"
+        aria-controls="revolutionuc8-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        aria-label="Revolution UC 8"
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        id="revolutionuc8-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <span
-          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+        <div
+          className="MuiExpansionPanelSummary-content"
         >
-          Denial Dial
-        </span>
-        <span
-          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          <a
+            href="#revolutionuc8_card"
+            name="revolutionuc8_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            RevolutionUC 8 Card
+          </a>
+          <div
+            className="RevolutionUC8Card-expansionHeaderContainer-186"
+          >
+            <div
+              className="MuiCardHeader-root"
+            >
+              <div
+                className="MuiCardHeader-content"
+              >
+                <span
+                  className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
+                >
+                  Denial Dial
+                </span>
+                <span
+                  className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                >
+                  Hackathon Project @ RevolutionUC 8
+                </span>
+              </div>
+            </div>
+            <img
+              alt="RevolutionUC 8 logo"
+              className="MuiCardMedia-root RevolutionUC8Card-revolutionuc8_logo-183 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/revolutionuc_logo.png"
+              title="RevolutionUC 8 logo"
+            />
+            <div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-185 MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root MuiChip-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+                  />
+                </svg>
+                <span
+                  className="MuiChip-label"
+                >
+                  March 2020
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-185 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorPrimary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Hackathon
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
         >
-          Hackathon Project @ RevolutionUC 8
-        </span>
+          <span
+            className="MuiIconButton-label"
+          >
+            <button
+              aria-describedby={null}
+              className="MuiButtonBase-root MuiIconButton-root"
+              disabled={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={0}
+              title="Expand/collapse card"
+              type="button"
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      className="RevolutionUC8Card-mediaWrapper-183"
-    >
-      <div
-        alt="RevolutionUC 8 logo"
-        className="MuiCardMedia-root RevolutionUC8Card-media-182"
-        style={
-          Object {
-            "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
-          }
-        }
-        title="RevolutionUC 8 logo"
-      />
-    </div>
-    <div
-      className="MuiCardContent-root"
-    >
-      <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
-      >
-        This hackathon was not as successful as the other two, but it was still a great experience. We spent at least the first 12 hours of the 24-hour hackathon bouncing between a bunch of different ideas. We ended up building a clever rejection hotline called Denial Dial using Twilio's APIs. It connected two people who were given the fake phone number we set up, and had them communicate for awhile before breaking the news to them. It also had some cool side features like an automated message that played if anyone called the number. We did not win anything with the project, but was still fun experimenting with some new technologies! View it on
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://devpost.com/software/revolution-banking"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Devpost
-        </a>
-         
-        or
-         
-        <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-          href="https://github.com/nathan815/denial-dial"
-          onBlur={[Function]}
-          onFocus={[Function]}
-        >
-          Github
-        </a>
-      </p>
-      <img
-        alt="CongoAI logo"
-        className="RevolutionUC8Card-logo-184"
-        src={
-          Object {
-            "process": [Function],
-          }
-        }
-        title="CongoAI logo"
-      />
     </div>
   </div>
   <div
@@ -2236,7 +2626,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
     <div
       alt="GrizzHacks 3 logo"
-      className="MuiCardMedia-root Grizzhacks3Card-media-185"
+      className="MuiCardMedia-root Grizzhacks3Card-media-187"
       style={
         Object {
           "backgroundImage": "url(\\"/images/grizzhacks_logo.png\\")",
@@ -2281,7 +2671,7 @@ exports[`Projects matches snapshot 1`] = `
       </p>
       <img
         alt="CongoAI logo"
-        className="Grizzhacks3Card-logo-186"
+        className="Grizzhacks3Card-logo-188"
         src={
           Object {
             "process": [Function],
@@ -2350,7 +2740,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 1"
-          className="SpotlightCard-screenshot-187"
+          className="SpotlightCard-screenshot-196"
           srcSet={
             Array [
               Object {
@@ -2382,7 +2772,7 @@ exports[`Projects matches snapshot 1`] = `
         />
         <img
           alt="Spotlight screenshot 2"
-          className="SpotlightCard-screenshot-187"
+          className="SpotlightCard-screenshot-196"
           srcSet={
             Array [
               Object {
@@ -2431,7 +2821,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
     <div
       alt="Gimble A Cappella - 2019"
-      className="MuiCardMedia-root DoggieDoodlesCard-media-188"
+      className="MuiCardMedia-root DoggieDoodlesCard-media-197"
       style={
         Object {
           "backgroundImage": "url(\\"/images/doggie_doodles_logo.jpg\\")",
@@ -2472,7 +2862,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-189"
+    className="InteractionCard-root-198"
   >
     <a
       href="#interaction_card"
@@ -2493,10 +2883,10 @@ exports[`Projects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-190"
+          className="LikeButton-root-199"
         >
           <div
-            className="LikeButton-likeButtonWrapper-191"
+            className="LikeButton-likeButtonWrapper-200"
           >
             <button
               aria-describedby={null}
@@ -2538,10 +2928,10 @@ exports[`Projects matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-192 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-201 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-193 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-202 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0
