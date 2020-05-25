@@ -41,10 +41,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 
 const styles = {
-  media: {
+  mhacks12Banner: {
     width: '100%',
     margin: 'auto',
-    maxWidth: '500px',
     marginBottom: '12px',
   },
   logo: {
@@ -121,10 +120,10 @@ class MHacks12Card extends React.Component {
                 subheader="Hackathon Project @ MHacks 12"
               />
               <CardMedia
-                className={classes.media}
-                image="/images/mhacks_logo.png"
-                title="MHacks 12 logo"
-                alt="MHacks 12 logo"
+                className={classes.mhacks12Banner}
+                image="/images/mhacks_banner.png"
+                title="MHacks 12 banner"
+                alt="MHacks 12 banner"
                 component="img"
               />
               <div>

@@ -1451,10 +1451,10 @@ exports[`Projects matches snapshot 1`] = `
               </div>
             </div>
             <img
-              alt="MHacks 12 logo"
-              className="MuiCardMedia-root MHacks12Card-media-167 MuiCardMedia-media MuiCardMedia-img"
-              src="/images/mhacks_logo.png"
-              title="MHacks 12 logo"
+              alt="MHacks 12 banner"
+              className="MuiCardMedia-root MHacks12Card-mhacks12Banner-167 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/mhacks_banner.png"
+              title="MHacks 12 banner"
             />
             <div>
               <div
@@ -1913,10 +1913,10 @@ exports[`Projects matches snapshot 1`] = `
               </div>
             </div>
             <img
-              alt="SpartaHack V logo"
-              className="MuiCardMedia-root Spartahack5Card-spartahack5_logo-176 MuiCardMedia-media MuiCardMedia-img"
-              src="/images/spartahack_logo.png"
-              title="SpartaHack V logo"
+              alt="SpartaHack V banner"
+              className="MuiCardMedia-root Spartahack5Card-spartahack5Banner-176 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/spartahack_banner.png"
+              title="SpartaHack V banner"
             />
             <div>
               <div
@@ -2656,10 +2656,10 @@ exports[`Projects matches snapshot 1`] = `
               </div>
             </div>
             <img
-              alt="GrizzHacks 3 logo"
-              className="MuiCardMedia-root Grizzhacks3Card-grizzhacks3Logo-187 MuiCardMedia-media MuiCardMedia-img"
-              src="/images/grizzhacks_logo.png"
-              title="GrizzHacks 3 logo"
+              alt="GrizzHacks 3 banner"
+              className="MuiCardMedia-root Grizzhacks3Card-grizzhacks3Banner-187 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/grizzhacks_banner.png"
+              title="GrizzHacks 3 banner"
             />
             <div>
               <div
@@ -3112,10 +3112,10 @@ exports[`Projects matches snapshot 1`] = `
               </div>
             </div>
             <img
-              alt="Doggie Doodles logo"
-              className="MuiCardMedia-root DoggieDoodlesCard-doggieDoodlesLogo-194 MuiCardMedia-media MuiCardMedia-img"
-              src="/images/doggie_doodles_logo.jpg"
-              title="Doggie Doodles logo"
+              alt="Doggie Doodles banner"
+              className="MuiCardMedia-root DoggieDoodlesCard-doggieDoodlesBanner-194 MuiCardMedia-media MuiCardMedia-img"
+              src="/images/doggie_doodles_banner.jpg"
+              title="Doggie Doodles banner"
             />
             <div>
               <div

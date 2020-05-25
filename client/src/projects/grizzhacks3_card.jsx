@@ -20,10 +20,9 @@ import congoaiLogo from '../static/images/logos/congoai_logo.svg';
 import PropTypes from 'prop-types';
 
 const styles = {
-  grizzhacks3Logo: {
+  grizzhacks3Banner: {
     width: '100%',
     margin: 'auto',
-    maxWidth: '500px',
     marginBottom: '12px',
   },
   congoaiLogo: {
@@ -89,10 +88,10 @@ class Grizzhacks3Card extends React.Component {
                 subheader="Hackathon Winner @ GrizzHacks 3"
               />
               <CardMedia
-                className={classes.grizzhacks3Logo}
-                image="/images/grizzhacks_logo.png"
-                title="GrizzHacks 3 logo"
-                alt="GrizzHacks 3 logo"
+                className={classes.grizzhacks3Banner}
+                image="/images/grizzhacks_banner.png"
+                title="GrizzHacks 3 banner"
+                alt="GrizzHacks 3 banner"
                 component="img"
               />
               <div>

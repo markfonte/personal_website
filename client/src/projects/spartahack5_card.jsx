@@ -21,13 +21,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 
 const styles = {
-  spartahack5_logo: {
+  spartahack5Banner: {
     width: '100%',
     margin: 'auto',
-    maxWidth: '500px',
     marginBottom: '12px',
   },
-  laughable_lyrics_logo: {
+  laughableLyricsLogo: {
     width: '40%', height: 'auto',
   },
   tags: {
@@ -91,10 +90,10 @@ class Spartahack5Card extends React.Component {
                 subheader="Hackathon Winner @ SpartaHack V"
               />
               <CardMedia
-                className={classes.spartahack5_logo}
-                image="/images/spartahack_logo.png"
-                title="SpartaHack V logo"
-                alt="SpartaHack V logo"
+                className={classes.spartahack5Banner}
+                image="/images/spartahack_banner.png"
+                title="SpartaHack V banner"
+                alt="SpartaHack V banner"
                 component="img"
               />
               <div>
@@ -146,7 +145,7 @@ class Spartahack5Card extends React.Component {
               </Typography>
               <img
                 src={laughableLyricsLogo}
-                className={classes.laughable_lyrics_logo}
+                className={classes.laughableLyricsLogo}
                 title="Laughable Lyrics logo"
                 alt="Laughable Lyrics logo"
               />

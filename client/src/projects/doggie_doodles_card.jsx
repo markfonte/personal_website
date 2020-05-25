@@ -19,10 +19,9 @@ import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';
 
 const styles = {
-  doggieDoodlesLogo: {
+  doggieDoodlesBanner: {
     width: '100%',
     margin: 'auto',
-    maxWidth: '500px',
     marginBottom: '12px',
   },
   tags: {
@@ -70,7 +69,6 @@ class DoggieDoodlesCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-
         <ExpansionPanel
           TransitionProps={{unmountOnExit: true}}>
           <ExpansionPanelSummary
@@ -92,10 +90,10 @@ class DoggieDoodlesCard extends React.Component {
             <div className={classes.expansionHeaderContainer}>
               <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
               <CardMedia
-                className={classes.doggieDoodlesLogo}
-                image="/images/doggie_doodles_logo.jpg"
-                title="Doggie Doodles logo"
-                alt="Doggie Doodles logo"
+                className={classes.doggieDoodlesBanner}
+                image="/images/doggie_doodles_banner.jpg"
+                title="Doggie Doodles banner"
+                alt="Doggie Doodles banner"
                 component="img"
               />
               <div>
