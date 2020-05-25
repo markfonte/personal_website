@@ -22,6 +22,9 @@ class InteractionCard extends React.Component {
       <div />;
     return (
       <div className={classes.root}>
+        <a name="interaction_card" href="#interaction_card" style={{visibility: 'hidden'}}>
+            Interaction Card
+        </a>
         <Card raised={true}>
           <CardContent>
             {/* <CommentBox pagename={this.props.pagename} /> */}

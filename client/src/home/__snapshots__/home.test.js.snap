@@ -171,6 +171,17 @@ exports[`Home matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#welcome_card"
+            name="welcome_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Welcome Card
+          </a>
           <div
             className="WelcomeCard-expansionHeaderContainer-61"
           >
@@ -298,6 +309,17 @@ exports[`Home matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#built_with_table_card"
+            name="built_with_table_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Built With Table Card
+          </a>
           <div
             className="BuiltWithTableCard-expansionHeaderContainer-146"
           >

@@ -125,6 +125,9 @@ class MISymptomsCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="mi_symptoms_card" href="#mi_symptoms_card" style={{visibility: 'hidden'}}>
+            MI Symptoms Card
+            </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
                 title="MI Symptoms Project"

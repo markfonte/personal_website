@@ -130,6 +130,9 @@ class WelcomeCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="welcome_card" href="#welcome_card" style={{visibility: 'hidden'}}>
+              Welcome Card
+            </a>
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
@@ -178,6 +181,7 @@ class WelcomeCard extends React.Component {
             .
               </Typography>
               <Typography variant="body1" paragraph>
+                    Outside of coding,
                     I love reading, writing, teaching, and anything to do with leadership. I love
                     good design, usability and accessibility - concepts which I get to practice all the
                     time while making

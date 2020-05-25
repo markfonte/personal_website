@@ -32,6 +32,9 @@ class Spartahack5Card extends React.Component {
 
     return (
       <Card raised={true} className="card">
+        <a name="spartahack5_card" href="#spartahack5_card" style={{visibility: 'hidden'}}>
+            Sparthack 5 Card
+        </a>
         <CardHeader
           title="Laughable Lyrics"
           subheader="Hackathon Winner @ Spartahack V"

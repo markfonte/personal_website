@@ -192,6 +192,9 @@ class BuiltWithTableCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="built_with_table_card" href="#built_with_table_card" style={{visibility: 'hidden'}}>
+            Built With Table Card
+            </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader title="🛠️ Built With:"
                 subheader="What I used to build this website" />

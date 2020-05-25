@@ -50,6 +50,17 @@ exports[`Extra matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#gimble_card"
+            name="gimble_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Gimble Card
+          </a>
           <div
             className="GimbleCard-expansionHeaderContainer-35"
           >
@@ -538,6 +549,17 @@ exports[`Extra matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#tic_tac_toe_card"
+      name="tic_tac_toe_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Tic Tac Toe Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -955,6 +977,17 @@ exports[`Extra matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#recommended_sites_card"
+            name="recommended_sites_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Recommended Sites Card
+          </a>
           <div
             className="RecommendedSitesCard-expansionHeaderContainer-267"
           >
@@ -1048,6 +1081,17 @@ exports[`Extra matches snapshot 1`] = `
   <div
     className="InteractionCard-root-269"
   >
+    <a
+      href="#interaction_card"
+      name="interaction_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Interaction Card
+    </a>
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
     >

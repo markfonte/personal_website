@@ -26,6 +26,9 @@ class DoggieDoodlesCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
+        <a name="doggie_doodles_card" href="#doggie_doodles_card" style={{visibility: 'hidden'}}>
+            Doggie Doodles Card
+        </a>
         <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
         <CardMedia
           className={classes.media}

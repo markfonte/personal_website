@@ -35,6 +35,9 @@ class SpotlightCard extends React.Component {
     const {classes} = this.props;
     return (
       <Card raised={true} className="card">
+        <a name="spotlight_card" href="#spotlight_card" style={{visibility: 'hidden'}}>
+            Spotlight Card
+        </a>
         <CardHeader
           title="Spotlight"
           subheader="Lead Android developer"

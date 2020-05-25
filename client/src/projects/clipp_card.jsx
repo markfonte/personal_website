@@ -49,6 +49,9 @@ class ClippCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
+        <a name="clipp_card" href="#clipp_card" style={{visibility: 'hidden'}}>
+            Clipp Card
+        </a>
         <CardHeader
           title="Clipp"
           subheader="Full Stack Software Developer (Part Time)"

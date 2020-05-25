@@ -138,6 +138,9 @@ class LAZCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="laz_card" href="#laz_card" style={{visibility: 'hidden'}}>
+            Learning A-Z Card
+            </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
                 title="Learning A-Z"

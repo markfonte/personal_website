@@ -180,6 +180,9 @@ class CompletedCourseworkCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="completed_coursework_card" href="#completed_coursework_card" style={{visibility: 'hidden'}}>
+            Completed Coursework Card
+            </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
                 title="University of Michigan"

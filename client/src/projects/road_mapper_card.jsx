@@ -35,6 +35,9 @@ class RoadMapperCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
+        <a name="road_mapper_card" href="#road_mapper_card" style={{visibility: 'hidden'}}>
+            Road Mapper Card
+        </a>
         <CardHeader
           title="Road Mapper"
           subheader="EECS 493 class project"

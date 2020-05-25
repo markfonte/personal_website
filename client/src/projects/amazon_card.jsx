@@ -81,6 +81,9 @@ class AmazonCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="amazon_card" href="#amazon_card" style={{visibility: 'hidden'}}>
+            Amazon Card
+            </a>
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader

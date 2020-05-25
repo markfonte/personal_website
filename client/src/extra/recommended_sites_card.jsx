@@ -137,6 +137,9 @@ class RecommendedSitesCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="recommended_sites_card" href="#recommended_sites_card" style={{visibility: 'hidden'}}>
+            Recommended Sites Card
+            </a>
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader

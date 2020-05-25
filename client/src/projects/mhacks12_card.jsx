@@ -60,6 +60,9 @@ class MHacks12Card extends React.Component {
 
     return (
       <Card raised={true} className="card">
+        <a name="mhacks12_card" href="#mhack12_card" style={{visibility: 'hidden'}}>
+            MHacks 12 Card
+        </a>
         <CardHeader
           title="InstEvents"
           subheader="Hackathon Project @ MHacks 12"

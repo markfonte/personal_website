@@ -106,6 +106,9 @@ class JPMorganCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
+            <a name="jpmorgan_card" href="#jpmorgan_card" style={{visibility: 'hidden'}}>
+            J.P. Morgan Card
+            </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
                 title="J.P. Morgan Chase"

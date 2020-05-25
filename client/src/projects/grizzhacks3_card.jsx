@@ -30,6 +30,9 @@ class Grizzhacks3Card extends React.Component {
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
     return (
       <Card raised={true} className="card">
+        <a name="grizzhacks3_card" href="#grizzhacks3_card" style={{visibility: 'hidden'}}>
+            Grizzhacks 3 Card
+        </a>
         <CardHeader
           title="Congo AI"
           subheader="Hackathon Winner @ GrizzHacks 3"

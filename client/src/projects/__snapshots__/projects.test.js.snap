@@ -45,6 +45,17 @@ exports[`Projects matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#amazon_card"
+            name="amazon_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Amazon Card
+          </a>
           <div
             className="AmazonCard-expansionHeaderContainer-34"
           >
@@ -237,6 +248,17 @@ exports[`Projects matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#jpmorgan_card"
+            name="jpmorgan_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            J.P. Morgan Card
+          </a>
           <div
             className="JPMorganCard-expansionHeaderContainer-154"
           >
@@ -541,6 +563,17 @@ exports[`Projects matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#laz_card"
+            name="laz_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Learning A-Z Card
+          </a>
           <div
             className="LAZCard-expansionHeaderContainer-159"
           >
@@ -873,6 +906,17 @@ exports[`Projects matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#completed_coursework_card"
+            name="completed_coursework_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            Completed Coursework Card
+          </a>
           <div
             className="CompletedCourseworkCard-expansionHeaderContainer-162"
           >
@@ -1037,6 +1081,17 @@ exports[`Projects matches snapshot 1`] = `
         <div
           className="MuiExpansionPanelSummary-content"
         >
+          <a
+            href="#mi_symptoms_card"
+            name="mi_symptoms_card"
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            MI Symptoms Card
+          </a>
           <div
             className="MISymptomsCard-expansionHeaderContainer-166"
           >
@@ -1335,6 +1390,17 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#mhack12_card"
+      name="mhacks12_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      MHacks 12 Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -1545,6 +1611,17 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#walklens_card"
+      name="walklens_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      WalkLens Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -1774,6 +1851,17 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#spartahack5_card"
+      name="spartahack5_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Sparthack 5 Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -1871,6 +1959,17 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#road_mapper_card"
+      name="road_mapper_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Road Mapper Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -2017,86 +2116,106 @@ exports[`Projects matches snapshot 1`] = `
       </p>
     </div>
   </div>
-  <div>
+  <div
+    className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+  >
+    <a
+      href="#revolutionuc8_card"
+      name="revolutionuc8_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      RevolutionUC 8 Card
+    </a>
     <div
-      className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
+      className="MuiCardHeader-root"
     >
       <div
-        className="MuiCardHeader-root"
+        className="MuiCardHeader-content"
       >
-        <div
-          className="MuiCardHeader-content"
+        <span
+          className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
         >
-          <span
-            className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
-          >
-            Denial Dial
-          </span>
-          <span
-            className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
-          >
-            Hackathon Project @ RevolutionUC 8
-          </span>
-        </div>
-      </div>
-      <div
-        className="RevolutionUC8Card-mediaWrapper-183"
-      >
-        <div
-          alt="RevolutionUC 8 logo"
-          className="MuiCardMedia-root RevolutionUC8Card-media-182"
-          style={
-            Object {
-              "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
-            }
-          }
-          title="RevolutionUC 8 logo"
-        />
-      </div>
-      <div
-        className="MuiCardContent-root"
-      >
-        <p
-          className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+          Denial Dial
+        </span>
+        <span
+          className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
         >
-          This hackathon was not as successful as the other two, but it was still a great experience. We spent at least the first 12 hours of the 24-hour hackathon bouncing between a bunch of different ideas. We ended up building a clever rejection hotline called Denial Dial using Twilio's APIs. It connected two people who were given the fake phone number we set up, and had them communicate for awhile before breaking the news to them. It also had some cool side features like an automated message that played if anyone called the number. We did not win anything with the project, but was still fun experimenting with some new technologies! View it on
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://devpost.com/software/revolution-banking"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Devpost
-          </a>
-           
-          or
-           
-          <a
-            className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
-            href="https://github.com/nathan815/denial-dial"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Github
-          </a>
-        </p>
-        <img
-          alt="CongoAI logo"
-          className="RevolutionUC8Card-logo-184"
-          src={
-            Object {
-              "process": [Function],
-            }
-          }
-          title="CongoAI logo"
-        />
+          Hackathon Project @ RevolutionUC 8
+        </span>
       </div>
+    </div>
+    <div
+      className="RevolutionUC8Card-mediaWrapper-183"
+    >
+      <div
+        alt="RevolutionUC 8 logo"
+        className="MuiCardMedia-root RevolutionUC8Card-media-182"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/images/revolutionuc_logo.png\\")",
+          }
+        }
+        title="RevolutionUC 8 logo"
+      />
+    </div>
+    <div
+      className="MuiCardContent-root"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
+      >
+        This hackathon was not as successful as the other two, but it was still a great experience. We spent at least the first 12 hours of the 24-hour hackathon bouncing between a bunch of different ideas. We ended up building a clever rejection hotline called Denial Dial using Twilio's APIs. It connected two people who were given the fake phone number we set up, and had them communicate for awhile before breaking the news to them. It also had some cool side features like an automated message that played if anyone called the number. We did not win anything with the project, but was still fun experimenting with some new technologies! View it on
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://devpost.com/software/revolution-banking"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Devpost
+        </a>
+         
+        or
+         
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+          href="https://github.com/nathan815/denial-dial"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Github
+        </a>
+      </p>
+      <img
+        alt="CongoAI logo"
+        className="RevolutionUC8Card-logo-184"
+        src={
+          Object {
+            "process": [Function],
+          }
+        }
+        title="CongoAI logo"
+      />
     </div>
   </div>
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#grizzhacks3_card"
+      name="grizzhacks3_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Grizzhacks 3 Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -2175,6 +2294,17 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#spotlight_card"
+      name="spotlight_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Spotlight Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -2270,6 +2400,17 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
+    <a
+      href="#doggie_doodles_card"
+      name="doggie_doodles_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Doggie Doodles Card
+    </a>
     <div
       className="MuiCardHeader-root"
     >
@@ -2333,6 +2474,17 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="InteractionCard-root-189"
   >
+    <a
+      href="#interaction_card"
+      name="interaction_card"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      Interaction Card
+    </a>
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
     >

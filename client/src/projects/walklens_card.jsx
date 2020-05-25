@@ -56,6 +56,9 @@ class WalklensCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
+        <a name="walklens_card" href="#walklens_card" style={{visibility: 'hidden'}}>
+            WalkLens Card
+        </a>
         <CardHeader
           title="WalkLens"
           subheader="Android application"
