@@ -14,6 +14,46 @@
   width: 0;
 }
 
+.amazonColorLight {
+  color: #f90 !important;
+}
+
+.amazonColorDark {
+  color: #b92c00 !important;
+}
+
+.michiganColorLight {
+  color: #ffcb05 !important;
+}
+
+.michiganColorDark {
+  color: #00274c !important;
+}
+
+.androidColorLight {
+  color: #a4c639 !important;
+}
+
+.androidColorDark {
+  color: #526b00 !important;
+}
+
+.webColorLight {
+  color: #61dbfb !important;
+}
+
+.webColorDark {
+  color: #006a86 !important;
+}
+
+.gimbleColorLight {
+  color: #83b2da !important;
+}
+
+.gimbleColorDark {
+  color: #0072d4 !important;
+}
+
 /* Global */
 @keyframes react-logo-spin {
   from {

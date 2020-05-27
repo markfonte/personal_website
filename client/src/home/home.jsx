@@ -6,6 +6,8 @@ import {Typography, Link, Tooltip} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import MetaTags from 'react-meta-tags';
 
+const getCookie = require('../shared/util/cookies.js').getCookie;
+
 const styles = {
   title: {
     margin: '16px',
@@ -13,24 +15,11 @@ const styles = {
   subtitle: {
     margin: '16px',
   },
-  amazon: {
-    color: '#FF9900',
-  },
-  michigan: {
-    color: '#FFCB05',
-  },
   michiganLogo: {
     margin: '0px',
   },
   web: {
     color: '#61DBFB',
-  },
-  android: {
-    color: '#A4C639',
-  },
-  compSci: {
-  },
-  entrepreneurship: {
   },
 };
 
@@ -51,6 +40,8 @@ class Home extends React.Component {
   //   }
 
   render() {
+    const {classes} = this.props;
+
     const sdeAmazonLink = 'https://amazon.jobs/en/job_categories/software-development';
     const amazonLink = 'https://www.amazon.com/';
     const compSciEnginUmichLink = 'https://majors.engin.umich.edu/program/computer-science/';
@@ -59,8 +50,11 @@ class Home extends React.Component {
     const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
     const androidDevLink = 'https://developer.android.com/';
 
-    const {classes} = this.props;
-    // const isOpen = this.state.open;
+    const lightTheme = getCookie('app_theme') === 'light_theme';
+    const amazonColor = lightTheme ? 'amazonColorDark' : 'amazonColorLight';
+    const michiganColor = lightTheme ? 'michiganColorDark' : 'michiganColorLight';
+    const webColor = lightTheme ? 'webColorDark' : 'webColorLight';
+    const androidColor = lightTheme ? 'androidColorDark' : 'androidColorLight';
 
     return (
       <div>
@@ -93,42 +87,42 @@ class Home extends React.Component {
           at
 
           {' '}<Tooltip arrow placement="top" title="Go to Amazon.com">
-            <Link color="secondary" href={amazonLink} className={classes.amazon}>
+            <Link href={amazonLink} className={amazonColor}>
               <i>Amazon</i>
             </Link></Tooltip>{' '}
 
           ·
 
           {' '}<Tooltip arrow placement="top" title="Go to U of M computer science page">
-            <Link color="textSecondary" href={compSciEnginUmichLink} className={classes.compSci}>
+            <Link color="textSecondary" href={compSciEnginUmichLink}>
               <i>Computer Science in Engineering</i>
             </Link></Tooltip>{' '}
 
           degree from the
 
           {' '}<Tooltip arrow placement="bottom" title="Go to U of M website">
-            <Link href={umichLink} className={classes.michigan}>
+            <Link href={umichLink} className={michiganColor}>
               <i>University of Michigan</i>
             </Link></Tooltip>{' '}
 
           · Minor in
 
           {' '}<Tooltip arrow placement="bottom" title="Go to U of M Entrepreneurship page">
-            <Link color="textSecondary" href={entrepreneurshipLink} className={classes.entrepreneurship}>
+            <Link color="textSecondary" href={entrepreneurshipLink}>
               <i>Entrepreneurship</i>
             </Link></Tooltip>{' '}
 
           · Focus on
 
           {' '}<Tooltip arrow placement="bottom" title="Go to web development page">
-            <Link href={webDevLink} className={classes.web}>
+            <Link href={webDevLink} className={webColor}>
               <i>Web</i>
             </Link></Tooltip>{' '}
 
           &amp;
 
           {' '}<Tooltip arrow placement="bottom" title="Go to Android Developers page">
-            <Link href={androidDevLink} className={classes.android}>
+            <Link href={androidDevLink} className={androidColor}>
               <i>Android</i>
             </Link></Tooltip>{' '}
 

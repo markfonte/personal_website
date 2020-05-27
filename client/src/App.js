@@ -40,7 +40,7 @@ const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
     secondary: {
-      main: '#ffcb05', // blue
+      main: '#FFCb05', // maize
     },
   },
 });
@@ -48,8 +48,28 @@ const darkTheme = createMuiTheme({
 const lightTheme = createMuiTheme({
   palette: {
     type: 'light',
+    divider: 'rgba(0, 0, 0, 0.26)',
+    text: {
+      primary: 'rgba(0, 0, 0, 1.00)',
+      secondary: 'rgba(0, 0, 0, 0.70)',
+      disabled: 'rgba(0, 0, 0, 0.54)',
+    },
     primary: {
-      main: '#00274c', // maize
+      main: '#00274C', // blue
+    },
+    secondary: {
+      main: '#B92C00',
+    },
+    background: {
+      default: '#DEDEDE',
+      paper: '#F8F8F8',
+    },
+    action: {
+      active: 'rgba(0, 0, 0, 0.70)',
+      hover: 'rgba(0, 0, 0, 0.08)',
+      selected: 'rgba(0, 0, 0, 0.12)',
+      disabled: 'rgba(0, 0, 0, 0.38)',
+      disabledBackground: 'rgba(0, 0, 0, 0.26)',
     },
   },
 });

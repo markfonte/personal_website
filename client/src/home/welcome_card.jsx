@@ -17,6 +17,9 @@ import {CardContent,
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 import InstagramPost from './instagram_post.jsx';
+
+const getCookie = require('../shared/util/cookies.js').getCookie;
+
 const styles = {
   cardContent: {
     display: 'flex',
@@ -45,21 +48,6 @@ const styles = {
     width: '100%',
     margin: 'auto',
     maxWidth: '700px',
-  },
-  amazon: {
-    color: '#FF9900',
-  },
-  michigan: {
-    color: '#FFCB05',
-  },
-  web: {
-    color: '#61DBFB',
-  },
-  android: {
-    color: '#A4C639',
-  },
-  gimble: {
-    color: '#83B2DA',
   },
 };
 
@@ -112,6 +100,13 @@ class WelcomeCard extends React.Component {
         postId: 'BZ-SbmLBhhk/',
       },
     ];
+    const lightTheme = getCookie('app_theme') === 'light_theme';
+    const amazonColor = lightTheme ? 'amazonColorDark' : 'amazonColorLight';
+    const michiganColor = lightTheme ? 'michiganColorDark' : 'michiganColorLight';
+    const webColor = lightTheme ? 'webColorDark' : 'webColorLight';
+    const androidColor = lightTheme ? 'androidColorDark' : 'androidColorLight';
+    const gimbleColor = lightTheme ? 'gimbleColorDark' : 'gimbleColorLight';
+
     return (
       <Card raised={true} className="card">
         <ExpansionPanel
@@ -155,7 +150,7 @@ class WelcomeCard extends React.Component {
 
                 {' '}
                 <Tooltip arrow title="Go to Amazon.com">
-                  <Link color="secondary" href={amazonLink} className={classes.amazon}>
+                  <Link color="secondary" href={amazonLink} className={amazonColor}>
               Amazon
                   </Link>
                 </Tooltip>
@@ -164,7 +159,7 @@ class WelcomeCard extends React.Component {
 
                 {' '}
                 <Tooltip arrow placement="bottom" title="Go to U of M website">
-                  <Link href={umichLink} className={classes.michigan}>
+                  <Link href={umichLink} className={michiganColor}>
               University of Michigan
                   </Link>
                 </Tooltip>
@@ -173,7 +168,7 @@ class WelcomeCard extends React.Component {
 
                 {' '}
                 <Tooltip arrow placement="bottom" title="Go to Gimble's website">
-                  <Link href={gimbleLink} className={classes.gimble}>
+                  <Link href={gimbleLink} className={gimbleColor}>
             Gimble A Cappella
                   </Link>
                 </Tooltip>
@@ -188,7 +183,7 @@ class WelcomeCard extends React.Component {
 
                 {' '}
                 <Tooltip arrow placement="bottom" title="Go to Android Developers page">
-                  <Link href={androidDevLink} className={classes.android}>
+                  <Link href={androidDevLink} className={androidColor}>
               Android
                   </Link>
                 </Tooltip>
@@ -198,7 +193,7 @@ class WelcomeCard extends React.Component {
 
                 {' '}
                 <Tooltip arrow placement="bottom" title="Go to web development page">
-                  <Link href={webDevLink} className={classes.web}>
+                  <Link href={webDevLink} className={webColor}>
               web
                   </Link>
                 </Tooltip>
