@@ -87,6 +87,8 @@ class MHacks12Card extends React.Component {
     const timePickerLink = `https://developer.android.com/reference/android/widget/TimePicker`;
     const datePickerLink = `https://developer.android.com/reference/android/widget/DatePicker`;
     const googlePlacesLink = `https://developers.google.com/places/web-service/intro`;
+    const kotlinLink = `https://kotlinlang.org/`;
+    const androidJetpackLink = `https://developer.android.com/jetpack`;
 
     const tags = [
       {
@@ -102,6 +104,12 @@ class MHacks12Card extends React.Component {
       },
       {
         label: 'Android',
+      },
+      {
+        label: 'Android Jetpack',
+      },
+      {
+        label: 'Kotlin',
       },
     ];
 
@@ -187,7 +195,22 @@ class MHacks12Card extends React.Component {
               our hackathon project was born!
               </Typography>
               <Typography variant="body1" paragraph>
-                  The
+              Built in
+
+                {' '}
+                <Link color="secondary" href={kotlinLink}>
+                 Kotlin
+                </Link>
+                {' '}
+
+                and
+
+                {' '}
+                <Link color="secondary" href={androidJetpackLink}>
+             Android Jetpack
+                </Link>
+
+                , the
 
                 {' '}
                 <Link color="secondary" href={androidLink}>
@@ -307,15 +330,15 @@ class MHacks12Card extends React.Component {
                 Github
                 </Link>
               </Typography>
-                <picture>
-                  <source srcSet={mhacksNathanAndMark} type="image/webp"/>
-                  <source srcSet={mhacksNathanAndMarkFallback} type="image/jpg"/>
-                  <img
-                    srcSet={[mhacksNathanAndMark, mhacksNathanAndMarkFallback]}
-                    className={classes.screenshot}
-                    alt="Nathan and Mark MHacks 12"
-                  />
-                </picture>
+              <picture>
+                <source srcSet={mhacksNathanAndMark} type="image/webp"/>
+                <source srcSet={mhacksNathanAndMarkFallback} type="image/jpg"/>
+                <img
+                  srcSet={[mhacksNathanAndMark, mhacksNathanAndMarkFallback]}
+                  className={classes.screenshot}
+                  alt="Nathan and Mark MHacks 12"
+                />
+              </picture>
             </CardContent>
           </ExpansionPanelDetails>
         </ExpansionPanel>

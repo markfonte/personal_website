@@ -72,6 +72,8 @@ class WalklensCard extends React.Component {
     const roadsAPILink = `https://developers.google.com/maps/documentation/roads/intro`;
     const navigationArchitectureComponentLink = `https://developer.android.com/guide/navigation`;
     const liveDataLink = `https://developer.android.com/topic/libraries/architecture/livedata`;
+    const kotlinLink = `https://kotlinlang.org/`;
+    const androidJetpackLink = `https://developer.android.com/jetpack`;
 
     const tags = [
       {
@@ -87,6 +89,12 @@ class WalklensCard extends React.Component {
       },
       {
         label: 'Android',
+      },
+      {
+        label: 'Android Jetpack',
+      },
+      {
+        label: 'Kotlin',
       },
     ];
 
@@ -138,7 +146,7 @@ class WalklensCard extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <CardContent>
-              <Typography variant="body1">
+              <Typography variant="body1" paragraph>
               This project was built in my
                 {' '}
                 <Link color="secondary" href={eecs441Link}>
@@ -154,55 +162,90 @@ class WalklensCard extends React.Component {
               safety is an issue that can be addressed by encouraging smartphone users to look up while they
               are walking. A more perfect solution would be for people to simply look while they are walking,
               but this does not always happen so we tried to combat it from the technology side.
-                <br/> <br/>
+              </Typography>
+              <Typography variant="body1" paragraph>
               WalkLens is able to do all of the work it needs inside the logic of the Android application; it
-              does not require a custom backend database. It uses the
+              does not require a custom backend database.
+              Built in
+
+                {' '}
+                <Link color="secondary" href={kotlinLink}>
+                Kotlin
+                </Link>
+                {' '}
+
+                and
+
+                {' '}
+                <Link color="secondary" href={androidJetpackLink}>
+                Android Jetpack
+                </Link>
+
+              , it uses the
+
                 {' '}
                 <Link color="secondary" href={mapsSdkForAndroidLink}>
                 Google Maps SDK for Android
                 </Link>
                 {' '}
+
               to display the map UI when opening the application, and the
+
                 {' '}
                 <Link color="secondary" href={roadsAPILink}>
                 Google Roads API
                 </Link>
                 {' '}
+
               to find the nearest road to a
               user. It runs as a background process that wakes up in set intervals (between 5 and 30 seconds),
               then determines the user&apos;s current latitude/longitude and calculates if it is near a road. If
               it is close to the nearest road (between 30-70 feet) then it sends a notification to the
               user. Additionally, as an implementation of dead reckoning, if a user is approaching a crosswalk
               it delays sending the notification until they have almost reached it. WalkLens uses
+
                 {' '}
                 <Link color="secondary" href={liveDataLink}>
                 LiveData
                 </Link>
+
               , the
+
                 {' '}
                 <Link color="secondary" href={navigationArchitectureComponentLink}>
                 Navigation Architecture component
                 </Link>
+
               , data binding, coroutines, ViewModels,
+
                 {' '}
                 <Link color="secondary" href={okHttpLink}>
                 OkHttp
                 </Link>
                 {' '}
-              and much more. At the time of writing, it is available on the Google Play Store.
+
+              and much more.
+              </Typography>
+              <Typography variant="body1" paragraph>
+                  At the time of writing, it is available on the Google Play Store.
               There are no plans to make an iOS version of WalkLens.
-                <br /> < br/>
+              </Typography>
+              <Typography variant="body1" paragraph>
               View it on
+
                 {' '}
                 <Link color="secondary" href={walklensGithubLink}>
                 Github
                 </Link>
                 {' '}
+
               or the
+
                 {' '}
                 <Link color="secondary" href={walklensGooglePlayLink}>
                 Google Play Store
                 </Link>
+
               </Typography>
               <picture>
                 <source srcSet={walklensScreenshotOne} type="image/webp"/>
