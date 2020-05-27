@@ -40,10 +40,11 @@ const styles = {
     overflowX: 'auto',
   },
   builtWithTable: {
-    minWidth: '520px',
+    minWidth: '460px',
   },
   scrollTip: {
-    marginTop: '8px',
+    marginTop: '12px',
+    alignSelf: 'start',
   },
   expansionHeaderContainer: {
     display: 'flex',
@@ -58,6 +59,8 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+    margin: 0,
+    padding: 0,
   },
   tags: {
     margin: '4px',
@@ -212,7 +215,7 @@ class BuiltWithTableCard extends React.Component {
               </div>
             </div>
           </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          <ExpansionPanelDetails style={{overflowX: 'auto'}}>
             <CardContent className={classes.cardContent}>
               <div className={classes.builtWithTableWrapper}>
                 <Table className={classes.builtWithTable}>
