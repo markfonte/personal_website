@@ -76,6 +76,17 @@ class MHacks12Card extends React.Component {
     // const mhacks12Link = `https://mhacks12.devpost.com/`;
     const instEventsDevpostLink = `https://devpost.com/software/instevent`;
     const instEventsGithubLink = `https://github.com/markfonte/InstEvents`;
+    const nathanWebsiteLink = ``;
+    const mhacksLink = `https://staging.mhacks.org/`;
+    const ala256Link = `https://atlas.ai.umich.edu/course/ALA%20256/`;
+    const googleMapsLink = `https://www.google.com/maps`;
+    const recyclerViewLink =
+    `https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView`;
+    const cardsLink = `https://material.io/develop/android/components/cards/`;
+    const androidLink = `https://developer.android.com/`;
+    const timePickerLink = `https://developer.android.com/reference/android/widget/TimePicker`;
+    const datePickerLink = `https://developer.android.com/reference/android/widget/DatePicker`;
+    const googlePlacesLink = `https://developers.google.com/places/web-service/intro`;
 
     const tags = [
       {
@@ -142,34 +153,148 @@ class MHacks12Card extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <CardContent>
-              <Typography variant="body1">
-              This project was definitely my favorite hackathon project. Nathan and I had 36 hours at MHacks to make
-              a very solid project, and I thought we delivered on our own high expectations. The idea for the app
-              came out of one of my entrepreneurship classes where we were asked to &quot;explore&quot;
-              something new every week.
-              It did not matter where we went - concerts, festivals, restaurants - as long as it was something new to
-              us. Thus, I was craving an app that I could open up to instantly view current events in my area. The app
-              features a Google Maps view that immediately opens to show today&apos;s current and upcoming events. In
-              addition, it allows users to browse current and upcoming events in a clean RecyclerView/Cards list. Users
-              can add events with an interface that features date pickers, time pickers, address autocomplete using the
-              Google Maps Places API, the ability to add a cover photo and more!
-                <br /> <br/>
+              <Typography variant="body1" paragraph>
+              This project was definitely my favorite hackathon project.
+
+                {' '}
+                <Link color="secondary" href={nathanWebsiteLink}>
+              Nathan
+                </Link>
+                {' '}
+
+                and I made the InstEvents app during the 36 hours of
+
+                {' '}
+                <Link color="secondary" href={mhacksLink}>
+              MHacks 12
+                </Link>
+
+              . The idea for the app
+              came out of
+
+                {' '}
+                <Link color="secondary" href={ala256Link}>
+                one of my entrepreneurship classes
+                </Link>
+                {' '}
+
+                where we were asked to &quot;explore&quot;
+              something new on campus every week.
+              It didn&apos;t matter where we went - concerts, festivals, restaurants
+              - as long as it was something we had
+              never done before.
+              Thus, I was craving an app that I could open up to instantly view current events in my area - and
+              our hackathon project was born!
+              </Typography>
+              <Typography variant="body1" paragraph>
+                  The
+
+                {' '}
+                <Link color="secondary" href={androidLink}>
+              Android
+                </Link>
+                {' '}
+
+                app that we built
+              features a
+
+                {' '}
+                <Link color="secondary" href={googleMapsLink}>
+                Google Maps
+                </Link>
+                {' '}
+
+                view that immediately opens to show today&apos;s current and upcoming events. In
+              addition, it allows users to browse current and upcoming events in a clean
+
+                {' '}
+                <Link color="secondary" href={recyclerViewLink}>
+                RecyclerView
+                </Link>
+                {' '}
+
+                /
+
+                {' '}
+                <Link color="secondary" href={cardsLink}>
+                Cards
+                </Link>
+                {' '}
+
+                list. Users
+              can add events with an interface that features
+
+                {' '}
+                <Link color="secondary" href={datePickerLink}>
+                date pickers
+                </Link>
+
+                ,
+
+                {' '}
+                <Link color="secondary" href={timePickerLink}>
+                 time pickers
+                </Link>
+
+                , address autocomplete using the
+
+                {' '}
+                <Link color="secondary" href={googlePlacesLink}>
+              Google Places API
+                </Link>
+
+                , the ability to add a cover photo and more!
+              </Typography>
+              <Typography variant="body1" paragraph>
               For this app, we focused on making sure all of the features that we completed were done well. For example,
               we put lots of extra time into making sure the &quot;Add Event&quot; flow was as seamless as possible,
               instead of
-              using that time to partially complete some of our stretch goals. The advantage of this is a good UX, even
-              with just the app we made during the hackathon. Going forward, we plan to continue working on other
-              features like web-scraping for popular events, and an eventual release to the Google Play Store. More
-              details on upcoming features and more on our
-                {' '}
-                <Link color="secondary" href={instEventsGithubLink}>
-                Github
-                </Link>! We also believe that the app has significant value as-is, because of the fact that anyone
-              can post an event. This, in combination with the built-in Google Maps view, allows for a location-based
-              sorting of events as opposed to the normal popularity-based sorting of events. In other words, events
+              using that time to partially complete some of our stretch goals. The advantage of this was a better
+              user experience at the expense of less features.
+              </Typography>
+              <Typography variant="body1" paragraph>
+              I see the competitive advantage of this app as the fact that anyone can post an event.
+              This, in combination with the built-in Google Maps view, allows for a <i>location-based </i>
+              sorting of events as opposed to the normal <i>popularity-based</i> sorting of events.
+              In other words, events
               with only 30 people attending get the same weight on the map as those with 5,000. This allows for an
-              even playing field and is a concept we have not really seen before.
-                <br /> <br/>
+                <b><i> even playing field</i></b> and is a concept we have seldom seen before.
+              </Typography>
+              <picture>
+                <source srcSet={instEventsScreenshotThree} type="image/webp"/>
+                <source srcSet={instEventsScreenshotThreeFallback} type="image/jpg"/>
+                <img
+                  srcSet={[instEventsScreenshotThree, instEventsScreenshotThreeFallback]}
+                  className={classes.screenshot}
+                  alt="InstEvents screenshot 3"
+                />
+              </picture>
+              <picture>
+                <source srcSet={instEventsScreenshotOne} type="image/webp"/>
+                <source srcSet={instEventsScreenshotOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[instEventsScreenshotOne, instEventsScreenshotOneFallback]}
+                  className={classes.screenshot}
+                  alt="InstEvents screenshot 1"
+                />
+              </picture>
+              <picture>
+                <source srcSet={instEventsScreenshotTwo} type="image/webp"/>
+                <source srcSet={instEventsScreenshotTwoFallback} type="image/jpg"/>
+                <img
+                  srcSet={[instEventsScreenshotTwo, instEventsScreenshotTwoFallback]}
+                  className={classes.screenshot}
+                  alt="InstEvents screenshot 2"
+                />
+              </picture>
+              <Typography variant="body1" paragraph>
+              We never released the app to the public, the main reason being that we were unable
+              to find a reliable, free events API online to pull from that could supplement user-entered
+              events. We also did not win any awards with it, but there were lots of projects and very
+              few awards given out at MHacks 12. We had a great time and learned a lot while making a
+              product that we are definitely proud of!
+              </Typography>
+              <Typography variant="body1" paragraph>
               View it on
                 {' '}
                 <Link color="secondary" href={instEventsDevpostLink}>
@@ -181,41 +306,7 @@ class MHacks12Card extends React.Component {
                 <Link color="secondary" href={instEventsGithubLink}>
                 Github
                 </Link>
-                {/* <br /> <br />
-              <img
-                src={instEventsLogo}
-                className={classes.logo}
-                title="InstEvents logo"
-                alt="InstEvents logo"
-              /> */}
-                <br /> <br />
-                <picture>
-                  <source srcSet={instEventsScreenshotThree} type="image/webp"/>
-                  <source srcSet={instEventsScreenshotThreeFallback} type="image/jpg"/>
-                  <img
-                    srcSet={[instEventsScreenshotThree, instEventsScreenshotThreeFallback]}
-                    className={classes.screenshot}
-                    alt="InstEvents screenshot 3"
-                  />
-                </picture>
-                <picture>
-                  <source srcSet={instEventsScreenshotOne} type="image/webp"/>
-                  <source srcSet={instEventsScreenshotOneFallback} type="image/jpg"/>
-                  <img
-                    srcSet={[instEventsScreenshotOne, instEventsScreenshotOneFallback]}
-                    className={classes.screenshot}
-                    alt="InstEvents screenshot 1"
-                  />
-                </picture>
-                <picture>
-                  <source srcSet={instEventsScreenshotTwo} type="image/webp"/>
-                  <source srcSet={instEventsScreenshotTwoFallback} type="image/jpg"/>
-                  <img
-                    srcSet={[instEventsScreenshotTwo, instEventsScreenshotTwoFallback]}
-                    className={classes.screenshot}
-                    alt="InstEvents screenshot 2"
-                  />
-                </picture>
+              </Typography>
                 <picture>
                   <source srcSet={mhacksNathanAndMark} type="image/webp"/>
                   <source srcSet={mhacksNathanAndMarkFallback} type="image/jpg"/>
@@ -225,7 +316,6 @@ class MHacks12Card extends React.Component {
                     alt="Nathan and Mark MHacks 12"
                   />
                 </picture>
-              </Typography>
             </CardContent>
           </ExpansionPanelDetails>
         </ExpansionPanel>

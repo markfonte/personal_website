@@ -60,11 +60,6 @@ class DoggieDoodlesCard extends React.Component {
         color: 'primary',
         variant: 'default',
       },
-      {
-        label: 'Entrepreneurship',
-        color: 'primary',
-        variant: 'default',
-      },
     ];
 
     return (

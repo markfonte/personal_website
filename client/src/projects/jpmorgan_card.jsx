@@ -146,69 +146,87 @@ class JPMorganCard extends React.Component {
               </Typography>
               <Typography variant="body1" paragraph>
               I worked at
+
                 {' '}
                 <Link color="secondary" href={jpmorganLink}>
               J.P. Morgan Chase
                 </Link>
                 {' '}
+
               throughout Summer 2019 on a mobile application for J.P. Morgan corporate
               cardholders (for example, Amazon employees who have been given a Chase credit card to use on
               business trips). The application, called
+
                 {' '}
                 <Link color="secondary" href={paymentNetLink}>
               PaymentNet® Mobile
                 </Link>
+
               , is a mobile webview for these
               corporate clients to track their payment history, enter receipts, and perform other necessary
               cardholder functions. Built in
+
                 {' '}
                 <Link color="secondary" href={reactLink}>
               React
                 </Link>
                 {' '}
+
               and
+
                 {' '}
                 <Link color="secondary" href={springBootLink}>
               Java Spring Boot
                 </Link>
+
               , there was no <i>native</i> mobile application
               for PaymentNet®, and they asked us to make a proof of concept for one using
+
                 {' '}
                 <Link color="secondary" href={reactNativeLink}>
               React Native
                 </Link>
+
               .
                 <br/><br/>
               After working in React Native for the first half of the summer, I moved my focus to refactoring and
               cleaning up the React webview. There was lots of legacy code, spaghetti code and a strong
               dependency on
+
                 {' '}
                 <Link color="secondary" href={bootstrapLink}>
               Bootstrap
                 </Link>
                 {' '}
+
               and
+
                 {' '}
                 <Link color="secondary" href={jqueryLink}>
               JQuery
                 </Link>
                 {' '}
+
               . Given my previous knowledge in React, I was able to
               refactor and reshape much of the codebase to remove the dependency on third party libraries
               like JQuery. I replaced legacy React components with an internal J.P. Morgan adaptation of the
+
                 {' '}
                 <Link color="secondary" href={materialUILink}>
                Material-UI
                 </Link>
                 {' '}
+
               library. These custom components were much more responsive, reusable and accessible.
               For example, I replaced Boostrap modal pop-ups throughout the application with J.P. Morgan-branded
               version of
+
                 {' '}
                 <Link color="secondary" href={materialUIDialogLink}>
               Material-UI Dialog
                 </Link>
                 {' '}
+
               pop-ups.
                 <br/>
                 <picture>
