@@ -62,7 +62,7 @@ const lightTheme = createMuiTheme({
     },
     background: {
       default: '#DEDEDE',
-      paper: '#F8F8F8',
+      paper: '#F6F6F6',
     },
     action: {
       active: 'rgba(0, 0, 0, 0.70)',

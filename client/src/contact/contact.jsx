@@ -37,7 +37,7 @@ const styles = {
   linkedinBadge: {
     marginTop: 16,
     marginBottom: 16,
-    backgroundColor: '#fff',
+    backgroundColor: '#F6F6F6',
     width: '330px', // the "large" LinkedIn badge has a set width of 330px
     borderRadius: 3,
     padding: -1,
