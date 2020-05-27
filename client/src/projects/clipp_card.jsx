@@ -49,7 +49,7 @@ class ClippCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <a name="clipp_card" href="#clipp_card" style={{visibility: 'hidden'}}>
+        <a name="clipp_card" href="#clipp_card" className="gone">
             Clipp Card
         </a>
         <CardHeader

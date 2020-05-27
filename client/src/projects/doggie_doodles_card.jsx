@@ -84,7 +84,7 @@ class DoggieDoodlesCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="doggie_doodles_card" href="#doggie_doodles_card" style={{visibility: 'hidden'}}>
+            <a name="doggie_doodles_card" href="#doggie_doodles_card" className="gone">
             Doggie Doodles Card
             </a>
             <div className={classes.expansionHeaderContainer}>

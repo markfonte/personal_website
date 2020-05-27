@@ -107,7 +107,7 @@ class WalklensCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="walklens_card" href="#walklens_card" style={{visibility: 'hidden'}}>
+            <a name="walklens_card" href="#walklens_card" className="gone">
             WalkLens Card
             </a>
             <div className={classes.expansionHeaderContainer}>

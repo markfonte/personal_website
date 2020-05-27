@@ -81,7 +81,7 @@ class Spartahack5Card extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="spartahack5_card" href="#spartahack5_card" style={{visibility: 'hidden'}}>
+            <a name="spartahack5_card" href="#spartahack5_card" className="gone">
             SpartHack V Card
             </a>
             <div className={classes.expansionHeaderContainer}>

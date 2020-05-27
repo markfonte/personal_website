@@ -27,7 +27,7 @@ class CurrentBooksCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <a name="current_books_card" href="#current_books_card" style={{visibility: 'hidden'}}>
+        <a name="current_books_card" href="#current_books_card" className="gone">
             Current Books Card
         </a>
         <CardHeader title="Books I&#39;m Reading" subheader="September 2019" />

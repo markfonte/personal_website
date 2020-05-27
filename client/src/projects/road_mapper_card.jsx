@@ -95,7 +95,7 @@ class RoadMapperCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="road_mapper_card" href="#road_mapper_card" style={{visibility: 'hidden'}}>
+            <a name="road_mapper_card" href="#road_mapper_card" className="gone">
             Road Mapper Card
             </a>
             <div className={classes.expansionHeaderContainer}>

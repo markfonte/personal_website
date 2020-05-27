@@ -91,7 +91,7 @@ class SpotlightCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="spotlight_card" href="#spotlight_card" style={{visibility: 'hidden'}}>
+            <a name="spotlight_card" href="#spotlight_card" className="gone">
             Spotlight Card
             </a>
             <div className={classes.expansionHeaderContainer}>

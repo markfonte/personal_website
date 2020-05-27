@@ -51,13 +51,9 @@ exports[`Extra matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#gimble_card"
             name="gimble_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Gimble Card
           </a>
@@ -550,13 +546,9 @@ exports[`Extra matches snapshot 1`] = `
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
     <a
+      className="gone"
       href="#tic_tac_toe_card"
       name="tic_tac_toe_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
     >
       Tic Tac Toe Card
     </a>
@@ -978,13 +970,9 @@ exports[`Extra matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#recommended_sites_card"
             name="recommended_sites_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Recommended Sites Card
           </a>
@@ -1000,7 +988,7 @@ exports[`Extra matches snapshot 1`] = `
                 <span
                   className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
                 >
-                  Recommended Sites
+                  🌐 Recommended Websites
                 </span>
                 <span
                   className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
@@ -1081,20 +1069,16 @@ exports[`Extra matches snapshot 1`] = `
   <div
     className="InteractionCard-root-269"
   >
-    <a
-      href="#interaction_card"
-      name="interaction_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      Interaction Card
-    </a>
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
     >
+      <a
+        className="gone"
+        href="#interaction_card"
+        name="interaction_card"
+      >
+        Interaction Card
+      </a>
       <div
         className="MuiCardContent-root"
       >
@@ -1136,6 +1120,7 @@ exports[`Extra matches snapshot 1`] = `
                   className="MuiIconButton-label"
                 >
                   <input
+                    aria-label="primary checkbox"
                     checked={false}
                     className="PrivateSwitchBase-input-289 MuiSwitch-input"
                     onChange={[Function]}

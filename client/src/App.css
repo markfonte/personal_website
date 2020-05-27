@@ -8,6 +8,13 @@
 }
 
 /* Global */
+.gone {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+/* Global */
 @keyframes react-logo-spin {
   from {
     transform: rotate(0deg);

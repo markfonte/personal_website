@@ -130,7 +130,7 @@ class WelcomeCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="welcome_card" href="#welcome_card" style={{visibility: 'hidden'}}>
+            <a name="welcome_card" href="#welcome_card" className="gone">
               Welcome Card
             </a>
             <div

@@ -59,7 +59,7 @@ class CompletedBooksCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <a name="completed_books_card" href="#completed_books_card" style={{visibility: 'hidden'}}>
+        <a name="completed_books_card" href="#completed_books_card" className="gone">
             Completed Books Card
         </a>
         <CardHeader title="Books I Would Recommend" subheader="September 2019" />

@@ -26,7 +26,7 @@ class TicTacToeCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <a name="tic_tac_toe_card" href="#tic_tac_toe_card" style={{visibility: 'hidden'}}>
+        <a name="tic_tac_toe_card" href="#tic_tac_toe_card" className="gone">
             Tic Tac Toe Card
         </a>
         <CardHeader title="Tic Tac Toe" subheader="just for fun!" />

@@ -172,13 +172,9 @@ exports[`Home matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#welcome_card"
             name="welcome_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Welcome Card
           </a>
@@ -310,13 +306,9 @@ exports[`Home matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#built_with_table_card"
             name="built_with_table_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Built With Table Card
           </a>

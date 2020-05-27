@@ -79,7 +79,7 @@ class Grizzhacks3Card extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="grizzhacks3_card" href="#grizzhacks3_card" style={{visibility: 'hidden'}}>
+            <a name="grizzhacks3_card" href="#grizzhacks3_card" className="gone">
             Grizzhacks 3 Card
             </a>
             <div className={classes.expansionHeaderContainer}>

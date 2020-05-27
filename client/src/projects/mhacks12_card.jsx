@@ -111,7 +111,7 @@ class MHacks12Card extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="mhacks12_card" href="#mhack12_card" style={{visibility: 'hidden'}}>
+            <a name="mhacks12_card" href="#mhack12_card" className="gone">
             MHacks 12 Card
             </a>
             <div className={classes.expansionHeaderContainer}>

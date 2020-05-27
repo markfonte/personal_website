@@ -76,7 +76,12 @@ class PrideSwitch extends React.Component {
             placement="top"
             arrow
             title="Click to add a rainbow header and footer to the page">
-            <Switch checked={proud} onClick={this.handleChange} className={classes.prideSwitch} color="secondary"/>
+            <Switch
+              checked={proud}
+              onClick={this.handleChange}
+              className={classes.prideSwitch}
+              inputProps={{'aria-label': 'primary checkbox'}}
+              color="secondary"/>
           </Tooltip>
         </div>
         <Typography variant="body1">

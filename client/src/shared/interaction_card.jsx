@@ -22,10 +22,11 @@ class InteractionCard extends React.Component {
       <div />;
     return (
       <div className={classes.root}>
-        <a name="interaction_card" href="#interaction_card" style={{visibility: 'hidden'}}>
-            Interaction Card
-        </a>
+
         <Card raised={true}>
+          <a name="interaction_card" href="#interaction_card" className="gone">
+            Interaction Card
+          </a>
           <CardContent>
             {/* <CommentBox pagename={this.props.pagename} /> */}
             {prideSwitch}

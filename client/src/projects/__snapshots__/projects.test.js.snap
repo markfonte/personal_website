@@ -46,13 +46,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#amazon_card"
             name="amazon_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Amazon Card
           </a>
@@ -249,13 +245,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#jpmorgan_card"
             name="jpmorgan_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             J.P. Morgan Card
           </a>
@@ -564,13 +556,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#laz_card"
             name="laz_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Learning A-Z Card
           </a>
@@ -907,13 +895,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#completed_coursework_card"
             name="completed_coursework_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Completed Coursework Card
           </a>
@@ -1082,13 +1066,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#mi_symptoms_card"
             name="mi_symptoms_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             MI Symptoms Card
           </a>
@@ -1419,13 +1399,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#mhack12_card"
             name="mhacks12_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             MHacks 12 Card
           </a>
@@ -1650,13 +1626,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#walklens_card"
             name="walklens_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             WalkLens Card
           </a>
@@ -1881,13 +1853,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#spartahack5_card"
             name="spartahack5_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             SpartHack V Card
           </a>
@@ -2112,13 +2080,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#road_mapper_card"
             name="road_mapper_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Road Mapper Card
           </a>
@@ -2421,13 +2385,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#revolutionuc8_card"
             name="revolutionuc8_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             RevolutionUC 8 Card
           </a>
@@ -2624,13 +2584,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#grizzhacks3_card"
             name="grizzhacks3_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Grizzhacks 3 Card
           </a>
@@ -2827,13 +2783,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#spotlight_card"
             name="spotlight_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Spotlight Card
           </a>
@@ -3080,13 +3032,9 @@ exports[`Projects matches snapshot 1`] = `
           className="MuiExpansionPanelSummary-content"
         >
           <a
+            className="gone"
             href="#doggie_doodles_card"
             name="doggie_doodles_card"
-            style={
-              Object {
-                "visibility": "hidden",
-              }
-            }
           >
             Doggie Doodles Card
           </a>
@@ -3310,20 +3258,16 @@ exports[`Projects matches snapshot 1`] = `
   <div
     className="InteractionCard-root-197"
   >
-    <a
-      href="#interaction_card"
-      name="interaction_card"
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    >
-      Interaction Card
-    </a>
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
     >
+      <a
+        className="gone"
+        href="#interaction_card"
+        name="interaction_card"
+      >
+        Interaction Card
+      </a>
       <div
         className="MuiCardContent-root"
       >

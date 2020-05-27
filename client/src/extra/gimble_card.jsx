@@ -134,7 +134,6 @@ class GimbleCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-
         <ExpansionPanel
           TransitionProps={{unmountOnExit: true}}>
           <ExpansionPanelSummary
@@ -150,7 +149,7 @@ class GimbleCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="gimble_card" href="#gimble_card" style={{visibility: 'hidden'}}>
+            <a name="gimble_card" href="#gimble_card" className="gone">
             Gimble Card
             </a>
             <div

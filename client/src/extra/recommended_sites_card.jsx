@@ -137,7 +137,7 @@ class RecommendedSitesCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="recommended_sites_card" href="#recommended_sites_card" style={{visibility: 'hidden'}}>
+            <a name="recommended_sites_card" href="#recommended_sites_card" className="gone">
             Recommended Sites Card
             </a>
             <div

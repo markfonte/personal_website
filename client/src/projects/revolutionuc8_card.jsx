@@ -80,7 +80,7 @@ class RevolutionUC8Card extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="revolutionuc8_card" href="#revolutionuc8_card" style={{visibility: 'hidden'}}>
+            <a name="revolutionuc8_card" href="#revolutionuc8_card" className="gone">
             RevolutionUC 8 Card
             </a>
             <div className={classes.expansionHeaderContainer}>

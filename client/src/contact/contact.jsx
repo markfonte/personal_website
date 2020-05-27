@@ -5,6 +5,8 @@ import gimbleCoverPhoto from '../static/images/photos/gimble_cover_photo.webp';
 import gimbleCoverPhotoFallback from '../static/images/photos/gimble_cover_photo.jpg';
 import MetaTags from 'react-meta-tags';
 
+const getCookie = require('../shared/util/cookies.js').getCookie;
+
 const styles = {
   root: {
     minHeight: '70vh',
@@ -25,6 +27,21 @@ const styles = {
     maxHeight: '500px',
     maxWidth: '100%',
   },
+  linkedinWrapper: {
+    display: 'flex',
+    flexGrow: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  linkedinBadge: {
+    marginTop: 16,
+    marginBottom: 16,
+    backgroundColor: '#fff',
+    width: '330px', // the "large" LinkedIn badge has a set width of 330px
+    borderRadius: 3,
+    padding: -1,
+  },
 };
 
 class Contact extends React.Component {
@@ -43,6 +60,9 @@ class Contact extends React.Component {
     const emailLink = `mailto:mark@fonte.com`;
     const phoneLink = `tel:406-948-1034`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;
+
+    // want this to rerender each time because theme might have changed
+    const theme = getCookie('app_theme') === 'dark_theme' ? 'light' : 'dark';
 
     return (
       <div className={classes.root}>
@@ -101,20 +121,21 @@ class Contact extends React.Component {
         <Typography className={classes.paragraph} variant="caption">
           My resume is available upon request
         </Typography>
-        <div
-          style={{marginTop: 16, marginBottom: 16}}
-          className="LI-profile-badge"
-          data-version="v1"
-          data-size="large"
-          data-locale="en_US"
-          data-type="horizontal"
-          data-theme="dark"
-          data-vanity="mark-fonte">
-          <a
-            className="LI-simple-link"
-            href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
+        <div className={classes.linkedinWrapper}>
+          <div
+            className={['LI-profile-badge', classes.linkedinBadge].join(' ')}
+            data-version="v1"
+            data-size="large"
+            data-locale="en_US"
+            data-type="horizontal"
+            data-theme={theme}
+            data-vanity="mark-fonte">
+            <a
+              className="LI-simple-link"
+              href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
                 LinkedIn
-          </a>
+            </a>
+          </div>
         </div>
         <picture>
           <source srcSet={gimbleCoverPhoto} type="image/webp"/>
