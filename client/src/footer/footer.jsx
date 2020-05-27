@@ -4,10 +4,17 @@ import reactLogo from '../static/vectors/react_logo.svg';
 import universityOfMichiganLogoSmall
   from '../static/vectors/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
-import {Typography, Link, Tooltip} from '@material-ui/core';
+import {Typography, Link, Tooltip, Button} from '@material-ui/core';
 import timestamp from '../commit_timestamp.js';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
+import facebookLogo from '../static/images/logos/facebook_logo.svg';
+import stackOverflowLogo from '../static/images/logos/stack_overflow_logo.svg';
+import githubLogo from '../static/images/logos/github_logo.svg';
+import linkedinLogo from '../static/images/logos/linkedin_logo.svg';
+import instagramLogo from '../static/images/logos/instagram_logo.svg';
+import youtubeLogo from '../static/images/logos/youtube_logo.svg';
+
 const fetch = require('node-fetch');
 
 const styles = {
@@ -37,32 +44,6 @@ const styles = {
       },
     },
   },
-  facebook: {
-    background: '#3b5998',
-    color: 'black',
-    lineHeight: '0px',
-    fontSize: '0px',
-  },
-  linkedin: {
-    background: '#007bb5',
-    color: 'white',
-  },
-  youtube: {
-    background: '#b00',
-    color: 'white',
-  },
-  instagram: {
-    background: '#125688',
-    color: 'white',
-  },
-  github: {
-    background: '#000',
-    color: 'white',
-  },
-  stackOverflow: {
-    background: '#f48024',
-    color: 'white',
-  },
   footerContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -76,6 +57,10 @@ const styles = {
   },
   errorMessageRoot: {
     margin: '16px',
+  },
+  buttons: {
+    width: '40px',
+    height: 'auto',
   },
 };
 
@@ -161,58 +146,57 @@ class Footer extends React.Component {
    const travisCILink = `https://travis-ci.org/markfonte/personal_website`;
    const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/master`;
    const updatedDate = timestamp;
+
+   const buttons = [
+     {
+       name: 'Facebook',
+       logo: facebookLogo,
+       link: facebookLink,
+     },
+     {
+       name: 'Stack Overflow',
+       logo: stackOverflowLogo,
+       link: stackOverflowLink,
+     },
+     {
+       name: 'GitHub',
+       logo: githubLogo,
+       link: githubLink,
+     },
+     {
+       name: 'LinkedIn',
+       logo: linkedinLogo,
+       link: linkedinLink,
+     },
+     {
+       name: 'Instagram',
+       logo: instagramLogo,
+       link: instagramLink,
+     },
+     {
+       name: 'YouTube',
+       logo: youtubeLogo,
+       link: youtubeLink,
+     },
+   ];
    return (
      <footer>
        <div className={classes.footerContainer}>
          <div className={classes.iconBar}>
-           <Tooltip title="Go to Facebook" arrow>
-             <a href={facebookLink} className={classes.facebook} alt="Facebook Link">
-               <i className="fa fa-facebook" alt="Facebook Link" />
-               <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
-                 For SEO
-               </div>
-             </a>
-           </Tooltip>
-           <Tooltip title="Go to StackOverflow" arrow>
-             <a href={stackOverflowLink} className={classes.stackOverflow} alt="Stack Overflow Link">
-               <i className="fa fa-stack-overflow" />
-               <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
-                 For SEO
-               </div>
-             </a>
-           </Tooltip>
-           <Tooltip title="Go to GitHub" arrow>
-             <a href={githubLink} className={classes.github} alt="GitHub Link">
-               <i className="fa fa-github" />
-               <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
-                 For SEO
-               </div>
-             </a>
-           </Tooltip>
-           <Tooltip title="Go to LinkedIn" arrow>
-             <a href={linkedinLink} className={classes.linkedin} alt="LinkedIn Link">
-               <i className="fa fa-linkedin" />
-               <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
-                 For SEO
-               </div>
-             </a>
-           </Tooltip>
-           <Tooltip title="Go to Instagram" arrow>
-             <a href={instagramLink} className={classes.instagram} alt="Instagram Link">
-               <i className="fa fa-instagram" />
-               <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
-                 For SEO
-               </div>
-             </a>
-           </Tooltip>
-           <Tooltip title="Go to YouTube" arrow>
-             <a href={youtubeLink} className={classes.youtube} alt="YouTube Link">
-               <i className="fa fa-youtube" />
-               <div style={{color: 'rgba(0,0,0,0)', fontSize: 0, lineHeight: 0}}>
-                 For SEO
-               </div>
-             </a>
-           </Tooltip>
+           {buttons.map((button) => (
+             <Tooltip
+               key={button.name}
+               title={'Go to ' + button.name }
+               arrow>
+               <Button href={button.link}>
+                 <img
+                   src={button.logo}
+                   className={classes.buttons}
+                   alt={button.name + ' button'}
+                 />
+               </Button>
+             </Tooltip>
+           ))}
          </div>
          <div>
            {this.state.apiResponse ?
