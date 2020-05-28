@@ -53,6 +53,7 @@ class ClippCard extends React.Component {
             Clipp Card
         </a>
         <CardHeader
+          className="cardHeader"
           title="Clipp"
           subheader="Full Stack Software Developer (Part Time)"
         />

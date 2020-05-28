@@ -33,8 +33,10 @@ import {withStyles} from '@material-ui/styles';
 const styles = {
   doggieDoodlesBanner: {
     width: '100%',
-    margin: 'auto',
-    marginBottom: '12px',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
   },
   tags: {
     margin: '4px',
@@ -104,7 +106,7 @@ class DoggieDoodlesCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -113,7 +115,10 @@ class DoggieDoodlesCard extends React.Component {
             Doggie Doodles Card
             </a>
             <div className={classes.expansionHeaderContainer}>
-              <CardHeader title="Doggie Doodles" subheader="Entrepreneur" />
+              <CardHeader
+                className="cardHeader"
+                title="Doggie Doodles"
+                subheader="Entrepreneur" />
               <CardMedia
                 className={classes.doggieDoodlesBanner}
                 image="/images/doggie_doodles_banner.jpg"

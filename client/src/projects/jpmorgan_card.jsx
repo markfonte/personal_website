@@ -27,9 +27,11 @@ import PropTypes from 'prop-types';
 const styles = {
   jpMorganLogo: {
     width: '100%',
-    margin: 'auto',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
     maxWidth: '500px',
-    marginBottom: '12px',
   },
   mobileScreenshot: {
     marginTop: '12px',
@@ -49,6 +51,9 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+  },
+  cardHeader: {
+    padding: '0 !important',
   },
 };
 
@@ -105,7 +110,7 @@ class JPMorganCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -115,6 +120,7 @@ class JPMorganCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="J.P. Morgan Chase"
                 subheader="Software Engineering Intern"
               />

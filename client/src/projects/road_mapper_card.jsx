@@ -90,7 +90,7 @@ class RoadMapperCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -100,6 +100,7 @@ class RoadMapperCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Road Mapper"
                 subheader="EECS 493 class project"
               />

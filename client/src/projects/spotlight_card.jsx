@@ -81,7 +81,7 @@ class SpotlightCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -91,6 +91,7 @@ class SpotlightCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Spotlight"
                 subheader="Lead Android developer"
               />

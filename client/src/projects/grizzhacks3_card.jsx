@@ -22,8 +22,10 @@ import PropTypes from 'prop-types';
 const styles = {
   grizzhacks3Banner: {
     width: '100%',
-    margin: 'auto',
-    marginBottom: '12px',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
   },
   congoaiLogo: {
     width: '50%',
@@ -74,7 +76,7 @@ class Grizzhacks3Card extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -84,6 +86,7 @@ class Grizzhacks3Card extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Congo AI"
                 subheader="Hackathon Winner @ GrizzHacks 3"
               />

@@ -190,7 +190,7 @@ class BuiltWithTableCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -199,7 +199,9 @@ class BuiltWithTableCard extends React.Component {
             Built With Table Card
             </a>
             <div className={classes.expansionHeaderContainer}>
-              <CardHeader title="🛠️ Built With:"
+              <CardHeader
+                className="cardHeader"
+                title="🛠️ Built With:"
                 subheader="What I used to build this website" />
               <div>
                 {tags.map((tag) => (

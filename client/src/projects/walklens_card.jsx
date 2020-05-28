@@ -45,9 +45,11 @@ const styles = {
   },
   walklensLogo: {
     width: '100%',
-    margin: 'auto',
     maxWidth: '200px',
-    marginBottom: '12px',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
   },
   tags: {
     margin: '4px',
@@ -110,7 +112,7 @@ class WalklensCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -120,6 +122,7 @@ class WalklensCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="WalkLens"
                 subheader="Android application"
               />

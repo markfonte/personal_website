@@ -23,8 +23,10 @@ import PropTypes from 'prop-types';
 const styles = {
   spartahack5Banner: {
     width: '100%',
-    margin: 'auto',
-    marginBottom: '12px',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
   },
   laughableLyricsLogo: {
     width: '40%', height: 'auto',
@@ -76,7 +78,7 @@ class Spartahack5Card extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -86,6 +88,7 @@ class Spartahack5Card extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Laughable Lyrics"
                 subheader="Hackathon Winner @ SpartaHack V"
               />

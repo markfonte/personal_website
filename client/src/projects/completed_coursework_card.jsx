@@ -21,9 +21,11 @@ import PropTypes from 'prop-types';
 const styles = {
   universityOfMichiganLogo: {
     width: '100%',
-    margin: 'auto',
     maxWidth: '500px',
-    marginBottom: '12px',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
   },
   tags: {
     margin: '4px',
@@ -175,7 +177,7 @@ class CompletedCourseworkCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -185,6 +187,7 @@ class CompletedCourseworkCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="University of Michigan"
                 subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
             and a minor in Entrepreneurship"

@@ -244,6 +244,11 @@ exports[`Home matches snapshot 1`] = `
               onTouchEnd={[Function]}
               onTouchMove={[Function]}
               onTouchStart={[Function]}
+              style={
+                Object {
+                  "padding": 0,
+                }
+              }
               tabIndex={0}
               title="Expand/collapse card"
               type="button"
@@ -654,6 +659,11 @@ exports[`Home matches snapshot 1`] = `
               onTouchEnd={[Function]}
               onTouchMove={[Function]}
               onTouchStart={[Function]}
+              style={
+                Object {
+                  "padding": 0,
+                }
+              }
               tabIndex={0}
               title="Expand/collapse card"
               type="button"

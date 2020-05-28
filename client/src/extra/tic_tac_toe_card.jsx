@@ -29,7 +29,10 @@ class TicTacToeCard extends React.Component {
         <a name="tic_tac_toe_card" href="#tic_tac_toe_card" className="gone">
             Tic Tac Toe Card
         </a>
-        <CardHeader title="Tic Tac Toe" subheader="just for fun!" />
+        <CardHeader
+          className="cardHeader"
+          title="Tic Tac Toe"
+          subheader="just for fun!" />
         <CardContent className={classes.cardContent}>
           <Typography variant="subtitle1" />
           <TicTacToeGame />

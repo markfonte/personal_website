@@ -30,9 +30,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const styles = {
   gimbleCardMedia: {
     width: '100%',
-    margin: 'auto',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
     maxWidth: '500px',
-    marginBottom: '12px',
   },
   gimbleCardActionIcon: {
     width: '24px',
@@ -144,7 +146,7 @@ class GimbleCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -155,6 +157,7 @@ class GimbleCard extends React.Component {
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Gimble A Cappella"
                 subheader={`My acappella group!`}
               />

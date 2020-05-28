@@ -46,7 +46,10 @@ const styles = {
   },
   welcomeImage: {
     width: '100%',
-    margin: 'auto',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
     maxWidth: '700px',
   },
 };
@@ -120,7 +123,7 @@ class WelcomeCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -131,6 +134,7 @@ class WelcomeCard extends React.Component {
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Welcome!"
                 subheader="Click for a little about me..."
               />

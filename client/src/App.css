@@ -54,6 +54,10 @@
   color: #0072d4 !important;
 }
 
+.cardHeader {
+  padding: 0 !important;
+}
+
 /* Global */
 @keyframes react-logo-spin {
   from {

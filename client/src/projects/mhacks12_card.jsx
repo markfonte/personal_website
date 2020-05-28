@@ -43,8 +43,10 @@ import PropTypes from 'prop-types';
 const styles = {
   mhacks12Banner: {
     width: '100%',
-    margin: 'auto',
-    marginBottom: '12px',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
   },
   logo: {
     width: '40%', height: 'auto',
@@ -125,7 +127,7 @@ class MHacks12Card extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -135,6 +137,7 @@ class MHacks12Card extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="InstEvents"
                 subheader="Hackathon Project @ MHacks 12"
               />

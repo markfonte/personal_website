@@ -115,7 +115,7 @@ class MISymptomsCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -125,6 +125,7 @@ class MISymptomsCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="MI Symptoms Project"
                 subheader={'Testing Team Lead'}
               />

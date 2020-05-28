@@ -29,6 +29,7 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
     minWidth: '189px',
+    marginTop: '16px',
   },
   gameInfo: {
     margin: '24px',

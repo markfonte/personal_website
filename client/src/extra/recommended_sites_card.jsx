@@ -132,7 +132,7 @@ class RecommendedSitesCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -143,6 +143,7 @@ class RecommendedSitesCard extends React.Component {
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="🌐 Recommended Websites"
                 subheader="Check out these amazing people's websites!"
               />

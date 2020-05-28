@@ -21,9 +21,11 @@ import PropTypes from 'prop-types';
 const styles = {
   amazonLogo: {
     width: '100%',
-    margin: 'auto',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
     maxWidth: '500px',
-    marginBottom: '12px',
   },
   tags: {
     margin: '4px',
@@ -76,7 +78,7 @@ class AmazonCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -87,6 +89,7 @@ class AmazonCard extends React.Component {
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Amazon"
                 subheader="Software Engineer"
               />

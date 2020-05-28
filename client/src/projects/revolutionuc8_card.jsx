@@ -22,9 +22,11 @@ import PropTypes from 'prop-types';
 const styles = {
   revolutionuc8_logo: {
     width: '100%',
-    margin: 'auto',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
     maxWidth: '500px',
-    marginBottom: '12px',
   },
   denialDialLogo: {
     width: '40%',
@@ -75,7 +77,7 @@ class RevolutionUC8Card extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton>
+                <IconButton style={{padding: 0}}>
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -85,6 +87,7 @@ class RevolutionUC8Card extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
+                className="cardHeader"
                 title="Denial Dial"
                 subheader="Hackathon Project @ RevolutionUC 8"
               />
