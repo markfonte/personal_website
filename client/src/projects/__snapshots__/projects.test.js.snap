@@ -1151,34 +1151,6 @@ exports[`Projects matches snapshot 1`] = `
                 <span
                   className="MuiChip-label"
                 >
-                  Part-Time
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
-              <div
-                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-165 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <div
-                  className="MuiChip-icon MuiChip-iconColorPrimary"
-                />
-                <span
-                  className="MuiChip-label"
-                >
                   Startup
                 </span>
                 <span
@@ -1524,6 +1496,62 @@ exports[`Projects matches snapshot 1`] = `
                   className="MuiTouchRipple-root"
                 />
               </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-170 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Android Jetpack
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-170 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Kotlin
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1746,6 +1774,62 @@ exports[`Projects matches snapshot 1`] = `
                   className="MuiChip-label"
                 >
                   Android
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-174 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Android Jetpack
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-174 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  Kotlin
                 </span>
                 <span
                   className="MuiTouchRipple-root"
@@ -2868,34 +2952,6 @@ exports[`Projects matches snapshot 1`] = `
                 <span
                   className="MuiChip-label"
                 >
-                  Part-Time
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
-              <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-192 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <div
-                  className="MuiChip-icon MuiChip-iconColorPrimary"
-                />
-                <span
-                  className="MuiChip-label"
-                >
                   Startup
                 </span>
                 <span
@@ -3123,7 +3179,7 @@ exports[`Projects matches snapshot 1`] = `
                 <span
                   className="MuiChip-label"
                 >
-                  Part-Time
+                  Startup
                 </span>
                 <span
                   className="MuiTouchRipple-root"
@@ -3151,7 +3207,7 @@ exports[`Projects matches snapshot 1`] = `
                 <span
                   className="MuiChip-label"
                 >
-                  Startup
+                  Class Project
                 </span>
                 <span
                   className="MuiTouchRipple-root"
@@ -3228,7 +3284,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-197"
+    className="InteractionCard-root-200"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -3245,10 +3301,10 @@ exports[`Projects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-199"
+          className="LikeButton-root-202"
         >
           <div
-            className="LikeButton-likeButtonWrapper-200"
+            className="LikeButton-likeButtonWrapper-203"
           >
             <button
               aria-describedby={null}
@@ -3290,10 +3346,10 @@ exports[`Projects matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-201 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-204 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-202 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-205 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

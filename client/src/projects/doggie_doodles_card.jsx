@@ -15,6 +15,18 @@ import {
 } from '@material-ui/core';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+import rockyOne from '../static/images/photos/rocky_1.webp';
+import rockyOneFallback from '../static/images/photos/rocky_1.jpg';
+
+import rockyTwo from '../static/images/photos/rocky_2.webp';
+import rockyTwoFallback from '../static/images/photos/rocky_2.jpg';
+
+import doggieDoodlesScreenshotOne
+  from '../static/images/screenshots/doggie_doodles_screenshot_1.webp';
+import doggieDoodlesScreenshotOneFallback
+  from '../static/images/screenshots/doggie_doodles_screenshot_1.png';
+
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';
 
@@ -34,14 +46,32 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
   },
+  rocky: {
+    height: '100%',
+    maxHeight: '300px',
+    width: 'auto',
+    marginLeft: '4px',
+    marginRight: '4px',
+  },
+  webScreenshot: {
+    width: '100%',
+    maxWidth: '400px',
+    height: 'auto',
+  },
+  doggieDoodlesLogo: {
+
+  },
 };
 
 class DoggieDoodlesCard extends React.Component {
   render() {
     const {classes} = this.props;
-    // const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
+    const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
     const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
     const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
+    const morganSalvanoLink = `https://www.morgansalvanodesign.com/`;
+    const stampsLink = `https://stamps.umich.edu/`;
+    const redbubbleLink = `https://www.redbubble.com/people/doggiedoodles/shop`;
 
     const tags = [
       {
@@ -51,12 +81,12 @@ class DoggieDoodlesCard extends React.Component {
         icon: <DateRangeIcon />,
       },
       {
-        label: 'Part-Time',
+        label: 'Startup',
         color: 'primary',
         variant: 'default',
       },
       {
-        label: 'Startup',
+        label: 'Class Project',
         color: 'primary',
         variant: 'default',
       },
@@ -107,22 +137,93 @@ class DoggieDoodlesCard extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <CardContent>
-              <Typography variant="body1">
+              <Typography variant="body1" paragraph>
               Started from a class project, this business sells custom merchandise using a
               digital drawing of your animal.
+
+                {' '}
+                <Link color="secondary" href={morganSalvanoLink}>
+                Morgan Salvano
+                </Link>
+
+                , from U of M&apos;s
+
+                {' '}
+                <Link color="secondary" href={stampsLink}>
+                Stamps School of Art and Design
+                </Link>
+
+                    , will take a picture of your pet (it doesn&apos;t have to be a dog!) and
+                    turn it into a custom digital drawing. The drawing itself is
+                <b> completely free</b>!
+                    Once she has drawn it to your satisfaction, she will upload it
+                    to
+                {' '}
+                <Link color="secondary" href={redbubbleLink}>
+                    Redbubble
+                </Link>
+                {' '}
+
+                    (with your permission), where you can see your custom drawing on all kinds
+                    of merchandise - posters, mugs, phone cases, pillows and much more!
+
+              </Typography>
+              <picture>
+                <source srcSet={rockyOne} type="image/webp"/>
+                <source srcSet={rockyOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[rockyOne, rockyOneFallback]}
+                  className={classes.rocky}
+                  alt="Rocky #1"
+                />
+              </picture>
+              <picture>
+                <source srcSet={rockyTwo} type="image/webp"/>
+                <source srcSet={rockyTwoFallback} type="image/jpg"/>
+                <img
+                  srcSet={[rockyTwo, rockyTwoFallback]}
+                  className={classes.rocky}
+                  alt="Rocky #2"
+                />
+              </picture>
+              <br/><br/>
+              <picture>
+                <source srcSet={doggieDoodlesScreenshotOne} type="image/webp"/>
+                <source srcSet={doggieDoodlesScreenshotOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[doggieDoodlesScreenshotOne, doggieDoodlesScreenshotOneFallback]}
+                  className={classes.webScreenshot}
+                  alt="Rocky #2"
+                />
+              </picture>
+              <br/><br/>
+              <Typography variant="body1" paragraph>
+                Send a picture of your animal to
+
                 {' '}
                 <Link color="secondary" href={doggieDoodlesEmailLink}>
-                Send us a picture of your dog or cat{' '}
-                </Link> and we will turn it into a custom
-              drawing. Then head over to
+                dopedoggiedoodles@gmail.com
+                </Link>
+                {' '}
+
+                to get started!
+              </Typography>
+              <Typography variant="body1" paragraph>
+                    View the
+
+                {' '}
+                <Link color="secondary" href={doggieDoodlesWebsiteLink}>
+                 website
+                </Link>
+                {' '}
+
+                    or on
+
                 {' '}
                 <Link color="secondary" href={doggieDoodlesRedbubbleLink}>
                 Redbubble
                 </Link>
                 {' '}
-              and you can purchase a
-              custom mug, laptop sticker, phone case, and more. I might not be writing software
-              for this business, but it is still lots of fun!
               </Typography>
             </CardContent>
           </ExpansionPanelDetails>

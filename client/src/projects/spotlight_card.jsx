@@ -60,11 +60,6 @@ class SpotlightCard extends React.Component {
         icon: <DateRangeIcon />,
       },
       {
-        label: 'Part-Time',
-        color: 'primary',
-        variant: 'default',
-      },
-      {
         label: 'Startup',
         color: 'primary',
         variant: 'default',
