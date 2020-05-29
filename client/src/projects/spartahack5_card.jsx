@@ -20,6 +20,21 @@ import DateRangeIcon from '@material-ui/icons/DateRange';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 
+import laughableLyricsScreenshotOne
+  from '../static/images/screenshots/laughable_lyrics_screenshot_1.webp';
+import laughableLyricsScreenshotOneFallback
+  from '../static/images/screenshots/laughable_lyrics_screenshot_1.jpg';
+
+import laughableLyricsScreenshotTwo
+  from '../static/images/screenshots/laughable_lyrics_screenshot_2.webp';
+import laughableLyricsScreenshotTwoFallback
+  from '../static/images/screenshots/laughable_lyrics_screenshot_2.jpg';
+
+import laughableLyricsScreenshotThree
+  from '../static/images/screenshots/laughable_lyrics_screenshot_3.webp';
+import laughableLyricsScreenshotThreeFallback
+  from '../static/images/screenshots/laughable_lyrics_screenshot_3.jpg';
+
 const styles = {
   spartahack5Banner: {
     width: '100%',
@@ -41,15 +56,34 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
   },
+  mobileScreenshot: {
+    marginTop: '12px',
+    marginBottom: '12px',
+    marginLeft: '4px',
+    marginRight: '4px',
+    height: 'auto',
+    width: '100%',
+    maxWidth: '280px',
+  },
 };
 
 class Spartahack5Card extends React.Component {
   render() {
     const {classes} = this.props;
-    // const spartahack5Link = `https://spartahackv.devpost.com/`;
     const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
     const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
     const googleTranslateSingsLink = `https://www.youtube.com/watch?v=2bVAoVlFYf0`;
+    const translateAPILink = `https://cloud.google.com/translate/`;
+    const androidLink = `https://developer.android.com/`;
+    const kotlinLink = `https://kotlinlang.org/`;
+    const androidJetpackLink = `https://developer.android.com/jetpack`;
+    const mySqlLink = `https://www.mysql.com/`;
+    const expressLink = `https://expressjs.com/`;
+    const nodeLink = `https://nodejs.org/`;
+    const geniusAPILink = `https://docs.genius.com/`;
+    const glideLink = `https://bumptech.github.io/glide/`;
+    const volleyLink = `https://developer.android.com/training/volley`;
+
     const tags = [
       {
         label: 'January 2019',
@@ -64,6 +98,18 @@ class Spartahack5Card extends React.Component {
       },
       {
         label: 'Android',
+      },
+      {
+        label: 'Android Jetpack',
+      },
+      {
+        label: 'Express',
+      },
+      {
+        label: 'JavaScript',
+      },
+      {
+        label: 'MySQL',
       },
     ];
     return (
@@ -116,24 +162,147 @@ class Spartahack5Card extends React.Component {
           <ExpansionPanelDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
-              This hackathon project,
-                {' '}
-                <i>Laughable Lyrics</i>
-              , is one of my favorites.
-                {' '}
-              We took inspiration from the popular
-                {' '}
-                <i>&#34;Google Translate Sings&#34;</i>
+              This hackathon project, <i>Laughable Lyrics</i>, is one of my favorites.
+                We took inspiration from the popular
+
                 {' '}
                 <Link color="secondary" href={googleTranslateSingsLink}>
-                YouTube videos
+                  <i>&#34;Google Translate Sings&#34;</i> YouTube videos
                 </Link>
                 {' '}
-              and decided we could automate that process. Using Google Translate APIs we built an
-              Android application that allowed users to translate the Genius Lyrics through a specified
-              number of languages, and back to English. The result was always hilarious,
-              and the user interface we built (using Android Jetpack) made it very easy to do.
-              We won <i>Most Creative/Funniest Hack</i> for the project.
+
+              and realized that we could automate the process of translating
+              song lyrics to a bunch of different languages, then back to English.
+              </Typography>
+              <Typography variant="body1" paragraph>
+                  As you can see in the screenshots below, users could type in the
+                  name of any song, use the slider to select how many translations
+                  to make before translating back to English (the more translations,
+                  the wackier the result), and tap on the song they wanted to translate!
+                  The results were always hilarious.
+              </Typography>
+              <Typography variant="body1" paragraph>
+                  We built the
+
+                {' '}
+                <Link color="secondary" href={androidLink}>
+                    Android
+                </Link>
+                {' '}
+
+                  app in
+
+                {' '}
+                <Link color="secondary" href={kotlinLink}>
+                    Kotlin
+                </Link>
+                {' '}
+
+                  for <i>Laughable Lyrics</i> using
+
+                {' '}
+                <Link color="secondary" href={androidJetpackLink}>
+                  Android Jetpack
+                </Link>
+                {' '}
+
+                  for architecture components, view models, and much more.
+                  Images in the search results were loaded using the
+
+                {' '}
+                <Link color="secondary" href={glideLink}>
+                  Glide
+                </Link>
+                {' '}
+
+                   library, and network calls were made using the
+
+                {' '}
+                <Link color="secondary" href={volleyLink}>
+                  Volley
+                </Link>
+                {' '}
+
+                  library. We used
+
+                {' '}
+                <Link color="secondary" href={geniusAPILink}>
+                  Genius.com&apos;s API
+                </Link>
+                {' '}
+
+                  to load song lyrics and the
+
+                {' '}
+                <Link color="secondary" href={translateAPILink}>
+                  Google Translate API
+                </Link>
+                {' '}
+
+                  to translate them. Our API was built in
+
+                {' '}
+                <Link color="secondary" href={nodeLink}>
+                  NodeJS
+                </Link>
+                {' '}
+
+                  and
+
+                {' '}
+                <Link color="secondary" href={expressLink}>
+                  Express
+                </Link>
+
+                  , and saves the funny translations to a
+
+                {' '}
+                <Link color="secondary" href={mySqlLink}>
+                  MySQL
+                </Link>
+                {' '}
+
+                  database.
+              </Typography>
+              <Typography variant="body1" paragraph>
+                <i>Laughable Lyrics</i> was a very lighthearted app, just meant
+                  for a little entertainment and a few laughs. Unfortunately, the Google
+                  Translate API has some steep pricing on their usage and very small limits
+                  on their free tier (causing a few demo fails, oops!).
+              </Typography>
+              <picture>
+                <source srcSet={laughableLyricsScreenshotOne} type="image/webp"/>
+                <source srcSet={laughableLyricsScreenshotOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[laughableLyricsScreenshotOne, laughableLyricsScreenshotOneFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="Laughable Lyrics Screenshot 1"
+                />
+              </picture>
+              <picture>
+                <source srcSet={laughableLyricsScreenshotTwo} type="image/webp"/>
+                <source srcSet={laughableLyricsScreenshotTwoFallback} type="image/jpg"/>
+                <img
+                  srcSet={[laughableLyricsScreenshotTwo, laughableLyricsScreenshotTwoFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="Laughable Lyrics Screenshot 2"
+                />
+              </picture>
+              <picture>
+                <source srcSet={laughableLyricsScreenshotThree} type="image/webp"/>
+                <source srcSet={laughableLyricsScreenshotThreeFallback} type="image/jpg"/>
+                <img
+                  srcSet={[laughableLyricsScreenshotThree, laughableLyricsScreenshotThreeFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="Laughable Lyrics Screenshot 3"
+                />
+              </picture>
+              <Typography variant="body1" paragraph>
+              We won <i>Most Creative/Funniest Hack</i> and a <i>Top 10 finish</i> for the project.
+              We were never able to push it to production due to the rate limiting issue with the
+              Google Translate API.
+              </Typography>
+              <Typography variant="body1" paragraph>
               View it on
                 {' '}
                 <Link color="secondary" href={laughableLyricsDevpostLink}>

@@ -194,7 +194,7 @@ class DoggieDoodlesCard extends React.Component {
               <br/><br/>
               <picture>
                 <source srcSet={doggieDoodlesScreenshotOne} type="image/webp"/>
-                <source srcSet={doggieDoodlesScreenshotOneFallback} type="image/jpg"/>
+                <source srcSet={doggieDoodlesScreenshotOneFallback} type="image/png"/>
                 <img
                   srcSet={[doggieDoodlesScreenshotOne, doggieDoodlesScreenshotOneFallback]}
                   className={classes.webScreenshot}

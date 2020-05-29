@@ -182,7 +182,7 @@ exports[`Home matches snapshot 1`] = `
             className="WelcomeCard-expansionHeaderContainer-56"
           >
             <div
-              className="MuiCardHeader-root"
+              className="MuiCardHeader-root cardHeader"
             >
               <div
                 className="MuiCardHeader-content"
@@ -321,7 +321,7 @@ exports[`Home matches snapshot 1`] = `
             className="BuiltWithTableCard-expansionHeaderContainer-136"
           >
             <div
-              className="MuiCardHeader-root"
+              className="MuiCardHeader-root cardHeader"
             >
               <div
                 className="MuiCardHeader-content"

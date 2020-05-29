@@ -61,7 +61,7 @@ exports[`Extra matches snapshot 1`] = `
             className="GimbleCard-expansionHeaderContainer-35"
           >
             <div
-              className="MuiCardHeader-root"
+              className="MuiCardHeader-root cardHeader"
             >
               <div
                 className="MuiCardHeader-content"
@@ -558,7 +558,7 @@ exports[`Extra matches snapshot 1`] = `
       Tic Tac Toe Card
     </a>
     <div
-      className="MuiCardHeader-root"
+      className="MuiCardHeader-root cardHeader"
     >
       <div
         className="MuiCardHeader-content"
@@ -985,7 +985,7 @@ exports[`Extra matches snapshot 1`] = `
             className="RecommendedSitesCard-expansionHeaderContainer-267"
           >
             <div
-              className="MuiCardHeader-root"
+              className="MuiCardHeader-root cardHeader"
             >
               <div
                 className="MuiCardHeader-content"
