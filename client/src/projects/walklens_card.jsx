@@ -233,23 +233,6 @@ class WalklensCard extends React.Component {
                   At the time of writing, it is available on the Google Play Store.
               There are no plans to make an iOS version of WalkLens.
               </Typography>
-              <Typography variant="body1" paragraph>
-              View it on
-
-                {' '}
-                <Link color="secondary" href={walklensGithubLink}>
-                Github
-                </Link>
-                {' '}
-
-              or the
-
-                {' '}
-                <Link color="secondary" href={walklensGooglePlayLink}>
-                Google Play Store
-                </Link>
-
-              </Typography>
               <picture>
                 <source srcSet={walklensScreenshotOne} type="image/webp"/>
                 <source srcSet={walklensScreenshotOneFallback} type="image/jpg"/>
@@ -277,6 +260,22 @@ class WalklensCard extends React.Component {
                   alt="WalkLens screenshot 3"
                 />
               </picture>
+              <Typography variant="body1" paragraph>
+              View it on
+
+                {' '}
+                <Link color="secondary" href={walklensGithubLink}>
+                Github
+                </Link>
+                {' '}
+
+              or the
+
+                {' '}
+                <Link color="secondary" href={walklensGooglePlayLink}>
+                Google Play Store
+                </Link>
+              </Typography>
             </CardContent>
           </ExpansionPanelDetails>
         </ExpansionPanel>

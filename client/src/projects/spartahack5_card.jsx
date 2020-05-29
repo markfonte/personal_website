@@ -298,7 +298,23 @@ class Spartahack5Card extends React.Component {
                 />
               </picture>
               <Typography variant="body1" paragraph>
-              We won <i>Most Creative/Funniest Hack</i> and a <i>Top 10 finish</i> for the project.
+              We won
+
+                {' '}
+                <Typography color="secondary" display="inline">
+                  <b><i>Most Creative/Funniest Hack</i></b>
+                </Typography>
+                {' '}
+
+                  and a
+
+                {' '}
+                <Typography color="secondary" display="inline">
+                  <b><i>Top 10 finish</i></b>
+                </Typography>
+                {' '}
+
+                      for the project.
               We were never able to push it to production due to the rate limiting issue with the
               Google Translate API.
               </Typography>

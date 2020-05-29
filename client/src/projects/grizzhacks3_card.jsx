@@ -19,6 +19,16 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import congoaiLogo from '../static/images/logos/congoai_logo.svg';
 import PropTypes from 'prop-types';
 
+import congoaiScreenshotOne from
+  '../static/images/screenshots/congoai_screenshot_1.webp';
+import congoaiScreenshotOneFallback from
+  '../static/images/screenshots/congoai_screenshot_1.jpg';
+
+import congoaiDemoOne from
+  '../static/images/photos/congoai_demo_1.webp';
+import congoaiDemoOneFallback from
+  '../static/images/photos/congoai_demo_1.jpg';
+
 const styles = {
   grizzhacks3Banner: {
     width: '100%',
@@ -41,6 +51,20 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
   },
+  mobileScreenshot: {
+    marginTop: '12px',
+    marginBottom: '12px',
+    marginLeft: '4px',
+    marginRight: '4px',
+    height: 'auto',
+    width: '100%',
+    maxWidth: '280px',
+  },
+  demoImage: {
+    width: '100%',
+    height: 'auto',
+    maxWidth: '550px',
+  },
 };
 
 class Grizzhacks3Card extends React.Component {
@@ -49,6 +73,10 @@ class Grizzhacks3Card extends React.Component {
     // const grizzhacks3Link = `http://grizzhacks.com/`;
     const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
+    const vueLink = ``;
+    const nodeLink = `https://nodejs.org/`;
+    const mongodbLink = `https://www.mongodb.com/`;
+    const mongooseLink = `https://mongoosejs.com/docs/`;
 
     const tags = [
       {
@@ -61,6 +89,9 @@ class Grizzhacks3Card extends React.Component {
         label: 'Hackathon',
         color: 'primary',
         variant: 'default',
+      },
+      {
+        label: 'Vue.js',
       },
     ];
 
@@ -114,25 +145,104 @@ class Grizzhacks3Card extends React.Component {
           <ExpansionPanelDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
-              This was the first hackathon I ever competed in. We built an online
-              store to buy and sell pre-trained machine learning models, using Vue.js and MongoDB.
-              While we did not completely finish, the idea was to be able to test out
-              the machine learning models first in the store before purchasing from the
-              person that made it. Most of the credit on this project goes to my team.
-              We won <i>Best DevOps Hack, Presented by Ally Financial</i> and <i
-                >
-                Best use of Dynatrace
-                </i>. View it on <Link
-                  color="secondary"
-                  href={grizzhacks3DevpostLink}
-                >
+              GrizzHacks 3 was the first hackathon I ever competed in. We built an online
+              store where users could buy and sell pre-trained machine learning models.
+              While we did not completely finish, users could use our store to post
+              pre-trained machine learning models, view models that others had posted,
+              buy them, and even test them out in-store before purchasing!
+
+              </Typography>
+              <Typography variant="body1" paragraph>
+                  We built the web store using
+
+                {' '}
+                <Link color="secondary" href={vueLink}>
+                  Vue.js
+                </Link>
+                {' '}
+
+                  and the server using
+
+                {' '}
+                <Link color="secondary" href={nodeLink}>
+                  NodeJS
+                </Link>
+
+                  ,
+
+                {' '}
+                <Link color="secondary" href={mongodbLink}>
+                  MongoDB
+                </Link>
+                {' '}
+                  and
+
+                {' '}
+                <Link color="secondary" href={mongooseLink}>
+                  Mongoose
+                </Link>
+
+                  . Credit goes to my team for making the vast majority of this
+                  project - I was just learning most of this stuff at the time!
+              </Typography>
+              <picture>
+                <source srcSet={congoaiScreenshotOne} type="image/webp"/>
+                <source srcSet={congoaiScreenshotOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[congoaiScreenshotOne, congoaiScreenshotOneFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="Congo AI screenshot 1"
+                />
+              </picture>
+              <Typography variant="body1" paragraph>
+              We won
+
+                {' '}
+                <Typography color="secondary" display="inline">
+                  <b><i>Best DevOps Hack, Presented by Ally Financial</i></b>
+                </Typography>
+
+                  ,
+
+                {' '}
+                <Typography color="secondary" display="inline">
+                  <b><i>Best use of Dynatrace</i></b>
+                </Typography>
+
+                      , and a
+
+                {' '}
+                <Typography color="secondary" display="inline">
+                  <b><i>Top 10 finish</i></b>
+                </Typography>
+
+                          .
+              </Typography>
+              <Typography variant="body1" paragraph>
+                    View it on
+
+                {' '}
+                <Link color="secondary" href={grizzhacks3DevpostLink}>
                 Devpost
                 </Link>
                 {' '}
+
               or
                 {' '}
-                <Link color="secondary" href={grizzhacks3GithubLink}>Github</Link>
+                <Link color="secondary" href={grizzhacks3GithubLink}>
+                    Github
+                </Link>
               </Typography>
+              <picture>
+                <source srcSet={congoaiDemoOne} type="image/webp"/>
+                <source srcSet={congoaiDemoOneFallback} type="image/jpg"/>
+                <img
+                  srcSet={[congoaiDemoOne, congoaiDemoOneFallback]}
+                  className={classes.demoImage}
+                  alt="Congo demo 1"
+                />
+              </picture>
+              <br/>
               <img
                 src={congoaiLogo}
                 className={classes.congoaiLogo}
