@@ -9,6 +9,7 @@ import nginxLogo from '../static/images/logos/nginx_logo.svg';
 import githubLogo from '../static/images/logos/github_logo.svg';
 import trelloLogo from '../static/images/logos/trello_logo.svg';
 import jestLogo from '../static/images/logos/jest_logo.svg';
+import sqliteLogo from '../static/images/logos/sqlite_logo.svg';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 
@@ -80,6 +81,7 @@ class BuiltWithTableCard extends React.Component {
     const githubLink = `https://github.com/`;
     const trelloLink = `https://trello.com/`;
     const jestLink = `https://jestjs.io/`;
+    const sqliteLink = `https://www.sqlite.org/index.html`;
 
     const rows = [
       {
@@ -131,6 +133,12 @@ class BuiltWithTableCard extends React.Component {
         logo: reactLogo,
       },
       {
+        title: 'SQLite',
+        subtitle: 'SQL database',
+        link: sqliteLink,
+        logo: sqliteLogo,
+      },
+      {
         title: 'TravisCI',
         subtitle: 'continuous integration',
         link: travisCILink,
@@ -168,6 +176,9 @@ class BuiltWithTableCard extends React.Component {
       },
       {
         label: 'React',
+      },
+      {
+        label: 'SQLite',
       },
       {
         label: 'TravisCI',
