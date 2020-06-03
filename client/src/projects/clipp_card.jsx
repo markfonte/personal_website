@@ -20,7 +20,7 @@ import {
   CardHeader,
   CardMedia,
   withStyles,
-  //   Link,
+  Link,
   ExpansionPanel,
   ExpansionPanelSummary,
   ExpansionPanelDetails,
@@ -68,6 +68,13 @@ const styles = {
 class ClippCard extends React.Component {
   render() {
     const {classes} = this.props;
+
+    const universityOfMichiganLink = `https://umich.edu`;
+    const reactNativeLink = ``;
+    const firebaseLink = ``;
+    const mongoDBLink = ``;
+    const javascriptLink = ``;
+    const hybridAppLink = `https://www.mobiloud.com/blog/native-web-or-hybrid-apps/`;
 
     const tags = [
       {
@@ -142,54 +149,124 @@ class ClippCard extends React.Component {
           <ExpansionPanelDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
-              Clipp, a startup at Michigan, is a mobile application for trading pre-owned items without
-              monetary exchange. Our 6-person development team started building the React Native application
-              in September 2019, and started beta testing on December 5th, 2019. Users can upload items that
-              they would like to trade, then &quot;swipe&quot; on items they would trade each item for. If two people
-              &quot;swipe right&quot; on each other&apos;s items, they get matched in a custom messenger where they can
-              coordinate a meeting to exchange items. No money involved! Right now, it is only limited to
-              University of Michigan students.
-                <br /> <br />
-              The project requires full-stack work, from the front-end development of the Javascript
-              mobile applications to the back-end development of the MongoDB and Firebase databases. Each
-              developer contributes to different parts of the project at different times, working on
-              any task that is currently critical to development progress. This gives all of us full-stack
-              awareness and requires teamwork and communication. Until this point, we were working to build
-              a Minimum Viable Product that would allow us to validate our value proposition. Once we are
-              sure that people will use this product, we will begin building fully-fledged native mobile
-              Android and iOS applications. We are very excited to share Clipp with the world!
+              Clipp is a mobile application startup for trading pre-owned items without any
+              monetary exchange. The idea is that you can post items on a virtual market that you would
+              would like to exchange, then swipe through items you would be willing to exchange for
+              the item. If two people &quot;swipe right&quot; on each other&apos;s items, then they can meet up
+              to exchange them without ever spending a dime! For example, I could want to get rid of
+              my microwave oven, and somebody else could want to get rid of a ticket to the football game.
+              If we both wanted the other item, we could meet up to exchange!
               </Typography>
-              <Typography variant="caption">
-                <br />
-                <picture>
-                  <source srcSet={clippWireframeScreenshotOne} type="image/webp"/>
-                  <source srcSet={clippWireframeScreenshotOneFallback} type="image/png"/>
-                  <img
-                    srcSet={[clippWireframeScreenshotOne, clippWireframeScreenshotOneFallback]}
-                    className={classes.mobileScreenshot}
-                    alt="Clipp wireframe screenshot 1"
-                  />
-                </picture>
-                <picture>
-                  <source srcSet={clippWireframeScreenshotTwo} type="image/webp"/>
-                  <source srcSet={clippWireframeScreenshotTwoFallback} type="image/png"/>
-                  <img
-                    srcSet={[clippWireframeScreenshotTwo, clippWireframeScreenshotTwoFallback]}
-                    className={classes.mobileScreenshot}
-                    alt="Clipp wireframe screenshot 2"
-                  />
-                </picture>
-                <picture>
-                  <source srcSet={clippWireframeScreenshotThree} type="image/webp"/>
-                  <source srcSet={clippWireframeScreenshotThreeFallback} type="image/png"/>
-                  <img
-                    srcSet={[clippWireframeScreenshotThree, clippWireframeScreenshotThreeFallback]}
-                    className={classes.mobileScreenshot}
-                    alt="Clipp wireframe screenshot 3"
-                  />
-                </picture>
-                < br/>
+              <Typography variant="body1" paragraph>
+              Users could upload items that they would like to trade,
+              then &quot;swipe&quot; on items they would trade each item for.
+              If two people &quot;swipe right&quot; on each other&apos;s items,
+              they got matched in a custom messenger where they could
+              coordinate a meeting to exchange items. No money involved!
+              </Typography>
+              <Typography variant="body1" paragraph>
+              Our 6-person development team from the
+
+                {' '}
+                <Link color="secondary" href={universityOfMichiganLink}>
+              University of Michigan
+                </Link>
+                {' '}
+
+              started building the
+
+                {' '}
+                <Link color="secondary" href={reactNativeLink}>
+              React Native
+                </Link>
+                {' '}
+
+              application in September 2019, and started beta testing in December 2019.
+
+              The project required full-stack work, from the front-end development of the
+
+                {' '}
+                <Link color="secondary" href={javascriptLink}>
+              JavaScript
+                </Link>
+                {' '}
+
+              mobile applications to the back-end development of the
+
+                {' '}
+                <Link color="secondary" href={mongoDBLink}>
+              MongoDB
+                </Link>
+                {' '}
+
+              and
+
+                {' '}
+                <Link color="secondary" href={firebaseLink}>
+              Firebase
+                </Link>
+                {' '}
+
+              databases. Each developer contributed to different parts of the project at different times,
+              working on any task that was critical to development progress.
+              This gave all of us full-stack awareness and required teamwork and communication.
+              </Typography>
+              <picture>
+                <source srcSet={clippWireframeScreenshotOne} type="image/webp"/>
+                <source srcSet={clippWireframeScreenshotOneFallback} type="image/png"/>
+                <img
+                  srcSet={[clippWireframeScreenshotOne, clippWireframeScreenshotOneFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="Clipp wireframe screenshot 1"
+                />
+              </picture>
+              <picture>
+                <source srcSet={clippWireframeScreenshotTwo} type="image/webp"/>
+                <source srcSet={clippWireframeScreenshotTwoFallback} type="image/png"/>
+                <img
+                  srcSet={[clippWireframeScreenshotTwo, clippWireframeScreenshotTwoFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="Clipp wireframe screenshot 2"
+                />
+              </picture>
+              <picture>
+                <source srcSet={clippWireframeScreenshotThree} type="image/webp"/>
+                <source srcSet={clippWireframeScreenshotThreeFallback} type="image/png"/>
+                <img
+                  srcSet={[clippWireframeScreenshotThree, clippWireframeScreenshotThreeFallback]}
+                  className={classes.mobileScreenshot}
+                  alt="Clipp wireframe screenshot 3"
+                />
+              </picture>
+              <br/>
+              <Typography variant="caption" paragraph>
               (note: these are just wireframes, not actual screenshots from the mobile application)
+              </Typography>
+              <Typography variant="body1" paragraph>
+                    After successfully launching the beta application, we found less excitement for
+                    it than we had hoped for. Since we launched the beta app to University of Michigan
+                    students, part of the issue may have been launching right before winter break began.
+                    I believe that our issues were due to the fact that the app was still too buggy at
+                    the time for people to actually want to use it. Regardless, our project leaders
+                    shut down the project after a &quot;failed&quot; beta test,
+                    citing a lack of user interest. I maintain my disagreement with that conclusion.
+              </Typography>
+              <Typography variant="body2" paragraph>
+                    For what it&apos;s worth, I think that React Native is still far behind native
+                    mobile development at this point. We ran into countless issues with JavaScript and
+                    with different parts of the application working on just Android or just iOS, but not
+                    both. For those people who have to choose between a
+
+                {' '}
+                <Link color="secondary" href={hybridAppLink}>
+              hybrid mobile application
+                </Link>
+                {' '}
+
+                    versus two native applications, my official recommendation is that it&apos;s way too
+                    early for a hybrid mobile application (like React Native) to be a smart choice for
+                    almost anyone. If you agree or disagree, I would love to discuss this further
+                    - please reach out!
               </Typography>
             </CardContent>
           </ExpansionPanelDetails>
