@@ -5,6 +5,7 @@ import {
   CardHeader,
   Link,
   CardContent,
+  CardMedia,
   withStyles,
   ExpansionPanel,
   ExpansionPanelSummary,
@@ -51,6 +52,14 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+  },
+  miSymptomsLogo: {
+    width: '100%',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
+    maxWidth: '200px',
   },
 };
 
@@ -128,6 +137,13 @@ class MISymptomsCard extends React.Component {
                 className="cardHeader"
                 title="MI Symptoms Project"
                 subheader={'Testing Team Lead'}
+              />
+              <CardMedia
+                className={classes.miSymptomsLogo}
+                src="/images/mi_symptoms_logo.png"
+                title="MI Symptoms logo"
+                alt="MI Symptoms logo"
+                component="img"
               />
               <div>
                 {tags.map((tag) => (

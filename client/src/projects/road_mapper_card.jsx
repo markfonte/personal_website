@@ -5,6 +5,7 @@ import {
   CardHeader,
   Link,
   CardContent,
+  CardMedia,
   withStyles,
   ExpansionPanel,
   ExpansionPanelSummary,
@@ -38,6 +39,14 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+  },
+  roadMapperLogo: {
+    width: '100%',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
+    maxWidth: '120px',
   },
 };
 
@@ -103,6 +112,13 @@ class RoadMapperCard extends React.Component {
                 className="cardHeader"
                 title="Road Mapper"
                 subheader="EECS 493 class project"
+              />
+              <CardMedia
+                className={classes.roadMapperLogo}
+                image="images/road_mapper_logo.png"
+                title="Road Mapper logo"
+                alt="Road Mapper logo"
+                component="img"
               />
               <div>
                 {tags.map((tag) => (
