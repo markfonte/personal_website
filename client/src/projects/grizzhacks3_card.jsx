@@ -91,6 +91,9 @@ class Grizzhacks3Card extends React.Component {
         variant: 'default',
       },
       {
+        label: 'JavaScript',
+      },
+      {
         label: 'Vue.js',
       },
     ];

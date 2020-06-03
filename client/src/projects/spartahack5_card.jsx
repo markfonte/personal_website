@@ -103,7 +103,10 @@ class Spartahack5Card extends React.Component {
         label: 'Android Jetpack',
       },
       {
-        label: 'Express',
+        label: 'Express.js',
+      },
+      {
+        label: 'Kotlin',
       },
       {
         label: 'JavaScript',

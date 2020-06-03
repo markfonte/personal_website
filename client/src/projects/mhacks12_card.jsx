@@ -113,6 +113,9 @@ class MHacks12Card extends React.Component {
       {
         label: 'Kotlin',
       },
+      {
+        label: 'Firebase',
+      },
     ];
 
     return (

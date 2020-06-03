@@ -83,7 +83,10 @@ class JPMorganCard extends React.Component {
         variant: 'default',
       },
       {
-        label: 'Java Spring Boot',
+        label: 'Java',
+      },
+      {
+        label: 'JavaScript',
       },
       {
         label: 'Material UI',

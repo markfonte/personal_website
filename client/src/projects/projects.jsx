@@ -16,6 +16,7 @@ import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import MHacks12Card from './mhacks12_card.jsx';
 import WalklensCard from './walklens_card.jsx';
+import ClippCard from './clipp_card.jsx';
 import MetaTags from 'react-meta-tags';
 
 const styles = {
@@ -52,6 +53,7 @@ class Projects extends React.Component {
         <MHacks12Card />
         <WalklensCard />
         <Spartahack5Card />
+        <ClippCard />
         <RoadMapper />
         <RevolutionUC8Card />
         <Grizzhacks3Card />

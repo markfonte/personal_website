@@ -14,6 +14,7 @@ import {
   Card,
   CardContent,
   CardHeader,
+  CardMedia,
   withStyles,
   ExpansionPanel,
   ExpansionPanelSummary,
@@ -46,6 +47,14 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
   },
+  spotlightLogo: {
+    width: '100%',
+    marginBottom: '16px',
+    marginTop: '16px',
+    marginLeft: '0px',
+    marginRight: '0px',
+    maxWidth: '500px',
+  },
 };
 
 class SpotlightCard extends React.Component {
@@ -66,6 +75,15 @@ class SpotlightCard extends React.Component {
       },
       {
         label: 'Android',
+      },
+      {
+        label: 'Android Jetpack',
+      },
+      {
+          label: 'Firebase',
+      },
+      {
+        label: 'Kotlin',
       },
     ];
 
@@ -94,6 +112,13 @@ class SpotlightCard extends React.Component {
                 className="cardHeader"
                 title="Spotlight"
                 subheader="Lead Android developer"
+              />
+              <CardMedia
+                className={classes.spotlightLogo}
+                image="/images/spotlight_logo.png"
+                title="Spotlight logo"
+                alt="Spotlight logo"
+                component="img"
               />
               <div>
                 {tags.map((tag) => (

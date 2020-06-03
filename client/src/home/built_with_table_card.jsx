@@ -91,7 +91,7 @@ class BuiltWithTableCard extends React.Component {
         logo: digitalOceanLogo,
       },
       {
-        title: 'Express',
+        title: 'Express.js',
         subtitle: 'backend framework',
         link: expressLink,
         logo: expressLogo,
@@ -157,10 +157,13 @@ class BuiltWithTableCard extends React.Component {
         label: 'DigitalOcean',
       },
       {
-        label: 'Express',
+        label: 'Express.js',
       },
       {
         label: 'GitHub',
+      },
+      {
+        label: 'JavaScript',
       },
       {
         label: 'Jest',

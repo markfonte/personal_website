@@ -114,13 +114,16 @@ class LAZCard extends React.Component {
         label: 'Kotlin',
       },
       {
+        label: 'Java',
+      },
+      {
         label: 'JavaScript',
       },
       {
-        label: 'PHP',
+        label: 'MySQL',
       },
       {
-        label: 'MySQL',
+        label: 'PHP',
       },
     ];
     return (

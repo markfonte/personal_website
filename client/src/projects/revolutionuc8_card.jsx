@@ -67,7 +67,10 @@ class RevolutionUC8Card extends React.Component {
         variant: 'default',
       },
       {
-        label: 'Express',
+        label: 'Express.js',
+      },
+      {
+        label: 'JavaScript',
       },
     ];
 
