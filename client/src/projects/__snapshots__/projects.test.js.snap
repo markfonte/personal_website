@@ -3581,7 +3581,7 @@ exports[`Projects matches snapshot 1`] = `
                 <span
                   className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                 >
-                  Lead Android developer
+                  Android developer
                 </span>
               </div>
             </div>

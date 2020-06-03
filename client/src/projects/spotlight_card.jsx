@@ -2,12 +2,18 @@ import React from 'react';
 import spotlightScreenshotOne
   from '../static/images/screenshots/spotlight_screenshot_1.webp';
 import spotlightScreenshotOneFallback
-  from '../static/images/screenshots/spotlight_screenshot_1.png';
+  from '../static/images/screenshots/spotlight_screenshot_1.jpg';
 
 import spotlightScreenshotTwo
   from '../static/images/screenshots/spotlight_screenshot_2.webp';
 import spotlightScreenshotTwoFallback
-  from '../static/images/screenshots/spotlight_screenshot_2.png';
+  from '../static/images/screenshots/spotlight_screenshot_2.jpg';
+
+
+import spotlightScreenshotThree
+  from '../static/images/screenshots/spotlight_screenshot_3.webp';
+import spotlightScreenshotThreeFallback
+  from '../static/images/screenshots/spotlight_screenshot_3.jpg';
 
 import {
   Typography,
@@ -22,6 +28,7 @@ import {
   Chip,
   IconButton,
   Tooltip,
+  Link,
 } from '@material-ui/core';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -60,6 +67,17 @@ const styles = {
 class SpotlightCard extends React.Component {
   render() {
     const {classes} = this.props;
+
+    const androidLink = `https://developer.android.com/`;
+    const kotlinLink = `https://kotlinlang.org/`;
+    const androidJetpackLink = `https://developer.android.com/jetpack`;
+    const psych223Link = `https://atlas.ai.umich.edu/course/PSYCH%20223/`;
+    const iOSLink = `https://developer.apple.com/`;
+    const firebaseLink = `https://firebase.google.com/`;
+    const googleMapsApiLink = `https://developers.google.com/maps/documentation`;
+    const architectureComponentsLink = `https://developer.android.com/topic/libraries/architecture`;
+    const snapshotListenersLink = `https://firebase.google.com/docs/firestore/query-data/listen`;
+    const spotlightGithubLink = `https://github.com/markfonte/Spotlight_Android`;
 
     const tags = [
       {
@@ -111,7 +129,7 @@ class SpotlightCard extends React.Component {
               <CardHeader
                 className="cardHeader"
                 title="Spotlight"
-                subheader="Lead Android developer"
+                subheader="Android developer"
               />
               <CardMedia
                 className={classes.spotlightLogo}
@@ -136,15 +154,98 @@ class SpotlightCard extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <CardContent>
-              <Typography variant="body1">
-              We worked on Android and iOS applications to help streamline the sorority recruitment process.
-              Both applications were built using Firebase, and the Android application is built using Android Jetpack,
-              architecture components and Google Maps APIs. I built a successful POC for the Android application and
-              successfully onboarded another developer to maintain the project.
+              <Typography variant="body1" paragraph>
+                  This startup came from a
+
+                {' '}
+                <Link color="secondary" href={psych223Link}>
+                    class project
+                </Link>
+                {' '}
+
+                    during junior year of college. Since one of our group members was in
+                    a sorority at school, she saw a need for a mobile application that would streamline
+                    the &quot;recruitment&quot; process for sorority girls as they were trying to
+                    find which sorority they wanted to join.
+              </Typography>
+              <Typography variant="body1" paragraph>
+                  We built an
+
+                {' '}
+                <Link color="secondary" href={androidLink}>
+                    Android
+                </Link>
+                {' '}
+
+                    and an
+
+                {' '}
+                <Link color="secondary" href={iOSLink}>
+                    iOS
+                </Link>
+                {' '}
+
+                    application. I was the dev lead, so I was in charge of development and
+                    primarily just developed the Android app. Both applications were built using
+
+
+                {' '}
+                <Link color="secondary" href={firebaseLink}>
+                    Firebase
+                </Link>
+                {' '}
+
+                for authentication, static storage, a NoSQL database, analytics, etc.
+                The Android application was built in
+
+                {' '}
+                <Link color="secondary" href={kotlinLink}>
+                    Kotlin
+                </Link>
+                {' '}
+
+                 using
+
+                {' '}
+                <Link color="secondary" href={androidJetpackLink}>
+                Android Jetpack
+                </Link>
+
+                    ,
+
+                {' '}
+                <Link color="secondary" href={architectureComponentsLink}>
+                    architecture components
+                </Link>
+                {' '}
+
+                and
+
+                {' '}
+                <Link color="secondary" href={googleMapsApiLink}>
+                    Google Maps APIs
+                </Link>
+
+                .
+              </Typography>
+              <Typography variant="body1" paragraph>
+                    There were lots of fun technical challenges in this project, like
+                    using
+
+                {' '}
+                <Link color="secondary" href={snapshotListenersLink}>
+                        Firebase snapshot listeners
+                </Link>
+                {' '}
+
+                    to get realtime database updates, and getting items in the &quot;Ranking&quot;
+                    list to reorder correctly when moving items around. Even though I am not
+                    an iOS developer, getting to work closely with the iOS app was also
+                    so much fun.
               </Typography>
               <picture>
                 <source srcSet={spotlightScreenshotOne} type="image/webp"/>
-                <source srcSet={spotlightScreenshotOneFallback} type="image/png"/>
+                <source srcSet={spotlightScreenshotOneFallback} type="image/jpg"/>
                 <img
                   srcSet={[spotlightScreenshotOne, spotlightScreenshotOneFallback]}
                   className={classes.screenshot}
@@ -153,13 +254,38 @@ class SpotlightCard extends React.Component {
               </picture>
               <picture>
                 <source srcSet={spotlightScreenshotTwo} type="image/webp"/>
-                <source srcSet={spotlightScreenshotTwoFallback} type="image/png"/>
+                <source srcSet={spotlightScreenshotTwoFallback} type="image/jpg"/>
                 <img
                   srcSet={[spotlightScreenshotTwo, spotlightScreenshotTwoFallback]}
                   className={classes.screenshot}
                   alt="Spotlight screenshot 2"
                 />
               </picture>
+              <picture>
+                <source srcSet={spotlightScreenshotThree} type="image/webp"/>
+                <source srcSet={spotlightScreenshotThreeFallback} type="image/jpg"/>
+                <img
+                  srcSet={[spotlightScreenshotThree, spotlightScreenshotThreeFallback]}
+                  className={classes.screenshot}
+                  alt="Spotlight screenshot 3"
+                />
+              </picture>
+              <Typography variant="body1" paragraph>
+                    We worked on this project for a long time and built a successful MVP
+                    (minimum viable product) and more. Unfortunately, we were never able to
+                    get it off the ground on more than a trial basis because we were unable
+                    to find an appropriate monetization model for the product. The learning
+                    experience of building a full-fledged Android application from scratch
+                    can never be taken away!
+              </Typography>
+              <Typography variant="body1" paragraph>
+                    View it on
+
+                {' '}
+                <Link color="secondary" href={spotlightGithubLink}>
+                        GitHub
+                </Link>
+              </Typography>
             </CardContent>
           </ExpansionPanelDetails>
         </ExpansionPanel>
