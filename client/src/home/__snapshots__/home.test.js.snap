@@ -389,7 +389,7 @@ exports[`Home matches snapshot 1`] = `
                 <span
                   className="MuiChip-label"
                 >
-                  Express
+                  Express.js
                 </span>
                 <span
                   className="MuiTouchRipple-root"
@@ -418,6 +418,34 @@ exports[`Home matches snapshot 1`] = `
                   className="MuiChip-label"
                 >
                   GitHub
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <div
+                  className="MuiChip-icon MuiChip-iconColorSecondary"
+                />
+                <span
+                  className="MuiChip-label"
+                >
+                  JavaScript
                 </span>
                 <span
                   className="MuiTouchRipple-root"

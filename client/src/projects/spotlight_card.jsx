@@ -80,7 +80,7 @@ class SpotlightCard extends React.Component {
         label: 'Android Jetpack',
       },
       {
-          label: 'Firebase',
+        label: 'Firebase',
       },
       {
         label: 'Kotlin',
