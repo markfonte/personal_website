@@ -44,11 +44,11 @@ I drew inspiration from many different sources when building my website. Some of
 *  Every mentor, coworker, project partner, boss, and friend that has helped me along my journey
 
 
-![Maintenance](https://img.shields.io/maintenance/yes/2019) ![Website](https://img.shields.io/website/https/mark.fonte.com)
+![Maintenance](https://img.shields.io/maintenance/yes/2020) ![Website](https://img.shields.io/website/https/mark.fonte.com)
  
 ![GitHub issues](https://img.shields.io/github/issues-raw/markfonte/personal_website) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/markfonte/personal_website)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/markfonte/personal_website) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/markfonte/personal_website)
+![GitHub last commit](https://img.shields.io/github/last-commit/markfonte/personal_website) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/markfonte/personal_website)
 
 ![GitHub Release Date](https://img.shields.io/github/release-date/markfonte/personal_website) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/markfonte/personal_website/latest)
 
