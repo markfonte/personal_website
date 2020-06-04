@@ -78,7 +78,7 @@ class MHacks12Card extends React.Component {
     // const mhacks12Link = `https://mhacks12.devpost.com/`;
     const instEventsDevpostLink = `https://devpost.com/software/instevent`;
     const instEventsGithubLink = `https://github.com/markfonte/InstEvents`;
-    const nathanWebsiteLink = ``;
+    const nathanWebsiteLink = `https://nathanieljohnson.me/`;
     const mhacksLink = `https://staging.mhacks.org/`;
     const ala256Link = `https://atlas.ai.umich.edu/course/ALA%20256/`;
     const googleMapsLink = `https://www.google.com/maps`;

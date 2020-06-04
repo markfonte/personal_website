@@ -73,7 +73,7 @@ class Grizzhacks3Card extends React.Component {
     // const grizzhacks3Link = `http://grizzhacks.com/`;
     const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
     const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
-    const vueLink = ``;
+    const vueLink = `https://vuejs.org/`;
     const nodeLink = `https://nodejs.org/`;
     const mongodbLink = `https://www.mongodb.com/`;
     const mongooseLink = `https://mongoosejs.com/docs/`;

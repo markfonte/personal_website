@@ -70,10 +70,10 @@ class ClippCard extends React.Component {
     const {classes} = this.props;
 
     const universityOfMichiganLink = `https://umich.edu`;
-    const reactNativeLink = ``;
-    const firebaseLink = ``;
-    const mongoDBLink = ``;
-    const javascriptLink = ``;
+    const reactNativeLink = `https://reactnative.dev/`;
+    const firebaseLink = `https://firebase.google.com/`;
+    const mongoDBLink = `https://www.mongodb.com/`;
+    const javascriptLink = `https://www.javascript.com/`;
     const hybridAppLink = `https://www.mobiloud.com/blog/native-web-or-hybrid-apps/`;
 
     const tags = [
