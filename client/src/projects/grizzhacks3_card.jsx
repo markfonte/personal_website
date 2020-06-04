@@ -122,7 +122,7 @@ class Grizzhacks3Card extends React.Component {
               <CardHeader
                 className="cardHeader"
                 title="Congo AI"
-                subheader="Hackathon Winner @ GrizzHacks 3"
+                subheader="Hackathon Project @ GrizzHacks 3"
               />
               <CardMedia
                 className={classes.grizzhacks3Banner}

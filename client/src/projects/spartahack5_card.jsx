@@ -106,10 +106,10 @@ class Spartahack5Card extends React.Component {
         label: 'Express.js',
       },
       {
-        label: 'Kotlin',
+        label: 'JavaScript',
       },
       {
-        label: 'JavaScript',
+        label: 'Kotlin',
       },
       {
         label: 'MySQL',
@@ -139,7 +139,7 @@ class Spartahack5Card extends React.Component {
               <CardHeader
                 className="cardHeader"
                 title="Laughable Lyrics"
-                subheader="Hackathon Winner @ SpartaHack V"
+                subheader="Hackathon Project @ SpartaHack V"
               />
               <CardMedia
                 className={classes.spartahack5Banner}

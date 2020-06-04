@@ -4,8 +4,8 @@
     "private": true,
     "dependencies": {
         "@material-ui/core": "^4.9.13",
-        "@material-ui/lab": "^4.0.0-alpha.53",
         "@material-ui/icons": "^4.9.1",
+        "@material-ui/lab": "^4.0.0-alpha.53",
         "moment": "^2.25.3",
         "node-fetch": "^2.6.0",
         "react": "^16.13.1",
@@ -13,6 +13,7 @@
         "react-meta-tags": "^0.7.4",
         "react-moment": "^0.9.7",
         "react-router-dom": "^5.1.2",
+        "react-router-hash-link": "^1.2.2",
         "react-scripts": "^3.4.1",
         "react-scroll-up-button": "^1.6.4",
         "typeface-roboto": "^0.0.75"

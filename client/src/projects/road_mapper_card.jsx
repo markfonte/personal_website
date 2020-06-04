@@ -77,7 +77,7 @@ class RoadMapperCard extends React.Component {
         label: 'JavaScript',
       },
       {
-        label: 'Python Flask',
+        label: 'Python',
       },
       {
         label: 'SQLite',
@@ -111,7 +111,7 @@ class RoadMapperCard extends React.Component {
               <CardHeader
                 className="cardHeader"
                 title="Road Mapper"
-                subheader="EECS 493 class project"
+                subheader="EECS 493 Class Project"
               />
               <CardMedia
                 className={classes.roadMapperLogo}

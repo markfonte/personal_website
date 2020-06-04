@@ -135,7 +135,7 @@ class MISymptomsCard extends React.Component {
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
                 className="cardHeader"
-                title="MI Symptoms Project"
+                title="MI Symptoms"
                 subheader={'Testing Team Lead'}
               />
               <CardMedia

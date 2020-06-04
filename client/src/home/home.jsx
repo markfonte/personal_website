@@ -5,6 +5,7 @@ import WelcomeCard from './welcome_card.jsx';
 import {Typography, Link, Tooltip} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import MetaTags from 'react-meta-tags';
+import GlossaryCard from '../shared/glossary_card.jsx';
 
 const getCookie = require('../shared/util/cookies.js').getCookie;
 
@@ -130,6 +131,7 @@ class Home extends React.Component {
         </Typography>
         <WelcomeCard />
         <BuiltWithTableCard />
+        <GlossaryCard />
       </div>
     );
   }

@@ -92,6 +92,11 @@ class SpotlightCard extends React.Component {
         variant: 'default',
       },
       {
+        label: 'Class Project',
+        color: 'primary',
+        variant: 'default',
+      },
+      {
         label: 'Android',
       },
       {
@@ -129,7 +134,7 @@ class SpotlightCard extends React.Component {
               <CardHeader
                 className="cardHeader"
                 title="Spotlight"
-                subheader="Android developer"
+                subheader="Dev Lead & Android Developer"
               />
               <CardMedia
                 className={classes.spotlightLogo}

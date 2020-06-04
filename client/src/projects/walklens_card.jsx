@@ -124,7 +124,7 @@ class WalklensCard extends React.Component {
               <CardHeader
                 className="cardHeader"
                 title="WalkLens"
-                subheader="Android application"
+                subheader="Android Developer"
               />
               <CardMedia
                 image="/images/walklens_logo.svg"
