@@ -8,9 +8,9 @@ import {
   CardHeader,
   Link,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -76,9 +76,9 @@ class RevolutionUC8Card extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Revolution UC 8"
             aria-controls="revolutionuc8-content"
             id="revolutionuc8-header"
@@ -120,8 +120,8 @@ class RevolutionUC8Card extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
               At RevolutionUC 8, we spent at least the first 12 hours of the 24-hour hackathon
@@ -202,8 +202,8 @@ class RevolutionUC8Card extends React.Component {
                 alt="CongoAI logo"
               />
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

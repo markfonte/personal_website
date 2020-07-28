@@ -144,14 +144,14 @@ exports[`Home matches snapshot 1`] = `
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
     <div
-      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
+      className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
         aria-controls="welcome-content"
         aria-disabled={false}
         aria-expanded={false}
         aria-label="Welcome"
-        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        className="MuiButtonBase-root MuiAccordionSummary-root"
         id="welcome-header"
         onBlur={[Function]}
         onClick={[Function]}
@@ -169,7 +169,7 @@ exports[`Home matches snapshot 1`] = `
         tabIndex={0}
       >
         <div
-          className="MuiExpansionPanelSummary-content"
+          className="MuiAccordionSummary-content"
         >
           <a
             className="gone"
@@ -210,7 +210,7 @@ exports[`Home matches snapshot 1`] = `
         <div
           aria-disabled={false}
           aria-hidden={true}
-          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -283,14 +283,14 @@ exports[`Home matches snapshot 1`] = `
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
   >
     <div
-      className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
+      className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
         aria-controls="built-with-table-content"
         aria-disabled={false}
         aria-expanded={false}
         aria-label="Built With Table"
-        className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+        className="MuiButtonBase-root MuiAccordionSummary-root"
         id="built-with-table-header"
         onBlur={[Function]}
         onClick={[Function]}
@@ -308,7 +308,7 @@ exports[`Home matches snapshot 1`] = `
         tabIndex={0}
       >
         <div
-          className="MuiExpansionPanelSummary-content"
+          className="MuiAccordionSummary-content"
         >
           <a
             className="gone"
@@ -681,7 +681,7 @@ exports[`Home matches snapshot 1`] = `
         <div
           aria-disabled={false}
           aria-hidden={true}
-          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -782,14 +782,14 @@ exports[`Home matches snapshot 1`] = `
       className="MuiCardContent-root GlossaryCard-expansionPanel-19"
     >
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Full Time Positions-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Full Time Positions"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Full Time Positions-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -807,7 +807,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
@@ -843,7 +843,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -912,14 +912,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Internships-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Internships"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Internships-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -937,7 +937,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
@@ -973,7 +973,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1042,14 +1042,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Startups-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Startups"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Startups-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1067,7 +1067,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
@@ -1103,7 +1103,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1172,14 +1172,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Hackathon Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Hackathon Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Hackathon Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1197,7 +1197,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
@@ -1233,7 +1233,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1302,14 +1302,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Class Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Class Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Class Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1327,7 +1327,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
@@ -1363,7 +1363,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1432,14 +1432,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Android Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Android Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Android Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1457,7 +1457,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -1493,7 +1493,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1562,14 +1562,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Firebase Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Firebase Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Firebase Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1587,7 +1587,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -1623,7 +1623,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1692,14 +1692,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Java Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Java Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Java Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1717,7 +1717,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -1753,7 +1753,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1822,14 +1822,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="JavaScript Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="JavaScript Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="JavaScript Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1847,7 +1847,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -1883,7 +1883,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1952,14 +1952,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Kotlin Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Kotlin Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Kotlin Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1977,7 +1977,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -2013,7 +2013,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -2082,14 +2082,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="Python Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="Python Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="Python Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -2107,7 +2107,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -2143,7 +2143,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -2212,14 +2212,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="React Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="React Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="React Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -2237,7 +2237,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -2273,7 +2273,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -2342,14 +2342,14 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           aria-controls="React Native Projects-content"
           aria-disabled={false}
           aria-expanded={false}
           aria-label="React Native Projects"
-          className="MuiButtonBase-root MuiExpansionPanelSummary-root"
+          className="MuiButtonBase-root MuiAccordionSummary-root"
           id="React Native Projects-header"
           onBlur={[Function]}
           onClick={[Function]}
@@ -2367,7 +2367,7 @@ exports[`Home matches snapshot 1`] = `
           tabIndex={0}
         >
           <div
-            className="MuiExpansionPanelSummary-content"
+            className="MuiAccordionSummary-content"
           >
             <h6
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
@@ -2403,7 +2403,7 @@ exports[`Home matches snapshot 1`] = `
           <div
             aria-disabled={false}
             aria-hidden={true}
-            className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+            className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon MuiIconButton-edgeEnd"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}

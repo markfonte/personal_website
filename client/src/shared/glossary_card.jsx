@@ -5,9 +5,9 @@ import {
   CardContent,
   withStyles,
   CardHeader,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   List,
   ListItem,
   ListItemText,
@@ -366,14 +366,14 @@ class GlossaryCard extends React.Component {
           className={classes.expansionPanel}>
           {
             glossaryItems.map((glossaryItem) => (
-              <ExpansionPanel
+              <Accordion
                 key={glossaryItem.tagName}
                 expanded={this.state.expanded===glossaryItem.tagName}
                 className={this.expansionPanel}
                 elevation={4}
                 onChange={this.setExpanded(glossaryItem.tagName)}
                 TransitionProps={{unmountOnExit: true}}>
-                <ExpansionPanelSummary
+                <AccordionSummary
                   expandIcon={
                     <Tooltip
                       title="Expand/collapse card"
@@ -395,8 +395,8 @@ class GlossaryCard extends React.Component {
                       label={glossaryItem.projects.length}
                       clickable/>
                   </Typography>
-                </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
+                </AccordionSummary>
+                <AccordionDetails>
                   <List component="nav" style={{margin: 'auto'}}>
                     {
                       glossaryItem.projects.map((project, i) => (
@@ -415,8 +415,8 @@ class GlossaryCard extends React.Component {
                       ))
                     }
                   </List>
-                </ExpansionPanelDetails>
-              </ExpansionPanel>
+                </AccordionDetails>
+              </Accordion>
             ))
           }
         </CardContent>

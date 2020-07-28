@@ -7,9 +7,9 @@ import {
   Link,
   CardContent,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -68,9 +68,9 @@ class AmazonCard extends React.Component {
       <Card
         raised={true}
         className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Amazon"
             aria-controls="amazon-content"
             id="amazon-header"
@@ -113,8 +113,8 @@ class AmazonCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Typography variant="body1">
                 I will become a software engineer at
@@ -126,8 +126,8 @@ class AmazonCard extends React.Component {
                 in Seattle later this year. I can&#39;t wait!
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

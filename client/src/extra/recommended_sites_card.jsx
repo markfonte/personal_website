@@ -11,9 +11,9 @@ import {
   Link,
   Typography,
   Tooltip,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   IconButton,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -122,9 +122,9 @@ class RecommendedSitesCard extends React.Component {
     ];
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Recommended Sites"
             aria-controls="recommended-sites-content"
             id="recommended-sites-header"
@@ -148,8 +148,8 @@ class RecommendedSitesCard extends React.Component {
                 subheader="Check out these amazing people's websites!"
               />
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Table>
                 <TableBody>
@@ -195,8 +195,8 @@ class RecommendedSitesCard extends React.Component {
                 </TableBody>
               </Table>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

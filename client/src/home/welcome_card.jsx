@@ -5,9 +5,9 @@ import {CardContent,
   GridListTile,
   withStyles,
   Typography,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   IconButton,
   Tooltip,
   CardHeader,
@@ -79,7 +79,7 @@ class WelcomeCard extends React.Component {
     const {classes} = this.props;
     const trelloBoardLink = `https://trello.com/b/yoLCEs6S/personal-website`;
     const materialUICardLink = `https://material-ui.com/components/cards/#card`;
-    const materialUIExpansionPanelLink = `https://material-ui.com/components/expansion-panels/#expansion-panel`;
+    const materialUIAccordionLink = `https://material-ui.com/components/expansion-panels/#expansion-panel`;
     const amazonLink = 'https://www.amazon.com/';
     const umichLink = 'https://umich.edu/';
     const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
@@ -112,10 +112,10 @@ class WelcomeCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           onChange={this.handleChange}
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Welcome"
             aria-controls="welcome-content"
             id="welcome-header"
@@ -146,8 +146,8 @@ class WelcomeCard extends React.Component {
                 component="img"
               />
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Typography variant="h6" paragraph>
                     Welcome to my website! I&#39;m a software development engineer at
@@ -222,7 +222,7 @@ class WelcomeCard extends React.Component {
 
                 {' '}
                 <Tooltip arrow title="View Expansion Panels on Material-UI">
-                  <Link color="secondary" href={materialUIExpansionPanelLink}>
+                  <Link color="secondary" href={materialUIAccordionLink}>
                 expand to show content
                   </Link>
                 </Tooltip>
@@ -244,10 +244,10 @@ class WelcomeCard extends React.Component {
                   . Please reach out with
                   suggestions, questions, anything! My door is always open.
               </Typography>
-              <ExpansionPanel style={{marginBottom: 16}}>
+              <Accordion style={{marginBottom: 16}}>
                 <div
                   className={classes.expansionHeaderContainer}>
-                  <ExpansionPanelSummary
+                  <AccordionSummary
                     aria-label="Leadership Book"
                     aria-controls="leadership-book-content"
                     id="leadership-book-header"
@@ -263,9 +263,9 @@ class WelcomeCard extends React.Component {
                     <Typography variant="h6">
                   I&#39;m writing a book about leadership....
                     </Typography>
-                  </ExpansionPanelSummary>
+                  </AccordionSummary>
                 </div>
-                <ExpansionPanelDetails>
+                <AccordionDetails>
                   <Typography variant="body1" paragraph>
                   centered around the ways that <b><i>anyone</i></b> can become a better
                     leader. The core of my main argument is that the best leaders are experts at adapting
@@ -280,8 +280,8 @@ class WelcomeCard extends React.Component {
                     ways that anyone can become a better leader. I will certainly be writing more about
                     the book on this website in the months to come.
                   </Typography>
-                </ExpansionPanelDetails>
-              </ExpansionPanel>
+                </AccordionDetails>
+              </Accordion>
 
               <GridList className={classes.photoGrid} cellHeight="auto" cols={1.1}>
                 {feedData.map((feedDatum) => (
@@ -294,8 +294,8 @@ class WelcomeCard extends React.Component {
                   Scroll horizontally to view all photos!
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

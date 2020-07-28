@@ -9,9 +9,9 @@ import {
   CardHeader,
   Link,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -117,9 +117,9 @@ class Spartahack5Card extends React.Component {
     ];
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="SpartaHack V"
             aria-controls="spartahack5-content"
             id="spartahack5-header"
@@ -161,8 +161,8 @@ class Spartahack5Card extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
               This hackathon project, <i>Laughable Lyrics</i>, is one of my favorites.
@@ -341,8 +341,8 @@ class Spartahack5Card extends React.Component {
                 alt="Laughable Lyrics logo"
               />
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

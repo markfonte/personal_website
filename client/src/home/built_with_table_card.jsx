@@ -23,9 +23,9 @@ import {
   Card,
   CardContent,
   CardHeader,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   IconButton,
   Tooltip,
   Chip,
@@ -194,9 +194,9 @@ class BuiltWithTableCard extends React.Component {
       <Card
         raised={true}
         className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Built With Table"
             aria-controls="built-with-table-content"
             id="built-with-table-header"
@@ -230,8 +230,8 @@ class BuiltWithTableCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails style={{overflowX: 'auto'}}>
+          </AccordionSummary>
+          <AccordionDetails style={{overflowX: 'auto'}}>
             <CardContent className={classes.cardContent}>
               <div className={classes.builtWithTableWrapper}>
                 <Table className={classes.builtWithTable}>
@@ -268,8 +268,8 @@ class BuiltWithTableCard extends React.Component {
                 This table scrolls horizontally on smaller-width devices!
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

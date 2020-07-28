@@ -7,9 +7,9 @@ import {
   CardContent,
   CardMedia,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -89,9 +89,9 @@ class RoadMapperCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Road Mapper"
             aria-controls="road-mapper-content"
             id="road-mapper-header"
@@ -133,8 +133,8 @@ class RoadMapperCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" gutterBottom>
                This was just a small project that we worked on for
@@ -206,8 +206,8 @@ class RoadMapperCard extends React.Component {
               if the team is on the same page, despite being made entirely during quarantine!
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

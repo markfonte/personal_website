@@ -21,9 +21,9 @@ import {
   CardMedia,
   withStyles,
   Link,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -101,9 +101,9 @@ class ClippCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Learning A-Z"
             aria-controls="learningaz-content"
             id="learningaz-header"
@@ -145,8 +145,8 @@ class ClippCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
               Clipp is a mobile application startup for trading pre-owned items without any
@@ -269,8 +269,8 @@ class ClippCard extends React.Component {
                     - please reach out!
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

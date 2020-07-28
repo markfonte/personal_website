@@ -22,9 +22,9 @@ import {
   CardHeader,
   CardMedia,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -112,9 +112,9 @@ class SpotlightCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Spotlight"
             aria-controls="spotlight-content"
             id="spotlight-header"
@@ -156,8 +156,8 @@ class SpotlightCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
                   This startup came from a
@@ -292,8 +292,8 @@ class SpotlightCard extends React.Component {
                 </Link>
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

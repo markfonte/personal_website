@@ -26,9 +26,9 @@ import {
   CardHeader,
   Link,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -128,9 +128,9 @@ class LAZCard extends React.Component {
     ];
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Learning A-Z"
             aria-controls="learningaz-content"
             id="learningaz-header"
@@ -172,8 +172,8 @@ class LAZCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1">
               I worked at
@@ -396,8 +396,8 @@ class LAZCard extends React.Component {
                 be happy to give more details on what my experience was like working there!
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

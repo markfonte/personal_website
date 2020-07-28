@@ -29,9 +29,9 @@ import {
   CardHeader,
   withStyles,
   Link,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -120,9 +120,9 @@ class MHacks12Card extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="MHacks 12"
             aria-controls="mhacks12-content"
             id="mhacks12-header"
@@ -164,8 +164,8 @@ class MHacks12Card extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
               This project was definitely my favorite hackathon project.
@@ -346,8 +346,8 @@ class MHacks12Card extends React.Component {
                 />
               </picture>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

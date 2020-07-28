@@ -7,9 +7,9 @@ import {
   CardContent,
   CardMedia,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -114,9 +114,9 @@ class MISymptomsCard extends React.Component {
     ];
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="MI Symptoms"
             aria-controls="mi-symptoms-content"
             id="mi-symptoms-header"
@@ -158,8 +158,8 @@ class MISymptomsCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
                 I was asked to join this project, along with many others from the
@@ -326,8 +326,8 @@ class MISymptomsCard extends React.Component {
               </Typography>
 
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

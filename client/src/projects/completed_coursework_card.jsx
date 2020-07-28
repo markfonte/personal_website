@@ -8,9 +8,9 @@ import {
   Link,
   withStyles,
   Tooltip,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
 } from '@material-ui/core';
@@ -167,9 +167,9 @@ class CompletedCourseworkCard extends React.Component {
     ];
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Michigan"
             aria-controls="michigan-content"
             id="michigan-header"
@@ -212,8 +212,8 @@ class CompletedCourseworkCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Link
                 color="textPrimary"
@@ -253,8 +253,8 @@ class CompletedCourseworkCard extends React.Component {
                 note: this is only the most relevant coursework, not an exhaustive list
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

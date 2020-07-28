@@ -7,9 +7,9 @@ import {
   CardHeader,
   Link,
   withStyles,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -100,9 +100,9 @@ class Grizzhacks3Card extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="GrizzHacks 3"
             aria-controls="grizzhacks3-content"
             id="grizzhacks3-header"
@@ -144,8 +144,8 @@ class Grizzhacks3Card extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
               GrizzHacks 3 was the first hackathon I ever competed in. We built an online
@@ -253,8 +253,8 @@ class Grizzhacks3Card extends React.Component {
                 alt="CongoAI logo"
               />
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

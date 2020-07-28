@@ -6,9 +6,9 @@ import {
   CardContent,
   CardHeader,
   Link,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -96,9 +96,9 @@ class DoggieDoodlesCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Doggie Doodles"
             aria-controls="doggie-doodles-content"
             id="doggie-doodles-header"
@@ -139,8 +139,8 @@ class DoggieDoodlesCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
               Started from a class project, this business sells custom merchandise using a
@@ -231,8 +231,8 @@ class DoggieDoodlesCard extends React.Component {
                 {' '}
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

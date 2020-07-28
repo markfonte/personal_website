@@ -13,9 +13,9 @@ import {
   CardHeader,
   withStyles,
   Link,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   Chip,
   IconButton,
   Tooltip,
@@ -103,9 +103,9 @@ class JPMorganCard extends React.Component {
       <Card
         raised={true}
         className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="JPMorgan"
             aria-controls="jpmorgan-content"
             id="jpmorgan-header"
@@ -147,8 +147,8 @@ class JPMorganCard extends React.Component {
                 ))}
               </div>
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               <Typography variant="h5" gutterBottom>
                 Summer 2019
@@ -262,8 +262,8 @@ class JPMorganCard extends React.Component {
               - Some awesome friends!
               </Typography>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
       </Card>
     );
   }

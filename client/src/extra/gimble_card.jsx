@@ -19,9 +19,9 @@ import {
   CardContent,
   CardHeader,
   Typography,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
   IconButton,
   Tooltip,
 } from '@material-ui/core';
@@ -136,9 +136,9 @@ class GimbleCard extends React.Component {
 
     return (
       <Card raised={true} className="card">
-        <ExpansionPanel
+        <Accordion
           TransitionProps={{unmountOnExit: true}}>
-          <ExpansionPanelSummary
+          <AccordionSummary
             aria-label="Gimble"
             aria-controls="gimble-content"
             id="gimble-header"
@@ -168,8 +168,8 @@ class GimbleCard extends React.Component {
                 component="img"
               />
             </div>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
+          </AccordionSummary>
+          <AccordionDetails>
             <CardContent>
               {mediaPlayers.map((mediaPlayer) => (
                 <iframe
@@ -184,8 +184,8 @@ class GimbleCard extends React.Component {
               ))}
               <br/>
             </CardContent>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+          </AccordionDetails>
+        </Accordion>
         <Typography className={classes.buttonExplanation} variant="caption" color="textSecondary">
             These buttons scroll horizontally on smaller-width devices!
         </Typography>
