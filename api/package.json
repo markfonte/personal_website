@@ -12,19 +12,19 @@
         "cors": "^2.8.5",
         "debug": "^4.1.1",
         "express": "^4.17.1",
-        "http-errors": "^1.7.3",
-        "lodash": "^4.17.15",
+        "http-errors": "^1.8.0",
+        "lodash": "^4.17.19",
         "morgan": "^1.10.0",
-        "sqlite3": "^4.2.0",
-        "eslint-utils": "^2.0.0"
+        "sqlite3": "^5.0.0",
+        "eslint-utils": "^2.1.0"
     },
     "devDependencies": {
-        "eslint": "^7.0.0",
+        "eslint": "^7.4.0",
         "eslint-config-google": "^0.14.0",
-        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react": "^7.20.3",
         "react-test-renderer": "^16.13.1",
         "react": "^16.13.1",
-        "acorn": "^7.2.0",
-        "uglify-js": "^3.9.2"
+        "acorn": "^7.3.1",
+        "uglify-js": "^3.10.0"
     }
 }

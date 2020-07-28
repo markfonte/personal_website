@@ -58,7 +58,7 @@ exports[`Extra matches snapshot 1`] = `
             Gimble Card
           </a>
           <div
-            className="GimbleCard-expansionHeaderContainer-35"
+            className="GimbleCard-expansionHeaderContainer-5"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -79,7 +79,7 @@ exports[`Extra matches snapshot 1`] = `
               </div>
             </div>
             <img
-              className="MuiCardMedia-root GimbleCard-gimbleCardMedia-31 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root GimbleCard-gimbleCardMedia-1 MuiCardMedia-media MuiCardMedia-img"
               src="/images/gimble_group_pic.jpeg"
               title="Gimble group pic"
             />
@@ -157,12 +157,12 @@ exports[`Extra matches snapshot 1`] = `
       </div>
     </div>
     <span
-      className="MuiTypography-root GimbleCard-buttonExplanation-36 MuiTypography-caption MuiTypography-colorTextSecondary"
+      className="MuiTypography-root GimbleCard-buttonExplanation-6 MuiTypography-caption MuiTypography-colorTextSecondary"
     >
       These buttons scroll horizontally on smaller-width devices!
     </span>
     <div
-      className="MuiCardActions-root GimbleCard-cardActions-34 MuiCardActions-spacing"
+      className="MuiCardActions-root GimbleCard-cardActions-4 MuiCardActions-spacing"
     >
       <a
         aria-describedby={null}
@@ -229,7 +229,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on Apple Music button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -267,7 +267,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on Facebook button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -305,7 +305,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on Spotify button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -343,7 +343,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on Google Play Music button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -381,7 +381,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on SoundCloud button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -419,7 +419,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on YouTube button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -457,7 +457,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on YouTube Music button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -495,7 +495,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on Instagram button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -533,7 +533,7 @@ exports[`Extra matches snapshot 1`] = `
         >
           <img
             alt="Gimble A Cappella on Amazon Music button"
-            className="GimbleCard-gimbleCardActionIcon-32"
+            className="GimbleCard-gimbleCardActionIcon-2"
             src={
               Object {
                 "process": [Function],
@@ -576,22 +576,22 @@ exports[`Extra matches snapshot 1`] = `
       </div>
     </div>
     <div
-      className="MuiCardContent-root TicTacToeCard-cardContent-124"
+      className="MuiCardContent-root TicTacToeCard-cardContent-7"
     >
       <h6
         className="MuiTypography-root MuiTypography-subtitle1"
       />
       <div
-        className="MuiGrid-root TicTacToeGame-game-129"
+        className="MuiGrid-root TicTacToeGame-game-11"
       >
         <div
-          className="MuiGrid-root TicTacToeGame-gameBoard-128"
+          className="MuiGrid-root TicTacToeGame-gameBoard-10"
         >
           <div>
             <div>
               <button
                 aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -623,7 +623,7 @@ exports[`Extra matches snapshot 1`] = `
               </button>
               <button
                 aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -655,105 +655,7 @@ exports[`Extra matches snapshot 1`] = `
               </button>
               <button
                 aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                title="Play at this square!"
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-            </div>
-            <div>
-              <button
-                aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                title="Play at this square!"
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                tabIndex={0}
-                title="Play at this square!"
-                type="button"
-              >
-                <span
-                  className="MuiButton-label"
-                >
-                  <h5
-                    className="MuiTypography-root MuiTypography-h5"
-                  />
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -787,7 +689,7 @@ exports[`Extra matches snapshot 1`] = `
             <div>
               <button
                 aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -819,7 +721,7 @@ exports[`Extra matches snapshot 1`] = `
               </button>
               <button
                 aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -851,7 +753,105 @@ exports[`Extra matches snapshot 1`] = `
               </button>
               <button
                 aria-describedby={null}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-234"
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                title="Play at this square!"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div>
+              <button
+                aria-describedby={null}
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                title="Play at this square!"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-describedby={null}
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                title="Play at this square!"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <h5
+                    className="MuiTypography-root MuiTypography-h5"
+                  />
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-describedby={null}
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined TicTacToeSquare-square-13"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -885,7 +885,7 @@ exports[`Extra matches snapshot 1`] = `
           </div>
         </div>
         <div
-          className="MuiGrid-root TicTacToeGame-gameInfo-130"
+          className="MuiGrid-root TicTacToeGame-gameInfo-12"
         >
           <div>
             <h6
@@ -982,7 +982,7 @@ exports[`Extra matches snapshot 1`] = `
             Recommended Sites Card
           </a>
           <div
-            className="RecommendedSitesCard-expansionHeaderContainer-267"
+            className="RecommendedSitesCard-expansionHeaderContainer-17"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -1077,7 +1077,7 @@ exports[`Extra matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-269"
+    className="InteractionCard-root-19"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -1093,23 +1093,23 @@ exports[`Extra matches snapshot 1`] = `
         className="MuiCardContent-root"
       >
         <div
-          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-270 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root MuiCard-root PrideSwitch-flatCard-20 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
-            className="PrideSwitch-prideSwitchContent-271"
+            className="PrideSwitch-prideSwitchContent-21"
           >
             <h5
-              className="MuiTypography-root PrideSwitch-prideTitle-272 MuiTypography-h5"
+              className="MuiTypography-root PrideSwitch-prideTitle-22 MuiTypography-h5"
             >
               Pride
             </h5>
             <span
-              className="MuiSwitch-root PrideSwitch-prideSwitch-273"
+              className="MuiSwitch-root PrideSwitch-prideSwitch-23"
             >
               <span
                 aria-describedby={null}
                 aria-disabled={false}
-                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-286 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-24 MuiSwitch-switchBase MuiSwitch-colorSecondary"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onDragLeave={[Function]}
@@ -1132,7 +1132,7 @@ exports[`Extra matches snapshot 1`] = `
                   <input
                     aria-label="primary checkbox"
                     checked={false}
-                    className="PrivateSwitchBase-input-289 MuiSwitch-input"
+                    className="PrivateSwitchBase-input-27 MuiSwitch-input"
                     onChange={[Function]}
                     type="checkbox"
                   />
@@ -1171,10 +1171,10 @@ exports[`Extra matches snapshot 1`] = `
           </a>
         </div>
         <div
-          className="LikeButton-root-296"
+          className="LikeButton-root-28"
         >
           <div
-            className="LikeButton-likeButtonWrapper-297"
+            className="LikeButton-likeButtonWrapper-29"
           >
             <button
               aria-describedby={null}
@@ -1216,10 +1216,10 @@ exports[`Extra matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-298 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-30 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-299 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-31 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

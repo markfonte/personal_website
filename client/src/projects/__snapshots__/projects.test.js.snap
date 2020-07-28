@@ -53,7 +53,7 @@ exports[`Projects matches snapshot 1`] = `
             Amazon Card
           </a>
           <div
-            className="AmazonCard-expansionHeaderContainer-34"
+            className="AmazonCard-expansionHeaderContainer-4"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -75,13 +75,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="Amazon logo"
-              className="MuiCardMedia-root AmazonCard-amazonLogo-32 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root AmazonCard-amazonLogo-2 MuiCardMedia-media MuiCardMedia-img"
               src="/images/amazon_logo.svg"
               title="Amazon logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root AmazonCard-tags-33 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root AmazonCard-tags-3 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -116,7 +116,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root AmazonCard-tags-33 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root AmazonCard-tags-3 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -257,7 +257,7 @@ exports[`Projects matches snapshot 1`] = `
             J.P. Morgan Card
           </a>
           <div
-            className="JPMorganCard-expansionHeaderContainer-154"
+            className="JPMorganCard-expansionHeaderContainer-9"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -279,13 +279,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="J.P. Morgan Chase logo"
-              className="MuiCardMedia-root JPMorganCard-jpMorganLogo-151 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root JPMorganCard-jpMorganLogo-6 MuiCardMedia-media MuiCardMedia-img"
               src="/images/jpmorgan_logo.svg"
               title="J.P. Morgan Chase logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-8 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -320,7 +320,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-8 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -348,7 +348,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-8 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -376,7 +376,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-8 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -404,7 +404,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-8 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -432,7 +432,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-8 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -460,7 +460,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-153 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root JPMorganCard-tags-8 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -601,7 +601,7 @@ exports[`Projects matches snapshot 1`] = `
             Learning A-Z Card
           </a>
           <div
-            className="LAZCard-expansionHeaderContainer-160"
+            className="LAZCard-expansionHeaderContainer-15"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -623,13 +623,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="Learning A-Z logo"
-              className="MuiCardMedia-root LAZCard-lazLogo-156 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root LAZCard-lazLogo-11 MuiCardMedia-media MuiCardMedia-img"
               src="/images/laz_logo.svg"
               title="Learning A-Z logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -664,7 +664,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -692,7 +692,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -720,7 +720,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -748,7 +748,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -776,7 +776,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -804,7 +804,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -832,7 +832,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root LAZCard-tags-159 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root LAZCard-tags-14 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -973,7 +973,7 @@ exports[`Projects matches snapshot 1`] = `
             Completed Coursework Card
           </a>
           <div
-            className="CompletedCourseworkCard-expansionHeaderContainer-163"
+            className="CompletedCourseworkCard-expansionHeaderContainer-18"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -995,13 +995,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="University of Michigan banner logo"
-              className="MuiCardMedia-root CompletedCourseworkCard-universityOfMichiganLogo-161 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root CompletedCourseworkCard-universityOfMichiganLogo-16 MuiCardMedia-media MuiCardMedia-img"
               src="images/university_of_michigan_logo.svg"
               title="University of Michigan banner logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root CompletedCourseworkCard-tags-162 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root CompletedCourseworkCard-tags-17 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1149,7 +1149,7 @@ exports[`Projects matches snapshot 1`] = `
             MI Symptoms Card
           </a>
           <div
-            className="MISymptomsCard-expansionHeaderContainer-167"
+            className="MISymptomsCard-expansionHeaderContainer-22"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -1171,13 +1171,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="MI Symptoms logo"
-              className="MuiCardMedia-root MISymptomsCard-miSymptomsLogo-168 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root MISymptomsCard-miSymptomsLogo-23 MuiCardMedia-media MuiCardMedia-img"
               src="/images/mi_symptoms_logo.png"
               title="MI Symptoms logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-166 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-21 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1212,7 +1212,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-166 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-21 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1240,7 +1240,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-166 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-21 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1268,7 +1268,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-166 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-21 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1296,7 +1296,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-166 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-21 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1324,7 +1324,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-166 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MISymptomsCard-tags-21 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1465,7 +1465,7 @@ exports[`Projects matches snapshot 1`] = `
             MHacks 12 Card
           </a>
           <div
-            className="MHacks12Card-expansionHeaderContainer-173"
+            className="MHacks12Card-expansionHeaderContainer-28"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -1487,13 +1487,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="MHacks 12 banner"
-              className="MuiCardMedia-root MHacks12Card-mhacks12Banner-169 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root MHacks12Card-mhacks12Banner-24 MuiCardMedia-media MuiCardMedia-img"
               src="/images/mhacks_banner.png"
               title="MHacks 12 banner"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-172 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-27 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1528,7 +1528,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-172 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-27 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1556,7 +1556,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-172 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-27 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1584,7 +1584,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-172 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-27 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1612,7 +1612,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-172 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-27 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1640,7 +1640,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-172 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root MHacks12Card-tags-27 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1781,7 +1781,7 @@ exports[`Projects matches snapshot 1`] = `
             WalkLens Card
           </a>
           <div
-            className="WalklensCard-expansionHeaderContainer-177"
+            className="WalklensCard-expansionHeaderContainer-32"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -1803,13 +1803,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="WalkLens logo"
-              className="MuiCardMedia-root WalklensCard-walklensLogo-175 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root WalklensCard-walklensLogo-30 MuiCardMedia-media MuiCardMedia-img"
               src="/images/walklens_logo.svg"
               title="WalkLens logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-176 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-31 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1844,7 +1844,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-176 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-31 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1872,7 +1872,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-176 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-31 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1900,7 +1900,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-176 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-31 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1928,7 +1928,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-176 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root WalklensCard-tags-31 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2069,7 +2069,7 @@ exports[`Projects matches snapshot 1`] = `
             SpartHack V Card
           </a>
           <div
-            className="Spartahack5Card-expansionHeaderContainer-181"
+            className="Spartahack5Card-expansionHeaderContainer-36"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -2091,13 +2091,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="SpartaHack V banner"
-              className="MuiCardMedia-root Spartahack5Card-spartahack5Banner-178 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root Spartahack5Card-spartahack5Banner-33 MuiCardMedia-media MuiCardMedia-img"
               src="/images/spartahack_banner.png"
               title="SpartaHack V banner"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2132,7 +2132,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2160,7 +2160,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2188,7 +2188,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2216,7 +2216,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2244,7 +2244,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2272,7 +2272,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2300,7 +2300,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-180 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Spartahack5Card-tags-35 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2441,7 +2441,7 @@ exports[`Projects matches snapshot 1`] = `
             Clipp Card
           </a>
           <div
-            className="ClippCard-expansionHeaderContainer-187"
+            className="ClippCard-expansionHeaderContainer-42"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -2463,13 +2463,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="Clipp logo"
-              className="MuiCardMedia-root ClippCard-clippLogo-184 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root ClippCard-clippLogo-39 MuiCardMedia-media MuiCardMedia-img"
               src="/images/clipp_logo.svg"
               title="Clipp logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root ClippCard-tags-186 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root ClippCard-tags-41 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2504,7 +2504,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root ClippCard-tags-186 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root ClippCard-tags-41 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2532,7 +2532,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root ClippCard-tags-186 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root ClippCard-tags-41 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2560,7 +2560,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root ClippCard-tags-186 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root ClippCard-tags-41 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2588,7 +2588,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root ClippCard-tags-186 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root ClippCard-tags-41 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2729,7 +2729,7 @@ exports[`Projects matches snapshot 1`] = `
             Road Mapper Card
           </a>
           <div
-            className="RoadMapperCard-expansionHeaderContainer-190"
+            className="RoadMapperCard-expansionHeaderContainer-45"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -2751,13 +2751,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="Road Mapper logo"
-              className="MuiCardMedia-root RoadMapperCard-roadMapperLogo-191 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root RoadMapperCard-roadMapperLogo-46 MuiCardMedia-media MuiCardMedia-img"
               src="images/road_mapper_logo.png"
               title="Road Mapper logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-189 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-44 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2792,7 +2792,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-189 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-44 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2820,7 +2820,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-189 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-44 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2848,7 +2848,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-189 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-44 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2876,7 +2876,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-189 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-44 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2904,7 +2904,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-189 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RoadMapperCard-tags-44 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3045,7 +3045,7 @@ exports[`Projects matches snapshot 1`] = `
             RevolutionUC 8 Card
           </a>
           <div
-            className="RevolutionUC8Card-expansionHeaderContainer-195"
+            className="RevolutionUC8Card-expansionHeaderContainer-50"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -3067,13 +3067,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="RevolutionUC 8 logo"
-              className="MuiCardMedia-root RevolutionUC8Card-revolutionuc8_logo-192 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root RevolutionUC8Card-revolutionuc8_logo-47 MuiCardMedia-media MuiCardMedia-img"
               src="/images/revolutionuc_logo.png"
               title="RevolutionUC 8 logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-194 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-49 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3108,7 +3108,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-194 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-49 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3136,7 +3136,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-194 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-49 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3164,7 +3164,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-194 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root RevolutionUC8Card-tags-49 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3305,7 +3305,7 @@ exports[`Projects matches snapshot 1`] = `
             Grizzhacks 3 Card
           </a>
           <div
-            className="Grizzhacks3Card-expansionHeaderContainer-199"
+            className="Grizzhacks3Card-expansionHeaderContainer-54"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -3327,13 +3327,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="GrizzHacks 3 banner"
-              className="MuiCardMedia-root Grizzhacks3Card-grizzhacks3Banner-196 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root Grizzhacks3Card-grizzhacks3Banner-51 MuiCardMedia-media MuiCardMedia-img"
               src="/images/grizzhacks_banner.png"
               title="GrizzHacks 3 banner"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-198 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-53 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3368,7 +3368,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-198 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-53 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3396,7 +3396,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-198 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-53 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3424,7 +3424,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-198 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root Grizzhacks3Card-tags-53 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3565,7 +3565,7 @@ exports[`Projects matches snapshot 1`] = `
             Spotlight Card
           </a>
           <div
-            className="SpotlightCard-expansionHeaderContainer-204"
+            className="SpotlightCard-expansionHeaderContainer-59"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -3587,13 +3587,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="Spotlight logo"
-              className="MuiCardMedia-root SpotlightCard-spotlightLogo-205 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root SpotlightCard-spotlightLogo-60 MuiCardMedia-media MuiCardMedia-img"
               src="/images/spotlight_logo.png"
               title="Spotlight logo"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-203 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-58 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3628,7 +3628,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-203 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-58 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3656,7 +3656,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-203 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-58 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3684,7 +3684,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-203 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-58 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3712,7 +3712,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-203 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-58 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3740,7 +3740,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-203 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-58 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3768,7 +3768,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-203 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root SpotlightCard-tags-58 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3909,7 +3909,7 @@ exports[`Projects matches snapshot 1`] = `
             Doggie Doodles Card
           </a>
           <div
-            className="DoggieDoodlesCard-expansionHeaderContainer-208"
+            className="DoggieDoodlesCard-expansionHeaderContainer-63"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -3931,13 +3931,13 @@ exports[`Projects matches snapshot 1`] = `
             </div>
             <img
               alt="Doggie Doodles banner"
-              className="MuiCardMedia-root DoggieDoodlesCard-doggieDoodlesBanner-206 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root DoggieDoodlesCard-doggieDoodlesBanner-61 MuiCardMedia-media MuiCardMedia-img"
               src="/images/doggie_doodles_banner.jpg"
               title="Doggie Doodles banner"
             />
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-207 MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-62 MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -3972,7 +3972,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-207 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-62 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -4000,7 +4000,7 @@ exports[`Projects matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-207 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root DoggieDoodlesCard-tags-62 MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -4103,7 +4103,7 @@ exports[`Projects matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="InteractionCard-root-212"
+    className="InteractionCard-root-67"
   >
     <div
       className="MuiPaper-root MuiCard-root MuiPaper-elevation8 MuiPaper-rounded"
@@ -4120,10 +4120,10 @@ exports[`Projects matches snapshot 1`] = `
       >
         <div />
         <div
-          className="LikeButton-root-214"
+          className="LikeButton-root-68"
         >
           <div
-            className="LikeButton-likeButtonWrapper-215"
+            className="LikeButton-likeButtonWrapper-69"
           >
             <button
               aria-describedby={null}
@@ -4165,10 +4165,10 @@ exports[`Projects matches snapshot 1`] = `
               />
             </button>
             <div
-              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-216 MuiPaper-elevation1 MuiPaper-rounded"
+              className="MuiPaper-root MuiCard-root LikeButton-captionRoot-70 MuiPaper-elevation1 MuiPaper-rounded"
             >
               <span
-                className="MuiTypography-root LikeButton-captionText-217 MuiTypography-caption MuiTypography-colorInherit"
+                className="MuiTypography-root LikeButton-captionText-71 MuiTypography-caption MuiTypography-colorInherit"
                 size="small"
               >
                 0

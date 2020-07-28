@@ -179,7 +179,7 @@ exports[`Home matches snapshot 1`] = `
             Welcome Card
           </a>
           <div
-            className="WelcomeCard-expansionHeaderContainer-56"
+            className="WelcomeCard-expansionHeaderContainer-9"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -201,7 +201,7 @@ exports[`Home matches snapshot 1`] = `
             </div>
             <img
               alt="Mark grad pic 1"
-              className="MuiCardMedia-root WelcomeCard-welcomeImage-57 MuiCardMedia-media MuiCardMedia-img"
+              className="MuiCardMedia-root WelcomeCard-welcomeImage-10 MuiCardMedia-media MuiCardMedia-img"
               src="/images/mark_grad_pic_1.jpg"
               title="Mark grad pic 1"
             />
@@ -318,7 +318,7 @@ exports[`Home matches snapshot 1`] = `
             Built With Table Card
           </a>
           <div
-            className="BuiltWithTableCard-expansionHeaderContainer-136"
+            className="BuiltWithTableCard-expansionHeaderContainer-15"
           >
             <div
               className="MuiCardHeader-root cardHeader"
@@ -340,7 +340,7 @@ exports[`Home matches snapshot 1`] = `
             </div>
             <div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -368,7 +368,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -396,7 +396,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -424,7 +424,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -452,7 +452,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -480,7 +480,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -508,7 +508,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -536,7 +536,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -564,7 +564,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -592,7 +592,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -620,7 +620,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -648,7 +648,7 @@ exports[`Home matches snapshot 1`] = `
                 />
               </div>
               <div
-                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-138 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root BuiltWithTableCard-tags-17 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -779,7 +779,7 @@ exports[`Home matches snapshot 1`] = `
       </div>
     </div>
     <div
-      className="MuiCardContent-root GlossaryCard-expansionPanel-170"
+      className="MuiCardContent-root GlossaryCard-expansionPanel-19"
     >
       <div
         className="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation4 MuiPaper-rounded"
@@ -814,7 +814,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Full Time Positions
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -944,7 +944,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Internships
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1074,7 +1074,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Startups
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1204,7 +1204,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Hackathon Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1334,7 +1334,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Class Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1464,7 +1464,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Android Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1594,7 +1594,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Firebase Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1724,7 +1724,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Java Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1854,7 +1854,7 @@ exports[`Home matches snapshot 1`] = `
             >
               JavaScript Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -1984,7 +1984,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Kotlin Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2114,7 +2114,7 @@ exports[`Home matches snapshot 1`] = `
             >
               Python Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2244,7 +2244,7 @@ exports[`Home matches snapshot 1`] = `
             >
               React Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -2374,7 +2374,7 @@ exports[`Home matches snapshot 1`] = `
             >
               React Native Projects
               <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-171 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
+                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
