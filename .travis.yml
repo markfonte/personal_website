@@ -12,6 +12,6 @@ cache:
 notifications:
     webhooks:
         urls:
-            - https://mark.fonte.com/webhook
+            - https://markfonte.dev/webhook
         on_success: always
         on_failure: never

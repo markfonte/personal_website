@@ -72,7 +72,7 @@ const DisplayError = (props) => {
       <Tooltip
         arrow
         title="Go to Contact page">
-        <Link color="secondary" href="https://mark.fonte.com/contact">
+        <Link color="secondary" href="https://markfonte.dev/contact">
         contact me
         </Link>
       </Tooltip>

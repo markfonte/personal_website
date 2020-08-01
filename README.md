@@ -1,4 +1,4 @@
-# [My website](https://mark.fonte.com)
+# [My website](https://markfonte.dev)
 ![GitHub release](https://img.shields.io/github/release/markfonte/personal_website) [![Build Status](https://travis-ci.org/markfonte/personal_website.svg?branch=master)](https://travis-ci.org/markfonte/personal_website) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e)
 
 ## Motivation
@@ -10,7 +10,7 @@ I don't like traditional résumés. They reduce a person's career accomplishment
 * Responsive design - one code base designed for mobile and desktop devices of any size
 * [Material-UI Card](https://material-ui.com/components/cards/#cards)-based content display
 * Subtle University of Michigan themes
-* And much more! [check it out](https://mark.fonte.com)
+* And much more! [check it out](https://markfonte.dev)
 
 
 ## Upcoming Features
