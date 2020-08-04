@@ -38,7 +38,6 @@ const styles = {
     margin: 'auto',
   },
   tag: {
-    marginLeft: '6px',
     display: 'flex',
     textAlign: 'center',
     alignItems: 'center',
@@ -47,7 +46,7 @@ const styles = {
   tagIcon: {
     maxHeight: '36px',
     width: 'auto',
-    margin: '8px',
+    marginRight: '12px',
   },
 };
 
