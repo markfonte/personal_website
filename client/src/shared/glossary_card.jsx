@@ -1,5 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import androidLogo from '../static/images/logos/android_logo.svg';
+import firebaseLogo from '../static/images/logos/firebase_logo.svg';
+import javaLogo from '../static/images/logos/java_logo.svg';
+import javascriptLogo from '../static/images/logos/javascript_logo.svg';
+import kotlinLogo from '../static/images/logos/kotlin_logo.svg';
+import pythonLogo from '../static/images/logos/python_logo.svg';
+import reactLogo from '../static/images/logos/react_logo.svg';
+import reactNativeLogo from '../static/images/logos/react_native_logo.svg';
 import {
   Card,
   CardContent,
@@ -11,7 +19,6 @@ import {
   List,
   ListItem,
   ListItemText,
-  Link,
   Typography,
   IconButton,
   Tooltip,
@@ -25,13 +32,22 @@ const styles = {
     justifyContent: 'center',
   },
   expansionPanel: {
-    maxWidth: 360,
+    maxWidth: 400,
     alignItems: 'center',
     justifyContent: 'center',
     margin: 'auto',
   },
-  tags: {
-    margin: '6px',
+  tag: {
+    marginLeft: '6px',
+    display: 'flex',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  tagIcon: {
+    maxHeight: '36px',
+    width: 'auto',
+    margin: '8px',
   },
 };
 
@@ -171,6 +187,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Android Projects',
+        icon: androidLogo,
         projects: [
           {
             cardId: 'laz',
@@ -201,6 +218,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Firebase Projects',
+        icon: firebaseLogo,
         projects: [
           {
             cardId: 'clipp',
@@ -226,6 +244,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Java Projects',
+        icon: javaLogo,
         projects: [
           {
             cardId: 'jpmorgan',
@@ -241,6 +260,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'JavaScript Projects',
+        icon: javascriptLogo,
         projects: [
           {
             cardId: 'clipp',
@@ -287,6 +307,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Kotlin Projects',
+        icon: kotlinLogo,
         projects: [
           {
             cardId: 'mhacks12',
@@ -312,6 +333,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Python Projects',
+        icon: pythonLogo,
         projects: [
           {
             cardId: 'road_mapper',
@@ -322,6 +344,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'React Projects',
+        icon: reactLogo,
         projects: [
           {
             cardId: 'jpmorgan',
@@ -337,6 +360,7 @@ class GlossaryCard extends React.Component {
         ],
       },
       {
+        icon: reactNativeLogo,
         tagName: 'React Native Projects',
         projects: [
           {
@@ -353,7 +377,7 @@ class GlossaryCard extends React.Component {
       },
     ];
     return (
-      <Card raised={true} className="card" style={{maxWidth: 450}}>
+      <Card raised={true} className="card" style={{maxWidth: 500}}>
         <a name="glossary_card" href="#glossary_card" className="gone">
             Glossary Card
         </a>
@@ -369,7 +393,7 @@ class GlossaryCard extends React.Component {
                 key={glossaryItem.tagName}
                 expanded={this.state.expanded===glossaryItem.tagName}
                 className={this.expansionPanel}
-                elevation={4}
+                elevation={1}
                 onChange={this.setExpanded(glossaryItem.tagName)}
                 TransitionProps={{unmountOnExit: true}}>
                 <AccordionSummary
@@ -385,31 +409,37 @@ class GlossaryCard extends React.Component {
                   aria-label={glossaryItem.tagName}
                   aria-controls={glossaryItem.tagName + '-content'}
                   id={glossaryItem.tagName + '-header'}>
-                  <Typography variant="h6" color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}>
-                    {glossaryItem.tagName} - <b>{glossaryItem.projects.length}</b>
-                    {/* <Chip
-                      className={classes.tags}
-                      color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
-                      variant={glossaryItem.type === 'Project' ? 'outlined' : 'outlined'}
-                      label={glossaryItem.projects.length}
-                      clickable/> */}
+                  <img
+                    src={glossaryItem.icon ? glossaryItem.icon : ''}
+                    className={classes.tagIcon}
+                    alt={glossaryItem.tagName + ' button'}
+                  />
+                  <Typography
+                    variant="h6"
+                    color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
+                    className={classes.tag}>
+                    {glossaryItem.tagName}
+                    {' '}
+                        ({glossaryItem.projects.length})
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <List component="nav" style={{margin: 'auto'}}>
+                  <List component="nav" style={{margin: 'auto', width: '100%'}}>
                     {
                       glossaryItem.projects.map((project, i) => (
-                        <ListItem key={project.cardName + i} button>
-                          <Link color="inherit"
-                            href={
-                                project.overrideLink ?
-                                    project.overrideLink :
-                                    '/projects#' + project.cardId + '_card'}>
-                            <ListItemText
-                              primaryTypographyProps={{color: 'secondary'}}
-                              primary={project.cardName}
-                              secondary={project.subtitle} />
-                          </Link>
+                        <ListItem
+                          component="a"
+                          button
+                          key={project.cardName + i}
+                          href={
+                            project.overrideLink ?
+                                project.overrideLink :
+                                '/projects#' + project.cardId + '_card'}
+                        >
+                          <ListItemText
+                            primaryTypographyProps={{color: 'secondary'}}
+                            primary={project.cardName}
+                            secondary={project.subtitle} />
                         </ListItem>
                       ))
                     }

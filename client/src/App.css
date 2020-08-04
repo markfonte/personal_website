@@ -68,3 +68,7 @@
     transform: rotate(360deg);
   }
 }
+
+img[src=""] {
+  display: none;
+}

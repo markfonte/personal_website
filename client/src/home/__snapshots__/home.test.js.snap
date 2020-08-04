@@ -752,7 +752,7 @@ exports[`Home matches snapshot 1`] = `
     className="MuiPaper-root MuiCard-root card MuiPaper-elevation8 MuiPaper-rounded"
     style={
       Object {
-        "maxWidth": 450,
+        "maxWidth": 500,
       }
     }
   >
@@ -780,7 +780,7 @@ exports[`Home matches snapshot 1`] = `
       className="MuiCardContent-root GlossaryCard-expansionPanel-19"
     >
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Full Time Positions-content"
@@ -807,14 +807,19 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Full Time Positions button"
+              className="GlossaryCard-tagIcon-21"
+              src=""
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Full Time Positions
-               - 
-              <b>
-                1
-              </b>
+               
+              (
+              1
+              )
             </h6>
           </div>
           <div
@@ -889,7 +894,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Internships-content"
@@ -916,14 +921,19 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Internships button"
+              className="GlossaryCard-tagIcon-21"
+              src=""
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Internships
-               - 
-              <b>
-                3
-              </b>
+               
+              (
+              3
+              )
             </h6>
           </div>
           <div
@@ -998,7 +1008,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Startups-content"
@@ -1025,14 +1035,19 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Startups button"
+              className="GlossaryCard-tagIcon-21"
+              src=""
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Startups
-               - 
-              <b>
-                4
-              </b>
+               
+              (
+              4
+              )
             </h6>
           </div>
           <div
@@ -1107,7 +1122,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Hackathon Projects-content"
@@ -1134,14 +1149,19 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Hackathon Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src=""
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Hackathon Projects
-               - 
-              <b>
-                4
-              </b>
+               
+              (
+              4
+              )
             </h6>
           </div>
           <div
@@ -1216,7 +1236,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Class Projects-content"
@@ -1243,14 +1263,19 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Class Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src=""
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Class Projects
-               - 
-              <b>
-                4
-              </b>
+               
+              (
+              4
+              )
             </h6>
           </div>
           <div
@@ -1325,7 +1350,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Android Projects-content"
@@ -1352,14 +1377,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Android Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Android Projects
-               - 
-              <b>
-                5
-              </b>
+               
+              (
+              5
+              )
             </h6>
           </div>
           <div
@@ -1434,7 +1468,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Firebase Projects-content"
@@ -1461,14 +1495,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Firebase Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Firebase Projects
-               - 
-              <b>
-                4
-              </b>
+               
+              (
+              4
+              )
             </h6>
           </div>
           <div
@@ -1543,7 +1586,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Java Projects-content"
@@ -1570,14 +1613,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Java Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Java Projects
-               - 
-              <b>
-                2
-              </b>
+               
+              (
+              2
+              )
             </h6>
           </div>
           <div
@@ -1652,7 +1704,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="JavaScript Projects-content"
@@ -1679,14 +1731,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="JavaScript Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               JavaScript Projects
-               - 
-              <b>
-                8
-              </b>
+               
+              (
+              8
+              )
             </h6>
           </div>
           <div
@@ -1761,7 +1822,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Kotlin Projects-content"
@@ -1788,14 +1849,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Kotlin Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Kotlin Projects
-               - 
-              <b>
-                4
-              </b>
+               
+              (
+              4
+              )
             </h6>
           </div>
           <div
@@ -1870,7 +1940,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="Python Projects-content"
@@ -1897,14 +1967,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="Python Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Python Projects
-               - 
-              <b>
-                1
-              </b>
+               
+              (
+              1
+              )
             </h6>
           </div>
           <div
@@ -1979,7 +2058,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="React Projects-content"
@@ -2006,14 +2085,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="React Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               React Projects
-               - 
-              <b>
-                2
-              </b>
+               
+              (
+              2
+              )
             </h6>
           </div>
           <div
@@ -2088,7 +2176,7 @@ exports[`Home matches snapshot 1`] = `
         </div>
       </div>
       <div
-        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation4 MuiPaper-rounded"
+        className="MuiPaper-root MuiAccordion-root MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           aria-controls="React Native Projects-content"
@@ -2115,14 +2203,23 @@ exports[`Home matches snapshot 1`] = `
           <div
             className="MuiAccordionSummary-content"
           >
+            <img
+              alt="React Native Projects button"
+              className="GlossaryCard-tagIcon-21"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+            />
             <h6
-              className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
+              className="MuiTypography-root GlossaryCard-tag-20 MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               React Native Projects
-               - 
-              <b>
-                2
-              </b>
+               
+              (
+              2
+              )
             </h6>
           </div>
           <div
