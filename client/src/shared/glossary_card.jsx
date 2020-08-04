@@ -12,7 +12,6 @@ import {
   ListItem,
   ListItemText,
   Link,
-  Chip,
   Typography,
   IconButton,
   Tooltip,
@@ -387,13 +386,13 @@ class GlossaryCard extends React.Component {
                   aria-controls={glossaryItem.tagName + '-content'}
                   id={glossaryItem.tagName + '-header'}>
                   <Typography variant="h6" color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}>
-                    {glossaryItem.tagName}
-                    <Chip
+                    {glossaryItem.tagName} - <b>{glossaryItem.projects.length}</b>
+                    {/* <Chip
                       className={classes.tags}
-                      color={glossaryItem.type === 'Project' ? 'secondary' : 'secondary'}
+                      color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
                       variant={glossaryItem.type === 'Project' ? 'outlined' : 'outlined'}
                       label={glossaryItem.projects.length}
-                      clickable/>
+                      clickable/> */}
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>

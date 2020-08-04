@@ -78,9 +78,7 @@ class Home extends React.Component {
           </MuiAlert>
         </Snackbar> */}
         <Typography className={classes.title} variant="h6">
-          Incoming
-
-          {' '}<Tooltip arrow placement="top" title="Go to Amazon Software Jobs page">
+          <Tooltip arrow placement="top" title="Go to Amazon Software Jobs page">
             <Link color="textSecondary" href={sdeAmazonLink}>
               <i>Software Development Engineer</i>
             </Link></Tooltip>{' '}

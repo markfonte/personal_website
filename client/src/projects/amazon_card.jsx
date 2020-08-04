@@ -50,6 +50,7 @@ class AmazonCard extends React.Component {
   render() {
     const {classes} = this.props;
     const amazonLink = `https://www.amazon.com/`;
+    const workspacesLink = `https://aws.amazon.com/workspaces/`;
 
     const tags = [
       {
@@ -90,8 +91,8 @@ class AmazonCard extends React.Component {
               className={classes.expansionHeaderContainer}>
               <CardHeader
                 className="cardHeader"
-                title="Amazon"
-                subheader="Software Engineer"
+                title="Amazon Web Services"
+                subheader="Software Development Engineer"
               />
               <CardMedia
                 className={classes.amazonLogo}
@@ -117,13 +118,19 @@ class AmazonCard extends React.Component {
           <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Typography variant="body1">
-                I will become a software engineer at
+                I am a software development engineer at
                 {' '}
                 <Link color="secondary" href={amazonLink}>
                 Amazon
                 </Link>
                 {' '}
-                in Seattle later this year. I can&#39;t wait!
+                currently, working for the
+                {' '}
+                <Link color="secondary" href={workspacesLink}>
+                Workspaces
+                </Link>
+                {' '}
+                team.
               </Typography>
             </CardContent>
           </AccordionDetails>
