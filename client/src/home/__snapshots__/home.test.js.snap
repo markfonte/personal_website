@@ -5,8 +5,6 @@ exports[`Home matches snapshot 1`] = `
   <h6
     className="MuiTypography-root Home-title-1 MuiTypography-h6"
   >
-    Incoming
-     
     <a
       aria-describedby={null}
       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorTextSecondary"
@@ -813,31 +811,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Full Time Positions
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  1
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                1
+              </b>
             </h6>
           </div>
           <div
@@ -943,31 +920,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Internships
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  3
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                3
+              </b>
             </h6>
           </div>
           <div
@@ -1073,31 +1029,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Startups
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  4
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                4
+              </b>
             </h6>
           </div>
           <div
@@ -1203,31 +1138,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Hackathon Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  4
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                4
+              </b>
             </h6>
           </div>
           <div
@@ -1333,31 +1247,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary"
             >
               Class Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  4
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                4
+              </b>
             </h6>
           </div>
           <div
@@ -1463,31 +1356,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Android Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  5
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                5
+              </b>
             </h6>
           </div>
           <div
@@ -1593,31 +1465,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Firebase Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  4
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                4
+              </b>
             </h6>
           </div>
           <div
@@ -1723,31 +1574,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Java Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  2
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                2
+              </b>
             </h6>
           </div>
           <div
@@ -1853,31 +1683,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               JavaScript Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  8
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                8
+              </b>
             </h6>
           </div>
           <div
@@ -1983,31 +1792,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Kotlin Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  4
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                4
+              </b>
             </h6>
           </div>
           <div
@@ -2113,31 +1901,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               Python Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  1
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                1
+              </b>
             </h6>
           </div>
           <div
@@ -2243,31 +2010,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               React Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  2
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                2
+              </b>
             </h6>
           </div>
           <div
@@ -2373,31 +2119,10 @@ exports[`Home matches snapshot 1`] = `
               className="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary"
             >
               React Native Projects
-              <div
-                className="MuiButtonBase-root MuiChip-root GlossaryCard-tags-20 MuiChip-colorSecondary MuiChip-clickableColorSecondary MuiChip-outlined MuiChip-outlinedSecondary MuiChip-clickable"
-                onBlur={[Function]}
-                onDragLeave={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  className="MuiChip-label"
-                >
-                  2
-                </span>
-                <span
-                  className="MuiTouchRipple-root"
-                />
-              </div>
+               - 
+              <b>
+                2
+              </b>
             </h6>
           </div>
           <div

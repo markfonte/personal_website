@@ -64,12 +64,12 @@ exports[`Projects matches snapshot 1`] = `
                 <span
                   className="MuiTypography-root MuiCardHeader-title MuiTypography-h5 MuiTypography-displayBlock"
                 >
-                  Amazon
+                  Amazon Web Services
                 </span>
                 <span
                   className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                 >
-                  Software Engineer
+                  Software Development Engineer
                 </span>
               </div>
             </div>
