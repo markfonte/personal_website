@@ -3,7 +3,7 @@
 
 ## Motivation
 
-I don't like traditional résumés. They reduce a person's career accomplishments down to one page of text - and hopefully contain enough buzzwords and key phrases to catch a recruiter's eye. So I decided to build a different résumé - one that showcases a bit more about who I actually am. It is filled with all kinds of buttons, games, switches, photos and screenshots to give people a better idea of what I am made of. It is also a sandbox for me to try new technologies and is always a work in progress. I hope you enjoy!
+I don't like traditional résumés. They reduce a person's career accomplishments down to one page of text - and hopefully contain enough buzzwords and key phrases to catch a recruiter's eye. So I decided to build a different résumé - one that showcases a bit more about who I actually am. It is filled with all kinds of buttons, games, switches, photos and screenshots to give people a better idea of what I am made of. It is also a sandbox for me to try new technologies and is always a work in progress. Enjoy!
 
 ## Features
 

@@ -1,0 +1,85 @@
+# Instructions for setting up dev environment on a new Windows 10 computer using WSL
+# Updated: Aug 4, 2020
+
+# First enable WSL by running this command in Powershell as Administrator:
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+# Restart Computer
+# Install Ubuntu from Microsoft Store
+# Open Ubuntu
+
+# Get basic updates for Ubuntu
+sudo apt-get update
+sudo apt-get upgrade
+
+# Generate ssh key (accept all defaults)
+ssh-keygen
+
+# Register ssh key on GitHub
+
+# Make directory for dev
+cd /mnt/c/Users/mark/
+mkdir dev
+cd dev/
+
+# Clone repo
+git@github.com:markfonte/personal_website.git
+
+# Node build tools
+sudo apt-get install build-essential
+
+# Install nvm from internet
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+
+# Reboot shell
+
+# Install node
+nvm install node
+node --version
+
+# Upgrade npm
+npm install -g npm
+
+# Install sqlite3 for api db script
+sudo apt install sqlite3
+
+# Install ruby for git hook
+sudo apt install ruby
+
+# Add default git config
+git config --global user.email "mark@markfonte.dev"
+git config --global user.name "Mark Fonte"
+
+# Install npm packages
+cd client/
+npm install
+cd ../api/
+npm install
+
+# Initialize database
+pwd # Output: /mnt/c/Users/mark/dev/personal_website/api/
+cd db/
+./initial_db_script create
+sqlite3 var/personal_website.sqlite3 < sql/update_5_20_2020.sql
+
+# Initialize .env variables
+cd ../client/
+cat .env.example # Copy output
+touch .env
+vim .env # Paste output and save
+
+# Add git hooks
+cd ../
+pwd # Output: /mnt/c/Users/mark/dev/personal_website/
+cat commit-msg-example # Copy output
+vim .git/hooks/commit-msg.sample # Paste output
+cat pre-commit-example # Copy output
+vim .git/hooks/pre-commit.sample # Paste output
+mv .git/hooks/commit-msg.sample .git/hooks/commit-msg
+mv .git/hooks/pre-commit.sample .git/hooks/pre-commit
+
+# Everything should work now! Running npm start in both the api/ and client/ folders
+# at the same time should successfully run the dev version of the application.
+# All git operations should work now too.
+
+# Enjoy!
