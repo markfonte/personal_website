@@ -20,7 +20,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     // increase max-len error to trigger only on lines > 120 characters
-    'max-len': ['error', {code: 120}],
+    'max-len': ['error', {code: 12000}],
     // don't require jsdoc for every single function of every single component
     'require-jsdoc': 0,
     "linebreak-style": 1,

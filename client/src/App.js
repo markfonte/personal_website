@@ -9,6 +9,7 @@ import Projects from './projects/projects.jsx';
 import Extra from './extra/extra.jsx';
 import Contact from './contact/contact.jsx';
 import Home from './home/home.jsx';
+import Blog from './blog/blog.jsx';
 import Footer from './footer/footer.jsx';
 import LinkStyle from '@material-ui/core/Link';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
@@ -31,9 +32,10 @@ const setCookie = require('./shared/util/cookies.js').setCookie;
 
 const routes = [
   {name: 'Home', path: '/', index: 0},
-  {name: 'Projects', path: '/projects', index: 1},
-  {name: 'Extra', path: '/extra', index: 2},
-  {name: 'Contact', path: '/contact', index: 3},
+  {name: 'My Thoughts', path: '/blog', index: 1},
+  {name: 'Projects', path: '/projects', index: 2},
+  {name: 'Extra', path: '/extra', index: 3},
+  {name: 'Contact', path: '/contact', index: 4},
 ];
 
 const darkTheme = createMuiTheme({
@@ -253,6 +255,7 @@ export class App extends React.Component {
 
             <Route path="/" exact component={Home} />
             <Route path="/home" component={Home} />
+            <Route path="/blog" component={Blog} />
             <Route path="/projects" component={Projects} />
             <Route path="/extra" component={Extra} />
             <Route path="/contact" component={Contact} />
