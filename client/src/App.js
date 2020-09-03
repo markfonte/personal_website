@@ -44,6 +44,10 @@ const darkTheme = createMuiTheme({
     secondary: {
       main: '#FFCb05', // maize
     },
+    background: {
+      default: '#212121',
+      paper: '#313131',
+    },
   },
 });
 
