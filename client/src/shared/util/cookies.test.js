@@ -1,16 +1,16 @@
-const cookiesjs = require ('./cookies.js');
+const cookiesjs = require('./cookies.js');
 
 test('a cookie that does not exist', () => {
-    const getCookie = cookiesjs.getCookie;
-    const setCookie = cookiesjs.setCookie;
+  const getCookie = cookiesjs.getCookie;
+  const setCookie = cookiesjs.setCookie;
 
-    expect(getCookie("andjsk")).toBe('');
+  expect(getCookie('andjsk')).toBe('');
 
-    setCookie("andjsk", "CookieValue", 365);
+  setCookie('andjsk', 'CookieValue', 365);
 
-    expect(getCookie("andjsk")).toBe('CookieValue');
-    
-    setCookie("WithSpaces", " Space ", 365);
+  expect(getCookie('andjsk')).toBe('CookieValue');
 
-    expect(getCookie("WithSpaces")).toBe('Space');
+  setCookie('WithSpaces', ' Space ', 365);
+
+  expect(getCookie('WithSpaces')).toBe('Space');
 });
