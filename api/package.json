@@ -6,25 +6,25 @@
         "start": "node ./bin/www"
     },
     "dependencies": {
-        "clean-css": "^4.2.3",
+        "clean-css": "^5.1.1",
         "constantinople": "^4.0.1",
         "cookie-parser": "^1.4.5",
         "cors": "^2.8.5",
-        "debug": "^4.1.1",
+        "debug": "^4.3.1",
         "express": "^4.17.1",
         "http-errors": "^1.8.0",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "morgan": "^1.10.0",
-        "sqlite3": "^5.0.0",
+        "sqlite3": "^5.0.2",
         "eslint-utils": "^2.1.0"
     },
     "devDependencies": {
-        "eslint": "^7.5.0",
+        "eslint": "^7.22.0",
         "eslint-config-google": "^0.14.0",
-        "eslint-plugin-react": "^7.20.5",
-        "react-test-renderer": "^16.13.1",
-        "react": "^16.13.1",
-        "acorn": "^7.3.1",
-        "uglify-js": "^3.10.0"
+        "eslint-plugin-react": "^7.22.0",
+        "react-test-renderer": "^17.0.1",
+        "react": "^17.0.1",
+        "acorn": "^8.1.0",
+        "uglify-js": "^3.13.1"
     }
 }
