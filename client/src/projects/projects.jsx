@@ -1,23 +1,25 @@
-import React from 'react';
-import LAZCard from './laz_card.jsx';
-import RevolutionUC8Card from './revolutionuc8_card.jsx';
-import Spartahack5Card from './spartahack5_card.jsx';
-import Grizzhacks3Card from './grizzhacks3_card.jsx';
-import CompletedCourseworkCard from './completed_coursework_card.jsx';
-import {Typography} from '@material-ui/core';
-import InteractionCard from '../shared/interaction_card.jsx';
-import SpotlightCard from './spotlight_card.jsx';
-import DoggieDoodlesCard from './doggie_doodles_card.jsx';
-import JPMorganCard from './jpmorgan_card.jsx';
-import RoadMapper from './road_mapper_card.jsx';
-import MISymptomsCard from './mi_symptoms_card.jsx';
-import AmazonCard from './amazon_card.jsx';
+import React, {lazy, Suspense} from 'react';
+import {Typography, CircularProgress} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
-import MHacks12Card from './mhacks12_card.jsx';
-import WalklensCard from './walklens_card.jsx';
-import ClippCard from './clipp_card.jsx';
 import MetaTags from 'react-meta-tags';
+const LAZCard = lazy(() => import('./laz_card.jsx'));
+const RevolutionUC8Card = lazy(() => import('./revolutionuc8_card.jsx'));
+const Spartahack5Card = lazy(() => import('./spartahack5_card.jsx'));
+const Grizzhacks3Card = lazy(() => import('./grizzhacks3_card.jsx'));
+const CompletedCourseworkCard = lazy(() => import('./completed_coursework_card.jsx'));
+const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
+const SpotlightCard = lazy(() => import('./spotlight_card.jsx'));
+const DoggieDoodlesCard = lazy(() => import('./doggie_doodles_card.jsx'));
+const JPMorganCard = lazy(() => import('./jpmorgan_card.jsx'));
+const RoadMapperCard = lazy(() => import('./road_mapper_card.jsx'));
+const MISymptomsCard = lazy(() => import('./mi_symptoms_card.jsx'));
+const AmazonCard = lazy(() => import('./amazon_card.jsx'));
+const MHacks12Card = lazy(() => import('./mhacks12_card.jsx'));
+const WalklensCard = lazy(() => import('./walklens_card.jsx'));
+const ClippCard = lazy(() => import('./clipp_card.jsx'));
+
+const renderLoader = () => <CircularProgress color="secondary" />;
 
 const styles = {
   title: {
@@ -45,21 +47,23 @@ class Projects extends React.Component {
               Click to expand/collapse cards
           </b>
         </Typography>
-        <AmazonCard />
-        <JPMorganCard />
-        <LAZCard />
-        <CompletedCourseworkCard />
-        <MISymptomsCard />
-        <MHacks12Card />
-        <WalklensCard />
-        <Spartahack5Card />
-        <ClippCard />
-        <RoadMapper />
-        <RevolutionUC8Card />
-        <Grizzhacks3Card />
-        <SpotlightCard />
-        <DoggieDoodlesCard />
-        <InteractionCard pagename="projects" />
+        <Suspense fallback={renderLoader()}>
+          <AmazonCard />
+          <JPMorganCard />
+          <LAZCard />
+          <CompletedCourseworkCard />
+          <MISymptomsCard />
+          <MHacks12Card />
+          <WalklensCard />
+          <Spartahack5Card />
+          <ClippCard />
+          <RoadMapperCard />
+          <RevolutionUC8Card />
+          <Grizzhacks3Card />
+          <SpotlightCard />
+          <DoggieDoodlesCard />
+          <InteractionCard pagename="projects" />
+        </Suspense>
       </div>
     );
   }

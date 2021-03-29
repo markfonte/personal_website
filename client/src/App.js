@@ -216,12 +216,6 @@ export class App extends React.Component {
           {rainbowHeader}
           <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
             <WbSunny />
-            {/* <img
-              className={classes.toggleThemeIcon}
-              src={this.state.themeIcon}
-              onClick={this.toggleTheme}
-              alt="Toggle light/dark mode"
-            /> */}
           </Tooltip>
           <Router>
             <picture>
