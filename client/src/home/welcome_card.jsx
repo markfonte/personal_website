@@ -245,9 +245,9 @@ class WelcomeCard extends React.Component {
                 </Tooltip>
 
                   . Please reach out with
-                  suggestions, questions, anything! My door is always open.
+                  suggestions, questions; anything!
               </Typography>
-              <Accordion style={{marginBottom: 16}}>
+              {/* <Accordion style={{marginBottom: 16}}>
                 <div
                   className={classes.expansionHeaderContainer}>
                   <AccordionSummary
@@ -284,7 +284,7 @@ class WelcomeCard extends React.Component {
                     the book on this website in the months to come.
                   </Typography>
                 </AccordionDetails>
-              </Accordion>
+              </Accordion> */}
 
               <GridList className={classes.photoGrid} cellHeight="auto">
                 {feedData.map((feedDatum) => (
