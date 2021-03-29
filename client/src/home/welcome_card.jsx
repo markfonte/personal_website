@@ -88,19 +88,22 @@ class WelcomeCard extends React.Component {
 
     const feedData = [
       {
+        postId: 'CEAyAX-AGaP/',
+      },
+      {
+        postId: 'CIMZFGagicb/',
+      },
+      {
+        postId: 'CBZMXQRgJz5/',
+      },
+      {
         postId: 'B_yokGTgNUK/',
       },
       {
-        postId: 'B9K_P5AAQp6/',
+        postId: 'CLfeOKCs0SJ/',
       },
       {
         postId: 'B6RFvKXA69I/',
-      },
-      {
-        postId: 'Bz1m6oGgh4j/',
-      },
-      {
-        postId: 'BZ-SbmLBhhk/',
       },
     ];
     const lightTheme = getCookie('app_theme') === 'light_theme';
@@ -283,7 +286,7 @@ class WelcomeCard extends React.Component {
                 </AccordionDetails>
               </Accordion>
 
-              <GridList className={classes.photoGrid} cellHeight="auto" cols={1.1}>
+              <GridList className={classes.photoGrid} cellHeight="auto">
                 {feedData.map((feedDatum) => (
                   <GridListTile key={feedDatum.postId} className={classes.photoGridTile}>
                     <InstagramPost postId={feedDatum.postId}/>
