@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import {
   Typography,
   Card,
@@ -10,15 +10,18 @@ import {
   IconButton,
   Tooltip,
   CardActions,
+  CircularProgress,
 } from '@material-ui/core';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
-import InteractionCard from '../shared/interaction_card.jsx';
+const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
 import ShareIcon from '@material-ui/icons/Share';
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import MetaTags from 'react-meta-tags';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+const renderLoader = () => <CircularProgress color="secondary" />;
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -315,7 +318,9 @@ I also make the case that, as long as employers are going to do what is in their
             </CardActions>
           </Card>
         ))}
-        <InteractionCard pagename="blog" />
+        <Suspense fallback={renderLoader()}>
+          <InteractionCard pagename="blog" />
+        </Suspense>
       </div>
     );
   }

@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import PropTypes from 'prop-types';
-import BuiltWithTableCard from './built_with_table_card.jsx';
-import WelcomeCard from './welcome_card.jsx';
-import {Typography, Link, Tooltip} from '@material-ui/core';
+const BuiltWithTableCard = lazy(() => import('./built_with_table_card.jsx'));
+const WelcomeCard = lazy(() => import('./welcome_card.jsx'));
+import {Typography, Link, Tooltip, CircularProgress} from '@material-ui/core';
 import {withStyles} from '@material-ui/styles';
 import MetaTags from 'react-meta-tags';
-import GlossaryCard from '../shared/glossary_card.jsx';
+const GlossaryCard = lazy(() => import('../shared/glossary_card.jsx'));
+
+const renderLoader = () => <CircularProgress color="secondary" />;
 
 const getCookie = require('../shared/util/cookies.js').getCookie;
 
@@ -127,9 +129,11 @@ class Home extends React.Component {
 
           development
         </Typography>
-        <WelcomeCard />
-        <BuiltWithTableCard />
-        <GlossaryCard />
+        <Suspense fallback={renderLoader()}>
+          <WelcomeCard />
+          <BuiltWithTableCard />
+          <GlossaryCard />
+        </Suspense>
       </div>
     );
   }

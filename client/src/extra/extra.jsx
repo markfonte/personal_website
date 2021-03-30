@@ -1,14 +1,14 @@
-import React from 'react';
-import TicTacToeCard from './tic_tac_toe_card.jsx';
-import GimbleCard from './gimble_card.jsx';
-// import CurrentBooksCard from './current_books_card.jsx';
-// import CompletedBooksCard from './completed_books_card.jsx';
-import RecommendedSitesCard from './recommended_sites_card.jsx';
-import {Typography} from '@material-ui/core';
-import InteractionCard from '../shared/interaction_card.jsx';
+import React, {lazy, Suspense} from 'react';
+import {Typography, CircularProgress} from '@material-ui/core';
+const TicTacToeCard = lazy(() => import('./tic_tac_toe_card.jsx'));
+const GimbleCard = lazy(() => import('./gimble_card.jsx'));
+const RecommendedSitesCard = lazy(() => import('./recommended_sites_card.jsx'));
+const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import MetaTags from 'react-meta-tags';
+
+const renderLoader = () => <CircularProgress color="secondary" />;
 
 const styles = {};
 
@@ -28,12 +28,12 @@ class Extra extends React.Component {
               Click to expand/collapse cards
           </b>
         </Typography>
-        <GimbleCard />
-        <TicTacToeCard />
-        {/* <CurrentBooksCard />
-        <CompletedBooksCard /> */}
-        <RecommendedSitesCard />
-        <InteractionCard pagename="extra" />
+        <Suspense fallback={renderLoader()}>
+          <GimbleCard />
+          <TicTacToeCard />
+          <RecommendedSitesCard />
+          <InteractionCard pagename="extra" />`
+        </Suspense>
       </div>
     );
   }
