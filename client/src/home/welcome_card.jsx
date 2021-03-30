@@ -286,7 +286,7 @@ class WelcomeCard extends React.Component {
                 </AccordionDetails>
               </Accordion> */}
 
-              <GridList className={classes.photoGrid} cellHeight="auto">
+              <GridList className={classes.photoGrid} cellHeight="auto" cols="auto">
                 {feedData.map((feedDatum) => (
                   <GridListTile key={feedDatum.postId} className={classes.photoGridTile}>
                     <InstagramPost postId={feedDatum.postId}/>
