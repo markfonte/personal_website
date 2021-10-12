@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import profilePicture
-  from './static/images/photos/mark_circle.webp';
+from './static/images/photos/mark_circle.webp';
 import profilePictureFallback
-  from './static/images/photos/mark_circle.png';
+from './static/images/photos/mark_circle.png';
 import Projects from './projects/projects.jsx';
 import Extra from './extra/extra.jsx';
 import Contact from './contact/contact.jsx';

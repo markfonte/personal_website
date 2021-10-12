@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import reactLogo from '../static/vectors/react_logo.svg';
 import universityOfMichiganLogoSmall
-  from '../static/vectors/university_of_michigan_logo_small.svg';
+from '../static/vectors/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
 import {Typography, Link, Tooltip, Button} from '@material-ui/core';
 import timestamp from '../commit_timestamp.js';

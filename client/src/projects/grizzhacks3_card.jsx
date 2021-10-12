@@ -20,14 +20,14 @@ import congoaiLogo from '../static/images/logos/congoai_logo.svg';
 import PropTypes from 'prop-types';
 
 import congoaiScreenshotOne from
-  '../static/images/screenshots/congoai_screenshot_1.webp';
+'../static/images/screenshots/congoai_screenshot_1.webp';
 import congoaiScreenshotOneFallback from
-  '../static/images/screenshots/congoai_screenshot_1.jpg';
+'../static/images/screenshots/congoai_screenshot_1.jpg';
 
 import congoaiDemoOne from
-  '../static/images/photos/congoai_demo_1.webp';
+'../static/images/photos/congoai_demo_1.webp';
 import congoaiDemoOneFallback from
-  '../static/images/photos/congoai_demo_1.jpg';
+'../static/images/photos/congoai_demo_1.jpg';
 
 const styles = {
   grizzhacks3Banner: {

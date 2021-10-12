@@ -23,9 +23,9 @@ import rockyTwo from '../static/images/photos/rocky_2.webp';
 import rockyTwoFallback from '../static/images/photos/rocky_2.jpg';
 
 import doggieDoodlesScreenshotOne
-  from '../static/images/screenshots/doggie_doodles_screenshot_1.webp';
+from '../static/images/screenshots/doggie_doodles_screenshot_1.webp';
 import doggieDoodlesScreenshotOneFallback
-  from '../static/images/screenshots/doggie_doodles_screenshot_1.png';
+from '../static/images/screenshots/doggie_doodles_screenshot_1.png';
 
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';

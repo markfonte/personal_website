@@ -1,6 +1,6 @@
 import React from 'react';
 import howWouldYouMoveMountFujiImage
-  from '../static/images/book_covers/how_would_you_move_mount_fuji.webp';
+from '../static/images/book_covers/how_would_you_move_mount_fuji.webp';
 import {
   Typography,
   Card,

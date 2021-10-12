@@ -1,9 +1,9 @@
 import React from 'react';
 
 import JPMorganScreenshotOne
-  from '../static/images/screenshots/jpmorgan_screenshot_1.webp';
+from '../static/images/screenshots/jpmorgan_screenshot_1.webp';
 import JPMorganScreenshotOneFallback
-  from '../static/images/screenshots/jpmorgan_screenshot_1.jpg';
+from '../static/images/screenshots/jpmorgan_screenshot_1.jpg';
 
 import {
   Typography,

@@ -1,18 +1,18 @@
 import React from 'react';
 import walklensScreenshotOne
-  from '../static/images/screenshots/walklens_screenshot_1.webp';
+from '../static/images/screenshots/walklens_screenshot_1.webp';
 import walklensScreenshotOneFallback
-  from '../static/images/screenshots/walklens_screenshot_1.jpg';
+from '../static/images/screenshots/walklens_screenshot_1.jpg';
 
 import walklensScreenshotTwo
-  from '../static/images/screenshots/walklens_screenshot_2.webp';
+from '../static/images/screenshots/walklens_screenshot_2.webp';
 import walklensScreenshotTwoFallback
-  from '../static/images/screenshots/walklens_screenshot_2.jpg';
+from '../static/images/screenshots/walklens_screenshot_2.jpg';
 
 import walklensScreenshotThree
-  from '../static/images/screenshots/walklens_screenshot_3.webp';
+from '../static/images/screenshots/walklens_screenshot_3.webp';
 import walklensScreenshotThreeFallback
-  from '../static/images/screenshots/walklens_screenshot_3.jpg';
+from '../static/images/screenshots/walklens_screenshot_3.jpg';
 
 import {
   Typography,
