@@ -1,8 +1,6 @@
 import React from 'react';
 import {CardContent,
   Card,
-  GridList,
-  GridListTile,
   withStyles,
   Typography,
   Accordion,
@@ -16,7 +14,6 @@ import {CardContent,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
-import InstagramPost from './instagram_post.jsx';
 
 const getCookie = require('../shared/util/cookies.js').getCookie;
 
@@ -86,26 +83,26 @@ class WelcomeCard extends React.Component {
     const androidDevLink = 'https://developer.android.com/';
     const gimbleLink = `https://gimbleacappella.com`;
 
-    const feedData = [
-      {
-        postId: 'CEAyAX-AGaP/',
-      },
-      {
-        postId: 'CIMZFGagicb/',
-      },
-      {
-        postId: 'CBZMXQRgJz5/',
-      },
-      {
-        postId: 'B_yokGTgNUK/',
-      },
-      {
-        postId: 'CLfeOKCs0SJ/',
-      },
-      {
-        postId: 'B6RFvKXA69I/',
-      },
-    ];
+    // const feedData = [
+    //   {
+    //     postId: 'CEAyAX-AGaP/',
+    //   },
+    //   {
+    //     postId: 'CIMZFGagicb/',
+    //   },
+    //   {
+    //     postId: 'CBZMXQRgJz5/',
+    //   },
+    //   {
+    //     postId: 'B_yokGTgNUK/',
+    //   },
+    //   {
+    //     postId: 'CLfeOKCs0SJ/',
+    //   },
+    //   {
+    //     postId: 'B6RFvKXA69I/',
+    //   },
+    // ];
     const lightTheme = getCookie('app_theme') === 'light_theme';
     const amazonColor = lightTheme ? 'amazonColorDark' : 'amazonColorLight';
     const michiganColor = lightTheme ? 'michiganColorDark' : 'michiganColorLight';
@@ -286,7 +283,7 @@ class WelcomeCard extends React.Component {
                 </AccordionDetails>
               </Accordion> */}
 
-              <GridList className={classes.photoGrid} cellHeight="auto" cols="auto">
+              {/* <GridList className={classes.photoGrid} cellHeight="auto" cols="auto">
                 {feedData.map((feedDatum) => (
                   <GridListTile key={feedDatum.postId} className={classes.photoGridTile}>
                     <InstagramPost postId={feedDatum.postId}/>
@@ -295,7 +292,7 @@ class WelcomeCard extends React.Component {
               </GridList>
               <Typography className={classes.scrollTip} variant="caption" color="textSecondary">
                   Scroll horizontally to view all photos!
-              </Typography>
+              </Typography> */}
             </CardContent>
           </AccordionDetails>
         </Accordion>
