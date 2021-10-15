@@ -44,7 +44,7 @@ I drew inspiration from many different sources when building my website. Some of
 *  Every mentor, coworker, project partner, boss, and friend that has helped me along my journey
 
 
-![Maintenance](https://img.shields.io/maintenance/yes/2020) ![Website](https://img.shields.io/website/https/mark.fonte.com)
+![Maintenance](https://img.shields.io/maintenance/yes/2021) ![Website](https://img.shields.io/website/https/mark.fonte.com)
  
 ![GitHub issues](https://img.shields.io/github/issues-raw/markfonte/personal_website) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/markfonte/personal_website)
 
