@@ -27,21 +27,6 @@ const styles = {
 };
 
 class Home extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       open: true,
-//     };
-//     this.handleClose = this.handleClose.bind(this);
-//   }
-
-  //   handleClose(event, reason) {
-  //     if (reason === 'clickaway') {
-  //       return;
-  //     }
-  //     this.setState({open: false});
-  //   }
-
   render() {
     const {classes} = this.props;
 
@@ -67,18 +52,6 @@ class Home extends React.Component {
             name="description"
             content="Incoming Software Development Engineer at Amazon · Student at the University of Michigan"/>
         </MetaTags>
-        {/* <Snackbar
-          open={isOpen}
-          onClose={this.handleClose}
-          TransitionComponent={Fade} >
-          <MuiAlert elevation={10} variant="filled" onClose={this.handleClose} severity="warning" >
-            <Link color="textPrimary"
-              href="https://trello.com/c/dAlQUBgH/145-145-webp-images-not-rendering-in-ios">
-                    Many images are not displaying on Apple devices at the moment.
-                    Stay tuned for a fix and click here for updates!
-            </Link>
-          </MuiAlert>
-        </Snackbar> */}
         <Typography className={classes.title} variant="h6">
           <Tooltip arrow placement="top" title="Go to Amazon Software Jobs page">
             <Link color="textSecondary" href={sdeAmazonLink}>
