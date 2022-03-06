@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import reactLogo from '../static/vectors/react_logo.svg';
 import universityOfMichiganLogoSmall
-from '../static/vectors/university_of_michigan_logo_small.svg';
+  from '../static/vectors/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
 import {Typography, Link, Tooltip, Button} from '@material-ui/core';
 import timestamp from '../commit_timestamp.js';
@@ -93,193 +93,193 @@ class Footer extends React.Component {
     this.checkForAPIHeartbeat = this.checkForAPIHeartbeat.bind(this);
   }
 
- abortController = new window.AbortController();
+  abortController = new window.AbortController();
 
- checkForAPIHeartbeat() {
-   const apiUrl = process.env.REACT_APP_API_URL + 'api_heartbeat';
-   fetch(apiUrl, {method: 'HEAD', signal: this.abortController.signal})
-       .then((res) => {
-         if (res.status === 200) {
-           let triggerReload = false;
-           if (this.state.serverCrashed === true) {
-             triggerReload = true; // back online! reload the page
-           }
-           this.setState({apiResponse: true, serverCrashed: false});
-           if (triggerReload === true) window.location.reload();
-         } else this.setState({apiResponse: false, serverCrashed: true});
-       })
-       .catch((err) => {
-         if (err.name === 'AbortError' || err.name === 'TypeError') {
-           return;
-         }
-         this.setState({apiResponse: false, serverCrashed: true});
-         console.log(err);
-       });
- }
+  checkForAPIHeartbeat() {
+    const apiUrl = process.env.REACT_APP_API_URL + 'api_heartbeat';
+    fetch(apiUrl, {method: 'HEAD', signal: this.abortController.signal})
+        .then((res) => {
+          if (res.status === 200) {
+            let triggerReload = false;
+            if (this.state.serverCrashed === true) {
+              triggerReload = true; // back online! reload the page
+            }
+            this.setState({apiResponse: true, serverCrashed: false});
+            if (triggerReload === true) window.location.reload();
+          } else this.setState({apiResponse: false, serverCrashed: true});
+        })
+        .catch((err) => {
+          if (err.name === 'AbortError' || err.name === 'TypeError') {
+            return;
+          }
+          this.setState({apiResponse: false, serverCrashed: true});
+          console.log(err);
+        });
+  }
 
- componentDidMount() {
-   this.checkForAPIHeartbeat();
-   const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
-   setInterval(
-       function() {
-         this.checkForAPIHeartbeat();
-       }.bind(this),
-       timeoutInterval
-       , 1000);
- }
+  componentDidMount() {
+    this.checkForAPIHeartbeat();
+    const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
+    setInterval(
+        function() {
+          this.checkForAPIHeartbeat();
+        }.bind(this),
+        timeoutInterval
+        , 1000);
+  }
 
- componentWillUnmount() {
-   clearInterval(1000);
-   this.abortController.abort();
- }
+  componentWillUnmount() {
+    clearInterval(1000);
+    this.abortController.abort();
+  }
 
- render() {
-   const {classes} = this.props;
-   const facebookLink = `https://www.facebook.com/mark.fonte.397`;
-   const githubLink = `https://github.com/markfonte`;
-   const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
-   const instagramLink = `https://www.instagram.com/mark_fonte21/`;
-   const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
-   const websiteGithubLink = `https://github.com/markfonte/personal_website`;
-   const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
-   const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
-   const travisCILink = `https://travis-ci.org/markfonte/personal_website`;
-   const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/master`;
-   const updatedDate = timestamp;
+  render() {
+    const {classes} = this.props;
+    const facebookLink = `https://www.facebook.com/mark.fonte.397`;
+    const githubLink = `https://github.com/markfonte`;
+    const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
+    const instagramLink = `https://www.instagram.com/mark_fonte21/`;
+    const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
+    const websiteGithubLink = `https://github.com/markfonte/personal_website`;
+    const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
+    const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
+    const travisCILink = `https://travis-ci.org/markfonte/personal_website`;
+    const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/master`;
+    const updatedDate = timestamp;
 
-   const buttons = [
-     {
-       name: 'Facebook',
-       logo: facebookLogo,
-       link: facebookLink,
-     },
-     {
-       name: 'Stack Overflow',
-       logo: stackOverflowLogo,
-       link: stackOverflowLink,
-     },
-     {
-       name: 'GitHub',
-       logo: githubLogo,
-       link: githubLink,
-     },
-     {
-       name: 'LinkedIn',
-       logo: linkedinLogo,
-       link: linkedinLink,
-     },
-     {
-       name: 'Instagram',
-       logo: instagramLogo,
-       link: instagramLink,
-     },
-     {
-       name: 'YouTube',
-       logo: youtubeLogo,
-       link: youtubeLink,
-     },
-   ];
-   return (
-     <footer>
-       <div className={classes.footerContainer}>
-         <div className={classes.iconBar}>
-           {buttons.map((button) => (
-             <Tooltip
-               key={button.name}
-               title={'Go to ' + button.name }
-               arrow>
-               <Button href={button.link}>
-                 <img
-                   src={button.logo}
-                   className={classes.buttons}
-                   alt={button.name + ' button'}
-                 />
-               </Button>
-             </Tooltip>
-           ))}
-         </div>
-         <div>
-           {this.state.apiResponse ?
+    const buttons = [
+      {
+        name: 'Facebook',
+        logo: facebookLogo,
+        link: facebookLink,
+      },
+      {
+        name: 'Stack Overflow',
+        logo: stackOverflowLogo,
+        link: stackOverflowLink,
+      },
+      {
+        name: 'GitHub',
+        logo: githubLogo,
+        link: githubLink,
+      },
+      {
+        name: 'LinkedIn',
+        logo: linkedinLogo,
+        link: linkedinLink,
+      },
+      {
+        name: 'Instagram',
+        logo: instagramLogo,
+        link: instagramLink,
+      },
+      {
+        name: 'YouTube',
+        logo: youtubeLogo,
+        link: youtubeLink,
+      },
+    ];
+    return (
+      <footer>
+        <div className={classes.footerContainer}>
+          <div className={classes.iconBar}>
+            {buttons.map((button) => (
+              <Tooltip
+                key={button.name}
+                title={'Go to ' + button.name }
+                arrow>
+                <Button href={button.link}>
+                  <img
+                    src={button.logo}
+                    className={classes.buttons}
+                    alt={button.name + ' button'}
+                  />
+                </Button>
+              </Tooltip>
+            ))}
+          </div>
+          <div>
+            {this.state.apiResponse ?
               <img src={reactLogo} className={classes.reactLogo} alt="React logo" /> :
               <DisplayError classes={classes} />}
-         </div>
-         <div style={{margin: 4}}>
-           <Typography variant="caption" color="textSecondary" >
+          </div>
+          <div style={{margin: 4}}>
+            <Typography variant="caption" color="textSecondary" >
               Last updated
-             {' '}
-             <Tooltip
-               arrow
-               placement="right"
-               title="Go to most recent commit on GitHub">
-               <Link color="secondary" href={commitHistoryLink}>
-                 <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
-                   {updatedDate}
-                 </Moment>
-               </Link>
-             </Tooltip>
-           </Typography>
-         </div>
-         <div style={{margin: 4}}>
-           <Tooltip
-             arrow
-             placement="right"
-             title="Go to source code on GitHub">
-             <Link
-               variant="caption"
-               color="textSecondary"
-               href={websiteGithubLink}
-             >
+              {' '}
+              <Tooltip
+                arrow
+                placement="right"
+                title="Go to most recent commit on GitHub">
+                <Link color="secondary" href={commitHistoryLink}>
+                  <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
+                    {updatedDate}
+                  </Moment>
+                </Link>
+              </Tooltip>
+            </Typography>
+          </div>
+          <div style={{margin: 4}}>
+            <Tooltip
+              arrow
+              placement="right"
+              title="Go to source code on GitHub">
+              <Link
+                variant="caption"
+                color="textSecondary"
+                href={websiteGithubLink}
+              >
               view source on github
-             </Link>
-           </Tooltip>
-         </div>
-         <div style={{margin: 4}}>
-           <Tooltip
-             arrow
-             placement="right"
-             title="Go to build history on Travis CI">
-             <Link
-               variant="caption"
-               color="textSecondary"
-               href={travisCILink}
-             >
+              </Link>
+            </Tooltip>
+          </div>
+          <div style={{margin: 4}}>
+            <Tooltip
+              arrow
+              placement="right"
+              title="Go to build history on Travis CI">
+              <Link
+                variant="caption"
+                color="textSecondary"
+                href={travisCILink}
+              >
                  view build history
-             </Link>
-           </Tooltip>
-         </div>
-         <div style={{margin: 4}}>
-           <Tooltip
-             arrow
-             placement="right"
-             title="Email me with website edit suggestions!">
-             <Link
-               variant="caption"
-               color="textSecondary"
-               href={suggestEditLink}
-             >
+              </Link>
+            </Tooltip>
+          </div>
+          <div style={{margin: 4}}>
+            <Tooltip
+              arrow
+              placement="right"
+              title="Email me with website edit suggestions!">
+              <Link
+                variant="caption"
+                color="textSecondary"
+                href={suggestEditLink}
+              >
               suggest an edit
-             </Link>
-           </Tooltip>
-         </div>
-         {/* go blue */}
-         <div>
-           <Tooltip
-             arrow
-             placement="right"
-             title="Go blue!!">
-             <img
-               src={universityOfMichiganLogoSmall}
-               width="25"
-               height="25"
-               className={classes.logoDefault}
-               alt="University of Michigan logo small"
-             />
-           </Tooltip>
-         </div>
-       </div>
-     </footer>
-   );
- }
+              </Link>
+            </Tooltip>
+          </div>
+          {/* go blue */}
+          <div>
+            <Tooltip
+              arrow
+              placement="right"
+              title="Go blue!!">
+              <img
+                src={universityOfMichiganLogoSmall}
+                width="25"
+                height="25"
+                className={classes.logoDefault}
+                alt="University of Michigan logo small"
+              />
+            </Tooltip>
+          </div>
+        </div>
+      </footer>
+    );
+  }
 }
 
 Footer.propTypes = {
