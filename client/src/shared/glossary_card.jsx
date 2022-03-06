@@ -69,7 +69,7 @@ class GlossaryCard extends React.Component {
       return;
     }
     this.setState({expanded: false});
-  }
+  };
 
   render() {
     const {classes} = this.props;

@@ -18,9 +18,9 @@ import DateRangeIcon from '@material-ui/icons/DateRange';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import roadMapperScreenshotOne
-from '../static/images/screenshots/ice_road_mappers_screenshot_1.webp';
+  from '../static/images/screenshots/ice_road_mappers_screenshot_1.webp';
 import roadMapperScreenshotOneFallback
-from '../static/images/screenshots/ice_road_mappers_screenshot_1.png';
+  from '../static/images/screenshots/ice_road_mappers_screenshot_1.png';
 
 import PropTypes from 'prop-types';
 

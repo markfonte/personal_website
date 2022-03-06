@@ -19,29 +19,29 @@ import {
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import sarahKoopScreenshot
-from '../static/images/screenshots/sarah_website_screenshot.webp';
+  from '../static/images/screenshots/sarah_website_screenshot.webp';
 import sarahKoopScreenshotFallback
-from '../static/images/screenshots/sarah_website_screenshot.png';
+  from '../static/images/screenshots/sarah_website_screenshot.png';
 
 import salvadorVillalonScreenshot
-from '../static/images/screenshots/sal_website_screenshot.webp';
+  from '../static/images/screenshots/sal_website_screenshot.webp';
 import salvadorVillalonScreenshotFallback
-from '../static/images/screenshots/sal_website_screenshot.png';
+  from '../static/images/screenshots/sal_website_screenshot.png';
 
 import jacobFedrigonScreenshot
-from '../static/images/screenshots/jacob_website_screenshot.webp';
+  from '../static/images/screenshots/jacob_website_screenshot.webp';
 import jacobFedrigonScreenshotFallback
-from '../static/images/screenshots/jacob_website_screenshot.png';
+  from '../static/images/screenshots/jacob_website_screenshot.png';
 
 import seanBarberScreenshot
-from '../static/images/screenshots/sean_website_screenshot.webp';
+  from '../static/images/screenshots/sean_website_screenshot.webp';
 import seanBarberScreenshotFallback
-from '../static/images/screenshots/sean_website_screenshot.png';
+  from '../static/images/screenshots/sean_website_screenshot.png';
 
 import nathanJohnsonScreenshot
-from '../static/images/screenshots/nathan_website_screenshot.webp';
+  from '../static/images/screenshots/nathan_website_screenshot.webp';
 import nathanJohnsonScreenshotFallback
-from '../static/images/screenshots/nathan_website_screenshot.png';
+  from '../static/images/screenshots/nathan_website_screenshot.png';
 
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';

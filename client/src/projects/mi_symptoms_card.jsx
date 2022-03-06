@@ -18,19 +18,19 @@ import DateRangeIcon from '@material-ui/icons/DateRange';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import miSymptomsScreenshotOne
-from '../static/images/screenshots/mi_symptoms_screenshot_1.webp';
+  from '../static/images/screenshots/mi_symptoms_screenshot_1.webp';
 import miSymptomsScreenshotOneFallback
-from '../static/images/screenshots/mi_symptoms_screenshot_1.jpg';
+  from '../static/images/screenshots/mi_symptoms_screenshot_1.jpg';
 
 import miSymptomsScreenshotTwo
-from '../static/images/screenshots/mi_symptoms_screenshot_2.webp';
+  from '../static/images/screenshots/mi_symptoms_screenshot_2.webp';
 import miSymptomsScreenshotTwoFallback
-from '../static/images/screenshots/mi_symptoms_screenshot_2.jpg';
+  from '../static/images/screenshots/mi_symptoms_screenshot_2.jpg';
 
 import miSymptomsScreenshotThree
-from '../static/images/screenshots/mi_symptoms_screenshot_3.webp';
+  from '../static/images/screenshots/mi_symptoms_screenshot_3.webp';
 import miSymptomsScreenshotThreeFallback
-from '../static/images/screenshots/mi_symptoms_screenshot_3.jpg';
+  from '../static/images/screenshots/mi_symptoms_screenshot_3.jpg';
 import PropTypes from 'prop-types';
 
 const styles = {
