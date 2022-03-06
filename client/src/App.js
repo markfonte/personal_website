@@ -10,7 +10,7 @@ import Home from './home/home.jsx';
 import Blog from './blog/blog.jsx';
 import Footer from './footer/footer.jsx';
 import LinkStyle from '@material-ui/core/Link';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider, withStyles} from '@material-ui/styles';
 import {WbSunny} from '@material-ui/icons';
@@ -247,12 +247,14 @@ export class App extends React.Component {
               </List>
             </nav>
 
-            <Route path="/" exact component={Home} />
-            <Route path="/home" component={Home} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/extra" component={Extra} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/blog" component={Blog} />
+            <Routes>
+              <Route path="/" exact element={<Home/>} />
+              <Route path="home" element={<Home/>} />
+              <Route path="projects" element={<Projects/>} />
+              <Route path="extra" element={<Extra/>} />
+              <Route path="/contact" element={<Contact/>} />
+              <Route path="blog" element={<Blog/>} />
+            </Routes>
           </Router>
           <ScrollUpButton />
           <Footer />
