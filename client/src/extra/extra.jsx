@@ -27,7 +27,7 @@ class Extra extends React.Component {
           <GimbleCard />
           <TicTacToeCard />
           <RecommendedSitesCard />
-          <InteractionCard pagename="extra" />`
+          <InteractionCard pagename="extra" />
         </Suspense>
       </div>
     );

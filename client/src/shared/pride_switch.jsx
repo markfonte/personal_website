@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Typography, Switch, Link, Tooltip} from '@material-ui/core';
+import {Card, Typography, Switch, Tooltip} from '@material-ui/core';
 import PropTypes from 'prop-types';
 import {withStyles} from '@material-ui/styles';
 
@@ -64,13 +64,12 @@ class PrideSwitch extends React.Component {
 
   render() {
     const {classes} = this.props;
-    const travisCILink = `https://travis-ci.org/account/preferences`;
     const proud = this.state.proud;
     return (
       <Card className={classes.flatCard}>
         <div className={classes.prideSwitchContent}>
           <Typography className={classes.prideTitle} variant="h5">
-            Pride
+            Rainbow header and footer
           </Typography>
           <Tooltip
             placement="top"
@@ -84,21 +83,6 @@ class PrideSwitch extends React.Component {
               color="secondary"/>
           </Tooltip>
         </div>
-        <Typography variant="body1">
-            I deeply care about diversity and inclusivity. Click the switch to show your pride or your solidarity.
-        </Typography>
-        <br />
-        <Tooltip
-          arrow
-          title="Go to Travis CI (where I got this idea)">
-          <Link
-            href={travisCILink}
-            variant="caption"
-            color="textSecondary"
-          >
-            credit: Travis CI
-          </Link>
-        </Tooltip>
       </Card>
     );
   }

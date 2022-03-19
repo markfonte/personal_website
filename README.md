@@ -25,7 +25,6 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 * [Nginx](https://www.nginx.com/) - web server
 * [NodeJS](https://nodejs.org/) - server environment
 * [ReactJS](https://reactjs.org/) - frontend framework
-* [TravisCI](https://travis-ci.org/) - continuous integration
 
 ## Authors
 
@@ -35,7 +34,6 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 
 I drew inspiration from many different sources when building my website. Some of them include:
 *  The coding god [Nathan Johnson](https://github.com/nathan815) and [his website](https://nathanieljohnson.me/)
-*  [TravisCI](https://travis-ci.org/) for the "pride switch" idea
 *  [Jacob Fedrigon's website](http://www-personal.umich.edu/~jacobfed/) for his book recommendation section
 *  The [ReactJS Tutorial](https://reactjs.org/tutorial/tutorial.html#overview) for letting me steal and style the tic-tac-toe game
 *  [Stack Overflow](https://stackoverflow.com/) for knowing the answer to pretty much anything if I search hard enough
