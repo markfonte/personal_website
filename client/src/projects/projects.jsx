@@ -42,11 +42,6 @@ class Projects extends React.Component {
         <Typography className={classes.title} variant="h6"paragraph>
           My work experiences, internships, side projects and hackathon projects
         </Typography>
-        <Typography variant="body1" color="secondary">
-          <b>
-              Click to expand/collapse cards
-          </b>
-        </Typography>
         <Suspense fallback={renderLoader()}>
           <AmazonCard />
           <JPMorganCard />
