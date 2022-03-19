@@ -122,7 +122,7 @@ class WalklensCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="WalkLens"
                 subheader="Android Developer"
               />

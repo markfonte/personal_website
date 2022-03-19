@@ -120,7 +120,7 @@ class Grizzhacks3Card extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Congo AI"
                 subheader="Hackathon Project @ GrizzHacks 3"
               />

@@ -148,7 +148,7 @@ class LAZCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Learning A-Z"
                 subheader="Software Engineering Intern"
               />

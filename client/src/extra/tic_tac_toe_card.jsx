@@ -30,7 +30,7 @@ class TicTacToeCard extends React.Component {
             Tic Tac Toe Card
         </a>
         <CardHeader
-          className="cardHeader"
+          className="card-header"
           title="Tic Tac Toe"
           subheader="just for fun!" />
         <CardContent className={classes.cardContent}>

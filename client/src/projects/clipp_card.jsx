@@ -121,7 +121,7 @@ class ClippCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Clipp"
                 subheader="Full Stack Developer"
               />

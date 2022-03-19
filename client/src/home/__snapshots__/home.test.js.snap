@@ -26,7 +26,7 @@ exports[`Home matches snapshot 1`] = `
      
     <a
       aria-describedby={null}
-      className="MuiTypography-root MuiLink-root MuiLink-underlineHover amazonColorLight MuiTypography-colorPrimary"
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover amazon-color-light MuiTypography-colorPrimary"
       href="https://www.amazon.com/"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -64,7 +64,7 @@ exports[`Home matches snapshot 1`] = `
      
     <a
       aria-describedby={null}
-      className="MuiTypography-root MuiLink-root MuiLink-underlineHover michiganColorLight MuiTypography-colorPrimary"
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover michigan-color-light MuiTypography-colorPrimary"
       href="https://umich.edu/"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -102,7 +102,7 @@ exports[`Home matches snapshot 1`] = `
      
     <a
       aria-describedby={null}
-      className="MuiTypography-root MuiLink-root MuiLink-underlineHover webColorLight MuiTypography-colorPrimary"
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover web-color-light MuiTypography-colorPrimary"
       href="https://en.wikipedia.org/wiki/Web_development"
       onBlur={[Function]}
       onFocus={[Function]}
@@ -121,7 +121,7 @@ exports[`Home matches snapshot 1`] = `
      
     <a
       aria-describedby={null}
-      className="MuiTypography-root MuiLink-root MuiLink-underlineHover androidColorLight MuiTypography-colorPrimary"
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover android-color-light MuiTypography-colorPrimary"
       href="https://developer.android.com/"
       onBlur={[Function]}
       onFocus={[Function]}

@@ -31,7 +31,7 @@ class CurrentBooksCard extends React.Component {
             Current Books Card
         </a>
         <CardHeader
-          className="cardHeader"
+          className="card-header"
           title="Books I&#39;m Reading"
           subheader="September 2019" />
         <CardContent>

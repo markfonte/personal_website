@@ -140,7 +140,7 @@ class MHacks12Card extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="InstEvents"
                 subheader="Hackathon Project @ MHacks 12"
               />

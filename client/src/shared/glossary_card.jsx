@@ -381,7 +381,7 @@ class GlossaryCard extends React.Component {
             Glossary Card
         </a>
         <CardHeader
-          className="cardHeader"
+          className="card-header"
           title="Glossary"
         />
         <CardContent

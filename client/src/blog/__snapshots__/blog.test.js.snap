@@ -52,7 +52,7 @@ exports[`Extra matches snapshot 1`] = `
             className="Blog-expansionHeaderContainer-2"
           >
             <div
-              className="MuiCardHeader-root cardHeader"
+              className="MuiCardHeader-root card-header"
             >
               <div
                 className="MuiCardHeader-content"
@@ -500,7 +500,7 @@ exports[`Extra matches snapshot 1`] = `
             className="Blog-expansionHeaderContainer-2"
           >
             <div
-              className="MuiCardHeader-root cardHeader"
+              className="MuiCardHeader-root card-header"
             >
               <div
                 className="MuiCardHeader-content"

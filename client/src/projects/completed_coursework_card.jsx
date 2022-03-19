@@ -187,7 +187,7 @@ class CompletedCourseworkCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="University of Michigan"
                 subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
             and a minor in Entrepreneurship"

@@ -116,7 +116,7 @@ class DoggieDoodlesCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Doggie Doodles"
                 subheader="Entrepreneur" />
               <CardMedia

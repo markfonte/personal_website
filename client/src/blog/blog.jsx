@@ -280,7 +280,7 @@ I also make the case that, as long as employers are going to do what is in their
                 <div
                   className={classes.expansionHeaderContainer}>
                   <CardHeader
-                    className="cardHeader"
+                    className="card-header"
                     title={post.title}
                     subheader={post.firstPublished}
                   />

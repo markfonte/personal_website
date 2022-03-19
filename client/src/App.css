@@ -14,47 +14,47 @@
   width: 0;
 }
 
-.amazonColorLight {
+.amazon-color-light {
   color: #f90 !important;
 }
 
-.amazonColorDark {
+.amazon-color-dark {
   color: #b92c00 !important;
 }
 
-.michiganColorLight {
+.michigan-color-light {
   color: #ffcb05 !important;
 }
 
-.michiganColorDark {
+.michigan-color-dark {
   color: #00274c !important;
 }
 
-.androidColorLight {
+.android-color-light {
   color: #a4c639 !important;
 }
 
-.androidColorDark {
+.android-color-dark {
   color: #526b00 !important;
 }
 
-.webColorLight {
+.web-color-light {
   color: #61dbfb !important;
 }
 
-.webColorDark {
+.web-color-dark {
   color: #006a86 !important;
 }
 
-.gimbleColorLight {
+.gimble-color-light {
   color: #83b2da !important;
 }
 
-.gimbleColorDark {
+.gimble-color-dark {
   color: #0072d4 !important;
 }
 
-.cardHeader {
+.card-header {
   padding: 0 !important;
 }
 

@@ -109,7 +109,7 @@ class RoadMapperCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Road Mapper"
                 subheader="EECS 493 Class Project"
               />

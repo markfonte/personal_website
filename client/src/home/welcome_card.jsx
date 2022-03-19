@@ -104,11 +104,11 @@ class WelcomeCard extends React.Component {
     //   },
     // ];
     const lightTheme = getCookie('app_theme') === 'light_theme';
-    const amazonColor = lightTheme ? 'amazonColorDark' : 'amazonColorLight';
-    const michiganColor = lightTheme ? 'michiganColorDark' : 'michiganColorLight';
-    const webColor = lightTheme ? 'webColorDark' : 'webColorLight';
-    const androidColor = lightTheme ? 'androidColorDark' : 'androidColorLight';
-    const gimbleColor = lightTheme ? 'gimbleColorDark' : 'gimbleColorLight';
+    const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
+    const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
+    const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
+    const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
+    const gimbleColor = lightTheme ? 'gimble-color-dark' : 'gimble-color-light';
 
     return (
       <Card raised={true} className="card">
@@ -134,7 +134,7 @@ class WelcomeCard extends React.Component {
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Welcome!"
                 subheader="Click for a little about me..."
               />

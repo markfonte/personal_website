@@ -63,7 +63,7 @@ class CompletedBooksCard extends React.Component {
             Completed Books Card
         </a>
         <CardHeader
-          className="cardHeader"
+          className="card-header"
           title="Books I Would Recommend"
           subheader="September 2019" />
         <CardContent>

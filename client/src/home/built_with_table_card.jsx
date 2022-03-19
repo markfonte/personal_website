@@ -214,7 +214,7 @@ class BuiltWithTableCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="🛠️ Built With:"
                 subheader="What I used to build this website" />
               <div>

@@ -143,7 +143,7 @@ class RecommendedSitesCard extends React.Component {
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="🌐 Recommended Websites"
                 subheader="Check out these amazing people's websites!"
               />

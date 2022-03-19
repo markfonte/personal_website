@@ -52,9 +52,6 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
   },
-  cardHeader: {
-    padding: '0 !important',
-  },
 };
 
 class JPMorganCard extends React.Component {
@@ -123,7 +120,7 @@ class JPMorganCard extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="J.P. Morgan Chase"
                 subheader="Software Engineering Intern"
               />

@@ -96,7 +96,7 @@ class RevolutionUC8Card extends React.Component {
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Denial Dial"
                 subheader="Hackathon Project @ RevolutionUC 8"
               />

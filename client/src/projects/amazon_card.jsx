@@ -90,7 +90,7 @@ class AmazonCard extends React.Component {
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
-                className="cardHeader"
+                className="card-header"
                 title="Amazon Web Services"
                 subheader="Software Development Engineer"
               />
