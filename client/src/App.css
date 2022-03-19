@@ -54,6 +54,14 @@
   color: #0072d4 !important;
 }
 
+.justlight-color-dark {
+  color: #f05151 !important;
+}
+
+.justlight-color-light {
+  color: #ffcb70 !important;
+}
+
 .card-header {
   padding: 0 !important;
 }
