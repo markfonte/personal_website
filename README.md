@@ -1,4 +1,4 @@
-# [My website](https://markfonte.dev)
+# [My website](https://mark.fonte.com)
 ![GitHub release](https://img.shields.io/github/release/markfonte/personal_website) [![Build Status](https://travis-ci.org/markfonte/personal_website.svg?branch=master)](https://travis-ci.org/markfonte/personal_website) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e)
 
 ## Motivation
@@ -34,7 +34,6 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 
 I drew inspiration from many different sources when building my website. Some of them include:
 *  The coding god [Nathan Johnson](https://github.com/nathan815) and [his website](https://nathanieljohnson.me/)
-*  [Jacob Fedrigon's website](http://www-personal.umich.edu/~jacobfed/) for his book recommendation section
 *  The [ReactJS Tutorial](https://reactjs.org/tutorial/tutorial.html#overview) for letting me steal and style the tic-tac-toe game
 *  [Stack Overflow](https://stackoverflow.com/) for knowing the answer to pretty much anything if I search hard enough
 *  [shields.io](https://shields.io) for all of the badges on this readme
