@@ -252,7 +252,7 @@ export class App extends React.Component {
               <Route path="home" element={<Home/>} />
               <Route path="projects" element={<Projects/>} />
               <Route path="extra" element={<Extra/>} />
-              <Route path="/contact" element={<Contact/>} />
+              <Route path="contact" element={<Contact/>} />
               <Route path="blog" element={<Blog/>} />
             </Routes>
           </Router>
