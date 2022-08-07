@@ -140,9 +140,9 @@ class WelcomeCard extends React.Component {
               />
               <CardMedia
                 className={classes.welcomeImage}
-                image="/images/mark_grad_pic_1.jpg"
-                title="Mark grad pic 1"
-                alt="Mark grad pic 1"
+                image="/images/welcome_image.jpg"
+                title="Welcome Image"
+                alt="Welcome Image"
                 component="img"
               />
             </div>
