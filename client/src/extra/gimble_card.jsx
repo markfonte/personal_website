@@ -18,7 +18,6 @@ import {
   CardActions,
   CardContent,
   CardHeader,
-  Typography,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -34,7 +33,7 @@ const styles = {
     marginTop: '16px',
     marginLeft: '0px',
     marginRight: '0px',
-    maxWidth: '500px',
+    maxWidth: '700px',
   },
   gimbleCardActionIcon: {
     width: '24px',
@@ -43,7 +42,8 @@ const styles = {
   iframeStyle: {
     height: '235px',
     width: '100%',
-    maxWidth: '400px',
+    maxWidth: '330px',
+    margin: '4px',
   },
   cardActions: {
     overflowX: 'auto',
@@ -94,6 +94,21 @@ class GimbleCard extends React.Component {
     const mediaPlayers = [
       {
         type: 'Spotify',
+        src: `https://open.spotify.com/embed/track/2x3lNJtZj9QdDBzFroeVUZ`,
+        title: `The Joke - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/track/3vJOfNgJsMcwbfQhQFjqJO`,
+        title: `The Joke - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
+        src: `https://open.spotify.com/embed/track/2BPMW7WPHvKVyyPHn3OUC6`,
+        title: `Movement - Gimble A Cappella`,
+      },
+      {
+        type: 'Spotify',
         src: `https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo`,
         title: `Home - Gimble A Cappella`,
       },
@@ -103,19 +118,9 @@ class GimbleCard extends React.Component {
         title: `when the party's over - Gimble A Cappella`,
       },
       {
-        type: 'YouTube',
-        src: `https://www.youtube.com/embed/Iiy4V1oq1QU`,
-        title: `when the party's over Video - Gimble A Cappella`,
-      },
-      {
         type: 'Spotify',
         src: `https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK`,
         title: `Fallingwater - Gimble A Cappella`,
-      },
-      {
-        type: 'YouTube',
-        src: `https://www.youtube-nocookie.com/embed/6Qge12ldMqU`,
-        title: `Fallingwater Video - Gimble A Cappella`,
       },
       {
         type: 'Spotify',
@@ -152,18 +157,18 @@ class GimbleCard extends React.Component {
               </Tooltip>
             }>
             <a name="gimble_card" href="#gimble_card" className="gone">
-            Gimble Card
+              Gimble Card
             </a>
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
                 className="card-header"
                 title="Gimble A Cappella"
-                subheader={`My acappella group!`}
+                subheader={`My college acappella group!`}
               />
               <CardMedia
                 className={classes.gimbleCardMedia}
-                image="/images/gimble_group_pic.jpeg"
+                image="/images/gimble_group_pic.webp"
                 title="Gimble group pic"
                 component="img"
               />
@@ -186,9 +191,6 @@ class GimbleCard extends React.Component {
             </CardContent>
           </AccordionDetails>
         </Accordion>
-        <Typography className={classes.buttonExplanation} variant="caption" color="textSecondary">
-            These buttons scroll horizontally on smaller-width devices!
-        </Typography>
         <CardActions className={classes.cardActions}>
           <Tooltip
             title="Go to Gimble A Cappella's website"

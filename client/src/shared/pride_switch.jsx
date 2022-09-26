@@ -14,6 +14,7 @@ const styles = {
   prideSwitchContent: {
     display: 'flex',
     flexDirection: 'row',
+    margin: '8px',
     width: '100%',
     justifyContent: 'space-between',
   },
@@ -69,12 +70,12 @@ class PrideSwitch extends React.Component {
       <Card className={classes.flatCard}>
         <div className={classes.prideSwitchContent}>
           <Typography className={classes.prideTitle} variant="h5">
-            Rainbow header and footer
+            Rainbow mode!
           </Typography>
           <Tooltip
             placement="top"
             arrow
-            title="Click to add a rainbow header and footer to the page">
+            title="Click to activate rainbow mode!">
             <Switch
               checked={proud}
               onClick={this.handleChange}
