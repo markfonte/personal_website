@@ -2,7 +2,6 @@ import React, {lazy, Suspense} from 'react';
 import {Typography, CircularProgress} from '@material-ui/core';
 const TicTacToeCard = lazy(() => import('./tic_tac_toe_card.jsx'));
 const GimbleCard = lazy(() => import('./gimble_card.jsx'));
-const RecommendedSitesCard = lazy(() => import('./recommended_sites_card.jsx'));
 const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
 import {withStyles} from '@material-ui/styles';
 import PropTypes from 'prop-types';
@@ -26,7 +25,6 @@ class Extra extends React.Component {
         <Suspense fallback={renderLoader()}>
           <GimbleCard />
           <TicTacToeCard />
-          <RecommendedSitesCard />
           <InteractionCard pagename="extra" />
         </Suspense>
       </div>
