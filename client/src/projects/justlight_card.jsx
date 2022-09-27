@@ -19,13 +19,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 
 const styles = {
-  amazonLogo: {
+  justlightLogo: {
     width: '100%',
     marginBottom: '16px',
     marginTop: '16px',
     marginLeft: '0px',
     marginRight: '0px',
-    maxWidth: '500px',
   },
   tags: {
     margin: '4px',
@@ -46,15 +45,15 @@ const styles = {
   },
 };
 
-class AmazonCard extends React.Component {
+class JustlightCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const amazonLink = `https://www.amazon.com/`;
-    const sellerLink = `https://sell.amazon.com/`;
+    const justlightLink = `https://www.justlight.com/`;
+    const sunflowerAppLink = `https://www.justlight.com/appdownload`;
 
     const tags = [
       {
-        label: 'September 2021 → February 2022',
+        label: 'February 2022→ Present',
         color: 'default',
         variant: 'default',
         icon: <DateRangeIcon />,
@@ -72,9 +71,9 @@ class AmazonCard extends React.Component {
         <Accordion
           TransitionProps={{unmountOnExit: true}}>
           <AccordionSummary
-            aria-label="Amazon"
-            aria-controls="amazon-content"
-            id="amazon-header"
+            aria-label="JustLight"
+            aria-controls="justlight-content"
+            id="justlight-header"
             expandIcon={
               <Tooltip
                 title="Expand/collapse card"
@@ -84,21 +83,21 @@ class AmazonCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="amazon_card" href="#amazon_card" className="gone">
-            Amazon Card
+            <a name="justlight_card" href="#justlight_card" className="gone">
+            JustLight Card
             </a>
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
                 className="card-header"
-                title="Amazon"
-                subheader="Software Development Engineer"
+                title="JustLight"
+                subheader="Software Lead"
               />
               <CardMedia
-                className={classes.amazonLogo}
-                image="/images/amazon_logo.svg"
-                title="Amazon logo"
-                alt="Amazon logo"
+                className={classes.justlightLogo}
+                image="/images/justlight_logo.jpeg"
+                title="JustLight logo"
+                alt="JustLight logo"
                 component="img"
               />
               <div>
@@ -118,19 +117,19 @@ class AmazonCard extends React.Component {
           <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Typography variant="body1">
-                I was a software development engineer at
+                I am the software lead at
                 {' '}
-                <Link color="secondary" href={amazonLink}>
-                Amazon,
+                <Link color="secondary" href={justlightLink}>
+                JustLight,
                 </Link>
                 {' '}
-                working for a
+                working on the
                 {' '}
-                <Link color="secondary" href={sellerLink}>
-                Selling Partner Insights &amp; Engagements
+                <Link color="secondary" href={sunflowerAppLink}>
+                Sunflower
                 </Link>
                 {' '}
-                team.
+                project.
               </Typography>
             </CardContent>
           </AccordionDetails>
@@ -140,8 +139,8 @@ class AmazonCard extends React.Component {
   }
 }
 
-AmazonCard.propTypes = {
+JustlightCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AmazonCard);
+export default withStyles(styles)(JustlightCard);
