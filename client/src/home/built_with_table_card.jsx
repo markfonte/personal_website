@@ -28,6 +28,7 @@ import {
   AccordionDetails,
   IconButton,
   Tooltip,
+  Avatar,
   Chip,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -35,7 +36,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const styles = {
   logoDefault: {
     width: 'auto',
-    height: '80px',
+    height: '60px',
+    maxWidth: '180px',
   },
   builtWithTableWrapper: {
     overflowX: 'auto',
@@ -155,45 +157,54 @@ class BuiltWithTableCard extends React.Component {
     const tags = [
       {
         label: 'DigitalOcean',
+        icon: digitalOceanLogo,
       },
       {
         label: 'Express.js',
+        icon: expressLogo,
       },
       {
         label: 'GitHub',
-      },
-      {
-        label: 'JavaScript',
+        icon: githubLogo,
       },
       {
         label: 'Jest',
+        icon: jestLogo,
       },
       {
         label: 'Material-UI',
+        icon: materialUILogo,
       },
       {
         label: 'Nginx',
+        icon: nginxLogo,
       },
       {
         label: 'NodeJS',
+        icon: nodeLogo,
       },
       {
         label: 'React',
+        icon: reactLogo,
       },
       {
         label: 'SQLite',
+        icon: sqliteLogo,
       },
       {
         label: 'TravisCI',
+        icon: travisCILogo,
       },
       {
         label: 'Trello',
+        icon: trelloLogo,
       },
     ];
     return (
       <Card
         raised={true}
-        className="card">
+        className="card"
+        style={{maxWidth: 700}}>
         <Accordion
           TransitionProps={{unmountOnExit: true}}>
           <AccordionSummary
@@ -222,10 +233,9 @@ class BuiltWithTableCard extends React.Component {
                   <Chip
                     className={classes.tags}
                     key={tag.label}
-                    icon={tag.icon ? tag.icon : <div/>}
+                    avatar={<Avatar alt="Natacha" src={tag.icon} />}
                     label={tag.label}
                     variant={tag.variant ? tag.variant : 'outlined'}
-                    color={tag.color ? tag.color : 'secondary'}
                     clickable />
                 ))}
               </div>
@@ -255,7 +265,7 @@ class BuiltWithTableCard extends React.Component {
                           />
                         </TableCell>
                         <TableCell align="right">
-                          <Typography variant="subtitle2">
+                          <Typography variant="body1">
                             {row.subtitle}
                           </Typography>
                         </TableCell>
@@ -264,9 +274,6 @@ class BuiltWithTableCard extends React.Component {
                   </TableBody>
                 </Table>
               </div>
-              <Typography className={classes.scrollTip} variant="caption" color="textSecondary">
-                This table scrolls horizontally on smaller-width devices!
-              </Typography>
             </CardContent>
           </AccordionDetails>
         </Accordion>
