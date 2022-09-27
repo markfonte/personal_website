@@ -81,7 +81,12 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'amazon',
             cardName: 'Amazon',
-            subtitle: 'Software Engineer',
+            subtitle: 'Software Development Engineer',
+          },
+          {
+            cardId: 'aws',
+            cardName: 'Amazon Web Services',
+            subtitle: 'Software Development Engineer',
           },
         ],
       },
@@ -376,7 +381,7 @@ class GlossaryCard extends React.Component {
       },
     ];
     return (
-      <Card raised={true} className="card">
+      <Card raised={true} className="card" style={{maxWidth: 500}}>
         <a name="glossary_card" href="#glossary_card" className="gone">
             Glossary Card
         </a>
@@ -385,7 +390,7 @@ class GlossaryCard extends React.Component {
           title="Glossary"
         />
         <CardContent
-          className={classes.expansionPanel} style={{maxWidth: 500}}>
+          className={classes.expansionPanel}>
           {
             glossaryItems.map((glossaryItem) => (
               <Accordion
