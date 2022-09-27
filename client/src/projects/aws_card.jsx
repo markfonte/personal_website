@@ -19,7 +19,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 
 const styles = {
-  amazonLogo: {
+  awsLogo: {
     width: '100%',
     marginBottom: '16px',
     marginTop: '16px',
@@ -46,15 +46,15 @@ const styles = {
   },
 };
 
-class AmazonCard extends React.Component {
+class AwsCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const amazonLink = `https://www.amazon.com/`;
-    const sellerLink = `https://sell.amazon.com/`;
+    const awsLink = `https://aws.amazon.com/`;
+    const workspacesLink = `https://aws.amazon.com/workspaces/`;
 
     const tags = [
       {
-        label: 'September 2021 → February 2022',
+        label: 'July 2020 → September 2021',
         color: 'default',
         variant: 'default',
         icon: <DateRangeIcon />,
@@ -72,9 +72,9 @@ class AmazonCard extends React.Component {
         <Accordion
           TransitionProps={{unmountOnExit: true}}>
           <AccordionSummary
-            aria-label="Amazon"
-            aria-controls="amazon-content"
-            id="amazon-header"
+            aria-label="AWS"
+            aria-controls="aws-content"
+            id="aws-header"
             expandIcon={
               <Tooltip
                 title="Expand/collapse card"
@@ -84,21 +84,21 @@ class AmazonCard extends React.Component {
                 </IconButton>
               </Tooltip>
             }>
-            <a name="amazon_card" href="#amazon_card" className="gone">
-            Amazon Card
+            <a name="aws_card" href="#aws_card" className="gone">
+              AWS Card
             </a>
             <div
               className={classes.expansionHeaderContainer}>
               <CardHeader
                 className="card-header"
-                title="Amazon Services"
+                title="Amazon Web Services"
                 subheader="Software Development Engineer"
               />
               <CardMedia
-                className={classes.amazonLogo}
-                image="/images/amazon_logo.svg"
-                title="Amazon logo"
-                alt="Amazon logo"
+                className={classes.awsLogo}
+                image="/images/aws_logo.svg"
+                title="AWS logo"
+                alt="AWS logo"
                 component="img"
               />
               <div>
@@ -120,17 +120,17 @@ class AmazonCard extends React.Component {
               <Typography variant="body1">
                 I was a software development engineer at
                 {' '}
-                <Link color="secondary" href={amazonLink}>
-                Amazon,
+                <Link color="secondary" href={awsLink}>
+                Amazon Web Services,
                 </Link>
                 {' '}
-                working for a
+                working for the
                 {' '}
-                <Link color="secondary" href={sellerLink}>
-                Selling Partner Insights &amp; Engagements
+                <Link color="secondary" href={workspacesLink}>
+                Workspaces
                 </Link>
                 {' '}
-                team.
+                clients team.
               </Typography>
             </CardContent>
           </AccordionDetails>
@@ -140,8 +140,8 @@ class AmazonCard extends React.Component {
   }
 }
 
-AmazonCard.propTypes = {
+AwsCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AmazonCard);
+export default withStyles(styles)(AwsCard);

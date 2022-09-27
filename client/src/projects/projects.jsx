@@ -15,6 +15,7 @@ const JPMorganCard = lazy(() => import('./jpmorgan_card.jsx'));
 const RoadMapperCard = lazy(() => import('./road_mapper_card.jsx'));
 const MISymptomsCard = lazy(() => import('./mi_symptoms_card.jsx'));
 const AmazonCard = lazy(() => import('./amazon_card.jsx'));
+const AwsCard = lazy(() => import('./aws_card.jsx'));
 const MHacks12Card = lazy(() => import('./mhacks12_card.jsx'));
 const WalklensCard = lazy(() => import('./walklens_card.jsx'));
 const ClippCard = lazy(() => import('./clipp_card.jsx'));
@@ -44,6 +45,7 @@ class Projects extends React.Component {
         </Typography>
         <Suspense fallback={renderLoader()}>
           <AmazonCard />
+          <AwsCard />
           <JPMorganCard />
           <LAZCard />
           <CompletedCourseworkCard />
