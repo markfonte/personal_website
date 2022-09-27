@@ -36,6 +36,7 @@ class Home extends React.Component {
     const entrepreneurshipLink = 'https://innovateblue.umich.edu/academics/minor-in-entrepreneurship/';
     const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
     const androidDevLink = 'https://developer.android.com/';
+    const awsLink = `https://aws.amazon.com/`;
 
     const lightTheme = getCookie('app_theme') === 'light_theme';
     const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
@@ -65,6 +66,10 @@ class Home extends React.Component {
             <i>Amazon</i>
           </Link>
 
+          {' '}and{' '}
+          <Link href={awsLink} className={amazonColor}>
+            <i>Amazon Web Services</i>
+          </Link>
           {' '}Software Engineer · <i>Computer Science Engineering</i> degree from the{' '}
 
           <Link href={umichLink} className={michiganColor}>
@@ -77,7 +82,7 @@ class Home extends React.Component {
             <i>Entrepreneurship</i>
           </Link>
 
-          {' '}· Focus on{' '}
+          {' '}·{' '}
 
           <Link href={webDevLink} className={webColor}>
             <i>Web</i>

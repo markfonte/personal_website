@@ -81,34 +81,15 @@ class WelcomeCard extends React.Component {
     const umichLink = 'https://umich.edu/';
     const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
     const androidDevLink = 'https://developer.android.com/';
-    const gimbleLink = `https://gimbleacappella.com`;
+    const awsLink = `https://aws.amazon.com/`;
+    const justlightLink = `https://www.justlight.com/`;
 
-    // const feedData = [
-    //   {
-    //     postId: 'CEAyAX-AGaP/',
-    //   },
-    //   {
-    //     postId: 'CIMZFGagicb/',
-    //   },
-    //   {
-    //     postId: 'CBZMXQRgJz5/',
-    //   },
-    //   {
-    //     postId: 'B_yokGTgNUK/',
-    //   },
-    //   {
-    //     postId: 'CLfeOKCs0SJ/',
-    //   },
-    //   {
-    //     postId: 'B6RFvKXA69I/',
-    //   },
-    // ];
     const lightTheme = getCookie('app_theme') === 'light_theme';
+    const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
     const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
     const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
     const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
     const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
-    const gimbleColor = lightTheme ? 'gimble-color-dark' : 'gimble-color-light';
 
     return (
       <Card raised={true} className="card">
@@ -150,149 +131,77 @@ class WelcomeCard extends React.Component {
           <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Typography variant="h6" paragraph>
-                    Welcome to my website! I&#39;m a software development engineer at
-
+                Welcome to my website! I&#39;m the software lead at a medical device startup called
                 {' '}
-                <Tooltip arrow title="Go to Amazon.com">
-                  <Link color="secondary" href={amazonLink} className={amazonColor}>
-              Amazon
+                <Tooltip arrow title="Go to JustLight">
+                  <Link color="secondary" href={justlightLink} className={justlightColor}>
+                    JustLight
                   </Link>
                 </Tooltip>
+                , a former software development engineer at
 
-            , a computer science engineering/entrepreneurship graduate from the
-
+                {' '}
+                <Tooltip arrow title="Go to Amazon">
+                  <Link color="secondary" href={amazonLink} className={amazonColor}>
+                    Amazon
+                  </Link>
+                </Tooltip>
+                {' '}and{' '}
+                <Tooltip arrow title="Go to Amazon Web Services">
+                  <Link color="secondary" href={awsLink} className={amazonColor}>
+                    Amazon Web Services
+                  </Link>
+                </Tooltip>
+                  , a computer science engineering / entrepreneurship graduate from the
                 {' '}
                 <Tooltip arrow placement="bottom" title="Go to U of M website">
                   <Link href={umichLink} className={michiganColor}>
-              University of Michigan
+                    University of Michigan
                   </Link>
                 </Tooltip>
-
-            , and a former singer/beatboxer in
-
-                {' '}
-                <Tooltip arrow placement="bottom" title="Go to Gimble's website">
-                  <Link href={gimbleLink} className={gimbleColor}>
-            Gimble A Cappella
-                  </Link>
-                </Tooltip>
-
-            .
+                , and a former singer / beatboxer for a college a cappella group.
               </Typography>
               <Typography variant="body1" paragraph>
-                    Outside of coding,
-                    I love reading, writing, teaching, and anything to do with leadership. I love
-                    good design, usability and accessibility - concepts which I get to practice all the
-                    time while making
-
-                {' '}
+                Outside of coding, I love reading, writing, teaching, playing basketball and making cool shit. I especially love building{' '}
                 <Tooltip arrow placement="bottom" title="Go to Android Developers page">
                   <Link href={androidDevLink} className={androidColor}>
-              Android
+                    Android
                   </Link>
                 </Tooltip>
-                {' '}
-
-            and
-
-                {' '}
+                {' '}and{' '}
                 <Tooltip arrow placement="bottom" title="Go to web development page">
                   <Link href={webDevLink} className={webColor}>
-              web
+                    web
                   </Link>
                 </Tooltip>
-                {' '}
-
-            applications.
+                {' '}applications. I built this website to be a fun, interactive sandbox where I could play around with different technologies.
               </Typography>
               <Typography variant="body1" paragraph>
-                    I built this website to be a fun, interactive sandbox that I could try out new
-                    technologies in.
-                    I am always aiming to make it faster, more intuitive, and easier to navigate.
-                    Most of the content is contained
-                    within &#34;
-
+                  I am always aiming to make it faster, more intuitive, and easier to navigate.Most of the content is contained within &#34;
                 <Tooltip arrow title="View Cards on Material-UI">
                   <Link color="secondary" href={materialUICardLink}>
-                Cards
+                    Cards
                   </Link>
                 </Tooltip>
-
-                &#34; that
-
-                {' '}
+                &#34; that{' '}
                 <Tooltip arrow title="View Expansion Panels on Material-UI">
                   <Link color="secondary" href={materialUIAccordionLink}>
-                expand to show content
+                    expand to show content
                   </Link>
                 </Tooltip>
-
-               . This allows you to navigate quickly, only view
-                    the content you want to see, and speeds up page loading in the process.
-              </Typography>
-              <Typography variant="body1" paragraph>
-                  You can expect a better experience every time you come back to my website. You
-                  can always see what I&#39;m working on on my
-
+                . This design leads to quicker navigation, a manageable amount of screen content, and faster page loads.
+                  You can expect a better experience each time you visit my website. You can always check what I&#39;m working on on my
                 {' '}
                 <Tooltip arrow title="Go to my Trello board">
                   <Link color="secondary" href={trelloBoardLink}>
                   Trello board
                   </Link>
                 </Tooltip>
-
-                  . Please reach out with
-                  suggestions, questions; anything!
+                .
               </Typography>
-              {/* <Accordion style={{marginBottom: 16}}>
-                <div
-                  className={classes.expansionHeaderContainer}>
-                  <AccordionSummary
-                    aria-label="Leadership Book"
-                    aria-controls="leadership-book-content"
-                    id="leadership-book-header"
-                    expandIcon={
-                      <Tooltip
-                        title="Expand/collapse card"
-                        arrow>
-                        <IconButton>
-                          <ExpandMoreIcon />
-                        </IconButton>
-                      </Tooltip>
-                    }>
-                    <Typography variant="h6">
-                  I&#39;m writing a book about leadership....
-                    </Typography>
-                  </AccordionSummary>
-                </div>
-                <AccordionDetails>
-                  <Typography variant="body1" paragraph>
-                  centered around the ways that <b><i>anyone</i></b> can become a better
-                    leader. The core of my main argument is that the best leaders are experts at adapting
-                    to the people they are leading. They constantly seek feedback from their team members
-                    and continuously use it to improve. If that seems obvious or simple, that&#39;s because it
-                    is! It requires only effort, awareness and humility.
-                    <br/> <br/>
-                    Unfortunately, I have seen leaders
-                    fail over and over and over because they didn&#39;t practice this concept (which is
-                    simple in principle, but difficult in practice). My journey involves analyzing and
-                    interviewing all kinds of leaders, providing a plethora of examples and showing
-                    ways that anyone can become a better leader. I will certainly be writing more about
-                    the book on this website in the months to come.
-                  </Typography>
-                </AccordionDetails>
-              </Accordion> */}
-
-              {/* <GridList className={classes.photoGrid} cellHeight="auto" cols="auto">
-                {feedData.map((feedDatum) => (
-                  <GridListTile key={feedDatum.postId} className={classes.photoGridTile}>
-                    <InstagramPost postId={feedDatum.postId}/>
-                  </GridListTile>
-                ))}
-              </GridList>
-              <Typography className={classes.scrollTip} variant="caption" color="textSecondary">
-                  Scroll horizontally to view all photos!
-              </Typography> */}
+              <Typography variant="body1" paragraph>
+                Please reach out with questions, comments, or concerns! Much love ❤️
+              </Typography>
             </CardContent>
           </AccordionDetails>
         </Accordion>
