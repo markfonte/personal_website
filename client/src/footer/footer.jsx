@@ -144,7 +144,7 @@ class Footer extends React.Component {
     const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
     const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
     const travisCILink = `https://travis-ci.org/markfonte/personal_website`;
-    const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/master`;
+    const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/main`;
     const updatedDate = timestamp;
 
     const buttons = [
