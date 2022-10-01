@@ -79,6 +79,11 @@ class GlossaryCard extends React.Component {
         type: 'Project',
         projects: [
           {
+            cardId: 'justlight',
+            cardName: 'JustLight',
+            subtitle: 'Software Lead',
+          },
+          {
             cardId: 'amazon',
             cardName: 'Amazon',
             subtitle: 'Software Development Engineer',

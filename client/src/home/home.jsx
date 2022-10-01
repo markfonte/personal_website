@@ -66,7 +66,7 @@ class Home extends React.Component {
             <i>Amazon</i>
           </Link>
 
-          {' '}and{' '}
+          {' '}&amp;{' '}
           <Link href={awsLink} className={amazonColor}>
             <i>Amazon Web Services</i>
           </Link>
