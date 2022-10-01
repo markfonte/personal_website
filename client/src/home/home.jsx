@@ -51,16 +51,16 @@ class Home extends React.Component {
           <title>Home</title>
           <meta
             name="description"
-            content="Director of Software at JustLight · Ex-Amazon · University of Michigan"/>
+            content="Software Lead at JustLight · Former Amazon / Amazon Web Services · University of Michigan"/>
         </MetaTags>
         <Typography className={classes.title} variant="h6">
-          Director of Software at{' '}
+          Software Lead at{' '}
 
           <Link href={justlightLink} className={justlightColor}>
             <i>JustLight</i>
           </Link>
 
-          {' '}· Ex-
+          {' '}· Former{' '}
 
           <Link href={amazonLink} className={amazonColor}>
             <i>Amazon</i>
