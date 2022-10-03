@@ -11,9 +11,10 @@ import Blog from './blog/blog.jsx';
 import Footer from './footer/footer.jsx';
 import LinkStyle from '@mui/material/Link';
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
-import {createTheme, StyledEngineProvider} from '@mui/material/styles';
-import {ThemeProvider, withStyles} from '@mui/styles';
+import {createTheme, StyledEngineProvider, ThemeProvider} from '@mui/material/styles';
+import {withStyles} from '@mui/styles';
 import {WbSunny} from '@mui/icons-material';
+// import {red} from '@mui/material/colors';
 import {
   Typography,
   Button,

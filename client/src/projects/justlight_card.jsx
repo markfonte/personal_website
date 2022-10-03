@@ -53,7 +53,7 @@ class JustlightCard extends React.Component {
 
     const tags = [
       {
-        label: 'February 2022→ Present',
+        label: 'February 2022 → Present',
         color: 'default',
         variant: 'default',
         icon: <DateRangeIcon />,
