@@ -14,9 +14,9 @@ import {
   CardContent,
   CardHeader,
   Link,
-} from '@material-ui/core';
+} from '@mui/material';
 
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 
 const styles = {};

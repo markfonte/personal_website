@@ -11,15 +11,15 @@ import {
   Tooltip,
   CardActions,
   CircularProgress,
-} from '@material-ui/core';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
+} from '@mui/material';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
-import ShareIcon from '@material-ui/icons/Share';
-import {withStyles} from '@material-ui/styles';
+import ShareIcon from '@mui/icons-material/Share';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 import MetaTags from 'react-meta-tags';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 
@@ -252,11 +252,11 @@ I also make the case that, as long as employers are going to do what is in their
         </MetaTags>
         <Snackbar onClose={this.handleClose} open={this.state.successDialogOpen} autoHideDuration={4000}>
           <Alert variant="outlined" onClose={this.handleClose} severity="success">
-            Link copied to clipboard!
+                      Link copied to clipboard!
           </Alert>
         </Snackbar>
         <Typography className={classes.title} variant="h6"paragraph>
-            Welcome! Here are some of my thoughts on issues that I find important.<br/>Disagreements and discussions are highly encouraged 😊
+                      Welcome! Here are some of my thoughts on issues that I find important.<br/>Disagreements and discussions are highly encouraged 😊
         </Typography>
         {posts.map((post) => (
           <Card raised={true} className="card" key={post.title}>
@@ -269,7 +269,7 @@ I also make the case that, as long as employers are going to do what is in their
                   <Tooltip
                     title="Expand/collapse card"
                     arrow>
-                    <IconButton style={{padding: 0}}>
+                    <IconButton style={{padding: 0}} size="large">
                       <ExpandMoreIcon />
                     </IconButton>
                   </Tooltip>
@@ -293,10 +293,10 @@ I also make the case that, as long as employers are going to do what is in their
               <AccordionDetails>
                 <CardContent className={classes.cardContent}>
                   {post.disclaimer ?
-                    <Typography variant="caption" color="textSecondary" paragraph>
-                      {'*Disclaimer: ' + post.disclaimer + '*'}
-                    </Typography> :
-                  ''}
+                              <Typography variant="caption" color="textSecondary" paragraph>
+                                {'*Disclaimer: ' + post.disclaimer + '*'}
+                              </Typography> :
+                            ''}
 
                   {post.body}
                   <Typography variant="caption" color="textSecondary" paragraph>
@@ -311,7 +311,8 @@ I also make the case that, as long as employers are going to do what is in their
                 arrow>
                 <IconButton
                   aria-label="Share article"
-                  onClick={() => this.copyToClipboard(process.env.REACT_APP_CLIENT_URL + 'blog#post_' + post.postNumber)}>
+                  onClick={() => this.copyToClipboard(process.env.REACT_APP_CLIENT_URL + 'blog#post_' + post.postNumber)}
+                  size="large">
                   <ShareIcon />
                 </IconButton>
               </Tooltip>

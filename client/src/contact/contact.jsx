@@ -1,5 +1,6 @@
 import React from 'react';
-import {Typography, Button, withStyles, Tooltip} from '@material-ui/core';
+import {Typography, Button, Tooltip} from '@mui/material';
+import withStyles from '@mui/styles/withStyles';
 import PropTypes from 'prop-types';
 import gimbleCoverPhoto from '../static/images/photos/gimble_cover_photo.webp';
 import gimbleCoverPhotoFallback from '../static/images/photos/gimble_cover_photo.jpg';

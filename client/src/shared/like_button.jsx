@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import {Typography, Card, Tooltip, IconButton} from '@material-ui/core';
-import {withStyles} from '@material-ui/styles';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import {Typography, Card, Tooltip, IconButton} from '@mui/material';
+import {withStyles} from '@mui/styles';
 const fetch = require('node-fetch');
 
 const setCookie = require('../shared/util/cookies.js').setCookie;
@@ -133,7 +133,7 @@ class LikeButton extends React.Component {
             title="Click to like page"
             arrow
             onClick={this.toggleLike}>
-            <IconButton>
+            <IconButton size="large">
               {icon}
             </IconButton>
           </Tooltip>

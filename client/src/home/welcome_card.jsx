@@ -1,7 +1,7 @@
 import React from 'react';
-import {CardContent,
+import {
+  CardContent,
   Card,
-  withStyles,
   Typography,
   Accordion,
   AccordionSummary,
@@ -11,8 +11,9 @@ import {CardContent,
   CardHeader,
   CardMedia,
   Link,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+import withStyles from '@mui/styles/withStyles';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 
 const getCookie = require('../shared/util/cookies.js').getCookie;
@@ -104,7 +105,7 @@ class WelcomeCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton style={{padding: 0}}>
+                <IconButton style={{padding: 0}} size="large">
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>

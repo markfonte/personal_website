@@ -4,9 +4,9 @@ import reactLogo from '../static/vectors/react_logo.svg';
 import universityOfMichiganLogoSmall
   from '../static/vectors/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
-import {Typography, Link, Tooltip, Button} from '@material-ui/core';
+import {Typography, Link, Tooltip, Button} from '@mui/material';
 import timestamp from '../commit_timestamp.js';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 import facebookLogo from '../static/images/logos/facebook_logo.svg';
 import stackOverflowLogo from '../static/images/logos/stack_overflow_logo.svg';

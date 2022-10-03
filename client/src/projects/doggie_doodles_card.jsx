@@ -12,9 +12,9 @@ import {
   Chip,
   IconButton,
   Tooltip,
-} from '@material-ui/core';
-import DateRangeIcon from '@material-ui/icons/DateRange';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+import DateRangeIcon from '@mui/icons-material/DateRange';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import rockyOne from '../static/images/photos/rocky_1.webp';
 import rockyOneFallback from '../static/images/photos/rocky_1.jpg';
@@ -28,7 +28,7 @@ import doggieDoodlesScreenshotOneFallback
   from '../static/images/screenshots/doggie_doodles_screenshot_1.png';
 
 import PropTypes from 'prop-types';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 
 const styles = {
   doggieDoodlesBanner: {
@@ -106,7 +106,7 @@ class DoggieDoodlesCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton style={{padding: 0}}>
+                <IconButton style={{padding: 0}} size="large">
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>

@@ -1,6 +1,6 @@
 import React from 'react';
 import TicTacToeGame from './tic_tac_toe_game.jsx';
-import {Description} from '@material-ui/icons';
+import {Description} from '@mui/icons-material';
 import {
   Typography,
   Card,
@@ -9,8 +9,8 @@ import {
   CardHeader,
   IconButton,
   Tooltip,
-} from '@material-ui/core';
-import {withStyles} from '@material-ui/styles';
+} from '@mui/material';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 
 const styles = {
@@ -44,7 +44,7 @@ class TicTacToeCard extends React.Component {
             <IconButton
               aria-label="credit: reactjs tutorial"
               href={reactTutorialLink}
-            >
+              size="large">
               <Description />
             </IconButton>
           </Tooltip>

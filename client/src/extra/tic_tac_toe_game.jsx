@@ -1,8 +1,8 @@
 import React from 'react';
 import TicTacToeBoard from './tic_tac_toe_board';
-import {Typography, Button, List, ListItem, Grid, Tooltip} from '@material-ui/core';
+import {Typography, Button, List, ListItem, Grid, Tooltip} from '@mui/material';
 import PropTypes from 'prop-types';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 
 const styles = {
   moveList: {

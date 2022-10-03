@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 import TicTacToeSquare from './tic_tac_toe_square.jsx';
 
 const styles = {};

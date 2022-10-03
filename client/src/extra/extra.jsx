@@ -1,9 +1,9 @@
 import React, {lazy, Suspense} from 'react';
-import {Typography, CircularProgress} from '@material-ui/core';
+import {Typography, CircularProgress} from '@mui/material';
 const TicTacToeCard = lazy(() => import('./tic_tac_toe_card.jsx'));
 const GimbleCard = lazy(() => import('./gimble_card.jsx'));
 const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 import MetaTags from 'react-meta-tags';
 

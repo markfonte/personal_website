@@ -1,7 +1,7 @@
 import React from 'react';
-import {Card, Typography, Switch, Tooltip} from '@material-ui/core';
+import {Card, Typography, Switch, Tooltip} from '@mui/material';
 import PropTypes from 'prop-types';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 
 const getCookie = require('./util/cookies.js').getCookie;
 const setCookie = require('./util/cookies.js').setCookie;

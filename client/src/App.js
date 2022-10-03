@@ -9,11 +9,11 @@ import Contact from './contact/contact.jsx';
 import Home from './home/home.jsx';
 import Blog from './blog/blog.jsx';
 import Footer from './footer/footer.jsx';
-import LinkStyle from '@material-ui/core/Link';
+import LinkStyle from '@mui/material/Link';
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
-import {createMuiTheme} from '@material-ui/core/styles';
-import {ThemeProvider, withStyles} from '@material-ui/styles';
-import {WbSunny} from '@material-ui/icons';
+import {createTheme, StyledEngineProvider} from '@mui/material/styles';
+import {ThemeProvider, withStyles} from '@mui/styles';
+import {WbSunny} from '@mui/icons-material';
 import {
   Typography,
   Button,
@@ -22,7 +22,7 @@ import {
   ListItem,
   Grid,
   Tooltip,
-} from '@material-ui/core';
+} from '@mui/material';
 import ScrollUpButton from 'react-scroll-up-button';
 
 const getCookie = require('./shared/util/cookies.js').getCookie;
@@ -35,9 +35,9 @@ const routes = [
   {name: 'Contact', path: '/contact', index: 3},
 ];
 
-const darkTheme = createMuiTheme({
+const darkTheme = createTheme({
   palette: {
-    type: 'dark',
+    mode: 'dark',
     secondary: {
       main: '#FFCb05', // maize
     },
@@ -48,9 +48,9 @@ const darkTheme = createMuiTheme({
   },
 });
 
-const lightTheme = createMuiTheme({
+const lightTheme = createTheme({
   palette: {
-    type: 'light',
+    mode: 'light',
     divider: 'rgba(0, 0, 0, 0.26)',
     text: {
       primary: 'rgba(0, 0, 0, 1.00)',
@@ -206,61 +206,63 @@ export class App extends React.Component {
       <div />;
     const currentlySelected = this.state.currentlySelected;
     return (
-      <ThemeProvider theme={this.state.theme}>
-        <CssBaseline />
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={this.state.theme}>
+          <CssBaseline />
 
-        <Grid className={classes.root}>
-          {rainbowHeader}
-          <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
-            <WbSunny />
-          </Tooltip>
-          <Router>
-            <picture>
-              <source srcSet={profilePicture} type="image/png"/>
-              <img
-                srcSet={[profilePicture]}
-                className={classes.profileLogo}
-                title="headshot"
-                alt="headshot"
-              />
-            </picture>
-            <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
-            <nav className={classes.primaryNav}>
-              <List className={classes.AppList}>
-                {routes.map((route, i) => (
-                  <ListItem className={classes.AppListItem} key={route.name}>
-                    <LinkStyle style={{textDecoration: 'none'}}
-                      className={classes.routerLink} component={Link} to={route.path}>
-                      <Tooltip title={'Go to ' + route.name + ' page'} arrow>
-                        <Button
-                          onClick={() => this.currentlySelected(i)}
-                          variant={currentlySelected === i ? 'contained' : 'outlined'}
-                          color="secondary"
-                          className={classes.routerButton}
-                        >
-                          {route.name}
-                        </Button>
-                      </Tooltip>
-                    </LinkStyle>
-                  </ListItem>
-                ))}
-              </List>
-            </nav>
+          <Grid className={classes.root}>
+            {rainbowHeader}
+            <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
+              <WbSunny />
+            </Tooltip>
+            <Router>
+              <picture>
+                <source srcSet={profilePicture} type="image/png"/>
+                <img
+                  srcSet={[profilePicture]}
+                  className={classes.profileLogo}
+                  title="headshot"
+                  alt="headshot"
+                />
+              </picture>
+              <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
+              <nav className={classes.primaryNav}>
+                <List className={classes.AppList}>
+                  {routes.map((route, i) => (
+                    <ListItem className={classes.AppListItem} key={route.name}>
+                      <LinkStyle style={{textDecoration: 'none'}}
+                        className={classes.routerLink} component={Link} to={route.path}>
+                        <Tooltip title={'Go to ' + route.name + ' page'} arrow>
+                          <Button
+                            onClick={() => this.currentlySelected(i)}
+                            variant={currentlySelected === i ? 'contained' : 'outlined'}
+                            color="secondary"
+                            className={classes.routerButton}
+                          >
+                            {route.name}
+                          </Button>
+                        </Tooltip>
+                      </LinkStyle>
+                    </ListItem>
+                  ))}
+                </List>
+              </nav>
 
-            <Routes>
-              <Route path="/" exact element={<Home/>} />
-              <Route path="home" element={<Home/>} />
-              <Route path="projects" element={<Projects/>} />
-              <Route path="extra" element={<Extra/>} />
-              <Route path="contact" element={<Contact/>} />
-              <Route path="blog" element={<Blog/>} />
-            </Routes>
-          </Router>
-          <ScrollUpButton />
-          <Footer />
-        </Grid>
-        {rainbowFooter}
-      </ThemeProvider>
+              <Routes>
+                <Route path="/" exact element={<Home/>} />
+                <Route path="home" element={<Home/>} />
+                <Route path="projects" element={<Projects/>} />
+                <Route path="extra" element={<Extra/>} />
+                <Route path="contact" element={<Contact/>} />
+                <Route path="blog" element={<Blog/>} />
+              </Routes>
+            </Router>
+            <ScrollUpButton />
+            <Footer />
+          </Grid>
+          {rainbowFooter}
+        </ThemeProvider>
+      </StyledEngineProvider>
     );
   }
 }
