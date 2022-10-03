@@ -11,7 +11,7 @@ I don't like traditional résumés. They reduce a person's career accomplishment
 * Responsive design - one code base designed for mobile and desktop devices of any size
 * [Material-UI Card](https://material-ui.com/components/cards/#cards)-based content display
 * Subtle University of Michigan themes
-* And much more! [check it out](https://markfonte.dev)
+* And much more! [check it out](https://mark.fonte.com)
 
 
 ## Upcoming Features

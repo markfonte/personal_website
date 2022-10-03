@@ -47,7 +47,7 @@ sudo apt install sqlite3
 sudo apt install ruby
 
 # Add default git config
-git config --global user.email "mark@markfonte.dev"
+git config --global user.email "mark@fonte.com"
 git config --global user.name "Mark Fonte"
 
 # Install npm packages
