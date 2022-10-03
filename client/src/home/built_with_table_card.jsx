@@ -10,7 +10,7 @@ import githubLogo from '../static/images/logos/github_logo.svg';
 import trelloLogo from '../static/images/logos/trello_logo.svg';
 import jestLogo from '../static/images/logos/jest_logo.svg';
 import sqliteLogo from '../static/images/logos/sqlite_logo.svg';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 
 import {
@@ -30,8 +30,8 @@ import {
   Tooltip,
   Avatar,
   Chip,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const styles = {
   logoDefault: {
@@ -215,7 +215,7 @@ class BuiltWithTableCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton style={{padding: 0}}>
+                <IconButton style={{padding: 0}} size="large">
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>

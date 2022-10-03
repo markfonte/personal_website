@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import CommentBox from './comment_box.jsx';
-import {Card, CardContent} from '@material-ui/core';
+import {Card, CardContent} from '@mui/material';
 import LikeButton from './like_button.jsx';
 import PrideSwitch from './pride_switch.jsx';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 
 const styles = {
   root: {

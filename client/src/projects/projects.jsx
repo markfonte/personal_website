@@ -1,6 +1,6 @@
 import React, {lazy, Suspense} from 'react';
-import {Typography, CircularProgress} from '@material-ui/core';
-import {withStyles} from '@material-ui/styles';
+import {Typography, CircularProgress} from '@mui/material';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 import MetaTags from 'react-meta-tags';
 const LAZCard = lazy(() => import('./laz_card.jsx'));

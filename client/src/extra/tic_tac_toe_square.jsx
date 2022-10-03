@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Typography, Button, Tooltip} from '@material-ui/core';
-import {withStyles} from '@material-ui/styles';
+import {Typography, Button, Tooltip} from '@mui/material';
+import {withStyles} from '@mui/styles';
 
 const styles = {
   square: {

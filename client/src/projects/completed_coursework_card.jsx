@@ -6,16 +6,16 @@ import {
   CardContent,
   CardHeader,
   Link,
-  withStyles,
   Tooltip,
   Accordion,
   AccordionSummary,
   AccordionDetails,
   Chip,
   IconButton,
-} from '@material-ui/core';
-import DateRangeIcon from '@material-ui/icons/DateRange';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+import withStyles from '@mui/styles/withStyles';
+import DateRangeIcon from '@mui/icons-material/DateRange';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 
 const styles = {
@@ -177,7 +177,7 @@ class CompletedCourseworkCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton style={{padding: 0}}>
+                <IconButton style={{padding: 0}} size="large">
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>

@@ -1,5 +1,5 @@
 import React from 'react';
-import WebIcon from '@material-ui/icons/Web';
+import WebIcon from '@mui/icons-material/Web';
 import spotifyLogo from '../static/images/logos/spotify_logo.svg';
 import googlePlayMusicLogo from '../static/images/logos/google_play_music.svg';
 import appleMusicLogo from '../static/images/logos/apple_music_logo.svg';
@@ -9,7 +9,7 @@ import youtubeLogo from '../static/images/logos/youtube_logo.svg';
 import youtubeMusicLogo from '../static/images/logos/youtube_music_logo.svg';
 import facebookLogo from '../static/images/logos/facebook_logo.svg';
 import instagramLogo from '../static/images/logos/instagram_logo.svg';
-import {withStyles} from '@material-ui/styles';
+import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 
 import {
@@ -23,8 +23,8 @@ import {
   AccordionDetails,
   IconButton,
   Tooltip,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const styles = {
   gimbleCardMedia: {
@@ -151,7 +151,7 @@ class GimbleCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton style={{padding: 0}}>
+                <IconButton style={{padding: 0}} size="large">
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>
@@ -195,9 +195,7 @@ class GimbleCard extends React.Component {
           <Tooltip
             title="Go to Gimble A Cappella's website"
             arrow>
-            <IconButton
-              aria-label="Go to website"
-              href={websiteLink}>
+            <IconButton aria-label="Go to website" href={websiteLink} size="large">
               <WebIcon />
             </IconButton>
           </Tooltip>
@@ -206,9 +204,7 @@ class GimbleCard extends React.Component {
               title={'Go to ' + link.name}
               key={link.name}
               arrow>
-              <IconButton
-                aria-label={link.name}
-                href={link.link}>
+              <IconButton aria-label={link.name} href={link.link} size="large">
                 <img
                   src={link.image}
                   className={classes.gimbleCardActionIcon}

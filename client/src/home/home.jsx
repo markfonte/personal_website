@@ -2,8 +2,8 @@ import React, {lazy, Suspense} from 'react';
 import PropTypes from 'prop-types';
 const BuiltWithTableCard = lazy(() => import('./built_with_table_card.jsx'));
 const WelcomeCard = lazy(() => import('./welcome_card.jsx'));
-import {Typography, Link, CircularProgress} from '@material-ui/core';
-import {withStyles} from '@material-ui/styles';
+import {Typography, Link, CircularProgress} from '@mui/material';
+import {withStyles} from '@mui/styles';
 import MetaTags from 'react-meta-tags';
 const GlossaryCard = lazy(() => import('../shared/glossary_card.jsx'));
 

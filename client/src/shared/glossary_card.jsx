@@ -11,7 +11,6 @@ import reactNativeLogo from '../static/images/logos/react_native_logo.svg';
 import {
   Card,
   CardContent,
-  withStyles,
   CardHeader,
   Accordion,
   AccordionSummary,
@@ -22,8 +21,9 @@ import {
   Typography,
   IconButton,
   Tooltip,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+} from '@mui/material';
+import withStyles from '@mui/styles/withStyles';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const styles = {
   root: {
@@ -410,7 +410,7 @@ class GlossaryCard extends React.Component {
                     <Tooltip
                       title="Expand/collapse card"
                       arrow>
-                      <IconButton style={{padding: 0}}>
+                      <IconButton style={{padding: 0}} size="large">
                         <ExpandMoreIcon />
                       </IconButton>
                     </Tooltip>
