@@ -1,5 +1,6 @@
 # [My website](https://mark.fonte.com)
-![GitHub release](https://img.shields.io/github/release/markfonte/personal_website) [![Build Status](https://travis-ci.org/markfonte/personal_website.svg?branch=main)](https://travis-ci.org/markfonte/personal_website) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e)
+![GitHub release](https://img.shields.io/github/release/markfonte/personal_website) ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e) ![Maintenance](https://img.shields.io/maintenance/yes/2022) ![Website](https://img.shields.io/website/https/mark.fonte.com) ![GitHub issues](https://img.shields.io/github/issues-raw/markfonte/personal_website) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/markfonte/personal_website) ![GitHub last commit](https://img.shields.io/github/last-commit/markfonte/personal_website) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/markfonte/personal_website) ![GitHub Release Date](https://img.shields.io/github/release-date/markfonte/personal_website) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/markfonte/personal_website/latest) ![GitHub repo size](https://img.shields.io/github/repo-size/markfonte/personal_website) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markfonte/personal_website)
+
 
 ## Motivation
 
@@ -29,24 +30,3 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 ## Authors
 
 * **Mark Fonte** - *Developer* - [markfonte](https://github.com/markfonte)
-
-## Acknowledgments
-
-I drew inspiration from many different sources when building my website. Some of them include:
-*  The coding god [Nathan Johnson](https://github.com/nathan815) and [his website](https://nathanieljohnson.me/)
-*  The [ReactJS Tutorial](https://reactjs.org/tutorial/tutorial.html#overview) for letting me steal and style the tic-tac-toe game
-*  [Stack Overflow](https://stackoverflow.com/) for knowing the answer to pretty much anything if I search hard enough
-*  [shields.io](https://shields.io) for all of the badges on this readme
-*  [Git Reference](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) for all of my Git needs
-*  Every mentor, coworker, project partner, boss, and friend that has helped me along my journey
-
-
-![Maintenance](https://img.shields.io/maintenance/yes/2021) ![Website](https://img.shields.io/website/https/mark.fonte.com)
- 
-![GitHub issues](https://img.shields.io/github/issues-raw/markfonte/personal_website) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/markfonte/personal_website)
-
-![GitHub last commit](https://img.shields.io/github/last-commit/markfonte/personal_website) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/markfonte/personal_website)
-
-![GitHub Release Date](https://img.shields.io/github/release-date/markfonte/personal_website) ![GitHub commits since latest release](https://img.shields.io/github/commits-since/markfonte/personal_website/latest)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/markfonte/personal_website) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markfonte/personal_website)
