@@ -81,16 +81,11 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'justlight',
             cardName: 'JustLight',
-            subtitle: 'Software Lead',
+            subtitle: 'Software Engineering Lead',
           },
           {
             cardId: 'amazon',
-            cardName: 'Amazon',
-            subtitle: 'Software Development Engineer',
-          },
-          {
-            cardId: 'aws',
-            cardName: 'Amazon Web Services',
+            cardName: 'Amazon / Amazon Web Services',
             subtitle: 'Software Development Engineer',
           },
         ],
@@ -129,6 +124,11 @@ class GlossaryCard extends React.Component {
             cardId: 'clipp',
             cardName: 'Clipp',
             subtitle: 'Full Stack Developer',
+          },
+          {
+            cardId: 'justlight',
+            cardName: 'JustLight',
+            subtitle: 'Software Engineering Lead',
           },
           {
             cardId: 'mi_symptoms',
@@ -199,6 +199,16 @@ class GlossaryCard extends React.Component {
         icon: androidLogo,
         projects: [
           {
+            cardId: 'amazon',
+            cardName: 'Amazon / Amazon Web Services',
+            subtitle: 'Software Development Engineer',
+          },
+          {
+            cardId: 'justlight',
+            cardName: 'JustLight',
+            subtitle: 'Software Engineering Lead',
+          },
+          {
             cardId: 'laz',
             cardName: 'Learning A-Z',
             subtitle: 'Software Engineering Intern',
@@ -235,6 +245,11 @@ class GlossaryCard extends React.Component {
             subtitle: 'Full Stack Developer',
           },
           {
+            cardId: 'justlight',
+            cardName: 'JustLight',
+            subtitle: 'Software Engineering Lead',
+          },
+          {
             cardId: 'mhacks12',
             cardName: 'InstEvents',
             subtitle: 'Hackathon Project @ MHacks 12',
@@ -255,6 +270,11 @@ class GlossaryCard extends React.Component {
         tagName: 'Java Projects',
         icon: javaLogo,
         projects: [
+          {
+            cardId: 'amazon',
+            cardName: 'Amazon / Amazon Web Services',
+            subtitle: 'Software Development Engineer',
+          },
           {
             cardId: 'jpmorgan',
             cardName: 'J.P. Morgan Chase',
@@ -280,6 +300,11 @@ class GlossaryCard extends React.Component {
             cardId: 'grizzhacks3',
             cardName: 'Congo AI',
             subtitle: 'Hackathon Project @ GrizzHacks 3',
+          },
+          {
+            cardId: 'justlight',
+            cardName: 'JustLight',
+            subtitle: 'Software Engineering Lead',
           },
           {
             cardId: 'revolutionuc8',
@@ -318,6 +343,11 @@ class GlossaryCard extends React.Component {
         tagName: 'Kotlin Projects',
         icon: kotlinLogo,
         projects: [
+          {
+            cardId: 'justlight',
+            cardName: 'JustLight',
+            subtitle: 'Software Engineering Lead',
+          },
           {
             cardId: 'mhacks12',
             cardName: 'InstEvents',
@@ -359,6 +389,11 @@ class GlossaryCard extends React.Component {
             cardId: 'jpmorgan',
             cardName: 'J.P. Morgan Chase',
             subtitle: 'Software Engineering Intern',
+          },
+          {
+            cardId: 'justlight',
+            cardName: 'JustLight',
+            subtitle: 'Software Engineering Lead',
           },
           {
             cardId: 'personal_website',

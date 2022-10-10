@@ -15,7 +15,6 @@ const JPMorganCard = lazy(() => import('./jpmorgan_card.jsx'));
 const RoadMapperCard = lazy(() => import('./road_mapper_card.jsx'));
 const MISymptomsCard = lazy(() => import('./mi_symptoms_card.jsx'));
 const AmazonCard = lazy(() => import('./amazon_card.jsx'));
-const AwsCard = lazy(() => import('./aws_card.jsx'));
 const MHacks12Card = lazy(() => import('./mhacks12_card.jsx'));
 const WalklensCard = lazy(() => import('./walklens_card.jsx'));
 const ClippCard = lazy(() => import('./clipp_card.jsx'));
@@ -45,9 +44,8 @@ class Projects extends React.Component {
           My work experiences, internships, side projects and hackathon projects
         </Typography>
         <Suspense fallback={renderLoader()}>
-          <JustlightCard />
+          <JustlightCard isDarkTheme={this.props.isDarkTheme} />
           <AmazonCard />
-          <AwsCard />
           <JPMorganCard />
           <LAZCard />
           <CompletedCourseworkCard />
@@ -70,6 +68,7 @@ class Projects extends React.Component {
 
 Projects.propTypes = {
   classes: PropTypes.object.isRequired,
+  isDarkTheme: PropTypes.bool.isRequired,
 };
 
 export default withStyles(styles)(Projects);

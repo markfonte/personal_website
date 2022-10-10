@@ -393,7 +393,7 @@ class LAZCard extends React.Component {
                 summers at Learning A-Z. They are welcoming, encouraging, great engineers and just
                 good people. I am very thankful for my time there. To anyone looking for a job in Ann
                 Arbor, I would certainly recommend Learning A-Z. Feel free to contact me and I would
-                be happy to give more details on what my experience was like working there!
+                be happy to give more details on my experience working there!
               </Typography>
             </CardContent>
           </AccordionDetails>

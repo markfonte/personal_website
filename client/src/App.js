@@ -252,7 +252,7 @@ export class App extends React.Component {
               <Routes>
                 <Route path="/" exact element={<Home/>} />
                 <Route path="home" element={<Home/>} />
-                <Route path="projects" element={<Projects/>} />
+                <Route path="projects" element={<Projects isDarkTheme={this.state.theme===darkTheme}/>} />
                 <Route path="extra" element={<Extra/>} />
                 <Route path="contact" element={<Contact/>} />
                 <Route path="blog" element={<Blog/>} />

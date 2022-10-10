@@ -132,7 +132,7 @@ class WelcomeCard extends React.Component {
           <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Typography variant="h6" paragraph>
-                Welcome to my website! I&#39;m the software lead at a medical device startup called
+                Welcome to my website! I&#39;m the software engineering lead at a medical device startup called
                 {' '}
                 <Tooltip arrow title="Go to JustLight">
                   <Link color="secondary" href={justlightLink} className={justlightColor}>

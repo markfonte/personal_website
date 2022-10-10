@@ -25,6 +25,7 @@ const styles = {
     marginTop: '16px',
     marginLeft: '0px',
     marginRight: '0px',
+    maxWidth: '500px',
   },
   tags: {
     margin: '4px',
@@ -91,11 +92,11 @@ class JustlightCard extends React.Component {
               <CardHeader
                 className="card-header"
                 title="JustLight"
-                subheader="Software Lead"
+                subheader="Software Engineering Lead"
               />
               <CardMedia
                 className={classes.justlightLogo}
-                image="/images/justlight_logo.jpeg"
+                image={this.props.isDarkTheme ? '/images/justlight_logo_light.png' : '/images/justlight_logo_dark.png'}
                 title="JustLight logo"
                 alt="JustLight logo"
                 component="img"
@@ -117,7 +118,7 @@ class JustlightCard extends React.Component {
           <AccordionDetails>
             <CardContent className={classes.cardContent}>
               <Typography variant="body1">
-                I am the software lead at
+                I am the software engineering lead at
                 {' '}
                 <Link color="secondary" href={justlightLink}>
                 JustLight,
@@ -129,7 +130,7 @@ class JustlightCard extends React.Component {
                 Sunflower
                 </Link>
                 {' '}
-                project.
+                project. More details to come!
               </Typography>
             </CardContent>
           </AccordionDetails>
@@ -141,6 +142,7 @@ class JustlightCard extends React.Component {
 
 JustlightCard.propTypes = {
   classes: PropTypes.object.isRequired,
+  isDarkTheme: PropTypes.bool.isRequired,
 };
 
 export default withStyles(styles)(JustlightCard);
