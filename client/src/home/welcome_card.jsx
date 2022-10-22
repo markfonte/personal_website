@@ -48,7 +48,7 @@ const styles = {
     marginTop: '16px',
     marginLeft: '0px',
     marginRight: '0px',
-    maxWidth: '700px',
+    maxWidth: '1000px',
   },
 };
 
