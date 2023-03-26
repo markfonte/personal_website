@@ -194,7 +194,7 @@ class CompletedCourseworkCard extends React.Component {
               />
               <CardMedia
                 className={classes.universityOfMichiganLogo}
-                image="images/university_of_michigan_logo.svg"
+                image="media/university_of_michigan_logo.svg"
                 title="University of Michigan banner logo"
                 alt="University of Michigan banner logo"
                 component="img"

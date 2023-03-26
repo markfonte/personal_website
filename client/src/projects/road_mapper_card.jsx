@@ -115,7 +115,7 @@ class RoadMapperCard extends React.Component {
               />
               <CardMedia
                 className={classes.roadMapperLogo}
-                image="images/road_mapper_logo.png"
+                image="media/road_mapper_logo.png"
                 title="Road Mapper logo"
                 alt="Road Mapper logo"
                 component="img"
