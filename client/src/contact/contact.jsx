@@ -4,7 +4,6 @@ import withStyles from '@mui/styles/withStyles';
 import PropTypes from 'prop-types';
 import gimbleCoverPhoto from '../static/images/photos/gimble_cover_photo.webp';
 import gimbleCoverPhotoFallback from '../static/images/photos/gimble_cover_photo.jpg';
-import MetaTags from 'react-meta-tags';
 
 const getCookie = require('../shared/util/cookies.js').getCookie;
 
@@ -56,6 +55,7 @@ class Contact extends React.Component {
         window.LIRenderAll();
     }
   }
+
   render() {
     const {classes} = this.props;
     const emailLink = `mailto:mark@fonte.com`;
@@ -65,12 +65,10 @@ class Contact extends React.Component {
     // want this to rerender each time because theme might have changed
     const theme = getCookie('app_theme') === 'dark_theme' ? 'light' : 'dark';
 
+    document.title = 'Contact';
+
     return (
       <div className={classes.root}>
-        <MetaTags>
-          <title>Contact</title>
-          <meta name="description" content="Let's get in touch!"/>
-        </MetaTags>
         <Typography className={classes.title} variant="h6">
           Let&#39;s get in touch!
         </Typography>

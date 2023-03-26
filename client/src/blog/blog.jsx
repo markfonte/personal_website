@@ -18,7 +18,6 @@ const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
 import ShareIcon from '@mui/icons-material/Share';
 import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
-import MetaTags from 'react-meta-tags';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
@@ -68,6 +67,8 @@ class Blog extends React.Component {
 
   render() {
     const {classes} = this.props;
+
+    document.title = 'Blog';
 
     const posts = [
       {
@@ -243,13 +244,6 @@ I also make the case that, as long as employers are going to do what is in their
 
     return (
       <div>
-        <MetaTags>
-          <title>Blog</title>
-          <meta
-            name="description"
-            content="Mark Fonte blog"
-          />
-        </MetaTags>
         <Snackbar onClose={this.handleClose} open={this.state.successDialogOpen} autoHideDuration={4000}>
           <Alert variant="outlined" onClose={this.handleClose} severity="success">
                       Link copied to clipboard!

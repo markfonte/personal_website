@@ -2,7 +2,6 @@ import React, {lazy, Suspense} from 'react';
 import {Typography, CircularProgress} from '@mui/material';
 import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
-import MetaTags from 'react-meta-tags';
 const LAZCard = lazy(() => import('./laz_card.jsx'));
 const RevolutionUC8Card = lazy(() => import('./revolutionuc8_card.jsx'));
 const Spartahack5Card = lazy(() => import('./spartahack5_card.jsx'));
@@ -31,15 +30,11 @@ const styles = {
 class Projects extends React.Component {
   render() {
     const {classes} = this.props;
+
+    document.title = 'Projects';
+
     return (
       <div>
-        <MetaTags>
-          <title>Projects</title>
-          <meta
-            name="description"
-            content="My work experiences, internships, side projects and hackathon projects"
-          />
-        </MetaTags>
         <Typography className={classes.title} variant="h6"paragraph>
           My work experiences, internships, side projects and hackathon projects
         </Typography>

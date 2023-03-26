@@ -4,7 +4,6 @@ const BuiltWithTableCard = lazy(() => import('./built_with_table_card.jsx'));
 const WelcomeCard = lazy(() => import('./welcome_card.jsx'));
 import {Typography, Link, CircularProgress} from '@mui/material';
 import {withStyles} from '@mui/styles';
-import MetaTags from 'react-meta-tags';
 const GlossaryCard = lazy(() => import('../shared/glossary_card.jsx'));
 
 const renderLoader = () => <CircularProgress color="secondary" />;
@@ -45,14 +44,10 @@ class Home extends React.Component {
     const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
     const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
 
+    document.title = 'Home';
+
     return (
       <div>
-        <MetaTags>
-          <title>Home</title>
-          <meta
-            name="description"
-            content="Software Engineering Lead at JustLight · Former Amazon / Amazon Web Services · University of Michigan"/>
-        </MetaTags>
         <Typography className={classes.title} variant="h6">
           Software Engineering Lead at{' '}
 
