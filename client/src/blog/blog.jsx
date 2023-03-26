@@ -68,7 +68,7 @@ class Blog extends React.Component {
   render() {
     const {classes} = this.props;
 
-    document.title = 'Blog';
+    document.title = 'Blog | Mark Fonte';
 
     const posts = [
       {

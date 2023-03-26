@@ -44,7 +44,7 @@ class Home extends React.Component {
     const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
     const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
 
-    document.title = 'Home';
+    document.title = 'Home | Mark Fonte';
 
     return (
       <div>

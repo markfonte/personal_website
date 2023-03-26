@@ -12,7 +12,7 @@ const styles = {};
 
 class Extra extends React.Component {
   render() {
-    document.title = 'Extra';
+    document.title = 'Extra | Mark Fonte';
 
     return (
       <div>

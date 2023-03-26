@@ -1,11 +1,11 @@
 import React from 'react';
-import {Typography, Button, Tooltip} from '@mui/material';
+import {Typography, Tooltip, Chip, Avatar} from '@mui/material';
 import withStyles from '@mui/styles/withStyles';
 import PropTypes from 'prop-types';
-import gimbleCoverPhoto from '../static/images/photos/gimble_cover_photo.webp';
-import gimbleCoverPhotoFallback from '../static/images/photos/gimble_cover_photo.jpg';
-
-const getCookie = require('../shared/util/cookies.js').getCookie;
+import contactCoverPhoto from '../static/images/photos/contact_cover_photo.webp';
+import contactCoverPhotoFallback from '../static/images/photos/contact_cover_photo.jpg';
+import venmoLogo from '../static/images/logos/venmo_logo.svg';
+import gmailLogo from '../static/images/logos/gmail_logo.svg';
 
 const styles = {
   root: {
@@ -27,45 +27,15 @@ const styles = {
     maxHeight: '500px',
     maxWidth: '100%',
   },
-  linkedinWrapper: {
-    display: 'flex',
-    flexGrow: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-  },
-  linkedinBadge: {
-    marginTop: 16,
-    marginBottom: 16,
-    backgroundColor: '#F6F6F6',
-    width: '330px', // the "large" LinkedIn badge has a set width of 330px
-    borderRadius: 3,
-    padding: -1,
-  },
 };
 
 class Contact extends React.Component {
-  componentDidMount() {
-    // reload LinkedIn Badge
-    // ignore this during Jest tests
-    if (process.env.NODE_ENV !== 'test' &&
-    window !== undefined &&
-    window.LIRenderAll !== undefined ) {
-      // eslint-disable-next-line
-        window.LIRenderAll();
-    }
-  }
-
   render() {
     const {classes} = this.props;
     const emailLink = `mailto:mark@fonte.com`;
-    const phoneLink = `tel:406-948-1034`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;
 
-    // want this to rerender each time because theme might have changed
-    const theme = getCookie('app_theme') === 'dark_theme' ? 'light' : 'dark';
-
-    document.title = 'Contact';
+    document.title = 'Contact | Mark Fonte';
 
     return (
       <div className={classes.root}>
@@ -73,77 +43,48 @@ class Contact extends React.Component {
           Let&#39;s get in touch!
         </Typography>
         <Typography className={classes.subtitle} variant="subtitle1">
-          I am always open to new opportunities - recommendations, contracting work,
-          collaborations, job opportunities, etc. Feel free to reach out!
+          My door is always open! And so is my Venmo... so feel free to pass along a few (hundred) of your hard-earned bucks 🤪
         </Typography>
         <div>
           <Tooltip
             arrow
             placement="top"
-            title="Send me an email">
-            <Button
+            title="Email me: mark@fonte.com">
+            <Chip
               className={classes.buttonDefault}
-              variant="outlined"
-              color="secondary"
-              href={emailLink}
-            >
-            Email
-            </Button>
+              key='Email chip'
+              avatar={<Avatar alt="Gmail logo" src={gmailLogo} />}
+              label='Email'
+              variant='outlined'
+              onClick={() => console.log(window.open(emailLink))}
+              clickable />
           </Tooltip>
           <Tooltip
             arrow
             placement="top"
-            title="Call/text me">
-            <Button
+            title="Venmo me? @mark-fonte">
+            <Chip
               className={classes.buttonDefault}
-              variant="outlined"
-              color="secondary"
-              href={phoneLink}
-            >
-            Phone
-            </Button>
-          </Tooltip>
-          <Tooltip
-            arrow
-            placement="top"
-            title="Venmo me?">
-            <Button
-              className={classes.buttonDefault}
-              variant="outlined"
-              color="secondary"
-              href={venmoLink}
-            >
-            Venmo
-            </Button>
+              key='Venmo chip'
+              avatar={<Avatar alt="Venmo logo" src={venmoLogo} />}
+              label='Venmo'
+              variant='outlined'
+              onClick={() => console.log(window.open(venmoLink))}
+              clickable />
           </Tooltip>
         </div>
         <Typography className={classes.paragraph} variant="caption">
-          My resume is available upon request
+          <i>My resume is available upon request</i>
         </Typography>
-        <div className={classes.linkedinWrapper}>
-          <div
-            className={['LI-profile-badge', classes.linkedinBadge].join(' ')}
-            data-version="v1"
-            data-size="large"
-            data-locale="en_US"
-            data-type="horizontal"
-            data-theme={theme}
-            data-vanity="mark-fonte">
-            <a
-              className="LI-simple-link"
-              href='https://www.linkedin.com/in/mark-fonte?trk=profile-badge'>
-                LinkedIn
-            </a>
-          </div>
-        </div>
+        <br/> <br/>
         <picture>
-          <source srcSet={gimbleCoverPhoto} type="image/webp"/>
-          <source srcSet={gimbleCoverPhotoFallback} type="image/jpg"/>
+          <source srcSet={contactCoverPhoto} type="image/webp"/>
+          <source srcSet={contactCoverPhotoFallback} type="image/jpg"/>
           <img
-            srcSet={[gimbleCoverPhoto, gimbleCoverPhotoFallback]}
+            srcSet={[contactCoverPhoto, contactCoverPhotoFallback]}
             className={classes.contactImage}
-            title="Gimble by the fountain"
-            alt="Gimble by the fountain"
+            title="Contact page cover photo"
+            alt="Contact page cover photo"
           />
         </picture>
       </div>

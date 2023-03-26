@@ -31,7 +31,7 @@ class Projects extends React.Component {
   render() {
     const {classes} = this.props;
 
-    document.title = 'Projects';
+    document.title = 'Projects | Mark Fonte';
 
     return (
       <div>
