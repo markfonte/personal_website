@@ -1,6 +1,6 @@
 import React from 'react';
 import laughableLyricsLogo
-  from '../static/images/logos/laughable_lyrics_logo.svg';
+  from '../static/logos/laughable_lyrics_logo.svg';
 import {
   Typography,
   Card,
@@ -21,19 +21,19 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 
 import laughableLyricsScreenshotOne
-  from '../static/images/screenshots/laughable_lyrics_screenshot_1.webp';
+  from '../static/screenshots/laughable_lyrics_screenshot_1.webp';
 import laughableLyricsScreenshotOneFallback
-  from '../static/images/screenshots/laughable_lyrics_screenshot_1.jpg';
+  from '../static/screenshots/laughable_lyrics_screenshot_1.jpg';
 
 import laughableLyricsScreenshotTwo
-  from '../static/images/screenshots/laughable_lyrics_screenshot_2.webp';
+  from '../static/screenshots/laughable_lyrics_screenshot_2.webp';
 import laughableLyricsScreenshotTwoFallback
-  from '../static/images/screenshots/laughable_lyrics_screenshot_2.jpg';
+  from '../static/screenshots/laughable_lyrics_screenshot_2.jpg';
 
 import laughableLyricsScreenshotThree
-  from '../static/images/screenshots/laughable_lyrics_screenshot_3.webp';
+  from '../static/screenshots/laughable_lyrics_screenshot_3.webp';
 import laughableLyricsScreenshotThreeFallback
-  from '../static/images/screenshots/laughable_lyrics_screenshot_3.jpg';
+  from '../static/screenshots/laughable_lyrics_screenshot_3.jpg';
 
 const styles = {
   spartahack5Banner: {
@@ -143,7 +143,7 @@ class Spartahack5Card extends React.Component {
               />
               <CardMedia
                 className={classes.spartahack5Banner}
-                image="/images/spartahack_banner.png"
+                image="/media/spartahack_banner.png"
                 title="SpartaHack V banner"
                 alt="SpartaHack V banner"
                 component="img"

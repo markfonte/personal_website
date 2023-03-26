@@ -1,23 +1,23 @@
 import React from 'react';
 import parentPortalScreenshotOne
-  from '../static/images/screenshots/laz_parent_portal_screenshot_1.webp';
+  from '../static/screenshots/laz_parent_portal_screenshot_1.webp';
 import parentPortalScreenshotOneFallback
-  from '../static/images/screenshots/laz_parent_portal_screenshot_1.jpg';
+  from '../static/screenshots/laz_parent_portal_screenshot_1.jpg';
 
 import parentPortalScreenshotTwo
-  from '../static/images/screenshots/laz_parent_portal_screenshot_2.webp';
+  from '../static/screenshots/laz_parent_portal_screenshot_2.webp';
 import parentPortalScreenshotTwoFallback
-  from '../static/images/screenshots/laz_parent_portal_screenshot_2.jpg';
+  from '../static/screenshots/laz_parent_portal_screenshot_2.jpg';
 
 import parentPortalScreenshotThree
-  from '../static/images/screenshots/laz_parent_portal_screenshot_3.webp';
+  from '../static/screenshots/laz_parent_portal_screenshot_3.webp';
 import parentPortalScreenshotThreeFallback
-  from '../static/images/screenshots/laz_parent_portal_screenshot_3.jpg';
+  from '../static/screenshots/laz_parent_portal_screenshot_3.jpg';
 
 import badgeScreenshot
-  from '../static/images/screenshots/laz_badge_screenshot.webp';
+  from '../static/screenshots/laz_badge_screenshot.webp';
 import badgeScreenshotFallback
-  from '../static/images/screenshots/laz_badge_screenshot.png';
+  from '../static/screenshots/laz_badge_screenshot.png';
 import {
   Typography,
   Card,
@@ -154,7 +154,7 @@ class LAZCard extends React.Component {
               />
               <CardMedia
                 className={classes.lazLogo}
-                image="/images/laz_logo.svg"
+                image="/media/laz_logo.svg"
                 title="Learning A-Z logo"
                 component="img"
                 alt="Learning A-Z logo"

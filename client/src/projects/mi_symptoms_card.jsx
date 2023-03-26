@@ -18,19 +18,19 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import miSymptomsScreenshotOne
-  from '../static/images/screenshots/mi_symptoms_screenshot_1.webp';
+  from '../static/screenshots/mi_symptoms_screenshot_1.webp';
 import miSymptomsScreenshotOneFallback
-  from '../static/images/screenshots/mi_symptoms_screenshot_1.jpg';
+  from '../static/screenshots/mi_symptoms_screenshot_1.jpg';
 
 import miSymptomsScreenshotTwo
-  from '../static/images/screenshots/mi_symptoms_screenshot_2.webp';
+  from '../static/screenshots/mi_symptoms_screenshot_2.webp';
 import miSymptomsScreenshotTwoFallback
-  from '../static/images/screenshots/mi_symptoms_screenshot_2.jpg';
+  from '../static/screenshots/mi_symptoms_screenshot_2.jpg';
 
 import miSymptomsScreenshotThree
-  from '../static/images/screenshots/mi_symptoms_screenshot_3.webp';
+  from '../static/screenshots/mi_symptoms_screenshot_3.webp';
 import miSymptomsScreenshotThreeFallback
-  from '../static/images/screenshots/mi_symptoms_screenshot_3.jpg';
+  from '../static/screenshots/mi_symptoms_screenshot_3.jpg';
 import PropTypes from 'prop-types';
 
 const styles = {
@@ -140,7 +140,7 @@ class MISymptomsCard extends React.Component {
               />
               <CardMedia
                 className={classes.miSymptomsLogo}
-                src="/images/mi_symptoms_logo.png"
+                src="/media/mi_symptoms_logo.png"
                 title="MI Symptoms logo"
                 alt="MI Symptoms logo"
                 component="img"

@@ -1,19 +1,19 @@
 import React from 'react';
 import spotlightScreenshotOne
-  from '../static/images/screenshots/spotlight_screenshot_1.webp';
+  from '../static/screenshots/spotlight_screenshot_1.webp';
 import spotlightScreenshotOneFallback
-  from '../static/images/screenshots/spotlight_screenshot_1.jpg';
+  from '../static/screenshots/spotlight_screenshot_1.jpg';
 
 import spotlightScreenshotTwo
-  from '../static/images/screenshots/spotlight_screenshot_2.webp';
+  from '../static/screenshots/spotlight_screenshot_2.webp';
 import spotlightScreenshotTwoFallback
-  from '../static/images/screenshots/spotlight_screenshot_2.jpg';
+  from '../static/screenshots/spotlight_screenshot_2.jpg';
 
 
 import spotlightScreenshotThree
-  from '../static/images/screenshots/spotlight_screenshot_3.webp';
+  from '../static/screenshots/spotlight_screenshot_3.webp';
 import spotlightScreenshotThreeFallback
-  from '../static/images/screenshots/spotlight_screenshot_3.jpg';
+  from '../static/screenshots/spotlight_screenshot_3.jpg';
 
 import {
   Typography,
@@ -138,7 +138,7 @@ class SpotlightCard extends React.Component {
               />
               <CardMedia
                 className={classes.spotlightLogo}
-                image="/images/spotlight_logo.png"
+                image="/media/spotlight_logo.png"
                 title="Spotlight logo"
                 alt="Spotlight logo"
                 component="img"

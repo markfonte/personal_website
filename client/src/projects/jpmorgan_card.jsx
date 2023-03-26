@@ -1,9 +1,9 @@
 import React from 'react';
 
 import JPMorganScreenshotOne
-  from '../static/images/screenshots/jpmorgan_screenshot_1.webp';
+  from '../static/screenshots/jpmorgan_screenshot_1.webp';
 import JPMorganScreenshotOneFallback
-  from '../static/images/screenshots/jpmorgan_screenshot_1.jpg';
+  from '../static/screenshots/jpmorgan_screenshot_1.jpg';
 
 import {
   Typography,
@@ -126,7 +126,7 @@ class JPMorganCard extends React.Component {
               />
               <CardMedia
                 className={classes.jpMorganLogo}
-                image="/images/jpmorgan_logo.svg"
+                image="/media/jpmorgan_logo.svg"
                 title="J.P. Morgan Chase logo"
                 alt="J.P. Morgan Chase logo"
                 component="img"

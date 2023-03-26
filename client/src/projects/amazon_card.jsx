@@ -19,29 +19,29 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 
 import amazonScreenshotOne
-  from '../static/images/screenshots/amazon_screenshot_1.webp';
+  from '../static/screenshots/amazon_screenshot_1.webp';
 import amazonScreenshotOneFallback
-  from '../static/images/screenshots/amazon_screenshot_1.jpg';
+  from '../static/screenshots/amazon_screenshot_1.jpg';
 
 import awsScreenshotOne
-  from '../static/images/screenshots/aws_screenshot_1.webp';
+  from '../static/screenshots/aws_screenshot_1.webp';
 import awsScreenshotOneFallback
-  from '../static/images/screenshots/aws_screenshot_1.jpg';
+  from '../static/screenshots/aws_screenshot_1.jpg';
 
 import awsScreenshotTwo
-  from '../static/images/screenshots/aws_screenshot_2.webp';
+  from '../static/screenshots/aws_screenshot_2.webp';
 import awsScreenshotTwoFallback
-  from '../static/images/screenshots/aws_screenshot_2.jpg';
+  from '../static/screenshots/aws_screenshot_2.jpg';
 
 import awsScreenshotThree
-  from '../static/images/screenshots/aws_screenshot_3.webp';
+  from '../static/screenshots/aws_screenshot_3.webp';
 import awsScreenshotThreeFallback
-  from '../static/images/screenshots/aws_screenshot_3.jpg';
+  from '../static/screenshots/aws_screenshot_3.jpg';
 
 import awsScreenshotFour
-  from '../static/images/screenshots/aws_screenshot_4.webp';
+  from '../static/screenshots/aws_screenshot_4.webp';
 import awsScreenshotFourFallback
-  from '../static/images/screenshots/aws_screenshot_4.jpg';
+  from '../static/screenshots/aws_screenshot_4.jpg';
 
 
 const styles = {
@@ -162,7 +162,7 @@ class AmazonCard extends React.Component {
               />
               <CardMedia
                 className={classes.amazonLogo}
-                image="/images/amazon_logo.svg"
+                image="/media/amazon_logo.svg"
                 title="Amazon logo"
                 alt="Amazon logo"
                 component="img"

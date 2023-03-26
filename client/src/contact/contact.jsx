@@ -2,10 +2,10 @@ import React from 'react';
 import {Typography, Tooltip, Chip, Avatar} from '@mui/material';
 import withStyles from '@mui/styles/withStyles';
 import PropTypes from 'prop-types';
-import contactCoverPhoto from '../static/images/photos/contact_cover_photo.webp';
-import contactCoverPhotoFallback from '../static/images/photos/contact_cover_photo.jpg';
-import venmoLogo from '../static/images/logos/venmo_logo.svg';
-import gmailLogo from '../static/images/logos/gmail_logo.svg';
+import contactCoverPhoto from '../static/photos/contact_cover_photo.webp';
+import contactCoverPhotoFallback from '../static/photos/contact_cover_photo.jpg';
+import venmoLogo from '../static/logos/venmo_logo.svg';
+import gmailLogo from '../static/logos/gmail_logo.svg';
 
 const styles = {
   root: {

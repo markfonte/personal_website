@@ -16,18 +16,18 @@ import {
 import withStyles from '@mui/styles/withStyles';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import congoaiLogo from '../static/images/logos/congoai_logo.svg';
+import congoaiLogo from '../static/logos/congoai_logo.svg';
 import PropTypes from 'prop-types';
 
 import congoaiScreenshotOne from
-  '../static/images/screenshots/congoai_screenshot_1.webp';
+  '../static/screenshots/congoai_screenshot_1.webp';
 import congoaiScreenshotOneFallback from
-  '../static/images/screenshots/congoai_screenshot_1.jpg';
+  '../static/screenshots/congoai_screenshot_1.jpg';
 
 import congoaiDemoOne from
-  '../static/images/photos/congoai_demo_1.webp';
+  '../static/photos/congoai_demo_1.webp';
 import congoaiDemoOneFallback from
-  '../static/images/photos/congoai_demo_1.jpg';
+  '../static/photos/congoai_demo_1.jpg';
 
 const styles = {
   grizzhacks3Banner: {
@@ -126,7 +126,7 @@ class Grizzhacks3Card extends React.Component {
               />
               <CardMedia
                 className={classes.grizzhacks3Banner}
-                image="/images/grizzhacks_banner.png"
+                image="/media/grizzhacks_banner.png"
                 title="GrizzHacks 3 banner"
                 alt="GrizzHacks 3 banner"
                 component="img"

@@ -18,61 +18,61 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 import justlightScreenshotOne
-  from '../static/images/screenshots/justlight_screenshot_1.webp';
+  from '../static/screenshots/justlight_screenshot_1.webp';
 import justlightScreenshotOneFallback
-  from '../static/images/screenshots/justlight_screenshot_1.jpg';
+  from '../static/screenshots/justlight_screenshot_1.jpg';
 import justlightScreenshotTwo
-  from '../static/images/screenshots/justlight_screenshot_2.webp';
+  from '../static/screenshots/justlight_screenshot_2.webp';
 import justlightScreenshotTwoFallback
-  from '../static/images/screenshots/justlight_screenshot_2.jpg';
+  from '../static/screenshots/justlight_screenshot_2.jpg';
 import justlightScreenshotThree
-  from '../static/images/screenshots/justlight_screenshot_3.webp';
+  from '../static/screenshots/justlight_screenshot_3.webp';
 import justlightScreenshotThreeFallback
-  from '../static/images/screenshots/justlight_screenshot_3.jpg';
+  from '../static/screenshots/justlight_screenshot_3.jpg';
 import justlightScreenshotFour
-  from '../static/images/screenshots/justlight_screenshot_4.webp';
+  from '../static/screenshots/justlight_screenshot_4.webp';
 import justlightScreenshotFourFallback
-  from '../static/images/screenshots/justlight_screenshot_4.jpg';
+  from '../static/screenshots/justlight_screenshot_4.jpg';
 import justlightScreenshotFive
-  from '../static/images/screenshots/justlight_screenshot_5.webp';
+  from '../static/screenshots/justlight_screenshot_5.webp';
 import justlightScreenshotFiveFallback
-  from '../static/images/screenshots/justlight_screenshot_5.jpg';
+  from '../static/screenshots/justlight_screenshot_5.jpg';
 import justlightScreenshotSix
-  from '../static/images/screenshots/justlight_screenshot_6.webp';
+  from '../static/screenshots/justlight_screenshot_6.webp';
 import justlightScreenshotSixFallback
-  from '../static/images/screenshots/justlight_screenshot_6.jpg';
+  from '../static/screenshots/justlight_screenshot_6.jpg';
 import justlightScreenshotSeven
-  from '../static/images/screenshots/justlight_screenshot_7.webp';
+  from '../static/screenshots/justlight_screenshot_7.webp';
 import justlightScreenshotSevenFallback
-  from '../static/images/screenshots/justlight_screenshot_7.jpg';
+  from '../static/screenshots/justlight_screenshot_7.jpg';
 import justlightScreenshotEight
-  from '../static/images/screenshots/justlight_screenshot_8.webp';
+  from '../static/screenshots/justlight_screenshot_8.webp';
 import justlightScreenshotEightFallback
-  from '../static/images/screenshots/justlight_screenshot_8.jpg';
+  from '../static/screenshots/justlight_screenshot_8.jpg';
 import justlightScreenshotNine
-  from '../static/images/screenshots/justlight_screenshot_9.webp';
+  from '../static/screenshots/justlight_screenshot_9.webp';
 import justlightScreenshotNineFallback
-  from '../static/images/screenshots/justlight_screenshot_9.jpg';
+  from '../static/screenshots/justlight_screenshot_9.jpg';
 import justlightScreenshotTen
-  from '../static/images/screenshots/justlight_screenshot_10.webp';
+  from '../static/screenshots/justlight_screenshot_10.webp';
 import justlightScreenshotTenFallback
-  from '../static/images/screenshots/justlight_screenshot_10.jpg';
+  from '../static/screenshots/justlight_screenshot_10.jpg';
 import justlightScreenshotEleven
-  from '../static/images/screenshots/justlight_screenshot_11.webp';
+  from '../static/screenshots/justlight_screenshot_11.webp';
 import justlightScreenshotElevenFallback
-  from '../static/images/screenshots/justlight_screenshot_11.jpg';
+  from '../static/screenshots/justlight_screenshot_11.jpg';
 import justlightScreenshotTwelve
-  from '../static/images/screenshots/justlight_screenshot_12.webp';
+  from '../static/screenshots/justlight_screenshot_12.webp';
 import justlightScreenshotTwelveFallback
-  from '../static/images/screenshots/justlight_screenshot_12.jpg';
+  from '../static/screenshots/justlight_screenshot_12.jpg';
 import justlightScreenshotThirteen
-  from '../static/images/screenshots/justlight_screenshot_13.webp';
+  from '../static/screenshots/justlight_screenshot_13.webp';
 import justlightScreenshotThirteenFallback
-  from '../static/images/screenshots/justlight_screenshot_13.jpg';
+  from '../static/screenshots/justlight_screenshot_13.jpg';
 import justlightSunflower
-  from '../static/images/screenshots/justlight_sunflower.webp';
+  from '../static/screenshots/justlight_sunflower.webp';
 import justlightSunflowerFallback
-  from '../static/images/screenshots/justlight_sunflower.jpg';
+  from '../static/screenshots/justlight_sunflower.jpg';
 
 const styles = {
   justlightLogo: {
@@ -208,7 +208,7 @@ class JustlightCard extends React.Component {
               />
               <CardMedia
                 className={classes.justlightLogo}
-                image={this.props.isDarkTheme ? '/images/justlight_logo_light.png' : '/images/justlight_logo_dark.png'}
+                image={this.props.isDarkTheme ? 'media/justlight_logo_light.png' : 'media/justlight_logo_dark.png'}
                 title="JustLight logo"
                 alt="JustLight logo"
                 component="img"

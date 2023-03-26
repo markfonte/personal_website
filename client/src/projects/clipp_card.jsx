@@ -1,18 +1,18 @@
 import React from 'react';
 import clippWireframeScreenshotOne
-  from '../static/images/screenshots/clipp_wireframe_screenshot_1.webp';
+  from '../static/screenshots/clipp_wireframe_screenshot_1.webp';
 import clippWireframeScreenshotOneFallback
-  from '../static/images/screenshots/clipp_wireframe_screenshot_1.png';
+  from '../static/screenshots/clipp_wireframe_screenshot_1.png';
 
 import clippWireframeScreenshotTwo
-  from '../static/images/screenshots/clipp_wireframe_screenshot_2.webp';
+  from '../static/screenshots/clipp_wireframe_screenshot_2.webp';
 import clippWireframeScreenshotTwoFallback
-  from '../static/images/screenshots/clipp_wireframe_screenshot_2.png';
+  from '../static/screenshots/clipp_wireframe_screenshot_2.png';
 
 import clippWireframeScreenshotThree
-  from '../static/images/screenshots/clipp_wireframe_screenshot_3.webp';
+  from '../static/screenshots/clipp_wireframe_screenshot_3.webp';
 import clippWireframeScreenshotThreeFallback
-  from '../static/images/screenshots/clipp_wireframe_screenshot_3.png';
+  from '../static/screenshots/clipp_wireframe_screenshot_3.png';
 import {
   Typography,
   Card,
@@ -127,7 +127,7 @@ class ClippCard extends React.Component {
               />
               <CardMedia
                 className={classes.clippLogo}
-                image="/images/clipp_logo.svg"
+                image="/media/clipp_logo.svg"
                 title="Clipp logo"
                 alt="Clipp logo"
                 component="img"

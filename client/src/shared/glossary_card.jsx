@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import androidLogo from '../static/images/logos/android_logo.svg';
-import firebaseLogo from '../static/images/logos/firebase_logo.svg';
-import javaLogo from '../static/images/logos/java_logo.svg';
-import javascriptLogo from '../static/images/logos/javascript_logo.svg';
-import kotlinLogo from '../static/images/logos/kotlin_logo.svg';
-import pythonLogo from '../static/images/logos/python_logo.svg';
-import reactLogo from '../static/images/logos/react_logo.svg';
-import reactNativeLogo from '../static/images/logos/react_native_logo.svg';
+import androidLogo from '../static/logos/android_logo.svg';
+import firebaseLogo from '../static/logos/firebase_logo.svg';
+import javaLogo from '../static/logos/java_logo.svg';
+import javascriptLogo from '../static/logos/javascript_logo.svg';
+import kotlinLogo from '../static/logos/kotlin_logo.svg';
+import pythonLogo from '../static/logos/python_logo.svg';
+import reactLogo from '../static/logos/react_logo.svg';
+import reactNativeLogo from '../static/logos/react_native_logo.svg';
 import {
   Card,
   CardContent,

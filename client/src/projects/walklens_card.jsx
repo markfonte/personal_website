@@ -1,18 +1,18 @@
 import React from 'react';
 import walklensScreenshotOne
-  from '../static/images/screenshots/walklens_screenshot_1.webp';
+  from '../static/screenshots/walklens_screenshot_1.webp';
 import walklensScreenshotOneFallback
-  from '../static/images/screenshots/walklens_screenshot_1.jpg';
+  from '../static/screenshots/walklens_screenshot_1.jpg';
 
 import walklensScreenshotTwo
-  from '../static/images/screenshots/walklens_screenshot_2.webp';
+  from '../static/screenshots/walklens_screenshot_2.webp';
 import walklensScreenshotTwoFallback
-  from '../static/images/screenshots/walklens_screenshot_2.jpg';
+  from '../static/screenshots/walklens_screenshot_2.jpg';
 
 import walklensScreenshotThree
-  from '../static/images/screenshots/walklens_screenshot_3.webp';
+  from '../static/screenshots/walklens_screenshot_3.webp';
 import walklensScreenshotThreeFallback
-  from '../static/images/screenshots/walklens_screenshot_3.jpg';
+  from '../static/screenshots/walklens_screenshot_3.jpg';
 
 import {
   Typography,
@@ -127,7 +127,7 @@ class WalklensCard extends React.Component {
                 subheader="Android Developer"
               />
               <CardMedia
-                image="/images/walklens_logo.svg"
+                image="/media/walklens_logo.svg"
                 className={classes.walklensLogo}
                 title="WalkLens logo"
                 alt="WalkLens logo"

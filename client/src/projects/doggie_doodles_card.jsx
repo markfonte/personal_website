@@ -16,16 +16,16 @@ import {
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import rockyOne from '../static/images/photos/rocky_1.webp';
-import rockyOneFallback from '../static/images/photos/rocky_1.jpg';
+import rockyOne from '../static/photos/rocky_1.webp';
+import rockyOneFallback from '../static/photos/rocky_1.jpg';
 
-import rockyTwo from '../static/images/photos/rocky_2.webp';
-import rockyTwoFallback from '../static/images/photos/rocky_2.jpg';
+import rockyTwo from '../static/photos/rocky_2.webp';
+import rockyTwoFallback from '../static/photos/rocky_2.jpg';
 
 import doggieDoodlesScreenshotOne
-  from '../static/images/screenshots/doggie_doodles_screenshot_1.webp';
+  from '../static/screenshots/doggie_doodles_screenshot_1.webp';
 import doggieDoodlesScreenshotOneFallback
-  from '../static/images/screenshots/doggie_doodles_screenshot_1.png';
+  from '../static/screenshots/doggie_doodles_screenshot_1.png';
 
 import PropTypes from 'prop-types';
 import {withStyles} from '@mui/styles';
@@ -121,7 +121,7 @@ class DoggieDoodlesCard extends React.Component {
                 subheader="Entrepreneur" />
               <CardMedia
                 className={classes.doggieDoodlesBanner}
-                image="/images/doggie_doodles_banner.jpg"
+                image="/media/doggie_doodles_banner.jpg"
                 title="Doggie Doodles banner"
                 alt="Doggie Doodles banner"
                 component="img"

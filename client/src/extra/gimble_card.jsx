@@ -1,14 +1,14 @@
 import React from 'react';
 import WebIcon from '@mui/icons-material/Web';
-import spotifyLogo from '../static/images/logos/spotify_logo.svg';
-import googlePlayMusicLogo from '../static/images/logos/google_play_music.svg';
-import appleMusicLogo from '../static/images/logos/apple_music_logo.svg';
-import amazonMusicLogo from '../static/images/logos/amazon_music_logo.svg';
-import soundcloudLogo from '../static/images/logos/soundcloud_logo.svg';
-import youtubeLogo from '../static/images/logos/youtube_logo.svg';
-import youtubeMusicLogo from '../static/images/logos/youtube_music_logo.svg';
-import facebookLogo from '../static/images/logos/facebook_logo.svg';
-import instagramLogo from '../static/images/logos/instagram_logo.svg';
+import spotifyLogo from '../static/logos/spotify_logo.svg';
+import googlePlayMusicLogo from '../static/logos/google_play_music.svg';
+import appleMusicLogo from '../static/logos/apple_music_logo.svg';
+import amazonMusicLogo from '../static/logos/amazon_music_logo.svg';
+import soundcloudLogo from '../static/logos/soundcloud_logo.svg';
+import youtubeLogo from '../static/logos/youtube_logo.svg';
+import youtubeMusicLogo from '../static/logos/youtube_music_logo.svg';
+import facebookLogo from '../static/logos/facebook_logo.svg';
+import instagramLogo from '../static/logos/instagram_logo.svg';
 import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 
@@ -168,7 +168,7 @@ class GimbleCard extends React.Component {
               />
               <CardMedia
                 className={classes.gimbleCardMedia}
-                image="/images/gimble_group_pic.webp"
+                image="/media/gimble_group_pic.webp"
                 title="Gimble group pic"
                 component="img"
               />

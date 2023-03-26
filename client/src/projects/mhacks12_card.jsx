@@ -1,25 +1,25 @@
 import React from 'react';
 // import instEventsLogo
-//   from '../static/images/logos/instevents_logo.webp';
+//   from '../static/logos/instevents_logo.webp';
 import instEventsScreenshotOne
-  from '../static/images/screenshots/instevents_screenshot_1.webp';
+  from '../static/screenshots/instevents_screenshot_1.webp';
 import instEventsScreenshotOneFallback
-  from '../static/images/screenshots/instevents_screenshot_1.jpg';
+  from '../static/screenshots/instevents_screenshot_1.jpg';
 
 import instEventsScreenshotTwo
-  from '../static/images/screenshots/instevents_screenshot_2.webp';
+  from '../static/screenshots/instevents_screenshot_2.webp';
 import instEventsScreenshotTwoFallback
-  from '../static/images/screenshots/instevents_screenshot_2.jpg';
+  from '../static/screenshots/instevents_screenshot_2.jpg';
 
 import instEventsScreenshotThree
-  from '../static/images/screenshots/instevents_screenshot_3.webp';
+  from '../static/screenshots/instevents_screenshot_3.webp';
 import instEventsScreenshotThreeFallback
-  from '../static/images/screenshots/instevents_screenshot_3.jpg';
+  from '../static/screenshots/instevents_screenshot_3.jpg';
 
 import mhacksNathanAndMark
-  from '../static/images/photos/mhacks_mark_and_nathan.webp';
+  from '../static/photos/mhacks_mark_and_nathan.webp';
 import mhacksNathanAndMarkFallback
-  from '../static/images/photos/mhacks_mark_and_nathan.jpg';
+  from '../static/photos/mhacks_mark_and_nathan.jpg';
 
 import {
   Typography,
@@ -146,7 +146,7 @@ class MHacks12Card extends React.Component {
               />
               <CardMedia
                 className={classes.mhacks12Banner}
-                image="/images/mhacks_banner.png"
+                image="/media/mhacks_banner.png"
                 title="MHacks 12 banner"
                 alt="MHacks 12 banner"
                 component="img"

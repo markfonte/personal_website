@@ -1,5 +1,5 @@
 import React from 'react';
-import denialDialLogo from '../static/images/logos/denial_dial_logo.svg';
+import denialDialLogo from '../static/logos/denial_dial_logo.svg';
 import {
   Typography,
   Card,
@@ -102,7 +102,7 @@ class RevolutionUC8Card extends React.Component {
               />
               <CardMedia
                 className={classes.revolutionuc8_logo}
-                image="/images/revolutionuc_logo.png"
+                image="/media/revolutionuc_logo.png"
                 title="RevolutionUC 8 logo"
                 alt="RevolutionUC 8 logo"
                 component="img"

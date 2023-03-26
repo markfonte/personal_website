@@ -1,19 +1,19 @@
 import React from 'react';
 import '../App.css';
-import reactLogo from '../static/vectors/react_logo.svg';
+import reactLogo from '../static/logos/react_logo.svg';
 import universityOfMichiganLogoSmall
-  from '../static/vectors/university_of_michigan_logo_small.svg';
+  from '../static/logos/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
 import {Typography, Link, Tooltip, Button} from '@mui/material';
 import timestamp from '../commit_timestamp.js';
 import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
-import facebookLogo from '../static/images/logos/facebook_logo.svg';
-import stackOverflowLogo from '../static/images/logos/stack_overflow_logo.svg';
-import githubLogo from '../static/images/logos/github_logo.svg';
-import linkedinLogo from '../static/images/logos/linkedin_logo.svg';
-import instagramLogo from '../static/images/logos/instagram_logo.svg';
-import youtubeLogo from '../static/images/logos/youtube_logo.svg';
+import facebookLogo from '../static/logos/facebook_logo.svg';
+import stackOverflowLogo from '../static/logos/stack_overflow_logo.svg';
+import githubLogo from '../static/logos/github_logo.svg';
+import linkedinLogo from '../static/logos/linkedin_logo.svg';
+import instagramLogo from '../static/logos/instagram_logo.svg';
+import youtubeLogo from '../static/logos/youtube_logo.svg';
 
 const fetch = require('node-fetch');
 
