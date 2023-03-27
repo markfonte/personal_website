@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
 import profilePicture
-  from './static/photos/mark_circle.png';
+  from './static/photos/mark_circle.svg';
 import Projects from './projects/projects.jsx';
 import Extra from './extra/extra.jsx';
 import Contact from './contact/contact.jsx';
