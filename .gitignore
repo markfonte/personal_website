@@ -342,3 +342,5 @@ yarn-error.log*
 
 # for sqlite file. Needs to be created on prod
 var/
+
+.vscode/
