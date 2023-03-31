@@ -30,7 +30,7 @@ class Home extends React.Component {
     const {classes} = this.props;
 
     const justlightLink = 'https://www.justlight.com/about';
-    const amazonLink = 'https://www.amazon.com/';
+    const teslaLink = 'https://www.tesla.com/';
     const umichLink = 'https://umich.edu/';
     const entrepreneurshipLink = 'https://innovateblue.umich.edu/academics/minor-in-entrepreneurship/';
     const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
@@ -39,6 +39,7 @@ class Home extends React.Component {
 
     const lightTheme = getCookie('app_theme') === 'light_theme';
     const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
+    const teslaColor = lightTheme ? 'tesla-color-dark' : 'tesla-color-light';
     const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
     const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
     const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
@@ -49,23 +50,21 @@ class Home extends React.Component {
     return (
       <div>
         <Typography className={classes.title} variant="h6">
-          Software Engineering Lead at{' '}
+          Software engineer at {' '}
+          <Link href={teslaLink} className={teslaColor}>
+            <i>Tesla</i>
+          </Link>
+          {' '}· Former software lead at{' '}
 
-          <Link href={justlightLink} className={justlightColor}>
+          <Link href={justlightLink} className={justlightColor} variant=''>
             <i>JustLight</i>
           </Link>
 
-          {' '}· Former{' '}
-
-          <Link href={amazonLink} className={amazonColor}>
-            <i>Amazon</i>
-          </Link>
-
-          {' '}&amp;{' '}
+          {' '}· Former software engineer at{' '}
           <Link href={awsLink} className={amazonColor}>
             <i>Amazon Web Services</i>
           </Link>
-          {' '}Software Engineer · <i>Computer Science Engineering</i> degree from the{' '}
+          {' '}· <i>Computer Science Engineering</i> degree from the{' '}
 
           <Link href={umichLink} className={michiganColor}>
             <i>University of Michigan</i>

@@ -31,7 +31,7 @@ const setCookie = require('./shared/util/cookies.js').setCookie;
 
 const routes = [
   {name: 'Home', path: '/', index: 0},
-  {name: 'Projects', path: '/projects', index: 1},
+  {name: 'Work', path: '/projects', index: 1},
   {name: 'Extra', path: '/extra', index: 2},
   {name: 'Contact', path: '/contact', index: 3},
 ];
