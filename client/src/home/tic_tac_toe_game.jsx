@@ -1,6 +1,6 @@
 import React from 'react';
 import TicTacToeBoard from './tic_tac_toe_board';
-import {Typography, Button, List, ListItem, Grid, Tooltip} from '@mui/material';
+import {Typography, Button, Grid, Tooltip} from '@mui/material';
 import PropTypes from 'prop-types';
 import {withStyles} from '@mui/styles';
 
@@ -103,22 +103,6 @@ class TicTacToeGame extends React.Component {
     const winner = calculateTicTacToeWinner(current.squares);
     const stepNum = this.state.stepNumber;
 
-    const moves = history.map((step, move) => {
-      const desc = move ? 'move #' + move : 'game start';
-      return (
-        <ListItem className={classes.moveListItem} key={move}>
-          <Tooltip
-            placement="right"
-            arrow
-            title="Return to this move">
-            <Button variant="outlined" onClick={() => this.jumpTo(move)}>
-              {desc}
-            </Button>
-          </Tooltip>
-        </ListItem>
-      );
-    });
-
     let status;
 
     if (winner) {
@@ -126,7 +110,7 @@ class TicTacToeGame extends React.Component {
     } else if (stepNum === 9) {
       status = 'Cat\'s game!';
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      status = (this.state.xIsNext ? 'X' : 'O') + '\'s turn';
     }
 
     return (
@@ -139,11 +123,20 @@ class TicTacToeGame extends React.Component {
         </Grid>
         <Grid className={classes.gameInfo}>
           <div>
-            <Typography variant="subtitle1" color="secondary">
+            <Typography variant="subtitle1" color={this.state.xIsNext ? 'secondary' : 'primary'}>
               {' '}{status}
             </Typography>
           </div>
-          {stepNum !== 0 ? <List className={classes.moveList}>{moves}</List> : <p />}
+          <br/>
+          {stepNum !== 0 ?
+          <Tooltip
+            placement="right"
+            arrow
+            title="Restart">
+            <Button variant="outlined" onClick={() => this.jumpTo(0)}>
+                  Restart
+            </Button>
+          </Tooltip> : <p />}
         </Grid>
       </Grid>
     );
