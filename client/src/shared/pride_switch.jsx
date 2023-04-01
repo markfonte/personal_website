@@ -69,8 +69,8 @@ class PrideSwitch extends React.Component {
     return (
       <Card className={classes.flatCard}>
         <div className={classes.prideSwitchContent}>
-          <Typography className={classes.prideTitle} variant="h6">
-            Rainbow mode!
+          <Typography className={classes.prideTitle} variant="subtitle1">
+            Rainbow mode
           </Typography>
           <Tooltip
             placement="top"

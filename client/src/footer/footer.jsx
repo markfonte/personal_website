@@ -14,6 +14,7 @@ import githubLogo from '../static/logos/github_logo.svg';
 import linkedinLogo from '../static/logos/linkedin_logo.svg';
 import instagramLogo from '../static/logos/instagram_logo.svg';
 import youtubeLogo from '../static/logos/youtube_logo.svg';
+import spotifyLogo from '../static/logos/spotify_logo.svg';
 
 const fetch = require('node-fetch');
 
@@ -144,6 +145,7 @@ class Footer extends React.Component {
     const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
     const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
     const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/main`;
+    const spotifyLink = `https://open.spotify.com/artist/5rVdyxve8VvmsgT3HSWB1a`;
     const updatedDate = timestamp;
 
     const buttons = [
@@ -156,6 +158,11 @@ class Footer extends React.Component {
         name: 'Stack Overflow',
         logo: stackOverflowLogo,
         link: stackOverflowLink,
+      },
+      {
+        name: 'Spotify',
+        logo: spotifyLogo,
+        link: spotifyLink,
       },
       {
         name: 'GitHub',
