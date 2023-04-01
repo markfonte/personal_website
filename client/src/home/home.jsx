@@ -51,44 +51,44 @@ class Home extends React.Component {
       <div>
         <Typography className={classes.title} variant="h6">
           Software engineer at {' '}
-          <Link href={teslaLink} className={teslaColor}>
-            <i>Tesla</i>
+          <Link href={teslaLink} className={teslaColor} underline="hover">
+            Tesla
           </Link>
           {' '}· Former software lead at{' '}
 
-          <Link href={justlightLink} className={justlightColor} variant=''>
-            <i>JustLight</i>
+          <Link href={justlightLink} className={justlightColor} underline="hover">
+            JustLight
           </Link>
 
           {' '}· Former software engineer at{' '}
-          <Link href={awsLink} className={amazonColor}>
-            <i>Amazon Web Services</i>
+          <Link href={awsLink} className={amazonColor} underline="hover">
+            Amazon Web Services
           </Link>
-          {' '}· <i>Computer Science Engineering</i> degree from the{' '}
+          {' '}· computer science in engineering degree from{' '}
 
-          <Link href={umichLink} className={michiganColor}>
-            <i>University of Michigan</i>
+          <Link href={umichLink} className={michiganColor} underline="hover">
+            University of Michigan
           </Link>
 
           {' '}· Minor in{' '}
 
-          <Link color="textSecondary" href={entrepreneurshipLink}>
-            <i>Entrepreneurship</i>
+          <Link color="textSecondary" href={entrepreneurshipLink} underline="hover">
+            entrepreneurship
           </Link>
 
           {' '}·{' '}
 
-          <Link href={webDevLink} className={webColor}>
-            <i>Web</i>
+          <Link href={webDevLink} className={webColor} underline="hover">
+            Web
           </Link>{' '}
 
           &amp;{' '}
 
-          <Link href={androidDevLink} className={androidColor}>
-            <i>Android</i>
+          <Link href={androidDevLink} className={androidColor} underline="hover">
+            Android
           </Link>
 
-          {' '}development
+          {' '}dev
         </Typography>
         <Suspense fallback={renderLoader()}>
           <WelcomeCard />
