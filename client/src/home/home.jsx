@@ -1,10 +1,12 @@
 import React, {lazy, Suspense} from 'react';
 import PropTypes from 'prop-types';
+const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
+const TicTacToeCard = lazy(() => import('./tic_tac_toe_card.jsx'));
+const GimbleCard = lazy(() => import('./gimble_card.jsx'));
 const BuiltWithTableCard = lazy(() => import('./built_with_table_card.jsx'));
 const WelcomeCard = lazy(() => import('./welcome_card.jsx'));
 import {Typography, Link, CircularProgress} from '@mui/material';
 import {withStyles} from '@mui/styles';
-const GlossaryCard = lazy(() => import('../shared/glossary_card.jsx'));
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 
@@ -92,8 +94,10 @@ class Home extends React.Component {
         </Typography>
         <Suspense fallback={renderLoader()}>
           <WelcomeCard />
+          <GimbleCard />
           <BuiltWithTableCard />
-          <GlossaryCard />
+          <TicTacToeCard />
+          <InteractionCard pagename="home" />
         </Suspense>
       </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import Blog from './blog.jsx';
 import renderer from 'react-test-renderer';
 
-test('Extra matches snapshot', () => {
+test('Blog matches snapshot', () => {
   const component = renderer.create(
       <Blog/>,
   );

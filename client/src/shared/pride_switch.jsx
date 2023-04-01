@@ -19,7 +19,7 @@ const styles = {
     justifyContent: 'space-between',
   },
   prideTitle: {
-    alignSelf: 'flex-start',
+    alignSelf: 'center',
   },
   prideSwitch: {
     alignSelf: 'flex-end',

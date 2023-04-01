@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import profilePicture
   from './static/photos/mark_circle.svg';
 import Projects from './projects/projects.jsx';
-import Extra from './extra/extra.jsx';
 import Contact from './contact/contact.jsx';
 import Home from './home/home.jsx';
 import Blog from './blog/blog.jsx';
@@ -32,8 +31,7 @@ const setCookie = require('./shared/util/cookies.js').setCookie;
 const routes = [
   {name: 'Home', path: '/', index: 0},
   {name: 'Work', path: '/projects', index: 1},
-  {name: 'Extra', path: '/extra', index: 2},
-  {name: 'Contact', path: '/contact', index: 3},
+  {name: 'Contact', path: '/contact', index: 2},
 ];
 
 const darkTheme = createTheme({
@@ -253,7 +251,6 @@ export class App extends React.Component {
                 <Route path="/" exact element={<Home/>} />
                 <Route path="home" element={<Home/>} />
                 <Route path="projects" element={<Projects isDarkTheme={this.state.theme===darkTheme}/>} />
-                <Route path="extra" element={<Extra/>} />
                 <Route path="contact" element={<Contact/>} />
                 <Route path="blog" element={<Blog/>} />
               </Routes>
