@@ -81,6 +81,11 @@ class GlossaryCard extends React.Component {
         icon: <Work className={classes.tagIcon}/>,
         projects: [
           {
+            cardId: 'tesla',
+            cardName: 'Tesla',
+            subtitle: 'Software Engineer',
+          },
+          {
             cardId: 'justlight',
             cardName: 'JustLight',
             subtitle: 'Software Engineering Lead',

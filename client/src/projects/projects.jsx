@@ -18,6 +18,7 @@ const MHacks12Card = lazy(() => import('./mhacks12_card.jsx'));
 const WalklensCard = lazy(() => import('./walklens_card.jsx'));
 const ClippCard = lazy(() => import('./clipp_card.jsx'));
 const JustlightCard = lazy(() => import('./justlight_card.jsx'));
+const TeslaCard = lazy(() => import('./tesla_card.jsx'));
 const GlossaryCard = lazy(() => import('../shared/glossary_card.jsx'));
 
 const renderLoader = () => <CircularProgress color="secondary" />;
@@ -40,6 +41,7 @@ class Projects extends React.Component {
           My work experiences, internships, side projects and hackathon projects
         </Typography>
         <Suspense fallback={renderLoader()}>
+          <TeslaCard/>
           <JustlightCard isDarkTheme={this.props.isDarkTheme} />
           <AmazonCard />
           <JPMorganCard />
