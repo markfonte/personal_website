@@ -8,6 +8,7 @@ import kotlinLogo from '../static/logos/kotlin_logo.svg';
 import pythonLogo from '../static/logos/python_logo.svg';
 import reactLogo from '../static/logos/react_logo.svg';
 import reactNativeLogo from '../static/logos/react_native_logo.svg';
+import {Build, Business, MenuBook, School, Work} from '@mui/icons-material';
 import {
   Card,
   CardContent,
@@ -44,8 +45,8 @@ const styles = {
     justifyContent: 'center',
   },
   tagIcon: {
-    maxHeight: '36px',
-    width: 'auto',
+    width: '28px',
+    height: 'auto',
     marginRight: '12px',
   },
 };
@@ -77,6 +78,7 @@ class GlossaryCard extends React.Component {
       {
         tagName: 'Full Time Positions',
         type: 'Project',
+        icon: <Work className={classes.tagIcon}/>,
         projects: [
           {
             cardId: 'justlight',
@@ -93,6 +95,7 @@ class GlossaryCard extends React.Component {
       {
         tagName: 'Internships',
         type: 'Project',
+        icon: <School className={classes.tagIcon}/>,
         projects: [
           {
             cardId: 'jpmorgan',
@@ -114,6 +117,7 @@ class GlossaryCard extends React.Component {
       {
         tagName: 'Startups',
         type: 'Project',
+        icon: <Business className={classes.tagIcon}/>,
         projects: [
           {
             cardId: 'doggie_doodles',
@@ -145,6 +149,7 @@ class GlossaryCard extends React.Component {
       {
         tagName: 'Hackathon Projects',
         type: 'Project',
+        icon: <Build className={classes.tagIcon}/>,
         projects: [
           {
             cardId: 'revolutionuc8',
@@ -171,6 +176,7 @@ class GlossaryCard extends React.Component {
       {
         tagName: 'Class Projects',
         type: 'Project',
+        icon: <MenuBook className={classes.tagIcon}/>,
         projects: [
           {
             cardId: 'doggie_doodles',
@@ -196,7 +202,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Android Projects',
-        icon: androidLogo,
+        logo: androidLogo,
         projects: [
           {
             cardId: 'amazon',
@@ -237,7 +243,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Firebase Projects',
-        icon: firebaseLogo,
+        logo: firebaseLogo,
         projects: [
           {
             cardId: 'clipp',
@@ -268,7 +274,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Java Projects',
-        icon: javaLogo,
+        logo: javaLogo,
         projects: [
           {
             cardId: 'amazon',
@@ -289,7 +295,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'JavaScript Projects',
-        icon: javascriptLogo,
+        logo: javascriptLogo,
         projects: [
           {
             cardId: 'clipp',
@@ -341,7 +347,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Kotlin Projects',
-        icon: kotlinLogo,
+        logo: kotlinLogo,
         projects: [
           {
             cardId: 'justlight',
@@ -372,7 +378,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'Python Projects',
-        icon: pythonLogo,
+        logo: pythonLogo,
         projects: [
           {
             cardId: 'road_mapper',
@@ -383,7 +389,7 @@ class GlossaryCard extends React.Component {
       },
       {
         tagName: 'React Projects',
-        icon: reactLogo,
+        logo: reactLogo,
         projects: [
           {
             cardId: 'jpmorgan',
@@ -404,7 +410,7 @@ class GlossaryCard extends React.Component {
         ],
       },
       {
-        icon: reactNativeLogo,
+        logo: reactNativeLogo,
         tagName: 'React Native Projects',
         projects: [
           {
@@ -421,7 +427,7 @@ class GlossaryCard extends React.Component {
       },
     ];
     return (
-      <Card raised={true} className="card" style={{maxWidth: 500}}>
+      <Card raised={true} className="card" style={{maxWidth: 420}}>
         <a name="glossary_card" href="#glossary_card" className="gone">
             Glossary Card
         </a>
@@ -452,9 +458,11 @@ class GlossaryCard extends React.Component {
                   }
                   aria-label={glossaryItem.tagName}
                   aria-controls={glossaryItem.tagName + '-content'}
-                  id={glossaryItem.tagName + '-header'}>
+                  id={glossaryItem.tagName + '-header'}
+                >
+                  {glossaryItem.icon ? glossaryItem.icon : ''}
                   <img
-                    src={glossaryItem.icon ? glossaryItem.icon : ''}
+                    src={glossaryItem.logo ? glossaryItem.logo : ''}
                     className={classes.tagIcon}
                     alt={glossaryItem.tagName + ' button'}
                   />

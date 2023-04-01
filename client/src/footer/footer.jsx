@@ -20,8 +20,8 @@ const fetch = require('node-fetch');
 const styles = {
   reactLogo: {
     animation: `react-logo-spin infinite 1.8s linear`,
-    height: '50px',
-    width: '50px',
+    height: '28px',
+    width: '28px',
     pointerEvents: 'none',
   },
   iconBar: {
