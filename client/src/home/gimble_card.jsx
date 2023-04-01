@@ -140,7 +140,7 @@ class GimbleCard extends React.Component {
     ];
 
     return (
-      <Card raised={true} className="card">
+      <Card raised={true} className="card" style={{width: '900px'}}>
         <Accordion
           TransitionProps={{unmountOnExit: true}}>
           <AccordionSummary

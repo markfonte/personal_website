@@ -103,6 +103,13 @@ const styles = {
     alignSelf: 'center',
     zIndex: 2,
   },
+  profileLogoSpinning: {
+    animation: `react-logo-spin infinite 1s ease-in-out`,
+    height: '100px',
+    width: '100px',
+    alignSelf: 'center',
+    zIndex: 2,
+  },
   primaryNav: {
     textAlign: 'center',
   },
@@ -148,10 +155,12 @@ export class App extends React.Component {
       theme: darkTheme,
       proud: false,
       currentlySelected: -1,
+      logoSpinning: false,
     };
     this.toggleTheme = this.toggleTheme.bind(this);
     this.currentlySelected = this.currentlySelected.bind(this);
     this.findCurrentRoute = this.findCurrentRoute.bind(this);
+    this.profilePictureClicked = this.profilePictureClicked.bind(this);
   }
 
   currentlySelected(id) {
@@ -195,8 +204,13 @@ export class App extends React.Component {
     }
   }
 
+  profilePictureClicked() {
+    this.setState({logoSpinning: !this.state.logoSpinning});
+  }
+
   render() {
     const {classes} = this.props;
+    const logoStyle = this.state.logoSpinning ? classes.profileLogoSpinning : classes.profileLogo;
     const rainbowHeader = this.state.proud === true ?
       <header className={classes.headerRoot} /> :
       <div />;
@@ -215,15 +229,16 @@ export class App extends React.Component {
               <WbSunny />
             </Tooltip>
             <Router>
-              <picture>
-                <source srcSet={profilePicture} type="image/png"/>
-                <img
-                  srcSet={[profilePicture]}
-                  className={classes.profileLogo}
-                  title="headshot"
-                  alt="headshot"
-                />
-              </picture>
+              <Tooltip title="Click me!" arrow onClick={() => this.profilePictureClicked()}>
+                <picture>
+                  <source srcSet={profilePicture} type="image/svg+xml"/>
+                  <img
+                    srcSet={[profilePicture]}
+                    className={logoStyle}
+                    alt="headshot"
+                  />
+                </picture>
+              </Tooltip>
               <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
               <nav className={classes.primaryNav}>
                 <List className={classes.AppList}>
