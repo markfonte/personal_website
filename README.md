@@ -3,22 +3,18 @@
 
 ## Motivation
 
-I don't like traditional résumés. They reduce a person's career accomplishments down to one page of text - and hopefully contain enough buzzwords and key phrases to catch a recruiter's eye. So I decided to build a different résumé - one that showcases a bit more about who I actually am. It is filled with all kinds of buttons, games, switches, photos and screenshots to give people a better idea of what I am made of. It is also a sandbox for me to try new technologies and is always a work in progress. Enjoy!
+I don't like traditional résumés... I find it reductive and uninsightful to condense a person's career accomplishments to a single page. So I wanted to build a different résumé - one that showcases a bit more about who I actually am. It's filled with little buttons, games, switches, photos and screenshots... all for my amusement. It's also a sandbox for me to try new technologies and is always a work in progress (check the commit history). Enjoy!
 
 ## Features
-
 * Responsive design - one code base designed for mobile and desktop devices of any size
 * [Material-UI Card](https://material-ui.com/components/cards/#cards)-based content display
 * Subtle University of Michigan themes
 * And much more! [check it out](https://mark.fonte.com)
 
-
 ## Upcoming Features
-
 Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-website) to see what is coming next!
 
 ## Built With
-
 * [DigitalOcean](https://www.digitalocean.com/) - cloud provider
 * [ExpressJS](https://expressjs.com/) - backend framework
 * [Material-UI](https://material-ui.com/) - UI framework
@@ -28,4 +24,7 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 
 ## Authors
 
-* **Mark Fonte** - *Developer* - [markfonte](https://github.com/markfonte)
+* **[Mark Fonte](https://github.com/markfonte)** - *creator*
+* **[Nathan Johnson](https://github.com/markfonte)** - *advisor*
+
+

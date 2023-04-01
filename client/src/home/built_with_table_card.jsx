@@ -4,7 +4,6 @@ import digitalOceanLogo from '../static/logos/digital_ocean_logo.svg';
 import expressLogo from '../static/logos/express_logo.svg';
 import nodeLogo from '../static/logos/nodejs_logo.svg';
 import materialUILogo from '../static/logos/material_ui_logo.svg';
-import travisCILogo from '../static/logos/travis_ci_logo.svg';
 import nginxLogo from '../static/logos/nginx_logo.svg';
 import githubLogo from '../static/logos/github_logo.svg';
 import trelloLogo from '../static/logos/trello_logo.svg';
@@ -78,7 +77,6 @@ class BuiltWithTableCard extends React.Component {
     const materialUILink = `https://material-ui.com/`;
     const expressLink = `https://expressjs.com/`;
     const nodeLink = `https://nodejs.org/`;
-    const travisCILink = `https://travis-ci.org/`;
     const nginxLink = `https://www.nginx.com/`;
     const githubLink = `https://github.com/`;
     const trelloLink = `https://trello.com/`;
@@ -141,12 +139,6 @@ class BuiltWithTableCard extends React.Component {
         logo: sqliteLogo,
       },
       {
-        title: 'TravisCI',
-        subtitle: 'continuous integration',
-        link: travisCILink,
-        logo: travisCILogo,
-      },
-      {
         title: 'Trello',
         subtitle: 'project management',
         link: trelloLink,
@@ -190,10 +182,6 @@ class BuiltWithTableCard extends React.Component {
       {
         label: 'SQLite',
         icon: sqliteLogo,
-      },
-      {
-        label: 'TravisCI',
-        icon: travisCILogo,
       },
       {
         label: 'Trello',
