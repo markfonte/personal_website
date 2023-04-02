@@ -239,10 +239,11 @@ export class App extends React.Component {
               <WbSunny />
             </Tooltip>
             <Router>
-              <Tooltip title="Click me!" arrow onClick={() => this.profilePictureClicked()}>
+              <Tooltip title={this.state.logoSpinning ? 'weeeeeeeeeee!!' : 'Click me!'} arrow>
                 <picture>
                   <source srcSet={profilePicture} type="image/svg+xml"/>
                   <img
+                    onClick={() => this.profilePictureClicked()}
                     srcSet={[profilePicture]}
                     className={logoStyle}
                     alt="headshot"

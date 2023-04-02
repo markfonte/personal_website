@@ -97,10 +97,12 @@ img[src=""] {
     width: 0.5vmin;
     opacity: 1;
   }
+
   50% {
     width: 0.5vmin;
     opacity: 1;
   }
+
   100% {
     width: 45vmin;
     opacity: 0;
@@ -111,6 +113,7 @@ img[src=""] {
 .firework::before,
 .firework::after {
   --top: 60vh;
+
   content: "";
   position: fixed;
   bottom: 10%;
@@ -145,4 +148,5 @@ img[src=""] {
 .firework::after {
   transform: translate(-50%, -50%) rotate(-37deg) !important;
 }
+
 /* End firework animation */
