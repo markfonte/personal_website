@@ -8,6 +8,7 @@ const db = new sqlite3.Database ('./db/var/personal_website.sqlite3', err => {
     return;
   }
 });
+
 router.post ('/', function (req, res) {
   const page = req.body.page;
   if (!page) {
@@ -20,6 +21,22 @@ router.post ('/', function (req, res) {
       return console.log (err.message);
     }
     console.log (`${page} now has 1 more like.`);
+    res.send ('success');
+  });
+});
+
+router.post ('/unlike', function (req, res) {
+  const page = req.body.page;
+  if (!page) {
+    return console.error;
+  }
+  let sql = `UPDATE likes SET numlikes = numlikes - 1 WHERE pagename = ?`;
+
+  db.run (sql, [page], function (err) {
+    if (err) {
+      return console.log (err.message);
+    }
+    console.log (`${page} now has 1 less like.`);
     res.send ('success');
   });
 });

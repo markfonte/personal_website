@@ -6,6 +6,7 @@ import contactCoverPhoto from '../static/photos/contact_cover_photo.webp';
 import contactCoverPhotoFallback from '../static/photos/contact_cover_photo.jpg';
 import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
+import InteractionCard from '../shared/interaction_card.jsx';
 
 const styles = {
   root: {
@@ -87,6 +88,8 @@ class Contact extends React.Component {
             alt="Contact page cover photo"
           />
         </picture>
+        <br/> <br/>
+        <InteractionCard pagename="contact" />
       </div>
     );
   }

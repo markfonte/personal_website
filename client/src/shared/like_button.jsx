@@ -6,6 +6,7 @@ import {Typography, Card, Tooltip, IconButton} from '@mui/material';
 import {withStyles} from '@mui/styles';
 const fetch = require('node-fetch');
 
+const deleteCookie = require('../shared/util/cookies.js').deleteCookie;
 const setCookie = require('../shared/util/cookies.js').setCookie;
 const getCookie = require('../shared/util/cookies.js').getCookie;
 
@@ -79,7 +80,7 @@ class LikeButton extends React.Component {
   }
 
   toggleLike() {
-    if (this.state.liked === false) {
+    if (!this.state.liked) {
       const url = process.env.REACT_APP_API_URL + 'like';
       const requestText = {page: this.props.pagename};
       fetch(url, {
@@ -102,6 +103,29 @@ class LikeButton extends React.Component {
           });
       setCookie(this.props.pagename, 'liked', 1000);
       this.setState({liked: true});
+    } else {
+      const url = process.env.REACT_APP_API_URL + 'like/unlike';
+      const requestText = {page: this.props.pagename};
+      fetch(url, {
+        method: 'post',
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestText),
+        signal: this.abortController.signal,
+      })
+          .then(() => {
+            this.fetchNumLikes();
+          })
+          .catch((error) => {
+            if (error.name === 'AbortError' || error.name === 'TypeError') {
+              return;
+            }
+            console.log(error);
+          });
+      deleteCookie(this.props.pagename, 'liked');
+      this.setState({liked: false});
     }
   }
 
@@ -130,7 +154,7 @@ class LikeButton extends React.Component {
       <div className={classes.root}>
         <div className={classes.likeButtonWrapper}>
           <Tooltip
-            title="Click to like page"
+            title={this.state.liked ? 'Click to unlike page' : 'Click to like page'}
             arrow
             onClick={this.toggleLike}>
             <IconButton size="large">
@@ -144,7 +168,7 @@ class LikeButton extends React.Component {
               color={displayedColor}
               className={classes.captionText}
             >
-              {this.state.numLikes} likes
+              {this.state.numLikes} {this.state.numLikes === 1 ? 'like' : 'likes'}
             </Typography>
           </Card>
         </div>
