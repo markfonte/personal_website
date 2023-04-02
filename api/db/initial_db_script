@@ -38,13 +38,13 @@ case $1 in
 	create
 	;;
 
-	# "destroy")
-	# destroy
-	# ;;
+	"destroy")
+	destroy
+	;;
 
-	# "reset")
-	# destroy
-	# create
-	# ;;
+	"reset")
+	destroy
+	create
+	;;
 
 esac

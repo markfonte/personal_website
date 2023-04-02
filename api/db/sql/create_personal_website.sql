@@ -16,15 +16,15 @@ CREATE TABLE likes
 );
 
 -- One row per comment
-CREATE TABLE comments
-(
-    commentid INTEGER PRIMARY KEY,
-    pagename VARCHAR(30) NOT NULL,
-    owner VARCHAR(50) NOT NULL,
-    text VARCHAR(1024) NOT NULL,
-    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY(pagename) REFERENCES pages(pagename) ON DELETE CASCADE
-);
+-- CREATE TABLE comments
+-- (
+--     commentid INTEGER PRIMARY KEY,
+--     pagename VARCHAR(30) NOT NULL,
+--     owner VARCHAR(50) NOT NULL,
+--     text VARCHAR(1024) NOT NULL,
+--     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     FOREIGN KEY(pagename) REFERENCES pages(pagename) ON DELETE CASCADE
+-- );
 
 
 -- INSERT DEFAULT VALUES --
@@ -37,23 +37,12 @@ VALUES
 INSERT INTO pages
     (pagename)
 VALUES
-    ('current_work');
-
-INSERT INTO pages
-    (pagename)
-VALUES
-    ('past_projects');
-
-INSERT INTO pages
-    (pagename)
-VALUES
-    ('random');
+    ('work');
 
 INSERT INTO pages
     (pagename)
 VALUES
     ('contact');
-
 
 INSERT INTO likes
     (pagename, numlikes)
@@ -63,17 +52,7 @@ VALUES
 INSERT INTO likes
     (pagename, numlikes)
 VALUES
-    ('current_work', 0);
-
-INSERT INTO likes
-    (pagename, numlikes)
-VALUES
-    ('past_projects', 0);
-
-INSERT INTO likes
-    (pagename, numlikes)
-VALUES
-    ('random', 0);
+    ('work', 0);
 
 INSERT INTO likes
     (pagename, numlikes)
