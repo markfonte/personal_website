@@ -240,15 +240,12 @@ export class App extends React.Component {
             </Tooltip>
             <Router>
               <Tooltip title={this.state.logoSpinning ? 'weeeeeeeeeee!!' : 'Click me!'} arrow>
-                <picture>
-                  <source srcSet={profilePicture} type="image/svg+xml"/>
-                  <img
-                    onClick={() => this.profilePictureClicked()}
-                    srcSet={[profilePicture]}
-                    className={logoStyle}
-                    alt="headshot"
-                  />
-                </picture>
+                <img
+                  onClick={() => this.profilePictureClicked()}
+                  srcSet={[profilePicture]}
+                  className={logoStyle}
+                  alt="headshot"
+                />
               </Tooltip>
               <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
               <nav className={classes.primaryNav}>
