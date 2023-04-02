@@ -491,7 +491,7 @@ class GlossaryCard extends React.Component {
                           href={
                             project.overrideLink ?
                                 project.overrideLink :
-                                '/projects#' + project.cardId + '_card'}
+                                '/work#' + project.cardId + '_card'}
                         >
                           <ListItemText
                             primaryTypographyProps={{color: 'secondary'}}

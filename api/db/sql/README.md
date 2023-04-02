@@ -1,2 +1,2 @@
-In this folder, every db modification should be put in a new file with a timestamp and proper documentation.
-The new sql queries should be run, and a duplication of these queries appended to the create_personal_website.sql file.
+In this folder, every database modification should be put in a new file with a timestamp and proper documentation.
+The new SQL queries should be run, and a duplication of these queries appended to `create_personal_website.sql`.

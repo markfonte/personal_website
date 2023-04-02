@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Projects matches snapshot 1`] = `
+exports[`Work matches snapshot 1`] = `
 <div>
   <p
-    className="MuiTypography-root Projects-title-1 MuiTypography-h6 MuiTypography-paragraph"
+    className="MuiTypography-root Work-title-1 MuiTypography-h6 MuiTypography-paragraph"
   >
     My work experiences, internships, side projects and hackathon projects
   </p>

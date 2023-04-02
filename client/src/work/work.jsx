@@ -29,11 +29,11 @@ const styles = {
   },
 };
 
-class Projects extends React.Component {
+class Work extends React.Component {
   render() {
     const {classes} = this.props;
 
-    document.title = 'Projects | Mark Fonte';
+    document.title = 'Work | Mark Fonte';
 
     return (
       <div>
@@ -58,16 +58,16 @@ class Projects extends React.Component {
           <SpotlightCard />
           <DoggieDoodlesCard />
           <GlossaryCard />
-          <InteractionCard pagename="projects" />
+          <InteractionCard pagename="work" />
         </Suspense>
       </div>
     );
   }
 }
 
-Projects.propTypes = {
+Work.propTypes = {
   classes: PropTypes.object.isRequired,
   isDarkTheme: PropTypes.bool.isRequired,
 };
 
-export default withStyles(styles)(Projects);
+export default withStyles(styles)(Work);

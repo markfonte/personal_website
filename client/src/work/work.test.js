@@ -1,10 +1,10 @@
 import React from 'react';
-import Projects from './projects.jsx';
+import Work from './work.test.js';
 import renderer from 'react-test-renderer';
 
-test('Projects matches snapshot', () => {
+test('Work matches snapshot', () => {
   const component = renderer.create(
-      <Projects/>,
+      <Work/>,
   );
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();

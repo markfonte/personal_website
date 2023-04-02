@@ -3,7 +3,7 @@ import './App.css';
 import PropTypes from 'prop-types';
 import profilePicture
   from './static/photos/mark_circle.svg';
-import Projects from './projects/projects.jsx';
+import Work from './work/work.jsx';
 import Contact from './contact/contact.jsx';
 import Home from './home/home.jsx';
 import Blog from './blog/blog.jsx';
@@ -30,7 +30,7 @@ const setCookie = require('./shared/util/cookies.js').setCookie;
 
 const routes = [
   {name: 'Home', path: '/', index: 0},
-  {name: 'Work', path: '/projects', index: 1},
+  {name: 'Work', path: '/work', index: 1},
   {name: 'Contact', path: '/contact', index: 2},
 ];
 
@@ -273,7 +273,7 @@ export class App extends React.Component {
               <Routes>
                 <Route path="/" exact element={<Home/>} />
                 <Route path="home" element={<Home/>} />
-                <Route path="projects" element={<Projects isDarkTheme={this.state.theme===darkTheme}/>} />
+                <Route path="work" element={<Work isDarkTheme={this.state.theme===darkTheme}/>} />
                 <Route path="contact" element={<Contact/>} />
                 <Route path="blog" element={<Blog/>} />
               </Routes>
