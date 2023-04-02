@@ -20,9 +20,8 @@ import {withStyles} from '@mui/styles';
 
 const styles = {
   teslaBanner: {
-    width: 'auto',
-    height: '200px',
-    margin: '0px',
+    width: '100%',
+    maxWidth: '400px',
   },
   tags: {
     margin: '4px',
