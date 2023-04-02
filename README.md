@@ -14,13 +14,14 @@ I don't like traditional résumés... I find it reductive and uninsightful to co
 ## Upcoming Features
 Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-website) to see what is coming next!
 
-## Built With
+## Tech Stack
 * [DigitalOcean](https://www.digitalocean.com/) - cloud provider
 * [ExpressJS](https://expressjs.com/) - backend framework
-* [Material-UI](https://material-ui.com/) - UI framework
+* [Material-UI](https://mui.com/) - UI framework
 * [Nginx](https://www.nginx.com/) - web server
 * [NodeJS](https://nodejs.org/) - server environment
-* [ReactJS](https://reactjs.org/) - frontend framework
+* [React](https://react.dev/) - frontend framework
+* [SQLite](https://www.sqlite.org) - simple persistant storage
 
 ## Authors
 

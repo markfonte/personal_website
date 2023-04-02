@@ -341,7 +341,7 @@ class GlossaryCard extends React.Component {
             cardId: 'personal_website',
             cardName: 'Personal Website',
             subtitle: 'This website!',
-            overrideLink: '/home#built_with_table_card',
+            overrideLink: '/home#tech_stack_card',
           },
           {
             cardId: 'road_mapper',
@@ -410,7 +410,7 @@ class GlossaryCard extends React.Component {
             cardId: 'personal_website',
             cardName: 'Personal Website',
             subtitle: 'This website!',
-            overrideLink: '/home#built_with_table_card',
+            overrideLink: '/home#tech_stack_card',
           },
         ],
       },
