@@ -128,6 +128,7 @@ class TicTacToeGame extends React.Component {
             </Typography>
           </div>
           <br/>
+          <div className={winner ? 'firework' : ''} />
           {stepNum !== 0 ?
           <Tooltip
             placement="right"
