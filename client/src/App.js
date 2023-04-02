@@ -45,6 +45,11 @@ const darkTheme = createTheme({
       paper: '#313131',
     },
   },
+  typography: {
+    button: {
+      textTransform: 'none',
+    },
+  },
 });
 
 const lightTheme = createTheme({
@@ -72,6 +77,11 @@ const lightTheme = createTheme({
       selected: 'rgba(0, 0, 0, 0.12)',
       disabled: 'rgba(0, 0, 0, 0.38)',
       disabledBackground: 'rgba(0, 0, 0, 0.26)',
+    },
+  },
+  typography: {
+    button: {
+      textTransform: 'none',
     },
   },
 });
