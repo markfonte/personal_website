@@ -17,6 +17,12 @@ vim .git/hooks/pre-commit.sample # Paste output
 mv .git/hooks/commit-msg.sample .git/hooks/commit-msg
 mv .git/hooks/pre-commit.sample .git/hooks/pre-commit
 
+#### Having trouble?
+Open the file in vim and use
+```
+:set ff=unix
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

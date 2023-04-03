@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # git pre-commit script to auto update the 'updated at' timestamp on every commit
 #
