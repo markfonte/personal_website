@@ -26,6 +26,6 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 ## Authors
 
 * **[Mark Fonte](https://github.com/markfonte)** - *creator*
-* **[Nathan Johnson](https://github.com/markfonte)** - *advisor*
+* **[Nathan Johnson](https://github.com/nathan815)** - *advisor*
 
 
