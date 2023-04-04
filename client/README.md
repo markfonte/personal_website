@@ -8,20 +8,17 @@ touch .env
 vim .env # Paste output and save
 
 ### Add git hooks
-cd ../
-pwd # Output: /mnt/c/Users/mark/dev/personal_website/
-cat commit-msg-example # Copy output
-vim .git/hooks/commit-msg.sample # Paste output
-cat pre-commit-example # Copy output
-vim .git/hooks/pre-commit.sample # Paste output
-mv .git/hooks/commit-msg.sample .git/hooks/commit-msg
-mv .git/hooks/pre-commit.sample .git/hooks/pre-commit
+pwd # ~/dev/personal_website/client
 
-#### Having trouble?
-Open the file in vim and use
-```
+cat .commit-msg | pbcopy
+pbpaste > ../.git/hooks/commit-msg
+vim ../.git/hooks/commit-msg
 :set ff=unix
-```
+
+cat .pre-commit | pbcopy
+pbpaste > ..git/hooks/pre-commit
+vim ..git/hooks/pre-commit
+:set ff=unix
 
 ## Available Scripts
 

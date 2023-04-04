@@ -150,6 +150,7 @@ class SammyCard extends React.Component {
                     <Typography variant="body1" paragraph>
                       {article.blurb}{' '} <Link href={article.link} underline="hover">[…]</Link>
                     </Typography>
+                    <hr/>
                   </div>
                 ))}
               </div>
