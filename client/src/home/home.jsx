@@ -5,6 +5,7 @@ const TicTacToeCard = lazy(() => import('./tic_tac_toe_card.jsx'));
 const GimbleCard = lazy(() => import('./gimble_card.jsx'));
 const TechStackCard = lazy(() => import('./tech_stack_card.jsx'));
 const WelcomeCard = lazy(() => import('./welcome_card.jsx'));
+const SammyCard = lazy(() => import('./sammy_card.jsx'));
 import {Typography, Link, CircularProgress} from '@mui/material';
 import {withStyles} from '@mui/styles';
 
@@ -94,6 +95,7 @@ class Home extends React.Component {
         </Typography>
         <Suspense fallback={renderLoader()}>
           <WelcomeCard />
+          <SammyCard />
           <GimbleCard />
           <TechStackCard />
           <TicTacToeCard />

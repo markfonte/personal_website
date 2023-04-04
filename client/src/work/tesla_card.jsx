@@ -33,18 +33,6 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
   },
-  rocky: {
-    height: '100%',
-    maxHeight: '300px',
-    width: 'auto',
-    marginLeft: '4px',
-    marginRight: '4px',
-  },
-  webScreenshot: {
-    width: '100%',
-    maxWidth: '400px',
-    height: 'auto',
-  },
 };
 
 class TeslaCard extends React.Component {
