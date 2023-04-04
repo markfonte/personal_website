@@ -41,7 +41,7 @@ const darkTheme = createTheme({
       main: '#FFCb05', // maize
     },
     background: {
-      default: '#212121',
+      default: '#091929',
       paper: '#313131',
     },
   },
@@ -68,7 +68,7 @@ const lightTheme = createTheme({
       main: '#B92C00',
     },
     background: {
-      default: '#DEDEDE',
+      default: '#D7E5F0',
       paper: '#F6F6F6',
     },
     action: {
