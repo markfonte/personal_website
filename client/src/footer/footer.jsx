@@ -5,7 +5,7 @@ import universityOfMichiganLogoSmall
   from '../static/logos/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
 import {Typography, Link, Tooltip, Button} from '@mui/material';
-import timestamp from '../commit_timestamp.js';
+import timestamp from '../CommitTimestamp.js';
 import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 import facebookLogo from '../static/logos/facebook_logo.svg';

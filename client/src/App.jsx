@@ -3,11 +3,11 @@ import './App.css';
 import PropTypes from 'prop-types';
 import profilePicture
   from './static/photos/mark_circle.svg';
-import Work from './work/work.jsx';
-import Contact from './contact/contact.jsx';
-import Home from './home/home.jsx';
-import Blog from './blog/blog.jsx';
-import Footer from './footer/footer.jsx';
+import Work from './work/Work.jsx';
+import Contact from './contact/Contact.jsx';
+import Home from './home/Home.jsx';
+import Blog from './blog/Blog.jsx';
+import Footer from './footer/Footer.jsx';
 import LinkStyle from '@mui/material/Link';
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import {createTheme, StyledEngineProvider, ThemeProvider} from '@mui/material/styles';
@@ -25,8 +25,8 @@ import {
 } from '@mui/material';
 import ScrollUpButton from 'react-scroll-up-button';
 
-const getCookie = require('./shared/util/cookies.js').getCookie;
-const setCookie = require('./shared/util/cookies.js').setCookie;
+const getCookie = require('./shared/util/Cookies.js').getCookie;
+const setCookie = require('./shared/util/Cookies.js').setCookie;
 
 const routes = [
   {name: 'Home', path: '/', index: 0},

@@ -1,5 +1,5 @@
 import React from 'react';
-import TicTacToeGame from './tic_tac_toe_game.jsx';
+import TicTacToeGame from './TicTacToeGame.jsx';
 import {
   Typography,
   Card,

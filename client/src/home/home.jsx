@@ -1,17 +1,17 @@
 import React, {lazy, Suspense} from 'react';
 import PropTypes from 'prop-types';
-const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
-const TicTacToeCard = lazy(() => import('./tic_tac_toe_card.jsx'));
-const GimbleCard = lazy(() => import('./gimble_card.jsx'));
-const TechStackCard = lazy(() => import('./tech_stack_card.jsx'));
-const WelcomeCard = lazy(() => import('./welcome_card.jsx'));
-const SammyCard = lazy(() => import('./sammy_card.jsx'));
+const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
+const TicTacToeCard = lazy(() => import('./TicTacToeCard.jsx'));
+const GimbleCard = lazy(() => import('./GimbleCard.jsx'));
+const TechStackCard = lazy(() => import('./TechStackCard.jsx'));
+const WelcomeCard = lazy(() => import('./WelcomeCard.jsx'));
+const SammyCard = lazy(() => import('./SammyCard.jsx'));
 import {Typography, Link, CircularProgress} from '@mui/material';
 import {withStyles} from '@mui/styles';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 
-const getCookie = require('../shared/util/cookies.js').getCookie;
+const getCookie = require('../shared/util/Cookies.js').getCookie;
 
 const styles = {
   title: {

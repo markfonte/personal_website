@@ -6,9 +6,9 @@ import {Typography, Card, Tooltip, IconButton} from '@mui/material';
 import {withStyles} from '@mui/styles';
 const fetch = require('node-fetch');
 
-const deleteCookie = require('../shared/util/cookies.js').deleteCookie;
-const setCookie = require('../shared/util/cookies.js').setCookie;
-const getCookie = require('../shared/util/cookies.js').getCookie;
+const deleteCookie = require('./util/Cookies.js').deleteCookie;
+const setCookie = require('./util/Cookies.js').setCookie;
+const getCookie = require('./util/Cookies.js').getCookie;
 
 const styles = {
   root: {

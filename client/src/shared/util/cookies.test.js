@@ -1,4 +1,4 @@
-const cookiesjs = require('./cookies.js');
+const cookiesjs = require('./Cookies.js');
 
 test('a cookie that does not exist', () => {
   const getCookie = cookiesjs.getCookie;

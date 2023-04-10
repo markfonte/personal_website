@@ -1,5 +1,5 @@
 import React from 'react';
-import Work from './work.test.js';
+import Work from './Work';
 import renderer from 'react-test-renderer';
 
 test('Work matches snapshot', () => {

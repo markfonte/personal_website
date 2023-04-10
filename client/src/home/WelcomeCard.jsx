@@ -16,7 +16,7 @@ import withStyles from '@mui/styles/withStyles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 
-const getCookie = require('../shared/util/cookies.js').getCookie;
+const getCookie = require('../shared/util/Cookies.js').getCookie;
 
 const styles = {
   cardContent: {

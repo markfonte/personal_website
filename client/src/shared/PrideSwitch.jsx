@@ -3,8 +3,8 @@ import {Card, Typography, Switch, Tooltip} from '@mui/material';
 import PropTypes from 'prop-types';
 import {withStyles} from '@mui/styles';
 
-const getCookie = require('./util/cookies.js').getCookie;
-const setCookie = require('./util/cookies.js').setCookie;
+const getCookie = require('./util/Cookies.js').getCookie;
+const setCookie = require('./util/Cookies.js').setCookie;
 
 const styles = {
   flatCard: {

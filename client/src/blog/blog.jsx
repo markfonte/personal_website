@@ -14,7 +14,7 @@ import {
 } from '@mui/material';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
-const InteractionCard = lazy(() => import('../shared/interaction_card.jsx'));
+const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
 import ShareIcon from '@mui/icons-material/Share';
 import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';

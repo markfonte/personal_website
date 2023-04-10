@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './home.jsx';
+import Home from './Home.jsx';
 import renderer from 'react-test-renderer';
 
 test('Home matches snapshot', () => {
