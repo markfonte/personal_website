@@ -27,6 +27,8 @@ import sammyArticle3
   from '../static/photos/sammy_article_3.webp';
 import sammyArticle4
   from '../static/photos/sammy_article_4.webp';
+import sammyArticle5
+  from '../static/photos/sammy_article_5.webp';
 
 const styles = {
   michiganDailyBanner: {
@@ -66,6 +68,14 @@ class SammyCard extends React.Component {
     const {classes} = this.props;
 
     const articles = [
+      {
+        id: 5,
+        title: 'Hey hey, ho ho, humans of GEO',
+        link: 'https://www.michigandaily.com/statement/hey-hey-ho-ho-humans-of-geo/',
+        cover: sammyArticle5,
+        date: 'May 16, 2023',
+        blurb: 'It wasn\'t until March 15 that the news of the then-impending strike truly hit me — just five days before the successful vote to start the strike authorization process. My favorite Graduate Student Instructor suspiciously ended our discussion 10 minutes early to make an \"announcement.\" As I recall, the first thing she did in',
+      },
       {
         id: 4,
         title: 'The gory, less greedy, Midas touch',
