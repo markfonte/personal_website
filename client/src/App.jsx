@@ -13,7 +13,7 @@ import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import {createTheme, StyledEngineProvider, ThemeProvider} from '@mui/material/styles';
 import {withStyles} from '@mui/styles';
 import {WbSunny} from '@mui/icons-material';
-// import {red} from '@mui/material/colors';
+
 import {
   Typography,
   Button,
@@ -41,8 +41,8 @@ const darkTheme = createTheme({
       main: '#FFCb05', // maize
     },
     background: {
-      default: '#091929',
-      paper: '#313131',
+      default: '#091929', // dark blue
+      paper: '#101418', // dark gray
     },
   },
   typography: {
@@ -92,7 +92,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    maxWidth: '1200px',
     padding: '12px',
     margin: 'auto',
   },
@@ -156,13 +155,16 @@ const styles = {
   routerButton: {
     marginTop: 8, marginBottom: 8,
   },
+  toggleThemeButton: {
+    margin: 12,
+  },
 };
 
 export class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      theme: darkTheme,
+      theme: lightTheme,
       proud: false,
       currentlySelected: -1,
       logoSpinning: false,
@@ -236,7 +238,7 @@ export class App extends React.Component {
           <Grid className={classes.root}>
             {rainbowHeader}
             <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
-              <WbSunny />
+              <WbSunny className={classes.toggleThemeButton} />
             </Tooltip>
             <Router>
               <Tooltip title={this.state.logoSpinning ? 'weeeeeeeeeee!!' : 'Click me!'} arrow>
@@ -254,7 +256,7 @@ export class App extends React.Component {
                     <ListItem className={classes.AppListItem} key={route.name}>
                       <LinkStyle style={{textDecoration: 'none'}}
                         className={classes.routerLink} component={Link} to={route.path}>
-                        <Tooltip title={'Go to ' + route.name + ' page'} arrow>
+                        <Tooltip title={'Navigate to ' + route.name} arrow>
                           <Button
                             onClick={() => this.currentlySelected(i)}
                             variant={currentlySelected === i ? 'contained' : 'outlined'}

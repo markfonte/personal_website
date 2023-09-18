@@ -263,7 +263,7 @@ I also make the case that, as long as employers are going to do what is in their
                   <Tooltip
                     title="Expand/collapse card"
                     arrow>
-                    <IconButton style={{padding: 0}} size="large">
+                    <IconButton size="large">
                       <ExpandMoreIcon />
                     </IconButton>
                   </Tooltip>

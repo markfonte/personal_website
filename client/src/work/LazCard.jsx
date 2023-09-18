@@ -127,7 +127,7 @@ class LAZCard extends React.Component {
       },
     ];
     return (
-      <Card raised={true} className="card">
+      <Card raised={true} className="large-card">
         <Accordion
           TransitionProps={{unmountOnExit: true}}>
           <AccordionSummary
@@ -138,7 +138,7 @@ class LAZCard extends React.Component {
               <Tooltip
                 title="Expand/collapse card"
                 arrow>
-                <IconButton style={{padding: 0}} size="large">
+                <IconButton size="large">
                   <ExpandMoreIcon />
                 </IconButton>
               </Tooltip>

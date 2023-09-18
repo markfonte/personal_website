@@ -15,7 +15,10 @@ const getCookie = require('../shared/util/Cookies.js').getCookie;
 
 const styles = {
   title: {
-    margin: '16px',
+    margin: 'auto',
+    maxWidth: 1050,
+    textAlign: 'center',
+    justifyContent: 'center',
   },
   subtitle: {
     margin: '16px',
@@ -25,6 +28,11 @@ const styles = {
   },
   web: {
     color: '#61DBFB',
+  },
+  twoColumnContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
   },
 };
 
@@ -94,10 +102,12 @@ class Home extends React.Component {
           {' '}dev
         </Typography>
         <Suspense fallback={renderLoader()}>
-          <WelcomeCard />
-          <SammyCard />
-          <GimbleCard />
-          <TechStackCard />
+          <div className={classes.twoColumnContainer}>
+            <WelcomeCard />
+            <GimbleCard />
+            <SammyCard />
+            <TechStackCard />
+          </div>
           <TicTacToeCard />
           <InteractionCard pagename="home" />
         </Suspense>

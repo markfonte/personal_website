@@ -90,8 +90,7 @@ class TechStackCard extends React.Component {
     return (
       <Card
         raised={true}
-        className="card"
-        style={{maxWidth: 700}}>
+        className="large-card">
         <a name="tech_stack_card" href="#tech_stack_card" className="gone">
           Tech Stack Card
         </a>
@@ -105,10 +104,11 @@ class TechStackCard extends React.Component {
               <Chip
                 className={classes.tags}
                 key={tag.label}
-                avatar={<Avatar alt={tag.label} src={tag.icon} sx={{width: 56, height: 56}} />}
+                avatar={<Avatar alt={tag.label} src={tag.icon} />}
                 label={tag.label}
                 variant={tag.variant ? tag.variant : 'outlined'}
-                clickable />
+                size="large"
+                clickable={false} />
             ))}
           </div>
         </CardContent>

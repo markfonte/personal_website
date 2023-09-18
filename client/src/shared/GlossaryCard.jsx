@@ -438,7 +438,7 @@ class GlossaryCard extends React.Component {
         </a>
         <CardHeader
           className="card-header"
-          title="Glossary"
+          title="Index"
         />
         <CardContent
           className={classes.expansionPanel}>
@@ -456,7 +456,7 @@ class GlossaryCard extends React.Component {
                     <Tooltip
                       title="Expand/collapse card"
                       arrow>
-                      <IconButton style={{padding: 0}} size="large">
+                      <IconButton size="large">
                         <ExpandMoreIcon />
                       </IconButton>
                     </Tooltip>

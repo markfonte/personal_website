@@ -27,6 +27,11 @@ const styles = {
   title: {
     margin: '16px',
   },
+  twoColumnContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
 };
 
 class Work extends React.Component {
@@ -37,26 +42,28 @@ class Work extends React.Component {
 
     return (
       <div>
-        <Typography className={classes.title} variant="h6"paragraph>
+        <Typography className={classes.title} variant="h6" paragraph>
           My work experiences, internships, side projects and hackathon projects
         </Typography>
         <Suspense fallback={renderLoader()}>
-          <TeslaCard/>
-          <JustlightCard isDarkTheme={this.props.isDarkTheme} />
-          <AmazonCard />
-          <JPMorganCard />
-          <LAZCard />
-          <CompletedCourseworkCard />
-          <MISymptomsCard />
-          <MHacks12Card />
-          <WalklensCard />
-          <Spartahack5Card />
-          <ClippCard />
-          <RoadMapperCard />
-          <RevolutionUC8Card />
-          <Grizzhacks3Card />
-          <SpotlightCard />
-          <DoggieDoodlesCard />
+          <div className={classes.twoColumnContainer}>
+            <TeslaCard/>
+            <JustlightCard isDarkTheme={this.props.isDarkTheme} />
+            <AmazonCard />
+            <JPMorganCard />
+            <LAZCard />
+            <CompletedCourseworkCard />
+            <MISymptomsCard />
+            <MHacks12Card />
+            <WalklensCard />
+            <Spartahack5Card />
+            <ClippCard />
+            <RoadMapperCard />
+            <RevolutionUC8Card />
+            <Grizzhacks3Card />
+            <SpotlightCard />
+            <DoggieDoodlesCard />
+          </div>
           <GlossaryCard />
           <InteractionCard pagename="work" />
         </Suspense>

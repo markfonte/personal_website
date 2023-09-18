@@ -1,6 +1,13 @@
 /* Global */
 .card {
-  max-width: 1800px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 64px;
+  align-self: center;
+}
+
+.large-card {
+  width: 800px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 64px;
@@ -98,13 +105,13 @@ img[src=""] {
     opacity: 1;
   }
 
-  50% {
+  30% {
     width: 0.5vmin;
     opacity: 1;
   }
 
   100% {
-    width: 45vmin;
+    width: 60vmin;
     opacity: 0;
   }
 }
@@ -134,8 +141,29 @@ img[src=""] {
     radial-gradient(circle, #00f 0.3vmin, #0000 0) 80% 10%,
     radial-gradient(circle, #ff0 0.2vmin, #0000 0) 90% 23%,
     radial-gradient(circle, #ff0 0.3vmin, #0000 0) 45% 20%,
-    radial-gradient(circle, #00f 0.5vmin, #0000 0) 13% 24%
-    ;
+    radial-gradient(circle, #00f 0.5vmin, #0000 0) 13% 24%,
+    radial-gradient(circle, #ff0 0.4vmin, #0000 0) 25% 75%,
+    radial-gradient(circle, #00f 0.6vmin, #0000 0) 70% 30%,
+    radial-gradient(circle, #00f 0.7vmin, #0000 0) 40% 60%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 60% 40%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 10% 90%,
+    radial-gradient(circle, #00f 0.4vmin, #0000 0) 20% 80%,
+    radial-gradient(circle, #ff0 0.6vmin, #0000 0) 80% 20%,
+    radial-gradient(circle, #00f 0.7vmin, #0000 0) 45% 55%,
+    radial-gradient(circle, #00f 0.4vmin, #0000 0) 90% 10%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 35% 65%,
+    radial-gradient(circle, #ff0 0.6vmin, #0000 0) 15% 85%,
+    radial-gradient(circle, #0f0 0.5vmin, #f00 0) 30% 70%,
+    radial-gradient(circle, #f00 0.7vmin, #00f 0) 75% 25%,
+    radial-gradient(circle, #ff0 0.4vmin, #f0f 0) 55% 45%,
+    radial-gradient(circle, #00f 0.3vmin, #0f0 0) 70% 30%,
+    radial-gradient(circle, #f0f 0.6vmin, #ff0 0) 25% 75%,
+    radial-gradient(circle, #ff0 0.5vmin, #f00 0) 40% 60%,
+    radial-gradient(circle, #0f0 0.7vmin, #00f 0) 65% 35%,
+    radial-gradient(circle, #00f 0.4vmin, #0f0 0) 15% 85%,
+    radial-gradient(circle, #f00 0.2vmin, #f0f 0) 80% 20%,
+    radial-gradient(circle, #f0f 0.5vmin, #ff0 0) 50% 50%,
+    radial-gradient(circle, #0f0 0.6vmin, #00f 0) 90% 10%;
   background-size: 0.8vmin 0.8vmin;
   background-repeat: no-repeat;
   animation: firework 3s infinite;
