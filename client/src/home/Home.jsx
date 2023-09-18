@@ -37,6 +37,10 @@ const styles = {
 };
 
 class Home extends React.Component {
+  componentDidMount() {
+    document.title = 'Home | Mark Fonte';
+  }
+
   render() {
     const {classes} = this.props;
 
@@ -55,8 +59,6 @@ class Home extends React.Component {
     const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
     const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
     const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
-
-    document.title = 'Home | Mark Fonte';
 
     return (
       <div>

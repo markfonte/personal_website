@@ -53,6 +53,10 @@ class Blog extends React.Component {
     this.handleClose = this.handleClose.bind(this);
   }
 
+  componentDidMount() {
+    document.title = 'Blog | Mark Fonte';
+  }
+
   copyToClipboard(postLink) {
     navigator.clipboard.writeText(postLink);
     this.setState({successDialogOpen: true});
@@ -67,8 +71,6 @@ class Blog extends React.Component {
 
   render() {
     const {classes} = this.props;
-
-    document.title = 'Blog | Mark Fonte';
 
     const posts = [
       {

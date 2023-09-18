@@ -35,10 +35,12 @@ const styles = {
 };
 
 class Work extends React.Component {
+  componentDidMount() {
+    document.title = 'Work | Mark Fonte';
+  }
+
   render() {
     const {classes} = this.props;
-
-    document.title = 'Work | Mark Fonte';
 
     return (
       <div>

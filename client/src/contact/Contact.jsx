@@ -31,12 +31,14 @@ const styles = {
 };
 
 class Contact extends React.Component {
+  componentDidMount() {
+    document.title = 'Contact | Mark Fonte';
+  }
+
   render() {
     const {classes} = this.props;
     const emailLink = `mailto:mark@fonte.com`;
     const venmoLink = `https://venmo.com/Mark-Fonte`;
-
-    document.title = 'Contact | Mark Fonte';
 
     return (
       <div className={classes.root}>
