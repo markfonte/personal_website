@@ -9,9 +9,16 @@ import {
   IconButton,
   Tooltip,
   CardHeader,
-  CardMedia,
   Link,
+  ImageList,
+  ImageListItem,
 } from '@mui/material';
+import welcomeImageOne from '../static/photos/welcome_photo_1.jpg';
+import welcomeImageTwo from '../static/photos/welcome_photo_2.jpg';
+import welcomeImageThree from '../static/photos/welcome_photo_3.jpg';
+import welcomeImageFour from '../static/photos/welcome_photo_4.jpg';
+import welcomeImageFive from '../static/photos/welcome_photo_5.jpg';
+import welcomeImageSix from '../static/photos/welcome_photo_6.jpg';
 import withStyles from '@mui/styles/withStyles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
@@ -42,14 +49,6 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
   },
-  welcomeImage: {
-    width: '100%',
-    marginBottom: '16px',
-    marginTop: '16px',
-    marginLeft: '0px',
-    marginRight: '0px',
-    maxWidth: '1000px',
-  },
   iframeStyle: {
     height: '235px',
     width: '100%',
@@ -58,27 +57,8 @@ const styles = {
   },
 };
 
-class WelcomeCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.refreshFeed = this.refreshFeed.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-  }
-  refreshFeed() {
-    // ignore this during Jest tests
-    if (process.env.NODE_ENV !== 'test') {
-      if (window !== undefined && window.instgrm !== undefined &&
-          window.instgrm.Embeds !== undefined) {
-        window.instgrm.Embeds.process();
-      }
-    }
-  }
-  handleChange(event, newExpanded) {
-    if (newExpanded) {
-      setTimeout(this.refreshFeed, 500);
-    }
-  }
 
+class WelcomeCard extends React.Component {
   render() {
     const {classes} = this.props;
     const trelloBoardLink = `https://trello.com/b/yoLCEs6S/personal-website`;
@@ -97,10 +77,36 @@ class WelcomeCard extends React.Component {
     const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
     const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
 
+    const itemData = [
+      {
+        img: welcomeImageOne,
+        title: '',
+      },
+      {
+        img: welcomeImageTwo,
+        title: '',
+      },
+      {
+        img: welcomeImageThree,
+        title: '',
+      },
+      {
+        img: welcomeImageFour,
+        title: '',
+      },
+      {
+        img: welcomeImageFive,
+        title: '',
+      },
+      {
+        img: welcomeImageSix,
+        title: '',
+      },
+    ];
+
     return (
       <Card raised={true} className="large-card">
         <Accordion
-          onChange={this.handleChange}
           TransitionProps={{unmountOnExit: true}}>
           <AccordionSummary
             aria-label="Welcome"
@@ -125,13 +131,17 @@ class WelcomeCard extends React.Component {
                 title="Welcome!"
                 subheader="Click for a little about me..."
               />
-              <CardMedia
-                className={classes.welcomeImage}
-                image="/media/welcome_image.jpg"
-                title="Welcome Image"
-                alt="Welcome Image"
-                component="img"
-              />
+              <ImageList variant="masonry" cols={2}>
+                {itemData.map((item) => (
+                  <ImageListItem key={item.img}>
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                ))}
+              </ImageList>
             </div>
           </AccordionSummary>
           <AccordionDetails>

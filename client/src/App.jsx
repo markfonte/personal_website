@@ -42,7 +42,7 @@ const darkTheme = createTheme({
     },
     background: {
       default: '#091929', // dark blue
-      paper: '#101418', // dark gray
+      paper: '#2A2A2A', // dark gray
     },
   },
   typography: {
@@ -156,7 +156,7 @@ const styles = {
     marginTop: 8, marginBottom: 8,
   },
   toggleThemeButton: {
-    margin: 12,
+    margin: 20,
   },
 };
 

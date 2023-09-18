@@ -16,7 +16,7 @@ const getCookie = require('../shared/util/Cookies.js').getCookie;
 const styles = {
   title: {
     margin: 'auto',
-    maxWidth: 1050,
+    maxWidth: 1070,
     textAlign: 'center',
     justifyContent: 'center',
   },

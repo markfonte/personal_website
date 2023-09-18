@@ -12,6 +12,7 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
+import teslaOnboardPic from '../static/photos/tesla_onboard_pic.jpg';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -50,6 +51,18 @@ class TeslaCard extends React.Component {
         label: 'Full Time',
         color: 'primary',
         variant: 'default',
+      },
+      {
+        label: 'C',
+      },
+      {
+        label: 'JavaScript',
+      },
+      {
+        label: 'Python',
+      },
+      {
+        label: 'React',
       },
     ];
 
@@ -104,6 +117,8 @@ class TeslaCard extends React.Component {
               <Typography variant="body1" paragraph>
                 Working on vehicle diagnostics firmware and in-vehicle UI as part of the Service Engineering organization
               </Typography>
+              <img src={teslaOnboardPic}
+              />
             </CardContent>
           </AccordionDetails>
         </Accordion>

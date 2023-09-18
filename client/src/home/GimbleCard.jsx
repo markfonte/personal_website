@@ -39,10 +39,14 @@ const styles = {
     width: '24px',
     height: '24px',
   },
-  iframeStyle: {
-    height: '235px',
+  spotifySingle: {
+    height: '232px',
     width: '100%',
     maxWidth: '330px',
+    margin: '4px',
+  },
+  spotifyAlbum: {
+    height: '152px',
     margin: '4px',
   },
   cardActions: {
@@ -91,51 +95,45 @@ class GimbleCard extends React.Component {
       {name: 'Gimble A Cappella on Amazon Music', image: amazonMusicLogo, link: amazonMusicLink},
     ];
 
-    const mediaPlayers = [
+    const spotifySingles = [
       {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/track/2x3lNJtZj9QdDBzFroeVUZ`,
         title: `The Joke - Gimble A Cappella`,
       },
       {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/track/3vJOfNgJsMcwbfQhQFjqJO`,
         title: `The Joke - Gimble A Cappella`,
       },
       {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/track/2BPMW7WPHvKVyyPHn3OUC6`,
         title: `Movement - Gimble A Cappella`,
       },
       {
-        type: 'Spotify',
-        src: `https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo`,
-        title: `Home - Gimble A Cappella`,
-      },
-      {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/track/0WteMpcOWgCTUnMfiBwJXC`,
         title: `when the party's over - Gimble A Cappella`,
       },
       {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/track/0qR0w1pbjEaQK5WI4vCCvK`,
         title: `Fallingwater - Gimble A Cappella`,
       },
       {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/track/0syVmzCQYedVdmjHtxGy9K`,
         title: `Dancing On My Own - Gimble A Cappella`,
       },
       {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/track/69Wf0jtGtFujPkddCZMdCl`,
         title: `715 - CR∑∑KS - Gimble A Cappella`,
       },
+    ];
+
+    const spotifyAlbums = [
       {
-        type: 'Spotify',
         src: `https://open.spotify.com/embed/album/6tgeYaO5FiHOzZuFcIEFTR`,
         title: `XX - Gimble A Cappella`,
+      },
+      {
+        src: `https://open.spotify.com/embed/album/2YI8uuf2AUnN2hRxXx4TIo`,
+        title: `Home - Gimble A Cappella`,
       },
     ];
 
@@ -176,12 +174,24 @@ class GimbleCard extends React.Component {
           </AccordionSummary>
           <AccordionDetails>
             <CardContent>
-              {mediaPlayers.map((mediaPlayer) => (
+              {spotifyAlbums.map((spotifyAlbum) => (
                 <iframe
-                  className={classes.iframeStyle}
-                  src={mediaPlayer.src}
-                  title={mediaPlayer.title}
-                  key={mediaPlayer.title}
+                  className={classes.spotifyAlbum}
+                  src={spotifyAlbum.src}
+                  title={spotifyAlbum.title}
+                  key={spotifyAlbum.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              ))}
+              <br/>
+              {spotifySingles.map((spotifySingle) => (
+                <iframe
+                  className={classes.spotifySingle}
+                  src={spotifySingle.src}
+                  title={spotifySingle.title}
+                  key={spotifySingle.title}
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

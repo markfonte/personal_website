@@ -2,8 +2,7 @@ import React from 'react';
 import {Typography, Tooltip, Chip, Avatar} from '@mui/material';
 import withStyles from '@mui/styles/withStyles';
 import PropTypes from 'prop-types';
-import contactCoverPhoto from '../static/photos/contact_cover_photo.webp';
-import contactCoverPhotoFallback from '../static/photos/contact_cover_photo.jpg';
+import contactCoverPhoto from '../static/photos/contact_cover_photo.png';
 import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
 import InteractionCard from '../shared/InteractionCard.jsx';
@@ -25,7 +24,7 @@ const styles = {
     margin: '8px',
   },
   contactImage: {
-    maxHeight: '500px',
+    maxHeight: '400px',
     maxWidth: '100%',
   },
 };
@@ -80,17 +79,17 @@ class Contact extends React.Component {
           <i>My resume is available upon request</i>
         </Typography>
         <br/> <br/>
-        <picture>
-          <source srcSet={contactCoverPhoto} type="image/webp"/>
-          <source srcSet={contactCoverPhotoFallback} type="image/jpg"/>
-          <img
-            srcSet={[contactCoverPhoto, contactCoverPhotoFallback]}
-            className={classes.contactImage}
-            title="Contact page cover photo"
-            alt="Contact page cover photo"
-          />
-        </picture>
-        <br/> <br/>
+        <img
+          src={contactCoverPhoto}
+          className={classes.contactImage}
+          title="Contact page cover photo"
+          alt="Contact page cover photo"
+        />
+        <br/>
+        <Typography variant="caption">
+          ...if you Venmo me I won&#39;t be so sad!!
+        </Typography>
+        <br/> <br/> <br/>
         <InteractionCard pagename="contact" />
       </div>
     );

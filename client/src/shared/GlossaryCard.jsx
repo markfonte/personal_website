@@ -33,7 +33,7 @@ const styles = {
     justifyContent: 'center',
   },
   expansionPanel: {
-    maxWidth: 400,
+    maxWidth: 380,
     alignItems: 'center',
     justifyContent: 'center',
     margin: 'auto',
@@ -303,6 +303,11 @@ class GlossaryCard extends React.Component {
         logo: javascriptLogo,
         projects: [
           {
+            cardId: 'tesla',
+            cardName: 'Tesla',
+            subtitle: 'Software Engineer',
+          },
+          {
             cardId: 'clipp',
             cardName: 'Clipp',
             subtitle: 'Full Stack Developer',
@@ -386,6 +391,11 @@ class GlossaryCard extends React.Component {
         logo: pythonLogo,
         projects: [
           {
+            cardId: 'tesla',
+            cardName: 'Tesla',
+            subtitle: 'Software Engineer',
+          },
+          {
             cardId: 'road_mapper',
             cardName: 'Road Mapper',
             subtitle: 'EECS 493 Class Project',
@@ -396,6 +406,11 @@ class GlossaryCard extends React.Component {
         tagName: 'React Projects',
         logo: reactLogo,
         projects: [
+          {
+            cardId: 'tesla',
+            cardName: 'Tesla',
+            subtitle: 'Software Engineer',
+          },
           {
             cardId: 'jpmorgan',
             cardName: 'J.P. Morgan Chase',
@@ -432,7 +447,7 @@ class GlossaryCard extends React.Component {
       },
     ];
     return (
-      <Card raised={true} className="card" style={{maxWidth: 420}}>
+      <Card raised={true} className="card" style={{maxWidth: 400}}>
         <a name="glossary_card" href="#glossary_card" className="gone">
             Glossary Card
         </a>
@@ -472,7 +487,7 @@ class GlossaryCard extends React.Component {
                     alt={glossaryItem.tagName + ' button'}
                   />
                   <Typography
-                    variant="h6"
+                    variant="subtitle1"
                     color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
                     className={classes.tag}>
                     {glossaryItem.tagName}
