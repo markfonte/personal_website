@@ -186,13 +186,13 @@ export class App extends React.Component {
     if (getCookie('pride') === 'true') {
       proud = true;
     }
-    let initialTheme = darkTheme;
+    let initialTheme = lightTheme;
     if (getCookie('app_theme') === 'light_theme') {
       initialTheme = lightTheme;
     } else if (getCookie('app_theme') === 'dark_theme') {
       initialTheme = darkTheme;
     } else {
-      setCookie('app_theme', 'dark_theme', 1000);
+      setCookie('app_theme', 'light_theme', 1000);
     }
     this.setState({
       theme: initialTheme,
