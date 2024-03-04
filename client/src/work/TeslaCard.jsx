@@ -90,7 +90,7 @@ class TeslaCard extends React.Component {
               <CardHeader
                 className="card-header"
                 title="Tesla"
-                subheader="Software Engineer" />
+                subheader="Senior Software Engineer" />
               <CardMedia
                 className={classes.teslaBanner}
                 image="/media/tesla_logo.svg"

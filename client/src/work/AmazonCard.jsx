@@ -158,7 +158,7 @@ class AmazonCard extends React.Component {
               <CardHeader
                 className="card-header"
                 title="Amazon &amp; Amazon Web Services"
-                subheader="Software Development Engineer"
+                subheader="Software Engineer"
               />
               <CardMedia
                 className={classes.amazonLogo}

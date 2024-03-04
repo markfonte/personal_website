@@ -63,7 +63,7 @@ class Home extends React.Component {
     return (
       <div>
         <Typography className={classes.title} variant="h6">
-          Software engineer at {' '}
+          Senior software engineer at {' '}
           <Link href={teslaLink} className={teslaColor} underline="hover">
             Tesla
           </Link>

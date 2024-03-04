@@ -83,7 +83,7 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'tesla',
             cardName: 'Tesla',
-            subtitle: 'Software Engineer',
+            subtitle: 'Senior Software Engineer',
           },
           {
             cardId: 'justlight',
@@ -212,7 +212,7 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'amazon',
             cardName: 'Amazon / Amazon Web Services',
-            subtitle: 'Software Development Engineer',
+            subtitle: 'Software Engineer',
           },
           {
             cardId: 'justlight',
@@ -284,7 +284,7 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'amazon',
             cardName: 'Amazon / Amazon Web Services',
-            subtitle: 'Software Development Engineer',
+            subtitle: 'Software Engineer',
           },
           {
             cardId: 'jpmorgan',
@@ -305,7 +305,7 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'tesla',
             cardName: 'Tesla',
-            subtitle: 'Software Engineer',
+            subtitle: 'Senior Software Engineer',
           },
           {
             cardId: 'clipp',
@@ -393,7 +393,7 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'tesla',
             cardName: 'Tesla',
-            subtitle: 'Software Engineer',
+            subtitle: 'Senior Software Engineer',
           },
           {
             cardId: 'road_mapper',
@@ -409,7 +409,7 @@ class GlossaryCard extends React.Component {
           {
             cardId: 'tesla',
             cardName: 'Tesla',
-            subtitle: 'Software Engineer',
+            subtitle: 'Senior Software Engineer',
           },
           {
             cardId: 'jpmorgan',
