@@ -5,13 +5,13 @@
 Résumés stink! This is more fun (for me). Send me suggestions!!
 
 ## Features
-* Responsive design - one code base designed for mobile and desktop devices of (mostly) any size
+* Responsive design - single code base designed for mobile and desktop devices of (mostly) any size
 * [Material-UI Card](https://material-ui.com/components/cards/#cards)-based content display
 * Subtle University of Michigan themes
 * And much more! [check it out](https://mark.fonte.com)
 
 ## Upcoming Features
-Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-website) to see what is coming next!
+Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-website) to see what's next
 
 ## Tech Stack
 * [DigitalOcean](https://www.digitalocean.com/) - cloud provider
@@ -24,7 +24,5 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 
 ## Authors
 
-* **[Mark Fonte](https://github.com/markfonte)** - *creator*
-* **[Nathan Johnson](https://github.com/nathan815)** - *advisor*
-
-
+* **[Mark Fonte](https://github.com/markfonte)**
+* **[Nathan Johnson](https://github.com/nathan815)**
