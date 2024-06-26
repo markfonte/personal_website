@@ -1,17 +1,17 @@
 ## Install
-Create DB script requires sqlite3:
-
-```
-$ sudo apt install sqlite3
+Creating DB script requires sqlite3:
+```sh
+sudo apt install sqlite3
 ```
 
 Git hooks require ruby:
-```
-$ sudo apt install ruby
+```sh
+sudo apt install ruby
 ```
 
+## Run
 From `/api` directory:
 
-```
-$ pm2 start npm --name "api" -- start
+```sh
+pm2 start "yarn start" --name "api"
 ```
