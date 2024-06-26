@@ -36,7 +36,7 @@ const styles = {
       'textAlign': 'center',
       'transition': 'all 0.3s ease',
       'color': 'white',
-      'fontSize': '20px',
+      'fontSize': '1.25rem',
       'height': '64px',
       'width': '48px',
       'padding': '16px',

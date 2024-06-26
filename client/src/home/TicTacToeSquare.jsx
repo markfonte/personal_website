@@ -7,7 +7,7 @@ const styles = {
   square: {
     border: '1px solid #999',
     float: 'left',
-    fontSize: '28px',
+    fontSize: '1.75rem',
     fontWeight: 'bold',
     lineHeight: '50px',
     height: '64px',

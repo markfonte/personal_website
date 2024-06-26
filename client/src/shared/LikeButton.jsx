@@ -140,13 +140,13 @@ class LikeButton extends React.Component {
     let displayedColor;
     if (isLiked) {
       displayedColor = 'secondary';
-      icon = <FavoriteIcon color={displayedColor} fontSize="large" />;
+      icon = <FavoriteIcon color={displayedColor} fontSize="2rem" />;
     } else {
       displayedColor = 'inherit';
       icon = (
         <FavoriteBorderIcon
           color={displayedColor}
-          fontSize="large"
+          fontSize="2rem"
         />
       );
     }
