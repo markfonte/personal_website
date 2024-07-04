@@ -68,17 +68,7 @@ const styles = {
 const DisplayError = (props) => {
   return (
     <Typography variant="h6" className={props.classes.errorMessageRoot} >
-      Oops! Looks like my backend server is down. Please
-      {' '}
-      <Tooltip
-        arrow
-        title="Go to Contact page">
-        <Link color="secondary" href="https://mark.fonte.com/contact">
-        contact me
-        </Link>
-      </Tooltip>
-      {' '}
-      so I can fix the issue! Thanks!
+      Oops! Looks like my server is down. Some features may be degraded. Don&#39;t worry - I&#39;ve been notified! 🔨
     </Typography>
   );
 };
@@ -192,7 +182,7 @@ class Footer extends React.Component {
             {buttons.map((button) => (
               <Tooltip
                 key={button.name}
-                title={'Go to ' + button.name }
+                title={'Go to ' + button.name}
                 arrow>
                 <Button href={button.link}>
                   <img
@@ -235,7 +225,7 @@ class Footer extends React.Component {
                 color="textSecondary"
                 href={websiteGithubLink}
               >
-              view source on github
+                view source on github
               </Link>
             </Tooltip>
           </div>
@@ -249,7 +239,7 @@ class Footer extends React.Component {
                 color="textSecondary"
                 href={suggestEditLink}
               >
-              suggest an edit
+                suggest an edit
               </Link>
             </Tooltip>
           </div>
