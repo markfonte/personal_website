@@ -133,8 +133,8 @@ const styles = {
     height: '112px',
     width: '100%',
     background: 'linear-gradient(to bottom, #e2453c90 0, #e2453c90 16%,' +
-        '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,' +
-        '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
+      '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,' +
+      '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
   },
   footerRoot: {
     bottom: 0,
@@ -142,9 +142,9 @@ const styles = {
     right: 0,
     height: '20px',
     width: '100%',
-    background: 'linear-gradient(to bottom, #e2453c90 0, #e2453c90 16%,'+
-        '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,'+
-        '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
+    background: 'linear-gradient(to bottom, #e2453c90 0, #e2453c90 16%,' +
+      '#e07e3990 16%, #e07e3990 32%, #e5d66790 32%, #e5d66790 48%, #51b95b90 48%,' +
+      '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
   },
   mainTitle: {
     margin: '8px',
@@ -222,21 +222,16 @@ export class App extends React.Component {
 
   render() {
     const {classes} = this.props;
-    const logoStyle = this.state.logoSpinning ? classes.profileLogoSpinning : classes.profileLogo;
-    const rainbowHeader = this.state.proud === true ?
-      <header className={classes.headerRoot} /> :
-      <div />;
-    const rainbowFooter = this.state.proud === true ?
-      <footer className={classes.footerRoot} /> :
-      <div />;
-    const currentlySelected = this.state.currentlySelected;
+
     return (
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={this.state.theme}>
           <CssBaseline />
 
           <Grid className={classes.root}>
-            {rainbowHeader}
+            {this.state.proud ?
+              <header className={classes.headerRoot} /> :
+              null}
             <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
               <WbSunny className={classes.toggleThemeButton} />
             </Tooltip>
@@ -245,7 +240,7 @@ export class App extends React.Component {
                 <img
                   onClick={() => this.profilePictureClicked()}
                   srcSet={[profilePicture]}
-                  className={logoStyle}
+                  className={this.state.logoSpinning ? classes.profileLogoSpinning : classes.profileLogo}
                   alt="headshot"
                 />
               </Tooltip>
@@ -259,7 +254,7 @@ export class App extends React.Component {
                         <Tooltip title={'Navigate to ' + route.name} arrow>
                           <Button
                             onClick={() => this.currentlySelected(i)}
-                            variant={currentlySelected === i ? 'contained' : 'outlined'}
+                            variant={this.state.currentlySelected === i ? 'contained' : 'outlined'}
                             color="secondary"
                             className={classes.routerButton}
                           >
@@ -273,17 +268,19 @@ export class App extends React.Component {
               </nav>
 
               <Routes>
-                <Route path="/" exact element={<Home/>} />
-                <Route path="home" element={<Home/>} />
-                <Route path="work" element={<Work isDarkTheme={this.state.theme===darkTheme}/>} />
-                <Route path="contact" element={<Contact/>} />
-                <Route path="blog" element={<Blog/>} />
+                <Route path="/" exact element={<Home />} />
+                <Route path="home" element={<Home />} />
+                <Route path="work" element={<Work isDarkTheme={this.state.theme === darkTheme} />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="blog" element={<Blog />} />
               </Routes>
             </Router>
             <ScrollUpButton />
             <Footer />
           </Grid>
-          {rainbowFooter}
+          {this.state.proud ?
+            <footer className={classes.footerRoot} /> :
+            null}
         </ThemeProvider>
       </StyledEngineProvider>
     );

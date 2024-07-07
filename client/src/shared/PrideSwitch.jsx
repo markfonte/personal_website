@@ -65,7 +65,7 @@ class PrideSwitch extends React.Component {
 
   render() {
     const {classes} = this.props;
-    const proud = this.state.proud;
+
     return (
       <Card className={classes.flatCard}>
         <div className={classes.prideSwitchContent}>
@@ -77,11 +77,11 @@ class PrideSwitch extends React.Component {
             arrow
             title="Toggle rainbow mode!">
             <Switch
-              checked={proud}
+              checked={this.state.proud}
               onClick={this.handleChange}
               className={classes.prideSwitch}
               inputProps={{'aria-label': 'primary checkbox'}}
-              color="secondary"/>
+              color="secondary" />
           </Tooltip>
         </div>
       </Card>

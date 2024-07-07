@@ -25,6 +25,49 @@ import PropTypes from 'prop-types';
 
 const getCookie = require('../shared/util/Cookies.js').getCookie;
 
+const trelloBoardLink = `https://trello.com/b/yoLCEs6S/personal-website`;
+const umichLink = 'https://umich.edu/';
+const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
+const androidDevLink = 'https://developer.android.com/';
+const awsLink = `https://aws.amazon.com/`;
+const justlightLink = `https://www.justlight.com/`;
+const teslaLink = `https://tesla.com`;
+
+const lightTheme = getCookie('app_theme') === 'light_theme';
+const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
+const teslaColor = lightTheme ? 'tesla-color-dark' : 'tesla-color-light';
+const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
+const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
+const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
+const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
+
+const itemData = [
+  {
+    img: welcomeImageOne,
+    title: '',
+  },
+  {
+    img: welcomeImageTwo,
+    title: '',
+  },
+  {
+    img: welcomeImageThree,
+    title: '',
+  },
+  {
+    img: welcomeImageFour,
+    title: '',
+  },
+  {
+    img: welcomeImageFive,
+    title: '',
+  },
+  {
+    img: welcomeImageSix,
+    title: '',
+  },
+];
+
 const styles = {
   cardContent: {
     display: 'flex',
@@ -57,52 +100,9 @@ const styles = {
   },
 };
 
-
 class WelcomeCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const trelloBoardLink = `https://trello.com/b/yoLCEs6S/personal-website`;
-    const umichLink = 'https://umich.edu/';
-    const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
-    const androidDevLink = 'https://developer.android.com/';
-    const awsLink = `https://aws.amazon.com/`;
-    const justlightLink = `https://www.justlight.com/`;
-    const teslaLink = `https://tesla.com`;
-
-    const lightTheme = getCookie('app_theme') === 'light_theme';
-    const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
-    const teslaColor = lightTheme ? 'tesla-color-dark' : 'tesla-color-light';
-    const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
-    const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
-    const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
-    const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
-
-    const itemData = [
-      {
-        img: welcomeImageOne,
-        title: '',
-      },
-      {
-        img: welcomeImageTwo,
-        title: '',
-      },
-      {
-        img: welcomeImageThree,
-        title: '',
-      },
-      {
-        img: welcomeImageFour,
-        title: '',
-      },
-      {
-        img: welcomeImageFive,
-        title: '',
-      },
-      {
-        img: welcomeImageSix,
-        title: '',
-      },
-    ];
 
     return (
       <Card raised={true} className="large-card">
@@ -165,7 +165,7 @@ class WelcomeCard extends React.Component {
                     Amazon Web Services
                   </Link>
                 </Tooltip>
-                  , a computer science engineering / entrepreneurship graduate from{' '}
+                , a computer science engineering / entrepreneurship graduate from{' '}
                 <Tooltip arrow placement="bottom" title="Go to U of M website">
                   <Link href={umichLink} className={michiganColor} underline="hover">
                     University of Michigan
@@ -190,14 +190,14 @@ class WelcomeCard extends React.Component {
                 {' '}
                 <Tooltip arrow title="Go to my Trello board">
                   <Link color="secondary" href={trelloBoardLink} underline="hover">
-                  Trello board
+                    Trello board
                   </Link>
                 </Tooltip>
                 .
               </Typography>
               <Typography variant="body1" paragraph>
                 Please reach out with questions, comments, or concerns! Much love ❤️
-                <br/> <br/>
+                <br /> <br />
                 <iframe
                   className={classes.iframeStyle}
                   src='https://open.spotify.com/embed/track/04x6SfCgzOUVvFn3Ej3mIg'

@@ -65,6 +65,55 @@ const styles = {
   },
 };
 
+const facebookLink = `https://www.facebook.com/mark.fonte.397`;
+const githubLink = `https://github.com/markfonte`;
+const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
+const instagramLink = `https://www.instagram.com/mark_fonte21/`;
+const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
+const websiteGithubLink = `https://github.com/markfonte/personal_website`;
+const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
+const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
+const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/main`;
+const spotifyLink = `https://open.spotify.com/artist/5rVdyxve8VvmsgT3HSWB1a`;
+
+const buttons = [
+  {
+    name: 'Facebook',
+    logo: facebookLogo,
+    link: facebookLink,
+  },
+  {
+    name: 'Stack Overflow',
+    logo: stackOverflowLogo,
+    link: stackOverflowLink,
+  },
+  {
+    name: 'Spotify',
+    logo: spotifyLogo,
+    link: spotifyLink,
+  },
+  {
+    name: 'GitHub',
+    logo: githubLogo,
+    link: githubLink,
+  },
+  {
+    name: 'LinkedIn',
+    logo: linkedinLogo,
+    link: linkedinLink,
+  },
+  {
+    name: 'Instagram',
+    logo: instagramLogo,
+    link: instagramLink,
+  },
+  {
+    name: 'YouTube',
+    logo: youtubeLogo,
+    link: youtubeLink,
+  },
+];
+
 const DisplayError = (props) => {
   return (
     <Typography variant="h6" className={props.classes.errorMessageRoot} >
@@ -126,55 +175,7 @@ class Footer extends React.Component {
 
   render() {
     const {classes} = this.props;
-    const facebookLink = `https://www.facebook.com/mark.fonte.397`;
-    const githubLink = `https://github.com/markfonte`;
-    const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
-    const instagramLink = `https://www.instagram.com/mark_fonte21/`;
-    const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
-    const websiteGithubLink = `https://github.com/markfonte/personal_website`;
-    const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
-    const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
-    const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/main`;
-    const spotifyLink = `https://open.spotify.com/artist/5rVdyxve8VvmsgT3HSWB1a`;
-    const updatedDate = timestamp;
 
-    const buttons = [
-      {
-        name: 'Facebook',
-        logo: facebookLogo,
-        link: facebookLink,
-      },
-      {
-        name: 'Stack Overflow',
-        logo: stackOverflowLogo,
-        link: stackOverflowLink,
-      },
-      {
-        name: 'Spotify',
-        logo: spotifyLogo,
-        link: spotifyLink,
-      },
-      {
-        name: 'GitHub',
-        logo: githubLogo,
-        link: githubLink,
-      },
-      {
-        name: 'LinkedIn',
-        logo: linkedinLogo,
-        link: linkedinLink,
-      },
-      {
-        name: 'Instagram',
-        logo: instagramLogo,
-        link: instagramLink,
-      },
-      {
-        name: 'YouTube',
-        logo: youtubeLogo,
-        link: youtubeLink,
-      },
-    ];
     return (
       <footer>
         <div className={classes.footerContainer}>
@@ -209,7 +210,7 @@ class Footer extends React.Component {
                 title="Go to most recent commit on GitHub">
                 <Link color="secondary" href={commitHistoryLink}>
                   <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
-                    {updatedDate}
+                    {timestamp}
                   </Moment>
                 </Link>
               </Tooltip>

@@ -135,10 +135,9 @@ class LikeButton extends React.Component {
 
   render() {
     const {classes} = this.props;
-    const isLiked = this.state.liked;
     let icon;
     let displayedColor;
-    if (isLiked) {
+    if (this.state.liked) {
       displayedColor = 'secondary';
       icon = <FavoriteIcon color={displayedColor} fontSize="2rem" />;
     } else {

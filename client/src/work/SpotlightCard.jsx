@@ -64,51 +64,52 @@ const styles = {
   },
 };
 
+const androidLink = `https://developer.android.com/`;
+const kotlinLink = `https://kotlinlang.org/`;
+const androidJetpackLink = `https://developer.android.com/jetpack`;
+const psych223Link = `https://atlas.ai.umich.edu/course/PSYCH%20223/`;
+const iOSLink = `https://developer.apple.com/`;
+const firebaseLink = `https://firebase.google.com/`;
+const googleMapsApiLink = `https://developers.google.com/maps/documentation`;
+const architectureComponentsLink = `https://developer.android.com/topic/libraries/architecture`;
+const snapshotListenersLink = `https://firebase.google.com/docs/firestore/query-data/listen`;
+const spotlightGithubLink = `https://github.com/markfonte/Spotlight_Android`;
+
+const tags = [
+  {
+    label: 'September 2018 → July 2019',
+    color: 'default',
+    variant: 'default',
+    icon: <DateRangeIcon />,
+  },
+  {
+    label: 'Startup',
+    color: 'primary',
+    variant: 'default',
+  },
+  {
+    label: 'Class Project',
+    color: 'primary',
+    variant: 'default',
+  },
+  {
+    label: 'Android',
+  },
+  {
+    label: 'Android Jetpack',
+  },
+  {
+    label: 'Firebase',
+  },
+  {
+    label: 'Kotlin',
+  },
+];
+
+
 class SpotlightCard extends React.Component {
   render() {
     const {classes} = this.props;
-
-    const androidLink = `https://developer.android.com/`;
-    const kotlinLink = `https://kotlinlang.org/`;
-    const androidJetpackLink = `https://developer.android.com/jetpack`;
-    const psych223Link = `https://atlas.ai.umich.edu/course/PSYCH%20223/`;
-    const iOSLink = `https://developer.apple.com/`;
-    const firebaseLink = `https://firebase.google.com/`;
-    const googleMapsApiLink = `https://developers.google.com/maps/documentation`;
-    const architectureComponentsLink = `https://developer.android.com/topic/libraries/architecture`;
-    const snapshotListenersLink = `https://firebase.google.com/docs/firestore/query-data/listen`;
-    const spotlightGithubLink = `https://github.com/markfonte/Spotlight_Android`;
-
-    const tags = [
-      {
-        label: 'September 2018 → July 2019',
-        color: 'default',
-        variant: 'default',
-        icon: <DateRangeIcon />,
-      },
-      {
-        label: 'Startup',
-        color: 'primary',
-        variant: 'default',
-      },
-      {
-        label: 'Class Project',
-        color: 'primary',
-        variant: 'default',
-      },
-      {
-        label: 'Android',
-      },
-      {
-        label: 'Android Jetpack',
-      },
-      {
-        label: 'Firebase',
-      },
-      {
-        label: 'Kotlin',
-      },
-    ];
 
     return (
       <Card raised={true} className="large-card">
@@ -128,7 +129,7 @@ class SpotlightCard extends React.Component {
               </Tooltip>
             }>
             <a name="spotlight_card" href="#spotlight_card" className="gone">
-            Spotlight Card
+              Spotlight Card
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
@@ -148,7 +149,7 @@ class SpotlightCard extends React.Component {
                   <Chip
                     className={classes.tags}
                     key={tag.label}
-                    icon={tag.icon ? tag.icon : <div/>}
+                    icon={tag.icon ? tag.icon : <div />}
                     label={tag.label}
                     variant={tag.variant ? tag.variant : 'outlined'}
                     color={tag.color ? tag.color : 'secondary'}
@@ -160,43 +161,43 @@ class SpotlightCard extends React.Component {
           <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
-                  This startup came from a
+                This startup came from a
 
                 {' '}
                 <Link color="secondary" href={psych223Link}>
-                    class project
+                  class project
                 </Link>
                 {' '}
 
-                    during junior year of college. Since one of our group members was in
-                    a sorority at school, she saw a need for a mobile application that would streamline
-                    the &quot;recruitment&quot; process for sorority girls as they were trying to
-                    find which sorority they wanted to join.
+                during junior year of college. Since one of our group members was in
+                a sorority at school, she saw a need for a mobile application that would streamline
+                the &quot;recruitment&quot; process for sorority girls as they were trying to
+                find which sorority they wanted to join.
               </Typography>
               <Typography variant="body1" paragraph>
-                  We built an
+                We built an
 
                 {' '}
                 <Link color="secondary" href={androidLink}>
-                    Android
+                  Android
                 </Link>
                 {' '}
 
-                    and an
+                and an
 
                 {' '}
                 <Link color="secondary" href={iOSLink}>
-                    iOS
+                  iOS
                 </Link>
                 {' '}
 
-                    application. I was the dev lead, so I was in charge of development and
-                    primarily just developed the Android app. Both applications were built using
+                application. I was the dev lead, so I was in charge of development and
+                primarily just developed the Android app. Both applications were built using
 
 
                 {' '}
                 <Link color="secondary" href={firebaseLink}>
-                    Firebase
+                  Firebase
                 </Link>
                 {' '}
 
@@ -205,22 +206,22 @@ class SpotlightCard extends React.Component {
 
                 {' '}
                 <Link color="secondary" href={kotlinLink}>
-                    Kotlin
+                  Kotlin
                 </Link>
                 {' '}
 
-                 using
+                using
 
                 {' '}
                 <Link color="secondary" href={androidJetpackLink}>
-                Android Jetpack
+                  Android Jetpack
                 </Link>
 
-                    ,
+                ,
 
                 {' '}
                 <Link color="secondary" href={architectureComponentsLink}>
-                    architecture components
+                  architecture components
                 </Link>
                 {' '}
 
@@ -228,29 +229,29 @@ class SpotlightCard extends React.Component {
 
                 {' '}
                 <Link color="secondary" href={googleMapsApiLink}>
-                    Google Maps APIs
+                  Google Maps APIs
                 </Link>
 
                 .
               </Typography>
               <Typography variant="body1" paragraph>
-                    There were lots of fun technical challenges in this project, like
-                    using
+                There were lots of fun technical challenges in this project, like
+                using
 
                 {' '}
                 <Link color="secondary" href={snapshotListenersLink}>
-                        Firebase snapshot listeners
+                  Firebase snapshot listeners
                 </Link>
                 {' '}
 
-                    to get realtime database updates, and getting items in the &quot;Ranking&quot;
-                    list to reorder correctly when moving items around. Even though I am not
-                    an iOS developer, getting to work closely with the iOS app was also
-                    so much fun.
+                to get realtime database updates, and getting items in the &quot;Ranking&quot;
+                list to reorder correctly when moving items around. Even though I am not
+                an iOS developer, getting to work closely with the iOS app was also
+                so much fun.
               </Typography>
               <picture>
-                <source srcSet={spotlightScreenshotOne} type="image/webp"/>
-                <source srcSet={spotlightScreenshotOneFallback} type="image/jpg"/>
+                <source srcSet={spotlightScreenshotOne} type="image/webp" />
+                <source srcSet={spotlightScreenshotOneFallback} type="image/jpg" />
                 <img
                   srcSet={[spotlightScreenshotOne, spotlightScreenshotOneFallback]}
                   className={classes.screenshot}
@@ -258,8 +259,8 @@ class SpotlightCard extends React.Component {
                 />
               </picture>
               <picture>
-                <source srcSet={spotlightScreenshotTwo} type="image/webp"/>
-                <source srcSet={spotlightScreenshotTwoFallback} type="image/jpg"/>
+                <source srcSet={spotlightScreenshotTwo} type="image/webp" />
+                <source srcSet={spotlightScreenshotTwoFallback} type="image/jpg" />
                 <img
                   srcSet={[spotlightScreenshotTwo, spotlightScreenshotTwoFallback]}
                   className={classes.screenshot}
@@ -267,8 +268,8 @@ class SpotlightCard extends React.Component {
                 />
               </picture>
               <picture>
-                <source srcSet={spotlightScreenshotThree} type="image/webp"/>
-                <source srcSet={spotlightScreenshotThreeFallback} type="image/jpg"/>
+                <source srcSet={spotlightScreenshotThree} type="image/webp" />
+                <source srcSet={spotlightScreenshotThreeFallback} type="image/jpg" />
                 <img
                   srcSet={[spotlightScreenshotThree, spotlightScreenshotThreeFallback]}
                   className={classes.screenshot}
@@ -276,19 +277,19 @@ class SpotlightCard extends React.Component {
                 />
               </picture>
               <Typography variant="body1" paragraph>
-                    We worked on this project for a long time and built a successful MVP
-                    (minimum viable product) and more. Unfortunately, we were never able to
-                    get it off the ground on more than a trial basis because we were unable
-                    to find an appropriate monetization model for the product. The learning
-                    experience of building a full-fledged Android application from scratch
-                    can never be taken away!
+                We worked on this project for a long time and built a successful MVP
+                (minimum viable product) and more. Unfortunately, we were never able to
+                get it off the ground on more than a trial basis because we were unable
+                to find an appropriate monetization model for the product. The learning
+                experience of building a full-fledged Android application from scratch
+                can never be taken away!
               </Typography>
               <Typography variant="body1" paragraph>
-                    View it on
+                View it on
 
                 {' '}
                 <Link color="secondary" href={spotlightGithubLink}>
-                        GitHub
+                  GitHub
                 </Link>
               </Typography>
             </CardContent>

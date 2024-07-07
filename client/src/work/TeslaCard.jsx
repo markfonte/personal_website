@@ -19,6 +19,32 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 import {withStyles} from '@mui/styles';
 
+const tags = [
+  {
+    label: 'January 2023 → Present',
+    color: 'default',
+    variant: 'default',
+    icon: <DateRangeIcon />,
+  },
+  {
+    label: 'Full Time',
+    color: 'primary',
+    variant: 'default',
+  },
+  {
+    label: 'C',
+  },
+  {
+    label: 'JavaScript',
+  },
+  {
+    label: 'Python',
+  },
+  {
+    label: 'React',
+  },
+];
+
 const styles = {
   teslaBanner: {
     width: '100%',
@@ -40,32 +66,6 @@ class TeslaCard extends React.Component {
   render() {
     const {classes} = this.props;
 
-    const tags = [
-      {
-        label: 'January 2023 → Present',
-        color: 'default',
-        variant: 'default',
-        icon: <DateRangeIcon />,
-      },
-      {
-        label: 'Full Time',
-        color: 'primary',
-        variant: 'default',
-      },
-      {
-        label: 'C',
-      },
-      {
-        label: 'JavaScript',
-      },
-      {
-        label: 'Python',
-      },
-      {
-        label: 'React',
-      },
-    ];
-
     return (
       <Card raised={true} className="large-card">
         <Accordion
@@ -84,7 +84,7 @@ class TeslaCard extends React.Component {
               </Tooltip>
             }>
             <a name="tesla_card" href="#tesla_card" className="gone">
-            Tesla Card
+              Tesla Card
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
@@ -103,7 +103,7 @@ class TeslaCard extends React.Component {
                   <Chip
                     className={classes.tags}
                     key={tag.label}
-                    icon={tag.icon ? tag.icon : <div/>}
+                    icon={tag.icon ? tag.icon : <div />}
                     label={tag.label}
                     variant={tag.variant ? tag.variant : 'outlined'}
                     color={tag.color ? tag.color : 'secondary'}

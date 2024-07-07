@@ -24,6 +24,40 @@ import roadMapperScreenshotOneFallback
 
 import PropTypes from 'prop-types';
 
+const eecs493Link = `https://atlas.ai.umich.edu/course/EECS%20493/`;
+const vueLink = `https://vuejs.org/`;
+const mapboxApiLink = `https://docs.mapbox.com/api/`;
+const wazeLink = `https://www.waze.com/`;
+const pythonLink = `https://www.python.org/`;
+const flaskLink = `https://flask.palletsprojects.com/en/1.1.x/`;
+const sqliteLink = `https://docs.python.org/2/library/sqlite3.html`;
+
+const tags = [
+  {
+    label: 'March 2020 → April 2020',
+    color: 'default',
+    variant: 'default',
+    icon: <DateRangeIcon />,
+  },
+  {
+    label: 'Class Project',
+    color: 'primary',
+    variant: 'default',
+  },
+  {
+    label: 'JavaScript',
+  },
+  {
+    label: 'Python',
+  },
+  {
+    label: 'SQLite',
+  },
+  {
+    label: 'Vue.js',
+  },
+];
+
 const styles = {
   screenshotOne: {
     height: 'auto',
@@ -53,39 +87,6 @@ const styles = {
 class RoadMapperCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const eecs493Link = `https://atlas.ai.umich.edu/course/EECS%20493/`;
-    const vueLink = `https://vuejs.org/`;
-    const mapboxApiLink = `https://docs.mapbox.com/api/`;
-    const wazeLink = `https://www.waze.com/`;
-    const pythonLink = `https://www.python.org/`;
-    const flaskLink = `https://flask.palletsprojects.com/en/1.1.x/`;
-    const sqliteLink = `https://docs.python.org/2/library/sqlite3.html`;
-
-    const tags = [
-      {
-        label: 'March 2020 → April 2020',
-        color: 'default',
-        variant: 'default',
-        icon: <DateRangeIcon />,
-      },
-      {
-        label: 'Class Project',
-        color: 'primary',
-        variant: 'default',
-      },
-      {
-        label: 'JavaScript',
-      },
-      {
-        label: 'Python',
-      },
-      {
-        label: 'SQLite',
-      },
-      {
-        label: 'Vue.js',
-      },
-    ];
 
     return (
       <Card raised={true} className="large-card">
@@ -105,7 +106,7 @@ class RoadMapperCard extends React.Component {
               </Tooltip>
             }>
             <a name="road_mapper_card" href="#road_mapper_card" className="gone">
-            Road Mapper Card
+              Road Mapper Card
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
@@ -125,7 +126,7 @@ class RoadMapperCard extends React.Component {
                   <Chip
                     className={classes.tags}
                     key={tag.label}
-                    icon={tag.icon ? tag.icon : <div/>}
+                    icon={tag.icon ? tag.icon : <div />}
                     label={tag.label}
                     variant={tag.variant ? tag.variant : 'outlined'}
                     color={tag.color ? tag.color : 'secondary'}
@@ -137,61 +138,61 @@ class RoadMapperCard extends React.Component {
           <AccordionDetails>
             <CardContent>
               <Typography variant="body1" gutterBottom>
-               This was just a small project that we worked on for
+                This was just a small project that we worked on for
                 {' '}
                 <Link color="secondary" href={eecs493Link}>
-                EECS 493
+                  EECS 493
                 </Link>
                 {' '}
                 during my final semester in college. It was really fun because I got to use
                 {' '}
                 <Link color="secondary" href={vueLink}>
-                Vue.js
+                  Vue.js
                 </Link>
                 {' '}
                 for the first time on an actual web application. It was very simple to use, and I loved
                 how lightweight it was (with a single import you can start using Vue right away
                 in any web application).
-                <br/><br/>
+                <br /><br />
                 The application was modeled off of how applications like
                 {' '}
                 <Link color="secondary" href={wazeLink}>
-                Waze
+                  Waze
                 </Link>
                 {' '}
-              allow users to indicate driving hazards and speed traps that they find. We used the same
-              concept to crowdsource the presence of (primarily winter) walking hazards like ice,
-              snow and mud. Using the
+                allow users to indicate driving hazards and speed traps that they find. We used the same
+                concept to crowdsource the presence of (primarily winter) walking hazards like ice,
+                snow and mud. Using the
                 {' '}
                 <Link color="secondary" href={mapboxApiLink}>
-                Mapbox API
+                  Mapbox API
                 </Link>
                 {' '}
-              we had a map that allowed users to create, read, update and delete different walking
-              hazards. They could enter a description, drag markers to a spot, select the type of
-              hazard, and even use built-in walking directions. We stored the currently-active hazards
-              in a
+                we had a map that allowed users to create, read, update and delete different walking
+                hazards. They could enter a description, drag markers to a spot, select the type of
+                hazard, and even use built-in walking directions. We stored the currently-active hazards
+                in a
                 {' '}
                 <Link color="secondary" href={sqliteLink}>
-                SQLite
+                  SQLite
                 </Link>
                 {' '}
-              database managed by a
+                database managed by a
                 {' '}
                 <Link color="secondary" href={pythonLink}>
-                Python
+                  Python
                 </Link>
                 {' '}
                 <Link color="secondary" href={flaskLink}>
-                Flask
+                  Flask
                 </Link>
                 {' '}
-              application.
+                application.
               </Typography>
               <picture>
-                <br/>
-                <source srcSet={roadMapperScreenshotOne} type="image/webp"/>
-                <source srcSet={roadMapperScreenshotOneFallback} type="image/png"/>
+                <br />
+                <source srcSet={roadMapperScreenshotOne} type="image/webp" />
+                <source srcSet={roadMapperScreenshotOneFallback} type="image/png" />
                 <img
                   srcSet={[roadMapperScreenshotOne, roadMapperScreenshotOneFallback]}
                   className={classes.screenshotOne}
@@ -200,10 +201,10 @@ class RoadMapperCard extends React.Component {
                 />
               </picture>
               <Typography variant="body1" gutterBottom>
-                <br/>
-               Although we never released it to the public, it was a great experience with a new
-              framework and a new API. It was also a testament to how smoothly a project can be built
-              if the team is on the same page, despite being made entirely during quarantine!
+                <br />
+                Although we never released it to the public, it was a great experience with a new
+                framework and a new API. It was also a testament to how smoothly a project can be built
+                if the team is on the same page, despite being made entirely during quarantine!
               </Typography>
             </CardContent>
           </AccordionDetails>

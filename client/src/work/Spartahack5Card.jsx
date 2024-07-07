@@ -35,6 +35,52 @@ import laughableLyricsScreenshotThree
 import laughableLyricsScreenshotThreeFallback
   from '../static/screenshots/laughable_lyrics_screenshot_3.jpg';
 
+const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
+const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
+const googleTranslateSingsLink = `https://www.youtube.com/watch?v=2bVAoVlFYf0`;
+const translateAPILink = `https://cloud.google.com/translate/`;
+const androidLink = `https://developer.android.com/`;
+const kotlinLink = `https://kotlinlang.org/`;
+const androidJetpackLink = `https://developer.android.com/jetpack`;
+const mySqlLink = `https://www.mysql.com/`;
+const expressLink = `https://expressjs.com/`;
+const nodeLink = `https://nodejs.org/`;
+const geniusAPILink = `https://docs.genius.com/`;
+const glideLink = `https://bumptech.github.io/glide/`;
+const volleyLink = `https://developer.android.com/training/volley`;
+
+const tags = [
+  {
+    label: 'January 2019',
+    color: 'default',
+    variant: 'default',
+    icon: <DateRangeIcon />,
+  },
+  {
+    label: 'Hackathon',
+    color: 'primary',
+    variant: 'default',
+  },
+  {
+    label: 'Android',
+  },
+  {
+    label: 'Android Jetpack',
+  },
+  {
+    label: 'Express.js',
+  },
+  {
+    label: 'JavaScript',
+  },
+  {
+    label: 'Kotlin',
+  },
+  {
+    label: 'MySQL',
+  },
+];
+
 const styles = {
   spartahack5Banner: {
     width: '100%',
@@ -70,51 +116,7 @@ const styles = {
 class Spartahack5Card extends React.Component {
   render() {
     const {classes} = this.props;
-    const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
-    const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
-    const googleTranslateSingsLink = `https://www.youtube.com/watch?v=2bVAoVlFYf0`;
-    const translateAPILink = `https://cloud.google.com/translate/`;
-    const androidLink = `https://developer.android.com/`;
-    const kotlinLink = `https://kotlinlang.org/`;
-    const androidJetpackLink = `https://developer.android.com/jetpack`;
-    const mySqlLink = `https://www.mysql.com/`;
-    const expressLink = `https://expressjs.com/`;
-    const nodeLink = `https://nodejs.org/`;
-    const geniusAPILink = `https://docs.genius.com/`;
-    const glideLink = `https://bumptech.github.io/glide/`;
-    const volleyLink = `https://developer.android.com/training/volley`;
 
-    const tags = [
-      {
-        label: 'January 2019',
-        color: 'default',
-        variant: 'default',
-        icon: <DateRangeIcon />,
-      },
-      {
-        label: 'Hackathon',
-        color: 'primary',
-        variant: 'default',
-      },
-      {
-        label: 'Android',
-      },
-      {
-        label: 'Android Jetpack',
-      },
-      {
-        label: 'Express.js',
-      },
-      {
-        label: 'JavaScript',
-      },
-      {
-        label: 'Kotlin',
-      },
-      {
-        label: 'MySQL',
-      },
-    ];
     return (
       <Card raised={true} className="large-card">
         <Accordion
@@ -133,7 +135,7 @@ class Spartahack5Card extends React.Component {
               </Tooltip>
             }>
             <a name="spartahack5_card" href="#spartahack5_card" className="gone">
-            SpartHack V Card
+              SpartHack V Card
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
@@ -153,7 +155,7 @@ class Spartahack5Card extends React.Component {
                   <Chip
                     className={classes.tags}
                     key={tag.label}
-                    icon={tag.icon ? tag.icon : <div/>}
+                    icon={tag.icon ? tag.icon : <div />}
                     label={tag.label}
                     variant={tag.variant ? tag.variant : 'outlined'}
                     color={tag.color ? tag.color : 'secondary'}
@@ -165,7 +167,7 @@ class Spartahack5Card extends React.Component {
           <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
-              This hackathon project, <i>Laughable Lyrics</i>, is one of my favorites.
+                This hackathon project, <i>Laughable Lyrics</i>, is one of my favorites.
                 We took inspiration from the popular
 
                 {' '}
@@ -174,34 +176,34 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-              and realized that we could automate the process of translating
-              song lyrics to a bunch of different languages, then back to English.
+                and realized that we could automate the process of translating
+                song lyrics to a bunch of different languages, then back to English.
               </Typography>
               <Typography variant="body1" paragraph>
-                  As you can see in the screenshots below, users could type in the
-                  name of any song, use the slider to select how many translations
-                  to make before translating back to English (the more translations,
-                  the wackier the result), and tap on the song they wanted to translate!
-                  The results were always hilarious.
+                As you can see in the screenshots below, users could type in the
+                name of any song, use the slider to select how many translations
+                to make before translating back to English (the more translations,
+                the wackier the result), and tap on the song they wanted to translate!
+                The results were always hilarious.
               </Typography>
               <Typography variant="body1" paragraph>
-                  We built the
+                We built the
 
                 {' '}
                 <Link color="secondary" href={androidLink}>
-                    Android
+                  Android
                 </Link>
                 {' '}
 
-                  app in
+                app in
 
                 {' '}
                 <Link color="secondary" href={kotlinLink}>
-                    Kotlin
+                  Kotlin
                 </Link>
                 {' '}
 
-                  for <i>Laughable Lyrics</i> using
+                for <i>Laughable Lyrics</i> using
 
                 {' '}
                 <Link color="secondary" href={androidJetpackLink}>
@@ -209,8 +211,8 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-                  for architecture components, view models, and much more.
-                  Images in the search results were loaded using the
+                for architecture components, view models, and much more.
+                Images in the search results were loaded using the
 
                 {' '}
                 <Link color="secondary" href={glideLink}>
@@ -218,7 +220,7 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-                   library, and network calls were made using the
+                library, and network calls were made using the
 
                 {' '}
                 <Link color="secondary" href={volleyLink}>
@@ -226,7 +228,7 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-                  library. We used
+                library. We used
 
                 {' '}
                 <Link color="secondary" href={geniusAPILink}>
@@ -234,7 +236,7 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-                  to load song lyrics and the
+                to load song lyrics and the
 
                 {' '}
                 <Link color="secondary" href={translateAPILink}>
@@ -242,7 +244,7 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-                  to translate them. Our API was built in
+                to translate them. Our API was built in
 
                 {' '}
                 <Link color="secondary" href={nodeLink}>
@@ -250,14 +252,14 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-                  and
+                and
 
                 {' '}
                 <Link color="secondary" href={expressLink}>
                   Express
                 </Link>
 
-                  , and saves the funny translations to a
+                , and saves the funny translations to a
 
                 {' '}
                 <Link color="secondary" href={mySqlLink}>
@@ -265,17 +267,17 @@ class Spartahack5Card extends React.Component {
                 </Link>
                 {' '}
 
-                  database.
+                database.
               </Typography>
               <Typography variant="body1" paragraph>
                 <i>Laughable Lyrics</i> was a very lighthearted app, just meant
-                  for a little entertainment and a few laughs. Unfortunately, the Google
-                  Translate API has some steep pricing on their usage and very small limits
-                  on their free tier (causing a few demo fails, oops!).
+                for a little entertainment and a few laughs. Unfortunately, the Google
+                Translate API has some steep pricing on their usage and very small limits
+                on their free tier (causing a few demo fails, oops!).
               </Typography>
               <picture>
-                <source srcSet={laughableLyricsScreenshotOne} type="image/webp"/>
-                <source srcSet={laughableLyricsScreenshotOneFallback} type="image/jpg"/>
+                <source srcSet={laughableLyricsScreenshotOne} type="image/webp" />
+                <source srcSet={laughableLyricsScreenshotOneFallback} type="image/jpg" />
                 <img
                   srcSet={[laughableLyricsScreenshotOne, laughableLyricsScreenshotOneFallback]}
                   className={classes.mobileScreenshot}
@@ -283,8 +285,8 @@ class Spartahack5Card extends React.Component {
                 />
               </picture>
               <picture>
-                <source srcSet={laughableLyricsScreenshotTwo} type="image/webp"/>
-                <source srcSet={laughableLyricsScreenshotTwoFallback} type="image/jpg"/>
+                <source srcSet={laughableLyricsScreenshotTwo} type="image/webp" />
+                <source srcSet={laughableLyricsScreenshotTwoFallback} type="image/jpg" />
                 <img
                   srcSet={[laughableLyricsScreenshotTwo, laughableLyricsScreenshotTwoFallback]}
                   className={classes.mobileScreenshot}
@@ -292,8 +294,8 @@ class Spartahack5Card extends React.Component {
                 />
               </picture>
               <picture>
-                <source srcSet={laughableLyricsScreenshotThree} type="image/webp"/>
-                <source srcSet={laughableLyricsScreenshotThreeFallback} type="image/jpg"/>
+                <source srcSet={laughableLyricsScreenshotThree} type="image/webp" />
+                <source srcSet={laughableLyricsScreenshotThreeFallback} type="image/jpg" />
                 <img
                   srcSet={[laughableLyricsScreenshotThree, laughableLyricsScreenshotThreeFallback]}
                   className={classes.mobileScreenshot}
@@ -301,7 +303,7 @@ class Spartahack5Card extends React.Component {
                 />
               </picture>
               <Typography variant="body1" paragraph>
-              We won
+                We won
 
                 {' '}
                 <Typography color="secondary" display="inline">
@@ -309,7 +311,7 @@ class Spartahack5Card extends React.Component {
                 </Typography>
                 {' '}
 
-                  and a
+                and a
 
                 {' '}
                 <Typography color="secondary" display="inline">
@@ -317,21 +319,21 @@ class Spartahack5Card extends React.Component {
                 </Typography>
                 {' '}
 
-                      for the project.
-              We were never able to push it to production due to the rate limiting issue with the
-              Google Translate API.
+                for the project.
+                We were never able to push it to production due to the rate limiting issue with the
+                Google Translate API.
               </Typography>
               <Typography variant="body1" paragraph>
-              View it on
+                View it on
                 {' '}
                 <Link color="secondary" href={laughableLyricsDevpostLink}>
-                Devpost
+                  Devpost
                 </Link>
                 {' '}
-              or
+                or
                 {' '}
                 <Link color="secondary" href={laughableLyricsGithubLink}>
-                Github
+                  Github
                 </Link>
               </Typography>
               <img

@@ -29,6 +29,33 @@ import congoaiDemoOne from
 import congoaiDemoOneFallback from
   '../static/photos/congoai_demo_1.jpg';
 
+const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
+const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
+const vueLink = `https://vuejs.org/`;
+const nodeLink = `https://nodejs.org/`;
+const mongodbLink = `https://www.mongodb.com/`;
+const mongooseLink = `https://mongoosejs.com/docs/`;
+
+const tags = [
+  {
+    label: 'September 2018',
+    color: 'default',
+    variant: 'default',
+    icon: <DateRangeIcon />,
+  },
+  {
+    label: 'Hackathon',
+    color: 'primary',
+    variant: 'default',
+  },
+  {
+    label: 'JavaScript',
+  },
+  {
+    label: 'Vue.js',
+  },
+];
+
 const styles = {
   grizzhacks3Banner: {
     width: '100%',
@@ -70,33 +97,6 @@ const styles = {
 class Grizzhacks3Card extends React.Component {
   render() {
     const {classes} = this.props;
-    // const grizzhacks3Link = `http://grizzhacks.com/`;
-    const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
-    const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
-    const vueLink = `https://vuejs.org/`;
-    const nodeLink = `https://nodejs.org/`;
-    const mongodbLink = `https://www.mongodb.com/`;
-    const mongooseLink = `https://mongoosejs.com/docs/`;
-
-    const tags = [
-      {
-        label: 'September 2018',
-        color: 'default',
-        variant: 'default',
-        icon: <DateRangeIcon />,
-      },
-      {
-        label: 'Hackathon',
-        color: 'primary',
-        variant: 'default',
-      },
-      {
-        label: 'JavaScript',
-      },
-      {
-        label: 'Vue.js',
-      },
-    ];
 
     return (
       <Card raised={true} className="large-card">
@@ -116,7 +116,7 @@ class Grizzhacks3Card extends React.Component {
               </Tooltip>
             }>
             <a name="grizzhacks3_card" href="#grizzhacks3_card" className="gone">
-            Grizzhacks 3 Card
+              Grizzhacks 3 Card
             </a>
             <div className={classes.expansionHeaderContainer}>
               <CardHeader
@@ -136,7 +136,7 @@ class Grizzhacks3Card extends React.Component {
                   <Chip
                     className={classes.tags}
                     key={tag.label}
-                    icon={tag.icon ? tag.icon : <div/>}
+                    icon={tag.icon ? tag.icon : <div />}
                     label={tag.label}
                     variant={tag.variant ? tag.variant : 'outlined'}
                     color={tag.color ? tag.color : 'secondary'}
@@ -148,15 +148,15 @@ class Grizzhacks3Card extends React.Component {
           <AccordionDetails>
             <CardContent>
               <Typography variant="body1" paragraph>
-              GrizzHacks 3 was the first hackathon I ever competed in. We built an online
-              store where users could buy and sell pre-trained machine learning models.
-              While we did not completely finish, users could use our store to post
-              pre-trained machine learning models, view models that others had posted,
-              buy them, and even test them out in-store before purchasing!
+                GrizzHacks 3 was the first hackathon I ever competed in. We built an online
+                store where users could buy and sell pre-trained machine learning models.
+                While we did not completely finish, users could use our store to post
+                pre-trained machine learning models, view models that others had posted,
+                buy them, and even test them out in-store before purchasing!
 
               </Typography>
               <Typography variant="body1" paragraph>
-                  We built the web store using
+                We built the web store using
 
                 {' '}
                 <Link color="secondary" href={vueLink}>
@@ -164,33 +164,33 @@ class Grizzhacks3Card extends React.Component {
                 </Link>
                 {' '}
 
-                  and the server using
+                and the server using
 
                 {' '}
                 <Link color="secondary" href={nodeLink}>
                   NodeJS
                 </Link>
 
-                  ,
+                ,
 
                 {' '}
                 <Link color="secondary" href={mongodbLink}>
                   MongoDB
                 </Link>
                 {' '}
-                  and
+                and
 
                 {' '}
                 <Link color="secondary" href={mongooseLink}>
                   Mongoose
                 </Link>
 
-                  . Credit goes to my team for making the vast majority of this
-                  project - I was just learning most of this stuff at the time!
+                . Credit goes to my team for making the vast majority of this
+                project - I was just learning most of this stuff at the time!
               </Typography>
               <picture>
-                <source srcSet={congoaiScreenshotOne} type="image/webp"/>
-                <source srcSet={congoaiScreenshotOneFallback} type="image/jpg"/>
+                <source srcSet={congoaiScreenshotOne} type="image/webp" />
+                <source srcSet={congoaiScreenshotOneFallback} type="image/jpg" />
                 <img
                   srcSet={[congoaiScreenshotOne, congoaiScreenshotOneFallback]}
                   className={classes.mobileScreenshot}
@@ -198,54 +198,54 @@ class Grizzhacks3Card extends React.Component {
                 />
               </picture>
               <Typography variant="body1" paragraph>
-              We won
+                We won
 
                 {' '}
                 <Typography color="secondary" display="inline">
                   <b><i>Best DevOps Hack, Presented by Ally Financial</i></b>
                 </Typography>
 
-                  ,
+                ,
 
                 {' '}
                 <Typography color="secondary" display="inline">
                   <b><i>Best use of Dynatrace</i></b>
                 </Typography>
 
-                      , and a
+                , and a
 
                 {' '}
                 <Typography color="secondary" display="inline">
                   <b><i>Top 10 finish</i></b>
                 </Typography>
 
-                          .
+                .
               </Typography>
               <Typography variant="body1" paragraph>
-                    View it on
+                View it on
 
                 {' '}
                 <Link color="secondary" href={grizzhacks3DevpostLink}>
-                Devpost
+                  Devpost
                 </Link>
                 {' '}
 
-              or
+                or
                 {' '}
                 <Link color="secondary" href={grizzhacks3GithubLink}>
-                    Github
+                  Github
                 </Link>
               </Typography>
               <picture>
-                <source srcSet={congoaiDemoOne} type="image/webp"/>
-                <source srcSet={congoaiDemoOneFallback} type="image/jpg"/>
+                <source srcSet={congoaiDemoOne} type="image/webp" />
+                <source srcSet={congoaiDemoOneFallback} type="image/jpg" />
                 <img
                   srcSet={[congoaiDemoOne, congoaiDemoOneFallback]}
                   className={classes.demoImage}
                   alt="Congo demo 1"
                 />
               </picture>
-              <br/>
+              <br />
               <img
                 src={congoaiLogo}
                 className={classes.congoaiLogo}

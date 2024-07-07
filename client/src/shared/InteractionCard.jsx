@@ -17,9 +17,7 @@ const styles = {
 class InteractionCard extends React.Component {
   render() {
     const {classes} = this.props;
-    const prideSwitch = this.props.pagename === 'home' ?
-      <PrideSwitch /> :
-      <div />;
+
     return (
       <div className={classes.root}>
 
@@ -29,7 +27,7 @@ class InteractionCard extends React.Component {
           </a>
           <CardContent>
             {/* <CommentBox pagename={this.props.pagename} /> */}
-            {prideSwitch}
+            {this.props.pagename === 'home' ? <PrideSwitch /> : null}
             <LikeButton pagename={this.props.pagename} />
           </CardContent>
         </Card>

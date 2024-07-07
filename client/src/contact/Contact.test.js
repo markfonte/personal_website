@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from './contact.jsx';
+import Contact from './Contact.jsx';
 import renderer from 'react-test-renderer';
 
 test('Contact matches snapshot', () => {

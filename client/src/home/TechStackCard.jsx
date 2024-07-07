@@ -20,6 +20,49 @@ import {
   Chip,
 } from '@mui/material';
 
+const tags = [
+  {
+    label: 'DigitalOcean',
+    icon: digitalOceanLogo,
+  },
+  {
+    label: 'Express.js',
+    icon: expressLogo,
+  },
+  {
+    label: 'GitHub',
+    icon: githubLogo,
+  },
+  {
+    label: 'Jest',
+    icon: jestLogo,
+  },
+  {
+    label: 'Material-UI',
+    icon: materialUILogo,
+  },
+  {
+    label: 'Nginx',
+    icon: nginxLogo,
+  },
+  {
+    label: 'NodeJS',
+    icon: nodeLogo,
+  },
+  {
+    label: 'React',
+    icon: reactLogo,
+  },
+  {
+    label: 'SQLite',
+    icon: sqliteLogo,
+  },
+  {
+    label: 'Trello',
+    icon: trelloLogo,
+  },
+];
+
 const styles = {
   techStackWrapper: {
     overflowX: 'auto',
@@ -44,49 +87,6 @@ const styles = {
 class TechStackCard extends React.Component {
   render() {
     const {classes} = this.props;
-
-    const tags = [
-      {
-        label: 'DigitalOcean',
-        icon: digitalOceanLogo,
-      },
-      {
-        label: 'Express.js',
-        icon: expressLogo,
-      },
-      {
-        label: 'GitHub',
-        icon: githubLogo,
-      },
-      {
-        label: 'Jest',
-        icon: jestLogo,
-      },
-      {
-        label: 'Material-UI',
-        icon: materialUILogo,
-      },
-      {
-        label: 'Nginx',
-        icon: nginxLogo,
-      },
-      {
-        label: 'NodeJS',
-        icon: nodeLogo,
-      },
-      {
-        label: 'React',
-        icon: reactLogo,
-      },
-      {
-        label: 'SQLite',
-        icon: sqliteLogo,
-      },
-      {
-        label: 'Trello',
-        icon: trelloLogo,
-      },
-    ];
     return (
       <Card
         raised={true}

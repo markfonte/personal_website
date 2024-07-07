@@ -13,6 +13,22 @@ const renderLoader = () => <CircularProgress color="secondary" />;
 
 const getCookie = require('../shared/util/Cookies.js').getCookie;
 
+const justlightLink = 'https://www.justlight.com/about';
+const teslaLink = 'https://www.tesla.com/';
+const umichLink = 'https://umich.edu/';
+const entrepreneurshipLink = 'https://innovateblue.umich.edu/academics/minor-in-entrepreneurship/';
+const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
+const androidDevLink = 'https://developer.android.com/';
+const awsLink = `https://aws.amazon.com/`;
+
+const lightTheme = getCookie('app_theme') === 'light_theme';
+const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
+const teslaColor = lightTheme ? 'tesla-color-dark' : 'tesla-color-light';
+const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
+const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
+const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
+const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
+
 const styles = {
   title: {
     margin: 'auto',
@@ -43,22 +59,6 @@ class Home extends React.Component {
 
   render() {
     const {classes} = this.props;
-
-    const justlightLink = 'https://www.justlight.com/about';
-    const teslaLink = 'https://www.tesla.com/';
-    const umichLink = 'https://umich.edu/';
-    const entrepreneurshipLink = 'https://innovateblue.umich.edu/academics/minor-in-entrepreneurship/';
-    const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
-    const androidDevLink = 'https://developer.android.com/';
-    const awsLink = `https://aws.amazon.com/`;
-
-    const lightTheme = getCookie('app_theme') === 'light_theme';
-    const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
-    const teslaColor = lightTheme ? 'tesla-color-dark' : 'tesla-color-light';
-    const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
-    const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
-    const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
-    const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
 
     return (
       <div>

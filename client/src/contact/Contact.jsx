@@ -7,6 +7,9 @@ import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
 import InteractionCard from '../shared/InteractionCard.jsx';
 
+const emailLink = `mailto:mark@fonte.com`;
+const venmoLink = `https://venmo.com/Mark-Fonte`;
+
 const styles = {
   root: {
     minHeight: '70vh',
@@ -36,8 +39,6 @@ class Contact extends React.Component {
 
   render() {
     const {classes} = this.props;
-    const emailLink = `mailto:mark@fonte.com`;
-    const venmoLink = `https://venmo.com/Mark-Fonte`;
 
     return (
       <div className={classes.root}>
@@ -78,18 +79,18 @@ class Contact extends React.Component {
         <Typography className={classes.paragraph} variant="caption">
           <i>My resume is available upon request</i>
         </Typography>
-        <br/> <br/>
+        <br /> <br />
         <img
           src={contactCoverPhoto}
           className={classes.contactImage}
           title="Contact page cover photo"
           alt="Contact page cover photo"
         />
-        <br/>
+        <br />
         <Typography variant="caption">
           ...if you Venmo me I won&#39;t be so sad!!
         </Typography>
-        <br/> <br/> <br/>
+        <br /> <br /> <br />
         <InteractionCard pagename="contact" />
       </div>
     );
