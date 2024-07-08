@@ -13,7 +13,7 @@ const styles = {
     minHeight: '70vh',
   },
   title: {
-    margin: '16px',
+    marginBottom: '16px',
   },
   subtitle: {
     margin: '16px',

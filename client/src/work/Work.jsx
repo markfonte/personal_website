@@ -24,7 +24,7 @@ const renderLoader = () => <CircularProgress color="secondary" />;
 
 const styles = {
   title: {
-    margin: '16px',
+    marginBottom: '16px',
   },
   twoColumnContainer: {
     display: 'flex',

@@ -36,7 +36,6 @@ class TicTacToeBoard extends React.Component {
 }
 
 TicTacToeBoard.propTypes = {
-  classes: PropTypes.object.isRequired,
   squares: PropTypes.array.isRequired,
   onClick: PropTypes.func.isRequired,
 };

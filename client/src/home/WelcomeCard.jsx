@@ -20,8 +20,7 @@ import welcomeImageFour from '../static/photos/welcome_photo_4.jpg';
 import welcomeImageFive from '../static/photos/welcome_photo_5.jpg';
 import welcomeImageSix from '../static/photos/welcome_photo_6.jpg';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-const getCookie = require('../shared/util/Cookies.js').getCookie;
+import PropTypes from 'prop-types';
 
 const trelloBoardLink = `https://trello.com/b/yoLCEs6S/personal-website`;
 const umichLink = 'https://umich.edu/';
@@ -30,14 +29,6 @@ const androidDevLink = 'https://developer.android.com/';
 const awsLink = `https://aws.amazon.com/`;
 const justlightLink = `https://www.justlight.com/`;
 const teslaLink = `https://tesla.com`;
-
-const lightTheme = getCookie('app_theme') === 'light_theme';
-const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
-const teslaColor = lightTheme ? 'tesla-color-dark' : 'tesla-color-light';
-const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
-const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
-const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
-const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
 
 const itemData = [
   {
@@ -98,7 +89,14 @@ const styles = {
   },
 };
 
-export default function WelcomeCard() {
+export default function WelcomeCard({ isDarkTheme }) {
+  const justlightColor = isDarkTheme ? 'justlight-color-light' : 'justlight-color-dark';
+  const teslaColor = isDarkTheme ? 'tesla-color-light' : 'tesla-color-dark';
+  const amazonColor = isDarkTheme ? 'amazon-color-light' : 'amazon-color-dark';
+  const michiganColor = isDarkTheme ? 'michigan-color-light' : 'michigan-color-dark';
+  const webColor = isDarkTheme ? 'web-color-light' : 'web-color-dark';
+  const androidColor = isDarkTheme ? 'android-color-light' : 'android-color-dark';
+
   return (
     <Card raised={true} className="large-card">
       <Accordion
@@ -207,4 +205,8 @@ export default function WelcomeCard() {
       </Accordion>
     </Card>
   );
+};
+
+WelcomeCard.propTypes = {
+  isDarkTheme: PropTypes.bool.isRequired,
 };

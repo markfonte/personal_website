@@ -5,6 +5,7 @@ const GimbleCard = lazy(() => import('./GimbleCard.jsx'));
 const TechStackCard = lazy(() => import('./TechStackCard.jsx'));
 const WelcomeCard = lazy(() => import('./WelcomeCard.jsx'));
 const SammyCard = lazy(() => import('./SammyCard.jsx'));
+import PropTypes from 'prop-types';
 import { Typography, Link, CircularProgress } from '@mui/material';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
@@ -19,13 +20,6 @@ const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
 const androidDevLink = 'https://developer.android.com/';
 const awsLink = `https://aws.amazon.com/`;
 
-const lightTheme = getCookie('app_theme') === 'light_theme';
-const justlightColor = lightTheme ? 'justlight-color-dark' : 'justlight-color-light';
-const teslaColor = lightTheme ? 'tesla-color-dark' : 'tesla-color-light';
-const amazonColor = lightTheme ? 'amazon-color-dark' : 'amazon-color-light';
-const michiganColor = lightTheme ? 'michigan-color-dark' : 'michigan-color-light';
-const webColor = lightTheme ? 'web-color-dark' : 'web-color-light';
-const androidColor = lightTheme ? 'android-color-dark' : 'android-color-light';
 
 const styles = {
   title: {
@@ -50,10 +44,17 @@ const styles = {
   },
 };
 
-export default function Home() {
+export default function Home({ isDarkTheme }) {
   useEffect(() => {
     document.title = 'Home | Mark Fonte';
   }, []);
+
+  const justlightColor = isDarkTheme ? 'justlight-color-light' : 'justlight-color-dark';
+  const teslaColor = isDarkTheme ? 'tesla-color-light' : 'tesla-color-dark';
+  const amazonColor = isDarkTheme ? 'amazon-color-light' : 'amazon-color-dark';
+  const michiganColor = isDarkTheme ? 'michigan-color-light' : 'michigan-color-dark';
+  const webColor = isDarkTheme ? 'web-color-light' : 'web-color-dark';
+  const androidColor = isDarkTheme ? 'android-color-light' : 'android-color-dark';
 
   return (
     <div>
@@ -100,7 +101,7 @@ export default function Home() {
       </Typography>
       <Suspense fallback={renderLoader()}>
         <div style={styles.twoColumnContainer}>
-          <WelcomeCard />
+          <WelcomeCard isDarkTheme={isDarkTheme} />
           <GimbleCard />
           <SammyCard />
           <TechStackCard />
@@ -110,4 +111,8 @@ export default function Home() {
       </Suspense>
     </div>
   );
+};
+
+Home.propTypes = {
+  isDarkTheme: PropTypes.bool.isRequired,
 };

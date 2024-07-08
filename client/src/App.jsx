@@ -1,25 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import profilePicture
   from './static/photos/mark_circle.svg';
-import Work from './work/Work.jsx';
-import Contact from './contact/Contact.jsx';
-import Home from './home/Home.jsx';
+import WorkPage from './work/Work.jsx';
+import ContactPage from './contact/Contact.jsx';
+import HomePage from './home/Home.jsx';
 import Blog from './blog/Blog.jsx';
 import Footer from './footer/Footer.jsx';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
-import { WbSunny } from '@mui/icons-material';
-
+import { LightMode, DarkMode, Home, Work, Call } from '@mui/icons-material';
 import {
   Typography,
-  Button,
+  Tabs,
+  Tab,
   CssBaseline,
-  LinkStyle,
-  List,
-  ListItem,
   Grid,
   Tooltip,
+  IconButton,
 } from '@mui/material';
 import ScrollUpButton from 'react-scroll-up-button';
 
@@ -27,9 +25,9 @@ const getCookie = require('./shared/util/Cookies.js').getCookie;
 const setCookie = require('./shared/util/Cookies.js').setCookie;
 
 const routes = [
-  { name: 'Home', path: '/', index: 0 },
-  { name: 'Work', path: '/work', index: 1 },
-  { name: 'Contact', path: '/contact', index: 2 },
+  { name: 'Home', path: '/', index: 0, icon: <Home /> },
+  { name: 'Work', path: '/work', index: 1, icon: <Work /> },
+  { name: 'Contact', path: '/contact', index: 2, icon: <Call /> },
 ];
 
 const darkTheme = createTheme({
@@ -93,17 +91,6 @@ const styles = {
     padding: '12px',
     margin: 'auto',
   },
-  AppList: {
-    listStyle: 'none',
-    paddingInlineStart: 0,
-    paddingInlineEnd: 0,
-  },
-  AppListItem: {
-    display: 'inline',
-    margin: '4px',
-    paddingInlineStart: 0,
-    paddingInlineEnd: 0,
-  },
   profileLogo: {
     height: '100px',
     width: '100px',
@@ -119,6 +106,9 @@ const styles = {
   },
   primaryNav: {
     textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: '12px',
   },
   /* credit: https://travis-ci.org/account/preferences */
   headerRoot: {
@@ -145,41 +135,51 @@ const styles = {
       '#51b95b90 66%, #1e72b790 66%, #1e72b790 86%, #6f5ba790 86%) no-repeat',
   },
   mainTitle: {
-    margin: '8px',
+    margin: '4px',
   },
   routerLink: {
     textDecoration: 'none',
   },
   routerButton: {
-    marginTop: '8px',
-    marginBottom: '8px',
   },
   toggleThemeButton: {
-    margin: '20px',
+    padding: '20px',
+    alignSelf: 'flex-start',
   },
 };
 
-export class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      theme: lightTheme,
-      proud: false,
-      currentlySelected: -1,
-      logoSpinning: false,
-    };
-    this.toggleTheme = this.toggleTheme.bind(this);
-    this.currentlySelected = this.currentlySelected.bind(this);
-    this.findCurrentRoute = this.findCurrentRoute.bind(this);
-    this.profilePictureClicked = this.profilePictureClicked.bind(this);
+export default function App() {
+  const [theme, setTheme] = useState(lightTheme);
+  const [proud, setProud] = useState(false);
+  const [currentlySelected, setCurrentlySelected] = useState(0);
+  const [logoSpinning, setLogoSpinning] = useState(false);
+
+  const toggleTheme = () => {
+    if (theme === lightTheme) {
+      setTheme(darkTheme);
+      setCookie('app_theme', 'dark_theme', 1000);
+    } else {
+      setTheme(lightTheme);
+      setCookie('app_theme', 'light_theme', 1000);
+    }
   }
 
-  currentlySelected(id) {
-    this.setState({ currentlySelected: id });
+  const findCurrentRoute = (value) => {
+    if (value.path === window.location.pathname) {
+      setCurrentlySelected(value.index);
+    }
   }
 
-  componentDidMount() {
-    routes.forEach(this.findCurrentRoute);
+  const profilePictureClicked = () => {
+    setLogoSpinning(!logoSpinning);
+  }
+
+  const handleTabChange = (event, newValue) => {
+    setCurrentlySelected(newValue);
+  };
+
+  useEffect(() => {
+    routes.forEach(findCurrentRoute);
 
     let proud = false;
     if (getCookie('pride') === 'true') {
@@ -193,93 +193,68 @@ export class App extends React.Component {
     } else {
       setCookie('app_theme', 'light_theme', 1000);
     }
-    this.setState({
-      theme: initialTheme,
-      proud: proud,
-    });
-  }
+    setTheme(initialTheme);
+    setProud(proud);
+  }, []);
 
-  toggleTheme() {
-    if (this.state.theme === lightTheme) {
-      this.setState({ theme: darkTheme });
-      setCookie('app_theme', 'dark_theme', 1000);
-    } else {
-      this.setState({ theme: lightTheme });
-      setCookie('app_theme', 'light_theme', 1000);
-    }
-  }
+  return (
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
 
-  findCurrentRoute(value, key, map) {
-    if (value.path === window.location.pathname) {
-      this.setState({ currentlySelected: value.index });
-    }
-  }
-
-  profilePictureClicked() {
-    this.setState({ logoSpinning: !this.state.logoSpinning });
-  }
-
-  render() {
-    return (
-      <StyledEngineProvider injectFirst>
-        <ThemeProvider theme={this.state.theme}>
-          <CssBaseline />
-
-          <Grid sx={styles.root}>
-            {this.state.proud ? <header style={styles.headerRoot} /> : null}
-            <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
-              <WbSunny style={styles.toggleThemeButton} />
+        <Grid sx={styles.root}>
+          {proud ? <header style={styles.headerRoot} /> : null}
+          <Tooltip title={theme === darkTheme ? "Enter light theme" : "Enter dark theme"} arrow>
+            <IconButton onClick={toggleTheme} style={styles.toggleThemeButton}>
+              {theme === darkTheme ? <LightMode /> : <DarkMode />}
+            </IconButton>
+          </Tooltip>
+          <Router>
+            <Tooltip title={logoSpinning ? 'weeeeeeeeeee!!' : 'Click me!'} arrow>
+              <img
+                onClick={profilePictureClicked}
+                srcSet={[profilePicture]}
+                style={logoSpinning ? styles.profileLogoSpinning : styles.profileLogo}
+                alt="headshot"
+              />
             </Tooltip>
-            <Router>
-              <Tooltip title={this.state.logoSpinning ? 'weeeeeeeeeee!!' : 'Click me!'} arrow>
-                <img
-                  onClick={() => this.profilePictureClicked()}
-                  srcSet={[profilePicture]}
-                  style={this.state.logoSpinning ? styles.profileLogoSpinning : styles.profileLogo}
-                  alt="headshot"
-                />
-              </Tooltip>
-              <Typography sx={styles.mainTitle} variant="h3">Mark Fonte</Typography>
-              <nav style={styles.primaryNav}>
-                <List sx={styles.AppList}>
-                  {routes.map((route, i) => (
-                    <ListItem sx={styles.AppListItem} key={route.name}>
-                      <Link style={styles.routerLink} to={route.path}>
-                        <Tooltip title={'Navigate to ' + route.name} arrow>
-                          <Button
-                            onClick={() => this.currentlySelected(i)}
-                            variant={this.state.currentlySelected === i ? 'contained' : 'outlined'}
-                            color="secondary"
-                            sx={styles.routerButton}
-                          >
-                            {route.name}
-                          </Button>
-                        </Tooltip>
-                      </Link>
-                    </ListItem>
-                  ))}
-                </List>
-              </nav>
+            <Typography sx={styles.mainTitle} variant="h3">Mark Fonte</Typography>
+            <hr></hr>
+            <nav style={styles.primaryNav}>
+              <Tabs value={currentlySelected} onChange={handleTabChange} indicatorColor="secondary">
+                {routes.map((route, _) => (
+                  <Tooltip key={route.name} title={'Navigate to ' + route.name} arrow>
+                    <Tab key={route.name}
+                      component={Link}
+                      to={route.path}
+                      label={route.name}
+                      sx={{
+                        ...styles.routerButton,
+                        '&.Mui-selected': {
+                          color: theme.palette.secondary.main,
+                          fontWeight: 'bold',
+                        },
+                      }}
+                      icon={route.icon} />
+                  </Tooltip>
+                ))}
+              </Tabs>
+            </nav>
+            <hr />
 
-              <Routes>
-                <Route path="/" exact element={<Home />} />
-                <Route path="home" element={<Home />} />
-                <Route path="work" element={<Work isDarkTheme={this.state.theme === darkTheme} />} />
-                <Route path="contact" element={<Contact />} />
-                <Route path="blog" element={<Blog />} />
-              </Routes>
-            </Router>
-            <ScrollUpButton />
-            <Footer />
-          </Grid>
-          {this.state.proud ?
-            <footer style={styles.footerRoot} /> :
-            null}
-        </ThemeProvider>
-      </StyledEngineProvider>
-    );
-  }
-}
-
-
-export default App;
+            <Routes>
+              <Route path="/" exact element={<HomePage isDarkTheme={theme === darkTheme} />} />
+              <Route path="home" element={<HomePage isDarkTheme={theme === darkTheme} />} />
+              <Route path="work" element={<WorkPage isDarkTheme={theme === darkTheme} />} />
+              <Route path="contact" element={<ContactPage />} />
+              <Route path="blog" element={<Blog />} />
+            </Routes>
+          </Router>
+          <ScrollUpButton />
+          <Footer />
+        </Grid>
+        {proud ? <footer style={styles.footerRoot} /> : null}
+      </ThemeProvider>
+    </StyledEngineProvider>
+  );
+};
