@@ -9,10 +9,10 @@ import Home from './home/Home.jsx';
 import Blog from './blog/Blog.jsx';
 import Footer from './footer/Footer.jsx';
 import LinkStyle from '@mui/material/Link';
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
-import {createTheme, StyledEngineProvider, ThemeProvider} from '@mui/material/styles';
-import {withStyles} from '@mui/styles';
-import {WbSunny} from '@mui/icons-material';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
+import { withStyles } from '@mui/styles';
+import { WbSunny } from '@mui/icons-material';
 
 import {
   Typography,
@@ -29,9 +29,9 @@ const getCookie = require('./shared/util/Cookies.js').getCookie;
 const setCookie = require('./shared/util/Cookies.js').setCookie;
 
 const routes = [
-  {name: 'Home', path: '/', index: 0},
-  {name: 'Work', path: '/work', index: 1},
-  {name: 'Contact', path: '/contact', index: 2},
+  { name: 'Home', path: '/', index: 0 },
+  { name: 'Work', path: '/work', index: 1 },
+  { name: 'Contact', path: '/contact', index: 2 },
 ];
 
 const darkTheme = createTheme({
@@ -176,7 +176,7 @@ export class App extends React.Component {
   }
 
   currentlySelected(id) {
-    this.setState({currentlySelected: id});
+    this.setState({ currentlySelected: id });
   }
 
   componentDidMount() {
@@ -202,26 +202,26 @@ export class App extends React.Component {
 
   toggleTheme() {
     if (this.state.theme === lightTheme) {
-      this.setState({theme: darkTheme});
+      this.setState({ theme: darkTheme });
       setCookie('app_theme', 'dark_theme', 1000);
     } else {
-      this.setState({theme: lightTheme});
+      this.setState({ theme: lightTheme });
       setCookie('app_theme', 'light_theme', 1000);
     }
   }
 
   findCurrentRoute(value, key, map) {
     if (value.path === window.location.pathname) {
-      this.setState({currentlySelected: value.index});
+      this.setState({ currentlySelected: value.index });
     }
   }
 
   profilePictureClicked() {
-    this.setState({logoSpinning: !this.state.logoSpinning});
+    this.setState({ logoSpinning: !this.state.logoSpinning });
   }
 
   render() {
-    const {classes} = this.props;
+    const { classes } = this.props;
 
     return (
       <StyledEngineProvider injectFirst>
@@ -249,7 +249,7 @@ export class App extends React.Component {
                 <List className={classes.AppList}>
                   {routes.map((route, i) => (
                     <ListItem className={classes.AppListItem} key={route.name}>
-                      <LinkStyle style={{textDecoration: 'none'}}
+                      <LinkStyle style={{ textDecoration: 'none' }}
                         className={classes.routerLink} component={Link} to={route.path}>
                         <Tooltip title={'Navigate to ' + route.name} arrow>
                           <Button

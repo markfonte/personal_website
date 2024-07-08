@@ -27,6 +27,9 @@ function getCookie(cname) {
   return '';
 }
 
-exports.deleteCookie = deleteCookie;
-exports.setCookie = setCookie;
-exports.getCookie = getCookie;
+const _deleteCookie = deleteCookie;
+export { _deleteCookie as deleteCookie };
+const _setCookie = setCookie;
+export { _setCookie as setCookie };
+const _getCookie = getCookie;
+export { _getCookie as getCookie };

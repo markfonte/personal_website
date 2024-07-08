@@ -1,6 +1,6 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
-// import App from './App';
+// import App from './App.jsx';
 // // import {shallow} from 'enzyme';
 // // import Enzyme from 'enzyme';
 // // import {createMuiTheme} from '@mui/material/styles';

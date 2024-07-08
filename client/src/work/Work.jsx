@@ -1,6 +1,6 @@
-import React, {lazy, Suspense} from 'react';
-import {Typography, CircularProgress} from '@mui/material';
-import {withStyles} from '@mui/styles';
+import React, { lazy, Suspense } from 'react';
+import { Typography, CircularProgress } from '@mui/material';
+import { withStyles } from '@mui/styles';
 import PropTypes from 'prop-types';
 const LAZCard = lazy(() => import('./LazCard.jsx'));
 const RevolutionUC8Card = lazy(() => import('./Revolutionuc8Card.jsx'));
@@ -40,7 +40,7 @@ class Work extends React.Component {
   }
 
   render() {
-    const {classes} = this.props;
+    const { classes } = this.props;
 
     return (
       <div>
@@ -49,7 +49,7 @@ class Work extends React.Component {
         </Typography>
         <Suspense fallback={renderLoader()}>
           <div className={classes.twoColumnContainer}>
-            <TeslaCard/>
+            <TeslaCard />
             <JustlightCard isDarkTheme={this.props.isDarkTheme} />
             <AmazonCard />
             <JPMorganCard />

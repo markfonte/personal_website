@@ -13,11 +13,9 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
-import withStyles from '@mui/styles/withStyles';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import congoaiLogo from '../static/logos/congoai_logo.svg';
-import PropTypes from 'prop-types';
 
 import congoaiScreenshotOne from
   '../static/screenshots/congoai_screenshot_1.webp';
@@ -94,174 +92,166 @@ const styles = {
   },
 };
 
-class Grizzhacks3Card extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Card raised={true} className="large-card">
-        <Accordion
-          TransitionProps={{unmountOnExit: true}}>
-          <AccordionSummary
-            aria-label="GrizzHacks 3"
-            aria-controls="grizzhacks3-content"
-            id="grizzhacks3-header"
-            expandIcon={
-              <Tooltip
-                title="Expand/collapse card"
-                arrow>
-                <IconButton size="large">
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            }>
-            <a name="grizzhacks3_card" href="#grizzhacks3_card" className="gone">
-              Grizzhacks 3 Card
-            </a>
-            <div className={classes.expansionHeaderContainer}>
-              <CardHeader
-                className="card-header"
-                title="Congo AI"
-                subheader="Hackathon Project @ GrizzHacks 3"
-              />
-              <CardMedia
-                className={classes.grizzhacks3Banner}
-                image="/media/grizzhacks_banner.png"
-                title="GrizzHacks 3 banner"
-                alt="GrizzHacks 3 banner"
-                component="img"
-              />
-              <div>
-                {tags.map((tag) => (
-                  <Chip
-                    className={classes.tags}
-                    key={tag.label}
-                    icon={tag.icon ? tag.icon : <div />}
-                    label={tag.label}
-                    variant={tag.variant ? tag.variant : 'outlined'}
-                    color={tag.color ? tag.color : 'secondary'}
-                    clickable />
-                ))}
-              </div>
+const Grizzhacks3Card = () => {
+  return (
+    <Card raised={true} className="large-card">
+      <Accordion
+        TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          aria-label="GrizzHacks 3"
+          aria-controls="grizzhacks3-content"
+          id="grizzhacks3-header"
+          expandIcon={
+            <Tooltip
+              title="Expand/collapse card"
+              arrow>
+              <IconButton size="large">
+                <ExpandMoreIcon />
+              </IconButton>
+            </Tooltip>
+          }>
+          <a name="grizzhacks3_card" href="#grizzhacks3_card" className="gone">
+            Grizzhacks 3 Card
+          </a>
+          <div style={styles.expansionHeaderContainer}>
+            <CardHeader
+              className="card-header"
+              title="Congo AI"
+              subheader="Hackathon Project @ GrizzHacks 3"
+            />
+            <CardMedia
+              sx={styles.grizzhacks3Banner}
+              image="/media/grizzhacks_banner.png"
+              title="GrizzHacks 3 banner"
+              alt="GrizzHacks 3 banner"
+              component="img"
+            />
+            <div>
+              {tags.map((tag) => (
+                <Chip
+                  sx={styles.tags}
+                  key={tag.label}
+                  icon={tag.icon ? tag.icon : <div />}
+                  label={tag.label}
+                  variant={tag.variant ? tag.variant : 'outlined'}
+                  color={tag.color ? tag.color : 'secondary'}
+                  clickable />
+              ))}
             </div>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CardContent>
-              <Typography variant="body1" paragraph>
-                GrizzHacks 3 was the first hackathon I ever competed in. We built an online
-                store where users could buy and sell pre-trained machine learning models.
-                While we did not completely finish, users could use our store to post
-                pre-trained machine learning models, view models that others had posted,
-                buy them, and even test them out in-store before purchasing!
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CardContent>
+            <Typography variant="body1" paragraph>
+              GrizzHacks 3 was the first hackathon I ever competed in. We built an online
+              store where users could buy and sell pre-trained machine learning models.
+              While we did not completely finish, users could use our store to post
+              pre-trained machine learning models, view models that others had posted,
+              buy them, and even test them out in-store before purchasing!
 
-              </Typography>
-              <Typography variant="body1" paragraph>
-                We built the web store using
+            </Typography>
+            <Typography variant="body1" paragraph>
+              We built the web store using
 
-                {' '}
-                <Link color="secondary" href={vueLink}>
-                  Vue.js
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={vueLink}>
+                Vue.js
+              </Link>
+              {' '}
 
-                and the server using
+              and the server using
 
-                {' '}
-                <Link color="secondary" href={nodeLink}>
-                  NodeJS
-                </Link>
+              {' '}
+              <Link color="secondary" href={nodeLink}>
+                NodeJS
+              </Link>
 
-                ,
+              ,
 
-                {' '}
-                <Link color="secondary" href={mongodbLink}>
-                  MongoDB
-                </Link>
-                {' '}
-                and
+              {' '}
+              <Link color="secondary" href={mongodbLink}>
+                MongoDB
+              </Link>
+              {' '}
+              and
 
-                {' '}
-                <Link color="secondary" href={mongooseLink}>
-                  Mongoose
-                </Link>
+              {' '}
+              <Link color="secondary" href={mongooseLink}>
+                Mongoose
+              </Link>
 
-                . Credit goes to my team for making the vast majority of this
-                project - I was just learning most of this stuff at the time!
-              </Typography>
-              <picture>
-                <source srcSet={congoaiScreenshotOne} type="image/webp" />
-                <source srcSet={congoaiScreenshotOneFallback} type="image/jpg" />
-                <img
-                  srcSet={[congoaiScreenshotOne, congoaiScreenshotOneFallback]}
-                  className={classes.mobileScreenshot}
-                  alt="Congo AI screenshot 1"
-                />
-              </picture>
-              <Typography variant="body1" paragraph>
-                We won
-
-                {' '}
-                <Typography color="secondary" display="inline">
-                  <b><i>Best DevOps Hack, Presented by Ally Financial</i></b>
-                </Typography>
-
-                ,
-
-                {' '}
-                <Typography color="secondary" display="inline">
-                  <b><i>Best use of Dynatrace</i></b>
-                </Typography>
-
-                , and a
-
-                {' '}
-                <Typography color="secondary" display="inline">
-                  <b><i>Top 10 finish</i></b>
-                </Typography>
-
-                .
-              </Typography>
-              <Typography variant="body1" paragraph>
-                View it on
-
-                {' '}
-                <Link color="secondary" href={grizzhacks3DevpostLink}>
-                  Devpost
-                </Link>
-                {' '}
-
-                or
-                {' '}
-                <Link color="secondary" href={grizzhacks3GithubLink}>
-                  Github
-                </Link>
-              </Typography>
-              <picture>
-                <source srcSet={congoaiDemoOne} type="image/webp" />
-                <source srcSet={congoaiDemoOneFallback} type="image/jpg" />
-                <img
-                  srcSet={[congoaiDemoOne, congoaiDemoOneFallback]}
-                  className={classes.demoImage}
-                  alt="Congo demo 1"
-                />
-              </picture>
-              <br />
+              . Credit goes to my team for making the vast majority of this
+              project - I was just learning most of this stuff at the time!
+            </Typography>
+            <picture>
+              <source srcSet={congoaiScreenshotOne} type="image/webp" />
+              <source srcSet={congoaiScreenshotOneFallback} type="image/jpg" />
               <img
-                src={congoaiLogo}
-                className={classes.congoaiLogo}
-                title="CongoAI logo"
-                alt="CongoAI logo"
+                srcSet={[congoaiScreenshotOne, congoaiScreenshotOneFallback]}
+                style={styles.mobileScreenshot}
+                alt="Congo AI screenshot 1"
               />
-            </CardContent>
-          </AccordionDetails>
-        </Accordion>
-      </Card>
-    );
-  }
+            </picture>
+            <Typography variant="body1" paragraph>
+              We won
+
+              {' '}
+              <Typography color="secondary" display="inline">
+                <b><i>Best DevOps Hack, Presented by Ally Financial</i></b>
+              </Typography>
+
+              ,
+
+              {' '}
+              <Typography color="secondary" display="inline">
+                <b><i>Best use of Dynatrace</i></b>
+              </Typography>
+
+              , and a
+
+              {' '}
+              <Typography color="secondary" display="inline">
+                <b><i>Top 10 finish</i></b>
+              </Typography>
+
+              .
+            </Typography>
+            <Typography variant="body1" paragraph>
+              View it on
+
+              {' '}
+              <Link color="secondary" href={grizzhacks3DevpostLink}>
+                Devpost
+              </Link>
+              {' '}
+
+              or
+              {' '}
+              <Link color="secondary" href={grizzhacks3GithubLink}>
+                Github
+              </Link>
+            </Typography>
+            <picture>
+              <source srcSet={congoaiDemoOne} type="image/webp" />
+              <source srcSet={congoaiDemoOneFallback} type="image/jpg" />
+              <img
+                srcSet={[congoaiDemoOne, congoaiDemoOneFallback]}
+                style={styles.demoImage}
+                alt="Congo demo 1"
+              />
+            </picture>
+            <br />
+            <img
+              src={congoaiLogo}
+              style={styles.congoaiLogo}
+              title="CongoAI logo"
+              alt="CongoAI logo"
+            />
+          </CardContent>
+        </AccordionDetails>
+      </Accordion>
+    </Card>
+  );
 }
 
-Grizzhacks3Card.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Grizzhacks3Card);
+export default Grizzhacks3Card;

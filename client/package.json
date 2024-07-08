@@ -2,12 +2,13 @@
     "name": "client",
     "version": "4.1",
     "private": true,
+    "type": "module",
     "dependencies": {
         "@emotion/react": "^11.11.4",
         "@emotion/styled": "^11.11.5",
         "@mui/icons-material": "^5.15.20",
         "@mui/lab": "^5.0.0-alpha.170",
-        "@mui/material": "^5.15.20",
+        "@mui/material": "^6.0.0-alpha.14",
         "@mui/styles": "^5.15.20",
         "moment": "^2.30.1",
         "node-fetch": "2.6.7",
@@ -24,11 +25,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "jest --coverage -u",
-        "lint": "eslint src/ --ext .js --ext .jsx --fix && npx html-linter --config ./html-linter.json ./**/*.html && npx stylelint \"src/**/*.css\" --fix",
+        "lint": "npx eslint --config eslint.config.js --fix",
         "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
     },
     "browserslist": {
         "production": [
@@ -48,11 +46,13 @@
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@babel/preset-env": "^7.24.7",
         "@babel/preset-react": "^7.24.7",
+        "@eslint/compat": "^1.1.0",
         "@testing-library/react": "^16.0.0",
         "ajv": "^8.16.0",
         "enzyme-adapter-react-16": "^1.15.8",
-        "eslint-config-google": "^0.14.0",
+        "eslint": "^9.6.0",
         "eslint-plugin-react": "^7.34.3",
+        "globals": "^15.8.0",
         "html-linter": "^1.1.1",
         "identity-obj-proxy": "^3.0.0",
         "postcss": "^8.4.38",

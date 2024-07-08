@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from 'react';
+import React, { lazy, Suspense } from 'react';
 import {
   Typography,
   Card,
@@ -16,7 +16,7 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
 import ShareIcon from '@mui/icons-material/Share';
-import {withStyles} from '@mui/styles';
+import { withStyles } from '@mui/styles';
 import PropTypes from 'prop-types';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -231,18 +231,18 @@ class Blog extends React.Component {
 
   copyToClipboard(postLink) {
     navigator.clipboard.writeText(postLink);
-    this.setState({successDialogOpen: true});
+    this.setState({ successDialogOpen: true });
   }
 
   handleClose(event, reason) {
     if (reason === 'clickaway') {
       return;
     }
-    this.setState({successDialogOpen: false});
+    this.setState({ successDialogOpen: false });
   }
 
   render() {
-    const {classes} = this.props;
+    const { classes } = this.props;
 
     return (
       <div>

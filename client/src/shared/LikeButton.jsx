@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import {Typography, Card, Tooltip, IconButton} from '@mui/material';
-import {withStyles} from '@mui/styles';
+import { Typography, Card, Tooltip, IconButton } from '@mui/material';
+import { withStyles } from '@mui/styles';
 const fetch = require('node-fetch');
 
 const deleteCookie = require('./util/Cookies.js').deleteCookie;
@@ -45,7 +45,7 @@ class LikeButton extends React.Component {
 
   fetchNumLikes() {
     const url = process.env.REACT_APP_API_URL + 'like/get';
-    const requestText = {page: this.props.pagename};
+    const requestText = { page: this.props.pagename };
     fetch(url, {
       method: 'post',
       credentials: 'same-origin',
@@ -55,16 +55,16 @@ class LikeButton extends React.Component {
       body: JSON.stringify(requestText),
       signal: this.abortController.signal,
     })
-        .then((response) => response.json())
-        .then((data) => {
-          this.setState({numLikes: data[0]['numlikes']});
-        })
-        .catch((error) => {
-          if (error.name === 'AbortError' || error.name === 'TypeError') {
-            return;
-          }
-          console.log(error);
-        }); // eslint-disable-line no-console
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ numLikes: data[0]['numlikes'] });
+      })
+      .catch((error) => {
+        if (error.name === 'AbortError' || error.name === 'TypeError') {
+          return;
+        }
+        console.log(error);
+      });
   }
 
   /**
@@ -74,7 +74,7 @@ class LikeButton extends React.Component {
      */
   componentDidMount() {
     if (getCookie(this.props.pagename) === 'liked') {
-      this.setState({liked: true});
+      this.setState({ liked: true });
     }
     this.fetchNumLikes();
   }
@@ -82,7 +82,7 @@ class LikeButton extends React.Component {
   toggleLike() {
     if (!this.state.liked) {
       const url = process.env.REACT_APP_API_URL + 'like';
-      const requestText = {page: this.props.pagename};
+      const requestText = { page: this.props.pagename };
       fetch(url, {
         method: 'post',
         credentials: 'same-origin',
@@ -92,20 +92,20 @@ class LikeButton extends React.Component {
         body: JSON.stringify(requestText),
         signal: this.abortController.signal,
       })
-          .then(() => {
-            this.fetchNumLikes();
-          })
-          .catch((error) => {
-            if (error.name === 'AbortError' || error.name === 'TypeError') {
-              return;
-            }
-            console.log(error);
-          });
+        .then(() => {
+          this.fetchNumLikes();
+        })
+        .catch((error) => {
+          if (error.name === 'AbortError' || error.name === 'TypeError') {
+            return;
+          }
+          console.log(error);
+        });
       setCookie(this.props.pagename, 'liked', 1000);
-      this.setState({liked: true});
+      this.setState({ liked: true });
     } else {
       const url = process.env.REACT_APP_API_URL + 'like/unlike';
-      const requestText = {page: this.props.pagename};
+      const requestText = { page: this.props.pagename };
       fetch(url, {
         method: 'post',
         credentials: 'same-origin',
@@ -115,17 +115,17 @@ class LikeButton extends React.Component {
         body: JSON.stringify(requestText),
         signal: this.abortController.signal,
       })
-          .then(() => {
-            this.fetchNumLikes();
-          })
-          .catch((error) => {
-            if (error.name === 'AbortError' || error.name === 'TypeError') {
-              return;
-            }
-            console.log(error);
-          });
+        .then(() => {
+          this.fetchNumLikes();
+        })
+        .catch((error) => {
+          if (error.name === 'AbortError' || error.name === 'TypeError') {
+            return;
+          }
+          console.log(error);
+        });
       deleteCookie(this.props.pagename, 'liked');
-      this.setState({liked: false});
+      this.setState({ liked: false });
     }
   }
 
@@ -134,7 +134,7 @@ class LikeButton extends React.Component {
   }
 
   render() {
-    const {classes} = this.props;
+    const { classes } = this.props;
     let icon;
     let displayedColor;
     if (this.state.liked) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography, Tooltip, Chip, Avatar} from '@mui/material';
+import { Typography, Tooltip, Chip, Avatar } from '@mui/material';
 import withStyles from '@mui/styles/withStyles';
 import PropTypes from 'prop-types';
 import contactCoverPhoto from '../static/photos/contact_cover_photo.png';
@@ -38,7 +38,7 @@ class Contact extends React.Component {
   }
 
   render() {
-    const {classes} = this.props;
+    const { classes } = this.props;
 
     return (
       <div className={classes.root}>
