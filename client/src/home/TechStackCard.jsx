@@ -9,7 +9,6 @@ import githubLogo from '../static/logos/github_logo.svg';
 import trelloLogo from '../static/logos/trello_logo.svg';
 import jestLogo from '../static/logos/jest_logo.svg';
 import sqliteLogo from '../static/logos/sqlite_logo.svg';
-import {withStyles} from '@mui/styles';
 import PropTypes from 'prop-types';
 
 import {
@@ -84,41 +83,32 @@ const styles = {
   },
 };
 
-class TechStackCard extends React.Component {
-  render() {
-    const {classes} = this.props;
-    return (
-      <Card
-        raised={true}
-        className="large-card">
-        <a name="tech_stack_card" href="#tech_stack_card" className="gone">
-          Tech Stack Card
-        </a>
-        <CardHeader
-          className="card-header"
-          title="🛠️ Tech Stack"
-          subheader="What I used to build this website:" />
-        <CardContent className={classes.cardContent}>
-          <div className={classes.techStackWrapper}>
-            {tags.map((tag) => (
-              <Chip
-                className={classes.tags}
-                key={tag.label}
-                avatar={<Avatar alt={tag.label} src={tag.icon} />}
-                label={tag.label}
-                variant={tag.variant ? tag.variant : 'outlined'}
-                size="large"
-                clickable={false} />
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-    );
-  }
-}
-
-TechStackCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+export default function TechStackCard() {
+  return (
+    <Card
+      raised={true}
+      className="large-card">
+      <a name="tech_stack_card" href="#tech_stack_card" className="gone">
+        Tech Stack Card
+      </a>
+      <CardHeader
+        className="card-header"
+        title="🛠️ Tech Stack"
+        subheader="What I used to build this website:" />
+      <CardContent sx={styles.cardContent}>
+        <div style={styles.techStackWrapper}>
+          {tags.map((tag) => (
+            <Chip
+              sx={styles.tags}
+              key={tag.label}
+              avatar={<Avatar alt={tag.label} src={tag.icon} />}
+              label={tag.label}
+              variant={tag.variant ? tag.variant : 'outlined'}
+              size="large"
+              clickable={false} />
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
 };
-
-export default withStyles(styles)(TechStackCard);

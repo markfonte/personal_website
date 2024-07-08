@@ -128,7 +128,7 @@ const styles = {
   },
 };
 
-const AmazonCard = () => {
+export default function AmazonCard() {
   return (
     <Card
       raised={true}
@@ -301,5 +301,3 @@ const AmazonCard = () => {
     </Card>
   );
 }
-
-export default AmazonCard;

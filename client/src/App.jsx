@@ -8,16 +8,15 @@ import Contact from './contact/Contact.jsx';
 import Home from './home/Home.jsx';
 import Blog from './blog/Blog.jsx';
 import Footer from './footer/Footer.jsx';
-import LinkStyle from '@mui/material/Link';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
-import { withStyles } from '@mui/styles';
 import { WbSunny } from '@mui/icons-material';
 
 import {
   Typography,
   Button,
   CssBaseline,
+  LinkStyle,
   List,
   ListItem,
   Grid,
@@ -38,11 +37,11 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     secondary: {
-      main: '#FFCb05', // maize
+      main: '#FFCb05',    // maize
     },
     background: {
       default: '#091929', // dark blue
-      paper: '#2A2A2A', // dark gray
+      paper: '#2A2A2A',   // dark gray
     },
   },
   typography: {
@@ -153,10 +152,11 @@ const styles = {
     textDecoration: 'none',
   },
   routerButton: {
-    marginTop: 8, marginBottom: 8,
+    marginTop: '8px',
+    marginBottom: '8px',
   },
   toggleThemeButton: {
-    margin: 20,
+    margin: '20px',
   },
 };
 
@@ -221,47 +221,42 @@ export class App extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
-
     return (
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={this.state.theme}>
           <CssBaseline />
 
-          <Grid className={classes.root}>
-            {this.state.proud ?
-              <header className={classes.headerRoot} /> :
-              null}
+          <Grid sx={styles.root}>
+            {this.state.proud ? <header style={styles.headerRoot} /> : null}
             <Tooltip title="Toggle light/dark mode" arrow onClick={this.toggleTheme}>
-              <WbSunny className={classes.toggleThemeButton} />
+              <WbSunny style={styles.toggleThemeButton} />
             </Tooltip>
             <Router>
               <Tooltip title={this.state.logoSpinning ? 'weeeeeeeeeee!!' : 'Click me!'} arrow>
                 <img
                   onClick={() => this.profilePictureClicked()}
                   srcSet={[profilePicture]}
-                  className={this.state.logoSpinning ? classes.profileLogoSpinning : classes.profileLogo}
+                  style={this.state.logoSpinning ? styles.profileLogoSpinning : styles.profileLogo}
                   alt="headshot"
                 />
               </Tooltip>
-              <Typography className={classes.mainTitle} variant="h3">Mark Fonte</Typography>
-              <nav className={classes.primaryNav}>
-                <List className={classes.AppList}>
+              <Typography sx={styles.mainTitle} variant="h3">Mark Fonte</Typography>
+              <nav style={styles.primaryNav}>
+                <List sx={styles.AppList}>
                   {routes.map((route, i) => (
-                    <ListItem className={classes.AppListItem} key={route.name}>
-                      <LinkStyle style={{ textDecoration: 'none' }}
-                        className={classes.routerLink} component={Link} to={route.path}>
+                    <ListItem sx={styles.AppListItem} key={route.name}>
+                      <Link style={styles.routerLink} to={route.path}>
                         <Tooltip title={'Navigate to ' + route.name} arrow>
                           <Button
                             onClick={() => this.currentlySelected(i)}
                             variant={this.state.currentlySelected === i ? 'contained' : 'outlined'}
                             color="secondary"
-                            className={classes.routerButton}
+                            sx={styles.routerButton}
                           >
                             {route.name}
                           </Button>
                         </Tooltip>
-                      </LinkStyle>
+                      </Link>
                     </ListItem>
                   ))}
                 </List>
@@ -279,7 +274,7 @@ export class App extends React.Component {
             <Footer />
           </Grid>
           {this.state.proud ?
-            <footer className={classes.footerRoot} /> :
+            <footer style={styles.footerRoot} /> :
             null}
         </ThemeProvider>
       </StyledEngineProvider>
@@ -287,8 +282,5 @@ export class App extends React.Component {
   }
 }
 
-App.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
-export default withStyles(styles)(App);
+export default App;

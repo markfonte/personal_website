@@ -4,10 +4,8 @@ import reactLogo from '../static/logos/react_logo.svg';
 import universityOfMichiganLogoSmall
   from '../static/logos/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
-import {Typography, Link, Tooltip, Button} from '@mui/material';
+import { Typography, Link, Tooltip, Button } from '@mui/material';
 import timestamp from '../CommitTimestamp.js';
-import {withStyles} from '@mui/styles';
-import PropTypes from 'prop-types';
 import facebookLogo from '../static/logos/facebook_logo.svg';
 import stackOverflowLogo from '../static/logos/stack_overflow_logo.svg';
 import githubLogo from '../static/logos/github_logo.svg';
@@ -114,22 +112,10 @@ const buttons = [
   },
 ];
 
-const DisplayError = (props) => {
-  return (
-    <Typography variant="h6" className={props.classes.errorMessageRoot} >
-      Oops! Looks like my server is down. Some features may be degraded. Don&#39;t worry - I&#39;ve been notified! 🔨
-    </Typography>
-  );
-};
-
-DisplayError.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
 class Footer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {apiResponse: false, serverCrashed: false};
+    this.state = { apiResponse: false, serverCrashed: false };
     this.checkForAPIHeartbeat = this.checkForAPIHeartbeat.bind(this);
   }
 
@@ -137,35 +123,35 @@ class Footer extends React.Component {
 
   checkForAPIHeartbeat() {
     const apiUrl = process.env.REACT_APP_API_URL + 'api_heartbeat';
-    fetch(apiUrl, {method: 'HEAD', signal: this.abortController.signal})
-        .then((res) => {
-          if (res.status === 200) {
-            let triggerReload = false;
-            if (this.state.serverCrashed === true) {
-              triggerReload = true; // back online! reload the page
-            }
-            this.setState({apiResponse: true, serverCrashed: false});
-            if (triggerReload === true) window.location.reload();
-          } else this.setState({apiResponse: false, serverCrashed: true});
-        })
-        .catch((err) => {
-          if (err.name === 'AbortError' || err.name === 'TypeError') {
-            return;
+    fetch(apiUrl, { method: 'HEAD', signal: this.abortController.signal })
+      .then((res) => {
+        if (res.status === 200) {
+          let triggerReload = false;
+          if (this.state.serverCrashed === true) {
+            triggerReload = true; // back online! reload the page
           }
-          this.setState({apiResponse: false, serverCrashed: true});
-          console.log(err);
-        });
+          this.setState({ apiResponse: true, serverCrashed: false });
+          if (triggerReload === true) window.location.reload();
+        } else this.setState({ apiResponse: false, serverCrashed: true });
+      })
+      .catch((err) => {
+        if (err.name === 'AbortError' || err.name === 'TypeError') {
+          return;
+        }
+        this.setState({ apiResponse: false, serverCrashed: true });
+        console.log(err);
+      });
   }
 
   componentDidMount() {
     this.checkForAPIHeartbeat();
     const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
     setInterval(
-        function() {
-          this.checkForAPIHeartbeat();
-        }.bind(this),
-        timeoutInterval
-        , 1000);
+      function () {
+        this.checkForAPIHeartbeat();
+      }.bind(this),
+      timeoutInterval
+      , 1000);
   }
 
   componentWillUnmount() {
@@ -174,12 +160,10 @@ class Footer extends React.Component {
   }
 
   render() {
-    const {classes} = this.props;
-
     return (
       <footer>
-        <div className={classes.footerContainer}>
-          <div className={classes.iconBar}>
+        <div style={styles.footerContainer}>
+          <div style={styles.iconBar}>
             {buttons.map((button) => (
               <Tooltip
                 key={button.name}
@@ -188,7 +172,7 @@ class Footer extends React.Component {
                 <Button href={button.link}>
                   <img
                     src={button.logo}
-                    className={classes.buttons}
+                    style={styles.buttons}
                     alt={button.name + ' button'}
                   />
                 </Button>
@@ -197,10 +181,12 @@ class Footer extends React.Component {
           </div>
           <div>
             {this.state.apiResponse ?
-              <img src={reactLogo} className={classes.reactLogo} alt="React logo" /> :
-              <DisplayError classes={classes} />}
+              <img src={reactLogo} style={styles.reactLogo} alt="React logo" /> :
+              <Typography variant="h6">
+                Oops! Looks like my server is down. Some features may be degraded. Don&#39;t worry - I&#39;ve been notified! 🔨
+              </Typography>}
           </div>
-          <div style={{margin: 4}}>
+          <div style={{ margin: 4 }}>
             <Typography variant="caption" color="textSecondary" >
               Last updated
               {' '}
@@ -216,7 +202,7 @@ class Footer extends React.Component {
               </Tooltip>
             </Typography>
           </div>
-          <div style={{margin: 4}}>
+          <div style={{ margin: 4 }}>
             <Tooltip
               arrow
               placement="right"
@@ -230,7 +216,7 @@ class Footer extends React.Component {
               </Link>
             </Tooltip>
           </div>
-          <div style={{margin: 4}}>
+          <div style={{ margin: 4 }}>
             <Tooltip
               arrow
               placement="right"
@@ -254,7 +240,7 @@ class Footer extends React.Component {
                 src={universityOfMichiganLogoSmall}
                 width="25"
                 height="25"
-                className={classes.logoDefault}
+                style={styles.logoDefault}
                 alt="University of Michigan logo small"
               />
             </Tooltip>
@@ -265,8 +251,4 @@ class Footer extends React.Component {
   }
 }
 
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Footer);
+export default Footer;

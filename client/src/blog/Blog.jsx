@@ -16,7 +16,6 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
 import ShareIcon from '@mui/icons-material/Share';
-import { withStyles } from '@mui/styles';
 import PropTypes from 'prop-types';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -242,8 +241,6 @@ class Blog extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
-
     return (
       <div>
         <Snackbar onClose={this.handleClose} open={this.state.successDialogOpen} autoHideDuration={4000}>
@@ -251,7 +248,7 @@ class Blog extends React.Component {
             Link copied to clipboard!
           </Alert>
         </Snackbar>
-        <Typography className={classes.title} variant="h6" paragraph>
+        <Typography sx={styles.title} variant="h6" paragraph>
           Welcome! Here are some of my thoughts on issues that I find important.<br />Disagreements and discussions are highly encouraged 😊
         </Typography>
         {posts.map((post) => (
@@ -274,7 +271,7 @@ class Blog extends React.Component {
                   {post.postNumber} Post
                 </a>
                 <div
-                  className={classes.expansionHeaderContainer}>
+                  style={styles.expansionHeaderContainer}>
                   <CardHeader
                     className="card-header"
                     title={post.title}
@@ -287,10 +284,10 @@ class Blog extends React.Component {
                 </div>
               </AccordionSummary>
               <AccordionDetails>
-                <CardContent className={classes.cardContent}>
+                <CardContent sx={styles.cardContent}>
                   {post.disclaimer ?
                     <Typography variant="caption" color="textSecondary" paragraph>
-                      {'*Disclaimer: ' + post.disclaimer + '*'}
+                      {'* Disclaimer: ' + post.disclaimer + ' *'}
                     </Typography> :
                     ''}
 
@@ -323,8 +320,4 @@ class Blog extends React.Component {
   }
 }
 
-Blog.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Blog);
+export default Blog;

@@ -9,8 +9,6 @@ import youtubeLogo from '../static/logos/youtube_logo.svg';
 import youtubeMusicLogo from '../static/logos/youtube_music_logo.svg';
 import facebookLogo from '../static/logos/facebook_logo.svg';
 import instagramLogo from '../static/logos/instagram_logo.svg';
-import {withStyles} from '@mui/styles';
-import PropTypes from 'prop-types';
 
 import {
   Card,
@@ -39,15 +37,15 @@ const facebookLink = `https://www.facebook.com/gimbleacappella/`;
 const instagramLink = `https://www.instagram.com/gimbleacappella/`;
 
 const links = [
-  {name: 'Gimble A Cappella on Apple Music', image: appleMusicLogo, link: appleMusicLink},
-  {name: 'Gimble A Cappella on Facebook', image: facebookLogo, link: facebookLink},
-  {name: 'Gimble A Cappella on Spotify', image: spotifyLogo, link: spotifyLink},
-  {name: 'Gimble A Cappella on Google Play Music', image: googlePlayMusicLogo, link: googlePlayMusicLink},
-  {name: 'Gimble A Cappella on SoundCloud', image: soundcloudLogo, link: soundcloudLink},
-  {name: 'Gimble A Cappella on YouTube', image: youtubeLogo, link: youtubeLink},
-  {name: 'Gimble A Cappella on YouTube Music', image: youtubeMusicLogo, link: youtubeMusicLink},
-  {name: 'Gimble A Cappella on Instagram', image: instagramLogo, link: instagramLink},
-  {name: 'Gimble A Cappella on Amazon Music', image: amazonMusicLogo, link: amazonMusicLink},
+  { name: 'Gimble A Cappella on Apple Music', image: appleMusicLogo, link: appleMusicLink },
+  { name: 'Gimble A Cappella on Facebook', image: facebookLogo, link: facebookLink },
+  { name: 'Gimble A Cappella on Spotify', image: spotifyLogo, link: spotifyLink },
+  { name: 'Gimble A Cappella on Google Play Music', image: googlePlayMusicLogo, link: googlePlayMusicLink },
+  { name: 'Gimble A Cappella on SoundCloud', image: soundcloudLogo, link: soundcloudLink },
+  { name: 'Gimble A Cappella on YouTube', image: youtubeLogo, link: youtubeLink },
+  { name: 'Gimble A Cappella on YouTube Music', image: youtubeMusicLogo, link: youtubeMusicLink },
+  { name: 'Gimble A Cappella on Instagram', image: instagramLogo, link: instagramLink },
+  { name: 'Gimble A Cappella on Amazon Music', image: amazonMusicLogo, link: amazonMusicLink },
 ];
 
 const spotifySingles = [
@@ -135,104 +133,93 @@ const styles = {
   },
 };
 
-class GimbleCard extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Card raised={true} className="large-card">
-        <Accordion
-          TransitionProps={{unmountOnExit: true}}>
-          <AccordionSummary
-            aria-label="Gimble"
-            aria-controls="gimble-content"
-            id="gimble-header"
-            expandIcon={
-              <Tooltip
-                title="Expand/collapse card"
-                arrow>
-                <IconButton size="large">
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            }>
-            <a name="gimble_card" href="#gimble_card" className="gone">
-              Gimble Card
-            </a>
-            <div
-              className={classes.expansionHeaderContainer}>
-              <CardHeader
-                className="card-header"
-                title="Gimble A Cappella"
-                subheader={`My college acappella group!`}
-              />
-              <CardMedia
-                className={classes.gimbleCardMedia}
-                image="/media/gimble_group_pic.webp"
-                title="Gimble group pic"
-                component="img"
-              />
-            </div>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CardContent>
-              {spotifyAlbums.map((spotifyAlbum) => (
-                <iframe
-                  className={classes.spotifyAlbum}
-                  src={spotifyAlbum.src}
-                  title={spotifyAlbum.title}
-                  key={spotifyAlbum.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              ))}
-              <br />
-              {spotifySingles.map((spotifySingle) => (
-                <iframe
-                  className={classes.spotifySingle}
-                  src={spotifySingle.src}
-                  title={spotifySingle.title}
-                  key={spotifySingle.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              ))}
-              <br />
-            </CardContent>
-          </AccordionDetails>
-        </Accordion>
-        <CardActions className={classes.cardActions}>
-          <Tooltip
-            title="Go to Gimble A Cappella's website"
-            arrow>
-            <IconButton aria-label="Go to website" href={websiteLink} size="large">
-              <WebIcon />
-            </IconButton>
-          </Tooltip>
-          {links.map((link) => (
+export default function GimbleCard() {
+  return (
+    <Card raised={true} className="large-card">
+      <Accordion
+        TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          aria-label="Gimble"
+          aria-controls="gimble-content"
+          id="gimble-header"
+          expandIcon={
             <Tooltip
-              title={'Go to ' + link.name}
-              key={link.name}
+              title="Expand/collapse card"
               arrow>
-              <IconButton aria-label={link.name} href={link.link} size="large">
-                <img
-                  src={link.image}
-                  className={classes.gimbleCardActionIcon}
-                  alt={link.name + ' button'}
-                />
+              <IconButton size="large">
+                <ExpandMoreIcon />
               </IconButton>
             </Tooltip>
-          ))}
-        </CardActions>
-      </Card>
-    );
-  }
-}
-
-GimbleCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+          }>
+          <a name="gimble_card" href="#gimble_card" className="gone">
+            Gimble Card
+          </a>
+          <div style={styles.expansionHeaderContainer}>
+            <CardHeader
+              className="card-header"
+              title="Gimble A Cappella"
+              subheader={`My college acappella group!`}
+            />
+            <CardMedia
+              sx={styles.gimbleCardMedia}
+              image="/media/gimble_group_pic.webp"
+              title="Gimble group pic"
+              component="img"
+            />
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CardContent>
+            {spotifyAlbums.map((spotifyAlbum) => (
+              <iframe
+                style={styles.spotifyAlbum}
+                src={spotifyAlbum.src}
+                title={spotifyAlbum.title}
+                key={spotifyAlbum.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ))}
+            <br />
+            {spotifySingles.map((spotifySingle) => (
+              <iframe
+                style={styles.spotifySingle}
+                src={spotifySingle.src}
+                title={spotifySingle.title}
+                key={spotifySingle.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ))}
+            <br />
+          </CardContent>
+        </AccordionDetails>
+      </Accordion>
+      <CardActions sx={styles.cardActions}>
+        <Tooltip
+          title="Go to Gimble A Cappella's website"
+          arrow>
+          <IconButton aria-label="Go to website" href={websiteLink} size="large">
+            <WebIcon />
+          </IconButton>
+        </Tooltip>
+        {links.map((link) => (
+          <Tooltip
+            title={'Go to ' + link.name}
+            key={link.name}
+            arrow>
+            <IconButton aria-label={link.name} href={link.link} size="large">
+              <img
+                src={link.image}
+                style={styles.gimbleCardActionIcon}
+                alt={link.name + ' button'}
+              />
+            </IconButton>
+          </Tooltip>
+        ))}
+      </CardActions>
+    </Card>
+  );
 };
-
-export default withStyles(styles)(GimbleCard);

@@ -16,9 +16,6 @@ import {
 import WebIcon from '@mui/icons-material/Web';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import PropTypes from 'prop-types';
-import {withStyles} from '@mui/styles';
-
 import sammyArticle1
   from '../static/photos/sammy_article_1.webp';
 import sammyArticle2
@@ -106,83 +103,73 @@ const styles = {
   },
 };
 
-class SammyCard extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Card raised={true} className="large-card">
-        <Accordion
-          TransitionProps={{unmountOnExit: true}}>
-          <AccordionSummary
-            aria-label="Sammy"
-            aria-controls="sammy-content"
-            id="sammy-header"
-            expandIcon={
-              <Tooltip
-                title="Expand/collapse card"
-                arrow>
-                <IconButton size="large">
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            }>
-            <a name="sammy_card" href="#sammy_card" className="gone">
-              Sammy Card
-            </a>
-            <div className={classes.expansionHeaderContainer}>
-              <CardHeader
-                className="card-header"
-                title="Sammy Fonte's Articles"
-                subheader="Check out my brother's work!" />
-              <CardMedia
-                className={classes.michiganDailyBanner}
-                image="/media/michigan_daily_logo.png"
-                title="Michigan Daily banner"
-                alt="Michigan Daily banner"
-                component="img"
-              />
+export default function SammyCard() {
+  return (
+    <Card raised={true} className="large-card">
+      <Accordion
+        TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          aria-label="Sammy"
+          aria-controls="sammy-content"
+          id="sammy-header"
+          expandIcon={
+            <Tooltip
+              title="Expand/collapse card"
+              arrow>
+              <IconButton size="large">
+                <ExpandMoreIcon />
+              </IconButton>
+            </Tooltip>
+          }>
+          <a name="sammy_card" href="#sammy_card" className="gone">
+            Sammy Card
+          </a>
+          <div style={styles.expansionHeaderContainer}>
+            <CardHeader
+              className="card-header"
+              title="Sammy Fonte's Articles"
+              subheader="Check out my brother's work!" />
+            <CardMedia
+              sx={styles.michiganDailyBanner}
+              image="/media/michigan_daily_logo.png"
+              title="Michigan Daily banner"
+              alt="Michigan Daily banner"
+              component="img"
+            />
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CardContent style={{ padding: 0 }}>
+            <div style={styles.articles}>
+              {articles.map((article) => (
+                <div key={article.id} style={styles.article}>
+                  <img src={article.cover} style={styles.articleCover} />
+                  <br />
+                  <Link variant="h5" href={article.link} underline="hover">
+                    {article.title}
+                  </Link>
+                  <Typography variant="subtitle1" paragraph>
+                    {'📅 ' + article.date}
+                  </Typography>
+                  <Typography variant="body1" paragraph>
+                    {article.blurb}{' '} <Link href={article.link} underline="hover">[…]</Link>
+                  </Typography>
+                  <hr />
+                </div>
+              ))}
             </div>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CardContent style={{padding: 0}}>
-              <div className={classes.articles}>
-                {articles.map((article) => (
-                  <div key={article.id} className={classes.article}>
-                    <img src={article.cover} className={classes.articleCover} />
-                    <br />
-                    <Link variant="h5" href={article.link} underline="hover">
-                      {article.title}
-                    </Link>
-                    <Typography variant="subtitle1" paragraph>
-                      {'📅 ' + article.date}
-                    </Typography>
-                    <Typography variant="body1" paragraph>
-                      {article.blurb}{' '} <Link href={article.link} underline="hover">[…]</Link>
-                    </Typography>
-                    <hr />
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </AccordionDetails>
-        </Accordion>
-        <CardActions className={classes.cardActions}>
-          <Tooltip
-            title="Check out Sammy's Michigan Daily articles"
-            arrow>
-            <IconButton aria-label="Go to website" href="https://www.michigandaily.com/author/sfonteumich-edu/" size="large">
-              <WebIcon />
-            </IconButton>
-          </Tooltip>
-        </CardActions>
-      </Card>
-    );
-  }
-}
-
-SammyCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+          </CardContent>
+        </AccordionDetails>
+      </Accordion>
+      <CardActions sx={styles.cardActions}>
+        <Tooltip
+          title="Check out Sammy's Michigan Daily articles"
+          arrow>
+          <IconButton aria-label="Go to website" href="https://www.michigandaily.com/author/sfonteumich-edu/" size="large">
+            <WebIcon />
+          </IconButton>
+        </Tooltip>
+      </CardActions>
+    </Card>
+  );
 };
-
-export default withStyles(styles)(SammyCard);

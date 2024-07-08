@@ -1,13 +1,11 @@
-import React, {lazy, Suspense} from 'react';
-import PropTypes from 'prop-types';
+import React, { lazy, Suspense, useEffect } from 'react';
 const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
 const TicTacToeCard = lazy(() => import('./TicTacToeCard.jsx'));
 const GimbleCard = lazy(() => import('./GimbleCard.jsx'));
 const TechStackCard = lazy(() => import('./TechStackCard.jsx'));
 const WelcomeCard = lazy(() => import('./WelcomeCard.jsx'));
 const SammyCard = lazy(() => import('./SammyCard.jsx'));
-import {Typography, Link, CircularProgress} from '@mui/material';
-import {withStyles} from '@mui/styles';
+import { Typography, Link, CircularProgress } from '@mui/material';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 
@@ -52,74 +50,64 @@ const styles = {
   },
 };
 
-class Home extends React.Component {
-  componentDidMount() {
+export default function Home() {
+  useEffect(() => {
     document.title = 'Home | Mark Fonte';
-  }
+  }, []);
 
-  render() {
-    const {classes} = this.props;
+  return (
+    <div>
+      <Typography sx={styles.title} variant="h6">
+        Senior software engineer at {' '}
+        <Link href={teslaLink} className={teslaColor} underline="hover">
+          Tesla
+        </Link>
+        {' '}· Former software lead at{' '}
 
-    return (
-      <div>
-        <Typography className={classes.title} variant="h6">
-          Senior software engineer at {' '}
-          <Link href={teslaLink} className={teslaColor} underline="hover">
-            Tesla
-          </Link>
-          {' '}· Former software lead at{' '}
+        <Link href={justlightLink} className={justlightColor} underline="hover">
+          JustLight
+        </Link>
 
-          <Link href={justlightLink} className={justlightColor} underline="hover">
-            JustLight
-          </Link>
+        {' '}· Former software engineer at{' '}
+        <Link href={awsLink} className={amazonColor} underline="hover">
+          Amazon Web Services
+        </Link>
+        {' '}· computer science in engineering degree from{' '}
 
-          {' '}· Former software engineer at{' '}
-          <Link href={awsLink} className={amazonColor} underline="hover">
-            Amazon Web Services
-          </Link>
-          {' '}· computer science in engineering degree from{' '}
+        <Link href={umichLink} className={michiganColor} underline="hover">
+          University of Michigan
+        </Link>
 
-          <Link href={umichLink} className={michiganColor} underline="hover">
-            University of Michigan
-          </Link>
+        {' '}· Minor in{' '}
 
-          {' '}· Minor in{' '}
+        <Link color="textSecondary" href={entrepreneurshipLink} underline="hover">
+          entrepreneurship
+        </Link>
 
-          <Link color="textSecondary" href={entrepreneurshipLink} underline="hover">
-            entrepreneurship
-          </Link>
+        {' '}·{' '}
 
-          {' '}·{' '}
+        <Link href={webDevLink} className={webColor} underline="hover">
+          Web
+        </Link>{' '}
 
-          <Link href={webDevLink} className={webColor} underline="hover">
-            Web
-          </Link>{' '}
+        &amp;{' '}
 
-          &amp;{' '}
+        <Link href={androidDevLink} className={androidColor} underline="hover">
+          Android
+        </Link>
 
-          <Link href={androidDevLink} className={androidColor} underline="hover">
-            Android
-          </Link>
-
-          {' '}dev
-        </Typography>
-        <Suspense fallback={renderLoader()}>
-          <div className={classes.twoColumnContainer}>
-            <WelcomeCard />
-            <GimbleCard />
-            <SammyCard />
-            <TechStackCard />
-          </div>
-          <TicTacToeCard />
-          <InteractionCard pagename="home" />
-        </Suspense>
-      </div>
-    );
-  }
-}
-
-Home.propTypes = {
-  classes: PropTypes.object.isRequired,
+        {' '}dev
+      </Typography>
+      <Suspense fallback={renderLoader()}>
+        <div style={styles.twoColumnContainer}>
+          <WelcomeCard />
+          <GimbleCard />
+          <SammyCard />
+          <TechStackCard />
+        </div>
+        <TicTacToeCard />
+        <InteractionCard pagename="home" />
+      </Suspense>
+    </div>
+  );
 };
-
-export default withStyles(styles)(Home);

@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {withStyles} from '@mui/styles';
 import TicTacToeSquare from './TicTacToeSquare.jsx';
-
-const styles = {};
 
 class TicTacToeBoard extends React.Component {
   renderSquare(i) {
@@ -44,4 +41,4 @@ TicTacToeBoard.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-export default withStyles(styles)(TicTacToeBoard);
+export default TicTacToeBoard;
