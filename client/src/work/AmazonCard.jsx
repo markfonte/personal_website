@@ -13,10 +13,8 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
-import withStyles from '@mui/styles/withStyles';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import PropTypes from 'prop-types';
 
 import amazonScreenshotOne
   from '../static/screenshots/amazon_screenshot_1.webp';

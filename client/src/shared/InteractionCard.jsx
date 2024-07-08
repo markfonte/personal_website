@@ -15,9 +15,7 @@ const styles = {
 
 const InteractionCard = ({ pagename }) => {
   return (
-    <div style={styles.root
-
-    }>
+    <div style={styles.root}>
       <Card raised={true}>
         <a name="interaction_card" href="#interaction_card" className="gone">
           Interaction Card

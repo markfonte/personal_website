@@ -13,10 +13,8 @@ import {
   Chip,
   IconButton,
 } from '@mui/material';
-import withStyles from '@mui/styles/withStyles';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import PropTypes from 'prop-types';
 
 const universityOfMichiganLink = `https://umich.edu/`;
 const courses = [
@@ -164,107 +162,97 @@ const styles = {
   },
 };
 
-class CompletedCourseworkCard extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Card raised={true} className="large-card">
-        <Accordion
-          TransitionProps={{unmountOnExit: true}}>
-          <AccordionSummary
-            aria-label="Michigan"
-            aria-controls="michigan-content"
-            id="michigan-header"
-            expandIcon={
-              <Tooltip
-                title="Expand/collapse card"
-                arrow>
-                <IconButton size="large">
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            }>
-            <a name="completed_coursework_card" href="#completed_coursework_card" className="gone">
-              Completed Coursework Card
-            </a>
-            <div className={classes.expansionHeaderContainer}>
-              <CardHeader
-                className="card-header"
-                title="University of Michigan"
-                subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
+export default function CompletedCourseworkCard() {
+  return (
+    <Card raised={true} className="large-card">
+      <Accordion
+        TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          aria-label="Michigan"
+          aria-controls="michigan-content"
+          id="michigan-header"
+          expandIcon={
+            <Tooltip
+              title="Expand/collapse card"
+              arrow>
+              <IconButton size="large">
+                <ExpandMoreIcon />
+              </IconButton>
+            </Tooltip>
+          }>
+          <a name="completed_coursework_card" href="#completed_coursework_card" className="gone">
+            Completed Coursework Card
+          </a>
+          <div style={styles.expansionHeaderContainer}>
+            <CardHeader
+              className="card-header"
+              title="University of Michigan"
+              subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
             and a minor in Entrepreneurship"
-              />
-              <CardMedia
-                className={classes.universityOfMichiganLogo}
-                image="media/university_of_michigan_logo.svg"
-                title="University of Michigan banner logo"
-                alt="University of Michigan banner logo"
-                component="img"
-              />
-              <div>
-                {tags.map((tag) => (
-                  <Chip
-                    className={classes.tags}
-                    key={tag.label}
-                    icon={tag.icon ? tag.icon : <div />}
-                    label={tag.label}
-                    variant={tag.variant ? tag.variant : 'outlined'}
-                    color={tag.color ? tag.color : 'secondary'}
-                    clickable />
-                ))}
-              </div>
+            />
+            <CardMedia
+              sx={styles.universityOfMichiganLogo}
+              image="media/university_of_michigan_logo.svg"
+              title="University of Michigan banner logo"
+              alt="University of Michigan banner logo"
+              component="img"
+            />
+            <div>
+              {tags.map((tag) => (
+                <Chip
+                  sx={styles.tags}
+                  key={tag.label}
+                  icon={tag.icon ? tag.icon : <div />}
+                  label={tag.label}
+                  variant={tag.variant ? tag.variant : 'outlined'}
+                  color={tag.color ? tag.color : 'secondary'}
+                  clickable />
+              ))}
             </div>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CardContent className={classes.cardContent}>
-              <Link
-                color="textPrimary"
-                href={universityOfMichiganLink}
-                gutterBottom
-                variant="h5"
-              >
-                Completed coursework:
-              </Link>
-              <Typography variant="subtitle1">
-                {courses.map((course) => (
-                  <Tooltip
-                    arrow
-                    title="View course profile on Atlas"
-                    key={course.name}>
-                    <Link
-                      gutterBottom
-                      variant="subtitle1"
-                      color="textPrimary"
-                      href={course.link}
-                      display={'block'}
-                    >
-                      <Typography color="secondary" variant="h6" display={'inline'}>
-                        {course.subject}
-                      </Typography>
-                      :
-                      <Typography color="textSecondary" display={'inline'}>
-                        <i>
-                          {' ' + course.name}
-                        </i>
-                      </Typography>
-                    </Link>
-                  </Tooltip>
-                ))}
-              </Typography>
-              <Typography variant="caption" color="textSecondary" gutterBottom>
-                note: this is only the most relevant coursework, not an exhaustive list
-              </Typography>
-            </CardContent>
-          </AccordionDetails>
-        </Accordion>
-      </Card>
-    );
-  }
-}
-
-CompletedCourseworkCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CardContent sx={styles.cardContent}>
+            <Link
+              color="textPrimary"
+              href={universityOfMichiganLink}
+              gutterBottom
+              variant="h5"
+            >
+              Completed coursework:
+            </Link>
+            <Typography variant="subtitle1">
+              {courses.map((course) => (
+                <Tooltip
+                  arrow
+                  title="View course profile on Atlas"
+                  key={course.name}>
+                  <Link
+                    gutterBottom
+                    variant="subtitle1"
+                    color="textPrimary"
+                    href={course.link}
+                    display={'block'}
+                  >
+                    <Typography color="secondary" variant="h6" display={'inline'}>
+                      {course.subject}
+                    </Typography>
+                    :
+                    <Typography color="textSecondary" display={'inline'}>
+                      <i>
+                        {' ' + course.name}
+                      </i>
+                    </Typography>
+                  </Link>
+                </Tooltip>
+              ))}
+            </Typography>
+            <Typography variant="caption" color="textSecondary" gutterBottom>
+              note: this is only the most relevant coursework, not an exhaustive list
+            </Typography>
+          </CardContent>
+        </AccordionDetails>
+      </Accordion>
+    </Card>
+  );
 };
-
-export default withStyles(styles)(CompletedCourseworkCard);

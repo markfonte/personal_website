@@ -9,7 +9,6 @@ import githubLogo from '../static/logos/github_logo.svg';
 import trelloLogo from '../static/logos/trello_logo.svg';
 import jestLogo from '../static/logos/jest_logo.svg';
 import sqliteLogo from '../static/logos/sqlite_logo.svg';
-import PropTypes from 'prop-types';
 
 import {
   Card,

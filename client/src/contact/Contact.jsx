@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Typography, Tooltip, Chip, Avatar } from '@mui/material';
-import PropTypes from 'prop-types';
 import contactCoverPhoto from '../static/photos/contact_cover_photo.png';
 import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
@@ -42,7 +41,7 @@ export default function Contact() {
         Let&#39;s get in touch!
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
-        My door is always open! And so is my Venmo... so feel free to pass along a few (hundred) of your hard-earned bucks 🤪
+        My inbox is always open! And so is my Venmo... so feel free to pass along a few (hundred) of your hard-earned bucks 🤪
       </Typography>
       <div>
         <Tooltip

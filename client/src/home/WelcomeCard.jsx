@@ -20,7 +20,6 @@ import welcomeImageFour from '../static/photos/welcome_photo_4.jpg';
 import welcomeImageFive from '../static/photos/welcome_photo_5.jpg';
 import welcomeImageSix from '../static/photos/welcome_photo_6.jpg';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import PropTypes from 'prop-types';
 
 const getCookie = require('../shared/util/Cookies.js').getCookie;
 

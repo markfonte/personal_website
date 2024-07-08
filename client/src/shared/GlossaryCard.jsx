@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import androidLogo from '../static/logos/android_logo.svg';
 import firebaseLogo from '../static/logos/firebase_logo.svg';
 import javaLogo from '../static/logos/java_logo.svg';

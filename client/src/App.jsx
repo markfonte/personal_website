@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import PropTypes from 'prop-types';
 import profilePicture
   from './static/photos/mark_circle.svg';
 import Work from './work/Work.jsx';

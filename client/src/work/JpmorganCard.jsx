@@ -19,10 +19,8 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
-import withStyles from '@mui/styles/withStyles';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import PropTypes from 'prop-types';
 
 const jpmorganLink = `https://www.jpmorganchase.com/`;
 const paymentNetLink = `https://m.jpmorgan.com/`;
@@ -93,182 +91,172 @@ const styles = {
   },
 };
 
-class JPMorganCard extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Card
-        raised={true}
-        className="large-card">
-        <Accordion
-          TransitionProps={{unmountOnExit: true}}>
-          <AccordionSummary
-            aria-label="JPMorgan"
-            aria-controls="jpmorgan-content"
-            id="jpmorgan-header"
-            expandIcon={
-              <Tooltip
-                title="Expand/collapse card"
-                arrow>
-                <IconButton size="large">
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            }>
-            <a name="jpmorgan_card" href="#jpmorgan_card" className="gone">
-              J.P. Morgan Card
-            </a>
-            <div className={classes.expansionHeaderContainer}>
-              <CardHeader
-                className="card-header"
-                title="J.P. Morgan Chase"
-                subheader="Software Engineering Intern"
-              />
-              <CardMedia
-                className={classes.jpMorganLogo}
-                image="/media/jpmorgan_logo.svg"
-                title="J.P. Morgan Chase logo"
-                alt="J.P. Morgan Chase logo"
-                component="img"
-              />
-              <div>
-                {tags.map((tag) => (
-                  <Chip
-                    className={classes.tags}
-                    key={tag.label}
-                    icon={tag.icon ? tag.icon : <div />}
-                    label={tag.label}
-                    variant={tag.variant ? tag.variant : 'outlined'}
-                    color={tag.color ? tag.color : 'secondary'}
-                    clickable />
-                ))}
-              </div>
+export default function JPMorganCard() {
+  return (
+    <Card
+      raised={true}
+      className="large-card">
+      <Accordion
+        TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          aria-label="JPMorgan"
+          aria-controls="jpmorgan-content"
+          id="jpmorgan-header"
+          expandIcon={
+            <Tooltip
+              title="Expand/collapse card"
+              arrow>
+              <IconButton size="large">
+                <ExpandMoreIcon />
+              </IconButton>
+            </Tooltip>
+          }>
+          <a name="jpmorgan_card" href="#jpmorgan_card" className="gone">
+            J.P. Morgan Card
+          </a>
+          <div style={styles.expansionHeaderContainer}>
+            <CardHeader
+              className="card-header"
+              title="J.P. Morgan Chase"
+              subheader="Software Engineering Intern"
+            />
+            <CardMedia
+              sx={styles.jpMorganLogo}
+              image="/media/jpmorgan_logo.svg"
+              title="J.P. Morgan Chase logo"
+              alt="J.P. Morgan Chase logo"
+              component="img"
+            />
+            <div>
+              {tags.map((tag) => (
+                <Chip
+                  sx={styles.tags}
+                  key={tag.label}
+                  icon={tag.icon ? tag.icon : <div />}
+                  label={tag.label}
+                  variant={tag.variant ? tag.variant : 'outlined'}
+                  color={tag.color ? tag.color : 'secondary'}
+                  clickable />
+              ))}
             </div>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CardContent>
-              <Typography variant="h5" gutterBottom>
-                Summer 2019
-              </Typography>
-              <Typography variant="body1" paragraph>
-                I worked at
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CardContent>
+            <Typography variant="h5" gutterBottom>
+              Summer 2019
+            </Typography>
+            <Typography variant="body1" paragraph>
+              I worked at
 
-                {' '}
-                <Link color="secondary" href={jpmorganLink}>
-                  J.P. Morgan Chase
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={jpmorganLink}>
+                J.P. Morgan Chase
+              </Link>
+              {' '}
 
-                throughout Summer 2019 on a mobile application for J.P. Morgan corporate
-                cardholders (for example, Amazon employees who have been given a Chase credit card to use on
-                business trips). The application, called
+              throughout Summer 2019 on a mobile application for J.P. Morgan corporate
+              cardholders (for example, Amazon employees who have been given a Chase credit card to use on
+              business trips). The application, called
 
-                {' '}
-                <Link color="secondary" href={paymentNetLink}>
-                  PaymentNet® Mobile
-                </Link>
+              {' '}
+              <Link color="secondary" href={paymentNetLink}>
+                PaymentNet® Mobile
+              </Link>
 
-                , is a mobile webview for these
-                corporate clients to track their payment history, enter receipts, and perform other necessary
-                cardholder functions. Built in
+              , is a mobile webview for these
+              corporate clients to track their payment history, enter receipts, and perform other necessary
+              cardholder functions. Built in
 
-                {' '}
-                <Link color="secondary" href={reactLink}>
-                  React
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={reactLink}>
+                React
+              </Link>
+              {' '}
 
-                and
+              and
 
-                {' '}
-                <Link color="secondary" href={springBootLink}>
-                  Java Spring Boot
-                </Link>
+              {' '}
+              <Link color="secondary" href={springBootLink}>
+                Java Spring Boot
+              </Link>
 
-                , there was no <i>native</i> mobile application
-                for PaymentNet®, and they asked us to make a proof of concept for one using
+              , there was no <i>native</i> mobile application
+              for PaymentNet®, and they asked us to make a proof of concept for one using
 
-                {' '}
-                <Link color="secondary" href={reactNativeLink}>
-                  React Native
-                </Link>
+              {' '}
+              <Link color="secondary" href={reactNativeLink}>
+                React Native
+              </Link>
 
-                .
-                <br /><br />
-                After working in React Native for the first half of the summer, I moved my focus to refactoring and
-                cleaning up the React webview. There was lots of legacy code, spaghetti code and a strong
-                dependency on
+              .
+              <br /><br />
+              After working in React Native for the first half of the summer, I moved my focus to refactoring and
+              cleaning up the React webview. There was lots of legacy code, spaghetti code and a strong
+              dependency on
 
-                {' '}
-                <Link color="secondary" href={bootstrapLink}>
-                  Bootstrap
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={bootstrapLink}>
+                Bootstrap
+              </Link>
+              {' '}
 
-                and
+              and
 
-                {' '}
-                <Link color="secondary" href={jqueryLink}>
-                  JQuery
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={jqueryLink}>
+                JQuery
+              </Link>
+              {' '}
 
-                . Given my previous knowledge in React, I was able to
-                refactor and reshape much of the codebase to remove the dependency on third party libraries
-                like JQuery. I replaced legacy React components with an internal J.P. Morgan adaptation of the
+              . Given my previous knowledge in React, I was able to
+              refactor and reshape much of the codebase to remove the dependency on third party libraries
+              like JQuery. I replaced legacy React components with an internal J.P. Morgan adaptation of the
 
-                {' '}
-                <Link color="secondary" href={materialUILink}>
-                  Material-UI
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={materialUILink}>
+                Material-UI
+              </Link>
+              {' '}
 
-                library. These custom components were much more responsive, reusable and accessible.
-                For example, I replaced Boostrap modal pop-ups throughout the application with J.P. Morgan-branded
-                version of
+              library. These custom components were much more responsive, reusable and accessible.
+              For example, I replaced Boostrap modal pop-ups throughout the application with J.P. Morgan-branded
+              version of
 
-                {' '}
-                <Link color="secondary" href={materialUIDialogLink}>
-                  Material-UI Dialog
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={materialUIDialogLink}>
+                Material-UI Dialog
+              </Link>
+              {' '}
 
-                pop-ups.
-                <br />
-                <picture>
-                  <source srcSet={JPMorganScreenshotOne} type="image/webp" />
-                  <source srcSet={JPMorganScreenshotOneFallback} type="image/jpg" />
-                  <img
-                    srcSet={[JPMorganScreenshotOne, JPMorganScreenshotOneFallback]}
-                    className={classes.mobileScreenshot}
-                    alt="J.P. Morgan screenshot 1"
-                  />
-                </picture>
-                <br />
-                Although this was not one of my most challenging technical experiences, I did learn a lot about
-                work cultures where there are lots of manual steps surrounding development. I believe that learning how
-                to navigate these types of situations while maintaining productivity is a crucial skill for me going
-                forward. My main takeaways from J.P. Morgan were:
-                <br /><br />
-                - Adapting to and refactoring legacy code
-                <br />
-                - Navigating corporate red tape
-                <br />
-                - Extensive work with React and React Native
-                <br />
-                - Some awesome friends!
-              </Typography>
-            </CardContent>
-          </AccordionDetails>
-        </Accordion>
-      </Card>
-    );
-  }
-}
-
-JPMorganCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+              pop-ups.
+              <br />
+              <picture>
+                <source srcSet={JPMorganScreenshotOne} type="image/webp" />
+                <source srcSet={JPMorganScreenshotOneFallback} type="image/jpg" />
+                <img
+                  srcSet={[JPMorganScreenshotOne, JPMorganScreenshotOneFallback]}
+                  style={styles.mobileScreenshot}
+                  alt="J.P. Morgan screenshot 1"
+                />
+              </picture>
+              <br />
+              Although this was not one of my most challenging technical experiences, I did learn a lot about
+              work cultures where there are lots of manual steps surrounding development. I believe that learning how
+              to navigate these types of situations while maintaining productivity is a crucial skill for me going
+              forward. My main takeaways from J.P. Morgan were:
+              <br /><br />
+              - Adapting to and refactoring legacy code
+              <br />
+              - Navigating corporate red tape
+              <br />
+              - Extensive work with React and React Native
+              <br />
+              - Some awesome friends!
+            </Typography>
+          </CardContent>
+        </AccordionDetails>
+      </Accordion>
+    </Card>
+  );
 };
-
-export default withStyles(styles)(JPMorganCard);

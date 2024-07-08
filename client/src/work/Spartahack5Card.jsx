@@ -15,10 +15,8 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
-import withStyles from '@mui/styles/withStyles';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import PropTypes from 'prop-types';
 
 import laughableLyricsScreenshotOne
   from '../static/screenshots/laughable_lyrics_screenshot_1.webp';
@@ -113,245 +111,235 @@ const styles = {
   },
 };
 
-class Spartahack5Card extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Card raised={true} className="large-card">
-        <Accordion
-          TransitionProps={{unmountOnExit: true}}>
-          <AccordionSummary
-            aria-label="SpartaHack V"
-            aria-controls="spartahack5-content"
-            id="spartahack5-header"
-            expandIcon={
-              <Tooltip
-                title="Expand/collapse card"
-                arrow>
-                <IconButton size="large">
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            }>
-            <a name="spartahack5_card" href="#spartahack5_card" className="gone">
-              SpartHack V Card
-            </a>
-            <div className={classes.expansionHeaderContainer}>
-              <CardHeader
-                className="card-header"
-                title="Laughable Lyrics"
-                subheader="Hackathon Project @ SpartaHack V"
-              />
-              <CardMedia
-                className={classes.spartahack5Banner}
-                image="/media/spartahack_banner.png"
-                title="SpartaHack V banner"
-                alt="SpartaHack V banner"
-                component="img"
-              />
-              <div>
-                {tags.map((tag) => (
-                  <Chip
-                    className={classes.tags}
-                    key={tag.label}
-                    icon={tag.icon ? tag.icon : <div />}
-                    label={tag.label}
-                    variant={tag.variant ? tag.variant : 'outlined'}
-                    color={tag.color ? tag.color : 'secondary'}
-                    clickable />
-                ))}
-              </div>
+export default function Spartahack5Card() {
+  return (
+    <Card raised={true} className="large-card">
+      <Accordion
+        TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          aria-label="SpartaHack V"
+          aria-controls="spartahack5-content"
+          id="spartahack5-header"
+          expandIcon={
+            <Tooltip
+              title="Expand/collapse card"
+              arrow>
+              <IconButton size="large">
+                <ExpandMoreIcon />
+              </IconButton>
+            </Tooltip>
+          }>
+          <a name="spartahack5_card" href="#spartahack5_card" className="gone">
+            SpartHack V Card
+          </a>
+          <div style={styles.expansionHeaderContainer}>
+            <CardHeader
+              className="card-header"
+              title="Laughable Lyrics"
+              subheader="Hackathon Project @ SpartaHack V"
+            />
+            <CardMedia
+              sx={styles.spartahack5Banner}
+              image="/media/spartahack_banner.png"
+              title="SpartaHack V banner"
+              alt="SpartaHack V banner"
+              component="img"
+            />
+            <div>
+              {tags.map((tag) => (
+                <Chip
+                  sx={styles.tags}
+                  key={tag.label}
+                  icon={tag.icon ? tag.icon : <div />}
+                  label={tag.label}
+                  variant={tag.variant ? tag.variant : 'outlined'}
+                  color={tag.color ? tag.color : 'secondary'}
+                  clickable />
+              ))}
             </div>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CardContent>
-              <Typography variant="body1" paragraph>
-                This hackathon project, <i>Laughable Lyrics</i>, is one of my favorites.
-                We took inspiration from the popular
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CardContent>
+            <Typography variant="body1" paragraph>
+              This hackathon project, <i>Laughable Lyrics</i>, is one of my favorites.
+              We took inspiration from the popular
 
-                {' '}
-                <Link color="secondary" href={googleTranslateSingsLink}>
-                  <i>&#34;Google Translate Sings&#34;</i> YouTube videos
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={googleTranslateSingsLink}>
+                <i>&#34;Google Translate Sings&#34;</i> YouTube videos
+              </Link>
+              {' '}
 
-                and realized that we could automate the process of translating
-                song lyrics to a bunch of different languages, then back to English.
-              </Typography>
-              <Typography variant="body1" paragraph>
-                As you can see in the screenshots below, users could type in the
-                name of any song, use the slider to select how many translations
-                to make before translating back to English (the more translations,
-                the wackier the result), and tap on the song they wanted to translate!
-                The results were always hilarious.
-              </Typography>
-              <Typography variant="body1" paragraph>
-                We built the
+              and realized that we could automate the process of translating
+              song lyrics to a bunch of different languages, then back to English.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              As you can see in the screenshots below, users could type in the
+              name of any song, use the slider to select how many translations
+              to make before translating back to English (the more translations,
+              the wackier the result), and tap on the song they wanted to translate!
+              The results were always hilarious.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              We built the
 
-                {' '}
-                <Link color="secondary" href={androidLink}>
-                  Android
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={androidLink}>
+                Android
+              </Link>
+              {' '}
 
-                app in
+              app in
 
-                {' '}
-                <Link color="secondary" href={kotlinLink}>
-                  Kotlin
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={kotlinLink}>
+                Kotlin
+              </Link>
+              {' '}
 
-                for <i>Laughable Lyrics</i> using
+              for <i>Laughable Lyrics</i> using
 
-                {' '}
-                <Link color="secondary" href={androidJetpackLink}>
-                  Android Jetpack
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={androidJetpackLink}>
+                Android Jetpack
+              </Link>
+              {' '}
 
-                for architecture components, view models, and much more.
-                Images in the search results were loaded using the
+              for architecture components, view models, and much more.
+              Images in the search results were loaded using the
 
-                {' '}
-                <Link color="secondary" href={glideLink}>
-                  Glide
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={glideLink}>
+                Glide
+              </Link>
+              {' '}
 
-                library, and network calls were made using the
+              library, and network calls were made using the
 
-                {' '}
-                <Link color="secondary" href={volleyLink}>
-                  Volley
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={volleyLink}>
+                Volley
+              </Link>
+              {' '}
 
-                library. We used
+              library. We used
 
-                {' '}
-                <Link color="secondary" href={geniusAPILink}>
-                  Genius.com&apos;s API
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={geniusAPILink}>
+                Genius.com&apos;s API
+              </Link>
+              {' '}
 
-                to load song lyrics and the
+              to load song lyrics and the
 
-                {' '}
-                <Link color="secondary" href={translateAPILink}>
-                  Google Translate API
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={translateAPILink}>
+                Google Translate API
+              </Link>
+              {' '}
 
-                to translate them. Our API was built in
+              to translate them. Our API was built in
 
-                {' '}
-                <Link color="secondary" href={nodeLink}>
-                  NodeJS
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={nodeLink}>
+                NodeJS
+              </Link>
+              {' '}
 
-                and
+              and
 
-                {' '}
-                <Link color="secondary" href={expressLink}>
-                  Express
-                </Link>
+              {' '}
+              <Link color="secondary" href={expressLink}>
+                Express
+              </Link>
 
-                , and saves the funny translations to a
+              , and saves the funny translations to a
 
-                {' '}
-                <Link color="secondary" href={mySqlLink}>
-                  MySQL
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={mySqlLink}>
+                MySQL
+              </Link>
+              {' '}
 
-                database.
-              </Typography>
-              <Typography variant="body1" paragraph>
-                <i>Laughable Lyrics</i> was a very lighthearted app, just meant
-                for a little entertainment and a few laughs. Unfortunately, the Google
-                Translate API has some steep pricing on their usage and very small limits
-                on their free tier (causing a few demo fails, oops!).
-              </Typography>
-              <picture>
-                <source srcSet={laughableLyricsScreenshotOne} type="image/webp" />
-                <source srcSet={laughableLyricsScreenshotOneFallback} type="image/jpg" />
-                <img
-                  srcSet={[laughableLyricsScreenshotOne, laughableLyricsScreenshotOneFallback]}
-                  className={classes.mobileScreenshot}
-                  alt="Laughable Lyrics Screenshot 1"
-                />
-              </picture>
-              <picture>
-                <source srcSet={laughableLyricsScreenshotTwo} type="image/webp" />
-                <source srcSet={laughableLyricsScreenshotTwoFallback} type="image/jpg" />
-                <img
-                  srcSet={[laughableLyricsScreenshotTwo, laughableLyricsScreenshotTwoFallback]}
-                  className={classes.mobileScreenshot}
-                  alt="Laughable Lyrics Screenshot 2"
-                />
-              </picture>
-              <picture>
-                <source srcSet={laughableLyricsScreenshotThree} type="image/webp" />
-                <source srcSet={laughableLyricsScreenshotThreeFallback} type="image/jpg" />
-                <img
-                  srcSet={[laughableLyricsScreenshotThree, laughableLyricsScreenshotThreeFallback]}
-                  className={classes.mobileScreenshot}
-                  alt="Laughable Lyrics Screenshot 3"
-                />
-              </picture>
-              <Typography variant="body1" paragraph>
-                We won
-
-                {' '}
-                <Typography color="secondary" display="inline">
-                  <b><i>Most Creative/Funniest Hack</i></b>
-                </Typography>
-                {' '}
-
-                and a
-
-                {' '}
-                <Typography color="secondary" display="inline">
-                  <b><i>Top 10 finish</i></b>
-                </Typography>
-                {' '}
-
-                for the project.
-                We were never able to push it to production due to the rate limiting issue with the
-                Google Translate API.
-              </Typography>
-              <Typography variant="body1" paragraph>
-                View it on
-                {' '}
-                <Link color="secondary" href={laughableLyricsDevpostLink}>
-                  Devpost
-                </Link>
-                {' '}
-                or
-                {' '}
-                <Link color="secondary" href={laughableLyricsGithubLink}>
-                  Github
-                </Link>
-              </Typography>
+              database.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              <i>Laughable Lyrics</i> was a very lighthearted app, just meant
+              for a little entertainment and a few laughs. Unfortunately, the Google
+              Translate API has some steep pricing on their usage and very small limits
+              on their free tier (causing a few demo fails, oops!).
+            </Typography>
+            <picture>
+              <source srcSet={laughableLyricsScreenshotOne} type="image/webp" />
+              <source srcSet={laughableLyricsScreenshotOneFallback} type="image/jpg" />
               <img
-                src={laughableLyricsLogo}
-                className={classes.laughableLyricsLogo}
-                title="Laughable Lyrics logo"
-                alt="Laughable Lyrics logo"
+                srcSet={[laughableLyricsScreenshotOne, laughableLyricsScreenshotOneFallback]}
+                style={styles.mobileScreenshot}
+                alt="Laughable Lyrics Screenshot 1"
               />
-            </CardContent>
-          </AccordionDetails>
-        </Accordion>
-      </Card>
-    );
-  }
-}
+            </picture>
+            <picture>
+              <source srcSet={laughableLyricsScreenshotTwo} type="image/webp" />
+              <source srcSet={laughableLyricsScreenshotTwoFallback} type="image/jpg" />
+              <img
+                srcSet={[laughableLyricsScreenshotTwo, laughableLyricsScreenshotTwoFallback]}
+                style={styles.mobileScreenshot}
+                alt="Laughable Lyrics Screenshot 2"
+              />
+            </picture>
+            <picture>
+              <source srcSet={laughableLyricsScreenshotThree} type="image/webp" />
+              <source srcSet={laughableLyricsScreenshotThreeFallback} type="image/jpg" />
+              <img
+                srcSet={[laughableLyricsScreenshotThree, laughableLyricsScreenshotThreeFallback]}
+                style={styles.mobileScreenshot}
+                alt="Laughable Lyrics Screenshot 3"
+              />
+            </picture>
+            <Typography variant="body1" paragraph>
+              We won
 
-Spartahack5Card.propTypes = {
-  classes: PropTypes.object.isRequired,
+              {' '}
+              <Typography color="secondary" display="inline">
+                <b><i>Most Creative/Funniest Hack</i></b>
+              </Typography>
+              {' '}
+
+              and a
+
+              {' '}
+              <Typography color="secondary" display="inline">
+                <b><i>Top 10 finish</i></b>
+              </Typography>
+              {' '}
+
+              for the project.
+              We were never able to push it to production due to the rate limiting issue with the
+              Google Translate API.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              View it on
+              {' '}
+              <Link color="secondary" href={laughableLyricsDevpostLink}>
+                Devpost
+              </Link>
+              {' '}
+              or
+              {' '}
+              <Link color="secondary" href={laughableLyricsGithubLink}>
+                Github
+              </Link>
+            </Typography>
+            <img
+              src={laughableLyricsLogo}
+              style={styles.laughableLyricsLogo}
+              title="Laughable Lyrics logo"
+              alt="Laughable Lyrics logo"
+            />
+          </CardContent>
+        </AccordionDetails>
+      </Accordion>
+    </Card>
+  );
 };
-
-export default withStyles(styles)(Spartahack5Card);

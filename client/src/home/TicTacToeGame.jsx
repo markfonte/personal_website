@@ -1,7 +1,6 @@
 import React from 'react';
 import TicTacToeBoard from './TicTacToeBoard';
 import { Typography, Button, Grid, Tooltip } from '@mui/material';
-import PropTypes from 'prop-types';
 
 const styles = {
   moveList: {

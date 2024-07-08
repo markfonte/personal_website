@@ -16,7 +16,6 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
 import ShareIcon from '@mui/icons-material/Share';
-import PropTypes from 'prop-types';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
