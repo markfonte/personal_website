@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Typography, Button} from '@mui/material';
-import {withStyles} from '@mui/styles';
+import { Typography, Button } from '@mui/material';
 
 const styles = {
   square: {
@@ -19,24 +18,17 @@ const styles = {
   },
 };
 
-class TicTacToeSquare extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Button variant="outlined" className={classes.square} onClick={this.props.onClick}>
-        <Typography variant="h5" color={this.props.value === 'X' ? 'secondary' : 'primary'} >
-          {this.props.value}
-        </Typography>
-      </Button>
-    );
-  }
-}
+export default function TicTacToeSquare({ value, onClick }) {
+  return (
+    <Button variant="outlined" sx={styles.square} onClick={onClick}>
+      <Typography variant="h5" color={value === 'X' ? 'secondary' : 'primary'} >
+        {value}
+      </Typography>
+    </Button>
+  );
+};
 
 TicTacToeSquare.propTypes = {
-  classes: PropTypes.object.isRequired,
   value: PropTypes.string, // "null" when neither 'X' nor 'O'
   onClick: PropTypes.func.isRequired,
 };
-
-export default withStyles(styles)(TicTacToeSquare);

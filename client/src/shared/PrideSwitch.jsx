@@ -1,7 +1,5 @@
 import React from 'react';
-import {Card, Typography, Switch, Tooltip} from '@mui/material';
-import PropTypes from 'prop-types';
-import {withStyles} from '@mui/styles';
+import { Card, Typography, Switch, Tooltip } from '@mui/material';
 
 const getCookie = require('./util/Cookies.js').getCookie;
 const setCookie = require('./util/Cookies.js').setCookie;
@@ -54,22 +52,20 @@ class PrideSwitch extends React.Component {
 
   handleChange() {
     if (this.state.proud === false) {
-      this.setState({proud: true});
+      this.setState({ proud: true });
       setCookie('pride', 'true', 1000);
     } else {
-      this.setState({proud: false});
+      this.setState({ proud: false });
       setCookie('pride', 'false', 1000);
     }
     window.location.reload();
   }
 
   render() {
-    const {classes} = this.props;
-
     return (
-      <Card className={classes.flatCard}>
-        <div className={classes.prideSwitchContent}>
-          <Typography className={classes.prideTitle} variant="subtitle1">
+      <Card sx={styles.flatCard}>
+        <div style={styles.prideSwitchContent}>
+          <Typography sx={styles.prideTitle} variant="subtitle1">
             Rainbow mode
           </Typography>
           <Tooltip
@@ -79,8 +75,8 @@ class PrideSwitch extends React.Component {
             <Switch
               checked={this.state.proud}
               onClick={this.handleChange}
-              className={classes.prideSwitch}
-              inputProps={{'aria-label': 'primary checkbox'}}
+              sx={styles.prideSwitch}
+              inputProps={{ 'aria-label': 'primary checkbox' }}
               color="secondary" />
           </Tooltip>
         </div>
@@ -89,8 +85,4 @@ class PrideSwitch extends React.Component {
   }
 }
 
-PrideSwitch.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(PrideSwitch);
+export default PrideSwitch;

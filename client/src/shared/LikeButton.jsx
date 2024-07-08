@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Typography, Card, Tooltip, IconButton } from '@mui/material';
-import { withStyles } from '@mui/styles';
 const fetch = require('node-fetch');
 
 const deleteCookie = require('./util/Cookies.js').deleteCookie;
@@ -30,7 +29,7 @@ const styles = {
   },
 };
 
-class LikeButton extends React.Component {
+export default class LikeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -134,7 +133,6 @@ class LikeButton extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
     let icon;
     let displayedColor;
     if (this.state.liked) {
@@ -150,8 +148,8 @@ class LikeButton extends React.Component {
       );
     }
     return (
-      <div className={classes.root}>
-        <div className={classes.likeButtonWrapper}>
+      <div style={styles.root}>
+        <div style={styles.likeButtonWrapper}>
           <Tooltip
             title={this.state.liked ? 'Click to unlike page' : 'Click to like page'}
             arrow
@@ -160,12 +158,12 @@ class LikeButton extends React.Component {
               {icon}
             </IconButton>
           </Tooltip>
-          <Card className={classes.captionRoot}>
+          <Card sx={styles.captionRoot}>
             <Typography
               variant="caption"
               size="small"
               color={displayedColor}
-              className={classes.captionText}
+              sx={styles.captionText}
             >
               {this.state.numLikes} {this.state.numLikes === 1 ? 'like' : 'likes'}
             </Typography>
@@ -177,8 +175,5 @@ class LikeButton extends React.Component {
 }
 
 LikeButton.propTypes = {
-  classes: PropTypes.object.isRequired,
   pagename: PropTypes.string.isRequired,
 };
-
-export default withStyles(styles)(LikeButton);

@@ -27,9 +27,6 @@ import doggieDoodlesScreenshotOne
 import doggieDoodlesScreenshotOneFallback
   from '../static/screenshots/doggie_doodles_screenshot_1.png';
 
-import PropTypes from 'prop-types';
-import {withStyles} from '@mui/styles';
-
 const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
 const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
 const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
@@ -89,156 +86,146 @@ const styles = {
   doggieDoodlesLogo: {},
 };
 
-class DoggieDoodlesCard extends React.Component {
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Card raised={true} className="large-card">
-        <Accordion
-          TransitionProps={{unmountOnExit: true}}>
-          <AccordionSummary
-            aria-label="Doggie Doodles"
-            aria-controls="doggie-doodles-content"
-            id="doggie-doodles-header"
-            expandIcon={
-              <Tooltip
-                title="Expand/collapse card"
-                arrow>
-                <IconButton size="large">
-                  <ExpandMoreIcon />
-                </IconButton>
-              </Tooltip>
-            }>
-            <a name="doggie_doodles_card" href="#doggie_doodles_card" className="gone">
-              Doggie Doodles Card
-            </a>
-            <div className={classes.expansionHeaderContainer}>
-              <CardHeader
-                className="card-header"
-                title="Doggie Doodles"
-                subheader="Entrepreneur" />
-              <CardMedia
-                className={classes.doggieDoodlesBanner}
-                image="/media/doggie_doodles_banner.jpg"
-                title="Doggie Doodles banner"
-                alt="Doggie Doodles banner"
-                component="img"
-              />
-              <div>
-                {tags.map((tag) => (
-                  <Chip
-                    className={classes.tags}
-                    key={tag.label}
-                    icon={tag.icon ? tag.icon : <div />}
-                    label={tag.label}
-                    variant={tag.variant ? tag.variant : 'outlined'}
-                    color={tag.color ? tag.color : 'secondary'}
-                    clickable />
-                ))}
-              </div>
+export default function DoggieDoodlesCard() {
+  return (
+    <Card raised={true} className="large-card">
+      <Accordion
+        TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          aria-label="Doggie Doodles"
+          aria-controls="doggie-doodles-content"
+          id="doggie-doodles-header"
+          expandIcon={
+            <Tooltip
+              title="Expand/collapse card"
+              arrow>
+              <IconButton size="large">
+                <ExpandMoreIcon />
+              </IconButton>
+            </Tooltip>
+          }>
+          <a name="doggie_doodles_card" href="#doggie_doodles_card" className="gone">
+            Doggie Doodles Card
+          </a>
+          <div style={styles.expansionHeaderContainer}>
+            <CardHeader
+              className="card-header"
+              title="Doggie Doodles"
+              subheader="Entrepreneur" />
+            <CardMedia
+              sx={styles.doggieDoodlesBanner}
+              image="/media/doggie_doodles_banner.jpg"
+              title="Doggie Doodles banner"
+              alt="Doggie Doodles banner"
+              component="img"
+            />
+            <div>
+              {tags.map((tag) => (
+                <Chip
+                  sx={styles.tags}
+                  key={tag.label}
+                  icon={tag.icon ? tag.icon : <div />}
+                  label={tag.label}
+                  variant={tag.variant ? tag.variant : 'outlined'}
+                  color={tag.color ? tag.color : 'secondary'}
+                  clickable />
+              ))}
             </div>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CardContent>
-              <Typography variant="body1" paragraph>
-                Started from a class project, this business sells custom merchandise using a
-                digital drawing of your animal.
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+          <CardContent>
+            <Typography variant="body1" paragraph>
+              Started from a class project, this business sells custom merchandise using a
+              digital drawing of your animal.
 
-                {' '}
-                <Link color="secondary" href={morganSalvanoLink}>
-                  Morgan Salvano
-                </Link>
+              {' '}
+              <Link color="secondary" href={morganSalvanoLink}>
+                Morgan Salvano
+              </Link>
 
-                , from U of M&apos;s
+              , from U of M&apos;s
 
-                {' '}
-                <Link color="secondary" href={stampsLink}>
-                  Stamps School of Art and Design
-                </Link>
+              {' '}
+              <Link color="secondary" href={stampsLink}>
+                Stamps School of Art and Design
+              </Link>
 
-                , will take a picture of your pet (it doesn&apos;t have to be a dog!) and
-                turn it into a custom digital drawing. The drawing itself is
-                <b> completely free</b>!
-                Once she has drawn it to your satisfaction, she will upload it
-                to
-                {' '}
-                <Link color="secondary" href={redbubbleLink}>
-                  Redbubble
-                </Link>
-                {' '}
+              , will take a picture of your pet (it doesn&apos;t have to be a dog!) and
+              turn it into a custom digital drawing. The drawing itself is
+              <b> completely free</b>!
+              Once she has drawn it to your satisfaction, she will upload it
+              to
+              {' '}
+              <Link color="secondary" href={redbubbleLink}>
+                Redbubble
+              </Link>
+              {' '}
 
-                (with your permission), where you can see your custom drawing on all kinds
-                of merchandise - posters, mugs, phone cases, pillows and much more!
+              (with your permission), where you can see your custom drawing on all kinds
+              of merchandise - posters, mugs, phone cases, pillows and much more!
 
-              </Typography>
-              <picture>
-                <source srcSet={rockyOne} type="image/webp" />
-                <source srcSet={rockyOneFallback} type="image/jpg" />
-                <img
-                  srcSet={[rockyOne, rockyOneFallback]}
-                  className={classes.rocky}
-                  alt="Rocky #1"
-                />
-              </picture>
-              <picture>
-                <source srcSet={rockyTwo} type="image/webp" />
-                <source srcSet={rockyTwoFallback} type="image/jpg" />
-                <img
-                  srcSet={[rockyTwo, rockyTwoFallback]}
-                  className={classes.rocky}
-                  alt="Rocky #2"
-                />
-              </picture>
-              <br /><br />
-              <picture>
-                <source srcSet={doggieDoodlesScreenshotOne} type="image/webp" />
-                <source srcSet={doggieDoodlesScreenshotOneFallback} type="image/png" />
-                <img
-                  srcSet={[doggieDoodlesScreenshotOne, doggieDoodlesScreenshotOneFallback]}
-                  className={classes.webScreenshot}
-                  alt="Rocky #2"
-                />
-              </picture>
-              <br /><br />
-              <Typography variant="body1" paragraph>
-                Send a picture of your animal to
+            </Typography>
+            <picture>
+              <source srcSet={rockyOne} type="image/webp" />
+              <source srcSet={rockyOneFallback} type="image/jpg" />
+              <img
+                srcSet={[rockyOne, rockyOneFallback]}
+                style={styles.rocky}
+                alt="Rocky #1"
+              />
+            </picture>
+            <picture>
+              <source srcSet={rockyTwo} type="image/webp" />
+              <source srcSet={rockyTwoFallback} type="image/jpg" />
+              <img
+                srcSet={[rockyTwo, rockyTwoFallback]}
+                style={styles.rocky}
+                alt="Rocky #2"
+              />
+            </picture>
+            <br /><br />
+            <picture>
+              <source srcSet={doggieDoodlesScreenshotOne} type="image/webp" />
+              <source srcSet={doggieDoodlesScreenshotOneFallback} type="image/png" />
+              <img
+                srcSet={[doggieDoodlesScreenshotOne, doggieDoodlesScreenshotOneFallback]}
+                style={styles.webScreenshot}
+                alt="Rocky #2"
+              />
+            </picture>
+            <br /><br />
+            <Typography variant="body1" paragraph>
+              Send a picture of your animal to
 
-                {' '}
-                <Link color="secondary" href={doggieDoodlesEmailLink}>
-                  dopedoggiedoodles@gmail.com
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={doggieDoodlesEmailLink}>
+                dopedoggiedoodles@gmail.com
+              </Link>
+              {' '}
 
-                to get started!
-              </Typography>
-              <Typography variant="body1" paragraph>
-                View the
+              to get started!
+            </Typography>
+            <Typography variant="body1" paragraph>
+              View the
 
-                {' '}
-                <Link color="secondary" href={doggieDoodlesWebsiteLink}>
-                  website
-                </Link>
-                {' '}
+              {' '}
+              <Link color="secondary" href={doggieDoodlesWebsiteLink}>
+                website
+              </Link>
+              {' '}
 
-                or on
+              or on
 
-                {' '}
-                <Link color="secondary" href={doggieDoodlesRedbubbleLink}>
-                  Redbubble
-                </Link>
-                {' '}
-              </Typography>
-            </CardContent>
-          </AccordionDetails>
-        </Accordion>
-      </Card>
-    );
-  }
-}
-
-DoggieDoodlesCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+              {' '}
+              <Link color="secondary" href={doggieDoodlesRedbubbleLink}>
+                Redbubble
+              </Link>
+              {' '}
+            </Typography>
+          </CardContent>
+        </AccordionDetails>
+      </Accordion>
+    </Card>
+  );
 };
-
-export default withStyles(styles)(DoggieDoodlesCard);

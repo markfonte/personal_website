@@ -8,7 +8,7 @@ import kotlinLogo from '../static/logos/kotlin_logo.svg';
 import pythonLogo from '../static/logos/python_logo.svg';
 import reactLogo from '../static/logos/react_logo.svg';
 import reactNativeLogo from '../static/logos/react_native_logo.svg';
-import {Build, Business, MenuBook, School, Work} from '@mui/icons-material';
+import { Build, Business, MenuBook, School, Work } from '@mui/icons-material';
 import {
   Card,
   CardContent,
@@ -23,14 +23,13 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
-import withStyles from '@mui/styles/withStyles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const glossaryItems = [
   {
     tagName: 'Full Time Positions',
     type: 'Project',
-    icon: <Work style={{width: '28px', height: 'auto', marginRight: '12px'}} />,
+    icon: <Work style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'tesla',
@@ -52,7 +51,7 @@ const glossaryItems = [
   {
     tagName: 'Internships',
     type: 'Project',
-    icon: <School style={{width: '28px', height: 'auto', marginRight: '12px'}} />,
+    icon: <School style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'jpmorgan',
@@ -74,7 +73,7 @@ const glossaryItems = [
   {
     tagName: 'Startups',
     type: 'Project',
-    icon: <Business style={{width: '28px', height: 'auto', marginRight: '12px'}} />,
+    icon: <Business style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'doggie_doodles',
@@ -106,7 +105,7 @@ const glossaryItems = [
   {
     tagName: 'Hackathon Projects',
     type: 'Project',
-    icon: <Build style={{width: '28px', height: 'auto', marginRight: '12px'}} />,
+    icon: <Build style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'revolutionuc8',
@@ -133,7 +132,7 @@ const glossaryItems = [
   {
     tagName: 'Class Projects',
     type: 'Project',
-    icon: <MenuBook style={{width: '28px', height: 'auto', marginRight: '12px'}} />,
+    icon: <MenuBook style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'doggie_doodles',
@@ -424,7 +423,7 @@ const styles = {
   },
 };
 
-class GlossaryCard extends React.Component {
+export default class GlossaryCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -439,17 +438,15 @@ class GlossaryCard extends React.Component {
 
   setExpanded = (panel) => (event, isExpanded) => {
     if (isExpanded) {
-      this.setState({expanded: panel});
+      this.setState({ expanded: panel });
       return;
     }
-    this.setState({expanded: false});
+    this.setState({ expanded: false });
   };
 
   render() {
-    const {classes} = this.props;
-
     return (
-      <Card raised={true} className="card" style={{maxWidth: 400}}>
+      <Card raised={true} className="card" style={{ maxWidth: 400 }}>
         <a name="glossary_card" href="#glossary_card" className="gone">
           Glossary Card
         </a>
@@ -458,16 +455,16 @@ class GlossaryCard extends React.Component {
           title="Index"
         />
         <CardContent
-          className={classes.expansionPanel}>
+          sx={styles.expansionPanel}>
           {
             glossaryItems.map((glossaryItem) => (
               <Accordion
                 key={glossaryItem.tagName}
                 expanded={this.state.expanded === glossaryItem.tagName}
-                className={this.expansionPanel}
+                sx={styles.expansionPanel}
                 elevation={1}
                 onChange={this.setExpanded(glossaryItem.tagName)}
-                TransitionProps={{unmountOnExit: true}}>
+                TransitionProps={{ unmountOnExit: true }}>
                 <AccordionSummary
                   expandIcon={
                     <Tooltip
@@ -485,20 +482,20 @@ class GlossaryCard extends React.Component {
                   {glossaryItem.icon ? glossaryItem.icon : ''}
                   <img
                     src={glossaryItem.logo ? glossaryItem.logo : ''}
-                    className={classes.tagIcon}
+                    style={styles.tagIcon}
                     alt={glossaryItem.tagName + ' button'}
                   />
                   <Typography
                     variant="subtitle1"
                     color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
-                    className={classes.tag}>
+                    sx={styles.tag}>
                     {glossaryItem.tagName}
                     {' '}
                     ({glossaryItem.projects.length})
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <List component="nav" style={{margin: 'auto', width: '100%'}}>
+                  <List component="nav" style={{ margin: 'auto', width: '100%' }}>
                     {
                       glossaryItem.projects.map((project, i) => (
                         <ListItem
@@ -511,7 +508,7 @@ class GlossaryCard extends React.Component {
                               '/work#' + project.cardId + '_card'}
                         >
                           <ListItemText
-                            primaryTypographyProps={{color: 'secondary'}}
+                            primaryTypographyProps={{ color: 'secondary' }}
                             primary={project.cardName}
                             secondary={project.subtitle} />
                         </ListItem>
@@ -527,9 +524,3 @@ class GlossaryCard extends React.Component {
     );
   }
 }
-
-GlossaryCard.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(GlossaryCard);

@@ -1,8 +1,7 @@
 import React from 'react';
 import TicTacToeBoard from './TicTacToeBoard';
-import {Typography, Button, Grid, Tooltip} from '@mui/material';
+import { Typography, Button, Grid, Tooltip } from '@mui/material';
 import PropTypes from 'prop-types';
-import {withStyles} from '@mui/styles';
 
 const styles = {
   moveList: {
@@ -10,7 +9,7 @@ const styles = {
     paddingRight: '0',
     paddingInlineEnd: '0',
     paddingInlineStart: '0',
-    display: 'flex', /* NEW, Spec - Firefox, Chrome, Opera */
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
@@ -19,7 +18,7 @@ const styles = {
     justifyContent: 'center',
   },
   gameBoard: {
-    display: 'flex', /* NEW, Spec - Firefox, Chrome, Opera */
+    display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
     alignItems: 'center',
@@ -97,7 +96,6 @@ class TicTacToeGame extends React.Component {
   }
 
   render() {
-    const {classes} = this.props;
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateTicTacToeWinner(current.squares);
@@ -114,38 +112,34 @@ class TicTacToeGame extends React.Component {
     }
 
     return (
-      <Grid className={classes.game}>
-        <Grid className={classes.gameBoard}>
+      <Grid sx={styles.game}>
+        <Grid sx={styles.gameBoard}>
           <TicTacToeBoard
             squares={current.squares}
             onClick={(i) => this.handleClick(i)}
           />
         </Grid>
-        <Grid className={classes.gameInfo}>
+        <Grid sx={styles.gameInfo}>
           <div>
             <Typography variant="subtitle1" color={this.state.xIsNext ? 'secondary' : 'primary'}>
               {' '}{status}
             </Typography>
           </div>
-          <br/>
+          <br />
           <div className={winner ? 'firework' : ''} />
           {stepNum !== 0 ?
-          <Tooltip
-            placement="right"
-            arrow
-            title="Restart">
-            <Button variant="outlined" onClick={() => this.jumpTo(0)}>
-                  Restart
-            </Button>
-          </Tooltip> : <p />}
+            <Tooltip
+              placement="right"
+              arrow
+              title="Restart">
+              <Button variant="outlined" onClick={() => this.jumpTo(0)}>
+                Restart
+              </Button>
+            </Tooltip> : <p />}
         </Grid>
       </Grid>
     );
   }
 }
 
-TicTacToeGame.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(TicTacToeGame);
+export default TicTacToeGame;

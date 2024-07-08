@@ -1,6 +1,5 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import { Typography, CircularProgress } from '@mui/material';
-import { withStyles } from '@mui/styles';
 import PropTypes from 'prop-types';
 const LAZCard = lazy(() => import('./LazCard.jsx'));
 const RevolutionUC8Card = lazy(() => import('./Revolutionuc8Card.jsx'));
@@ -34,49 +33,42 @@ const styles = {
   },
 };
 
-class Work extends React.Component {
-  componentDidMount() {
+export default function Work({ isDarkTheme }) {
+  useEffect(() => {
     document.title = 'Work | Mark Fonte';
-  }
+  }, []);
 
-  render() {
-    const { classes } = this.props;
-
-    return (
-      <div>
-        <Typography className={classes.title} variant="h6" paragraph>
-          My work experiences, internships, side projects and hackathon projects
-        </Typography>
-        <Suspense fallback={renderLoader()}>
-          <div className={classes.twoColumnContainer}>
-            <TeslaCard />
-            <JustlightCard isDarkTheme={this.props.isDarkTheme} />
-            <AmazonCard />
-            <JPMorganCard />
-            <LAZCard />
-            <CompletedCourseworkCard />
-            <MISymptomsCard />
-            <MHacks12Card />
-            <WalklensCard />
-            <Spartahack5Card />
-            <ClippCard />
-            <RoadMapperCard />
-            <RevolutionUC8Card />
-            <Grizzhacks3Card />
-            <SpotlightCard />
-            <DoggieDoodlesCard />
-          </div>
-          <GlossaryCard />
-          <InteractionCard pagename="work" />
-        </Suspense>
-      </div>
-    );
-  }
-}
-
-Work.propTypes = {
-  classes: PropTypes.object.isRequired,
-  isDarkTheme: PropTypes.bool.isRequired,
+  return (
+    <div>
+      <Typography sx={styles.title} variant="h6" paragraph>
+        My work experiences, internships, side projects and hackathon projects
+      </Typography>
+      <Suspense fallback={renderLoader()}>
+        <div style={styles.twoColumnContainer}>
+          <TeslaCard />
+          <JustlightCard isDarkTheme={isDarkTheme} />
+          <AmazonCard />
+          <JPMorganCard />
+          <LAZCard />
+          <CompletedCourseworkCard />
+          <MISymptomsCard />
+          <MHacks12Card />
+          <WalklensCard />
+          <Spartahack5Card />
+          <ClippCard />
+          <RoadMapperCard />
+          <RevolutionUC8Card />
+          <Grizzhacks3Card />
+          <SpotlightCard />
+          <DoggieDoodlesCard />
+        </div>
+        <GlossaryCard />
+        <InteractionCard pagename="work" />
+      </Suspense>
+    </div>
+  );
 };
 
-export default withStyles(styles)(Work);
+Work.propTypes = {
+  isDarkTheme: PropTypes.bool.isRequired,
+};
