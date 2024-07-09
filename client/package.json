@@ -8,6 +8,7 @@
         "@emotion/styled": "^11.11.5",
         "@mui/icons-material": "^5.16.0",
         "@mui/material": "^5.16.0",
+        "@mui/lab": "^5.0.0-alpha.171",
         "moment": "^2.30.1",
         "node-fetch": "2.7.0",
         "prop-types": "^15.8.1",

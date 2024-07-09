@@ -1,13 +1,13 @@
 import React from 'react';
 import WebIcon from '@mui/icons-material/Web';
 import spotifyLogo from '../static/logos/spotify_logo.svg';
-import googlePlayMusicLogo from '../static/logos/google_play_music.svg';
+// import googlePlayMusicLogo from '../static/logos/google_play_music.svg';
 import appleMusicLogo from '../static/logos/apple_music_logo.svg';
-import amazonMusicLogo from '../static/logos/amazon_music_logo.svg';
-import soundcloudLogo from '../static/logos/soundcloud_logo.svg';
-import youtubeLogo from '../static/logos/youtube_logo.svg';
+// import amazonMusicLogo from '../static/logos/amazon_music_logo.svg';
+// import soundcloudLogo from '../static/logos/soundcloud_logo.svg';
+// import youtubeLogo from '../static/logos/youtube_logo.svg';
 import youtubeMusicLogo from '../static/logos/youtube_music_logo.svg';
-import facebookLogo from '../static/logos/facebook_logo.svg';
+// import facebookLogo from '../static/logos/facebook_logo.svg';
 import instagramLogo from '../static/logos/instagram_logo.svg';
 
 import {
@@ -27,25 +27,25 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const websiteLink = `https://www.gimbleacappella.com/`;
 const spotifyLink = `https://open.spotify.com/artist/0CgETTTImSmkeCBkoUJiMg?autoplay=true&v=A`;
-const googlePlayMusicLink = `https://play.google.com/music/m/A6i265eewm2mhu5p2fvikdbf5tm?play=1`;
+// const googlePlayMusicLink = `https://play.google.com/music/m/A6i265eewm2mhu5p2fvikdbf5tm?play=1`;
 const appleMusicLink = `https://itunes.apple.com/us/artist/gimble-a-cappella/1221861150?ign-gact=3&ls=1`;
-const amazonMusicLink = `https://music.amazon.com/artists/B06XZ8143C?tab=LIBRARY&ref=dm_wcp_artist_link_s`;
-const soundcloudLink = `https://soundcloud.com/gimble-a-cappella`;
-const youtubeLink = `https://www.youtube.com/channel/UCH2dQr26tAWVijoYdKHcgdg`;
+// const amazonMusicLink = `https://music.amazon.com/artists/B06XZ8143C?tab=LIBRARY&ref=dm_wcp_artist_link_s`;
+// const soundcloudLink = `https://soundcloud.com/gimble-a-cappella`;
+// const youtubeLink = `https://www.youtube.com/channel/UCH2dQr26tAWVijoYdKHcgdg`;
 const youtubeMusicLink = `https://www.youtube.com/channel/UCzwG1_hJ5hRCMqzNlTJj2ZQ`;
-const facebookLink = `https://www.facebook.com/gimbleacappella/`;
+// const facebookLink = `https://www.facebook.com/gimbleacappella/`;
 const instagramLink = `https://www.instagram.com/gimbleacappella/`;
 
 const links = [
   { name: 'Gimble A Cappella on Apple Music', image: appleMusicLogo, link: appleMusicLink },
-  { name: 'Gimble A Cappella on Facebook', image: facebookLogo, link: facebookLink },
+  // { name: 'Gimble A Cappella on Facebook', image: facebookLogo, link: facebookLink },
   { name: 'Gimble A Cappella on Spotify', image: spotifyLogo, link: spotifyLink },
-  { name: 'Gimble A Cappella on Google Play Music', image: googlePlayMusicLogo, link: googlePlayMusicLink },
-  { name: 'Gimble A Cappella on SoundCloud', image: soundcloudLogo, link: soundcloudLink },
-  { name: 'Gimble A Cappella on YouTube', image: youtubeLogo, link: youtubeLink },
+  // { name: 'Gimble A Cappella on Google Play Music', image: googlePlayMusicLogo, link: googlePlayMusicLink },
+  // { name: 'Gimble A Cappella on SoundCloud', image: soundcloudLogo, link: soundcloudLink },
+  // { name: 'Gimble A Cappella on YouTube', image: youtubeLogo, link: youtubeLink },
   { name: 'Gimble A Cappella on YouTube Music', image: youtubeMusicLogo, link: youtubeMusicLink },
   { name: 'Gimble A Cappella on Instagram', image: instagramLogo, link: instagramLink },
-  { name: 'Gimble A Cappella on Amazon Music', image: amazonMusicLogo, link: amazonMusicLink },
+  // { name: 'Gimble A Cappella on Amazon Music', image: amazonMusicLogo, link: amazonMusicLink },
 ];
 
 const spotifySingles = [

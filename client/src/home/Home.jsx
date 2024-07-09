@@ -6,11 +6,10 @@ const TechStackCard = lazy(() => import('./TechStackCard.jsx'));
 const WelcomeCard = lazy(() => import('./WelcomeCard.jsx'));
 const SammyCard = lazy(() => import('./SammyCard.jsx'));
 import PropTypes from 'prop-types';
-import { Typography, Link, CircularProgress } from '@mui/material';
+import { Typography, Link, CircularProgress, Box } from '@mui/material';
+import { Masonry } from '@mui/lab';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
-
-const getCookie = require('../shared/util/Cookies.js').getCookie;
 
 const justlightLink = 'https://www.justlight.com/about';
 const teslaLink = 'https://www.tesla.com/';
@@ -20,27 +19,19 @@ const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
 const androidDevLink = 'https://developer.android.com/';
 const awsLink = `https://aws.amazon.com/`;
 
-
 const styles = {
+  root: {
+    justifyContent: 'start',
+  },
   title: {
     margin: 'auto',
-    maxWidth: 1200,
+    marginBottom: '16px',
+    maxWidth: '1200px',
     textAlign: 'center',
     justifyContent: 'center',
   },
-  subtitle: {
-    margin: '16px',
-  },
-  michiganLogo: {
-    margin: '0px',
-  },
-  web: {
-    color: '#61DBFB',
-  },
-  twoColumnContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+  masonryContainer: {
+    margin: 'auto',
   },
 };
 
@@ -57,7 +48,7 @@ export default function Home({ isDarkTheme }) {
   const androidColor = isDarkTheme ? 'android-color-light' : 'android-color-dark';
 
   return (
-    <div>
+    <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6">
         Senior software engineer at {' '}
         <Link href={teslaLink} className={teslaColor} underline="hover">
@@ -100,16 +91,19 @@ export default function Home({ isDarkTheme }) {
         {' '}dev
       </Typography>
       <Suspense fallback={renderLoader()}>
-        <div style={styles.twoColumnContainer}>
+        <Masonry
+          columns={{ sm: 1, md: 2 }}
+          spacing={3}
+          sx={styles.masonryContainer}>
           <WelcomeCard isDarkTheme={isDarkTheme} />
           <GimbleCard />
           <SammyCard />
           <TechStackCard />
-        </div>
+        </Masonry>
         <TicTacToeCard />
         <InteractionCard pagename="home" />
       </Suspense>
-    </div>
+    </Box>
   );
 };
 

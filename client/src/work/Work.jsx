@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
-import { Typography, CircularProgress } from '@mui/material';
+import { Typography, CircularProgress, Box } from '@mui/material';
 import PropTypes from 'prop-types';
+import { Masonry } from '@mui/lab';
 const LAZCard = lazy(() => import('./LazCard.jsx'));
 const RevolutionUC8Card = lazy(() => import('./Revolutionuc8Card.jsx'));
 const Spartahack5Card = lazy(() => import('./Spartahack5Card.jsx'));
@@ -23,13 +24,14 @@ const GlossaryCard = lazy(() => import('../shared/GlossaryCard.jsx'));
 const renderLoader = () => <CircularProgress color="secondary" />;
 
 const styles = {
+  root: {
+    justifyContent: 'start',
+  },
   title: {
     marginBottom: '16px',
   },
-  twoColumnContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+  masonryContainer: {
+    margin: 'auto',
   },
 };
 
@@ -39,12 +41,14 @@ export default function Work({ isDarkTheme }) {
   }, []);
 
   return (
-    <div>
+    <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6" paragraph>
         My work experiences, internships, side projects and hackathon projects
       </Typography>
       <Suspense fallback={renderLoader()}>
-        <div style={styles.twoColumnContainer}>
+        <Masonry columns={{ sm: 1, md: 2 }}
+          spacing={3}
+          sx={styles.masonryContainer}>
           <TeslaCard />
           <JustlightCard isDarkTheme={isDarkTheme} />
           <AmazonCard />
@@ -61,11 +65,11 @@ export default function Work({ isDarkTheme }) {
           <Grizzhacks3Card />
           <SpotlightCard />
           <DoggieDoodlesCard />
-        </div>
+        </Masonry>
         <GlossaryCard />
         <InteractionCard pagename="work" />
       </Suspense>
-    </div>
+    </Box>
   );
 };
 

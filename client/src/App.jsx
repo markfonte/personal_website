@@ -140,7 +140,7 @@ const styles = {
   routerLink: {
     textDecoration: 'none',
   },
-  routerButton: {
+  navTab: {
   },
   toggleThemeButton: {
     padding: '20px',
@@ -219,17 +219,13 @@ export default function App() {
               />
             </Tooltip>
             <Typography sx={styles.mainTitle} variant="h3">Mark Fonte</Typography>
-            <hr></hr>
             <nav style={styles.primaryNav}>
               <Tabs value={currentlySelected} onChange={handleTabChange} indicatorColor="secondary">
                 {routes.map((route, _) => (
                   <Tooltip key={route.name} title={'Navigate to ' + route.name} arrow>
-                    <Tab key={route.name}
-                      component={Link}
-                      to={route.path}
-                      label={route.name}
+                    <Tab key={route.name} component={Link} to={route.path} label={route.name}
                       sx={{
-                        ...styles.routerButton,
+                        ...styles.navTab,
                         '&.Mui-selected': {
                           color: theme.palette.secondary.main,
                           fontWeight: 'bold',
@@ -240,7 +236,6 @@ export default function App() {
                 ))}
               </Tabs>
             </nav>
-            <hr />
 
             <Routes>
               <Route path="/" exact element={<HomePage isDarkTheme={theme === darkTheme} />} />
