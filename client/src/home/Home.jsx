@@ -91,10 +91,7 @@ export default function Home({ isDarkTheme }) {
         {' '}dev
       </Typography>
       <Suspense fallback={renderLoader()}>
-        <Masonry
-          columns={{ sm: 1, md: 2 }}
-          spacing={3}
-          sx={styles.masonryContainer}>
+        <Masonry columns={{ sm: 1, md: 2 }} spacing={3} sx={styles.masonryContainer}>
           <WelcomeCard isDarkTheme={isDarkTheme} />
           <GimbleCard />
           <SammyCard />

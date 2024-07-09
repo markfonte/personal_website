@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import {
   Typography,
   Card,
@@ -11,14 +11,16 @@ import {
   Tooltip,
   CardActions,
   CircularProgress,
+  Box,
 } from '@mui/material';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
-const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Masonry } from '@mui/lab';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
+const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -26,7 +28,7 @@ function Alert(props) {
 
 const posts = [
   {
-    title: `The Power of Compromise`,
+    title: `On Compromise`,
     lastUpdated: `September 5th, 2020`,
     disclaimer: ``,
     titleBlurb: <div>
@@ -110,7 +112,7 @@ const posts = [
     postNumber: 2,
   },
   {
-    title: `Owning Your Job Negotiations`,
+    title: `On Job Negotiations`,
     lastUpdated: `August 31st, 2020`,
     disclaimer: `I am writing this as a gainfully employed member of Amazon. I am thankful for that job, and I understand the risks of publicly sharing any criticisms of the company for which I work. However, I will not refrain from telling the truth as I see it, so Amazon and other companies mentioned here are free to take my words as the constructive criticism in which they were meant.`,
     titleBlurb: <div>
@@ -197,6 +199,9 @@ const posts = [
 ];
 
 const styles = {
+  root: {
+    justifyContent: 'start',
+  },
   title: {
     margin: '16px',
   },
@@ -210,57 +215,51 @@ const styles = {
   cardContent: {
     textAlign: 'left',
   },
+  masonryContainer: {
+    margin: 'auto',
+  },
 };
 
-class Blog extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      successDialogOpen: false,
-    };
 
-    this.copyToClipboard = this.copyToClipboard.bind(this);
-    this.handleClose = this.handleClose.bind(this);
-  }
+export default function Blog() {
+  const [successDialogOpen, setSuccessDialogOpen] = useState(false);
 
-  componentDidMount() {
+  useEffect(() => {
     document.title = 'Blog | Mark Fonte';
-  }
+  }, []);
 
-  copyToClipboard(postLink) {
+  const copyToClipboard = (postLink) => {
     navigator.clipboard.writeText(postLink);
-    this.setState({ successDialogOpen: true });
-  }
+    setSuccessDialogOpen(true);
+  };
 
-  handleClose(event, reason) {
+  const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return;
     }
-    this.setState({ successDialogOpen: false });
-  }
+    setSuccessDialogOpen(false);
+  };
 
-  render() {
-    return (
-      <div>
-        <Snackbar onClose={this.handleClose} open={this.state.successDialogOpen} autoHideDuration={4000}>
-          <Alert variant="outlined" onClose={this.handleClose} severity="success">
-            Link copied to clipboard!
-          </Alert>
-        </Snackbar>
-        <Typography sx={styles.title} variant="h6" paragraph>
-          Welcome! Here are some of my thoughts on issues that I find important.<br />Disagreements and discussions are highly encouraged 😊
-        </Typography>
+  return (
+    <Box sx={styles.root}>
+      <Snackbar onClose={handleClose} open={successDialogOpen} autoHideDuration={4000}>
+        <Alert variant="outlined" onClose={handleClose} severity="success">
+          Link copied to clipboard!
+        </Alert>
+      </Snackbar>
+      <Typography sx={styles.title} variant="h6" paragraph>
+        Welcome! Here are some of my thoughts on issues that I find important.<br />Disagreements and discussions are highly encouraged 😊
+      </Typography>
+      <Masonry columns={{ sm: 1, md: 2 }} spacing={3} sx={styles.masonryContainer}>
         {posts.map((post) => (
-          <Card raised={true} className="card" key={post.title}>
+          <Card raised={true} className="large-card" key={post.title}>
             <Accordion>
               <AccordionSummary
                 aria-label={post.title}
                 aria-controls={post.title + '-content'}
                 id={post.title + '-header'}
                 expandIcon={
-                  <Tooltip
-                    title="Expand/collapse card"
-                    arrow>
+                  <Tooltip title="Expand/collapse card" arrow>
                     <IconButton size="large">
                       <ExpandMoreIcon />
                     </IconButton>
@@ -269,8 +268,7 @@ class Blog extends React.Component {
                 <a name={'post_' + post.postNumber} href={'post_' + post.postNumber} className="gone">
                   {post.postNumber} Post
                 </a>
-                <div
-                  style={styles.expansionHeaderContainer}>
+                <div style={styles.expansionHeaderContainer}>
                   <CardHeader
                     className="card-header"
                     title={post.title}
@@ -284,12 +282,13 @@ class Blog extends React.Component {
               </AccordionSummary>
               <AccordionDetails>
                 <CardContent sx={styles.cardContent}>
-                  {post.disclaimer ?
+                  {post.disclaimer ? (
                     <Typography variant="caption" color="textSecondary" paragraph>
                       {'* Disclaimer: ' + post.disclaimer + ' *'}
-                    </Typography> :
-                    ''}
-
+                    </Typography>
+                  ) : (
+                    ''
+                  )}
                   {post.body}
                   <Typography variant="caption" color="textSecondary" paragraph>
                     <i>{post.lastUpdated}</i>
@@ -298,25 +297,22 @@ class Blog extends React.Component {
               </AccordionDetails>
             </Accordion>
             <CardActions>
-              <Tooltip
-                title="Share article"
-                arrow>
+              <Tooltip title="Share article" arrow>
                 <IconButton
                   aria-label="Share article"
-                  onClick={() => this.copyToClipboard(process.env.REACT_APP_CLIENT_URL + 'blog#post_' + post.postNumber)}
-                  size="large">
+                  onClick={() => copyToClipboard(process.env.REACT_APP_CLIENT_URL + 'blog#post_' + post.postNumber)}
+                  size="large"
+                >
                   <ShareIcon />
                 </IconButton>
               </Tooltip>
             </CardActions>
           </Card>
         ))}
-        <Suspense fallback={renderLoader()}>
-          <InteractionCard pagename="blog" />
-        </Suspense>
-      </div>
-    );
-  }
+      </Masonry>
+      <Suspense fallback={renderLoader()}>
+        <InteractionCard pagename="blog" />
+      </Suspense>
+    </Box>
+  );
 }
-
-export default Blog;

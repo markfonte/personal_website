@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 import reactLogo from '../static/logos/react_logo.svg';
 import universityOfMichiganLogoSmall
@@ -15,6 +15,7 @@ import youtubeLogo from '../static/logos/youtube_logo.svg';
 import spotifyLogo from '../static/logos/spotify_logo.svg';
 
 const fetch = require('node-fetch');
+const HEARTBEAT_INTERVAL = 30000;
 
 const styles = {
   reactLogo: {
@@ -112,143 +113,105 @@ const buttons = [
   },
 ];
 
-class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { apiResponse: false, serverCrashed: false };
-    this.checkForAPIHeartbeat = this.checkForAPIHeartbeat.bind(this);
-  }
+export default function Footer() {
+  const [apiResponse, setApiResponse] = useState(true);
+  const [serverCrashed, setServerCrashed] = useState(false);
 
-  abortController = new window.AbortController();
-
-  checkForAPIHeartbeat() {
+  const checkForAPIHeartbeat = () => {
     const apiUrl = process.env.REACT_APP_API_URL + 'api_heartbeat';
-    fetch(apiUrl, { method: 'HEAD', signal: this.abortController.signal })
+    fetch(apiUrl, { method: 'HEAD' })
       .then((res) => {
         if (res.status === 200) {
           let triggerReload = false;
-          if (this.state.serverCrashed === true) {
+          if (serverCrashed) {
             triggerReload = true; // back online! reload the page
           }
-          this.setState({ apiResponse: true, serverCrashed: false });
-          if (triggerReload === true) window.location.reload();
-        } else this.setState({ apiResponse: false, serverCrashed: true });
+          setApiResponse(true);
+          setServerCrashed(false);
+          if (triggerReload) window.location.reload();
+        } else {
+          setApiResponse(false);
+          setServerCrashed(true);
+        }
       })
       .catch((err) => {
+        console.log("aaa");
+        setApiResponse(false);
+        setServerCrashed(true);
         if (err.name === 'AbortError' || err.name === 'TypeError') {
           return;
         }
-        this.setState({ apiResponse: false, serverCrashed: true });
         console.log(err);
       });
-  }
+  };
 
-  componentDidMount() {
-    this.checkForAPIHeartbeat();
-    const timeoutInterval = 45000; // check for API heartbeat every 45 seconds
-    setInterval(
-      function () {
-        this.checkForAPIHeartbeat();
-      }.bind(this),
-      timeoutInterval
-      , 1000);
-  }
+  useEffect(() => {
+    document.title = 'Blog | Mark Fonte';
 
-  componentWillUnmount() {
-    clearInterval(1000);
-    this.abortController.abort();
-  }
+    const interval = setInterval(() => { checkForAPIHeartbeat(); }, HEARTBEAT_INTERVAL);
 
-  render() {
-    return (
-      <footer>
-        <div style={styles.footerContainer}>
-          <div style={styles.iconBar}>
-            {buttons.map((button) => (
-              <Tooltip
-                key={button.name}
-                title={'Go to ' + button.name}
-                arrow>
-                <Button href={button.link}>
-                  <img
-                    src={button.logo}
-                    style={styles.buttons}
-                    alt={button.name + ' button'}
-                  />
-                </Button>
-              </Tooltip>
-            ))}
-          </div>
-          <div>
-            {this.state.apiResponse ?
-              <img src={reactLogo} style={styles.reactLogo} alt="React logo" /> :
-              <Typography variant="h6">
-                Oops! Looks like my server is down. Some features may be degraded. Don&#39;t worry - I&#39;ve been notified! 🔨
-              </Typography>}
-          </div>
-          <div style={{ margin: 4 }}>
-            <Typography variant="caption" color="textSecondary" >
-              Last updated
-              {' '}
-              <Tooltip
-                arrow
-                placement="right"
-                title="Go to most recent commit on GitHub">
-                <Link color="secondary" href={commitHistoryLink}>
-                  <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
-                    {timestamp}
-                  </Moment>
-                </Link>
-              </Tooltip>
-            </Typography>
-          </div>
-          <div style={{ margin: 4 }}>
-            <Tooltip
-              arrow
-              placement="right"
-              title="Go to source code on GitHub">
-              <Link
-                variant="caption"
-                color="textSecondary"
-                href={websiteGithubLink}
-              >
-                view source on github
-              </Link>
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <footer>
+      <div style={styles.footerContainer}>
+        <div style={styles.iconBar}>
+          {buttons.map((button) => (
+            <Tooltip key={button.name} title={`Go to ${button.name}`} arrow>
+              <Button href={button.link}>
+                <img src={button.logo} style={styles.buttons} alt={`${button.name} button`} />
+              </Button>
             </Tooltip>
-          </div>
-          <div style={{ margin: 4 }}>
-            <Tooltip
-              arrow
-              placement="right"
-              title="Email me with website edit suggestions!">
-              <Link
-                variant="caption"
-                color="textSecondary"
-                href={suggestEditLink}
-              >
-                suggest an edit
-              </Link>
-            </Tooltip>
-          </div>
-          {/* go blue */}
-          <div>
-            <Tooltip
-              arrow
-              placement="right"
-              title="Go blue!!">
-              <img
-                src={universityOfMichiganLogoSmall}
-                width="25"
-                height="25"
-                style={styles.logoDefault}
-                alt="University of Michigan logo small"
-              />
-            </Tooltip>
-          </div>
+          ))}
         </div>
-      </footer>
-    );
-  }
+        <div>
+          {apiResponse ? (
+            <img src={reactLogo} style={styles.reactLogo} alt="React logo" />
+          ) : (
+            <Typography variant="h6">
+              Oops! Looks like my server is down. Some features may be degraded. Don&apos;t worry - I&apos;ve been notified! 🔨
+            </Typography>
+          )}
+        </div>
+        <div style={{ margin: 4 }}>
+          <Typography variant="caption" color="textSecondary">
+            Last updated{' '}
+            <Tooltip arrow placement="right" title="Go to most recent commit on GitHub">
+              <Link color="secondary" href={commitHistoryLink}>
+                <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
+                  {timestamp}
+                </Moment>
+              </Link>
+            </Tooltip>
+          </Typography>
+        </div>
+        <div style={{ margin: 4 }}>
+          <Tooltip arrow placement="right" title="Go to source code on GitHub">
+            <Link variant="caption" color="textSecondary" href={websiteGithubLink}>
+              View source on GitHub
+            </Link>
+          </Tooltip>
+        </div>
+        <div style={{ margin: 4 }}>
+          <Tooltip arrow placement="right" title="Email me with website edit suggestions!">
+            <Link variant="caption" color="textSecondary" href={suggestEditLink}>
+              Suggest an edit
+            </Link>
+          </Tooltip>
+        </div>
+        <div>
+          <Tooltip arrow placement="right" title="Go blue!!">
+            <img
+              src={universityOfMichiganLogoSmall}
+              width="25"
+              height="25"
+              style={styles.logoDefault}
+              alt="University of Michigan logo small"
+            />
+          </Tooltip>
+        </div>
+      </div>
+    </footer>
+  );
 }
-
-export default Footer;

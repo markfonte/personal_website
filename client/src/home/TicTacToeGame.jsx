@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TicTacToeBoard from './TicTacToeBoard';
 import { Typography, Button, Grid, Tooltip } from '@mui/material';
 
@@ -54,91 +54,70 @@ function calculateTicTacToeWinner(squares) {
   return null;
 }
 
-class TicTacToeGame extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      history: [
-        {
-          squares: Array(9).fill(null),
-        },
-      ],
-      stepNumber: 0,
-      xIsNext: true,
-    };
-  }
+export default function TicTacToeGame() {
+  const [history, setHistory] = useState([
+    {
+      squares: Array(9).fill(null),
+    },
+  ]);
+  const [stepNumber, setStepNumber] = useState(0);
+  const [xIsNext, setXIsNext] = useState(true);
 
-  handleClick(i) {
-    const history = this.state.history.slice(0, this.state.stepNumber + 1);
-    const current = history[history.length - 1];
+  const handleClick = (i) => {
+    const currentHistory = history.slice(0, stepNumber + 1);
+    const current = currentHistory[currentHistory.length - 1];
     const squares = current.squares.slice();
     if (calculateTicTacToeWinner(squares) || squares[i]) {
       return;
     }
-    squares[i] = this.state.xIsNext ? 'X' : 'O';
-    this.setState({
-      history: history.concat([
-        {
-          squares: squares,
-        },
-      ]),
-      stepNumber: history.length,
-      xIsNext: !this.state.xIsNext,
-    });
+    squares[i] = xIsNext ? 'X' : 'O';
+    setHistory(currentHistory.concat([{ squares }]));
+    setStepNumber(currentHistory.length);
+    setXIsNext(!xIsNext);
+  };
+
+  const jumpTo = (step) => {
+    setStepNumber(step);
+    setXIsNext(step % 2 === 0);
+  };
+
+  const current = history[stepNumber];
+  const winner = calculateTicTacToeWinner(current.squares);
+  const stepNum = stepNumber;
+
+  let status;
+  if (winner) {
+    status = 'Winner: ' + winner;
+  } else if (stepNum === 9) {
+    status = "Cat's game!";
+  } else {
+    status = (xIsNext ? 'X' : 'O') + "'s turn";
   }
 
-  jumpTo(step) {
-    this.setState({
-      stepNumber: step,
-      xIsNext: step % 2 === 0,
-    });
-  }
-
-  render() {
-    const history = this.state.history;
-    const current = history[this.state.stepNumber];
-    const winner = calculateTicTacToeWinner(current.squares);
-    const stepNum = this.state.stepNumber;
-
-    let status;
-
-    if (winner) {
-      status = 'Winner: ' + winner;
-    } else if (stepNum === 9) {
-      status = 'Cat\'s game!';
-    } else {
-      status = (this.state.xIsNext ? 'X' : 'O') + '\'s turn';
-    }
-
-    return (
-      <Grid sx={styles.game}>
-        <Grid sx={styles.gameBoard}>
-          <TicTacToeBoard
-            squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
-          />
-        </Grid>
-        <Grid sx={styles.gameInfo}>
-          <div>
-            <Typography variant="subtitle1" color={this.state.xIsNext ? 'secondary' : 'primary'}>
-              {' '}{status}
-            </Typography>
-          </div>
-          <br />
-          <div className={winner ? 'firework' : ''} />
-          {stepNum !== 0 ?
-            <Tooltip
-              placement="right"
-              arrow
-              title="Restart">
-              <Button variant="outlined" onClick={() => this.jumpTo(0)}>
-                Restart
-              </Button>
-            </Tooltip> : <p />}
-        </Grid>
+  return (
+    <Grid sx={styles.game}>
+      <Grid sx={styles.gameBoard}>
+        <TicTacToeBoard squares={current.squares} onClick={handleClick} />
       </Grid>
-    );
-  }
-}
-
-export default TicTacToeGame;
+      <Grid sx={styles.gameInfo}>
+        <div>
+          <Typography variant="subtitle1" color={xIsNext ? 'secondary' : 'primary'}>
+            {' '}
+            {status}
+          </Typography>
+        </div>
+        <br />
+        <div className={winner ? 'firework' : ''} />
+        {stepNum !== 0 ? (
+          <Tooltip placement="right" arrow title="Restart">
+            <Button variant="outlined" onClick={() => jumpTo(0)}>
+              Restart
+            </Button>
+          </Tooltip>
+        ) : (
+          <p />
+        )}
+      </Grid>
+    </Grid>
+  );
+};

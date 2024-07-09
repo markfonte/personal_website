@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import androidLogo from '../static/logos/android_logo.svg';
 import firebaseLogo from '../static/logos/firebase_logo.svg';
 import javaLogo from '../static/logos/java_logo.svg';
@@ -422,104 +422,87 @@ const styles = {
   },
 };
 
-export default class GlossaryCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expanded: false,
-    };
-    this.setExpanded = this.setExpanded.bind(this);
-    this.handleClicker = this.handleClicker.bind(this);
-  }
+export default function GlossaryCard() {
+  const [expanded, setExpanded] = useState(false);
 
-  handleClicker() {
-  }
-
-  setExpanded = (panel) => (event, isExpanded) => {
-    if (isExpanded) {
-      this.setState({ expanded: panel });
-      return;
-    }
-    this.setState({ expanded: false });
+  const handleClicker = () => {
+    // Handle clicker functionality if needed
   };
 
-  render() {
-    return (
-      <Card raised={true} className="card" style={{ maxWidth: 400 }}>
-        <a name="glossary_card" href="#glossary_card" className="gone">
-          Glossary Card
-        </a>
-        <CardHeader
-          className="card-header"
-          title="Index"
-        />
-        <CardContent
-          sx={styles.expansionPanel}>
-          {
-            glossaryItems.map((glossaryItem) => (
-              <Accordion
-                key={glossaryItem.tagName}
-                expanded={this.state.expanded === glossaryItem.tagName}
-                sx={styles.expansionPanel}
-                elevation={1}
-                onChange={this.setExpanded(glossaryItem.tagName)}
-                TransitionProps={{ unmountOnExit: true }}>
-                <AccordionSummary
-                  expandIcon={
-                    <Tooltip
-                      title="Expand/collapse card"
-                      arrow>
-                      <IconButton size="large">
-                        <ExpandMoreIcon />
-                      </IconButton>
-                    </Tooltip>
-                  }
-                  aria-label={glossaryItem.tagName}
-                  aria-controls={glossaryItem.tagName + '-content'}
-                  id={glossaryItem.tagName + '-header'}
-                >
-                  {glossaryItem.icon ? glossaryItem.icon : ''}
-                  <img
-                    src={glossaryItem.logo ? glossaryItem.logo : ''}
-                    style={styles.tagIcon}
-                    alt={glossaryItem.tagName + ' button'}
-                  />
-                  <Typography
-                    variant="subtitle1"
-                    color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
-                    sx={styles.tag}>
-                    {glossaryItem.tagName}
-                    {' '}
-                    ({glossaryItem.projects.length})
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <List component="nav" style={{ margin: 'auto', width: '100%' }}>
-                    {
-                      glossaryItem.projects.map((project, i) => (
-                        <ListItem
-                          component="a"
-                          button
-                          key={project.cardName + i}
-                          href={
-                            project.overrideLink ?
-                              project.overrideLink :
-                              '/work#' + project.cardId + '_card'}
-                        >
-                          <ListItemText
-                            primaryTypographyProps={{ color: 'secondary' }}
-                            primary={project.cardName}
-                            secondary={project.subtitle} />
-                        </ListItem>
-                      ))
+  const handlePanelChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
+  return (
+    <Card raised={true} className="card" style={{ maxWidth: 400 }}>
+      <a name="glossary_card" href="#glossary_card" className="gone">
+        Glossary Card
+      </a>
+      <CardHeader
+        className="card-header"
+        title="Index"
+      />
+      <CardContent sx={styles.expansionPanel}>
+        {glossaryItems.map((glossaryItem) => (
+          <Accordion
+            key={glossaryItem.tagName}
+            expanded={expanded === glossaryItem.tagName}
+            sx={styles.expansionPanel}
+            elevation={1}
+            onChange={handlePanelChange(glossaryItem.tagName)}
+            TransitionProps={{ unmountOnExit: true }}
+          >
+            <AccordionSummary
+              expandIcon={
+                <Tooltip title="Expand/collapse card" arrow>
+                  <IconButton size="large">
+                    <ExpandMoreIcon />
+                  </IconButton>
+                </Tooltip>
+              }
+              aria-label={glossaryItem.tagName}
+              aria-controls={glossaryItem.tagName + '-content'}
+              id={glossaryItem.tagName + '-header'}
+            >
+              {glossaryItem.icon ? glossaryItem.icon : ''}
+              <img
+                src={glossaryItem.logo ? glossaryItem.logo : ''}
+                style={styles.tagIcon}
+                alt={glossaryItem.tagName + ' button'}
+              />
+              <Typography
+                variant="subtitle1"
+                color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
+                sx={styles.tag}
+              >
+                {glossaryItem.tagName} ({glossaryItem.projects.length})
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <List component="nav" style={{ margin: 'auto', width: '100%' }}>
+                {glossaryItem.projects.map((project, i) => (
+                  <ListItem
+                    component="a"
+                    button
+                    key={project.cardName + i}
+                    href={
+                      project.overrideLink ?
+                        project.overrideLink :
+                        '/work#' + project.cardId + '_card'
                     }
-                  </List>
-                </AccordionDetails>
-              </Accordion>
-            ))
-          }
-        </CardContent>
-      </Card>
-    );
-  }
-}
+                  >
+                    <ListItemText
+                      primaryTypographyProps={{ color: 'secondary' }}
+                      primary={project.cardName}
+                      secondary={project.subtitle}
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </CardContent>
+    </Card>
+  );
+};

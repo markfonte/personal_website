@@ -187,8 +187,7 @@ export default function CompletedCourseworkCard() {
             <CardHeader
               className="card-header"
               title="University of Michigan"
-              subheader="Graduated May 2020 with a Bachelor's in Computer Science in Engineering
-            and a minor in Entrepreneurship"
+              subheader="Graduated May 2020 · Bachelor's of Computer Science in Engineering · Minor in Entrepreneurship"
             />
             <CardMedia
               sx={styles.universityOfMichiganLogo}

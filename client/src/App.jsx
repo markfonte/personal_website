@@ -9,7 +9,7 @@ import Blog from './blog/Blog.jsx';
 import Footer from './footer/Footer.jsx';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
-import { LightMode, DarkMode, Home, Work, Call } from '@mui/icons-material';
+import { LightMode, DarkMode, Home, Computer, Call } from '@mui/icons-material';
 import {
   Typography,
   Tabs,
@@ -26,7 +26,7 @@ const setCookie = require('./shared/util/Cookies.js').setCookie;
 
 const routes = [
   { name: 'Home', path: '/', index: 0, icon: <Home /> },
-  { name: 'Work', path: '/work', index: 1, icon: <Work /> },
+  { name: 'Work', path: '/work', index: 1, icon: <Computer /> },
   { name: 'Contact', path: '/contact', index: 2, icon: <Call /> },
 ];
 

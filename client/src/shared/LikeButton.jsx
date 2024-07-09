@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -29,22 +29,24 @@ const styles = {
   },
 };
 
-export default class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      liked: false,
-      numLikes: 0,
-    };
-    this.toggleLike = this.toggleLike.bind(this);
-    this.fetchNumLikes = this.fetchNumLikes.bind(this);
-  }
+export default function LikeButton({ pagename }) {
+  const [liked, setLiked] = useState(false);
+  const [numLikes, setNumLikes] = useState(0);
 
-  abortController = new window.AbortController();
+  const abortController = new window.AbortController();
 
-  fetchNumLikes() {
+  useEffect(() => {
+    if (getCookie(pagename) === 'liked') {
+      setLiked(true);
+    }
+    fetchNumLikes();
+
+    return () => abortController.abort();
+  }, []);
+
+  const fetchNumLikes = () => {
     const url = process.env.REACT_APP_API_URL + 'like/get';
-    const requestText = { page: this.props.pagename };
+    const requestText = { page: pagename };
     fetch(url, {
       method: 'post',
       credentials: 'same-origin',
@@ -52,11 +54,11 @@ export default class LikeButton extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(requestText),
-      signal: this.abortController.signal,
+      signal: abortController.signal,
     })
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ numLikes: data[0]['numlikes'] });
+        setNumLikes(data[0]['numlikes']);
       })
       .catch((error) => {
         if (error.name === 'AbortError' || error.name === 'TypeError') {
@@ -64,24 +66,12 @@ export default class LikeButton extends React.Component {
         }
         console.log(error);
       });
-  }
+  };
 
-  /**
-     * The fetch API doesn't allow GET requests to have bodies. This is a really
-     * annoying requirement, and in protest I have just chosen to use a POST request
-     * with a body to do the exact same thing a GET request would do.
-     */
-  componentDidMount() {
-    if (getCookie(this.props.pagename) === 'liked') {
-      this.setState({ liked: true });
-    }
-    this.fetchNumLikes();
-  }
-
-  toggleLike() {
-    if (!this.state.liked) {
+  const toggleLike = () => {
+    if (!liked) {
       const url = process.env.REACT_APP_API_URL + 'like';
-      const requestText = { page: this.props.pagename };
+      const requestText = { page: pagename };
       fetch(url, {
         method: 'post',
         credentials: 'same-origin',
@@ -89,10 +79,10 @@ export default class LikeButton extends React.Component {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(requestText),
-        signal: this.abortController.signal,
+        signal: abortController.signal,
       })
         .then(() => {
-          this.fetchNumLikes();
+          fetchNumLikes();
         })
         .catch((error) => {
           if (error.name === 'AbortError' || error.name === 'TypeError') {
@@ -100,11 +90,11 @@ export default class LikeButton extends React.Component {
           }
           console.log(error);
         });
-      setCookie(this.props.pagename, 'liked', 1000);
-      this.setState({ liked: true });
+      setCookie(pagename, 'liked', 1000);
+      setLiked(true);
     } else {
       const url = process.env.REACT_APP_API_URL + 'like/unlike';
-      const requestText = { page: this.props.pagename };
+      const requestText = { page: pagename };
       fetch(url, {
         method: 'post',
         credentials: 'same-origin',
@@ -112,10 +102,10 @@ export default class LikeButton extends React.Component {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(requestText),
-        signal: this.abortController.signal,
+        signal: abortController.signal,
       })
         .then(() => {
-          this.fetchNumLikes();
+          fetchNumLikes();
         })
         .catch((error) => {
           if (error.name === 'AbortError' || error.name === 'TypeError') {
@@ -123,56 +113,38 @@ export default class LikeButton extends React.Component {
           }
           console.log(error);
         });
-      deleteCookie(this.props.pagename, 'liked');
-      this.setState({ liked: false });
+      deleteCookie(pagename, 'liked');
+      setLiked(false);
     }
+  };
+
+  let icon;
+  let displayedColor;
+  if (liked) {
+    displayedColor = 'secondary';
+    icon = <FavoriteIcon color={displayedColor} fontSize="2rem" />;
+  } else {
+    displayedColor = 'inherit';
+    icon = <FavoriteBorderIcon color={displayedColor} fontSize="2rem" />;
   }
 
-  componentWillUnmount() {
-    this.abortController.abort();
-  }
-
-  render() {
-    let icon;
-    let displayedColor;
-    if (this.state.liked) {
-      displayedColor = 'secondary';
-      icon = <FavoriteIcon color={displayedColor} fontSize="2rem" />;
-    } else {
-      displayedColor = 'inherit';
-      icon = (
-        <FavoriteBorderIcon
-          color={displayedColor}
-          fontSize="2rem"
-        />
-      );
-    }
-    return (
-      <div style={styles.root}>
-        <div style={styles.likeButtonWrapper}>
-          <Tooltip
-            title={this.state.liked ? 'Click to unlike page' : 'Click to like page'}
-            arrow
-            onClick={this.toggleLike}>
-            <IconButton size="large">
-              {icon}
-            </IconButton>
-          </Tooltip>
-          <Card sx={styles.captionRoot}>
-            <Typography
-              variant="caption"
-              size="small"
-              color={displayedColor}
-              sx={styles.captionText}
-            >
-              {this.state.numLikes} {this.state.numLikes === 1 ? 'like' : 'likes'}
-            </Typography>
-          </Card>
-        </div>
+  return (
+    <div style={styles.root}>
+      <div style={styles.likeButtonWrapper}>
+        <Tooltip title={liked ? 'Click to unlike page' : 'Click to like page'} arrow onClick={toggleLike}>
+          <IconButton size="large">
+            {icon}
+          </IconButton>
+        </Tooltip>
+        <Card sx={styles.captionRoot}>
+          <Typography variant="caption" size="small" color={displayedColor} sx={styles.captionText}>
+            {numLikes} {numLikes === 1 ? 'like' : 'likes'}
+          </Typography>
+        </Card>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 LikeButton.propTypes = {
   pagename: PropTypes.string.isRequired,

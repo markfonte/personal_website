@@ -1,43 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TicTacToeSquare from './TicTacToeSquare.jsx';
 
-class TicTacToeBoard extends React.Component {
-  renderSquare(i) {
+export default function TicTacToeBoard({ squares, onClick }) {
+  const renderSquare = (i) => {
     return (
       <TicTacToeSquare
-        value={this.props.squares[i]}
-        onClick={() => this.props.onClick(i)}
+        value={squares[i]}
+        onClick={() => onClick(i)}
       />
     );
-  }
+  };
 
-  render() {
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div>
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div>
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
+        {renderSquare(0)}
+        {renderSquare(1)}
+        {renderSquare(2)}
       </div>
-    );
-  }
-}
+      <div>
+        {renderSquare(3)}
+        {renderSquare(4)}
+        {renderSquare(5)}
+      </div>
+      <div>
+        {renderSquare(6)}
+        {renderSquare(7)}
+        {renderSquare(8)}
+      </div>
+    </div>
+  );
+};
 
 TicTacToeBoard.propTypes = {
   squares: PropTypes.array.isRequired,
   onClick: PropTypes.func.isRequired,
 };
-
-export default TicTacToeBoard;
