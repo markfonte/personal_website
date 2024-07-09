@@ -5,10 +5,12 @@ import expressLogo from '../static/logos/express_logo.svg';
 import nodeLogo from '../static/logos/nodejs_logo.svg';
 import materialUILogo from '../static/logos/material_ui_logo.svg';
 import nginxLogo from '../static/logos/nginx_logo.svg';
-import githubLogo from '../static/logos/github_logo.svg';
+import githubLogoLight from '../static/logos/github_logo_light.svg';
+import githubLogoDark from '../static/logos/github_logo_dark.svg';
 import trelloLogo from '../static/logos/trello_logo.svg';
 import jestLogo from '../static/logos/jest_logo.svg';
 import sqliteLogo from '../static/logos/sqlite_logo.svg';
+import PropTypes from 'prop-types';
 
 import {
   Card,
@@ -29,7 +31,8 @@ const tags = [
   },
   {
     label: 'GitHub',
-    icon: githubLogo,
+    icon: githubLogoLight,
+    iconDark: githubLogoDark,
   },
   {
     label: 'Jest',
@@ -82,7 +85,7 @@ const styles = {
   },
 };
 
-export default function TechStackCard() {
+export default function TechStackCard({ isDarkTheme }) {
   return (
     <Card
       raised={true}
@@ -100,7 +103,7 @@ export default function TechStackCard() {
             <Chip
               sx={styles.tags}
               key={tag.label}
-              avatar={<Avatar alt={tag.label} src={tag.icon} />}
+              avatar={!isDarkTheme && tag.iconDark ? <Avatar alt={tag.label} src={tag.iconDark} /> : <Avatar alt={tag.label} src={tag.icon} />}
               label={tag.label}
               variant={tag.variant ? tag.variant : 'outlined'}
               size="large"
@@ -110,4 +113,8 @@ export default function TechStackCard() {
       </CardContent>
     </Card>
   );
+};
+
+TechStackCard.propTypes = {
+  isDarkTheme: PropTypes.bool.isRequired,
 };

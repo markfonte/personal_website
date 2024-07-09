@@ -95,7 +95,7 @@ export default function Home({ isDarkTheme }) {
           <WelcomeCard isDarkTheme={isDarkTheme} />
           <GimbleCard />
           <SammyCard />
-          <TechStackCard />
+          <TechStackCard isDarkTheme={isDarkTheme} />
         </Masonry>
         <TicTacToeCard />
         <InteractionCard pagename="home" />

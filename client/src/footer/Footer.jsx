@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import reactLogo from '../static/logos/react_logo.svg';
-import universityOfMichiganLogoSmall
-  from '../static/logos/university_of_michigan_logo_small.svg';
+import universityOfMichiganLogoSmall from '../static/logos/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
 import { Typography, Link, Tooltip, Button } from '@mui/material';
 import timestamp from '../CommitTimestamp.js';
 import facebookLogo from '../static/logos/facebook_logo.svg';
 import stackOverflowLogo from '../static/logos/stack_overflow_logo.svg';
-import githubLogo from '../static/logos/github_logo.svg';
+import githubLogoLight from '../static/logos/github_logo_light.svg';
+import githubLogoDark from '../static/logos/github_logo_dark.svg';
 import linkedinLogo from '../static/logos/linkedin_logo.svg';
 import instagramLogo from '../static/logos/instagram_logo.svg';
 import youtubeLogo from '../static/logos/youtube_logo.svg';
 import spotifyLogo from '../static/logos/spotify_logo.svg';
+import PropTypes from 'prop-types';
 
 const fetch = require('node-fetch');
 const HEARTBEAT_INTERVAL = 30000;
@@ -93,7 +94,8 @@ const buttons = [
   },
   {
     name: 'GitHub',
-    logo: githubLogo,
+    logo: githubLogoLight,
+    logoDark: githubLogoDark,
     link: githubLink,
   },
   {
@@ -113,7 +115,7 @@ const buttons = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ isDarkTheme }) {
   const [apiResponse, setApiResponse] = useState(true);
   const [serverCrashed, setServerCrashed] = useState(false);
 
@@ -160,7 +162,7 @@ export default function Footer() {
           {buttons.map((button) => (
             <Tooltip key={button.name} title={`Go to ${button.name}`} arrow>
               <Button href={button.link}>
-                <img src={button.logo} style={styles.buttons} alt={`${button.name} button`} />
+                <img src={!isDarkTheme && button.logoDark ? button.logoDark : button.logo} style={styles.buttons} alt={`${button.name} button`} />
               </Button>
             </Tooltip>
           ))}
@@ -215,3 +217,7 @@ export default function Footer() {
     </footer>
   );
 }
+
+Footer.propTypes = {
+  isDarkTheme: PropTypes.bool.isRequired,
+};

@@ -246,7 +246,7 @@ export default function App() {
             </Routes>
           </Router>
           <ScrollUpButton />
-          <Footer />
+          <Footer isDarkTheme={theme === darkTheme} />
         </Grid>
         {proud ? <footer style={styles.footerRoot} /> : null}
       </ThemeProvider>
