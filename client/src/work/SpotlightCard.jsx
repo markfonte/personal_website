@@ -108,8 +108,7 @@ const tags = [
 export default function SpotlightCard() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Spotlight"
           aria-controls="spotlight-content"

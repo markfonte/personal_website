@@ -179,8 +179,7 @@ export default function JustlightCard({ isDarkTheme }) {
     <Card
       raised={true}
       className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="JustLight"
           aria-controls="justlight-content"

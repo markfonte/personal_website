@@ -131,8 +131,7 @@ export default function AmazonCard() {
     <Card
       raised={true}
       className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Amazon &amp; Amazon Web Services"
           aria-controls="amazon-content"

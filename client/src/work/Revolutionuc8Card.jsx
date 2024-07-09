@@ -72,8 +72,7 @@ const styles = {
 export default function RevolutionUC8Card() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Revolution UC 8"
           aria-controls="revolutionuc8-content"

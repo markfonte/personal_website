@@ -95,8 +95,7 @@ const styles = {
 const Grizzhacks3Card = () => {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="GrizzHacks 3"
           aria-controls="grizzhacks3-content"

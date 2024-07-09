@@ -84,8 +84,7 @@ const styles = {
 export default function RoadMapperCard() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Road Mapper"
           aria-controls="road-mapper-content"

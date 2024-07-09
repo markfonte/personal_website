@@ -450,7 +450,7 @@ export default function GlossaryCard() {
             sx={styles.expansionPanel}
             elevation={1}
             onChange={handlePanelChange(glossaryItem.tagName)}
-            TransitionProps={{ unmountOnExit: true }}
+            slotProps={{ transition: { unmountOnExit: true } }}
           >
             <AccordionSummary
               expandIcon={

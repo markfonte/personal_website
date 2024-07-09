@@ -62,8 +62,7 @@ const styles = {
 export default function TeslaCard() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Tesla"
           aria-controls="tesla-content"

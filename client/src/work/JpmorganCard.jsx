@@ -96,8 +96,7 @@ export default function JPMorganCard() {
     <Card
       raised={true}
       className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="JPMorgan"
           aria-controls="jpmorgan-content"

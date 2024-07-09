@@ -250,7 +250,7 @@ export default function Blog() {
       <Typography sx={styles.title} variant="h6" paragraph>
         Welcome! Here are some of my thoughts on issues that I find important.<br />Disagreements and discussions are highly encouraged 😊
       </Typography>
-      <Masonry columns={{ sm: 1, md: 2 }} spacing={3} sx={styles.masonryContainer}>
+      <Masonry columns={{ sm: 1, md: 2 }} spacing={4} sx={styles.masonryContainer}>
         {posts.map((post) => (
           <Card raised={true} className="large-card" key={post.title}>
             <Accordion>

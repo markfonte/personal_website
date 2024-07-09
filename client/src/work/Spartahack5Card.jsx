@@ -114,8 +114,7 @@ const styles = {
 export default function Spartahack5Card() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="SpartaHack V"
           aria-controls="spartahack5-content"

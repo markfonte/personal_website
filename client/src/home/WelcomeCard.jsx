@@ -99,8 +99,7 @@ export default function WelcomeCard({ isDarkTheme }) {
 
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Welcome"
           aria-controls="welcome-content"

@@ -113,8 +113,7 @@ const styles = {
 export default function MHacks12Card() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="MHacks 12"
           aria-controls="mhacks12-content"

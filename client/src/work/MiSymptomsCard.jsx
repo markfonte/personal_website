@@ -110,8 +110,7 @@ const styles = {
 export default function MISymptomsCard() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="MI Symptoms"
           aria-controls="mi-symptoms-content"

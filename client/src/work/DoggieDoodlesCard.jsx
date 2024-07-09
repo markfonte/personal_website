@@ -89,8 +89,7 @@ const styles = {
 export default function DoggieDoodlesCard() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Doggie Doodles"
           aria-controls="doggie-doodles-content"

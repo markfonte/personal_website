@@ -165,8 +165,7 @@ const styles = {
 export default function CompletedCourseworkCard() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Michigan"
           aria-controls="michigan-content"

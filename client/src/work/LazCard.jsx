@@ -125,8 +125,7 @@ const styles = {
 export default function LAZCard() {
   return (
     <Card raised={true} className="large-card">
-      <Accordion
-        TransitionProps={{ unmountOnExit: true }}>
+      <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Learning A-Z"
           aria-controls="learningaz-content"
