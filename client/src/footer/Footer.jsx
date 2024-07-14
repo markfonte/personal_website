@@ -3,7 +3,7 @@ import '../App.css';
 import reactLogo from '../static/logos/react_logo.svg';
 import universityOfMichiganLogoSmall from '../static/logos/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
-import { Typography, Link, Tooltip, Button } from '@mui/material';
+import { Typography, Link, Tooltip, Button, Box } from '@mui/material';
 import timestamp from '../CommitTimestamp.js';
 import facebookLogo from '../static/logos/facebook_logo.svg';
 import stackOverflowLogo from '../static/logos/stack_overflow_logo.svg';
@@ -59,10 +59,13 @@ const styles = {
   errorMessageRoot: {
     margin: '16px',
   },
-  buttons: {
+  button: {
     width: '40px',
     height: 'auto',
   },
+  badge: {
+    margin: '4px',
+  }
 };
 
 const facebookLink = `https://www.facebook.com/mark.fonte.397`;
@@ -115,6 +118,24 @@ const buttons = [
   },
 ];
 
+const badges = [
+  {
+    url: "https://img.shields.io/maintenance/yes/2024"
+  },
+  {
+    url: "https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e"
+  },
+  {
+    url: "https://img.shields.io/github/release/markfonte/personal_website"
+  },
+  {
+    url: "https://img.shields.io/github/release-date/markfonte/personal_website"
+  },
+  {
+    url: "https://img.shields.io/github/commits-since/markfonte/personal_website/latest"
+  },
+];
+
 export default function Footer({ isDarkTheme }) {
   const [apiResponse, setApiResponse] = useState(true);
   const [serverCrashed, setServerCrashed] = useState(false);
@@ -161,7 +182,7 @@ export default function Footer({ isDarkTheme }) {
           {buttons.map((button) => (
             <Tooltip key={button.name} title={`go to ${button.name}`} arrow>
               <Button href={button.link}>
-                <img src={!isDarkTheme && button.logoDark ? button.logoDark : button.logo} style={styles.buttons} alt={`${button.name} button`} />
+                <img src={!isDarkTheme && button.logoDark ? button.logoDark : button.logo} style={styles.button} alt={`${button.name} button`} />
               </Button>
             </Tooltip>
           ))}
@@ -175,6 +196,11 @@ export default function Footer({ isDarkTheme }) {
             </Typography>
           )}
         </div>
+        <Box style={{ marginTop: 8 }}>
+          {badges.map((badge, i) => (
+            <img src={badge.url} style={styles.badge} alt={`${badge.url} button`} key={i} />
+          ))}
+        </Box>
         <div style={{ margin: 4 }}>
           <Typography variant="caption" color="textSecondary">
             last updated{' '}
@@ -213,7 +239,7 @@ export default function Footer({ isDarkTheme }) {
           </Tooltip>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }
 
