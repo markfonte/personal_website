@@ -454,7 +454,7 @@ export default function GlossaryCard() {
           >
             <AccordionSummary
               expandIcon={
-                <Tooltip title="Expand/collapse card" arrow>
+                <Tooltip title="expand/collapse card" arrow>
                   <IconButton size="large">
                     <ExpandMoreIcon />
                   </IconButton>

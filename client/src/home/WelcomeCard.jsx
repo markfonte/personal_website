@@ -24,8 +24,6 @@ import PropTypes from 'prop-types';
 
 const trelloBoardLink = `https://trello.com/b/yoLCEs6S/personal-website`;
 const umichLink = 'https://umich.edu/';
-const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
-const androidDevLink = 'https://developer.android.com/';
 const awsLink = `https://aws.amazon.com/`;
 const justlightLink = `https://www.justlight.com/`;
 const teslaLink = `https://tesla.com`;
@@ -106,7 +104,7 @@ export default function WelcomeCard({ isDarkTheme }) {
           id="welcome-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />
@@ -140,25 +138,25 @@ export default function WelcomeCard({ isDarkTheme }) {
           <CardContent sx={styles.cardContent}>
             <Typography variant="h6" paragraph>
               Welcome to my website! I&#39;m a senior software engineer at{' '}
-              <Tooltip arrow title="Go to Tesla">
+              <Tooltip arrow title="go to Tesla">
                 <Link color="secondary" href={teslaLink} className={teslaColor} underline="hover">
                   Tesla
                 </Link>
               </Tooltip>
               , a former software engineering lead at a medical device startup called{' '}
-              <Tooltip arrow title="Go to JustLight">
+              <Tooltip arrow title="go to JustLight">
                 <Link color="secondary" href={justlightLink} className={justlightColor} underline="hover">
                   JustLight
                 </Link>
               </Tooltip>
               , a former software engineer at{' '}
-              <Tooltip arrow title="Go to Amazon Web Services">
+              <Tooltip arrow title="go to Amazon Web Services">
                 <Link color="secondary" href={awsLink} className={amazonColor} underline="hover">
                   Amazon Web Services
                 </Link>
               </Tooltip>
               , a computer science engineering / entrepreneurship graduate from{' '}
-              <Tooltip arrow placement="bottom" title="Go to U of M website">
+              <Tooltip arrow placement="bottom" title="go blue...">
                 <Link href={umichLink} className={michiganColor} underline="hover">
                   University of Michigan
                 </Link>
@@ -167,20 +165,16 @@ export default function WelcomeCard({ isDarkTheme }) {
             </Typography>
             <Typography variant="body1" paragraph>
               Outside of coding, I love reading, writing, teaching, playing basketball and making cool shit. I especially love building{' '}
-              <Tooltip arrow placement="bottom" title="Go to Android Developers page">
-                <Link href={androidDevLink} className={androidColor} underline="hover">
-                  Android
-                </Link>
-              </Tooltip>
+              <Link href="" className={androidColor} underline="hover">
+                Android
+              </Link>
               {' '}and{' '}
-              <Tooltip arrow placement="bottom" title="Go to web development page">
-                <Link href={webDevLink} className={webColor} underline="hover">
-                  web
-                </Link>
-              </Tooltip>
+              <Link href="" className={webColor} underline="hover">
+                web
+              </Link>
               {' '}applications. I built this website to be an interactive sandbox where I could break things and have fun. I aim to make it faster, more intuitive, and easier to navigate. Hopefully the experience is better each time you visit! You can always check what I&#39;m working on on my
               {' '}
-              <Tooltip arrow title="Go to my Trello board">
+              <Tooltip arrow title="see my Trello board">
                 <Link color="secondary" href={trelloBoardLink} underline="hover">
                   Trello board
                 </Link>

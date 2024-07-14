@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // import CommentBox from './comment_box.jsx';
 import { Card, CardContent } from '@mui/material';
 import LikeButton from './LikeButton.jsx';
-import PrideSwitch from './PrideSwitch.jsx';
+import Settings from './Settings.jsx';
 
 const styles = {
   root: {
@@ -21,7 +21,7 @@ const InteractionCard = ({ pagename }) => {
           Interaction Card
         </a>
         <CardContent>
-          {pagename === 'home' ? <PrideSwitch /> : null}
+          {pagename === 'home' ? <Settings /> : null}
           <LikeButton pagename={pagename} />
         </CardContent>
       </Card>

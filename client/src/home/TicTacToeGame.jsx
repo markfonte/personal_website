@@ -109,7 +109,7 @@ export default function TicTacToeGame() {
         <br />
         <div className={winner ? 'firework' : ''} />
         {stepNum !== 0 ? (
-          <Tooltip placement="right" arrow title="Restart">
+          <Tooltip placement="right" arrow title="restart">
             <Button variant="outlined" onClick={() => jumpTo(0)}>
               Restart
             </Button>

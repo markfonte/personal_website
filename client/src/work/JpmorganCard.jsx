@@ -103,7 +103,7 @@ export default function JPMorganCard() {
           id="jpmorgan-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />

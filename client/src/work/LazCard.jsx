@@ -132,7 +132,7 @@ export default function LAZCard() {
           id="learningaz-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />

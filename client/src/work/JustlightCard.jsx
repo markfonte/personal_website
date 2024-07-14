@@ -186,7 +186,7 @@ export default function JustlightCard({ isDarkTheme }) {
           id="justlight-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />

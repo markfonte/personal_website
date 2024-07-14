@@ -96,7 +96,7 @@ export default function DoggieDoodlesCard() {
           id="doggie-doodles-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />

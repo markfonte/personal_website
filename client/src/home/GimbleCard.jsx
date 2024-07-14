@@ -143,7 +143,7 @@ export default function GimbleCard() {
           id="gimble-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />
@@ -198,7 +198,7 @@ export default function GimbleCard() {
       </Accordion>
       <CardActions sx={styles.cardActions}>
         <Tooltip
-          title="Go to Gimble A Cappella's website"
+          title="go to Gimble A Cappella's website"
           arrow>
           <IconButton aria-label="Go to website" href={websiteLink} size="large">
             <WebIcon />
@@ -206,7 +206,7 @@ export default function GimbleCard() {
         </Tooltip>
         {links.map((link) => (
           <Tooltip
-            title={'Go to ' + link.name}
+            title={'go to ' + link.name}
             key={link.name}
             arrow>
             <IconButton aria-label={link.name} href={link.link} size="large">

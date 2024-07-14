@@ -64,7 +64,7 @@ export default function LikeButton({ pagename }) {
         if (error.name === 'AbortError' || error.name === 'TypeError') {
           return;
         }
-        console.log(error);
+        console.error(error);
       });
   };
 
@@ -88,7 +88,7 @@ export default function LikeButton({ pagename }) {
           if (error.name === 'AbortError' || error.name === 'TypeError') {
             return;
           }
-          console.log(error);
+          console.error(error);
         });
       setCookie(pagename, 'liked', 1000);
       setLiked(true);
@@ -111,7 +111,7 @@ export default function LikeButton({ pagename }) {
           if (error.name === 'AbortError' || error.name === 'TypeError') {
             return;
           }
-          console.log(error);
+          console.error(error);
         });
       deleteCookie(pagename, 'liked');
       setLiked(false);

@@ -150,7 +150,7 @@ const styles = {
 
 export default function App() {
   const [theme, setTheme] = useState(lightTheme);
-  const [proud, setProud] = useState(false);
+  const [rainbow, setRainbow] = useState(false);
   const [currentlySelected, setCurrentlySelected] = useState(0);
   const [logoSpinning, setLogoSpinning] = useState(false);
 
@@ -181,9 +181,9 @@ export default function App() {
   useEffect(() => {
     routes.forEach(findCurrentRoute);
 
-    let proud = false;
-    if (getCookie('pride') === 'true') {
-      proud = true;
+    let rainbow = false;
+    if (getCookie('rainbow') === 'true') {
+      rainbow = true;
     }
     let initialTheme = lightTheme;
     if (getCookie('app_theme') === 'light_theme') {
@@ -194,7 +194,7 @@ export default function App() {
       setCookie('app_theme', 'light_theme', 1000);
     }
     setTheme(initialTheme);
-    setProud(proud);
+    setRainbow(rainbow);
   }, []);
 
   return (
@@ -203,14 +203,14 @@ export default function App() {
         <CssBaseline />
 
         <Grid sx={styles.root}>
-          {proud ? <header style={styles.headerRoot} /> : null}
-          <Tooltip title={theme === darkTheme ? "Enter light theme" : "Enter dark theme"} arrow>
+          {rainbow ? <header style={styles.headerRoot} /> : null}
+          <Tooltip title={theme === darkTheme ? "enter Light Mode" : "enter Dark Mode"} arrow>
             <IconButton onClick={toggleTheme} style={styles.toggleThemeButton}>
               {theme === darkTheme ? <LightMode /> : <DarkMode />}
             </IconButton>
           </Tooltip>
           <Router>
-            <Tooltip title={logoSpinning ? 'weeeeeeeeeee!!' : 'Click me!'} arrow>
+            <Tooltip title={logoSpinning ? 'weeeeeeeeeee!!' : 'click me!'} arrow>
               <img
                 onClick={profilePictureClicked}
                 srcSet={[profilePicture]}
@@ -248,7 +248,7 @@ export default function App() {
           <ScrollUpButton />
           <Footer isDarkTheme={theme === darkTheme} />
         </Grid>
-        {proud ? <footer style={styles.footerRoot} /> : null}
+        {rainbow ? <footer style={styles.footerRoot} /> : null}
       </ThemeProvider>
     </StyledEngineProvider>
   );

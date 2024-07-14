@@ -113,7 +113,7 @@ export default function SammyCard() {
           id="sammy-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />
@@ -162,7 +162,7 @@ export default function SammyCard() {
       </Accordion>
       <CardActions sx={styles.cardActions}>
         <Tooltip
-          title="Check out Sammy's Michigan Daily articles"
+          title="check out Sammy's Michigan Daily articles"
           arrow>
           <IconButton aria-label="Go to website" href="https://www.michigandaily.com/author/sfonteumich-edu/" size="large">
             <WebIcon />

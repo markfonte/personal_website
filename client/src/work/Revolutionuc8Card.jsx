@@ -79,7 +79,7 @@ export default function RevolutionUC8Card() {
           id="revolutionuc8-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />

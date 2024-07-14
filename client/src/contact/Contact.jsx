@@ -47,7 +47,7 @@ export default function Contact() {
         <Tooltip
           arrow
           placement="top"
-          title="Email me: mark@fonte.com">
+          title="email me: mark@fonte.com">
           <Chip
             sx={styles.buttonDefault}
             key='Email chip'

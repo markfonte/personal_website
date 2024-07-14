@@ -117,7 +117,7 @@ export default function MISymptomsCard() {
           id="mi-symptoms-header"
           expandIcon={
             <Tooltip
-              title="Expand/collapse card"
+              title="expand/collapse card"
               arrow>
               <IconButton size="large">
                 <ExpandMoreIcon />

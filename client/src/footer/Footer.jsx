@@ -137,13 +137,12 @@ export default function Footer({ isDarkTheme }) {
         }
       })
       .catch((err) => {
-        console.log("aaa");
         setApiResponse(false);
         setServerCrashed(true);
         if (err.name === 'AbortError' || err.name === 'TypeError') {
           return;
         }
-        console.log(err);
+        console.error(err);
       });
   };
 
@@ -160,7 +159,7 @@ export default function Footer({ isDarkTheme }) {
       <div style={styles.footerContainer}>
         <div style={styles.iconBar}>
           {buttons.map((button) => (
-            <Tooltip key={button.name} title={`Go to ${button.name}`} arrow>
+            <Tooltip key={button.name} title={`go to ${button.name}`} arrow>
               <Button href={button.link}>
                 <img src={!isDarkTheme && button.logoDark ? button.logoDark : button.logo} style={styles.buttons} alt={`${button.name} button`} />
               </Button>
@@ -179,7 +178,7 @@ export default function Footer({ isDarkTheme }) {
         <div style={{ margin: 4 }}>
           <Typography variant="caption" color="textSecondary">
             last updated{' '}
-            <Tooltip arrow placement="right" title="See most recent commit on GitHub">
+            <Tooltip arrow placement="right" title="see most recent commit on GitHub">
               <Link color="secondary" href={commitHistoryLink}>
                 <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
                   {timestamp}
@@ -189,14 +188,14 @@ export default function Footer({ isDarkTheme }) {
           </Typography>
         </div>
         <div style={{ margin: 4 }}>
-          <Tooltip arrow placement="right" title="View source code on GitHub">
+          <Tooltip arrow placement="right" title="view source code on GitHub">
             <Link variant="caption" color="textSecondary" href={websiteGithubLink}>
               view source code
             </Link>
           </Tooltip>
         </div>
         <div style={{ margin: 4 }}>
-          <Tooltip arrow placement="right" title="Suggest an edit on Github">
+          <Tooltip arrow placement="right" title="suggest an edit on Github">
             <Link variant="caption" color="textSecondary" href={suggestEditLink}>
               report issue
             </Link>

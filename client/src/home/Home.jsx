@@ -15,8 +15,6 @@ const justlightLink = 'https://www.justlight.com/about';
 const teslaLink = 'https://www.tesla.com/';
 const umichLink = 'https://umich.edu/';
 const entrepreneurshipLink = 'https://innovateblue.umich.edu/academics/minor-in-entrepreneurship/';
-const webDevLink = 'https://en.wikipedia.org/wiki/Web_development';
-const androidDevLink = 'https://developer.android.com/';
 const awsLink = `https://aws.amazon.com/`;
 
 const styles = {
@@ -78,13 +76,13 @@ export default function Home({ isDarkTheme }) {
 
         {' '}·{' '}
 
-        <Link href={webDevLink} className={webColor} underline="hover">
+        <Link href="" className={webColor} underline="hover">
           Web
         </Link>{' '}
 
         &amp;{' '}
 
-        <Link href={androidDevLink} className={androidColor} underline="hover">
+        <Link href="" className={androidColor} underline="hover">
           Android
         </Link>
 

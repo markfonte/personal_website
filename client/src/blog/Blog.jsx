@@ -259,7 +259,7 @@ export default function Blog() {
                 aria-controls={post.title + '-content'}
                 id={post.title + '-header'}
                 expandIcon={
-                  <Tooltip title="Expand/collapse card" arrow>
+                  <Tooltip title="expand/collapse card" arrow>
                     <IconButton size="large">
                       <ExpandMoreIcon />
                     </IconButton>
@@ -297,7 +297,7 @@ export default function Blog() {
               </AccordionDetails>
             </Accordion>
             <CardActions>
-              <Tooltip title="Share article" arrow>
+              <Tooltip title="share article" arrow>
                 <IconButton
                   aria-label="Share article"
                   onClick={() => copyToClipboard(process.env.REACT_APP_CLIENT_URL + 'blog#post_' + post.postNumber)}
