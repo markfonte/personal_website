@@ -38,7 +38,7 @@ export default function Contact() {
   return (
     <div style={styles.root}>
       <Typography sx={styles.title} variant="h6">
-        Let&#39;s get in touch!
+        Let&#39;s get in touch
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
         My inbox is always open! And so is my Venmo... so feel free to pass along a few (hundred) of your hard-earned bucks 🤪

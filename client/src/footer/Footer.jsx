@@ -71,7 +71,7 @@ const linkedinLink = `https://linkedin.com/in/mark-fonte/`;
 const instagramLink = `https://www.instagram.com/mark_fonte21/`;
 const youtubeLink = `https://www.youtube.com/channel/UCziCrimzV0XM3qy8BJL_JjQ`;
 const websiteGithubLink = `https://github.com/markfonte/personal_website`;
-const suggestEditLink = `mailto:mark@fonte.com?subject=Website edit suggestion`;
+const suggestEditLink = `https://github.com/markfonte/personal_website/issues/new`;
 const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
 const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/main`;
 const spotifyLink = `https://open.spotify.com/artist/5rVdyxve8VvmsgT3HSWB1a`;
@@ -178,8 +178,8 @@ export default function Footer({ isDarkTheme }) {
         </div>
         <div style={{ margin: 4 }}>
           <Typography variant="caption" color="textSecondary">
-            Last updated{' '}
-            <Tooltip arrow placement="right" title="Go to most recent commit on GitHub">
+            last updated{' '}
+            <Tooltip arrow placement="right" title="See most recent commit on GitHub">
               <Link color="secondary" href={commitHistoryLink}>
                 <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
                   {timestamp}
@@ -189,21 +189,21 @@ export default function Footer({ isDarkTheme }) {
           </Typography>
         </div>
         <div style={{ margin: 4 }}>
-          <Tooltip arrow placement="right" title="Go to source code on GitHub">
+          <Tooltip arrow placement="right" title="View source code on GitHub">
             <Link variant="caption" color="textSecondary" href={websiteGithubLink}>
-              View source on GitHub
+              view source code
             </Link>
           </Tooltip>
         </div>
         <div style={{ margin: 4 }}>
-          <Tooltip arrow placement="right" title="Email me with website edit suggestions!">
+          <Tooltip arrow placement="right" title="Suggest an edit on Github">
             <Link variant="caption" color="textSecondary" href={suggestEditLink}>
-              Suggest an edit
+              report issue
             </Link>
           </Tooltip>
         </div>
         <div>
-          <Tooltip arrow placement="right" title="Go blue!!">
+          <Tooltip arrow placement="right" title="go blue 🫡">
             <img
               src={universityOfMichiganLogoSmall}
               width="25"
