@@ -26,12 +26,12 @@ const styles = {
     pointerEvents: 'none',
   },
   iconBar: {
-    'display': 'flex',
-    'flexDirection': 'row',
-    'listStyle': 'none',
-    'margin': '24px',
-    'flexWrap': 'wrap',
-    'justifyContent': 'center',
+    display: 'flex',
+    flexDirection: 'row',
+    listStyle: 'none',
+    margin: '8px',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
     '& a': {
       'textAlign': 'center',
       'transition': 'all 0.3s ease',
