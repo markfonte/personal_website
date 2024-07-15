@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Typography, Tooltip, Chip, Avatar } from '@mui/material';
-import contactCoverPhoto from '../static/photos/contact_cover_photo.png';
+import contactCoverPhoto from '../static/photos/spike_photo.webp';
 import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
 import InteractionCard from '../shared/InteractionCard.jsx';
@@ -83,7 +83,7 @@ export default function Contact() {
       />
       <br />
       <Typography variant="caption">
-        ...if you Venmo me I won&#39;t be so sad!!
+        ...Venmo-ing me makes Spike happy!
       </Typography>
       <br /> <br /> <br />
       <InteractionCard pagename="contact" />

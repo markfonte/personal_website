@@ -13,12 +13,12 @@ import {
   ImageList,
   ImageListItem,
 } from '@mui/material';
-import welcomeImageOne from '../static/photos/welcome_photo_1.jpg';
-import welcomeImageTwo from '../static/photos/welcome_photo_2.jpg';
-import welcomeImageThree from '../static/photos/welcome_photo_3.jpg';
+import welcomeImageOne from '../static/photos/welcome_photo_1.webp';
 import welcomeImageFour from '../static/photos/welcome_photo_4.jpg';
-import welcomeImageFive from '../static/photos/welcome_photo_5.jpg';
-import welcomeImageSix from '../static/photos/welcome_photo_6.jpg';
+import welcomeImageSix from '../static/photos/welcome_photo_6.webp';
+import welcomeImageSeven from '../static/photos/welcome_photo_7.webp';
+import welcomeImageEight from '../static/photos/welcome_photo_8.webp';
+import welcomeImageNine from '../static/photos/welcome_photo_9.webp';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 
@@ -30,27 +30,27 @@ const teslaLink = `https://tesla.com`;
 
 const itemData = [
   {
+    img: welcomeImageSeven,
+    title: '',
+  },
+  {
     img: welcomeImageOne,
     title: '',
   },
   {
-    img: welcomeImageTwo,
+    img: welcomeImageSix,
     title: '',
   },
   {
-    img: welcomeImageThree,
+    img: welcomeImageEight,
+    title: '',
+  },
+  {
+    img: welcomeImageNine,
     title: '',
   },
   {
     img: welcomeImageFour,
-    title: '',
-  },
-  {
-    img: welcomeImageFive,
-    title: '',
-  },
-  {
-    img: welcomeImageSix,
     title: '',
   },
 ];
@@ -137,7 +137,10 @@ export default function WelcomeCard({ isDarkTheme }) {
         <AccordionDetails>
           <CardContent sx={styles.cardContent}>
             <Typography variant="h6" paragraph>
-              Welcome to my website! I&#39;m a senior software engineer at{' '}
+              Welcome to my website!
+            </Typography>
+            <Typography variant="body1" paragraph>
+              I&#39;m a senior software engineer at{' '}
               <Tooltip arrow title="go to Tesla">
                 <Link color="secondary" href={teslaLink} className={teslaColor} underline="hover">
                   Tesla
@@ -155,13 +158,13 @@ export default function WelcomeCard({ isDarkTheme }) {
                   Amazon Web Services
                 </Link>
               </Tooltip>
-              , a computer science engineering / entrepreneurship graduate from{' '}
+              , I have bachelor&#39;s of computer science in engineering degree with a minor in entrepreneurship from{' '}
               <Tooltip arrow placement="bottom" title="go blue...">
                 <Link href={umichLink} className={michiganColor} underline="hover">
                   University of Michigan
                 </Link>
               </Tooltip>
-              , and a former singer / beatboxer for a college a cappella group.
+              , and I was a singer / beatboxer for a college a cappella group.
             </Typography>
             <Typography variant="body1" paragraph>
               Outside of coding, I love reading, writing, teaching, playing basketball and making cool shit. I especially love building{' '}

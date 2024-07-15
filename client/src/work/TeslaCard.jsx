@@ -12,7 +12,8 @@ import {
   IconButton,
   Tooltip,
 } from '@mui/material';
-import teslaOnboardPic from '../static/photos/tesla_onboard_pic.jpg';
+import teslaOnboardPhoto from '../static/photos/tesla_onboard_photo.jpg';
+import teslaCyberPhoto from '../static/photos/tesla_cyber_photo.webp';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -32,6 +33,9 @@ const tags = [
     label: 'C',
   },
   {
+    label: 'C++',
+  },
+  {
     label: 'JavaScript',
   },
   {
@@ -39,6 +43,9 @@ const tags = [
   },
   {
     label: 'React',
+  },
+  {
+    label: 'React Native',
   },
 ];
 
@@ -56,6 +63,12 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
+  },
+  teslaPhoto: {
+    margin: '4px',
+    height: 'auto',
+    width: '100%',
+    maxWidth: '300px',
   },
 };
 
@@ -108,10 +121,13 @@ export default function TeslaCard() {
         <AccordionDetails>
           <CardContent>
             <Typography variant="body1" paragraph>
-              Working on vehicle diagnostics firmware and in-vehicle UI as part of the Service Engineering organization
+              Developing in-vehicle diagnostics firmware and center display UI development for Tesla vehicles in the Service Engineering organization.
+              This involves owning, maintaining and/or contributing to the on-vehicle diagnostics interface, vehicle compliance with Diagnostics over IP protocol, Right-To-Repair efforts, technician-facing diagnostic tools and much more.
+              Development is full-stack: from Linux buildroot to C++ infrastructure to Python application layer to React and React Native (mobile app) development.
+              My goal is to continually improve the experience of diagnosing and repairing Tesla vehicles for Tesla Service technicians, independent repairers and customers.
+              It&#39;s a blast! ⚡️🚗
             </Typography>
-            <img src={teslaOnboardPic}
-            />
+            <img style={styles.teslaPhoto} src={teslaOnboardPhoto} /> <img style={styles.teslaPhoto} src={teslaCyberPhoto} />
           </CardContent>
         </AccordionDetails>
       </Accordion>
