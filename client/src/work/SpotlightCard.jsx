@@ -1,19 +1,11 @@
 import React from 'react';
+
 import spotlightScreenshotOne
   from '../static/screenshots/spotlight_screenshot_1.webp';
-import spotlightScreenshotOneFallback
-  from '../static/screenshots/spotlight_screenshot_1.jpg';
-
 import spotlightScreenshotTwo
   from '../static/screenshots/spotlight_screenshot_2.webp';
-import spotlightScreenshotTwoFallback
-  from '../static/screenshots/spotlight_screenshot_2.jpg';
-
-
 import spotlightScreenshotThree
   from '../static/screenshots/spotlight_screenshot_3.webp';
-import spotlightScreenshotThreeFallback
-  from '../static/screenshots/spotlight_screenshot_3.jpg';
 
 import {
   Typography,
@@ -243,33 +235,21 @@ export default function SpotlightCard() {
               an iOS developer, getting to work closely with the iOS app was also
               so much fun.
             </Typography>
-            <picture>
-              <source srcSet={spotlightScreenshotOne} type="image/webp" />
-              <source srcSet={spotlightScreenshotOneFallback} type="image/jpg" />
-              <img
-                srcSet={[spotlightScreenshotOne, spotlightScreenshotOneFallback]}
-                style={styles.screenshot}
-                alt="Spotlight screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={spotlightScreenshotTwo} type="image/webp" />
-              <source srcSet={spotlightScreenshotTwoFallback} type="image/jpg" />
-              <img
-                srcSet={[spotlightScreenshotTwo, spotlightScreenshotTwoFallback]}
-                style={styles.screenshot}
-                alt="Spotlight screenshot 2"
-              />
-            </picture>
-            <picture>
-              <source srcSet={spotlightScreenshotThree} type="image/webp" />
-              <source srcSet={spotlightScreenshotThreeFallback} type="image/jpg" />
-              <img
-                srcSet={[spotlightScreenshotThree, spotlightScreenshotThreeFallback]}
-                style={styles.screenshot}
-                alt="Spotlight screenshot 3"
-              />
-            </picture>
+            <img
+              src={spotlightScreenshotOne}
+              style={styles.screenshot}
+              alt="Spotlight screenshot 1"
+            />
+            <img
+              src={spotlightScreenshotTwo}
+              style={styles.screenshot}
+              alt="Spotlight screenshot 2"
+            />
+            <img
+              src={spotlightScreenshotThree}
+              style={styles.screenshot}
+              alt="Spotlight screenshot 3"
+            />
             <Typography variant="body1" paragraph>
               We worked on this project for a long time and built a successful MVP
               (minimum viable product) and more. Unfortunately, we were never able to

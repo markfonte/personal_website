@@ -1,18 +1,11 @@
 import React from 'react';
+
 import walklensScreenshotOne
   from '../static/screenshots/walklens_screenshot_1.webp';
-import walklensScreenshotOneFallback
-  from '../static/screenshots/walklens_screenshot_1.jpg';
-
 import walklensScreenshotTwo
   from '../static/screenshots/walklens_screenshot_2.webp';
-import walklensScreenshotTwoFallback
-  from '../static/screenshots/walklens_screenshot_2.jpg';
-
 import walklensScreenshotThree
   from '../static/screenshots/walklens_screenshot_3.webp';
-import walklensScreenshotThreeFallback
-  from '../static/screenshots/walklens_screenshot_3.jpg';
 
 import {
   Typography,
@@ -227,47 +220,29 @@ export default function WalklensCard() {
               At the time of writing, it is available on the Google Play Store.
               There are no plans to make an iOS version of WalkLens.
             </Typography>
-            <picture>
-              <source srcSet={walklensScreenshotOne} type="image/webp" />
-              <source srcSet={walklensScreenshotOneFallback} type="image/jpg" />
-              <img
-                srcSet={[walklensScreenshotOne, walklensScreenshotOneFallback]}
-                style={styles.screenshot}
-                alt="WalkLens screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={walklensScreenshotTwo} type="image/webp" />
-              <source srcSet={walklensScreenshotTwoFallback} type="image/jpg" />
-              <img
-                srcSet={[walklensScreenshotTwo, walklensScreenshotTwoFallback]}
-                style={styles.screenshot}
-                alt="WalkLens screenshot 2"
-              />
-            </picture>
-            <picture>
-              <source srcSet={walklensScreenshotThree} type="image/webp" />
-              <source srcSet={walklensScreenshotThreeFallback} type="image/jpg" />
-              <img
-                srcSet={[walklensScreenshotThree, walklensScreenshotThreeFallback]}
-                style={styles.screenshot}
-                alt="WalkLens screenshot 3"
-              />
-            </picture>
+            <img
+              src={walklensScreenshotOne}
+              style={styles.screenshot}
+              alt="WalkLens screenshot 1"
+            />
+            <img
+              src={walklensScreenshotTwo}
+              style={styles.screenshot}
+              alt="WalkLens screenshot 2"
+            />
+            <img
+              src={walklensScreenshotThree}
+              style={styles.screenshot}
+              alt="WalkLens screenshot 3"
+            />
             <Typography variant="body1" paragraph>
               View it on
-
-              {' '}
               <Link color="secondary" href={walklensGithubLink}>
-                Github
+                {' '}Github{' '}
               </Link>
-              {' '}
-
               or the
-
-              {' '}
               <Link color="secondary" href={walklensGooglePlayLink}>
-                Google Play Store
+                {' '}Google Play Store
               </Link>
             </Typography>
           </CardContent>

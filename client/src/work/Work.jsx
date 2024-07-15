@@ -47,7 +47,7 @@ export default function Work({ isDarkTheme }) {
       </Typography>
       <Suspense fallback={renderLoader()}>
         <Masonry columns={{ sm: 1, md: 2 }}
-          spacing={4}
+          spacing={3}
           sx={styles.masonryContainer}>
           <TeslaCard />
           <JustlightCard isDarkTheme={isDarkTheme} />

@@ -18,8 +18,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import roadMapperScreenshotOne
   from '../static/screenshots/ice_road_mappers_screenshot_1.webp';
-import roadMapperScreenshotOneFallback
-  from '../static/screenshots/ice_road_mappers_screenshot_1.png';
 
 const eecs493Link = `https://atlas.ai.umich.edu/course/EECS%20493/`;
 const vueLink = `https://vuejs.org/`;
@@ -182,17 +180,13 @@ export default function RoadMapperCard() {
               {' '}
               application.
             </Typography>
-            <picture>
-              <br />
-              <source srcSet={roadMapperScreenshotOne} type="image/webp" />
-              <source srcSet={roadMapperScreenshotOneFallback} type="image/png" />
-              <img
-                srcSet={[roadMapperScreenshotOne, roadMapperScreenshotOneFallback]}
-                style={styles.screenshotOne}
-                title="Road Mappers screenshot 1"
-                alt="Road Mappers screenshot 1"
-              />
-            </picture>
+            <br />
+            <img
+              src={roadMapperScreenshotOne}
+              style={styles.screenshotOne}
+              title="Road Mappers screenshot 1"
+              alt="Road Mappers screenshot 1"
+            />
             <Typography variant="body1" gutterBottom>
               <br />
               Although we never released it to the public, it was a great experience with a new

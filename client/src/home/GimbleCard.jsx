@@ -51,7 +51,7 @@ const links = [
 const spotifySingles = [
   {
     src: `https://open.spotify.com/embed/track/2x3lNJtZj9QdDBzFroeVUZ`,
-    title: `The Joke - Gimble A Cappella`,
+    title: `Movement (Voices Only) - Gimble A Cappella`,
   },
   {
     src: `https://open.spotify.com/embed/track/3vJOfNgJsMcwbfQhQFjqJO`,
@@ -105,8 +105,6 @@ const styles = {
   },
   spotifySingle: {
     height: '232px',
-    width: '100%',
-    maxWidth: '330px',
     margin: '4px',
   },
   spotifyAlbum: {
@@ -115,6 +113,9 @@ const styles = {
   },
   cardActions: {
     overflowX: 'auto',
+  },
+  cardContent: {
+    padding: '0px',
   },
   expansionHeaderContainer: {
     display: 'flex',
@@ -168,13 +169,13 @@ export default function GimbleCard() {
           </div>
         </AccordionSummary>
         <AccordionDetails>
-          <CardContent>
+          <CardContent sx={styles.cardContent}>
             {spotifyAlbums.map((spotifyAlbum) => (
               <iframe
                 style={styles.spotifyAlbum}
                 src={spotifyAlbum.src}
                 title={spotifyAlbum.title}
-                key={spotifyAlbum.title}
+                key={spotifyAlbum.title + " album"}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -186,7 +187,7 @@ export default function GimbleCard() {
                 style={styles.spotifySingle}
                 src={spotifySingle.src}
                 title={spotifySingle.title}
-                key={spotifySingle.title}
+                key={spotifySingle.title + " single"}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

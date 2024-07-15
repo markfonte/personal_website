@@ -20,18 +20,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import laughableLyricsScreenshotOne
   from '../static/screenshots/laughable_lyrics_screenshot_1.webp';
-import laughableLyricsScreenshotOneFallback
-  from '../static/screenshots/laughable_lyrics_screenshot_1.jpg';
-
 import laughableLyricsScreenshotTwo
   from '../static/screenshots/laughable_lyrics_screenshot_2.webp';
-import laughableLyricsScreenshotTwoFallback
-  from '../static/screenshots/laughable_lyrics_screenshot_2.jpg';
-
 import laughableLyricsScreenshotThree
   from '../static/screenshots/laughable_lyrics_screenshot_3.webp';
-import laughableLyricsScreenshotThreeFallback
-  from '../static/screenshots/laughable_lyrics_screenshot_3.jpg';
 
 const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
 const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
@@ -269,39 +261,25 @@ export default function Spartahack5Card() {
               Translate API has some steep pricing on their usage and very small limits
               on their free tier (causing a few demo fails, oops!).
             </Typography>
-            <picture>
-              <source srcSet={laughableLyricsScreenshotOne} type="image/webp" />
-              <source srcSet={laughableLyricsScreenshotOneFallback} type="image/jpg" />
-              <img
-                srcSet={[laughableLyricsScreenshotOne, laughableLyricsScreenshotOneFallback]}
-                style={styles.mobileScreenshot}
-                alt="Laughable Lyrics Screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={laughableLyricsScreenshotTwo} type="image/webp" />
-              <source srcSet={laughableLyricsScreenshotTwoFallback} type="image/jpg" />
-              <img
-                srcSet={[laughableLyricsScreenshotTwo, laughableLyricsScreenshotTwoFallback]}
-                style={styles.mobileScreenshot}
-                alt="Laughable Lyrics Screenshot 2"
-              />
-            </picture>
-            <picture>
-              <source srcSet={laughableLyricsScreenshotThree} type="image/webp" />
-              <source srcSet={laughableLyricsScreenshotThreeFallback} type="image/jpg" />
-              <img
-                srcSet={[laughableLyricsScreenshotThree, laughableLyricsScreenshotThreeFallback]}
-                style={styles.mobileScreenshot}
-                alt="Laughable Lyrics Screenshot 3"
-              />
-            </picture>
+            <img
+              src={laughableLyricsScreenshotOne}
+              style={styles.mobileScreenshot}
+              alt="Laughable Lyrics Screenshot 1"
+            />
+            <img
+              src={laughableLyricsScreenshotTwo}
+              style={styles.mobileScreenshot}
+              alt="Laughable Lyrics Screenshot 2"
+            />
+            <img
+              src={laughableLyricsScreenshotThree}
+              style={styles.mobileScreenshot}
+              alt="Laughable Lyrics Screenshot 3"
+            />
             <Typography variant="body1" paragraph>
               We won
-
-              {' '}
               <Typography color="secondary" display="inline">
-                <b><i>Most Creative/Funniest Hack</i></b>
+                {' '}<b><i>Most Creative/Funniest Hack</i></b>
               </Typography>
               {' '}
 

@@ -18,18 +18,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import miSymptomsScreenshotOne
   from '../static/screenshots/mi_symptoms_screenshot_1.webp';
-import miSymptomsScreenshotOneFallback
-  from '../static/screenshots/mi_symptoms_screenshot_1.jpg';
-
 import miSymptomsScreenshotTwo
   from '../static/screenshots/mi_symptoms_screenshot_2.webp';
-import miSymptomsScreenshotTwoFallback
-  from '../static/screenshots/mi_symptoms_screenshot_2.jpg';
-
 import miSymptomsScreenshotThree
   from '../static/screenshots/mi_symptoms_screenshot_3.webp';
-import miSymptomsScreenshotThreeFallback
-  from '../static/screenshots/mi_symptoms_screenshot_3.jpg';
 
 const miSymptomsLink = `https://misymptomapp.state.mi.us/`;
 const covid19Link = `https://www.cdc.gov/coronavirus/2019-ncov/index.html`;
@@ -201,47 +193,33 @@ export default function MISymptomsCard() {
               . At the time of writing (May 20th, 2020), it is being tested in production with
               larger and larger groups of people.
             </Typography>
-            <picture>
-              <source srcSet={miSymptomsScreenshotOne} type="image/webp" />
-              <source srcSet={miSymptomsScreenshotOneFallback} type="image/jpg" />
-              <img
-                srcSet={[miSymptomsScreenshotOne, miSymptomsScreenshotOneFallback]}
-                style={styles.mobileScreenshot}
-                title="MI Symptoms screenshot 1"
-                alt="MI Symptoms screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={miSymptomsScreenshotTwo} type="image/webp" />
-              <source srcSet={miSymptomsScreenshotTwoFallback} type="image/jpg" />
-              <img
-                srcSet={[miSymptomsScreenshotTwo, miSymptomsScreenshotTwoFallback]}
-                style={styles.mobileScreenshot}
-                title="MI Symptoms screenshot 2"
-                alt="MI Symptoms screenshot 2"
-              />
-            </picture>
-            <picture>
-              <source srcSet={miSymptomsScreenshotThree} type="image/webp" />
-              <source srcSet={miSymptomsScreenshotThreeFallback} type="image/jpg" />
-              <img
-                srcSet={[miSymptomsScreenshotThree, miSymptomsScreenshotThreeFallback]}
-                style={styles.mobileScreenshot}
-                title="MI Symptoms screenshot 3"
-                alt="MI Symptoms screenshot 3"
-              />
-            </picture>
+            <img
+              src={miSymptomsScreenshotOne}
+              style={styles.mobileScreenshot}
+              title="MI Symptoms screenshot 1"
+              alt="MI Symptoms screenshot 1"
+            />
+            <img
+              src={miSymptomsScreenshotTwo}
+              style={styles.mobileScreenshot}
+              title="MI Symptoms screenshot 2"
+              alt="MI Symptoms screenshot 2"
+            />
+            <img
+              src={miSymptomsScreenshotThree}
+              style={styles.mobileScreenshot}
+              title="MI Symptoms screenshot 3"
+              alt="MI Symptoms screenshot 3"
+            />
             <Typography variant="body1" paragraph>
               As testing team lead, I was responsible for the day-to-day operations of the testing team.
               This was another great opportunity to improve on my leadership skills, especially with
               the added challenge of only being able to communicate remotely. I managed building out testing
               tools to cover different domains like
-              {' '}
               <Link color="secondary" href={unitTestingLink}>
-                unit testing
+                {' '}unit testing{' '}
               </Link>
               ,
-              {' '}
               <Link color="secondary" href={endToEndTestingLink}>
                 end-to-end testing
               </Link>
@@ -319,7 +297,6 @@ export default function MISymptomsCard() {
               goodness of their hearts - simply for the prospect that they might be able to help some people.
               Thank you all!
             </Typography>
-
           </CardContent>
         </AccordionDetails>
       </Accordion>

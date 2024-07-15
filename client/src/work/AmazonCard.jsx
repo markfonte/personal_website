@@ -18,28 +18,18 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import amazonScreenshotOne
   from '../static/screenshots/amazon_screenshot_1.webp';
-import amazonScreenshotOneFallback
-  from '../static/screenshots/amazon_screenshot_1.jpg';
 
 import awsScreenshotOne
   from '../static/screenshots/aws_screenshot_1.webp';
-import awsScreenshotOneFallback
-  from '../static/screenshots/aws_screenshot_1.jpg';
 
 import awsScreenshotTwo
   from '../static/screenshots/aws_screenshot_2.webp';
-import awsScreenshotTwoFallback
-  from '../static/screenshots/aws_screenshot_2.jpg';
 
 import awsScreenshotThree
   from '../static/screenshots/aws_screenshot_3.webp';
-import awsScreenshotThreeFallback
-  from '../static/screenshots/aws_screenshot_3.jpg';
 
 import awsScreenshotFour
   from '../static/screenshots/aws_screenshot_4.webp';
-import awsScreenshotFourFallback
-  from '../static/screenshots/aws_screenshot_4.jpg';
 
 const amazonLink = `https://www.amazon.com/`;
 const sellerLink = `https://sell.amazon.com/`;
@@ -199,33 +189,21 @@ export default function AmazonCard() {
               functionality to work. Since most of software engineering is reading, understanding and talking about code,
               it was a good move to pay down future technical debt and combine the codebases.
               <br /><br />
-              <picture>
-                <source srcSet={awsScreenshotTwo} type="image/webp" />
-                <source srcSet={awsScreenshotTwoFallback} type="image/jpg" />
-                <img
-                  srcSet={[awsScreenshotTwo, awsScreenshotTwoFallback]}
-                  style={styles.mobileScreenshot}
-                  alt="AWS screenshot 2"
-                />
-              </picture>
-              <picture>
-                <source srcSet={awsScreenshotThree} type="image/webp" />
-                <source srcSet={awsScreenshotThreeFallback} type="image/jpg" />
-                <img
-                  srcSet={[awsScreenshotThree, awsScreenshotThreeFallback]}
-                  style={styles.mobileScreenshot}
-                  alt="AWS screenshot 3"
-                />
-              </picture>
-              <picture>
-                <source srcSet={awsScreenshotOne} type="image/webp" />
-                <source srcSet={awsScreenshotOneFallback} type="image/jpg" />
-                <img
-                  srcSet={[awsScreenshotOne, awsScreenshotOneFallback]}
-                  style={styles.mobileScreenshot}
-                  alt="AWS screenshot 1"
-                />
-              </picture>
+              <img
+                src={awsScreenshotTwo}
+                style={styles.mobileScreenshot}
+                alt="AWS screenshot 2"
+              />
+              <img
+                src={awsScreenshotThree}
+                style={styles.mobileScreenshot}
+                alt="AWS screenshot 3"
+              />
+              <img
+                src={awsScreenshotOne}
+                style={styles.mobileScreenshot}
+                alt="AWS screenshot 1"
+              />
               <br /><br />
               Another project I worked on was writing a C++ library to extend the usage of the Windows WorkSpaces clients to
               pass data outside of the virtual machines. For example, Amazon Chime, a video calling app, could use the
@@ -254,15 +232,11 @@ export default function AmazonCard() {
               wanted the next engineers to have a better experience onboarding than I did when I joined, and I want them
               to thrive in whatever they do!
               <br /><br />
-              <picture>
-                <source srcSet={awsScreenshotFour} type="image/webp" />
-                <source srcSet={awsScreenshotFourFallback} type="image/jpg" />
-                <img
-                  srcSet={[awsScreenshotFour, awsScreenshotFourFallback]}
-                  style={styles.webScreenshot}
-                  alt="AWS screenshot 4"
-                />
-              </picture>
+              <img
+                src={awsScreenshotFour}
+                style={styles.webScreenshot}
+                alt="AWS screenshot 4"
+              />
               <br /><br />
             </Typography>
             <Typography variant="h5" gutterBottom>
@@ -282,15 +256,11 @@ export default function AmazonCard() {
               instead of building each individually every time. I also briefly worked on the design for extending our APIs to support a new mobile
               app that was being launched for vendors.
               <br /><br />
-              <picture>
-                <source srcSet={amazonScreenshotOne} type="image/webp" />
-                <source srcSet={amazonScreenshotOneFallback} type="image/jpg" />
-                <img
-                  srcSet={[amazonScreenshotOne, amazonScreenshotOneFallback]}
-                  style={styles.webScreenshot}
-                  alt="Amazon screenshot 1"
-                />
-              </picture>
+              <img
+                src={amazonScreenshotOne}
+                style={styles.webScreenshot}
+                alt="Amazon screenshot 1"
+              />
             </Typography>
           </CardContent>
         </AccordionDetails>

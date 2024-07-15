@@ -15,7 +15,7 @@ const styles = {
 
 export default function TicTacToeCard() {
   return (
-    <Card raised={true} className="card" style={{ maxWidth: 420 }}>
+    <Card raised={true} className="card" style={{ maxWidth: 420, minWidth: 300 }}>
       <a name="tic_tac_toe_card" href="#tic_tac_toe_card" className="gone">
         Tic Tac Toe Card
       </a>

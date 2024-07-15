@@ -19,13 +19,9 @@ import congoaiLogo from '../static/logos/congoai_logo.svg';
 
 import congoaiScreenshotOne from
   '../static/screenshots/congoai_screenshot_1.webp';
-import congoaiScreenshotOneFallback from
-  '../static/screenshots/congoai_screenshot_1.jpg';
 
 import congoaiDemoOne from
   '../static/photos/congoai_demo_1.webp';
-import congoaiDemoOneFallback from
-  '../static/photos/congoai_demo_1.jpg';
 
 const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
 const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
@@ -164,14 +160,10 @@ const Grizzhacks3Card = () => {
               <Link color="secondary" href={nodeLink}>
                 NodeJS
               </Link>
-
               ,
-
-              {' '}
               <Link color="secondary" href={mongodbLink}>
-                MongoDB
+                {' '}MongoDB{' '}
               </Link>
-              {' '}
               and
 
               {' '}
@@ -182,15 +174,11 @@ const Grizzhacks3Card = () => {
               . Credit goes to my team for making the vast majority of this
               project - I was just learning most of this stuff at the time!
             </Typography>
-            <picture>
-              <source srcSet={congoaiScreenshotOne} type="image/webp" />
-              <source srcSet={congoaiScreenshotOneFallback} type="image/jpg" />
-              <img
-                srcSet={[congoaiScreenshotOne, congoaiScreenshotOneFallback]}
-                style={styles.mobileScreenshot}
-                alt="Congo AI screenshot 1"
-              />
-            </picture>
+            <img
+              src={congoaiScreenshotOne}
+              style={styles.mobileScreenshot}
+              alt="Congo AI screenshot 1"
+            />
             <Typography variant="body1" paragraph>
               We won
 
@@ -230,15 +218,11 @@ const Grizzhacks3Card = () => {
                 Github
               </Link>
             </Typography>
-            <picture>
-              <source srcSet={congoaiDemoOne} type="image/webp" />
-              <source srcSet={congoaiDemoOneFallback} type="image/jpg" />
-              <img
-                srcSet={[congoaiDemoOne, congoaiDemoOneFallback]}
-                style={styles.demoImage}
-                alt="Congo demo 1"
-              />
-            </picture>
+            <img
+              src={congoaiDemoOne}
+              style={styles.demoImage}
+              alt="Congo demo 1"
+            />
             <br />
             <img
               src={congoaiLogo}

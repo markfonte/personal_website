@@ -1,18 +1,13 @@
 import React from 'react';
 import clippWireframeScreenshotOne
   from '../static/screenshots/clipp_wireframe_screenshot_1.webp';
-import clippWireframeScreenshotOneFallback
-  from '../static/screenshots/clipp_wireframe_screenshot_1.png';
 
 import clippWireframeScreenshotTwo
   from '../static/screenshots/clipp_wireframe_screenshot_2.webp';
-import clippWireframeScreenshotTwoFallback
-  from '../static/screenshots/clipp_wireframe_screenshot_2.png';
 
 import clippWireframeScreenshotThree
   from '../static/screenshots/clipp_wireframe_screenshot_3.webp';
-import clippWireframeScreenshotThreeFallback
-  from '../static/screenshots/clipp_wireframe_screenshot_3.png';
+
 import {
   Typography,
   Card,
@@ -169,12 +164,10 @@ export default function ClippCard() {
 
               started building the
 
-              {' '}
-              <Link color="secondary" href={reactNativeLink}>
-                React Native
-              </Link>
-              {' '}
 
+              <Link color="secondary" href={reactNativeLink}>
+                {' '}React Native{' '}
+              </Link>
               application in September 2019, and started beta testing in December 2019.
 
               The project required full-stack work, from the front-end development of the
@@ -205,33 +198,21 @@ export default function ClippCard() {
               working on any task that was critical to development progress.
               This gave all of us full-stack awareness and required teamwork and communication.
             </Typography>
-            <picture>
-              <source srcSet={clippWireframeScreenshotOne} type="image/webp" />
-              <source srcSet={clippWireframeScreenshotOneFallback} type="image/png" />
-              <img
-                srcSet={[clippWireframeScreenshotOne, clippWireframeScreenshotOneFallback]}
-                style={styles.mobileScreenshot}
-                alt="Clipp wireframe screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={clippWireframeScreenshotTwo} type="image/webp" />
-              <source srcSet={clippWireframeScreenshotTwoFallback} type="image/png" />
-              <img
-                srcSet={[clippWireframeScreenshotTwo, clippWireframeScreenshotTwoFallback]}
-                style={styles.mobileScreenshot}
-                alt="Clipp wireframe screenshot 2"
-              />
-            </picture>
-            <picture>
-              <source srcSet={clippWireframeScreenshotThree} type="image/webp" />
-              <source srcSet={clippWireframeScreenshotThreeFallback} type="image/png" />
-              <img
-                srcSet={[clippWireframeScreenshotThree, clippWireframeScreenshotThreeFallback]}
-                style={styles.mobileScreenshot}
-                alt="Clipp wireframe screenshot 3"
-              />
-            </picture>
+            <img
+              src={clippWireframeScreenshotOne}
+              style={styles.mobileScreenshot}
+              alt="Clipp wireframe screenshot 1"
+            />
+            <img
+              src={clippWireframeScreenshotTwo}
+              style={styles.mobileScreenshot}
+              alt="Clipp wireframe screenshot 2"
+            />
+            <img
+              src={clippWireframeScreenshotThree}
+              style={styles.mobileScreenshot}
+              alt="Clipp wireframe screenshot 3"
+            />
             <br />
             <Typography variant="caption" paragraph>
               (note: these are just wireframes, not actual screenshots from the mobile application)

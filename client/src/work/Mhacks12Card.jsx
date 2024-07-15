@@ -2,23 +2,12 @@ import React from 'react';
 
 import instEventsScreenshotOne
   from '../static/screenshots/instevents_screenshot_1.webp';
-import instEventsScreenshotOneFallback
-  from '../static/screenshots/instevents_screenshot_1.jpg';
-
 import instEventsScreenshotTwo
   from '../static/screenshots/instevents_screenshot_2.webp';
-import instEventsScreenshotTwoFallback
-  from '../static/screenshots/instevents_screenshot_2.jpg';
-
 import instEventsScreenshotThree
   from '../static/screenshots/instevents_screenshot_3.webp';
-import instEventsScreenshotThreeFallback
-  from '../static/screenshots/instevents_screenshot_3.jpg';
-
 import mhacksNathanAndMark
   from '../static/photos/mhacks_mark_and_nathan.webp';
-import mhacksNathanAndMarkFallback
-  from '../static/photos/mhacks_mark_and_nathan.jpg';
 
 import {
   Typography,
@@ -281,33 +270,21 @@ export default function MHacks12Card() {
               with only 30 people attending get the same weight on the map as those with 5,000. This allows for an
               <b><i> even playing field</i></b> and is a concept we have seldom seen before.
             </Typography>
-            <picture>
-              <source srcSet={instEventsScreenshotThree} type="image/webp" />
-              <source srcSet={instEventsScreenshotThreeFallback} type="image/jpg" />
-              <img
-                srcSet={[instEventsScreenshotThree, instEventsScreenshotThreeFallback]}
-                style={styles.screenshot}
-                alt="InstEvents screenshot 3"
-              />
-            </picture>
-            <picture>
-              <source srcSet={instEventsScreenshotOne} type="image/webp" />
-              <source srcSet={instEventsScreenshotOneFallback} type="image/jpg" />
-              <img
-                srcSet={[instEventsScreenshotOne, instEventsScreenshotOneFallback]}
-                style={styles.screenshot}
-                alt="InstEvents screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={instEventsScreenshotTwo} type="image/webp" />
-              <source srcSet={instEventsScreenshotTwoFallback} type="image/jpg" />
-              <img
-                srcSet={[instEventsScreenshotTwo, instEventsScreenshotTwoFallback]}
-                style={styles.screenshot}
-                alt="InstEvents screenshot 2"
-              />
-            </picture>
+            <img
+              src={instEventsScreenshotThree}
+              style={styles.screenshot}
+              alt="InstEvents screenshot 3"
+            />
+            <img
+              src={instEventsScreenshotOne}
+              style={styles.screenshot}
+              alt="InstEvents screenshot 1"
+            />
+            <img
+              src={instEventsScreenshotTwo}
+              style={styles.screenshot}
+              alt="InstEvents screenshot 2"
+            />
             <Typography variant="body1" paragraph>
               We never released the app to the public, the main reason being that we were unable
               to find a reliable, free events API online to pull from that could supplement user-entered
@@ -328,15 +305,11 @@ export default function MHacks12Card() {
                 Github
               </Link>
             </Typography>
-            <picture>
-              <source srcSet={mhacksNathanAndMark} type="image/webp" />
-              <source srcSet={mhacksNathanAndMarkFallback} type="image/jpg" />
-              <img
-                srcSet={[mhacksNathanAndMark, mhacksNathanAndMarkFallback]}
-                style={styles.screenshot}
-                alt="Nathan and Mark MHacks 12"
-              />
-            </picture>
+            <img
+              src={mhacksNathanAndMark}
+              style={styles.screenshot}
+              alt="Nathan and Mark MHacks 12"
+            />
           </CardContent>
         </AccordionDetails>
       </Accordion>

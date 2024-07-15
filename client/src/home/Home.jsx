@@ -29,7 +29,8 @@ const styles = {
     justifyContent: 'center',
   },
   masonryContainer: {
-    margin: 'auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 };
 
@@ -48,48 +49,38 @@ export default function Home({ isDarkTheme }) {
   return (
     <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6">
-        Senior software engineer at {' '}
+        Senior software engineer at
         <Link href={teslaLink} className={teslaColor} underline="hover">
-          Tesla
+          {' '}Tesla{' '}
         </Link>
-        {' '}· Former software lead at{' '}
-
+        · Former software lead at
         <Link href={justlightLink} className={justlightColor} underline="hover">
-          JustLight
+          {' '}JustLight{' '}
         </Link>
-
-        {' '}· Former software engineer at{' '}
+        · Former software engineer at
         <Link href={awsLink} className={amazonColor} underline="hover">
-          Amazon Web Services
+          {' '}Amazon Web Services{' '}
         </Link>
-        {' '}· computer science in engineering degree from{' '}
-
+        · computer science in engineering degree from
         <Link href={umichLink} className={michiganColor} underline="hover">
-          University of Michigan
+          {' '}University of Michigan{' '}
         </Link>
-
-        {' '}· Minor in{' '}
-
+        · Minor in
         <Link color="textSecondary" href={entrepreneurshipLink} underline="hover">
-          entrepreneurship
+          {' '}entrepreneurship{' '}
         </Link>
-
-        {' '}·{' '}
-
+        ·
         <Link href="" className={webColor} underline="hover">
-          Web
-        </Link>{' '}
-
-        &amp;{' '}
-
-        <Link href="" className={androidColor} underline="hover">
-          Android
+          {' '}Web{' '}
         </Link>
-
-        {' '}dev
+        &amp;
+        <Link href="" className={androidColor} underline="hover">
+          {' '}Android{' '}
+        </Link>
+        dev
       </Typography>
       <Suspense fallback={renderLoader()}>
-        <Masonry columns={{ sm: 1, md: 2 }} spacing={4} sx={styles.masonryContainer}>
+        <Masonry columns={{ sm: 1, md: 2 }} spacing={3} sx={styles.masonryContainer}>
           <WelcomeCard isDarkTheme={isDarkTheme} />
           <GimbleCard />
           <SammyCard />

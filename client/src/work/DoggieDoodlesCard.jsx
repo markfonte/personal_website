@@ -17,21 +17,14 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import rockyOne from '../static/photos/rocky_1.webp';
-import rockyOneFallback from '../static/photos/rocky_1.jpg';
-
 import rockyTwo from '../static/photos/rocky_2.webp';
-import rockyTwoFallback from '../static/photos/rocky_2.jpg';
 
 import doggieDoodlesScreenshotOne
   from '../static/screenshots/doggie_doodles_screenshot_1.webp';
-import doggieDoodlesScreenshotOneFallback
-  from '../static/screenshots/doggie_doodles_screenshot_1.png';
 
 const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
 const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
 const doggieDoodlesEmailLink = `mailto:dopedoggiedoodles@gmail.com`;
-const morganSalvanoLink = `https://www.morgansalvanodesign.com/`;
-const stampsLink = `https://stamps.umich.edu/`;
 const redbubbleLink = `https://www.redbubble.com/people/doggiedoodles/shop`;
 
 const tags = [
@@ -135,92 +128,47 @@ export default function DoggieDoodlesCard() {
         <AccordionDetails>
           <CardContent>
             <Typography variant="body1" paragraph>
-              Started from a class project, this business sells custom merchandise using a
-              digital drawing of your animal.
-
-              {' '}
-              <Link color="secondary" href={morganSalvanoLink}>
-                Morgan Salvano
-              </Link>
-
-              , from U of M&apos;s
-
-              {' '}
-              <Link color="secondary" href={stampsLink}>
-                Stamps School of Art and Design
-              </Link>
-
-              , will take a picture of your pet (it doesn&apos;t have to be a dog!) and
-              turn it into a custom digital drawing. The drawing itself is
-              <b> completely free</b>!
-              Once she has drawn it to your satisfaction, she will upload it
-              to
-              {' '}
+              Started from a class project, this business sold custom merchandise using a
+              digital drawing of your animal. We would take a picture of pets and
+              turn it into custom digital drawings, then upload them to
               <Link color="secondary" href={redbubbleLink}>
-                Redbubble
+                {' '}Redbubble{' '}
               </Link>
-              {' '}
-
-              (with your permission), where you can see your custom drawing on all kinds
-              of merchandise - posters, mugs, phone cases, pillows and much more!
-
+              and use the custom drawing on all kinds
+              of merchandise - posters, mugs, phone cases, pillows and much more.
             </Typography>
-            <picture>
-              <source srcSet={rockyOne} type="image/webp" />
-              <source srcSet={rockyOneFallback} type="image/jpg" />
-              <img
-                srcSet={[rockyOne, rockyOneFallback]}
-                style={styles.rocky}
-                alt="Rocky #1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={rockyTwo} type="image/webp" />
-              <source srcSet={rockyTwoFallback} type="image/jpg" />
-              <img
-                srcSet={[rockyTwo, rockyTwoFallback]}
-                style={styles.rocky}
-                alt="Rocky #2"
-              />
-            </picture>
-            <br /><br />
-            <picture>
-              <source srcSet={doggieDoodlesScreenshotOne} type="image/webp" />
-              <source srcSet={doggieDoodlesScreenshotOneFallback} type="image/png" />
-              <img
-                srcSet={[doggieDoodlesScreenshotOne, doggieDoodlesScreenshotOneFallback]}
-                style={styles.webScreenshot}
-                alt="Rocky #2"
-              />
-            </picture>
+            <img
+              src={rockyOne}
+              style={styles.rocky}
+              alt="Rocky #1"
+            />
+            <img
+              src={rockyTwo}
+              style={styles.rocky}
+              alt="Rocky #2"
+            />
+            <img
+              src={doggieDoodlesScreenshotOne}
+              style={styles.webScreenshot}
+              alt="Rocky #2"
+            />
             <br /><br />
             <Typography variant="body1" paragraph>
               Send a picture of your animal to
-
-              {' '}
               <Link color="secondary" href={doggieDoodlesEmailLink}>
-                dopedoggiedoodles@gmail.com
+                {' '}dopedoggiedoodles@gmail.com{' '}
               </Link>
-              {' '}
-
               to get started!
             </Typography>
             <Typography variant="body1" paragraph>
               View the
-
-              {' '}
               <Link color="secondary" href={doggieDoodlesWebsiteLink}>
-                website
+                {' '}website{' '}
               </Link>
-              {' '}
-
-              or on
-
-              {' '}
+              or
               <Link color="secondary" href={doggieDoodlesRedbubbleLink}>
-                Redbubble
+                {' '}Redbubble
               </Link>
-              {' '}
             </Typography>
           </CardContent>
         </AccordionDetails>

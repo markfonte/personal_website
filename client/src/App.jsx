@@ -88,7 +88,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    padding: '12px',
+    padding: '4px',
     margin: 'auto',
   },
   profileLogo: {

@@ -2,8 +2,6 @@ import React from 'react';
 
 import JPMorganScreenshotOne
   from '../static/screenshots/jpmorgan_screenshot_1.webp';
-import JPMorganScreenshotOneFallback
-  from '../static/screenshots/jpmorgan_screenshot_1.jpg';
 
 import {
   Typography,
@@ -230,15 +228,11 @@ export default function JPMorganCard() {
 
               pop-ups.
               <br />
-              <picture>
-                <source srcSet={JPMorganScreenshotOne} type="image/webp" />
-                <source srcSet={JPMorganScreenshotOneFallback} type="image/jpg" />
-                <img
-                  srcSet={[JPMorganScreenshotOne, JPMorganScreenshotOneFallback]}
-                  style={styles.mobileScreenshot}
-                  alt="J.P. Morgan screenshot 1"
-                />
-              </picture>
+              <img
+                src={JPMorganScreenshotOne}
+                style={styles.mobileScreenshot}
+                alt="J.P. Morgan screenshot 1"
+              />
               <br />
               Although this was not one of my most challenging technical experiences, I did learn a lot about
               work cultures where there are lots of manual steps surrounding development. I believe that learning how

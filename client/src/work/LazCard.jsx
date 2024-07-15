@@ -1,23 +1,13 @@
 import React from 'react';
 import parentPortalScreenshotOne
   from '../static/screenshots/laz_parent_portal_screenshot_1.webp';
-import parentPortalScreenshotOneFallback
-  from '../static/screenshots/laz_parent_portal_screenshot_1.jpg';
-
 import parentPortalScreenshotTwo
   from '../static/screenshots/laz_parent_portal_screenshot_2.webp';
-import parentPortalScreenshotTwoFallback
-  from '../static/screenshots/laz_parent_portal_screenshot_2.jpg';
-
 import parentPortalScreenshotThree
   from '../static/screenshots/laz_parent_portal_screenshot_3.webp';
-import parentPortalScreenshotThreeFallback
-  from '../static/screenshots/laz_parent_portal_screenshot_3.jpg';
 
 import badgeScreenshot
   from '../static/screenshots/laz_badge_screenshot.webp';
-import badgeScreenshotFallback
-  from '../static/screenshots/laz_badge_screenshot.png';
 import {
   Typography,
   Card,
@@ -284,33 +274,21 @@ export default function LAZCard() {
               ! The following screenshots are from
               the production application:
             </Typography>
-            <picture>
-              <source srcSet={parentPortalScreenshotOne} type="image/webp" />
-              <source srcSet={parentPortalScreenshotOneFallback} type="image/jpg" />
-              <img
-                srcSet={[parentPortalScreenshotOne, parentPortalScreenshotOneFallback]}
-                style={styles.mobileScreenshot}
-                alt="LAZ parent portal screenshot 1"
-              />
-            </picture>
-            <picture>
-              <source srcSet={parentPortalScreenshotTwo} type="image/webp" />
-              <source srcSet={parentPortalScreenshotTwoFallback} type="image/jpg" />
-              <img
-                srcSet={[parentPortalScreenshotTwo, parentPortalScreenshotTwoFallback]}
-                style={styles.mobileScreenshot}
-                alt="LAZ parent portal screenshot 2"
-              />
-            </picture>
-            <picture>
-              <source srcSet={parentPortalScreenshotThree} type="image/webp" />
-              <source srcSet={parentPortalScreenshotThreeFallback} type="image/jpg" />
-              <img
-                srcSet={[parentPortalScreenshotThree, parentPortalScreenshotThreeFallback]}
-                style={styles.mobileScreenshot}
-                alt="LAZ parent portal screenshot 3"
-              />
-            </picture>
+            <img
+              src={parentPortalScreenshotOne}
+              style={styles.mobileScreenshot}
+              alt="LAZ parent portal screenshot 1"
+            />
+            <img
+              src={parentPortalScreenshotTwo}
+              style={styles.mobileScreenshot}
+              alt="LAZ parent portal screenshot 2"
+            />
+            <img
+              src={parentPortalScreenshotThree}
+              style={styles.mobileScreenshot}
+              alt="LAZ parent portal screenshot 3"
+            />
             <Typography variant="h5" gutterBottom>
               <br />Summer 2017
             </Typography>
@@ -375,15 +353,11 @@ export default function LAZCard() {
               {' '}
               today! The following screenshot is from the production site:
             </Typography>
-            <picture>
-              <source srcSet={badgeScreenshot} type="image/webp" />
-              <source srcSet={badgeScreenshotFallback} type="image/png" />
-              <img
-                srcSet={[badgeScreenshot, badgeScreenshotFallback]}
-                style={styles.webScreenshot}
-                alt="LAZ badge screenshot"
-              />
-            </picture>
+            <img
+              src={badgeScreenshot}
+              style={styles.webScreenshot}
+              alt="LAZ badge screenshot"
+            />
             <Typography variant="body1">
               <br />As a final note, I met some of the best people I have ever known during my two
               summers at Learning A-Z. They are welcoming, encouraging, great engineers and just
