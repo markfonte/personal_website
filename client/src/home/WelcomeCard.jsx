@@ -34,11 +34,15 @@ const itemData = [
     title: '',
   },
   {
-    img: welcomeImageOne,
+    img: welcomeImageSix,
     title: '',
   },
   {
-    img: welcomeImageSix,
+    img: welcomeImageFour,
+    title: '',
+  },
+  {
+    img: welcomeImageOne,
     title: '',
   },
   {
@@ -47,10 +51,6 @@ const itemData = [
   },
   {
     img: welcomeImageNine,
-    title: '',
-  },
-  {
-    img: welcomeImageFour,
     title: '',
   },
 ];
