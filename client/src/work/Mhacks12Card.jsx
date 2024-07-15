@@ -127,7 +127,7 @@ export default function MHacks12Card() {
             />
             <CardMedia
               sx={styles.mhacks12Banner}
-              image="/media/mhacks_banner.png"
+              image="/media/mhacks_banner.webp"
               title="MHacks 12 banner"
               alt="MHacks 12 banner"
               component="img"

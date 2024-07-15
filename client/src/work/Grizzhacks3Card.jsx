@@ -116,7 +116,7 @@ const Grizzhacks3Card = () => {
             />
             <CardMedia
               sx={styles.grizzhacks3Banner}
-              image="/media/grizzhacks_banner.png"
+              image="/media/grizzhacks_banner.webp"
               title="GrizzHacks 3 banner"
               alt="GrizzHacks 3 banner"
               component="img"

@@ -97,7 +97,7 @@ export default function RevolutionUC8Card() {
             />
             <CardMedia
               sx={styles.revolutionuc8_logo}
-              image="/media/revolutionuc_logo.png"
+              image="/media/revolutionuc_logo.webp"
               title="RevolutionUC 8 logo"
               alt="RevolutionUC 8 logo"
               component="img"

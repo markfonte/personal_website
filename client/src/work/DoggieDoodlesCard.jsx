@@ -106,7 +106,7 @@ export default function DoggieDoodlesCard() {
               subheader="Entrepreneur" />
             <CardMedia
               sx={styles.doggieDoodlesBanner}
-              image="/media/doggie_doodles_banner.jpg"
+              image="/media/doggie_doodles_banner.webp"
               title="Doggie Doodles banner"
               alt="Doggie Doodles banner"
               component="img"

@@ -131,7 +131,7 @@ export default function Spartahack5Card() {
             />
             <CardMedia
               sx={styles.spartahack5Banner}
-              image="/media/spartahack_banner.png"
+              image="/media/spartahack_banner.webp"
               title="SpartaHack V banner"
               alt="SpartaHack V banner"
               component="img"
