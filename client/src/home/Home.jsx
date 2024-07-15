@@ -37,6 +37,15 @@ const styles = {
 export default function Home({ isDarkTheme }) {
   useEffect(() => {
     document.title = 'Home | Mark Fonte';
+
+    const link = document.createElement('link');
+    link.rel = 'canonical';
+    link.href = 'https://mark.fonte.com';
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
   }, []);
 
   const justlightColor = isDarkTheme ? 'justlight-color-light' : 'justlight-color-dark';
