@@ -168,8 +168,6 @@ export default function Footer({ isDarkTheme }) {
   };
 
   useEffect(() => {
-    document.title = 'Blog | Mark Fonte';
-
     const interval = setInterval(() => { checkForAPIHeartbeat(); }, HEARTBEAT_INTERVAL);
 
     return () => clearInterval(interval);
