@@ -8,6 +8,7 @@ const SammyCard = lazy(() => import('./SammyCard.jsx'));
 import PropTypes from 'prop-types';
 import { Typography, Link, CircularProgress, Box } from '@mui/material';
 import { Masonry } from '@mui/lab';
+import NewsCard from './NewsCard.jsx';
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 
@@ -91,6 +92,7 @@ export default function Home({ isDarkTheme }) {
       <Suspense fallback={renderLoader()}>
         <Masonry columns={{ sm: 1, md: 2 }} spacing={3} sx={styles.masonryContainer}>
           <WelcomeCard isDarkTheme={isDarkTheme} />
+          <NewsCard />
           <GimbleCard />
           <SammyCard />
           <TechStackCard isDarkTheme={isDarkTheme} />

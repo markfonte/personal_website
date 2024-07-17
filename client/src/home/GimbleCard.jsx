@@ -195,6 +195,7 @@ export default function GimbleCard() {
               />
             ))}
             <br />
+            <LikeButton likeType='card' likeName='gimble_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>
@@ -220,7 +221,6 @@ export default function GimbleCard() {
             </IconButton>
           </Tooltip>
         ))}
-        <LikeButton likeType='card' likeName='gimble_card' />
       </CardActions>
     </Card>
   );

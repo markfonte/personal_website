@@ -207,3 +207,13 @@ INSERT INTO likes
     (pagename, numlikes)
 VALUES
     ('tech_stack_card', 0);
+
+INSERT INTO pages
+    (pagename)
+VALUES
+    ('news_card');
+
+INSERT INTO likes
+    (pagename, numlikes)
+VALUES
+    ('news_card', 0);
