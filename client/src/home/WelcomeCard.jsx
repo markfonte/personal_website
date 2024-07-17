@@ -12,6 +12,7 @@ import {
   Link,
   ImageList,
   ImageListItem,
+  CardActions,
 } from '@mui/material';
 import welcomeImageOne from '../static/photos/welcome_photo_1.webp';
 import welcomeImageFour from '../static/photos/welcome_photo_4.jpg';
@@ -197,10 +198,12 @@ export default function WelcomeCard({ isDarkTheme }) {
                 allowFullScreen
               />
             </Typography>
-            <LikeButton likeType='card' likeName='welcome_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>
+      <CardActions>
+        <LikeButton likeType='card' likeName='welcome_card' />
+      </CardActions>
     </Card>
   );
 };
