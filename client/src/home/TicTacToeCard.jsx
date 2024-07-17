@@ -6,6 +6,7 @@ import {
   CardContent,
   CardHeader,
 } from '@mui/material';
+import LikeButton from '../shared/LikeButton.jsx';
 
 const styles = {
   cardContent: {
@@ -26,6 +27,7 @@ export default function TicTacToeCard() {
       <CardContent sx={styles.cardContent}>
         <Typography variant="subtitle1" />
         <TicTacToeGame />
+        <LikeButton likeType='card' likeName='tic_tac_toe_card' />
       </CardContent>
     </Card>
   );

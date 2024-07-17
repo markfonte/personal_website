@@ -18,6 +18,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import roadMapperScreenshotOne
   from '../static/screenshots/ice_road_mappers_screenshot_1.webp';
+import LikeButton from '../shared/LikeButton';
 
 const eecs493Link = `https://atlas.ai.umich.edu/course/EECS%20493/`;
 const vueLink = `https://vuejs.org/`;
@@ -193,6 +194,7 @@ export default function RoadMapperCard() {
               framework and a new API. It was also a testament to how smoothly a project can be built
               if the team is on the same page, despite being made entirely during quarantine!
             </Typography>
+            <LikeButton likeType='card' likeName='road_mapper_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

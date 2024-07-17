@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const styles = {};
 
-export default function CommentBox({ pagename }) {
+export default function CommentBox({ likeType, likeName }) {
   return (
     <div>
       Commentbox
@@ -12,5 +12,6 @@ export default function CommentBox({ pagename }) {
 };
 
 CommentBox.propTypes = {
-  pagename: PropTypes.string.isRequired,
+  likeType: PropTypes.string.isRequired,
+  likeName: PropTypes.string.isRequired,
 };

@@ -24,6 +24,7 @@ import laughableLyricsScreenshotTwo
   from '../static/screenshots/laughable_lyrics_screenshot_2.webp';
 import laughableLyricsScreenshotThree
   from '../static/screenshots/laughable_lyrics_screenshot_3.webp';
+import LikeButton from '../shared/LikeButton';
 
 const laughableLyricsDevpostLink = `https://devpost.com/software/laughable-lyrics`;
 const laughableLyricsGithubLink = `https://github.com/nathan815/Laughable-Lyrics`;
@@ -314,6 +315,7 @@ export default function Spartahack5Card() {
               title="Laughable Lyrics logo"
               alt="Laughable Lyrics logo"
             />
+            <LikeButton likeType='card' likeName='spartahack_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

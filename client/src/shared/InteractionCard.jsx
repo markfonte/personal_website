@@ -13,7 +13,7 @@ const styles = {
   }
 }
 
-const InteractionCard = ({ pagename }) => {
+const InteractionCard = ({ likeName }) => {
   return (
     <div style={styles.root}>
       <Card raised={true}>
@@ -21,8 +21,8 @@ const InteractionCard = ({ pagename }) => {
           Interaction Card
         </a>
         <CardContent>
-          {pagename === 'home' ? <Settings /> : null}
-          <LikeButton pagename={pagename} />
+          {likeName === 'home' ? <Settings /> : null}
+          <LikeButton likeType="page" likeName={likeName} />
         </CardContent>
       </Card>
     </div>
@@ -30,7 +30,7 @@ const InteractionCard = ({ pagename }) => {
 };
 
 InteractionCard.propTypes = {
-  pagename: PropTypes.string.isRequired,
+  likeName: PropTypes.string.isRequired,
 };
 
 export default InteractionCard;

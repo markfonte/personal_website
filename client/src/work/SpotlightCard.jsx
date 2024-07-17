@@ -23,6 +23,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const styles = {
   screenshot: {
@@ -260,12 +261,11 @@ export default function SpotlightCard() {
             </Typography>
             <Typography variant="body1" paragraph>
               View it on
-
-              {' '}
               <Link color="secondary" href={spotlightGithubLink}>
-                GitHub
+                {' '}GitHub
               </Link>
             </Typography>
+            <LikeButton likeType='card' likeName='spotlight_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

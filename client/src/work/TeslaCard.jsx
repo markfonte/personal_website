@@ -16,6 +16,7 @@ import teslaOnboardPhoto from '../static/photos/tesla_onboard_photo.jpg';
 import teslaCyberPhoto from '../static/photos/tesla_cyber_photo.webp';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const tags = [
   {
@@ -128,6 +129,7 @@ export default function TeslaCard() {
               It&#39;s a blast! ⚡️🚗
             </Typography>
             <img style={styles.teslaPhoto} src={teslaOnboardPhoto} /> <img style={styles.teslaPhoto} src={teslaCyberPhoto} />
+            <LikeButton likeType='card' likeName='tesla_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

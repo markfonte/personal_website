@@ -24,6 +24,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const lazLink = `https://www.learninga-z.com/`;
 const parentPortalLink = `https://www.kidsa-z.com/main/ParentHome`;
@@ -365,6 +366,7 @@ export default function LAZCard() {
               Arbor, I would certainly recommend Learning A-Z. Feel free to contact me and I would
               be happy to give more details on my experience working there!
             </Typography>
+            <LikeButton likeType='card' likeName='laz_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

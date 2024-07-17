@@ -26,7 +26,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const glossaryItems = [
   {
-    tagName: 'Full Time Positions',
+    tagName: 'Full Time Position',
     type: 'Project',
     icon: <Work style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
@@ -48,7 +48,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Internships',
+    tagName: 'Internship',
     type: 'Project',
     icon: <School style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
@@ -70,7 +70,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Startups',
+    tagName: 'Startup',
     type: 'Project',
     icon: <Business style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
@@ -102,7 +102,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Hackathon Projects',
+    tagName: 'Hackathon Project',
     type: 'Project',
     icon: <Build style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
@@ -129,7 +129,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Class Projects',
+    tagName: 'Class Project',
     type: 'Project',
     icon: <MenuBook style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
@@ -156,7 +156,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Android Projects',
+    tagName: 'Android',
     logo: androidLogo,
     projects: [
       {
@@ -197,7 +197,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Firebase Projects',
+    tagName: 'Firebase',
     logo: firebaseLogo,
     projects: [
       {
@@ -228,7 +228,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Java Projects',
+    tagName: 'Java',
     logo: javaLogo,
     projects: [
       {
@@ -249,7 +249,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'JavaScript Projects',
+    tagName: 'JavaScript',
     logo: javascriptLogo,
     projects: [
       {
@@ -306,7 +306,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Kotlin Projects',
+    tagName: 'Kotlin',
     logo: kotlinLogo,
     projects: [
       {
@@ -337,7 +337,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'Python Projects',
+    tagName: 'Python',
     logo: pythonLogo,
     projects: [
       {
@@ -353,7 +353,7 @@ const glossaryItems = [
     ],
   },
   {
-    tagName: 'React Projects',
+    tagName: 'React',
     logo: reactLogo,
     projects: [
       {
@@ -381,8 +381,13 @@ const glossaryItems = [
   },
   {
     logo: reactNativeLogo,
-    tagName: 'React Native Projects',
+    tagName: 'React Native',
     projects: [
+      {
+        cardId: 'tesla',
+        cardName: 'Tesla',
+        subtitle: 'Senior Software Engineer',
+      },
       {
         cardId: 'clipp',
         cardName: 'Clipp',

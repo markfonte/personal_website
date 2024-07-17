@@ -25,6 +25,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 const instEventsDevpostLink = `https://devpost.com/software/instevent`;
 const instEventsGithubLink = `https://github.com/markfonte/InstEvents`;
 const nathanWebsiteLink = `https://nathanieljohnson.me/`;
@@ -310,6 +311,7 @@ export default function MHacks12Card() {
               style={styles.screenshot}
               alt="Nathan and Mark MHacks 12"
             />
+            <LikeButton likeType='card' likeName='mhacks_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

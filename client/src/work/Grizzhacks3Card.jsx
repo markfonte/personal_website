@@ -22,6 +22,7 @@ import congoaiScreenshotOne from
 
 import congoaiDemoOne from
   '../static/photos/congoai_demo_1.webp';
+import LikeButton from '../shared/LikeButton';
 
 const grizzhacks3DevpostLink = `https://devpost.com/software/congoai`;
 const grizzhacks3GithubLink = `https://github.com/nathan815/CongoAI`;
@@ -230,6 +231,7 @@ const Grizzhacks3Card = () => {
               title="CongoAI logo"
               alt="CongoAI logo"
             />
+            <LikeButton likeType='card' likeName='grizzhacks_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

@@ -21,6 +21,7 @@ import rockyTwo from '../static/photos/rocky_2.webp';
 
 import doggieDoodlesScreenshotOne
   from '../static/screenshots/doggie_doodles_screenshot_1.webp';
+import LikeButton from '../shared/LikeButton';
 
 const doggieDoodlesWebsiteLink = `https://dopedoggiedoodles.wixsite.com/home`;
 const doggieDoodlesRedbubbleLink = `https://www.redbubble.com/people/doggiedoodles`;
@@ -170,6 +171,7 @@ export default function DoggieDoodlesCard() {
                 {' '}Redbubble
               </Link>
             </Typography>
+            <LikeButton likeType='card' likeName='doggie_doodles_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

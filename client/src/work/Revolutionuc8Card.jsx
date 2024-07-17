@@ -16,6 +16,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const denialDialDevpostLink = `https://devpost.com/software/revolution-banking`;
 const denialDialGithubLink = `https://github.com/nathan815/denial-dial`;
@@ -196,6 +197,7 @@ export default function RevolutionUC8Card() {
               title="CongoAI logo"
               alt="CongoAI logo"
             />
+            <LikeButton likeType='card' likeName='revolution_uc_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

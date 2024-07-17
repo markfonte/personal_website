@@ -30,6 +30,7 @@ import awsScreenshotThree
 
 import awsScreenshotFour
   from '../static/screenshots/aws_screenshot_4.webp';
+import LikeButton from '../shared/LikeButton';
 
 const amazonLink = `https://www.amazon.com/`;
 const sellerLink = `https://sell.amazon.com/`;
@@ -56,6 +57,9 @@ const tags = [
   },
   {
     label: 'C#',
+  },
+  {
+    label: 'C++',
   },
   {
     label: 'iOS',
@@ -262,6 +266,7 @@ export default function AmazonCard() {
                 alt="Amazon screenshot 1"
               />
             </Typography>
+            <LikeButton likeType='card' likeName='amazon_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

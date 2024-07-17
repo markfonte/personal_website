@@ -19,6 +19,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const jpmorganLink = `https://www.jpmorganchase.com/`;
 const paymentNetLink = `https://m.jpmorgan.com/`;
@@ -246,6 +247,7 @@ export default function JPMorganCard() {
               - Extensive work with React and React Native
               <br />
               - Some awesome friends!
+              <LikeButton likeType='card' likeName='jpmorgan_card' />
             </Typography>
           </CardContent>
         </AccordionDetails>

@@ -44,6 +44,7 @@ import justlightScreenshotThirteen
   from '../static/screenshots/justlight_screenshot_13.webp';
 import justlightSunflower
   from '../static/screenshots/justlight_sunflower.webp';
+import LikeButton from '../shared/LikeButton';
 
 const justlightLink = `https://www.justlight.com/`;
 const sunflowerAndroidLink = `https://play.google.com/store/apps/details?id=com.justlight.sunflower`;
@@ -291,6 +292,7 @@ export default function JustlightCard({ isDarkTheme }) {
               <br /><br />
               I learn a ton at JustLight while tackling new coding challenges and designing a software team from scratch. The challenges posed are always interesting: What are customers thinking? What tools does the software team need? What is our security strategy? How are people enjoying themselves? Where can I provide the most value? These are all questions that I find myself tackling on a daily basis. In addition, it feels great to be working on something that I know will inevitably help millions with their diseases and pain. It is an exciting time to be alive!
             </Typography>
+            <LikeButton likeType='card' likeName='justlight_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

@@ -23,6 +23,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const walklensGooglePlayLink = `https://play.google.com/store/apps/details?id=fonte.com.walklens&hl=en_US`;
 const walklensGithubLink = `https://github.com/markfonte/WalkLens`;
@@ -245,6 +246,7 @@ export default function WalklensCard() {
                 {' '}Google Play Store
               </Link>
             </Typography>
+            <LikeButton likeType='card' likeName='walklens_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

@@ -86,7 +86,7 @@ export default function Contact() {
         ...Venmo-ing me makes Spike happy!
       </Typography>
       <br /> <br /> <br />
-      <InteractionCard pagename="contact" />
+      <InteractionCard likeType="page" likeName="contact" />
     </div>
   );
 };

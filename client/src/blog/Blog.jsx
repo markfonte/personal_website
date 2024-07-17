@@ -311,7 +311,7 @@ export default function Blog() {
         ))}
       </Masonry>
       <Suspense fallback={renderLoader()}>
-        <InteractionCard pagename="blog" />
+        <InteractionCard likeType="page" likeName="blog" />
       </Suspense>
     </Box>
   );

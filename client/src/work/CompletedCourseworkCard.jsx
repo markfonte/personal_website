@@ -15,6 +15,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const universityOfMichiganLink = `https://umich.edu/`;
 const courses = [
@@ -248,6 +249,7 @@ export default function CompletedCourseworkCard() {
             <Typography variant="caption" color="textSecondary" gutterBottom>
               note: this is only the most relevant coursework, not an exhaustive list
             </Typography>
+            <LikeButton likeType='card' likeName='umich_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

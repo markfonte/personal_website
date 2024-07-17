@@ -26,6 +26,7 @@ import sammyArticle4
   from '../static/photos/sammy_article_4.webp';
 import sammyArticle5
   from '../static/photos/sammy_article_5.webp';
+import LikeButton from '../shared/LikeButton';
 
 const articles = [
   {
@@ -105,7 +106,7 @@ const styles = {
 
 export default function SammyCard() {
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Sammy"
@@ -168,6 +169,7 @@ export default function SammyCard() {
             <WebIcon />
           </IconButton>
         </Tooltip>
+        <LikeButton likeType='card' likeName='sammy_card' />
       </CardActions>
     </Card>
   );

@@ -22,6 +22,7 @@ import miSymptomsScreenshotTwo
   from '../static/screenshots/mi_symptoms_screenshot_2.webp';
 import miSymptomsScreenshotThree
   from '../static/screenshots/mi_symptoms_screenshot_3.webp';
+import LikeButton from '../shared/LikeButton';
 
 const miSymptomsLink = `https://misymptomapp.state.mi.us/`;
 const covid19Link = `https://www.cdc.gov/coronavirus/2019-ncov/index.html`;
@@ -297,6 +298,7 @@ export default function MISymptomsCard() {
               goodness of their hearts - simply for the prospect that they might be able to help some people.
               Thank you all!
             </Typography>
+            <LikeButton likeType='card' likeName='mi_symptoms_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

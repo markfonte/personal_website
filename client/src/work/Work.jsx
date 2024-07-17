@@ -67,7 +67,7 @@ export default function Work({ isDarkTheme }) {
           <DoggieDoodlesCard />
         </Masonry>
         <GlossaryCard />
-        <InteractionCard pagename="work" />
+        <InteractionCard likeName="work" />
       </Suspense>
     </Box>
   );

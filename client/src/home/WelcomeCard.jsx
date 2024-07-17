@@ -21,6 +21,7 @@ import welcomeImageEight from '../static/photos/welcome_photo_8.webp';
 import welcomeImageNine from '../static/photos/welcome_photo_9.webp';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
+import LikeButton from '../shared/LikeButton';
 
 const trelloBoardLink = `https://trello.com/b/yoLCEs6S/personal-website`;
 const umichLink = 'https://umich.edu/';
@@ -196,6 +197,7 @@ export default function WelcomeCard({ isDarkTheme }) {
                 allowFullScreen
               />
             </Typography>
+            <LikeButton likeType='card' likeName='welcome_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

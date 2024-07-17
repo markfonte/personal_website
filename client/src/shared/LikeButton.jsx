@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { Typography, Card, Tooltip, IconButton } from '@mui/material';
+import { Typography, Card, Tooltip, IconButton, Box } from '@mui/material';
 const fetch = require('node-fetch');
 
 const deleteCookie = require('./util/Cookies.js').deleteCookie;
@@ -14,7 +14,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    margin: '16px',
+    margin: '12px',
   },
   likeButtonWrapper: {
     display: 'flex',
@@ -22,21 +22,24 @@ const styles = {
     alignItems: 'center',
   },
   captionRoot: {
-    margin: '8px',
+    marginRight: '16px',
   },
   captionText: {
-    margin: '16px',
+    margin: '0px',
   },
 };
 
-export default function LikeButton({ pagename }) {
+export default function LikeButton({ likeType, likeName }) {
   const [liked, setLiked] = useState(false);
   const [numLikes, setNumLikes] = useState(0);
 
   const abortController = new window.AbortController();
 
   useEffect(() => {
-    if (getCookie(pagename) === 'liked') {
+    if (likeType != 'page' && likeType != 'card') {
+      console.error("Received unknown likeType: " + likeType + ". Expected page or card");
+    }
+    if (getCookie(likeName) === 'liked') {
       setLiked(true);
     }
     fetchNumLikes();
@@ -46,7 +49,7 @@ export default function LikeButton({ pagename }) {
 
   const fetchNumLikes = () => {
     const url = process.env.REACT_APP_API_URL + 'like/get';
-    const requestText = { page: pagename };
+    const requestText = { page: likeName };
     fetch(url, {
       method: 'post',
       credentials: 'same-origin',
@@ -71,7 +74,7 @@ export default function LikeButton({ pagename }) {
   const toggleLike = () => {
     if (!liked) {
       const url = process.env.REACT_APP_API_URL + 'like';
-      const requestText = { page: pagename };
+      const requestText = { page: likeName };
       fetch(url, {
         method: 'post',
         credentials: 'same-origin',
@@ -90,11 +93,11 @@ export default function LikeButton({ pagename }) {
           }
           console.error(error);
         });
-      setCookie(pagename, 'liked', 1000);
+      setCookie(likeName, 'liked', 1000);
       setLiked(true);
     } else {
       const url = process.env.REACT_APP_API_URL + 'like/unlike';
-      const requestText = { page: pagename };
+      const requestText = { page: likeName };
       fetch(url, {
         method: 'post',
         credentials: 'same-origin',
@@ -113,7 +116,7 @@ export default function LikeButton({ pagename }) {
           }
           console.error(error);
         });
-      deleteCookie(pagename, 'liked');
+      deleteCookie(likeName, 'liked');
       setLiked(false);
     }
   };
@@ -121,7 +124,7 @@ export default function LikeButton({ pagename }) {
   let icon;
   let displayedColor;
   if (liked) {
-    displayedColor = 'secondary';
+    displayedColor = 'error';
     icon = <FavoriteIcon color={displayedColor} fontSize="2rem" />;
   } else {
     displayedColor = 'inherit';
@@ -129,23 +132,24 @@ export default function LikeButton({ pagename }) {
   }
 
   return (
-    <div style={styles.root}>
-      <div style={styles.likeButtonWrapper}>
-        <Tooltip title={liked ? 'Click to unlike page' : 'Click to like page'} arrow onClick={toggleLike}>
+    <Box style={styles.root}>
+      <Card style={styles.likeButtonWrapper}>
+        <Tooltip title={liked ? 'Click to unlike ' + likeType : 'Click to like ' + likeType} arrow onClick={toggleLike}>
           <IconButton size="large">
             {icon}
           </IconButton>
         </Tooltip>
-        <Card sx={styles.captionRoot}>
-          <Typography variant="caption" size="small" color={displayedColor} sx={styles.captionText}>
+        <Box sx={styles.captionRoot}>
+          <Typography variant="caption" size="small" color="inherit" sx={styles.captionText}>
             {numLikes} {numLikes === 1 ? 'like' : 'likes'}
           </Typography>
-        </Card>
-      </div>
-    </div>
+        </Box>
+      </Card>
+    </Box>
   );
 };
 
 LikeButton.propTypes = {
-  pagename: PropTypes.string.isRequired,
+  likeType: PropTypes.string.isRequired,
+  likeName: PropTypes.string.isRequired,
 };

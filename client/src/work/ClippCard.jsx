@@ -24,6 +24,7 @@ import {
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 const universityOfMichiganLink = `https://umich.edu`;
 const reactNativeLink = `https://reactnative.dev/`;
@@ -155,45 +156,27 @@ export default function ClippCard() {
             </Typography>
             <Typography variant="body1" paragraph>
               Our 6-person development team from the
-
-              {' '}
               <Link color="secondary" href={universityOfMichiganLink}>
-                University of Michigan
+                {' '}University of Michigan{' '}
               </Link>
-              {' '}
-
               started building the
-
-
               <Link color="secondary" href={reactNativeLink}>
                 {' '}React Native{' '}
               </Link>
               application in September 2019, and started beta testing in December 2019.
 
               The project required full-stack work, from the front-end development of the
-
-              {' '}
               <Link color="secondary" href={javascriptLink}>
-                JavaScript
+                {' '}JavaScript{' '}
               </Link>
-              {' '}
-
               mobile applications to the back-end development of the
-
-              {' '}
               <Link color="secondary" href={mongoDBLink}>
-                MongoDB
+                {' '}MongoDB{' '}
               </Link>
-              {' '}
-
               and
-
-              {' '}
               <Link color="secondary" href={firebaseLink}>
-                Firebase
+                {' '}Firebase{' '}
               </Link>
-              {' '}
-
               databases. Each developer contributed to different parts of the project at different times,
               working on any task that was critical to development progress.
               This gave all of us full-stack awareness and required teamwork and communication.
@@ -231,18 +214,15 @@ export default function ClippCard() {
               mobile development at this point. We ran into countless issues with JavaScript and
               with different parts of the application working on just Android or just iOS, but not
               both. For those people who have to choose between a
-
-              {' '}
               <Link color="secondary" href={hybridAppLink}>
-                hybrid mobile application
+                {' '}hybrid mobile application{' '}
               </Link>
-              {' '}
-
               versus two native applications, my official recommendation is that it&apos;s way too
               early for a hybrid mobile application (like React Native) to be a smart choice for
               almost anyone. If you agree or disagree, I would love to discuss this further
               - please reach out!
             </Typography>
+            <LikeButton likeType='card' likeName='clipp_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>

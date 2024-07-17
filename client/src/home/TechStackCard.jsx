@@ -19,6 +19,7 @@ import {
   Avatar,
   Chip,
 } from '@mui/material';
+import LikeButton from '../shared/LikeButton';
 
 const tags = [
   {
@@ -110,6 +111,7 @@ export default function TechStackCard({ isDarkTheme }) {
               clickable={false} />
           ))}
         </div>
+        <LikeButton likeType='card' likeName='tech_stack_card' />
       </CardContent>
     </Card>
   );

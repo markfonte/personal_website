@@ -96,7 +96,7 @@ export default function Home({ isDarkTheme }) {
           <TechStackCard isDarkTheme={isDarkTheme} />
         </Masonry>
         <TicTacToeCard />
-        <InteractionCard pagename="home" />
+        <InteractionCard likeType="page" likeName="home" />
       </Suspense>
     </Box>
   );
