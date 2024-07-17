@@ -1,6 +1,6 @@
 {
     "name": "client",
-    "version": "4.3",
+    "version": "5.0",
     "private": true,
     "type": "module",
     "dependencies": {
