@@ -23,6 +23,7 @@ import {
   Tooltip,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LikeButton from '../shared/LikeButton';
 
 
 const websiteLink = `https://www.gimbleacappella.com/`;
@@ -219,6 +220,7 @@ export default function GimbleCard() {
             </IconButton>
           </Tooltip>
         ))}
+        <LikeButton likeType='card' likeName='gimble_card' />
       </CardActions>
     </Card>
   );
