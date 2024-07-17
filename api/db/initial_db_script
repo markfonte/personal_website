@@ -7,7 +7,6 @@ set -Eeuo pipefail
 set -e
 set -x
 
-# command line options
 usage() {
 	echo "Usage: $0 (create|destroy|reset)"
 }
@@ -31,8 +30,6 @@ if [[ $# -ne 1 ]]; then
 	exit 1
 fi
 
-# Parse argument. $1 is the first argument
-# destroy and reset have been commented out as a safety measure.
 case $1 in
 	"create")
 	create

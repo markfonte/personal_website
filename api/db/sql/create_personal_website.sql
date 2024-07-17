@@ -15,17 +15,6 @@ CREATE TABLE likes
     FOREIGN KEY(pagename) REFERENCES pages(pagename) ON DELETE CASCADE
 );
 
--- One row per comment
--- CREATE TABLE comments
--- (
---     commentid INTEGER PRIMARY KEY,
---     pagename VARCHAR(30) NOT NULL,
---     owner VARCHAR(50) NOT NULL,
---     text VARCHAR(1024) NOT NULL,
---     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
---     FOREIGN KEY(pagename) REFERENCES pages(pagename) ON DELETE CASCADE
--- );
-
 
 -- INSERT DEFAULT VALUES --
 

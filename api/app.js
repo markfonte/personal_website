@@ -8,7 +8,6 @@ var cors = require('cors');
 var indexRouter = require('./routes/index.js');
 var apiHeartbeatRouter = require('./routes/api_heartbeat.js');
 var contactRouter = require('./routes/contact.js');
-var commentRouter = require('./routes/comment.js');
 var likeRouter = require('./routes/like.js');
 var app = express();
 
@@ -25,7 +24,6 @@ app.use(cors());
 app.use('/api', indexRouter);
 app.use('/api/api_heartbeat', apiHeartbeatRouter);
 app.use('/api/contact', contactRouter);
-app.use('/api/comment', commentRouter);
 app.use('/api/like', likeRouter);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

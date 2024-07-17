@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import CommentBox from './comment_box.jsx';
 import { Card, CardContent } from '@mui/material';
 import LikeButton from './LikeButton.jsx';
 import Settings from './Settings.jsx';
