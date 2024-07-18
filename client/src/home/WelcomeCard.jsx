@@ -13,6 +13,7 @@ import {
   ImageList,
   ImageListItem,
   CardActions,
+  Box,
 } from '@mui/material';
 import welcomeImageOne from '../static/photos/welcome_photo_1.webp';
 import welcomeImageFour from '../static/photos/welcome_photo_4.jpg';
@@ -116,12 +117,11 @@ export default function WelcomeCard({ isDarkTheme }) {
           <a name="welcome_card" href="#welcome_card" className="gone">
             Welcome Card
           </a>
-          <div
-            style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="Welcome!"
-              subheader="Click for a little about me..."
+              subheader=""
             />
             <ImageList variant="masonry" cols={2}>
               {itemData.map((item) => (
@@ -134,7 +134,7 @@ export default function WelcomeCard({ isDarkTheme }) {
                 </ImageListItem>
               ))}
             </ImageList>
-          </div>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent sx={styles.cardContent}>

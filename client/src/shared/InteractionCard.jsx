@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, CardContent } from '@mui/material';
+import { Box, Card, CardActions, CardContent } from '@mui/material';
 import LikeButton from './LikeButton.jsx';
 import Settings from './Settings.jsx';
 
@@ -14,17 +14,15 @@ const styles = {
 
 const InteractionCard = ({ likeName }) => {
   return (
-    <div style={styles.root}>
-      <Card raised={true}>
+    <Box sx={styles.root}>
+      <Card raised className="small-card">
         <a name="interaction_card" href="#interaction_card" className="gone">
           Interaction Card
         </a>
-        <CardContent>
-          {likeName === 'home' ? <Settings /> : null}
-          <LikeButton likeType="page" likeName={likeName} />
-        </CardContent>
+        {likeName === 'home' ? <CardContent><Settings /></CardContent> : null}
+        <LikeButton likeType="page" likeName={likeName} />
       </Card>
-    </div>
+    </Box>
   );
 };
 

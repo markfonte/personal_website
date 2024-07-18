@@ -31,7 +31,8 @@ const styles = {
     marginBottom: '16px',
   },
   masonryContainer: {
-    margin: 'auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 };
 

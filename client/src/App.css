@@ -1,8 +1,8 @@
 /* Global */
-.card {
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 64px;
+.small-card {
+  margin-bottom: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
   align-self: center;
 }
 
@@ -11,11 +11,8 @@
   align-self: center;
 }
 
-/* Global */
 .gone {
-  visibility: hidden;
-  height: 0;
-  width: 0;
+  display: none;
 }
 
 .amazon-color-light {

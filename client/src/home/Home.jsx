@@ -89,7 +89,7 @@ export default function Home({ isDarkTheme }) {
         </Link>
         dev
       </Typography>
-      <Suspense fallback={renderLoader()}>
+      <Suspense styles={styles.root} fallback={renderLoader()}>
         <Masonry columns={{ sm: 1, md: 2 }} spacing={3} sx={styles.masonryContainer}>
           <WelcomeCard isDarkTheme={isDarkTheme} />
           <NewsCard />

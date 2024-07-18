@@ -21,6 +21,7 @@ import {
   Typography,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -404,9 +405,8 @@ const glossaryItems = [
 
 const styles = {
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
+    display: 'grid',
+    placeItems: "center",
   },
   expansionPanel: {
     maxWidth: 380,
@@ -439,75 +439,77 @@ export default function GlossaryCard() {
   };
 
   return (
-    <Card raised={true} className="card" style={{ maxWidth: 400 }}>
-      <a name="glossary_card" href="#glossary_card" className="gone">
-        Glossary Card
-      </a>
-      <CardHeader
-        className="card-header"
-        title="Index"
-      />
-      <CardContent sx={styles.expansionPanel}>
-        {glossaryItems.map((glossaryItem) => (
-          <Accordion
-            key={glossaryItem.tagName}
-            expanded={expanded === glossaryItem.tagName}
-            sx={styles.expansionPanel}
-            elevation={1}
-            onChange={handlePanelChange(glossaryItem.tagName)}
-            slotProps={{ transition: { unmountOnExit: true } }}
-          >
-            <AccordionSummary
-              expandIcon={
-                <Tooltip title="expand/collapse card" arrow>
-                  <IconButton size="large">
-                    <ExpandMoreIcon />
-                  </IconButton>
-                </Tooltip>
-              }
-              aria-label={glossaryItem.tagName}
-              aria-controls={glossaryItem.tagName + '-content'}
-              id={glossaryItem.tagName + '-header'}
+    <Box sx={styles.root}>
+      <Card raised className="small-card" style={{ maxWidth: '400px', paddingTop: '16px' }}>
+        <a name="glossary_card" href="#glossary_card" className="gone">
+          Glossary Card
+        </a>
+        <CardHeader
+          className="card-header"
+          title="Index"
+        />
+        <CardContent sx={styles.expansionPanel}>
+          {glossaryItems.map((glossaryItem) => (
+            <Accordion
+              key={glossaryItem.tagName}
+              expanded={expanded === glossaryItem.tagName}
+              sx={styles.expansionPanel}
+              elevation={1}
+              onChange={handlePanelChange(glossaryItem.tagName)}
+              slotProps={{ transition: { unmountOnExit: true } }}
             >
-              {glossaryItem.icon ? glossaryItem.icon : ''}
-              <img
-                src={glossaryItem.logo ? glossaryItem.logo : ''}
-                style={styles.tagIcon}
-                alt={glossaryItem.tagName + ' button'}
-              />
-              <Typography
-                variant="subtitle1"
-                color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
-                sx={styles.tag}
+              <AccordionSummary
+                expandIcon={
+                  <Tooltip title="expand/collapse card" arrow>
+                    <IconButton size="large">
+                      <ExpandMoreIcon />
+                    </IconButton>
+                  </Tooltip>
+                }
+                aria-label={glossaryItem.tagName}
+                aria-controls={glossaryItem.tagName + '-content'}
+                id={glossaryItem.tagName + '-header'}
               >
-                {glossaryItem.tagName} ({glossaryItem.projects.length})
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <List component="nav" style={{ margin: 'auto', width: '100%' }}>
-                {glossaryItem.projects.map((project, i) => (
-                  <ListItem
-                    component="a"
-                    button
-                    key={project.cardName + i}
-                    href={
-                      project.overrideLink ?
-                        project.overrideLink :
-                        '/work#' + project.cardId + '_card'
-                    }
-                  >
-                    <ListItemText
-                      primaryTypographyProps={{ color: 'secondary' }}
-                      primary={project.cardName}
-                      secondary={project.subtitle}
-                    />
-                  </ListItem>
-                ))}
-              </List>
-            </AccordionDetails>
-          </Accordion>
-        ))}
-      </CardContent>
-    </Card>
+                {glossaryItem.icon ? glossaryItem.icon : ''}
+                <img
+                  src={glossaryItem.logo ? glossaryItem.logo : ''}
+                  style={styles.tagIcon}
+                  alt={glossaryItem.tagName + ' button'}
+                />
+                <Typography
+                  variant="subtitle1"
+                  color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
+                  sx={styles.tag}
+                >
+                  {glossaryItem.tagName} ({glossaryItem.projects.length})
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <List component="nav" style={{ margin: 'auto', width: '100%' }}>
+                  {glossaryItem.projects.map((project, i) => (
+                    <ListItem
+                      component="a"
+                      button
+                      key={project.cardName + i}
+                      href={
+                        project.overrideLink ?
+                          project.overrideLink :
+                          '/work#' + project.cardId + '_card'
+                      }
+                    >
+                      <ListItemText
+                        primaryTypographyProps={{ color: 'secondary' }}
+                        primary={project.cardName}
+                        secondary={project.subtitle}
+                      />
+                    </ListItem>
+                  ))}
+                </List>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </CardContent>
+      </Card>
+    </Box>
   );
 };

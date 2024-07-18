@@ -143,7 +143,7 @@ const styles = {
   navTab: {
   },
   toggleThemeButton: {
-    padding: '20px',
+    padding: '16px',
     alignSelf: 'flex-start',
   },
 };

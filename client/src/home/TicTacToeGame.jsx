@@ -27,10 +27,10 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
     minWidth: '189px',
-    marginTop: '8px',
+    margin: '8px',
   },
   gameInfo: {
-    margin: '0px',
+    margin: '8px',
   },
 };
 
@@ -106,11 +106,10 @@ export default function TicTacToeGame() {
             {status}
           </Typography>
         </div>
-        <br />
         <div className={winner ? 'firework' : ''} />
         {stepNum !== 0 ? (
           <Tooltip placement="right" arrow title="restart">
-            <Button variant="outlined" onClick={() => jumpTo(0)}>
+            <Button sx={{ marginBottom: '8px', marginTop: '8px' }} variant="outlined" onClick={() => jumpTo(0)}>
               Restart
             </Button>
           </Tooltip>

@@ -128,7 +128,7 @@ export default function SammyCard() {
             <CardHeader
               className="card-header"
               title="Sammy Fonte's Articles"
-              subheader="Check out my brother's work!" />
+              subheader="" />
             <CardMedia
               sx={styles.michiganDailyBanner}
               image="/media/michigan_daily_logo.png"

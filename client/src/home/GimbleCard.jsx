@@ -159,7 +159,7 @@ export default function GimbleCard() {
             <CardHeader
               className="card-header"
               title="Gimble A Cappella"
-              subheader={`My college acappella group!`}
+              subheader=""
             />
             <CardMedia
               sx={styles.gimbleCardMedia}

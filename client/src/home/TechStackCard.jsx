@@ -18,6 +18,8 @@ import {
   CardHeader,
   Avatar,
   Chip,
+  CardActions,
+  Box,
 } from '@mui/material';
 import LikeButton from '../shared/LikeButton';
 
@@ -97,9 +99,10 @@ export default function TechStackCard({ isDarkTheme }) {
       <CardHeader
         className="card-header"
         title="🛠️ Tech Stack"
-        subheader="What I used to build this website:" />
+        subheader=""
+        sx={{ marginTop: '16px' }} />
       <CardContent sx={styles.cardContent}>
-        <div style={styles.techStackWrapper}>
+        <Box sx={styles.techStackWrapper}>
           {tags.map((tag) => (
             <Chip
               sx={styles.tags}
@@ -110,9 +113,12 @@ export default function TechStackCard({ isDarkTheme }) {
               size="large"
               clickable={false} />
           ))}
-        </div>
-        <LikeButton likeType='card' likeName='tech_stack_card' />
+        </Box>
       </CardContent>
+      <hr />
+      <CardActions>
+        <LikeButton likeType='card' likeName='tech_stack_card' />
+      </CardActions>
     </Card>
   );
 };

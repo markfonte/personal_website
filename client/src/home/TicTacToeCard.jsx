@@ -5,10 +5,16 @@ import {
   Card,
   CardContent,
   CardHeader,
+  CardActions,
+  Box,
 } from '@mui/material';
 import LikeButton from '../shared/LikeButton.jsx';
 
 const styles = {
+  root: {
+    display: 'grid',
+    placeItems: "center",
+  },
   cardContent: {
     padding: '0px',
   },
@@ -16,19 +22,24 @@ const styles = {
 
 export default function TicTacToeCard() {
   return (
-    <Card raised={true} className="card" style={{ maxWidth: 420, minWidth: 300 }}>
-      <a name="tic_tac_toe_card" href="#tic_tac_toe_card" className="gone">
-        Tic Tac Toe Card
-      </a>
-      <CardHeader
-        className="card-header"
-        title="Tic Tac Toe"
-        subheader="just for fun!" />
-      <CardContent sx={styles.cardContent}>
-        <Typography variant="subtitle1" />
-        <TicTacToeGame />
-        <LikeButton likeType='card' likeName='tic_tac_toe_card' />
-      </CardContent>
-    </Card>
+    <Box sx={styles.root}>
+      <Card raised className="small-card" style={{ minWidth: '300px', paddingTop: '16px' }} >
+        <a name="tic_tac_toe_card" href="#tic_tac_toe_card" className="gone">
+          Tic Tac Toe Card
+        </a>
+        <CardHeader
+          className="card-header"
+          title="Tic Tac Toe"
+          subheader="" />
+        <CardContent sx={styles.cardContent}>
+          <Typography variant="subtitle1" />
+          <TicTacToeGame />
+        </CardContent>
+        <hr />
+        <CardActions>
+          <LikeButton likeType='card' likeName='tic_tac_toe_card' />
+        </CardActions>
+      </Card>
+    </Box>
   );
 };

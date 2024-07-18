@@ -12,6 +12,7 @@ import {
     Link,
     Tooltip,
     Typography,
+    Box,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -140,11 +141,11 @@ export default function NewsCard() {
                     <a name="news_card" href="#news_card" className="gone">
                         News Card
                     </a>
-                    <div style={styles.expansionHeaderContainer}>
+                    <Box sx={styles.expansionHeaderContainer}>
                         <CardHeader
                             className="card-header"
-                            title="In the News"
-                            subheader="(somewhat)" />
+                            title="📰 In the News"
+                            subheader="" />
                         <CardMedia
                             sx={styles.newsBanner}
                             image="/media/news_banner.webp"
@@ -152,13 +153,13 @@ export default function NewsCard() {
                             alt="News banner"
                             component="img"
                         />
-                    </div>
+                    </Box>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <CardContent style={{ padding: 0 }}>
-                        <div style={styles.articles}>
+                    <CardContent sx={{ padding: 0 }}>
+                        <Box sx={styles.articles}>
                             {articles.map((article) => (
-                                <div key={article.id} style={styles.article}>
+                                <Box key={article.id} sx={styles.article}>
                                     <img src={article.cover} style={styles.articleCover} />
                                     <br />
                                     <Link variant="h5" href={article.link} underline="hover">
@@ -171,13 +172,13 @@ export default function NewsCard() {
                                         {article.isQuote ? <i>&quot;{article.blurb}&quot;</i> : article.blurb} {article.isQuote ? <Link href={article.link} underline="hover"> […]</Link> : <Link href={article.link} underline="hover"> [view article] </Link>}
                                     </Typography>
                                     <hr />
-                                </div>
+                                </Box>
                             ))}
-                        </div>
+                        </Box>
                     </CardContent>
                 </AccordionDetails>
             </Accordion>
-            <CardActions sx={styles.cardActions}>
+            <CardActions>
                 <LikeButton likeType='card' likeName='news_card' />
             </CardActions>
         </Card >
