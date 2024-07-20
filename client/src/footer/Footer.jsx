@@ -192,7 +192,7 @@ export default function Footer({ isDarkTheme }) {
             last updated{' '}
             <Tooltip arrow placement="right" title="see most recent commit on GitHub">
               <Link color="secondary" href={commitHistoryLink}>
-                <Moment parse="MM/DD/YYYY HH mm SS" fromNow>
+                <Moment parse="YYYY-MM-DDTHH:mm:ssZ" fromNow>
                   {timestamp}
                 </Moment>
               </Link>
