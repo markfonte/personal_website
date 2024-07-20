@@ -112,6 +112,7 @@ const styles = {
         maxWidth: '385px',
         width: '100%',
         margin: '8px',
+        padding: '4px',
     },
     articles: {
         display: 'flex',

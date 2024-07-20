@@ -90,10 +90,10 @@ const styles = {
     width: '100%',
   },
   article: {
-    maxWidth: '540px',
+    maxWidth: '385px',
     width: '100%',
     margin: '8px',
-    padding: '8px',
+    padding: '4px',
   },
   articles: {
     display: 'flex',
@@ -143,20 +143,19 @@ export default function SammyCard() {
           <CardContent sx={{ padding: '0px' }}>
             <Box sx={styles.articles}>
               {articles.map((article) => (
-                <Box key={article.id} sx={styles.article}>
+                <Card raised key={article.id} sx={styles.article}>
                   <img src={article.cover} style={styles.articleCover} />
                   <br />
                   <Link variant="h5" href={article.link} underline="hover">
                     {article.title}
                   </Link>
-                  <Typography variant="subtitle1" paragraph>
+                  <Typography variant="subtitle1">
                     {'📅 ' + article.date}
                   </Typography>
                   <Typography variant="body1" paragraph>
                     {article.blurb}{' '} <Link href={article.link} underline="hover">[…]</Link>
                   </Typography>
-                  <hr />
-                </Box>
+                </Card>
               ))}
             </Box>
           </CardContent>
