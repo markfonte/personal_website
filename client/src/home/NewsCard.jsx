@@ -161,7 +161,7 @@ export default function NewsCard() {
                     <CardContent sx={{ padding: 0 }}>
                         <Box sx={styles.articles}>
                             {articles.map((article) => (
-                                <Box key={article.id} sx={styles.article}>
+                                <Card raised key={article.id} sx={styles.article}>
                                     <img src={article.cover} style={styles.articleCover} />
                                     <br />
                                     <Link variant="h5" href={article.link} underline="hover">
@@ -173,7 +173,7 @@ export default function NewsCard() {
                                     <Typography variant="body1" paragraph>
                                         {article.isQuote ? <i>&quot;{article.blurb}&quot;</i> : article.blurb} {article.isQuote ? <Link href={article.link} underline="hover"> […]</Link> : <Link href={article.link} underline="hover"> [view article] </Link>}
                                     </Typography>
-                                </Box>
+                                </Card>
                             ))}
                         </Box>
                     </CardContent>
