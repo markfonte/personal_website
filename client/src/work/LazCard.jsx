@@ -125,7 +125,7 @@ export default function LAZCard() {
             <Tooltip
               title="expand/collapse card"
               arrow>
-              <IconButton size="large">
+              <IconButton size="small">
                 <ExpandMoreIcon />
               </IconButton>
             </Tooltip>

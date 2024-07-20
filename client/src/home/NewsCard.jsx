@@ -93,7 +93,9 @@ const articles = [
 const styles = {
     newsBanner: {
         width: '100%',
-        margin: '8px',
+        marginTop: '4px',
+        marginBottom: '0px',
+        padding: '0px',
     },
     expansionHeaderContainer: {
         display: 'flex',
@@ -126,14 +128,14 @@ export default function NewsCard() {
         <Card raised className="large-card">
             <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
                 <AccordionSummary
-                    aria-label="Ness"
+                    aria-label="News"
                     aria-controls="news-content"
                     id="news-header"
                     expandIcon={
                         <Tooltip
                             title="expand/collapse card"
                             arrow>
-                            <IconButton size="large">
+                            <IconButton size="small">
                                 <ExpandMoreIcon />
                             </IconButton>
                         </Tooltip>
@@ -144,7 +146,7 @@ export default function NewsCard() {
                     <Box sx={styles.expansionHeaderContainer}>
                         <CardHeader
                             className="card-header"
-                            title="📰 In the News"
+                            title={"News 📰"}
                             subheader="" />
                         <CardMedia
                             sx={styles.newsBanner}
@@ -155,7 +157,7 @@ export default function NewsCard() {
                         />
                     </Box>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails sx={{ padding: 0 }}>
                     <CardContent sx={{ padding: 0 }}>
                         <Box sx={styles.articles}>
                             {articles.map((article) => (
@@ -165,20 +167,19 @@ export default function NewsCard() {
                                     <Link variant="h5" href={article.link} underline="hover">
                                         {article.title}
                                     </Link>
-                                    <Typography variant="subtitle1" paragraph>
+                                    <Typography variant="subtitle1">
                                         {'📅 ' + article.date}
                                     </Typography>
                                     <Typography variant="body1" paragraph>
                                         {article.isQuote ? <i>&quot;{article.blurb}&quot;</i> : article.blurb} {article.isQuote ? <Link href={article.link} underline="hover"> […]</Link> : <Link href={article.link} underline="hover"> [view article] </Link>}
                                     </Typography>
-                                    <hr />
                                 </Box>
                             ))}
                         </Box>
                     </CardContent>
                 </AccordionDetails>
             </Accordion>
-            <CardActions>
+            <CardActions sx={{ justifyContent: 'flex-end' }}>
                 <LikeButton likeType='card' likeName='news_card' />
             </CardActions>
         </Card >

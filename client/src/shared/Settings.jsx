@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Typography, Switch, Tooltip, Snackbar, Alert } from '@mui/material';
+import { Card, Typography, Switch, Tooltip, Snackbar, Alert, CardHeader } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings.js';
 
 const getCookie = require('./util/Cookies.js').getCookie;
@@ -66,11 +66,10 @@ export default function Settings() {
 
   return (
     <Card sx={styles.flatCard}>
-      <div style={styles.switchContent}>
-        <Typography variant='h6'>
-          Settings
-        </Typography>
-      </div>
+      <CardHeader
+        className="card-header"
+        title="Settings"
+      />
       <div style={styles.switchContent}>
         <Typography sx={styles.switchTitle} variant="subtitle1">
           rainbow mode

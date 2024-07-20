@@ -85,7 +85,7 @@ export default function TeslaCard() {
             <Tooltip
               title="expand/collapse card"
               arrow>
-              <IconButton size="large">
+              <IconButton size="small">
                 <ExpandMoreIcon />
               </IconButton>
             </Tooltip>

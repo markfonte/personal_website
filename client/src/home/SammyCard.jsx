@@ -116,7 +116,7 @@ export default function SammyCard() {
             <Tooltip
               title="expand/collapse card"
               arrow>
-              <IconButton size="large">
+              <IconButton size="small">
                 <ExpandMoreIcon />
               </IconButton>
             </Tooltip>
@@ -127,8 +127,8 @@ export default function SammyCard() {
           <div style={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
-              title="Sammy Fonte's Articles"
-              subheader="" />
+              title="Sammy Fonte"
+              subheader="check out my brother's articles" />
             <CardMedia
               sx={styles.michiganDailyBanner}
               image="/media/michigan_daily_logo.png"
@@ -161,11 +161,11 @@ export default function SammyCard() {
           </CardContent>
         </AccordionDetails>
       </Accordion>
-      <CardActions sx={styles.cardActions}>
+      <CardActions sx={{ justifyContent: 'flex-end' }}>
         <Tooltip
-          title="check out Sammy's Michigan Daily articles"
+          title="see all articles"
           arrow>
-          <IconButton aria-label="Go to website" href="https://www.michigandaily.com/author/sfonteumich-edu/" size="large">
+          <IconButton aria-label="Go to website" href="https://www.michigandaily.com/author/sfonteumich-edu/" size="medium">
             <WebIcon />
           </IconButton>
         </Tooltip>

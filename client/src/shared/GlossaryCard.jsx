@@ -7,6 +7,7 @@ import kotlinLogo from '../static/logos/kotlin_logo.svg';
 import pythonLogo from '../static/logos/python_logo.svg';
 import reactLogo from '../static/logos/react_logo.svg';
 import reactNativeLogo from '../static/logos/react_native_logo.svg';
+import { useNavigate } from 'react-router-dom';
 import { Build, Business, MenuBook, School, Work } from '@mui/icons-material';
 import {
   Card,
@@ -22,6 +23,7 @@ import {
   IconButton,
   Tooltip,
   Box,
+  ListItemButton,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -56,17 +58,17 @@ const glossaryItems = [
       {
         cardId: 'jpmorgan',
         cardName: 'J.P. Morgan Chase',
-        subtitle: 'Software Engineering Intern Summer 2019',
+        subtitle: 'Software Engineering Intern, 2019',
       },
       {
         cardId: 'laz',
         cardName: 'Learning A-Z',
-        subtitle: 'Software Engineering Intern Summer 2018',
+        subtitle: 'Software Engineering Intern, 2018',
       },
       {
         cardId: 'laz',
         cardName: 'Learning A-Z',
-        subtitle: 'Software Engineering Intern Summer 2017',
+        subtitle: 'Software Engineering Intern, 2017',
       },
     ],
   },
@@ -419,6 +421,8 @@ const styles = {
     textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center',
+    marginLeft: '12px',
+    marginRight: '12px',
   },
   tagIcon: {
     width: '28px',
@@ -429,9 +433,10 @@ const styles = {
 
 export default function GlossaryCard() {
   const [expanded, setExpanded] = useState(false);
+  const navigate = useNavigate();
 
-  const handleClicker = () => {
-    // Handle clicker functionality if needed
+  const handleClick = (path) => {
+    navigate(path);
   };
 
   const handlePanelChange = (panel) => (event, isExpanded) => {
@@ -461,7 +466,7 @@ export default function GlossaryCard() {
               <AccordionSummary
                 expandIcon={
                   <Tooltip title="expand/collapse card" arrow>
-                    <IconButton size="large">
+                    <IconButton size="small">
                       <ExpandMoreIcon />
                     </IconButton>
                   </Tooltip>
@@ -485,16 +490,17 @@ export default function GlossaryCard() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <List component="nav" style={{ margin: 'auto', width: '100%' }}>
+                <List component="nav" sx={{ width: '100%' }}>
                   {glossaryItem.projects.map((project, i) => (
                     <ListItem
                       component="a"
                       button
                       key={project.cardName + i}
-                      href={
+                      sx={{ padding: '0px' }}
+                      onClick={() => handleClick(
                         project.overrideLink ?
                           project.overrideLink :
-                          '/work#' + project.cardId + '_card'
+                          '/work#' + project.cardId + '_card')
                       }
                     >
                       <ListItemText

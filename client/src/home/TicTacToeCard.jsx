@@ -36,7 +36,7 @@ export default function TicTacToeCard() {
           <TicTacToeGame />
         </CardContent>
         <hr />
-        <CardActions>
+        <CardActions sx={{ justifyContent: 'flex-end' }}>
           <LikeButton likeType='card' likeName='tic_tac_toe_card' />
         </CardActions>
       </Card>

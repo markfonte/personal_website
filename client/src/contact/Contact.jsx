@@ -41,7 +41,7 @@ export default function Contact() {
         Let&#39;s get in touch
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
-        My inbox is always open! And so is my Venmo... so feel free to pass along a few (hundred) of your hard-earned bucks 🤪
+        My inbox is always open! And so is my Venmo...
       </Typography>
       <div>
         <Tooltip
@@ -72,7 +72,7 @@ export default function Contact() {
         </Tooltip>
       </div>
       <Typography sx={styles.paragraph} variant="caption">
-        <i>My resume is available upon request</i>
+        My resume is available upon request
       </Typography>
       <br /> <br />
       <img
@@ -83,7 +83,7 @@ export default function Contact() {
       />
       <br />
       <Typography variant="caption">
-        ...Venmo-ing me makes Spike happy!
+        <i>liking this page makes Spike happy!</i>
       </Typography>
       <br /> <br /> <br />
       <InteractionCard likeType="page" likeName="contact" />

@@ -5,7 +5,7 @@ import spotifyLogo from '../static/logos/spotify_logo.svg';
 import appleMusicLogo from '../static/logos/apple_music_logo.svg';
 // import amazonMusicLogo from '../static/logos/amazon_music_logo.svg';
 // import soundcloudLogo from '../static/logos/soundcloud_logo.svg';
-// import youtubeLogo from '../static/logos/youtube_logo.svg';
+import youtubeLogo from '../static/logos/youtube_logo.svg';
 import youtubeMusicLogo from '../static/logos/youtube_music_logo.svg';
 // import facebookLogo from '../static/logos/facebook_logo.svg';
 import instagramLogo from '../static/logos/instagram_logo.svg';
@@ -32,20 +32,20 @@ const spotifyLink = `https://open.spotify.com/artist/0CgETTTImSmkeCBkoUJiMg?auto
 const appleMusicLink = `https://itunes.apple.com/us/artist/gimble-a-cappella/1221861150?ign-gact=3&ls=1`;
 // const amazonMusicLink = `https://music.amazon.com/artists/B06XZ8143C?tab=LIBRARY&ref=dm_wcp_artist_link_s`;
 // const soundcloudLink = `https://soundcloud.com/gimble-a-cappella`;
-// const youtubeLink = `https://www.youtube.com/channel/UCH2dQr26tAWVijoYdKHcgdg`;
-const youtubeMusicLink = `https://www.youtube.com/channel/UCzwG1_hJ5hRCMqzNlTJj2ZQ`;
+const youtubeLink = `https://www.youtube.com/channel/UCH2dQr26tAWVijoYdKHcgdg`;
+// const youtubeMusicLink = `https://www.youtube.com/channel/UCzwG1_hJ5hRCMqzNlTJj2ZQ`;
 // const facebookLink = `https://www.facebook.com/gimbleacappella/`;
-const instagramLink = `https://www.instagram.com/gimbleacappella/`;
+// const instagramLink = `https://www.instagram.com/gimbleacappella/`;
 
 const links = [
-  { name: 'Gimble A Cappella on Apple Music', image: appleMusicLogo, link: appleMusicLink },
-  // { name: 'Gimble A Cappella on Facebook', image: facebookLogo, link: facebookLink },
   { name: 'Gimble A Cappella on Spotify', image: spotifyLogo, link: spotifyLink },
+  { name: 'Gimble A Cappella on Apple Music', image: appleMusicLogo, link: appleMusicLink },
+  { name: 'Gimble A Cappella on YouTube', image: youtubeLogo, link: youtubeLink },
+  // { name: 'Gimble A Cappella on Facebook', image: facebookLogo, link: facebookLink },
   // { name: 'Gimble A Cappella on Google Play Music', image: googlePlayMusicLogo, link: googlePlayMusicLink },
   // { name: 'Gimble A Cappella on SoundCloud', image: soundcloudLogo, link: soundcloudLink },
-  // { name: 'Gimble A Cappella on YouTube', image: youtubeLogo, link: youtubeLink },
-  { name: 'Gimble A Cappella on YouTube Music', image: youtubeMusicLogo, link: youtubeMusicLink },
-  { name: 'Gimble A Cappella on Instagram', image: instagramLogo, link: instagramLink },
+  // { name: 'Gimble A Cappella on YouTube Music', image: youtubeMusicLogo, link: youtubeMusicLink },
+  // { name: 'Gimble A Cappella on Instagram', image: instagramLogo, link: instagramLink },
   // { name: 'Gimble A Cappella on Amazon Music', image: amazonMusicLogo, link: amazonMusicLink },
 ];
 
@@ -94,11 +94,8 @@ const spotifyAlbums = [
 const styles = {
   gimbleCardMedia: {
     width: '100%',
-    marginBottom: '16px',
-    marginTop: '16px',
-    marginLeft: '0px',
-    marginRight: '0px',
-    maxWidth: '700px',
+    marginTop: '4px',
+    marginBottom: '0px',
   },
   gimbleCardActionIcon: {
     width: '24px',
@@ -111,9 +108,6 @@ const styles = {
   spotifyAlbum: {
     height: '152px',
     margin: '4px',
-  },
-  cardActions: {
-    overflowX: 'auto',
   },
   cardContent: {
     padding: '0px',
@@ -147,7 +141,7 @@ export default function GimbleCard() {
             <Tooltip
               title="expand/collapse card"
               arrow>
-              <IconButton size="large">
+              <IconButton size="small">
                 <ExpandMoreIcon />
               </IconButton>
             </Tooltip>
@@ -159,7 +153,7 @@ export default function GimbleCard() {
             <CardHeader
               className="card-header"
               title="Gimble A Cappella"
-              subheader=""
+              subheader="my college singing group"
             />
             <CardMedia
               sx={styles.gimbleCardMedia}
@@ -194,25 +188,16 @@ export default function GimbleCard() {
                 allowFullScreen
               />
             ))}
-            <br />
-            <LikeButton likeType='card' likeName='gimble_card' />
           </CardContent>
         </AccordionDetails>
       </Accordion>
-      <CardActions sx={styles.cardActions}>
-        <Tooltip
-          title="go to Gimble A Cappella's website"
-          arrow>
-          <IconButton aria-label="Go to website" href={websiteLink} size="large">
-            <WebIcon />
-          </IconButton>
-        </Tooltip>
+      <CardActions sx={{ justifyContent: 'flex-end', overflowX: 'auto' }}>
         {links.map((link) => (
           <Tooltip
             title={'go to ' + link.name}
             key={link.name}
             arrow>
-            <IconButton aria-label={link.name} href={link.link} size="large">
+            <IconButton aria-label={link.name} href={link.link} size="medium">
               <img
                 src={link.image}
                 style={styles.gimbleCardActionIcon}
@@ -221,6 +206,14 @@ export default function GimbleCard() {
             </IconButton>
           </Tooltip>
         ))}
+        <Tooltip
+          title="see website"
+          arrow>
+          <IconButton aria-label="Go to website" href={websiteLink} size="medium">
+            <WebIcon />
+          </IconButton>
+        </Tooltip>
+        <LikeButton likeType='card' likeName='gimble_card' />
       </CardActions>
     </Card>
   );

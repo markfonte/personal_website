@@ -260,7 +260,7 @@ export default function Blog() {
                 id={post.title + '-header'}
                 expandIcon={
                   <Tooltip title="expand/collapse card" arrow>
-                    <IconButton size="large">
+                    <IconButton size="small">
                       <ExpandMoreIcon />
                     </IconButton>
                   </Tooltip>
@@ -296,12 +296,12 @@ export default function Blog() {
                 </CardContent>
               </AccordionDetails>
             </Accordion>
-            <CardActions>
+            <CardActions sx={{ justifyContent: 'flex-end' }}>
               <Tooltip title="share article" arrow>
                 <IconButton
                   aria-label="Share article"
                   onClick={() => copyToClipboard(process.env.REACT_APP_CLIENT_URL + 'blog#post_' + post.postNumber)}
-                  size="large"
+                  size="medium"
                 >
                   <ShareIcon />
                 </IconButton>

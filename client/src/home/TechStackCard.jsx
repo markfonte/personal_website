@@ -23,6 +23,8 @@ import {
 } from '@mui/material';
 import LikeButton from '../shared/LikeButton';
 
+
+
 const tags = [
   {
     label: 'DigitalOcean',
@@ -98,7 +100,7 @@ export default function TechStackCard({ isDarkTheme }) {
       </a>
       <CardHeader
         className="card-header"
-        title="🛠️ Tech Stack"
+        title="Tech Stack 🛠️"
         subheader=""
         sx={{ marginTop: '16px' }} />
       <CardContent sx={styles.cardContent}>
@@ -116,7 +118,7 @@ export default function TechStackCard({ isDarkTheme }) {
         </Box>
       </CardContent>
       <hr />
-      <CardActions>
+      <CardActions sx={{ justifyContent: 'flex-end' }}>
         <LikeButton likeType='card' likeName='tech_stack_card' />
       </CardActions>
     </Card>

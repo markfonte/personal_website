@@ -112,7 +112,7 @@ export default function MHacks12Card() {
             <Tooltip
               title="expand/collapse card"
               arrow>
-              <IconButton size="large">
+              <IconButton size="small">
                 <ExpandMoreIcon />
               </IconButton>
             </Tooltip>

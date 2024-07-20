@@ -16,7 +16,8 @@ import {
   Box,
 } from '@mui/material';
 import welcomeImageOne from '../static/photos/welcome_photo_1.webp';
-import welcomeImageFour from '../static/photos/welcome_photo_4.jpg';
+import welcomeImageTwo from '../static/photos/welcome_photo_2.webp';
+import welcomeImageFour from '../static/photos/welcome_photo_4.webp';
 import welcomeImageSix from '../static/photos/welcome_photo_6.webp';
 import welcomeImageSeven from '../static/photos/welcome_photo_7.webp';
 import welcomeImageEight from '../static/photos/welcome_photo_8.webp';
@@ -45,6 +46,10 @@ const itemData = [
     title: '',
   },
   {
+    img: welcomeImageTwo,
+    title: '',
+  },
+  {
     img: welcomeImageOne,
     title: '',
   },
@@ -69,11 +74,6 @@ const styles = {
   photoGrid: {
     flexWrap: 'nowrap',
     transform: 'translateZ(0)',
-  },
-  photoGridTile: {
-  },
-  scrollTip: {
-    marginTop: '8px',
   },
   expansionHeaderContainer: {
     display: 'flex',
@@ -109,7 +109,7 @@ export default function WelcomeCard({ isDarkTheme }) {
             <Tooltip
               title="expand/collapse card"
               arrow>
-              <IconButton size="large">
+              <IconButton size="small">
                 <ExpandMoreIcon />
               </IconButton>
             </Tooltip>
@@ -123,7 +123,7 @@ export default function WelcomeCard({ isDarkTheme }) {
               title="Welcome!"
               subheader=""
             />
-            <ImageList variant="masonry" cols={2}>
+            <ImageList variant="masonry" cols={2} sx={{ marginTop: "4px", marginBottom: "0px" }}>
               {itemData.map((item) => (
                 <ImageListItem key={item.img}>
                   <img
@@ -201,7 +201,7 @@ export default function WelcomeCard({ isDarkTheme }) {
           </CardContent>
         </AccordionDetails>
       </Accordion>
-      <CardActions>
+      <CardActions sx={{ justifyContent: 'flex-end' }}>
         <LikeButton likeType='card' likeName='welcome_card' />
       </CardActions>
     </Card>
