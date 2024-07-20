@@ -14,6 +14,7 @@ import {
   Chip,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -106,7 +107,7 @@ const styles = {
 
 export default function Spartahack5Card() {
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="SpartaHack V"
@@ -124,7 +125,7 @@ export default function Spartahack5Card() {
           <a name="spartahack5_card" href="#spartahack5_card" className="gone">
             SpartHack V Card
           </a>
-          <div style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="Laughable Lyrics"
@@ -137,19 +138,19 @@ export default function Spartahack5Card() {
               alt="SpartaHack V banner"
               component="img"
             />
-            <div>
+            <Box>
               {tags.map((tag) => (
                 <Chip
                   sx={styles.tags}
                   key={tag.label}
-                  icon={tag.icon ? tag.icon : <div />}
+                  icon={tag.icon ? tag.icon : null}
                   label={tag.label}
                   variant={tag.variant ? tag.variant : 'outlined'}
                   color={tag.color ? tag.color : 'secondary'}
                   clickable />
               ))}
-            </div>
-          </div>
+            </Box>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>

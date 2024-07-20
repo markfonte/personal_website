@@ -22,6 +22,7 @@ import {
   Chip,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -102,7 +103,7 @@ const styles = {
 
 export default function MHacks12Card() {
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="MHacks 12"
@@ -120,7 +121,7 @@ export default function MHacks12Card() {
           <a name="mhacks12_card" href="#mhack12_card" className="gone">
             MHacks 12 Card
           </a>
-          <div style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="InstEvents"
@@ -133,19 +134,19 @@ export default function MHacks12Card() {
               alt="MHacks 12 banner"
               component="img"
             />
-            <div>
+            <Box>
               {tags.map((tag) => (
                 <Chip
                   sx={styles.tags}
                   key={tag.label}
-                  icon={tag.icon ? tag.icon : <div />}
+                  icon={tag.icon ? tag.icon : null}
                   label={tag.label}
                   variant={tag.variant ? tag.variant : 'outlined'}
                   color={tag.color ? tag.color : 'secondary'}
                   clickable />
               ))}
-            </div>
-          </div>
+            </Box>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>

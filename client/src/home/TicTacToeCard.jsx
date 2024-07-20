@@ -23,7 +23,7 @@ const styles = {
 export default function TicTacToeCard() {
   return (
     <Box sx={styles.root}>
-      <Card raised className="small-card" style={{ minWidth: '300px', paddingTop: '16px' }} >
+      <Card raised className="small-card" sx={{ minWidth: '300px', paddingTop: '16px' }} >
         <a name="tic_tac_toe_card" href="#tic_tac_toe_card" className="gone">
           Tic Tac Toe Card
         </a>

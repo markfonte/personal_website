@@ -11,6 +11,7 @@ import {
   Chip,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 import teslaOnboardPhoto from '../static/photos/tesla_onboard_photo.jpg';
 import teslaCyberPhoto from '../static/photos/tesla_cyber_photo.webp';
@@ -75,7 +76,7 @@ const styles = {
 
 export default function TeslaCard() {
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Tesla"
@@ -93,7 +94,7 @@ export default function TeslaCard() {
           <a name="tesla_card" href="#tesla_card" className="gone">
             Tesla Card
           </a>
-          <div style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="Tesla"
@@ -105,19 +106,19 @@ export default function TeslaCard() {
               alt="Tesla banner"
               component="img"
             />
-            <div>
+            <Box>
               {tags.map((tag) => (
                 <Chip
                   sx={styles.tags}
                   key={tag.label}
-                  icon={tag.icon ? tag.icon : <div />}
+                  icon={tag.icon ? tag.icon : null}
                   label={tag.label}
                   variant={tag.variant ? tag.variant : 'outlined'}
                   color={tag.color ? tag.color : 'secondary'}
                   clickable />
               ))}
-            </div>
-          </div>
+            </Box>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>

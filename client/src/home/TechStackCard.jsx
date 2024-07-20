@@ -79,8 +79,8 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    margin: 0,
-    padding: 0,
+    margin: '0px',
+    padding: '0px',
   },
   tags: {
     margin: '4px',
@@ -93,7 +93,7 @@ const styles = {
 export default function TechStackCard({ isDarkTheme }) {
   return (
     <Card
-      raised={true}
+      raised
       className="large-card">
       <a name="tech_stack_card" href="#tech_stack_card" className="gone">
         Tech Stack Card

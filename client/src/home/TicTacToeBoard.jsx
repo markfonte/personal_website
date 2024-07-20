@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import TicTacToeSquare from './TicTacToeSquare.jsx';
+import { Box } from '@mui/material';
 
 export default function TicTacToeBoard({ squares, onClick }) {
   const renderSquare = (i) => {
@@ -13,23 +14,23 @@ export default function TicTacToeBoard({ squares, onClick }) {
   };
 
   return (
-    <div>
-      <div>
+    <Box>
+      <Box>
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}
-      </div>
-      <div>
+      </Box>
+      <Box>
         {renderSquare(3)}
         {renderSquare(4)}
         {renderSquare(5)}
-      </div>
-      <div>
+      </Box>
+      <Box>
         {renderSquare(6)}
         {renderSquare(7)}
         {renderSquare(8)}
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 

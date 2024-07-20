@@ -12,6 +12,7 @@ import {
   Chip,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -123,7 +124,7 @@ const styles = {
 export default function AmazonCard() {
   return (
     <Card
-      raised={true}
+      raised
       className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
@@ -142,8 +143,7 @@ export default function AmazonCard() {
           <a name="amazon_card" href="#amazon_card" className="gone">
             Amazon Card
           </a>
-          <div
-            style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="Amazon &amp; Amazon Web Services"
@@ -156,19 +156,19 @@ export default function AmazonCard() {
               alt="Amazon logo"
               component="img"
             />
-            <div>
+            <Box>
               {tags.map((tag) => (
                 <Chip
                   sx={styles.tags}
                   key={tag.label}
-                  icon={tag.icon ? tag.icon : <div />}
+                  icon={tag.icon ? tag.icon : null}
                   label={tag.label}
                   variant={tag.variant ? tag.variant : 'outlined'}
                   color={tag.color ? tag.color : 'secondary'}
                   clickable />
               ))}
-            </div>
-          </div>
+            </Box>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent sx={styles.cardContent}>

@@ -20,6 +20,7 @@ import {
   Chip,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -91,7 +92,7 @@ const styles = {
 
 export default function WalklensCard() {
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="WalkLens"
@@ -109,7 +110,7 @@ export default function WalklensCard() {
           <a name="walklens_card" href="#walklens_card" className="gone">
             WalkLens Card
           </a>
-          <div style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="WalkLens"
@@ -122,19 +123,19 @@ export default function WalklensCard() {
               alt="WalkLens logo"
               component="img"
             />
-            <div>
+            <Box>
               {tags.map((tag) => (
                 <Chip
                   sx={styles.tags}
                   key={tag.label}
-                  icon={tag.icon ? tag.icon : <div />}
+                  icon={tag.icon ? tag.icon : null}
                   label={tag.label}
                   variant={tag.variant ? tag.variant : 'outlined'}
                   color={tag.color ? tag.color : 'secondary'}
                   clickable />
               ))}
-            </div>
-          </div>
+            </Box>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>

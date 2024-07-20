@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Typography, Tooltip, Chip, Avatar } from '@mui/material';
+import { Typography, Tooltip, Chip, Avatar, Box } from '@mui/material';
 import contactCoverPhoto from '../static/photos/spike_photo.webp';
 import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
@@ -36,14 +36,14 @@ export default function Contact() {
   }, []);
 
   return (
-    <div style={styles.root}>
+    <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6">
         Let&#39;s get in touch
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
         My inbox is always open! And so is my Venmo...
       </Typography>
-      <div>
+      <Box>
         <Tooltip
           arrow
           placement="top"
@@ -70,7 +70,7 @@ export default function Contact() {
             onClick={() => console.log(window.open(venmoLink))}
             clickable />
         </Tooltip>
-      </div>
+      </Box>
       <Typography sx={styles.paragraph} variant="caption">
         My resume is available upon request
       </Typography>
@@ -87,6 +87,6 @@ export default function Contact() {
       </Typography>
       <br /> <br /> <br />
       <InteractionCard likeType="page" likeName="contact" />
-    </div>
+    </Box>
   );
 };

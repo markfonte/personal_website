@@ -19,7 +19,7 @@ const WalklensCard = lazy(() => import('./WalklensCard.jsx'));
 const ClippCard = lazy(() => import('./ClippCard.jsx'));
 const JustlightCard = lazy(() => import('./JustlightCard.jsx'));
 const TeslaCard = lazy(() => import('./TeslaCard.jsx'));
-const GlossaryCard = lazy(() => import('../shared/GlossaryCard.jsx'));
+const IndexCard = lazy(() => import('../shared/IndexCard.jsx'));
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 
@@ -67,7 +67,7 @@ export default function Work({ isDarkTheme }) {
           <SpotlightCard />
           <DoggieDoodlesCard />
         </Masonry>
-        <GlossaryCard />
+        <IndexCard />
         <InteractionCard likeName="work" />
       </Suspense>
     </Box>

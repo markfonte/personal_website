@@ -99,7 +99,7 @@ export default function WelcomeCard({ isDarkTheme }) {
   const androidColor = isDarkTheme ? 'android-color-light' : 'android-color-dark';
 
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Welcome"

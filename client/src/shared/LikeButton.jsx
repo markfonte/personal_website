@@ -132,8 +132,8 @@ export default function LikeButton({ likeType, likeName }) {
   }
 
   return (
-    <Box style={styles.root}>
-      <Card style={styles.likeButtonWrapper}>
+    <Box sx={styles.root}>
+      <Card sx={styles.likeButtonWrapper}>
         <Tooltip title={liked ? 'Click to unlike ' + likeType : 'Click to like ' + likeType} arrow onClick={toggleLike}>
           <IconButton size="medium">
             {icon}

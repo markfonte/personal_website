@@ -12,6 +12,7 @@ import {
   Link,
   Tooltip,
   Typography,
+  Box,
 } from '@mui/material';
 import WebIcon from '@mui/icons-material/Web';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -124,7 +125,7 @@ export default function SammyCard() {
           <a name="sammy_card" href="#sammy_card" className="gone">
             Sammy Card
           </a>
-          <div style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="Sammy Fonte"
@@ -136,13 +137,13 @@ export default function SammyCard() {
               alt="Michigan Daily banner"
               component="img"
             />
-          </div>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
-          <CardContent style={{ padding: 0 }}>
-            <div style={styles.articles}>
+          <CardContent sx={{ padding: '0px' }}>
+            <Box sx={styles.articles}>
               {articles.map((article) => (
-                <div key={article.id} style={styles.article}>
+                <Box key={article.id} sx={styles.article}>
                   <img src={article.cover} style={styles.articleCover} />
                   <br />
                   <Link variant="h5" href={article.link} underline="hover">
@@ -155,9 +156,9 @@ export default function SammyCard() {
                     {article.blurb}{' '} <Link href={article.link} underline="hover">[…]</Link>
                   </Typography>
                   <hr />
-                </div>
+                </Box>
               ))}
-            </div>
+            </Box>
           </CardContent>
         </AccordionDetails>
       </Accordion>

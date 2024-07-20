@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Typography, Switch, Tooltip, Snackbar, Alert, CardHeader } from '@mui/material';
+import { Card, Typography, Switch, Tooltip, Snackbar, Alert, CardHeader, Box } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings.js';
 
 const getCookie = require('./util/Cookies.js').getCookie;
@@ -70,7 +70,7 @@ export default function Settings() {
         className="card-header"
         title="Settings"
       />
-      <div style={styles.switchContent}>
+      <Box sx={styles.switchContent}>
         <Typography sx={styles.switchTitle} variant="subtitle1">
           rainbow mode
         </Typography>
@@ -83,8 +83,8 @@ export default function Settings() {
             color="secondary"
           />
         </Tooltip>
-      </div>
-      <div style={styles.switchContent}>
+      </Box>
+      <Box sx={styles.switchContent}>
         <Typography sx={styles.switchTitle} variant="subtitle1">
           show advertisements
         </Typography>
@@ -97,7 +97,7 @@ export default function Settings() {
             color="secondary"
           />
         </Tooltip>
-      </div>
+      </Box>
       <Snackbar
         open={ads}
         autoHideDuration={4000}

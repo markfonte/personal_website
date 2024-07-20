@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import TicTacToeBoard from './TicTacToeBoard';
-import { Typography, Button, Grid, Tooltip } from '@mui/material';
+import { Typography, Button, Grid, Tooltip, Box } from '@mui/material';
 
 const styles = {
   moveList: {
-    paddingLeft: '0',
-    paddingRight: '0',
-    paddingInlineEnd: '0',
-    paddingInlineStart: '0',
+    paddingLeft: '0px',
+    paddingRight: '0px',
+    paddingInlineEnd: '0px',
+    paddingInlineStart: '0px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -100,13 +100,13 @@ export default function TicTacToeGame() {
         <TicTacToeBoard squares={current.squares} onClick={handleClick} />
       </Grid>
       <Grid sx={styles.gameInfo}>
-        <div>
+        <Box>
           <Typography variant="subtitle1" color={xIsNext ? 'secondary' : 'primary'}>
             {' '}
             {status}
           </Typography>
-        </div>
-        <div className={winner ? 'firework' : ''} />
+        </Box>
+        <Box className={winner ? 'firework' : ''} />
         {stepNum !== 0 ? (
           <Tooltip placement="right" arrow title="restart">
             <Button sx={{ marginBottom: '8px', marginTop: '8px' }} variant="outlined" onClick={() => jumpTo(0)}>

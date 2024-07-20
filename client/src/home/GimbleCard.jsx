@@ -21,6 +21,7 @@ import {
   AccordionDetails,
   IconButton,
   Tooltip,
+  Box,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LikeButton from '../shared/LikeButton';
@@ -131,7 +132,7 @@ const styles = {
 
 export default function GimbleCard() {
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Gimble"
@@ -149,7 +150,7 @@ export default function GimbleCard() {
           <a name="gimble_card" href="#gimble_card" className="gone">
             Gimble Card
           </a>
-          <div style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="Gimble A Cappella"
@@ -161,7 +162,7 @@ export default function GimbleCard() {
               title="Gimble group pic"
               component="img"
             />
-          </div>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent sx={styles.cardContent}>

@@ -10,9 +10,7 @@ const styles = {
     fontWeight: 'bold',
     lineHeight: '50px',
     height: '64px',
-    marginRight: '-1px',
-    marginTop: '-1px',
-    padding: '0',
+    padding: '0px',
     textAlign: 'center',
     width: '10%',
   },
@@ -20,7 +18,7 @@ const styles = {
 
 export default function TicTacToeSquare({ value, onClick }) {
   return (
-    <Button variant="outlined" sx={styles.square} onClick={onClick}>
+    <Button variant="outlined" sx={styles.square} onClick={onClick} key={value + " square"}>
       <Typography variant="h5" color={value === 'X' ? 'secondary' : 'primary'} >
         {value}
       </Typography>

@@ -32,18 +32,6 @@ const styles = {
     margin: '8px',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    '& a': {
-      'textAlign': 'center',
-      'transition': 'all 0.3s ease',
-      'color': 'white',
-      'fontSize': '1.25rem',
-      'height': '64px',
-      'width': '48px',
-      'padding': '16px',
-      '&:hover': {
-        backgroundColor: 'darkgrey',
-      },
-    },
   },
   footerContainer: {
     display: 'flex',
@@ -175,8 +163,8 @@ export default function Footer({ isDarkTheme }) {
 
   return (
     <footer>
-      <div style={styles.footerContainer}>
-        <div style={styles.iconBar}>
+      <Box sx={styles.footerContainer}>
+        <Box sx={styles.iconBar}>
           {buttons.map((button) => (
             <Tooltip key={button.name} title={`go to ${button.name}`} arrow>
               <Button href={button.link}>
@@ -184,8 +172,8 @@ export default function Footer({ isDarkTheme }) {
               </Button>
             </Tooltip>
           ))}
-        </div>
-        <div>
+        </Box>
+        <Box>
           {apiResponse ? (
             <img src={reactLogo} style={styles.reactLogo} alt="React logo" />
           ) : (
@@ -193,13 +181,13 @@ export default function Footer({ isDarkTheme }) {
               Oops! Looks like my server is down. Some features may be degraded. Don&apos;t worry - I&apos;ve been notified! 🔨
             </Typography>
           )}
-        </div>
-        <Box style={{ marginTop: 8 }}>
+        </Box>
+        <Box sx={{ marginTop: '8px' }}>
           {badges.map((badge, i) => (
             <img src={badge.url} style={styles.badge} alt={`${badge.url} button`} key={i} />
           ))}
         </Box>
-        <div style={{ margin: 4 }}>
+        <Box sx={{ margin: '4px' }}>
           <Typography variant="caption" color="textSecondary">
             last updated{' '}
             <Tooltip arrow placement="right" title="see most recent commit on GitHub">
@@ -210,22 +198,22 @@ export default function Footer({ isDarkTheme }) {
               </Link>
             </Tooltip>
           </Typography>
-        </div>
-        <div style={{ margin: 4 }}>
+        </Box>
+        <Box sx={{ margin: '4px' }}>
           <Tooltip arrow placement="right" title="view source code on GitHub">
             <Link variant="caption" color="textSecondary" href={websiteGithubLink}>
               view source code
             </Link>
           </Tooltip>
-        </div>
-        <div style={{ margin: 4 }}>
+        </Box>
+        <Box sx={{ margin: '4px' }}>
           <Tooltip arrow placement="right" title="suggest an edit on Github">
             <Link variant="caption" color="textSecondary" href={suggestEditLink}>
               report issue
             </Link>
           </Tooltip>
-        </div>
-        <div>
+        </Box>
+        <Box>
           <Tooltip arrow placement="right" title="go blue 🫡">
             <img
               src={universityOfMichiganLogoSmall}
@@ -235,8 +223,8 @@ export default function Footer({ isDarkTheme }) {
               alt="University of Michigan logo small"
             />
           </Tooltip>
-        </div>
-      </div>
+        </Box>
+      </Box>
     </footer >
   );
 }

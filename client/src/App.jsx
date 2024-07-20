@@ -205,7 +205,7 @@ export default function App() {
         <Grid sx={styles.root}>
           {rainbow ? <header style={styles.headerRoot} /> : null}
           <Tooltip title={theme === darkTheme ? "enter Light Mode" : "enter Dark Mode"} arrow>
-            <IconButton onClick={toggleTheme} style={styles.toggleThemeButton}>
+            <IconButton onClick={toggleTheme} sx={styles.toggleThemeButton}>
               {theme === darkTheme ? <LightMode /> : <DarkMode />}
             </IconButton>
           </Tooltip>

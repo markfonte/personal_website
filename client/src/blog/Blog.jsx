@@ -31,10 +31,8 @@ const posts = [
     title: `On Compromise`,
     lastUpdated: `September 5th, 2020`,
     disclaimer: ``,
-    titleBlurb: <div>
-      A friend recently remarked that “compromise” is often considered a dirty word. For many, it has a negative connotation. It’s associated with capitulating to the enemy’s demands; with traitors and treason. While I hope that you, the reader, don’t see it in that light, I think that it’s critical for us to consider the ramifications of this mindset for those that do.
-    </div>,
-    body: <div>
+    titleBlurb: <Box>A friend recently remarked that “compromise” is often considered a dirty word. For many, it has a negative connotation. It’s associated with capitulating to the enemy’s demands; with traitors and treason. While I hope that you, the reader, don’t see it in that light, I think that it’s critical for us to consider the ramifications of this mindset for those that do.</Box>,
+    body: <Box>
       <Typography variant="h5" color="secondary">In Government</Typography>
       <Typography variant="body1" paragraph>
         I remember my middle school social studies teacher, Mr. (Rusty) Fuller, remarking that “back in [his] day, people used to actually talk to each other in our government”. While it was likely just an offhand comment, it has carried weight in my mind for many years. Of course, that statement is subject to its biases and of course, the government in “his day” had a litany of other problems. Nonetheless, I defer judgement to a man who has lived through it both ways and am frightened by the obvious polarization in our country these days.
@@ -105,8 +103,7 @@ const posts = [
         The path of listening, understanding and compromising is tough. But at least it’s </Typography><Typography display={'inline'}><b>tough together</b></Typography><Typography variant="body1" display={'inline'}> instead of </Typography><Typography display={'inline'} paragraph><b>easy apart.</b></Typography>
       <br /><br />
       <Typography variant="caption"><i>This article is dedicated to Mr. Fuller and Mr. Strite.</i></Typography>
-
-    </div>,
+    </Box>,
     firstPublished: `September 5th, 2020`,
     versionNumber: 1,
     postNumber: 2,
@@ -115,10 +112,10 @@ const posts = [
     title: `On Job Negotiations`,
     lastUpdated: `August 31st, 2020`,
     disclaimer: `I am writing this as a gainfully employed member of Amazon. I am thankful for that job, and I understand the risks of publicly sharing any criticisms of the company for which I work. However, I will not refrain from telling the truth as I see it, so Amazon and other companies mentioned here are free to take my words as the constructive criticism in which they were meant.`,
-    titleBlurb: <div>
+    titleBlurb: <Box>
       Employers have been looking out for their best interests since their conception. Unfortunately, employees often <i>allow themselves to be taken advantage of</i> by their employers, particularly during employment negotiations. It’s time to change that.
-    </div>,
-    body: <div>
+    </Box>,
+    body: <Box>
       <Typography variant="h5" color="secondary">Companies Looking Out For Their Own Best Interests, Part One</Typography>
       <Typography variant="body1" paragraph>
         Employment contracts in the United States in 2020 are almost exclusively “employee-at-will.” Meaning, if the employee wants to quit at any point, they are free to do so. If the employer wants to let the employee go without cause, they are free to do so (unless a legitimate claim can be made that it was an unjust termination of the basis of gender, race, etc.).
@@ -191,7 +188,7 @@ const posts = [
         <br /><br />
         I also make the case that, as long as employers are going to do what is in their best interest, you must also take steps to do the same for yourself. An employer wouldn’t hesitate to fire you, rescind your offer, reduce your pay and beyond if that fits their best interest. You must be prepared to use the tools (like reneging) at your disposal to fight for your own best interests. No one else will.
       </Typography>
-    </div>,
+    </Box>,
     firstPublished: `August 31st, 2020`,
     versionNumber: 1,
     postNumber: 1,
@@ -252,7 +249,7 @@ export default function Blog() {
       </Typography>
       <Masonry columns={{ sm: 1, md: 2 }} spacing={3} sx={styles.masonryContainer}>
         {posts.map((post) => (
-          <Card raised={true} className="large-card" key={post.title}>
+          <Card raised className="large-card" key={post.title}>
             <Accordion>
               <AccordionSummary
                 aria-label={post.title}
@@ -268,7 +265,7 @@ export default function Blog() {
                 <a name={'post_' + post.postNumber} href={'post_' + post.postNumber} className="gone">
                   {post.postNumber} Post
                 </a>
-                <div style={styles.expansionHeaderContainer}>
+                <Box sx={styles.expansionHeaderContainer}>
                   <CardHeader
                     className="card-header"
                     title={post.title}
@@ -278,7 +275,7 @@ export default function Blog() {
                     <br />
                     {post.titleBlurb}
                   </Typography>
-                </div>
+                </Box>
               </AccordionSummary>
               <AccordionDetails>
                 <CardContent sx={styles.cardContent}>

@@ -23,15 +23,14 @@ import {
   IconButton,
   Tooltip,
   Box,
-  ListItemButton,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const glossaryItems = [
+const indexItems = [
   {
     tagName: 'Full Time Position',
     type: 'Project',
-    icon: <Work style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
+    icon: <Work sx={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'tesla',
@@ -53,7 +52,7 @@ const glossaryItems = [
   {
     tagName: 'Internship',
     type: 'Project',
-    icon: <School style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
+    icon: <School sx={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'jpmorgan',
@@ -75,7 +74,7 @@ const glossaryItems = [
   {
     tagName: 'Startup',
     type: 'Project',
-    icon: <Business style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
+    icon: <Business sx={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'doggie_doodles',
@@ -107,7 +106,7 @@ const glossaryItems = [
   {
     tagName: 'Hackathon Project',
     type: 'Project',
-    icon: <Build style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
+    icon: <Build sx={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'revolutionuc8',
@@ -134,7 +133,7 @@ const glossaryItems = [
   {
     tagName: 'Class Project',
     type: 'Project',
-    icon: <MenuBook style={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
+    icon: <MenuBook sx={{ width: '28px', height: 'auto', marginRight: '12px' }} />,
     projects: [
       {
         cardId: 'doggie_doodles',
@@ -431,7 +430,7 @@ const styles = {
   },
 };
 
-export default function GlossaryCard() {
+export default function IndexCard() {
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
 
@@ -445,22 +444,22 @@ export default function GlossaryCard() {
 
   return (
     <Box sx={styles.root}>
-      <Card raised className="small-card" style={{ maxWidth: '400px', paddingTop: '16px' }}>
-        <a name="glossary_card" href="#glossary_card" className="gone">
-          Glossary Card
+      <Card raised className="small-card" sx={{ maxWidth: '400px', paddingTop: '16px' }}>
+        <a name="index_card" href="#index_card" className="gone">
+          Index Card
         </a>
         <CardHeader
           className="card-header"
           title="Index"
         />
         <CardContent sx={styles.expansionPanel}>
-          {glossaryItems.map((glossaryItem) => (
+          {indexItems.map((indexItem) => (
             <Accordion
-              key={glossaryItem.tagName}
-              expanded={expanded === glossaryItem.tagName}
+              key={indexItem.tagName}
+              expanded={expanded === indexItem.tagName}
               sx={styles.expansionPanel}
               elevation={1}
-              onChange={handlePanelChange(glossaryItem.tagName)}
+              onChange={handlePanelChange(indexItem.tagName)}
               slotProps={{ transition: { unmountOnExit: true } }}
             >
               <AccordionSummary
@@ -471,27 +470,27 @@ export default function GlossaryCard() {
                     </IconButton>
                   </Tooltip>
                 }
-                aria-label={glossaryItem.tagName}
-                aria-controls={glossaryItem.tagName + '-content'}
-                id={glossaryItem.tagName + '-header'}
+                aria-label={indexItem.tagName}
+                aria-controls={indexItem.tagName + '-content'}
+                id={indexItem.tagName + '-header'}
               >
-                {glossaryItem.icon ? glossaryItem.icon : ''}
+                {indexItem.icon ? indexItem.icon : ''}
                 <img
-                  src={glossaryItem.logo ? glossaryItem.logo : ''}
+                  src={indexItem.logo ? indexItem.logo : ''}
                   style={styles.tagIcon}
-                  alt={glossaryItem.tagName + ' button'}
+                  alt={indexItem.tagName + ' button'}
                 />
                 <Typography
                   variant="subtitle1"
-                  color={glossaryItem.type === 'Project' ? 'secondary' : 'textPrimary'}
+                  color={indexItem.type === 'Project' ? 'secondary' : 'textPrimary'}
                   sx={styles.tag}
                 >
-                  {glossaryItem.tagName} ({glossaryItem.projects.length})
+                  {indexItem.tagName} ({indexItem.projects.length})
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <List component="nav" sx={{ width: '100%' }}>
-                  {glossaryItem.projects.map((project, i) => (
+                  {indexItem.projects.map((project, i) => (
                     <ListItem
                       component="a"
                       button

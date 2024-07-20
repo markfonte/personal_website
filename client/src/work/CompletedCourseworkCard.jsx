@@ -12,6 +12,7 @@ import {
   AccordionDetails,
   Chip,
   IconButton,
+  Box,
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -165,7 +166,7 @@ const styles = {
 
 export default function CompletedCourseworkCard() {
   return (
-    <Card raised={true} className="large-card">
+    <Card raised className="large-card">
       <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
         <AccordionSummary
           aria-label="Michigan"
@@ -183,7 +184,7 @@ export default function CompletedCourseworkCard() {
           <a name="completed_coursework_card" href="#completed_coursework_card" className="gone">
             Completed Coursework Card
           </a>
-          <div style={styles.expansionHeaderContainer}>
+          <Box sx={styles.expansionHeaderContainer}>
             <CardHeader
               className="card-header"
               title="University of Michigan"
@@ -196,19 +197,19 @@ export default function CompletedCourseworkCard() {
               alt="University of Michigan banner logo"
               component="img"
             />
-            <div>
+            <Box>
               {tags.map((tag) => (
                 <Chip
                   sx={styles.tags}
                   key={tag.label}
-                  icon={tag.icon ? tag.icon : <div />}
+                  icon={tag.icon ? tag.icon : null}
                   label={tag.label}
                   variant={tag.variant ? tag.variant : 'outlined'}
                   color={tag.color ? tag.color : 'secondary'}
                   clickable />
               ))}
-            </div>
-          </div>
+            </Box>
+          </Box>
         </AccordionSummary>
         <AccordionDetails>
           <CardContent sx={styles.cardContent}>
