@@ -109,7 +109,7 @@ const styles = {
         width: '100%',
     },
     article: {
-        maxWidth: '385px',
+        maxWidth: '402px',
         width: '100%',
         margin: '8px',
         padding: '4px',

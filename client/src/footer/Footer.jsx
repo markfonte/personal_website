@@ -3,6 +3,7 @@ import '../App.css';
 import reactLogo from '../static/logos/react_logo.svg';
 import universityOfMichiganLogoSmall from '../static/logos/university_of_michigan_logo_small.svg';
 import Moment from 'react-moment';
+import moment from 'moment';
 import { Typography, Link, Tooltip, Button, Box } from '@mui/material';
 import timestamp from '../CommitTimestamp.js';
 import facebookLogo from '../static/logos/facebook_logo.svg';
@@ -18,43 +19,7 @@ import PropTypes from 'prop-types';
 const fetch = require('node-fetch');
 const HEARTBEAT_INTERVAL = 30000;
 
-const styles = {
-  reactLogo: {
-    animation: `react-logo-spin infinite 1.8s linear`,
-    height: '28px',
-    width: '28px',
-    pointerEvents: 'none',
-  },
-  iconBar: {
-    display: 'flex',
-    flexDirection: 'row',
-    listStyle: 'none',
-    margin: '8px',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-  },
-  footerContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    textAlign: 'center',
-    marginTop: '64px',
-    marginBottom: '24px',
-    justifyContent: 'center',
-  },
-  logoDefault: {
-    margin: '8px',
-  },
-  errorMessageRoot: {
-    margin: '16px',
-  },
-  button: {
-    width: '40px',
-    height: 'auto',
-  },
-  badge: {
-    margin: '4px',
-  }
-};
+const ohio_timestamp = '2019-11-30T20:30:00.000Z'
 
 const facebookLink = `https://www.facebook.com/mark.fonte.397`;
 const githubLink = `https://github.com/markfonte`;
@@ -66,6 +31,7 @@ const suggestEditLink = `https://github.com/markfonte/personal_website/issues/ne
 const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
 const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/main`;
 const spotifyLink = `https://open.spotify.com/artist/5rVdyxve8VvmsgT3HSWB1a`;
+const michiganClockLink = `https://x.com/MichiganClock`;
 
 const buttons = [
   {
@@ -124,6 +90,43 @@ const badges = [
   },
 ];
 
+const styles = {
+  reactLogo: {
+    animation: `react-logo-spin infinite 1.8s linear`,
+    height: '28px',
+    width: '28px',
+    pointerEvents: 'none',
+  },
+  iconBar: {
+    display: 'flex',
+    flexDirection: 'row',
+    listStyle: 'none',
+    margin: '8px',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  footerContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
+    marginTop: '64px',
+    marginBottom: '24px',
+    justifyContent: 'center',
+  },
+  logoDefault: {
+    margin: '8px',
+  },
+  errorMessageRoot: {
+    margin: '16px',
+  },
+  button: {
+    width: '40px',
+    height: 'auto',
+  },
+  badge: {
+    margin: '4px',
+  }
+};
 export default function Footer({ isDarkTheme }) {
   const [apiResponse, setApiResponse] = useState(true);
   const [serverCrashed, setServerCrashed] = useState(false);
@@ -153,6 +156,12 @@ export default function Footer({ isDarkTheme }) {
         }
         console.error(err);
       });
+  };
+  const displayInDays = (timestamp) => {
+    const now = moment();
+    const date = moment(timestamp);
+    const diffInDays = now.diff(date, 'days') + 1;
+    return `${diffInDays} days ago`;
   };
 
   useEffect(() => {
@@ -187,18 +196,24 @@ export default function Footer({ isDarkTheme }) {
             <img src={badge.url} style={styles.badge} alt={`${badge.url} button`} key={i} />
           ))}
         </Box>
-        <Box sx={{ margin: '4px' }}>
-          <Typography variant="caption" color="textSecondary">
-            last updated{' '}
-            <Tooltip arrow placement="right" title="see most recent commit on GitHub">
-              <Link color="secondary" href={commitHistoryLink}>
-                <Moment parse="YYYY-MM-DDTHH:mm:ssZ" fromNow>
-                  {timestamp}
-                </Moment>
-              </Link>
-            </Tooltip>
-          </Typography>
-        </Box>
+        <Typography sx={{ margin: '4px' }} variant="caption" color="textSecondary">
+          Ohio State last beat Michigan{' '}
+          <Tooltip arrow placement="right" title="">
+            <Link color="secondary" href={michiganClockLink}>
+              {displayInDays(ohio_timestamp)}
+            </Link>
+          </Tooltip>
+        </Typography>
+        <Typography sx={{ margin: '4px' }} variant="caption" color="textSecondary">
+          last updated{' '}
+          <Tooltip arrow placement="right" title="see most recent commit on GitHub">
+            <Link color="secondary" href={commitHistoryLink}>
+              <Moment parse="YYYY-MM-DDTHH:mm:ssZ" fromNow>
+                {timestamp}
+              </Moment>
+            </Link>
+          </Tooltip>
+        </Typography>
         <Box sx={{ margin: '4px' }}>
           <Tooltip arrow placement="right" title="view source code on GitHub">
             <Link variant="caption" color="textSecondary" href={websiteGithubLink}>

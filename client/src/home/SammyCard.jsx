@@ -90,7 +90,7 @@ const styles = {
     width: '100%',
   },
   article: {
-    maxWidth: '385px',
+    maxWidth: '402px',
     width: '100%',
     margin: '8px',
     padding: '4px',
@@ -139,8 +139,8 @@ export default function SammyCard() {
             />
           </Box>
         </AccordionSummary>
-        <AccordionDetails>
-          <CardContent sx={{ padding: '0px' }}>
+        <AccordionDetails sx={{ padding: 0 }}>
+          <CardContent sx={{ padding: 0 }}>
             <Box sx={styles.articles}>
               {articles.map((article) => (
                 <Card raised key={article.id} sx={styles.article}>
