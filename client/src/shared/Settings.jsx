@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Typography, Switch, Tooltip, Snackbar, Alert, CardHeader, Box } from '@mui/material';
-import SettingsIcon from '@mui/icons-material/Settings.js';
 
 const getCookie = require('./util/Cookies.js').getCookie;
 const setCookie = require('./util/Cookies.js').setCookie;
