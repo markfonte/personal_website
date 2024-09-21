@@ -19,7 +19,7 @@ import PropTypes from 'prop-types';
 const fetch = require('node-fetch');
 const HEARTBEAT_INTERVAL = 30000;
 
-const ohio_timestamp = '2019-11-30T20:30:00.000Z'
+const ohio_timestamp = '2019-11-30T12:30:00.000Z'
 
 const facebookLink = `https://www.facebook.com/mark.fonte.397`;
 const githubLink = `https://github.com/markfonte`;
@@ -160,7 +160,7 @@ export default function Footer({ isDarkTheme }) {
   const displayInDays = (timestamp) => {
     const now = moment();
     const date = moment(timestamp);
-    const diffInDays = now.diff(date, 'days') + 1;
+    const diffInDays = now.diff(date, 'days');
     return `${diffInDays} days ago`;
   };
 
