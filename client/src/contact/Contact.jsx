@@ -51,7 +51,7 @@ export default function Contact() {
           <Chip
             sx={styles.buttonDefault}
             key='Email chip'
-            avatar={<Avatar alt="Gmail logo" src={gmailLogo} />}
+            avatar={<Avatar alt="Gmail logo" src={gmailLogo + ""} />}
             label='Email'
             variant='outlined'
             onClick={() => console.log(window.open(emailLink))}
@@ -64,7 +64,7 @@ export default function Contact() {
           <Chip
             sx={styles.buttonDefault}
             key='Venmo chip'
-            avatar={<Avatar alt="Venmo logo" src={venmoLogo} />}
+            avatar={<Avatar alt="Venmo logo" src={venmoLogo + ""} />}
             label='Venmo'
             variant='outlined'
             onClick={() => console.log(window.open(venmoLink))}

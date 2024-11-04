@@ -124,8 +124,8 @@ export default function WelcomeCard({ isDarkTheme }) {
               subheader=""
             />
             <ImageList variant="masonry" cols={2} sx={{ marginTop: "4px", marginBottom: "0px" }}>
-              {itemData.map((item) => (
-                <ImageListItem key={item.img}>
+              {itemData.map((item, i) => (
+                <ImageListItem key={item.img + " " + i}>
                   <img
                     src={item.img}
                     alt={item.title}

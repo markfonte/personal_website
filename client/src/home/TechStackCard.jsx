@@ -109,7 +109,7 @@ export default function TechStackCard({ isDarkTheme }) {
             <Chip
               sx={styles.tags}
               key={tag.label}
-              avatar={!isDarkTheme && tag.iconDark ? <Avatar alt={tag.label} src={tag.iconDark} /> : <Avatar alt={tag.label} src={tag.icon} />}
+              avatar={!isDarkTheme && tag.iconDark ? <Avatar alt={tag.label} src={tag.iconDark + ""} /> : <Avatar alt={tag.label} src={tag.icon + ""} />}
               label={tag.label}
               variant={tag.variant ? tag.variant : 'outlined'}
               size="large"
