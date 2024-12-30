@@ -129,6 +129,17 @@ export default function TeslaCard() {
               My goal is to continually improve the experience of diagnosing and repairing Tesla vehicles for Tesla Service technicians, independent repairers and customers.
               It&#39;s a blast! ⚡️🚗
             </Typography>
+            <Typography variant="body1" sx={{ textAlign: 'left' }} paragraph>
+              <b>Some of my responsibilities include:</b><br />
+              · Writing and owning the core logic of the Maintenance Summary / Service History feature<br />
+              · Co-writing and owning the DoIP service which communicates with diagnostic tools<br />
+              · Co-owning the core logic of the ODIN diagnostic software for Service<br />
+              · Contributing to the Vehicle Ops mobile application for Service<br />
+              · Contributing to the Service Mode UI in the vehicle display<br />
+              · Contributing to the Transport Mode UI in the vehicle display<br />
+              · Mentoring some fantastic interns! (shoutout Yassine and Jason)
+            </Typography>
+
             <img style={styles.teslaPhoto} src={teslaOnboardPhoto} /> <img style={styles.teslaPhoto} src={teslaCyberPhoto} />
             <LikeButton likeType='card' likeName='tesla_card' />
           </CardContent>

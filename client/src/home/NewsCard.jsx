@@ -28,11 +28,54 @@ import newsArticle5
     from '../static/photos/news_article_5.webp';
 import newsArticle6
     from '../static/photos/news_article_6.webp';
+import newsArticle7
+    from '../static/photos/news_article_7.webp';
+import newsArticle8
+    from '../static/photos/news_article_8.webp';
+import newsArticle9
+    from '../static/photos/news_article_9.webp';
+import newsArticle10
+    from '../static/photos/news_article_10.webp';
 
 import LikeButton from '../shared/LikeButton';
 
 const articles = [
-
+    {
+        id: 8,
+        title: 'Maintenance Summary feature',
+        link: 'https://x.com/tesla_raj/status/1865275664481587253',
+        cover: newsArticle8,
+        date: 'December 07, 2024',
+        blurb: `Antoine Desanti and I released a customer-facing extension of the Service History panel, called Maintenance Summary, which shows a simplified view of the last time each category of maintenance was performed on the vehicle. It's easily accessible in the Service tab on the vehicle touchscreen.`,
+        isQuote: false,
+    },
+    {
+        id: 7,
+        title: 'Service History feature',
+        link: 'https://www.notateslaapp.com/news/2367/first-look-at-teslas-new-service-history-feature-photos',
+        cover: newsArticle7,
+        date: 'November 12, 2024',
+        blurb: `Antoine Desanti and I released a panel on all vehicles in Service Mode that allows to users to view and record the physical maintenance that was performed on it. This adds transparency and even persists change of ownership and factory reset.`,
+        isQuote: false,
+    },
+    {
+        id: 9,
+        title: 'Service Mode Plus via mobile app',
+        link: 'https://service.tesla.com/docs/ModelY/ServiceManual/en-us/GUID-AF834DEF-F232-4A61-8248-98612C2AD7E7.html',
+        cover: newsArticle9,
+        date: 'May 16, 2024',
+        blurb: `Sam Charles and I released a feature on the Vehicle Ops mobile app that enters the vehicle into Service Mode Plus and unlocks the Gateway with a single button click. Since it uses Bluetooth, a technician no longer needs to have wired connection to the vehicle in order to enter into this state!`,
+        isQuote: false,
+    },
+    {
+        id: 10,
+        title: 'Screenshots via ODIN / Toolbox',
+        link: 'https://www.youtube.com/watch?v=kynjY6b31og',
+        cover: newsArticle10,
+        date: 'February 05, 2024',
+        blurb: `Learn how to take a screenshot of your Tesla's center display. This new screenshot feature is enabled on vehicles with Tesla firmware 2024.2.2.1 and above using Tesla's Toolbox software. See service.tesla.com for prices and access`,
+        isQuote: true,
+    },
     {
         id: 2,
         title: 'Tesla diagnostics over OBD port',
@@ -109,7 +152,7 @@ const styles = {
         width: '100%',
     },
     article: {
-        maxWidth: '402px',
+        maxWidth: '390px',
         width: '100%',
         margin: '8px',
         padding: '4px',
@@ -127,7 +170,7 @@ const styles = {
 export default function NewsCard() {
     return (
         <Card raised className="large-card">
-            <Accordion slotProps={{ transition: { unmountOnExit: true } }}>
+            <Accordion defaultExpanded>
                 <AccordionSummary
                     aria-label="News"
                     aria-controls="news-content"
@@ -149,13 +192,6 @@ export default function NewsCard() {
                             className="card-header"
                             title={"News 📰"}
                             subheader="" />
-                        <CardMedia
-                            sx={styles.newsBanner}
-                            image="/media/news_banner.webp"
-                            title="News banner"
-                            alt="News banner"
-                            component="img"
-                        />
                     </Box>
                 </AccordionSummary>
                 <AccordionDetails sx={{ padding: 0 }}>
