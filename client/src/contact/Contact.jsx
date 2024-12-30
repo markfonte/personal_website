@@ -38,10 +38,10 @@ export default function Contact() {
   return (
     <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6">
-        Let&#39;s get in touch
+        let&#39;s get in touch
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
-        My inbox is always open! And so is my Venmo...
+        my inbox is always open! and so is my Venmo...
       </Typography>
       <Box>
         <Tooltip

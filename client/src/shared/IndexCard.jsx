@@ -503,9 +503,11 @@ export default function IndexCard() {
                       }
                     >
                       <ListItemText
-                        primaryTypographyProps={{ color: 'secondary' }}
                         primary={project.cardName}
                         secondary={project.subtitle}
+                        slotProps={{
+                          primary: { color: 'secondary' }
+                        }}
                       />
                     </ListItem>
                   ))}

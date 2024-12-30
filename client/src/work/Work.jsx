@@ -44,7 +44,7 @@ export default function Work({ isDarkTheme }) {
   return (
     <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6" paragraph>
-        My work experiences, internships, side projects and hackathon projects
+        my work experiences, internships, side projects and hackathon projects
       </Typography>
       <Suspense fallback={renderLoader()}>
         <Masonry columns={{ sm: 1, md: 2 }}
