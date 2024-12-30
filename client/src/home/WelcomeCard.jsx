@@ -18,10 +18,11 @@ import {
 import welcomeImageOne from '../static/photos/welcome_photo_1.webp';
 import welcomeImageTwo from '../static/photos/welcome_photo_2.webp';
 import welcomeImageFour from '../static/photos/welcome_photo_4.webp';
-import welcomeImageSix from '../static/photos/welcome_photo_6.webp';
+import welcomeImageTen from '../static/photos/welcome_photo_10.webp';
 import welcomeImageSeven from '../static/photos/welcome_photo_7.webp';
 import welcomeImageEight from '../static/photos/welcome_photo_8.webp';
 import welcomeImageNine from '../static/photos/welcome_photo_9.webp';
+import welcomeImageEleven from '../static/photos/welcome_photo_11.webp';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
 import LikeButton from '../shared/LikeButton';
@@ -38,7 +39,7 @@ const itemData = [
     title: '',
   },
   {
-    img: welcomeImageSix,
+    img: welcomeImageTen,
     title: '',
   },
   {
@@ -54,11 +55,15 @@ const itemData = [
     title: '',
   },
   {
+    img: welcomeImageNine,
+    title: '',
+  },
+  {
     img: welcomeImageEight,
     title: '',
   },
   {
-    img: welcomeImageNine,
+    img: welcomeImageEleven,
     title: '',
   },
 ];

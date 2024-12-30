@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Card, CardActions, CardContent } from '@mui/material';
+import { Box, Card, CardContent } from '@mui/material';
 import LikeButton from './LikeButton.jsx';
 import Settings from './Settings.jsx';
 

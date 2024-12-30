@@ -162,6 +162,11 @@ const indexItems = [
     logo: androidLogo,
     projects: [
       {
+        cardId: 'tesla',
+        cardName: 'Tesla',
+        subtitle: 'Senior Software Engineer',
+      },
+      {
         cardId: 'amazon',
         cardName: 'Amazon / Amazon Web Services',
         subtitle: 'Software Engineer',

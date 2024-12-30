@@ -13,7 +13,8 @@ import {
   Tooltip,
   Box,
 } from '@mui/material';
-import teslaOnboardPhoto from '../static/photos/tesla_onboard_photo.jpg';
+import teslaOnboardPhotoOne from '../static/photos/tesla_onboard_photo_1.jpg';
+import teslaOnboardPhotoTwo from '../static/photos/tesla_onboard_photo_2.webp';
 import teslaCyberPhoto from '../static/photos/tesla_cyber_photo.webp';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -32,10 +33,16 @@ const tags = [
     variant: 'default',
   },
   {
+    label: 'Android',
+  },
+  {
     label: 'C',
   },
   {
     label: 'C++',
+  },
+  {
+    label: 'iOS',
   },
   {
     label: 'JavaScript',
@@ -140,7 +147,7 @@ export default function TeslaCard() {
               · Mentoring some fantastic interns! (shoutout Yassine and Jason)
             </Typography>
 
-            <img style={styles.teslaPhoto} src={teslaOnboardPhoto} /> <img style={styles.teslaPhoto} src={teslaCyberPhoto} />
+            <img style={styles.teslaPhoto} src={teslaOnboardPhotoTwo} /> <img style={styles.teslaPhoto} src={teslaOnboardPhotoOne} /> <img style={styles.teslaPhoto} src={teslaCyberPhoto} />
             <LikeButton likeType='card' likeName='tesla_card' />
           </CardContent>
         </AccordionDetails>

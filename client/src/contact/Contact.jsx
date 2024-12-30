@@ -4,6 +4,7 @@ import contactCoverPhoto from '../static/photos/spike_photo.webp';
 import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
 import InteractionCard from '../shared/InteractionCard.jsx';
+import ResumeCard from './ResumeCard.jsx';
 
 const emailLink = `mailto:mark@fonte.com`;
 const venmoLink = `https://venmo.com/Mark-Fonte`;
@@ -41,7 +42,7 @@ export default function Contact() {
         let&#39;s get in touch
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
-        my inbox is always open! and so is my Venmo...
+        my inbox is always open! and so is my Venmo... why not pass me a few bucks?
       </Typography>
       <Box>
         <Tooltip
@@ -70,10 +71,8 @@ export default function Contact() {
             onClick={() => console.log(window.open(venmoLink))}
             clickable />
         </Tooltip>
+        <ResumeCard />
       </Box>
-      <Typography sx={styles.paragraph} variant="caption">
-        My resume is available upon request
-      </Typography>
       <br /> <br />
       <img
         src={contactCoverPhoto}
