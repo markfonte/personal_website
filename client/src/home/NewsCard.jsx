@@ -34,10 +34,22 @@ import newsArticle9
     from '../static/photos/news_article_9.webp';
 import newsArticle10
     from '../static/photos/news_article_10.webp';
+import newsArticle11
+    from '../static/photos/news_article_11.webp';
 
 import LikeButton from '../shared/LikeButton';
 
 const articles = [
+
+    {
+        id: 11,
+        title: 'Tesla Mobile App v4.41.5',
+        link: 'https://www.notateslaapp.com/tesla-app-updates/version/4.41.5/release-notes',
+        cover: newsArticle11,
+        date: 'January 31, 2025',
+        blurb: `I made some improvements to the Service experience in the Tesla mobile app!`,
+        isQuote: false,
+    },
     {
         id: 8,
         title: 'Maintenance Summary feature',
@@ -83,22 +95,22 @@ const articles = [
         blurb: `I helped implement the service that implements the DoIP Protocol (ISO 13400-2) to support these Korean regulations`,
         isQuote: false,
     },
-    {
-        id: 1,
-        title: 'Tesla LinkedIn announcement',
-        link: 'https://www.linkedin.com/posts/mark-fonte_im-excited-to-share-that-ive-started-a-activity-7025561418129186816-G3Z6',
-        cover: newsArticle1,
-        date: 'January 23, 2023',
-        blurb: `I'm excited to share that I've started a new position as a Software Engineer at Tesla working on onboard diagnostics firmware! Life is good!`,
-        isQuote: true,
-    },
+    // {
+    //     id: 1,
+    //     title: 'Tesla LinkedIn announcement',
+    //     link: 'https://www.linkedin.com/posts/mark-fonte_im-excited-to-share-that-ive-started-a-activity-7025561418129186816-G3Z6',
+    //     cover: newsArticle1,
+    //     date: 'January 23, 2023',
+    //     blurb: `I'm excited to share that I've started a new position as a Software Engineer at Tesla working on onboard diagnostics firmware! Life is good!`,
+    //     isQuote: true,
+    // },
     {
         id: 6,
         title: 'Eypex performs hostile takeover of JustLight',
         link: 'https://www.businesswire.com/news/home/20230328005203/en/Automotive-Lighting-Supplier-Eypex-Corporation-Enters-Consumer-Market-Through-Acquisition-of-JustLight%E2%84%A2',
         cover: newsArticle6,
         date: 'March 28, 2023',
-        blurb: <>Eypex Corporation, an automotive supplier and early investor in us at JustLight, performed a hostile takeover using the U.S. court system and their willingness to lie, steal, forge documents, threaten, intimidate and perform illegal acts. Their owner, CEO, head of engineering, and many more spearheaded this effort. They built our first generation product, which was riddled with defects, extremely expensive, and neither FDA nor FCC compliant (and still isn&apos;t)... so we found a much better manufacturer in Light Tree Ventures. With other revenue streams to fund their legal misdoings and an aptitude for vengeance, they filed bogus claims against us in court - then lost, appealed, and waited until they had bled us dry of legal fees and investor confidence. Eventually they bought our assets out of bankruptcy and pretended it was an acquisition. <br /><b>It was not.</b></>,
+        blurb: <>Eypex Corporation, an automotive supplier and early investor in us at JustLight, performed a hostile takeover using the U.S. court system and their willingness to lie, steal, forge documents, threaten, intimidate and perform illegal acts. Their owner, CEO, head of engineering, and many more spearheaded this effort. They built our first generation product, which was riddled with defects, extremely expensive, and neither FDA nor FCC compliant (and still isn&apos;t)... so we found a much better manufacturer in Light Tree Ventures. With other revenue streams to fund their legal misdoings and an aptitude for vengeance, they filed bogus claims against us in court - then lost, appealed, and waited until they had bled us dry of legal fees and investor confidence. Eventually they bought our assets out of bankruptcy and pretended it was an acquisition. <b>It was not.</b></>,
         isQuote: false,
     },
     {
@@ -110,24 +122,24 @@ const articles = [
         blurb: `JustLight has launched clinical trials to evaluate its Sunflower Rx medical device, which provides smart photobiomodulation (PBM) treatment for Alzheimer's disease. PBM is the medicinal use of red or near-infrared light for repairing, energising and healing cells in the body without any side effects. The device uses specific wavelengths of near-infrared light to bypass the skull and be directly absorbed by the brain ... Developed in partnership with Kaiyan Medical and Light Tree Ventures, the technology aims to be the first US Food and Drug Administration (FDA)-approved safe and effective medical device for Alzheimer's in the world.`,
         isQuote: true,
     },
-    {
-        id: 4,
-        title: 'Juwan Howard!',
-        link: 'https://www.mlive.com/wolverines/2022/04/michigan-basketball-2023-recruiting-board.html',
-        cover: newsArticle4,
-        date: 'April 07, 2022',
-        blurb: `A candid picture of Juwan watching a Michigan women's basketball game with us. He's the best!`,
-        isQuote: false,
-    },
-    {
-        id: 3,
-        title: 'MI Symptoms app',
-        link: 'https://cse.engin.umich.edu/stories/students-lead-the-way-on-state-of-michigan-web-application-to-help-curb-the-spread-of-covid-19',
-        cover: newsArticle3,
-        date: 'June 22, 2020',
-        blurb: 'I helped other University of Michigan engineering students build an application during the early days of Covid that was used by the State of Michigan to track symptoms',
-        isQuote: false,
-    }
+    // {
+    //     id: 4,
+    //     title: 'Juwan Howard!',
+    //     link: 'https://www.mlive.com/wolverines/2022/04/michigan-basketball-2023-recruiting-board.html',
+    //     cover: newsArticle4,
+    //     date: 'April 07, 2022',
+    //     blurb: `A candid picture of Juwan watching a Michigan women's basketball game with us. He's the best!`,
+    //     isQuote: false,
+    // },
+    // {
+    //     id: 3,
+    //     title: 'MI Symptoms app',
+    //     link: 'https://cse.engin.umich.edu/stories/students-lead-the-way-on-state-of-michigan-web-application-to-help-curb-the-spread-of-covid-19',
+    //     cover: newsArticle3,
+    //     date: 'June 22, 2020',
+    //     blurb: 'I helped other University of Michigan engineering students build an application during the early days of Covid that was used by the State of Michigan to track symptoms',
+    //     isQuote: false,
+    // }
 
 ];
 
@@ -150,7 +162,7 @@ const styles = {
         width: '100%',
     },
     article: {
-        maxWidth: '390px',
+        maxWidth: '385px',
         width: '100%',
         margin: '8px',
         padding: '4px',
@@ -193,7 +205,7 @@ export default function NewsCard() {
                         <Box sx={styles.articles}>
                             {articles.map((article) => (
                                 <Card raised key={article.id} sx={styles.article}>
-                                    <img src={article.cover} style={styles.articleCover} />
+                                    <img src={article.cover} style={styles.articleCover} loading="lazy" />
                                     <br />
                                     <Link variant="h5" href={article.link} underline="hover">
                                         {article.title}
