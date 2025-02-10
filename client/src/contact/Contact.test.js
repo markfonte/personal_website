@@ -19,7 +19,6 @@ describe('Contact Component', () => {
   it('renders the contact page with correct text', () => {
     expect(screen.getByText(/let's get in touch/i)).toBeInTheDocument();
     expect(screen.getByText(/my inbox is always open/i)).toBeInTheDocument();
-    expect(screen.getByText(/my resume is available upon request/i)).toBeInTheDocument();
     expect(screen.getByText(/liking this page makes spike happy/i)).toBeInTheDocument();
   });
 
@@ -42,7 +41,7 @@ describe('Contact Component', () => {
   it('renders InteractionCard', () => {
     expect(InteractionCard).toHaveBeenCalledWith(
       expect.objectContaining({ likeType: 'page', likeName: 'contact' }),
-      {}
+      undefined
     );
   });
 });
