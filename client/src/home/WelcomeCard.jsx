@@ -16,6 +16,7 @@ import {
 } from '@mui/material';
 import welcomeImageOne from '../static/photos/welcome_photo_1.webp';
 import welcomeImageTwo from '../static/photos/welcome_photo_2.webp';
+import welcomeImageThree from '../static/photos/welcome_photo_3.webp';
 import welcomeImageFour from '../static/photos/welcome_photo_4.webp';
 import welcomeImageTen from '../static/photos/welcome_photo_10.webp';
 import welcomeImageSeven from '../static/photos/welcome_photo_7.webp';
@@ -61,8 +62,12 @@ const itemData = [
     img: welcomeImageEight,
     title: '',
   },
+  // {
+  //   img: welcomeImageEleven,
+  //   title: '',
+  // },
   {
-    img: welcomeImageEleven,
+    img: welcomeImageThree,
     title: '',
   },
 ];
