@@ -74,7 +74,7 @@ const buttons = [
 
 const badges = [
   {
-    url: "https://img.shields.io/maintenance/yes/2024"
+    url: "https://img.shields.io/maintenance/yes/2025"
   },
   {
     url: "https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e"
