@@ -55,6 +55,7 @@ export default function Home({ isDarkTheme }) {
   const michiganColor = isDarkTheme ? 'michigan-color-light' : 'michigan-color-dark';
   const webColor = isDarkTheme ? 'web-color-light' : 'web-color-dark';
   const androidColor = isDarkTheme ? 'android-color-light' : 'android-color-dark';
+  const fullStackColor = isDarkTheme ? 'full-stack-color-light' : 'full-stack-color-dark';
 
   return (
     <Box sx={styles.root}>
@@ -63,11 +64,11 @@ export default function Home({ isDarkTheme }) {
         {' '}<Link href={teslaLink} className={teslaColor} underline="hover">
           Tesla
         </Link>{' '}
-        · former software lead at
+        · ex-software lead at
         {' '}<Link href={justlightLink} className={justlightColor} underline="hover">
           JustLight
         </Link>{' '}
-        · former software engineer at
+        · ex-software engineer at
         {' '}<Link href={awsLink} className={amazonColor} underline="hover">
           Amazon Web Services
         </Link>{' '}
@@ -82,10 +83,13 @@ export default function Home({ isDarkTheme }) {
         ·
         {' '}<Link href="" className={webColor} underline="hover">
           web
+        </Link>,
+        {' '}<Link href="" className={androidColor} underline="hover">
+          mobile
         </Link>{' '}
         &amp;
-        {' '}<Link href="" className={androidColor} underline="hover">
-          Android
+        {' '}<Link href="" className={fullStackColor} underline="hover">
+          full-stack
         </Link>{' '}
         dev
       </Typography>

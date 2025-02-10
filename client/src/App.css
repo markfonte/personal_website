@@ -72,6 +72,14 @@
   color: #E82127 !important;
 }
 
+.full-stack-color-light {
+  color: #CC8899 !important;
+}
+
+.full-stack-color-dark {
+  color: #8f00FF !important;
+}
+
 .card-header {
   padding: 0 !important;
 }
