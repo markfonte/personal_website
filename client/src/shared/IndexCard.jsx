@@ -20,7 +20,6 @@ import {
   ListItem,
   ListItemText,
   Typography,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -470,9 +469,7 @@ export default function IndexCard() {
               <AccordionSummary
                 expandIcon={
                   <Tooltip title="expand/collapse card" arrow>
-                    <IconButton size="small">
-                      <ExpandMoreIcon />
-                    </IconButton>
+                    <ExpandMoreIcon />
                   </Tooltip>
                 }
                 aria-label={indexItem.tagName}
@@ -480,11 +477,10 @@ export default function IndexCard() {
                 id={indexItem.tagName + '-header'}
               >
                 {indexItem.icon ? indexItem.icon : ''}
-                <img
-                  src={indexItem.logo ? indexItem.logo : ''}
+                {indexItem.logo ? <img
+                  src={indexItem.logo}
                   style={styles.tagIcon}
-                  alt={indexItem.tagName + ' button'}
-                />
+                /> : null}
                 <Typography
                   variant="subtitle1"
                   color={indexItem.type === 'Project' ? 'secondary' : 'textPrimary'}

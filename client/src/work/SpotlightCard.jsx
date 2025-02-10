@@ -17,7 +17,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Link,
   Box,
@@ -108,12 +107,8 @@ export default function SpotlightCard() {
           aria-controls="spotlight-content"
           id="spotlight-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="spotlight_card" href="#spotlight_card" className="gone">

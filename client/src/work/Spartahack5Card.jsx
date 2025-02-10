@@ -12,7 +12,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -114,12 +113,8 @@ export default function Spartahack5Card() {
           aria-controls="spartahack5-content"
           id="spartahack5-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="spartahack5_card" href="#spartahack5_card" className="gone">

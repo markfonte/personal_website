@@ -10,7 +10,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -110,12 +109,8 @@ export default function MISymptomsCard() {
           aria-controls="mi-symptoms-content"
           id="mi-symptoms-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="mi_symptoms_card" href="#mi_symptoms_card" className="gone">

@@ -10,7 +10,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -90,12 +89,8 @@ export default function RoadMapperCard() {
           aria-controls="road-mapper-content"
           id="road-mapper-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="road_mapper_card" href="#road_mapper_card" className="gone">

@@ -114,12 +114,8 @@ export default function SammyCard() {
           aria-controls="sammy-content"
           id="sammy-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="sammy_card" href="#sammy_card" className="gone">

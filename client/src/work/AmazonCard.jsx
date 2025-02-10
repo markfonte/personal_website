@@ -10,7 +10,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -132,12 +131,8 @@ export default function AmazonCard() {
           aria-controls="amazon-content"
           id="amazon-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="amazon_card" href="#amazon_card" className="gone">

@@ -10,7 +10,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -159,12 +158,8 @@ export default function JustlightCard({ isDarkTheme }) {
           aria-controls="justlight-content"
           id="justlight-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="justlight_card" href="#justlight_card" className="gone">

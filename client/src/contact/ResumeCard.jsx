@@ -66,12 +66,8 @@ export default function ResumeCard() {
                         aria-controls="resume-content"
                         id="resume-header"
                         expandIcon={
-                            <Tooltip
-                                title="expand/collapse card"
-                                arrow>
-                                <IconButton size="small">
-                                    <ExpandMoreIcon />
-                                </IconButton>
+                            <Tooltip title="expand/collapse card" arrow>
+                                <ExpandMoreIcon />
                             </Tooltip>
                         }>
                         <a name="resume_card" href="#resume_card" className="gone">

@@ -6,7 +6,6 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  IconButton,
   Tooltip,
   CardHeader,
   Link,
@@ -111,12 +110,8 @@ export default function WelcomeCard({ isDarkTheme }) {
           aria-controls="welcome-content"
           id="welcome-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="welcome_card" href="#welcome_card" className="gone">

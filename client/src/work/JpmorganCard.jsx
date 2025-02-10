@@ -14,7 +14,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -102,12 +101,8 @@ export default function JPMorganCard() {
           aria-controls="jpmorgan-content"
           id="jpmorgan-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="jpmorgan_card" href="#jpmorgan_card" className="gone">

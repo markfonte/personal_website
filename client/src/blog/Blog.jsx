@@ -257,9 +257,7 @@ export default function Blog() {
                 id={post.title + '-header'}
                 expandIcon={
                   <Tooltip title="expand/collapse card" arrow>
-                    <IconButton size="small">
-                      <ExpandMoreIcon />
-                    </IconButton>
+                    <ExpandMoreIcon />
                   </Tooltip>
                 }>
                 <a name={'post_' + post.postNumber} href={'post_' + post.postNumber} className="gone">

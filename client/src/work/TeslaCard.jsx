@@ -90,12 +90,8 @@ export default function TeslaCard() {
           aria-controls="tesla-content"
           id="tesla-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="tesla_card" href="#tesla_card" className="gone">

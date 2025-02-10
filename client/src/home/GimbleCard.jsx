@@ -3,8 +3,6 @@ import WebIcon from '@mui/icons-material/Web';
 import spotifyLogo from '../static/logos/spotify_logo.svg';
 // import googlePlayMusicLogo from '../static/logos/google_play_music.svg';
 import appleMusicLogo from '../static/logos/apple_music_logo.svg';
-// import amazonMusicLogo from '../static/logos/amazon_music_logo.svg';
-// import soundcloudLogo from '../static/logos/soundcloud_logo.svg';
 import youtubeLogo from '../static/logos/youtube_logo.svg';
 import youtubeMusicLogo from '../static/logos/youtube_music_logo.svg';
 // import facebookLogo from '../static/logos/facebook_logo.svg';
@@ -139,12 +137,8 @@ export default function GimbleCard() {
           aria-controls="gimble-content"
           id="gimble-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="gimble_card" href="#gimble_card" className="gone">

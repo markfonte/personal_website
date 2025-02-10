@@ -7,8 +7,6 @@ import {
     CardActions,
     CardContent,
     CardHeader,
-    CardMedia,
-    IconButton,
     Link,
     Tooltip,
     Typography,
@@ -176,12 +174,8 @@ export default function NewsCard() {
                     aria-controls="news-content"
                     id="news-header"
                     expandIcon={
-                        <Tooltip
-                            title="expand/collapse card"
-                            arrow>
-                            <IconButton size="small">
-                                <ExpandMoreIcon />
-                            </IconButton>
+                        <Tooltip title="expand/collapse card" arrow>
+                            <ExpandMoreIcon />
                         </Tooltip>
                     }>
                     <a name="news_card" href="#news_card" className="gone">

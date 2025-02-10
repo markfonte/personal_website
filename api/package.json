@@ -20,9 +20,9 @@
         "eslint-utils": "^3.0.0"
     },
     "devDependencies": {
-        "eslint": "^9.17.0",
+        "eslint": "^9.20.0",
         "eslint-config-google": "^0.14.0",
-        "eslint-plugin-react": "^7.37.3",
+        "eslint-plugin-react": "^7.37.4",
         "react-test-renderer": "^19.0.0",
         "react": "^19.0.0",
         "acorn": "^8.14.0",

@@ -11,7 +11,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Box,
 } from '@mui/material';
 import DateRangeIcon from '@mui/icons-material/DateRange';
@@ -173,12 +172,8 @@ export default function CompletedCourseworkCard() {
           aria-controls="michigan-content"
           id="michigan-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="completed_coursework_card" href="#completed_coursework_card" className="gone">

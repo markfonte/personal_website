@@ -11,7 +11,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Chip,
-  IconButton,
   Tooltip,
   Box,
 } from '@mui/material';
@@ -80,12 +79,8 @@ export default function RevolutionUC8Card() {
           aria-controls="revolutionuc8-content"
           id="revolutionuc8-header"
           expandIcon={
-            <Tooltip
-              title="expand/collapse card"
-              arrow>
-              <IconButton size="small">
-                <ExpandMoreIcon />
-              </IconButton>
+            <Tooltip title="expand/collapse card" arrow>
+              <ExpandMoreIcon />
             </Tooltip>
           }>
           <a name="revolutionuc8_card" href="#revolutionuc8_card" className="gone">

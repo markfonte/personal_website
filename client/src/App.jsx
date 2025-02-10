@@ -201,7 +201,6 @@ export default function App() {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-
         <Grid sx={styles.root}>
           {rainbow ? <header style={styles.headerRoot} /> : null}
           <Tooltip title={theme === darkTheme ? "enter Light Mode" : "enter Dark Mode"} arrow>
