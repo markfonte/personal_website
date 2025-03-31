@@ -20,12 +20,12 @@
         "eslint-utils": "^3.0.0"
     },
     "devDependencies": {
-        "eslint": "^9.20.0",
+        "eslint": "^9.23.0",
         "eslint-config-google": "^0.14.0",
         "eslint-plugin-react": "^7.37.4",
-        "react-test-renderer": "^19.0.0",
-        "react": "^19.0.0",
-        "acorn": "^8.14.0",
+        "react-test-renderer": "^19.1.0",
+        "react": "^19.1.0",
+        "acorn": "^8.14.1",
         "uglify-js": "^3.19.3"
     }
 }

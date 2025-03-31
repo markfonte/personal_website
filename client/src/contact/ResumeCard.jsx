@@ -117,7 +117,7 @@ export default function ResumeCard() {
                         severity="success"
                         variant="filled"
                     >
-                        Just kidding! I don&#39;t have an updated resumé. I love my job.
+                        Just kidding! You&#39;re going to have to try harder than that!
                     </Alert>
                 </Snackbar>
             </Card>

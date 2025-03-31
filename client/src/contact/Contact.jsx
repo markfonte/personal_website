@@ -55,7 +55,7 @@ export default function Contact() {
             avatar={<Avatar alt="Gmail logo" src={gmailLogo + ""} />}
             label='Email'
             variant='outlined'
-            onClick={() => console.log(window.open(emailLink))}
+            onClick={() => window.open(emailLink)}
             clickable />
         </Tooltip>
         <Tooltip
@@ -68,10 +68,10 @@ export default function Contact() {
             avatar={<Avatar alt="Venmo logo" src={venmoLogo + ""} />}
             label='Venmo'
             variant='outlined'
-            onClick={() => console.log(window.open(venmoLink))}
+            onClick={() => window.open(venmoLink)}
             clickable />
         </Tooltip>
-        <ResumeCard />
+        {/* <ResumeCard /> */}
       </Box>
       <br /> <br />
       <img
