@@ -36,18 +36,47 @@ import newsArticle10
     from '../static/photos/news_article_10.webp';
 import newsArticle11
     from '../static/photos/news_article_11.webp';
+import newsArticle13
+    from '../static/photos/news_article_13.webp';
+import newsArticle14
+    from '../static/photos/news_article_14.webp';
 
 import LikeButton from '../shared/LikeButton';
 
 const articles = [
-
+    {
+        id: 14,
+        title: 'Tesla mobile app v4.43.5',
+        link: 'https://www.notateslaapp.com/tesla-app-updates/version/4.43.5/release-notes',
+        date: 'March 28, 2025',
+        cover: newsArticle14,
+        blurb: `See some of the Service Improvements shipped in this release`,
+        isQuote: false,
+    },
+    {
+        id: 13,
+        title: 'Tesla mobile app v4.42.5',
+        link: 'https://www.notateslaapp.com/tesla-app-updates/version/4.42.5/release-notes',
+        date: 'March 05, 2025',
+        cover: newsArticle13,
+        blurb: `See some of the Service Improvements shipped in this release`,
+        isQuote: false,
+    },
+    // {
+    //     id: 12,
+    //     title: 'Tesla mobile app v4.42.0',
+    //     link: 'https://www.notateslaapp.com/tesla-app-updates/version/4.42.0/release-notes',
+    //     date: 'February 14, 2025',
+    //     blurb: `See the New Service UI shipped in this release`,
+    //     isQuote: false,
+    // },
     {
         id: 11,
-        title: 'Tesla Mobile App v4.41.5',
+        title: 'Tesla mobile app v4.41.5',
         link: 'https://www.notateslaapp.com/tesla-app-updates/version/4.41.5/release-notes',
         cover: newsArticle11,
         date: 'January 31, 2025',
-        blurb: `I made some improvements to the Service experience in the Tesla mobile app!`,
+        blurb: `See some of the Service Improvements shipped in this release`,
         isQuote: false,
     },
     {

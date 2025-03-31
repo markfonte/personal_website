@@ -42,7 +42,7 @@ export default function Contact() {
         let&#39;s get in touch
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
-        my inbox is always open! and so is my Venmo... why not pass me a few bucks?
+        my inbox is always open! and so is my Venmo... why not pass me a few bucks? someone has to pay these server costs 🙃
       </Typography>
       <Box>
         <Tooltip

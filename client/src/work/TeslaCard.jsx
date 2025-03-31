@@ -12,6 +12,7 @@ import {
   IconButton,
   Tooltip,
   Box,
+  Link,
 } from '@mui/material';
 import teslaOnboardPhotoOne from '../static/photos/tesla_onboard_photo_1.jpg';
 import teslaOnboardPhotoTwo from '../static/photos/tesla_onboard_photo_2.webp';
@@ -126,7 +127,20 @@ export default function TeslaCard() {
         <AccordionDetails>
           <CardContent>
             <Typography variant="body1" paragraph>
-              Developing in-vehicle diagnostics firmware and center display UI development for Tesla vehicles in the Service Engineering organization.
+              <i>** note: my current work information is likely out of date **</i>
+            </Typography>
+            <Typography variant="body1" paragraph>
+              I am currently on two teams at Tesla:
+            </Typography>
+            <Typography variant="body1" paragraph>
+              On the <b>Service & Roadside mobile app team</b> I am working mostly on features in the &#34;Service&#34; section of the customer-facing mobile app.
+              These features include the ability to schedule a Service visit and see details about your visit before, during and after.
+              My main focus is typically on improving the user experience by making navigation, copy, user interactions and more just make <i>sense</i> to users intuitively.
+              Basically, just whatever provides the most value to users. Since these features have millions of users, the value compounds!
+              {" "}<Link href="https://www.notateslaapp.com/tesla-app-updates"><i>Notateslapp</i> does a good job of highlighting some of these improvements each release</Link>
+            </Typography>
+            <Typography variant="body1" paragraph>
+              On the <b>on-vehicle diagnostics team</b> I am developing on-vehicle diagnostics firmware and center display UI development for Tesla vehicles in the Service Engineering organization.
               This involves owning, maintaining and/or contributing to the on-vehicle diagnostics interface, vehicle compliance with Diagnostics over IP protocol, Right-To-Repair efforts, technician-facing diagnostic tools and much more.
               Development is full-stack: from Linux buildroot to C++ infrastructure to Python application layer to React and React Native (mobile app) development.
               My goal is to continually improve the experience of diagnosing and repairing Tesla vehicles for Tesla Service technicians, independent repairers and customers.
@@ -134,6 +148,7 @@ export default function TeslaCard() {
             </Typography>
             <Typography variant="body1" sx={{ textAlign: 'left' }} paragraph>
               <b>Some of my responsibilities include:</b><br />
+              · Co-owning Service & Roadside features in the customer-facing mobile app<br />
               · Writing and owning the core logic of the Maintenance Summary / Service History feature<br />
               · Co-writing and owning the DoIP service which communicates with diagnostic tools<br />
               · Co-owning the core logic of the ODIN diagnostic software for Service<br />
