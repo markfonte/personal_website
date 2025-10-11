@@ -34,6 +34,15 @@ const styles = {
 export default function Contact() {
   useEffect(() => {
     document.title = 'Contact | Mark Fonte';
+
+    const link = document.createElement('link');
+    link.rel = 'canonical';
+    link.href = 'https://mark.fonte.com/contact';
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
   }, []);
 
   return (

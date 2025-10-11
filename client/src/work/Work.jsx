@@ -39,6 +39,16 @@ const styles = {
 export default function Work({ isDarkTheme }) {
   useEffect(() => {
     document.title = 'Work | Mark Fonte';
+
+
+    const link = document.createElement('link');
+    link.rel = 'canonical';
+    link.href = 'https://mark.fonte.com/work';
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
   }, []);
 
   return (
