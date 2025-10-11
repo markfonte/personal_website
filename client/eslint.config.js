@@ -1,7 +1,7 @@
 import { fixupConfigRules, fixupPluginRules } from "@eslint/compat";
 import react from "eslint-plugin-react";
 import globals from "globals";
-import babelParser from "@babel/eslint-parser";
+
 import path from "path";
 import { fileURLToPath } from "url";
 import js from "@eslint/js";
@@ -31,14 +31,12 @@ const config = [
                 SharedArrayBuffer: "readonly",
             },
 
-            parser: babelParser,
             ecmaVersion: 2024,
             sourceType: "module",
-
             parserOptions: {
                 ecmaFeatures: {
-                    jsx: true,
-                },
+                    jsx: true
+                }
             },
         },
 
