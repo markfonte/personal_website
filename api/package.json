@@ -1,5 +1,6 @@
 {
     "name": "api",
+    "author": "Mark Fonte",
     "version": "5.3",
     "private": true,
     "scripts": {

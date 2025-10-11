@@ -1,5 +1,6 @@
 {
     "name": "client",
+    "author": "Mark Fonte",
     "version": "5.3",
     "private": true,
     "type": "module",
@@ -20,14 +21,10 @@
         "start": "vite --port 3000",
         "build": "vite build",
         "preview": "vite preview --port 3000",
-        "test": "jest --coverage -u",
         "lint": "npx eslint --config eslint.config.js --fix --ignore-pattern 'dist/**'"
     },
     "devDependencies": {
         "@eslint/compat": "^1.2.7",
-        "@testing-library/dom": "^10.4.0",
-        "@testing-library/jest-dom": "^6.6.3",
-        "@testing-library/react": "^16.2.0",
         "@vitejs/plugin-react": "^4.0.0",
         "ajv": "^8.17.1",
         "eslint": "^9.23.0",
@@ -39,19 +36,11 @@
         "identity-obj-proxy": "^3.0.0",
         "postcss": "^8.5.6",
         "postcss-import": "^16.1.1",
-        "react-test-renderer": "^19.2.0",
         "stylelint": "^16.25.0",
         "stylelint-config-standard": "^39.0.1",
         "vite": "^7.1.9"
     },
     "stylelint": {
         "extends": "stylelint-config-standard"
-    },
-    "jest": {
-        "testEnvironment": "jsdom",
-        "moduleNameMapper": {
-            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/FileTransformer.js",
-            "\\.(css|less)$": "identity-obj-proxy"
-        }
     }
 }
