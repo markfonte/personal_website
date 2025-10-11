@@ -15,7 +15,6 @@ import youtubeLogo from '../static/logos/youtube_logo.svg';
 import spotifyLogo from '../static/logos/spotify_logo.svg';
 import PropTypes from 'prop-types';
 
-// use browser fetch; node-fetch was added for legacy tests
 const HEARTBEAT_INTERVAL = 30000;
 
 const ohio_timestamp = '2019-11-30T12:30:00.000Z'

@@ -21,7 +21,7 @@
         "build": "vite build",
         "preview": "vite preview --port 3000",
         "test": "jest --coverage -u",
-        "lint": "npx eslint --config eslint.config.js --fix"
+        "lint": "npx eslint --config eslint.config.js --fix --ignore-pattern 'dist/**'"
     },
     "devDependencies": {
         "@eslint/compat": "^1.2.7",

@@ -7,15 +7,12 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  IconButton,
   Tooltip,
-  CardActions,
   CircularProgress,
   Box,
 } from '@mui/material';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Masonry } from '@mui/lab';
 
@@ -291,17 +288,6 @@ export default function Blog() {
                 </CardContent>
               </AccordionDetails>
             </Accordion>
-            <CardActions sx={{ justifyContent: 'flex-end' }}>
-              <Tooltip title="share article" arrow>
-                <IconButton
-                  aria-label="Share article"
-                  onClick={() => copyToClipboard(import.meta.env.VITE_CLIENT_URL + 'blog#post_' + post.postNumber)}
-                  size="medium"
-                >
-                  <ShareIcon />
-                </IconButton>
-              </Tooltip>
-            </CardActions>
           </Card>
         ))}
       </Masonry>
