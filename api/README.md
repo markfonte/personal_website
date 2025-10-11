@@ -13,5 +13,5 @@ sudo apt install ruby
 From `/api` directory:
 
 ```sh
-pm2 start "yarn start" --name "api"
+pm2 start "npm run start" --name "api"
 ```
