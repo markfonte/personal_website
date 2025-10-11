@@ -17,6 +17,11 @@ echo -n "const timestamp = '" > client/src/CommitTimestamp.js
 echo -n "$timestamp" >> client/src/CommitTimestamp.js
 echo "'; export default timestamp;" >> client/src/CommitTimestamp.js
 
+# Update the lastmod dates in sitemap.xml
+current_date=$(date +"%Y-%m-%d")
+sed -i '' "s/<lastmod>[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/<lastmod>$current_date/g" client/public/sitemap.xml
+
 git add client/src/CommitTimestamp.js
-echo "Updated the time in CommitTimestamp.js"
+git add client/public/sitemap.xml
+echo "Updated the time in CommitTimestamp.js and lastmod dates in sitemap.xml"
 exit 0
