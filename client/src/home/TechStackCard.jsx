@@ -8,7 +8,6 @@ import nginxLogo from '../static/logos/nginx_logo.svg';
 import githubLogoLight from '../static/logos/github_logo_light.svg';
 import githubLogoDark from '../static/logos/github_logo_dark.svg';
 import trelloLogo from '../static/logos/trello_logo.svg';
-import jestLogo from '../static/logos/jest_logo.svg';
 import sqliteLogo from '../static/logos/sqlite_logo.svg';
 import PropTypes from 'prop-types';
 
@@ -38,10 +37,6 @@ const tags = [
     label: 'GitHub',
     icon: githubLogoLight,
     iconDark: githubLogoDark,
-  },
-  {
-    label: 'Jest',
-    icon: jestLogo,
   },
   {
     label: 'Material-UI',
