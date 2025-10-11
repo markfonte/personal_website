@@ -1,7 +1,7 @@
 {
     "name": "api",
     "author": "Mark Fonte",
-    "version": "5.3",
+    "version": "5.4",
     "private": true,
     "scripts": {
         "start": "node ./bin/www"
