@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import reactLogo from '../static/logos/react_logo.svg';
 import universityOfMichiganLogoSmall from '../static/logos/university_of_michigan_logo_small.svg';
-import Moment from 'react-moment';
 import moment from 'moment';
 import { Typography, Link, Tooltip, Button, Box } from '@mui/material';
 import timestamp from '../CommitTimestamp.js';
@@ -16,7 +15,7 @@ import youtubeLogo from '../static/logos/youtube_logo.svg';
 import spotifyLogo from '../static/logos/spotify_logo.svg';
 import PropTypes from 'prop-types';
 
-const fetch = require('node-fetch');
+// use browser fetch; node-fetch was added for legacy tests
 const HEARTBEAT_INTERVAL = 30000;
 
 const ohio_timestamp = '2019-11-30T12:30:00.000Z'
@@ -132,7 +131,7 @@ export default function Footer({ isDarkTheme }) {
   const [serverCrashed, setServerCrashed] = useState(false);
 
   const checkForAPIHeartbeat = () => {
-    const apiUrl = process.env.REACT_APP_API_URL + 'api_heartbeat';
+    const apiUrl = import.meta.env.VITE_API_URL + 'api_heartbeat';
     fetch(apiUrl, { method: 'HEAD' })
       .then((res) => {
         if (res.status === 200) {
@@ -208,9 +207,7 @@ export default function Footer({ isDarkTheme }) {
           last updated{' '}
           <Tooltip arrow placement="right" title="see most recent commit on GitHub">
             <Link color="secondary" href={commitHistoryLink}>
-              <Moment parse="YYYY-MM-DDTHH:mm:ssZ" fromNow>
-                {timestamp}
-              </Moment>
+              {moment(timestamp).fromNow()}
             </Link>
           </Tooltip>
         </Typography>

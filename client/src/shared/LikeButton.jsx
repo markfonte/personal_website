@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Typography, Card, Tooltip, IconButton, Box } from '@mui/material';
-const fetch = require('node-fetch');
-
-const deleteCookie = require('./util/Cookies.js').deleteCookie;
-const setCookie = require('./util/Cookies.js').setCookie;
-const getCookie = require('./util/Cookies.js').getCookie;
+import { deleteCookie, setCookie, getCookie } from './util/Cookies.js';
 
 const styles = {
   root: {
@@ -48,7 +44,7 @@ export default function LikeButton({ likeType, likeName }) {
   }, []);
 
   const fetchNumLikes = () => {
-    const url = process.env.REACT_APP_API_URL + 'like/get';
+    const url = import.meta.env.VITE_API_URL + 'like/get';
     const requestText = { page: likeName };
     fetch(url, {
       method: 'post',
@@ -73,7 +69,7 @@ export default function LikeButton({ likeType, likeName }) {
 
   const toggleLike = () => {
     if (!liked) {
-      const url = process.env.REACT_APP_API_URL + 'like';
+      const url = import.meta.env.VITE_API_URL + 'like';
       const requestText = { page: likeName };
       fetch(url, {
         method: 'post',
@@ -96,7 +92,7 @@ export default function LikeButton({ likeType, likeName }) {
       setCookie(likeName, 'liked', 1000);
       setLiked(true);
     } else {
-      const url = process.env.REACT_APP_API_URL + 'like/unlike';
+      const url = import.meta.env.VITE_API_URL + 'like/unlike';
       const requestText = { page: likeName };
       fetch(url, {
         method: 'post',

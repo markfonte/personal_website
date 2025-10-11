@@ -295,7 +295,7 @@ export default function Blog() {
               <Tooltip title="share article" arrow>
                 <IconButton
                   aria-label="Share article"
-                  onClick={() => copyToClipboard(process.env.REACT_APP_CLIENT_URL + 'blog#post_' + post.postNumber)}
+                  onClick={() => copyToClipboard(import.meta.env.VITE_CLIENT_URL + 'blog#post_' + post.postNumber)}
                   size="medium"
                 >
                   <ShareIcon />

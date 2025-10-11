@@ -21,8 +21,7 @@ import {
 } from '@mui/material';
 import ScrollUpButton from 'react-scroll-up-button';
 
-const getCookie = require('./shared/util/Cookies.js').getCookie;
-const setCookie = require('./shared/util/Cookies.js').setCookie;
+import { setCookie, getCookie } from './shared/util/Cookies.js';
 
 const routes = [
   { name: 'Home', path: '/', index: 0, icon: <Home /> },
