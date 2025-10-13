@@ -10,8 +10,20 @@ Resumes stink! This is more fun (for me). Welcome to my public playground!
 * Subtle University of Michigan themes
 * And much more! [check it out](https://mark.fonte.com)
 
+## Major Releases
+I have consistently updated this website for many years now! Here are the dates of each major release:
+* [Version 6.0](https://github.com/markfonte/personal_website/releases/tag/v6.0) - October 13th, 2025
+* [Version 5.0](https://github.com/markfonte/personal_website/releases/tag/v5.0) - July 17th, 2024
+* [Version 4.0](https://github.com/markfonte/personal_website/releases/tag/v4.0) - April 2nd, 2023
+* [Version 3.0](https://github.com/markfonte/personal_website/releases/tag/v3.0.0) - October 22nd, 2022
+* [Version 2.0](https://github.com/markfonte/personal_website/releases/tag/v2.0.0) - June 4th, 2020
+* [Version 1.0](https://github.com/markfonte/personal_website/releases/tag/v1.0.1) - August 13th, 2019
+* [Project inception](https://github.com/markfonte/personal_website/commit/acca157b42ae81970f077632658960770ac4b33b) - May 8th, 2019
+
+*[See all releases](https://github.com/markfonte/personal_website/releases)*
+
 ## Upcoming Features
-Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-website) to see what's next
+Check out my public [Trello kanban board](https://trello.com/b/yoLCEs6S/personal-website) to see what's next
 
 ## Tech Stack
 * [DigitalOcean](https://www.digitalocean.com/) - cloud provider
@@ -21,6 +33,7 @@ Check out my public [Trello board](https://trello.com/b/yoLCEs6S/personal-websit
 * [NodeJS](https://nodejs.org/) - server environment
 * [React](https://react.dev/) - frontend framework
 * [SQLite](https://www.sqlite.org) - simple persistant storage
+* [UptimeRobot](https://dashboard.uptimerobot.com/) - uptime monitoring
 
 ## Authors
 * **[Mark Fonte](https://github.com/markfonte)** - author
