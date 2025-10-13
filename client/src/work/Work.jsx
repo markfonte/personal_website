@@ -1,49 +1,50 @@
-import React, { lazy, Suspense, useEffect } from 'react';
-import { Typography, CircularProgress, Box } from '@mui/material';
-import PropTypes from 'prop-types';
-import { Masonry } from '@mui/lab';
-const LAZCard = lazy(() => import('./LazCard.jsx'));
-const RevolutionUC8Card = lazy(() => import('./Revolutionuc8Card.jsx'));
-const Spartahack5Card = lazy(() => import('./Spartahack5Card.jsx'));
-const Grizzhacks3Card = lazy(() => import('./Grizzhacks3Card.jsx'));
-const CompletedCourseworkCard = lazy(() => import('./CompletedCourseworkCard.jsx'));
-const InteractionCard = lazy(() => import('../shared/InteractionCard.jsx'));
-const SpotlightCard = lazy(() => import('./SpotlightCard.jsx'));
-const DoggieDoodlesCard = lazy(() => import('./DoggieDoodlesCard.jsx'));
-const JPMorganCard = lazy(() => import('./JpmorganCard.jsx'));
-const RoadMapperCard = lazy(() => import('./RoadMapperCard.jsx'));
-const MISymptomsCard = lazy(() => import('./MiSymptomsCard.jsx'));
-const AmazonCard = lazy(() => import('./AmazonCard.jsx'));
-const MHacks12Card = lazy(() => import('./Mhacks12Card.jsx'));
-const WalklensCard = lazy(() => import('./WalklensCard.jsx'));
-const ClippCard = lazy(() => import('./ClippCard.jsx'));
-const JustlightCard = lazy(() => import('./JustlightCard.jsx'));
-const TeslaCard = lazy(() => import('./TeslaCard.jsx'));
-const IndexCard = lazy(() => import('../shared/IndexCard.jsx'));
+import React, { lazy, Suspense, useEffect } from "react";
+import { Typography, CircularProgress, Box } from "@mui/material";
+import PropTypes from "prop-types";
+import { Masonry } from "@mui/lab";
+const LAZCard = lazy(() => import("./LazCard.jsx"));
+const RevolutionUC8Card = lazy(() => import("./Revolutionuc8Card.jsx"));
+const Spartahack5Card = lazy(() => import("./Spartahack5Card.jsx"));
+const Grizzhacks3Card = lazy(() => import("./Grizzhacks3Card.jsx"));
+const CompletedCourseworkCard = lazy(() =>
+  import("./CompletedCourseworkCard.jsx")
+);
+const InteractionCard = lazy(() => import("../shared/InteractionCard.jsx"));
+const SpotlightCard = lazy(() => import("./SpotlightCard.jsx"));
+const DoggieDoodlesCard = lazy(() => import("./DoggieDoodlesCard.jsx"));
+const JPMorganCard = lazy(() => import("./JpmorganCard.jsx"));
+const RoadMapperCard = lazy(() => import("./RoadMapperCard.jsx"));
+const MISymptomsCard = lazy(() => import("./MiSymptomsCard.jsx"));
+const AmazonCard = lazy(() => import("./AmazonCard.jsx"));
+const MHacks12Card = lazy(() => import("./Mhacks12Card.jsx"));
+const WalklensCard = lazy(() => import("./WalklensCard.jsx"));
+const ClippCard = lazy(() => import("./ClippCard.jsx"));
+const JustlightCard = lazy(() => import("./JustlightCard.jsx"));
+const TeslaCard = lazy(() => import("./TeslaCard.jsx"));
+const IndexCard = lazy(() => import("../shared/IndexCard.jsx"));
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 
 const styles = {
   root: {
-    justifyContent: 'start',
+    justifyContent: "start",
   },
   title: {
-    marginBottom: '16px',
+    marginBottom: "16px",
   },
   masonryContainer: {
-    marginLeft: 'auto',
-    marginRight: 'auto',
+    marginLeft: "auto",
+    marginRight: "auto",
   },
 };
 
 export default function Work({ isDarkTheme }) {
   useEffect(() => {
-    document.title = 'Work | Mark Fonte';
+    document.title = "Work | Mark Fonte";
 
-
-    const link = document.createElement('link');
-    link.rel = 'canonical';
-    link.href = 'https://mark.fonte.com/work';
+    const link = document.createElement("link");
+    link.rel = "canonical";
+    link.href = "https://mark.fonte.com/work";
     document.head.appendChild(link);
 
     return () => {
@@ -54,12 +55,15 @@ export default function Work({ isDarkTheme }) {
   return (
     <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6" paragraph>
-        My full time jobs, internships, side projects, hackathon projects and school
+        My full time jobs, internships, side projects, hackathon projects and
+        schooling
       </Typography>
       <Suspense fallback={renderLoader()}>
-        <Masonry columns={{ sm: 1, md: 2 }}
+        <Masonry
+          columns={{ sm: 1, md: 2 }}
           spacing={3}
-          sx={styles.masonryContainer}>
+          sx={styles.masonryContainer}
+        >
           <TeslaCard />
           <JustlightCard isDarkTheme={isDarkTheme} />
           <AmazonCard />
@@ -82,7 +86,7 @@ export default function Work({ isDarkTheme }) {
       </Suspense>
     </Box>
   );
-};
+}
 
 Work.propTypes = {
   isDarkTheme: PropTypes.bool.isRequired,
