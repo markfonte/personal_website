@@ -159,13 +159,13 @@ export default function TeslaCard() {
               Previously at Tesla, I worked on two pods within the same team:
             </Typography>
             <Typography variant="body1" paragraph>
-              On the <b>Service & Roadside mobile app team</b> I worked mostly
-              on features in the &#34;Service&#34; section of the
-              customer-facing mobile app. These features include the ability to
-              schedule a Service visit and see details about your visit before,
-              during and after. My main focus was typically on improving the
-              user experience by making navigation, copy, user interactions and
-              more just make <i>sense</i> to users intuitively. Basically, just
+              On the <b>Service & Roadside mobile app pod</b> I worked mostly on
+              features in the &#34;Service&#34; section of the customer-facing
+              mobile app. These features include the ability to schedule a
+              Service visit and see details about your visit before, during and
+              after. My main focus was typically on improving the user
+              experience by making navigation, copy, user interactions and more
+              just make <i>sense</i> to users intuitively. Basically, just
               whatever provides the most value to users. Since these features
               have millions of users, the value compounds!{" "}
               <Link href="https://www.notateslaapp.com/tesla-app-updates">
@@ -174,7 +174,7 @@ export default function TeslaCard() {
               </Link>
             </Typography>
             <Typography variant="body1" paragraph>
-              On the <b>on-vehicle diagnostics team</b> I developed on-vehicle
+              On the <b>on-vehicle diagnostics pod</b> I developed on-vehicle
               diagnostics firmware and center display UI development for Tesla
               vehicles in the Service Engineering organization. This involved
               owning, maintaining and contributing to the on-vehicle diagnostics
