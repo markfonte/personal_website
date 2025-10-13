@@ -50,8 +50,7 @@ const highlightedArticles = [
     cover: (
       <iframe
         src="https://www.linkedin.com/embed/feed/update/urn:li:share:7378258359910633473"
-        height="520"
-        width="377"
+        style={{ height: 520, maxWidth: 377, width: "100%" }}
         allowFullScreen
         frameBorder="0"
         title="Mark Fonte's job posting"
