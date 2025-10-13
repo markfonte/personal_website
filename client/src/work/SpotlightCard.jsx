@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import spotlightScreenshotOne
-  from '../static/screenshots/spotlight_screenshot_1.webp';
-import spotlightScreenshotTwo
-  from '../static/screenshots/spotlight_screenshot_2.webp';
-import spotlightScreenshotThree
-  from '../static/screenshots/spotlight_screenshot_3.webp';
+import spotlightScreenshotOne from "../static/screenshots/spotlight_screenshot_1.webp";
+import spotlightScreenshotTwo from "../static/screenshots/spotlight_screenshot_2.webp";
+import spotlightScreenshotThree from "../static/screenshots/spotlight_screenshot_3.webp";
 
 import {
   Typography,
@@ -20,38 +17,38 @@ import {
   Tooltip,
   Link,
   Box,
-} from '@mui/material';
-import DateRangeIcon from '@mui/icons-material/DateRange';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import LikeButton from '../shared/LikeButton';
+} from "@mui/material";
+import DateRangeIcon from "@mui/icons-material/DateRange";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import LikeButton from "../shared/LikeButton";
 
 const styles = {
   screenshot: {
-    marginTop: '12px',
-    marginBottom: '12px',
-    marginLeft: '4px',
-    marginRight: '4px',
-    height: 'auto',
-    width: '100%',
-    maxWidth: '280px',
+    marginTop: "12px",
+    marginBottom: "12px",
+    marginLeft: "4px",
+    marginRight: "4px",
+    height: "auto",
+    width: "100%",
+    maxWidth: "280px",
   },
   tags: {
-    margin: '4px',
+    margin: "4px",
   },
   expansionHeaderContainer: {
-    display: 'flex',
+    display: "flex",
     flexGrow: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
   },
   spotlightLogo: {
-    width: '100%',
-    marginBottom: '16px',
-    marginTop: '16px',
-    marginLeft: '0px',
-    marginRight: '0px',
-    maxWidth: '500px',
+    width: "100%",
+    marginBottom: "16px",
+    marginTop: "16px",
+    marginLeft: "0px",
+    marginRight: "0px",
+    maxWidth: "500px",
   },
 };
 
@@ -68,35 +65,34 @@ const spotlightGithubLink = `https://github.com/markfonte/Spotlight_Android`;
 
 const tags = [
   {
-    label: 'September 2018 → July 2019',
-    color: 'default',
-    variant: 'default',
+    label: "September 2018 → July 2019",
+    color: "default",
+    variant: "default",
     icon: <DateRangeIcon />,
   },
   {
-    label: 'Startup',
-    color: 'primary',
-    variant: 'default',
+    label: "Startup",
+    color: "primary",
+    variant: "default",
   },
   {
-    label: 'Class Project',
-    color: 'primary',
-    variant: 'default',
+    label: "Class Project",
+    color: "primary",
+    variant: "default",
   },
   {
-    label: 'Android',
+    label: "Android",
   },
   {
-    label: 'Android Jetpack',
+    label: "Android Jetpack",
   },
   {
-    label: 'Firebase',
+    label: "Firebase",
   },
   {
-    label: 'Kotlin',
+    label: "Kotlin",
   },
 ];
-
 
 export default function SpotlightCard() {
   return (
@@ -107,10 +103,11 @@ export default function SpotlightCard() {
           aria-controls="spotlight-content"
           id="spotlight-header"
           expandIcon={
-            <Tooltip title="expand/collapse card" arrow>
+            <Tooltip title="expand / collapse card" arrow>
               <ExpandMoreIcon />
             </Tooltip>
-          }>
+          }
+        >
           <a name="spotlight_card" href="#spotlight_card" className="gone">
             Spotlight Card
           </a>
@@ -134,9 +131,10 @@ export default function SpotlightCard() {
                   key={tag.label}
                   icon={tag.icon ? tag.icon : null}
                   label={tag.label}
-                  variant={tag.variant ? tag.variant : 'outlined'}
-                  color={tag.color ? tag.color : 'secondary'}
-                  clickable />
+                  variant={tag.variant ? tag.variant : "outlined"}
+                  color={tag.color ? tag.color : "secondary"}
+                  clickable
+                />
               ))}
             </Box>
           </Box>
@@ -144,93 +142,60 @@ export default function SpotlightCard() {
         <AccordionDetails>
           <CardContent>
             <Typography variant="body1" paragraph>
-              This startup came from a
-
-              {' '}
+              This startup came from a{" "}
               <Link color="secondary" href={psych223Link}>
                 class project
-              </Link>
-              {' '}
-
-              during junior year of college. Since one of our group members was in
-              a sorority at school, she saw a need for a mobile application that would streamline
-              the &quot;recruitment&quot; process for sorority girls as they were trying to
-              find which sorority they wanted to join.
+              </Link>{" "}
+              during junior year of college. Since one of our group members was
+              in a sorority at school, she saw a need for a mobile application
+              that would streamline the &quot;recruitment&quot; process for
+              sorority girls as they were trying to find which sorority they
+              wanted to join.
             </Typography>
             <Typography variant="body1" paragraph>
-              We built an
-
-              {' '}
+              We built an{" "}
               <Link color="secondary" href={androidLink}>
                 Android
-              </Link>
-              {' '}
-
-              and an
-
-              {' '}
+              </Link>{" "}
+              and an{" "}
               <Link color="secondary" href={iOSLink}>
                 iOS
-              </Link>
-              {' '}
-
-              application. I was the dev lead, so I was in charge of development and
-              primarily just developed the Android app. Both applications were built using
-
-
-              {' '}
+              </Link>{" "}
+              application. I was the dev lead, so I was in charge of development
+              and primarily just developed the Android app. Both applications
+              were built using{" "}
               <Link color="secondary" href={firebaseLink}>
                 Firebase
-              </Link>
-              {' '}
-
-              for authentication, static storage, a NoSQL database, analytics, etc.
-              The Android application was built in
-
-              {' '}
+              </Link>{" "}
+              for authentication, static storage, a NoSQL database, analytics,
+              etc. The Android application was built in{" "}
               <Link color="secondary" href={kotlinLink}>
                 Kotlin
-              </Link>
-              {' '}
-
-              using
-
-              {' '}
+              </Link>{" "}
+              using{" "}
               <Link color="secondary" href={androidJetpackLink}>
                 Android Jetpack
               </Link>
-
-              ,
-
-              {' '}
+              ,{" "}
               <Link color="secondary" href={architectureComponentsLink}>
                 architecture components
-              </Link>
-              {' '}
-
-              and
-
-              {' '}
+              </Link>{" "}
+              and{" "}
               <Link color="secondary" href={googleMapsApiLink}>
                 Google Maps APIs
               </Link>
-
               .
             </Typography>
             <Typography variant="body1" paragraph>
               There were lots of fun technical challenges in this project, like
-              using
-
-              {' '}
+              using{" "}
               <Link color="secondary" href={snapshotListenersLink}>
                 Firebase snapshot listeners
-              </Link>
-              {' '}
-
-              to get realtime database updates, and getting items in the &quot;Ranking&quot;
-              list to reorder correctly when moving items around. Even though I am not
-              an iOS developer, getting to work closely with the iOS app was also
-              so much fun.
+              </Link>{" "}
+              to get realtime database updates, and getting items in the
+              &quot;Ranking&quot; list to reorder correctly when moving items
+              around. Even though I am not an iOS developer, getting to work
+              closely with the iOS app was also so much fun.
             </Typography>
             <img
               src={spotlightScreenshotOne}
@@ -248,23 +213,25 @@ export default function SpotlightCard() {
               alt="Spotlight screenshot 3"
             />
             <Typography variant="body1" paragraph>
-              We worked on this project for a long time and built a successful MVP
-              (minimum viable product) and more. Unfortunately, we were never able to
-              get it off the ground on more than a trial basis because we were unable
-              to find an appropriate monetization model for the product. The learning
-              experience of building a full-fledged Android application from scratch
-              can never be taken away!
+              We worked on this project for a long time and built a successful
+              MVP (minimum viable product) and more. Unfortunately, we were
+              never able to get it off the ground on more than a trial basis
+              because we were unable to find an appropriate monetization model
+              for the product. The learning experience of building a
+              full-fledged Android application from scratch can never be taken
+              away!
             </Typography>
             <Typography variant="body1" paragraph>
               View it on
               <Link color="secondary" href={spotlightGithubLink}>
-                {' '}GitHub
+                {" "}
+                GitHub
               </Link>
             </Typography>
-            <LikeButton likeType='card' likeName='spotlight_card' />
+            <LikeButton likeType="card" likeName="spotlight_card" />
           </CardContent>
         </AccordionDetails>
       </Accordion>
     </Card>
   );
-};
+}

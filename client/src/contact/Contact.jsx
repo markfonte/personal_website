@@ -48,16 +48,16 @@ export default function Contact() {
   return (
     <Box sx={styles.root}>
       <Typography sx={styles.title} variant="h6">
-        let&#39;s get in touch
+        Let&#39;s get in touch
       </Typography>
       <Typography sx={styles.subtitle} variant="subtitle1">
-        my inbox is always open! and so is my Venmo... why not pass me a few bucks? someone has to pay these server costs 🙃
+        My inbox is always open! And so is my Venmo... why not pass me a few bucks? 😉
       </Typography>
       <Box>
         <Tooltip
           arrow
           placement="top"
-          title="email me: mark@fonte.com">
+          title="Email me: mark@fonte.com">
           <Chip
             sx={styles.buttonDefault}
             key='Email chip'
@@ -70,7 +70,7 @@ export default function Contact() {
         <Tooltip
           arrow
           placement="top"
-          title="Venmo me? @mark-fonte">
+          title="&quot;DEW IT&quot; -Emporer Palpatine">
           <Chip
             sx={styles.buttonDefault}
             key='Venmo chip'

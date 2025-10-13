@@ -4,6 +4,7 @@
     "version": "5.4",
     "private": true,
     "scripts": {
+        "dev": "node ./bin/www",
         "start": "node ./bin/www"
     },
     "dependencies": {
