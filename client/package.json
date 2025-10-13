@@ -1,7 +1,7 @@
 {
     "name": "client",
     "author": "Mark Fonte",
-    "version": "5.4",
+    "version": "6.0",
     "private": true,
     "type": "module",
     "dependencies": {
