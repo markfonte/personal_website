@@ -16,7 +16,7 @@
         "express": "^5.1.0",
         "http-errors": "^2.0.0",
         "pug": "^3.0.3",
-        "lodash": "^4.17.21",
+        "lodash": "^4.17.23",
         "morgan": "^1.10.1",
         "sqlite3": "^5.1.7",
         "eslint-utils": "^3.0.0"
