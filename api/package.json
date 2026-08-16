@@ -8,26 +8,15 @@
         "start": "node ./bin/www"
     },
     "dependencies": {
-        "clean-css": "^5.3.3",
-        "constantinople": "^4.0.1",
-        "cookie-parser": "^1.4.7",
-        "cors": "^2.8.5",
+        "better-sqlite3": "^13.0.3",
+        "cors": "^2.8.6",
         "debug": "^4.4.3",
-        "express": "^5.2.0",
-        "http-errors": "^2.0.0",
-        "pug": "^3.0.3",
-        "lodash": "^4.17.23",
-        "morgan": "^1.10.1",
-        "sqlite3": "^5.1.7",
-        "eslint-utils": "^3.0.0"
+        "express": "^5.2.1",
+        "http-errors": "^2.0.1",
+        "morgan": "^1.11.0",
+        "pug": "^3.0.4"
     },
-    "devDependencies": {
-        "eslint": "^9.37.0",
-        "eslint-config-google": "^0.14.0",
-        "eslint-plugin-react": "^7.37.5",
-        "react-test-renderer": "^19.2.0",
-        "react": "^19.2.0",
-        "acorn": "^8.15.0",
-        "uglify-js": "^3.19.3"
+    "allowScripts": {
+        "better-sqlite3@13.0.3": true
     }
 }

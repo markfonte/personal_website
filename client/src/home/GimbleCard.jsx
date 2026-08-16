@@ -4,9 +4,7 @@ import spotifyLogo from "../static/logos/spotify_logo.svg";
 // import googlePlayMusicLogo from '../static/logos/google_play_music.svg';
 import appleMusicLogo from "../static/logos/apple_music_logo.svg";
 import youtubeLogo from "../static/logos/youtube_logo.svg";
-import youtubeMusicLogo from "../static/logos/youtube_music_logo.svg";
 // import facebookLogo from '../static/logos/facebook_logo.svg';
-import instagramLogo from "../static/logos/instagram_logo.svg";
 
 import {
   Card,

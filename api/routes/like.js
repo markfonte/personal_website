@@ -1,28 +1,23 @@
 var express = require('express');
 var router = express.Router();
-const sqlite3 = require('sqlite3').verbose();
+const Database = require('better-sqlite3');
 
-const db = new sqlite3.Database('./db/var/personal_website.sqlite3', err => {
-  if (err) {
-    console.error(err.message);
-    return;
-  }
-});
+const db = new Database('./db/var/personal_website.sqlite3');
 
 router.post('/', function (req, res) {
   const page = req.body.page;
   if (!page) {
     return console.error;
   }
-  let sql = `UPDATE likes SET numlikes = numlikes + 1 WHERE pagename = ?`;
+  const sql = `UPDATE likes SET numlikes = numlikes + 1 WHERE pagename = ?`;
 
-  db.run(sql, [page], function (err) {
-    if (err) {
-      return console.log(err.message + " " + new Date());
-    }
+  try {
+    db.prepare(sql).run(page);
     console.log(`${page} now has 1 more like. ${new Date()}`);
     res.send('success');
-  });
+  } catch (err) {
+    return console.log(err.message + " " + new Date());
+  }
 });
 
 router.post('/unlike', function (req, res) {
@@ -30,29 +25,29 @@ router.post('/unlike', function (req, res) {
   if (!page) {
     return console.error;
   }
-  let sql = `UPDATE likes SET numlikes = numlikes - 1 WHERE pagename = ?`;
+  const sql = `UPDATE likes SET numlikes = numlikes - 1 WHERE pagename = ?`;
 
-  db.run(sql, [page], function (err) {
-    if (err) {
-      return console.log(err.message + " " + new Date());
-    }
+  try {
+    db.prepare(sql).run(page);
     console.log(`${page} now has 1 less like. ${new Date()}`);
     res.send('success');
-  });
+  } catch (err) {
+    return console.log(err.message + " " + new Date());
+  }
 });
 
 router.post('/get', function (req, res) {
   const page = req.body.page;
 
-  let sql = `SELECT numlikes FROM likes WHERE pagename = ?`;
+  const sql = `SELECT numlikes FROM likes WHERE pagename = ?`;
 
-  db.all(sql, [page], (err, rows) => {
-    if (err) {
-      console.error(err.message);
-      return;
-    }
+  try {
+    const rows = db.prepare(sql).all(page);
     res.json(rows);
-  });
+  } catch (err) {
+    console.error(err.message);
+    return;
+  }
 });
 
 module.exports = router;
