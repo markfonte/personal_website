@@ -77,8 +77,10 @@ export default function Settings() {
             checked={rainbow}
             onClick={handleRainbowChange}
             sx={styles.switch}
-            inputProps={{ 'aria-label': 'primary checkbox' }}
             color="secondary"
+            slotProps={{
+              input: { 'aria-label': 'primary checkbox' }
+            }}
           />
         </Tooltip>
       </Box>
@@ -91,8 +93,10 @@ export default function Settings() {
             checked={ads}
             onClick={handleAdsChange}
             sx={styles.switch}
-            inputProps={{ 'aria-label': 'primary checkbox' }}
             color="secondary"
+            slotProps={{
+              input: { 'aria-label': 'primary checkbox' }
+            }}
           />
         </Tooltip>
       </Box>

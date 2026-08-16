@@ -154,10 +154,14 @@ export default function WelcomeCard({ isDarkTheme }) {
                 ))}
               </ImageList>
             </Box>
-            <Typography variant="h6" paragraph>
+            <Typography variant="h6" sx={{
+              marginBottom: "16px"
+            }}>
               Welcome to my website!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               I&#39;m a senior software engineer at{" "}
               <Tooltip arrow title="go to Tesla">
                 <Link
@@ -205,7 +209,9 @@ export default function WelcomeCard({ isDarkTheme }) {
               </Tooltip>
               , and I was a singer / beatboxer for a college a cappella group.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Outside of coding, I love reading, writing, teaching, playing
               basketball and making cool shit. I especially love building{" "}
               <Link href="" className={androidColor} underline="hover">
@@ -231,7 +237,9 @@ export default function WelcomeCard({ isDarkTheme }) {
               </Tooltip>
               .
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Please reach out with questions, comments, or concerns! Much love
               ❤️
               <br /> <br />

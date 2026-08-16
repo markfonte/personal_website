@@ -121,7 +121,9 @@ export default function RevolutionUC8Card() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               At RevolutionUC 8, we spent at least the first 12 hours of the
               24-hour hackathon bouncing between a bunch of different ideas. We
               ended up building a &quot;rejection hotline&quot; called{" "}
@@ -148,24 +150,32 @@ export default function RevolutionUC8Card() {
               fake phone number, and had them communicate with each other,
               causing mass confusion!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Our server also had some cool side features like an automated
               message that played if anyone called the number. It was very
               silly, and we were unable to make as nice of a product as we did
               at other hackathons because we were in such a time crunch after
               pivoting so much!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               There was no user interface, so unfortunately I don&apos;t have
               any screenshots to show.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We did not win any awards with this project, but it was still a
               great experience! We learned a lot from pivoting our idea so
               frequently, and we got to use some cool technologies like MongoDB
               and the Twilio API.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               View it on{" "}
               <Link color="secondary" href={denialDialDevpostLink}>
                 Devpost

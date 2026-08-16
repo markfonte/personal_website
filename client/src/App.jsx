@@ -15,11 +15,11 @@ import {
   Tabs,
   Tab,
   CssBaseline,
-  Grid,
+  Box,
   Tooltip,
   IconButton,
 } from '@mui/material';
-import ScrollUpButton from 'react-scroll-up-button';
+import ScrollToTop from './shared/ScrollToTop.jsx';
 
 import { setCookie, getCookie } from './shared/util/Cookies.js';
 
@@ -200,7 +200,7 @@ export default function App() {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Grid sx={styles.root}>
+        <Box sx={styles.root}>
           {rainbow ? <header style={styles.headerRoot} /> : null}
           <Tooltip title={theme === darkTheme ? "enter Light Mode" : "enter Dark Mode"} arrow>
             <IconButton onClick={toggleTheme} sx={styles.toggleThemeButton}>
@@ -243,9 +243,9 @@ export default function App() {
               <Route path="blog" element={<Blog />} />
             </Routes>
           </Router>
-          <ScrollUpButton />
+          <ScrollToTop />
           <Footer isDarkTheme={theme === darkTheme} />
-        </Grid>
+        </Box>
         {rainbow ? <footer style={styles.footerRoot} /> : null}
       </ThemeProvider>
     </StyledEngineProvider>

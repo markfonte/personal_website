@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TicTacToeBoard from './TicTacToeBoard';
-import { Typography, Button, Grid, Tooltip, Box } from '@mui/material';
+import { Typography, Button, Tooltip, Box } from '@mui/material';
 
 const styles = {
   moveList: {
@@ -95,11 +95,11 @@ export default function TicTacToeGame() {
   }
 
   return (
-    <Grid sx={styles.game}>
-      <Grid sx={styles.gameBoard}>
+    <Box sx={styles.game}>
+      <Box sx={styles.gameBoard}>
         <TicTacToeBoard squares={current.squares} onClick={handleClick} />
-      </Grid>
-      <Grid sx={styles.gameInfo}>
+      </Box>
+      <Box sx={styles.gameInfo}>
         <Box>
           <Typography variant="subtitle1" color={xIsNext ? 'secondary' : 'primary'}>
             {' '}
@@ -116,7 +116,7 @@ export default function TicTacToeGame() {
         ) : (
           <p />
         )}
-      </Grid>
-    </Grid>
+      </Box>
+    </Box>
   );
 };

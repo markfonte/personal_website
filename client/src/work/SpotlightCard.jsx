@@ -141,7 +141,9 @@ export default function SpotlightCard() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               This startup came from a{" "}
               <Link color="secondary" href={psych223Link}>
                 class project
@@ -152,7 +154,9 @@ export default function SpotlightCard() {
               sorority girls as they were trying to find which sorority they
               wanted to join.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We built an{" "}
               <Link color="secondary" href={androidLink}>
                 Android
@@ -186,7 +190,9 @@ export default function SpotlightCard() {
               </Link>
               .
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               There were lots of fun technical challenges in this project, like
               using{" "}
               <Link color="secondary" href={snapshotListenersLink}>
@@ -212,7 +218,9 @@ export default function SpotlightCard() {
               style={styles.screenshot}
               alt="Spotlight screenshot 3"
             />
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We worked on this project for a long time and built a successful
               MVP (minimum viable product) and more. Unfortunately, we were
               never able to get it off the ground on more than a trial basis
@@ -221,7 +229,9 @@ export default function SpotlightCard() {
               full-fledged Android application from scratch can never be taken
               away!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               View it on
               <Link color="secondary" href={spotlightGithubLink}>
                 {" "}

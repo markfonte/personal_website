@@ -133,7 +133,9 @@ export default function WalklensCard() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               This project was built in my{" "}
               <Link color="secondary" href={eecs441Link}>
                 EECS 441: Mobile App Development for Entrepreneurs
@@ -151,7 +153,9 @@ export default function WalklensCard() {
               this does not always happen so we tried to combat it from the
               technology side.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               WalkLens is able to do all of the work it needs inside the logic
               of the Android application; it does not require a custom backend
               database. Built in{" "}
@@ -194,7 +198,9 @@ export default function WalklensCard() {
               </Link>{" "}
               and much more.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               At the time of writing, it is available on the Google Play Store.
               There are no plans to make an iOS version of WalkLens.
             </Typography>
@@ -213,7 +219,9 @@ export default function WalklensCard() {
               style={styles.screenshot}
               alt="WalkLens screenshot 3"
             />
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               View it on
               <Link color="secondary" href={walklensGithubLink}>
                 {" "}

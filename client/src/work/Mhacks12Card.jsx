@@ -143,7 +143,9 @@ export default function MHacks12Card() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               This project was definitely my favorite hackathon project.{" "}
               <Link color="secondary" href={nathanWebsiteLink}>
                 Nathan
@@ -163,7 +165,9 @@ export default function MHacks12Card() {
               instantly view current events in my area - and our hackathon
               project was born!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Built in{" "}
               <Link color="secondary" href={kotlinLink}>
                 Kotlin
@@ -204,7 +208,9 @@ export default function MHacks12Card() {
               </Link>
               , the ability to add a cover photo and more!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               For this app, we focused on making sure all of the features that
               we completed were done well. For example, we put lots of extra
               time into making sure the &quot;Add Event&quot; flow was as
@@ -212,7 +218,9 @@ export default function MHacks12Card() {
               complete some of our stretch goals. The advantage of this was a
               better user experience at the expense of less features.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               I see the competitive advantage of this app as the fact that
               anyone can post an event. This, in combination with the built-in
               Google Maps view, allows for a <i>location-based </i>
@@ -242,7 +250,9 @@ export default function MHacks12Card() {
               style={styles.screenshot}
               alt="InstEvents screenshot 2"
             />
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We never released the app to the public, the main reason being
               that we were unable to find a reliable, free events API online to
               pull from that could supplement user-entered events. We also did
@@ -251,7 +261,9 @@ export default function MHacks12Card() {
               learned a lot while making a product that we are definitely proud
               of!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               View it on{" "}
               <Link color="secondary" href={instEventsDevpostLink}>
                 Devpost

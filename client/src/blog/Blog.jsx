@@ -43,7 +43,7 @@ const posts = [
         <Typography variant="h5" color="secondary">
           In Government
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ marginBottom: "16px" }}>
           I remember my middle school social studies teacher, Mr. (Rusty)
           Fuller, remarking that “back in [his] day, people used to actually
           talk to each other in our government”. While it was likely just an
@@ -72,16 +72,20 @@ const posts = [
         <Typography variant="h5" color="secondary">
           As Good As Wrong
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           This brings me to one of my fundamental beliefs. I believe that,{" "}
         </Typography>
-        <Typography display={"inline"}>
+        <Typography sx={{
+          display: "inline"
+        }}>
           <b>
             no matter how correct you “actually are”, if you cannot convince
             others that you are “actually right”, you are still wrong.
           </b>
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ marginBottom: "16px" }}>
           <br />
           Some of you might cross your arms and say “well, if you’re right,
           you’re right. That’s what matters!” And therein lies the precise
@@ -92,7 +96,7 @@ const posts = [
           Democrats actions in the impeachment trial:
         </Typography>
         <Typography variant="h6">Pros:</Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ marginBottom: "16px" }}>
           • They were “actually right” based on the evidence (and if you
           disagree with this point, don’t let it distract you from the larger
           message here)
@@ -100,7 +104,9 @@ const posts = [
           “did the right thing” and are walking with the wind
         </Typography>
         <Typography variant="h6">Cons:</Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           • They failed to actually impeach him, even though they were “actually
           right” based on the evidence
           <br />
@@ -134,24 +140,36 @@ const posts = [
           them! I’m done trying to negotiate with the enemy.” Or we can pick
           ourselves up, take the harder path and start figuring out how to{" "}
         </Typography>
-        <Typography display={"inline"}>
+        <Typography sx={{
+          display: "inline"
+        }}>
           <b>listen</b>
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           {" "}
           to the other side. How to{" "}
         </Typography>
-        <Typography display={"inline"}>
+        <Typography sx={{
+          display: "inline"
+        }}>
           <b>understand</b>
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           {" "}
           where they are coming from. How to{" "}
         </Typography>
-        <Typography display={"inline"}>
+        <Typography sx={{
+          display: "inline"
+        }}>
           <b>compromise</b>
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           .
           <br />
           <br />
@@ -168,15 +186,21 @@ const posts = [
         <Typography variant="h5" color="secondary">
           The Harder Path
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           I choose to follow a different path. I believe that refusing to
           listen, understand, debate, and compromise with people who disagree
           with you{" "}
         </Typography>
-        <Typography display={"inline"}>
+        <Typography sx={{
+          display: "inline"
+        }}>
           <b>is an admission that you’ve lost</b>
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           {" "}
           before you even begin. It’s an admission that either your ideas aren’t
           as perfect as you think they are, or you have given up on the ability
@@ -232,7 +256,9 @@ const posts = [
         <Typography variant="h5" color="secondary">
           Call to Action
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           Of course, to sit and talk to people who disagree with you is the
           tougher path. To open yourself up for criticism is the tougher path.
           To seek to understand is the tougher path. To be open to compromise is
@@ -247,10 +273,14 @@ const posts = [
           give up on them. On us. And I will not give up. When John Lewis and
           Nelson Mandela discussed their freedom struggles, they emphasized how{" "}
         </Typography>
-        <Typography display={"inline"}>
+        <Typography sx={{
+          display: "inline"
+        }}>
           <b>both the oppressors and the oppressed are prisoners to society</b>
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           . How any human that oppresses another human is a prisoner just the
           same. Do not let their words fall on deaf ears.
           <br />
@@ -271,14 +301,21 @@ const posts = [
           The path of listening, understanding and compromising is tough. But at
           least it’s{" "}
         </Typography>
-        <Typography display={"inline"}>
+        <Typography sx={{
+          display: "inline"
+        }}>
           <b>tough together</b>
         </Typography>
-        <Typography variant="body1" display={"inline"}>
+        <Typography variant="body1" sx={{
+          display: "inline"
+        }}>
           {" "}
           instead of{" "}
         </Typography>
-        <Typography display={"inline"} paragraph>
+        <Typography sx={{
+          display: "inline",
+          marginBottom: "16px"
+        }}>
           <b>easy apart.</b>
         </Typography>
         <br />
@@ -309,7 +346,7 @@ const posts = [
         <Typography variant="h5" color="secondary">
           Companies Looking Out For Their Own Best Interests, Part One
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ marginBottom: "16px" }}>
           Employment contracts in the United States in 2020 are almost
           exclusively “employee-at-will.” Meaning, if the employee wants to quit
           at any point, they are free to do so. If the employer wants to let the
@@ -334,7 +371,7 @@ const posts = [
         <Typography variant="h5" color="secondary">
           “Exploding Offers” & The Stigma Around Reneging
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ marginBottom: "16px" }}>
           Different companies can have very different recruitment schedules -
           you might apply for a company that offers you an interview a full two
           months later. For anyone who receives multiple job offers, it stands
@@ -444,7 +481,7 @@ const posts = [
         <Typography variant="h5" color="secondary">
           Companies Looking Out For Their Own Best Interests, Part Two
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ marginBottom: "16px" }}>
           Employers benefit from being the ones to set the terms in these
           employment negotiations. If I was a little more short-sighted or if I
           decided that I was morally against reneging, I would have either 1)
@@ -525,7 +562,7 @@ const posts = [
         <Typography variant="h5" color="secondary">
           Shifting The Blame To Employees
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ marginBottom: "16px" }}>
           One of the biggest issues I have is the tendency for us to shift the
           blame back to the employees. I believe that chastising your friend for
           reneging isn’t just incorrect; it’s morally wrong. It allows the
@@ -633,7 +670,7 @@ export default function Blog() {
           Link copied to clipboard!
         </Alert>
       </Snackbar>
-      <Typography sx={styles.title} variant="h6" paragraph>
+      <Typography sx={styles.title} variant="h6">
         Welcome! Here are some of my thoughts on issues that I find important.
         <br />
         Disagreements and discussions are highly encouraged 😊
@@ -681,7 +718,7 @@ export default function Blog() {
                     <Typography
                       variant="caption"
                       color="textSecondary"
-                      paragraph
+                      sx={{ marginBottom: "16px" }}
                     >
                       {"* Disclaimer: " + post.disclaimer + " *"}
                     </Typography>
@@ -689,7 +726,7 @@ export default function Blog() {
                     ""
                   )}
                   {post.body}
-                  <Typography variant="caption" color="textSecondary" paragraph>
+                  <Typography variant="caption" color="textSecondary" sx={{ marginBottom: "16px" }}>
                     <i>{post.lastUpdated}</i>
                   </Typography>
                 </CardContent>

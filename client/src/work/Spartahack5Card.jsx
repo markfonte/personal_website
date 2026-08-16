@@ -148,7 +148,9 @@ export default function Spartahack5Card() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               This hackathon project, <i>Laughable Lyrics</i>, is one of my
               favorites. We took inspiration from the popular{" "}
               <Link color="secondary" href={googleTranslateSingsLink}>
@@ -158,14 +160,18 @@ export default function Spartahack5Card() {
               song lyrics to a bunch of different languages, then back to
               English.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               As you can see in the screenshots below, users could type in the
               name of any song, use the slider to select how many translations
               to make before translating back to English (the more translations,
               the wackier the result), and tap on the song they wanted to
               translate! The results were always hilarious.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We built the{" "}
               <Link color="secondary" href={androidLink}>
                 Android
@@ -209,7 +215,9 @@ export default function Spartahack5Card() {
               </Link>{" "}
               database.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               <i>Laughable Lyrics</i> was a very lighthearted app, just meant
               for a little entertainment and a few laughs. Unfortunately, the
               Google Translate API has some steep pricing on their usage and
@@ -231,16 +239,22 @@ export default function Spartahack5Card() {
               style={styles.mobileScreenshot}
               alt="Laughable Lyrics Screenshot 3"
             />
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We won
-              <Typography color="secondary" display="inline">
+              <Typography color="secondary" sx={{
+                display: "inline"
+              }}>
                 {" "}
                 <b>
                   <i>Most Creative/Funniest Hack</i>
                 </b>
               </Typography>{" "}
               and a{" "}
-              <Typography color="secondary" display="inline">
+              <Typography color="secondary" sx={{
+                display: "inline"
+              }}>
                 <b>
                   <i>Top 10 finish</i>
                 </b>
@@ -248,7 +262,9 @@ export default function Spartahack5Card() {
               for the project. We were never able to push it to production due
               to the rate limiting issue with the Google Translate API.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               View it on{" "}
               <Link color="secondary" href={laughableLyricsDevpostLink}>
                 Devpost

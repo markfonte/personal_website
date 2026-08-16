@@ -150,7 +150,9 @@ export default function SammyCard() {
                   <Typography variant="subtitle1">
                     {"📅 " + article.date}
                   </Typography>
-                  <Typography variant="body1" paragraph>
+                  <Typography variant="body1" sx={{
+                    marginBottom: "16px"
+                  }}>
                     {article.blurb}{" "}
                     <Link href={article.link} underline="hover">
                       […]

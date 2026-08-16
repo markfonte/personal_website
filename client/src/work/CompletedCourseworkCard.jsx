@@ -234,17 +234,23 @@ export default function CompletedCourseworkCard() {
                     variant="subtitle1"
                     color="textPrimary"
                     href={course.link}
-                    display={"block"}
+                    sx={{
+                      display: "block"
+                    }}
                   >
                     <Typography
                       color="secondary"
                       variant="h6"
-                      display={"inline"}
+                      sx={{
+                        display: "inline"
+                      }}
                     >
                       {course.subject}
                     </Typography>
                     :
-                    <Typography color="textSecondary" display={"inline"}>
+                    <Typography color="textSecondary" sx={{
+                      display: "inline"
+                    }}>
                       <i>{" " + course.name}</i>
                     </Typography>
                   </Link>

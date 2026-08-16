@@ -130,7 +130,9 @@ export default function DoggieDoodlesCard() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Started from a class project, this business sold custom
               merchandise using a digital drawing of your animal. We would take
               a picture of pets and turn it into custom digital drawings, then
@@ -151,7 +153,9 @@ export default function DoggieDoodlesCard() {
             />
             <br />
             <br />
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Send a picture of your animal to
               <Link color="secondary" href={doggieDoodlesEmailLink}>
                 {" "}
@@ -159,7 +163,9 @@ export default function DoggieDoodlesCard() {
               </Link>
               to get started!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               View the
               <Link color="secondary" href={doggieDoodlesWebsiteLink}>
                 {" "}
