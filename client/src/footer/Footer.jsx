@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import reactLogo from "../static/logos/react_logo.svg";
 import universityOfMichiganLogoSmall from "../static/logos/university_of_michigan_logo_small.svg";
-import moment from "moment";
 import { Typography, Link, Tooltip, Button, Box } from "@mui/material";
 import timestamp from "../CommitTimestamp.js";
 import facebookLogo from "../static/logos/facebook_logo.svg";
@@ -17,8 +16,39 @@ import twitterLogo from "../static/logos/twitter_logo.svg";
 import PropTypes from "prop-types";
 
 const HEARTBEAT_INTERVAL = 30000;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+const relativeTimeFormat = new Intl.RelativeTimeFormat("en", {
+  numeric: "auto",
+});
+const RELATIVE_DIVISIONS = [
+  { amount: 60, unit: "second" },
+  { amount: 60, unit: "minute" },
+  { amount: 24, unit: "hour" },
+  { amount: 7, unit: "day" },
+  { amount: 4.34524, unit: "week" },
+  { amount: 12, unit: "month" },
+  { amount: Number.POSITIVE_INFINITY, unit: "year" },
+];
 
-const ohio_timestamp = "2019-11-30T12:30:00.000Z";
+function daysAgo(isoTimestamp) {
+  const diffInDays = Math.floor(
+    (Date.now() - new Date(isoTimestamp).getTime()) / MS_PER_DAY,
+  );
+  return `${diffInDays} days ago`;
+}
+
+function fromNow(isoTimestamp) {
+  let duration = (new Date(isoTimestamp).getTime() - Date.now()) / 1000;
+  for (const { amount, unit } of RELATIVE_DIVISIONS) {
+    if (Math.abs(duration) < amount) {
+      return relativeTimeFormat.format(Math.round(duration), unit);
+    }
+    duration /= amount;
+  }
+  return relativeTimeFormat.format(Math.round(duration), "year");
+}
+
+const ohio_timestamp = "2025-11-29T12:30:00.000Z";
 
 const facebookLink = `https://www.facebook.com/mark.fonte.397`;
 const githubLink = `https://github.com/markfonte`;
@@ -31,7 +61,7 @@ const stackOverflowLink = `https://stackoverflow.com/users/8266770/mark-fonte`;
 const commitHistoryLink = `https://github.com/markfonte/personal_website/commits/main`;
 const spotifyLink = `https://open.spotify.com/artist/5rVdyxve8VvmsgT3HSWB1a`;
 const michiganClockLink = `https://x.com/MichiganClock`;
-const twitterLink = `https://x.com/mark_fonte21`;
+const twitterLink = `https://x.com/markfonte`;
 
 const buttons = [
   {
@@ -79,7 +109,7 @@ const buttons = [
 
 const badges = [
   {
-    url: "https://img.shields.io/maintenance/yes/2025",
+    url: "https://img.shields.io/maintenance/yes/2026",
   },
   {
     url: "https://img.shields.io/uptimerobot/ratio/m783268782-cdf759be1e3aff1f04fa698e",
@@ -162,13 +192,6 @@ export default function Footer({ isDarkTheme }) {
         console.error(err);
       });
   };
-  const displayInDays = (timestamp) => {
-    const now = moment();
-    const date = moment(timestamp);
-    const diffInDays = now.diff(date, "days");
-    return `${diffInDays} days ago`;
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
       checkForAPIHeartbeat();
@@ -225,7 +248,7 @@ export default function Footer({ isDarkTheme }) {
           Ohio State last beat Michigan{" "}
           <Tooltip arrow placement="right" title="">
             <Link color="secondary" href={michiganClockLink}>
-              {displayInDays(ohio_timestamp)}
+              {daysAgo(ohio_timestamp)}
             </Link>
           </Tooltip>
         </Typography>
@@ -241,7 +264,7 @@ export default function Footer({ isDarkTheme }) {
             title="see most recent commit on GitHub"
           >
             <Link color="secondary" href={commitHistoryLink}>
-              {moment(timestamp).fromNow()}
+              {fromNow(timestamp)}
             </Link>
           </Tooltip>
         </Typography>

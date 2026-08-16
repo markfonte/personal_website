@@ -325,6 +325,7 @@ gradle-app.setting
 
 # production
 /build
+dist/
 
 # misc
 .DS_Store
