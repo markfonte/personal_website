@@ -134,7 +134,9 @@ const Grizzhacks3Card = () => {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               GrizzHacks 3 was the first hackathon I ever competed in. We built
               an online store where users could buy and sell pre-trained machine
               learning models. While we did not completely finish, users could
@@ -142,7 +144,9 @@ const Grizzhacks3Card = () => {
               models that others had posted, buy them, and even test them out
               in-store before purchasing!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We built the web store using{" "}
               <Link color="secondary" href={vueLink}>
                 Vue.js
@@ -168,28 +172,38 @@ const Grizzhacks3Card = () => {
               style={styles.mobileScreenshot}
               alt="Congo AI screenshot 1"
             />
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               We won{" "}
-              <Typography color="secondary" display="inline">
+              <Typography color="secondary" sx={{
+                display: "inline"
+              }}>
                 <b>
                   <i>Best DevOps Hack, Presented by Ally Financial</i>
                 </b>
               </Typography>
               ,{" "}
-              <Typography color="secondary" display="inline">
+              <Typography color="secondary" sx={{
+                display: "inline"
+              }}>
                 <b>
                   <i>Best use of Dynatrace</i>
                 </b>
               </Typography>
               , and a{" "}
-              <Typography color="secondary" display="inline">
+              <Typography color="secondary" sx={{
+                display: "inline"
+              }}>
                 <b>
                   <i>Top 10 finish</i>
                 </b>
               </Typography>
               .
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               View it on{" "}
               <Link color="secondary" href={grizzhacks3DevpostLink}>
                 Devpost

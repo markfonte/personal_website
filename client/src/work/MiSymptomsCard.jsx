@@ -143,7 +143,9 @@ export default function MISymptomsCard() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               I was asked to join this project, along with many others from the{" "}
               <Link color="secondary" href={universityOfMichiganLink}>
                 University of Michigan
@@ -201,7 +203,9 @@ export default function MISymptomsCard() {
               title="MI Symptoms screenshot 3"
               alt="MI Symptoms screenshot 3"
             />
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               As testing team lead, I was responsible for the day-to-day
               operations of the testing team. This was another great opportunity
               to improve on my leadership skills, especially with the added
@@ -267,7 +271,9 @@ export default function MISymptomsCard() {
               help the product become as robust as possible, as quickly as
               possible.
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               I am so thankful for this experience. In my opinion, the most
               special part about the project was the way that everyone came
               together and sacrificed their time and energy out of the goodness

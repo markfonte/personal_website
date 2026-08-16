@@ -136,12 +136,16 @@ export default function TeslaCard() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               <i>
                 ** note: my current work information is likely out of date **
               </i>
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               I am the software engineering team lead for the{" "}
               <b>Toolbox team</b> and all of its features and customers. The
               Toolbox web application is the primary tool used by technicians
@@ -155,10 +159,17 @@ export default function TeslaCard() {
               a huge honor and pleasure to work with such a talented team. Much
               more to come!
             </Typography>
-            <Typography variant="body1" sx={{ textAlign: "left" }} paragraph>
+            <Typography
+              variant="body1"
+              sx={{
+                textAlign: "left",
+                marginBottom: "16px"
+              }}>
               Previously at Tesla, I worked on two pods within the same team:
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               On the <b>Service & Roadside mobile app pod</b> I worked mostly on
               features in the &#34;Service&#34; section of the customer-facing
               mobile app. These features include the ability to schedule a
@@ -173,7 +184,9 @@ export default function TeslaCard() {
                 improvements each release
               </Link>
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               On the <b>on-vehicle diagnostics pod</b> I developed on-vehicle
               diagnostics firmware and center display UI development for Tesla
               vehicles in the Service Engineering organization. This involved
@@ -187,7 +200,12 @@ export default function TeslaCard() {
               for Tesla Service technicians, independent repairers and
               customers. It&#39;s a blast! ⚡️🚗
             </Typography>
-            <Typography variant="body1" sx={{ textAlign: "left" }} paragraph>
+            <Typography
+              variant="body1"
+              sx={{
+                textAlign: "left",
+                marginBottom: "16px"
+              }}>
               <b>Some of my responsibilities include / have included:</b>
               <br />
               · Leading the Toolbox software team and all of its features

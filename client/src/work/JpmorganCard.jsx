@@ -139,7 +139,9 @@ export default function JPMorganCard() {
             <Typography variant="h5" gutterBottom>
               Summer 2019
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               I worked at{" "}
               <Link color="secondary" href={jpmorganLink}>
                 J.P. Morgan Chase

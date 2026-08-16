@@ -359,7 +359,9 @@ export default function NewsCard({ isDarkTheme }) {
                   <Typography variant="subtitle1">
                     {"📅 " + article.date}
                   </Typography>
-                  <Typography variant="body1" paragraph>
+                  <Typography variant="body1" sx={{
+                    marginBottom: "16px"
+                  }}>
                     {article.isQuote ? (
                       <i>&quot;{article.blurb}&quot;</i>
                     ) : (
@@ -400,7 +402,9 @@ export default function NewsCard({ isDarkTheme }) {
                           </Typography>
                         </AccordionSummary>
                         <AccordionDetails sx={{ padding: "0 16px 16px" }}>
-                          <Typography variant="body2" color="text.secondary">
+                          <Typography variant="body2" sx={{
+                            color: "text.secondary"
+                          }}>
                             {article.relationship}
                           </Typography>
                         </AccordionDetails>
@@ -429,7 +433,9 @@ export default function NewsCard({ isDarkTheme }) {
                   <Typography variant="subtitle1">
                     {"📅 " + article.date}
                   </Typography>
-                  <Typography variant="body1" paragraph>
+                  <Typography variant="body1" sx={{
+                    marginBottom: "16px"
+                  }}>
                     {article.isQuote ? (
                       <i>&quot;{article.blurb}&quot;</i>
                     ) : (
@@ -470,7 +476,9 @@ export default function NewsCard({ isDarkTheme }) {
                           </Typography>
                         </AccordionSummary>
                         <AccordionDetails sx={{ padding: "0 16px 16px" }}>
-                          <Typography variant="body2" color="text.secondary">
+                          <Typography variant="body2" sx={{
+                            color: "text.secondary"
+                          }}>
                             {article.relationship}
                           </Typography>
                         </AccordionDetails>

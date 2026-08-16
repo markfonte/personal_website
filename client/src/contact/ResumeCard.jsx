@@ -31,6 +31,7 @@ const styles = {
   resumeText: {
     textAlign: "left",
     margin: "8px",
+    marginBottom: "16px",
   },
   root: {
     display: "flex",
@@ -82,7 +83,7 @@ export default function ResumeCard() {
           </AccordionSummary>
           <AccordionDetails sx={{ padding: 0 }}>
             <CardContent sx={{ padding: 0 }}>
-              <Typography paragraph sx={styles.resumeText}>
+              <Typography sx={styles.resumeText}>
                 · I have never drank a cup of coffee
                 <br />
                 · I have never drank an energy drink

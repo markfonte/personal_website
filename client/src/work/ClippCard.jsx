@@ -133,7 +133,9 @@ export default function ClippCard() {
         </AccordionSummary>
         <AccordionDetails>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Clipp is a mobile application startup for trading pre-owned items
               without any monetary exchange. The idea is that you can post items
               on a virtual market that you would would like to exchange, then
@@ -145,14 +147,18 @@ export default function ClippCard() {
               football game. If we both wanted the other item, we could meet up
               to exchange!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Users could upload items that they would like to trade, then
               &quot;swipe&quot; on items they would trade each item for. If two
               people &quot;swipe right&quot; on each other&apos;s items, they
               got matched in a custom messenger where they could coordinate a
               meeting to exchange items. No money involved!
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               Our 6-person development team from the
               <Link color="secondary" href={universityOfMichiganLink}>
                 {" "}
@@ -201,11 +207,15 @@ export default function ClippCard() {
               alt="Clipp wireframe screenshot 3"
             />
             <br />
-            <Typography variant="caption" paragraph>
+            <Typography variant="caption" sx={{
+              marginBottom: "16px"
+            }}>
               (note: these are just wireframes, not actual screenshots from the
               mobile application)
             </Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="body1" sx={{
+              marginBottom: "16px"
+            }}>
               After successfully launching the beta application, we found less
               excitement for it than we had hoped for. Since we launched the
               beta app to University of Michigan students, part of the issue may
@@ -216,7 +226,9 @@ export default function ClippCard() {
               &quot;failed&quot; beta test, citing a lack of user interest. I
               maintain my disagreement with that conclusion.
             </Typography>
-            <Typography variant="body2" paragraph>
+            <Typography variant="body2" sx={{
+              marginBottom: "16px"
+            }}>
               For what it&apos;s worth, I think that React Native is still far
               behind native mobile development at this point. We ran into
               countless issues with JavaScript and with different parts of the

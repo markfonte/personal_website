@@ -54,7 +54,7 @@ export default function Work({ isDarkTheme }) {
 
   return (
     <Box sx={styles.root}>
-      <Typography sx={styles.title} variant="h6" paragraph>
+      <Typography sx={styles.title} variant="h6">
         My full time jobs, internships, side projects, hackathon projects and
         schooling
       </Typography>
