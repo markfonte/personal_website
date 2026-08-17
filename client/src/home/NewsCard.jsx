@@ -31,6 +31,7 @@ import newsArticle14 from "../static/photos/news_article_14.webp";
 import newsArticle15 from "../static/photos/news_article_15.webp";
 import newsArticle16 from "../static/photos/news_article_16.webp";
 import newsArticle17 from "../static/photos/news_article_17.webp";
+import newsArticle19b from "../static/photos/news_article_19b.webp";
 import PropTypes from "prop-types";
 
 import LikeButton from "../shared/LikeButton";
@@ -43,24 +44,37 @@ import twitterLogo from "../static/logos/twitter_logo.svg";
 
 const highlightedArticles = [
   {
-    id: 16,
+    id: 18,
     title: "I'm hiring!",
-    link: "https://www.linkedin.com/posts/mark-fonte_backend-engineer-diagnostics-vehicle-software-activity-7378258360573489152-symS",
-    date: "October 5, 2025",
+    link: "https://www.linkedin.com/posts/mark-fonte_backend-engineer-toolbox-diagnostics-vehicle-activity-7494182355264475136-3RCT",
+    date: "August 15, 2026",
     cover: (
       <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7378258359910633473"
+        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7494182355264475136"
         style={{ height: 520, maxWidth: 377, width: "100%" }}
         allowFullScreen
         frameBorder="0"
         title="Mark Fonte's job posting"
       />
     ),
-    blurb: `Come join my team 🫡`,
+    blurb: `Come join our team 🫡`,
+    relationship: "I am the team lead for the Tesla Toolbox software team",
     isQuote: false,
     isEmbedded: true,
-    relationship: "I am the team lead and hiring manager for these positions",
   },
+  {
+    id: 19,
+    title: "Tesla diagnostics — next-level vehicle access",
+    date: "June 5, 2026",
+    link: "https://www.vehicleservicepros.com/service-repair/diagnostics-and-drivability/blog/55379378/tesla-diagnostics-next-level-vehicle-access",
+    cover: newsArticle19b,
+    blurb: `Tesla's Toolbox platform offers advanced remote diagnostics, allowing technicians to remotely access vehicle data, pull logs, run Autodiag routines, and even activate Service Mode Plus after owner authorization.`,
+    isQuote: true,
+    relationship: "I am the team lead for the Tesla Toolbox software team",
+  },
+];
+
+const articles = [
   {
     id: 17,
     title: "InsideEVs' Toolbox breakdown",
@@ -71,9 +85,6 @@ const highlightedArticles = [
     isQuote: true,
     relationship: "I am the team lead for the Tesla Toolbox software team",
   },
-];
-
-const articles = [
   {
     id: 16,
     title: "Maintenance Summary feature",
@@ -401,7 +412,7 @@ export default function NewsCard({ isDarkTheme }) {
                           }}
                         >
                           <Typography variant="button" color="primary">
-                            Why is this relevant to me?
+                            More details
                           </Typography>
                         </AccordionSummary>
                         <AccordionDetails sx={{ padding: "0 16px 16px" }}>

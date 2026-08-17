@@ -12,6 +12,12 @@
   align-self: center;
 }
 
+.MuiMasonry-root {
+  width: 100%;
+  max-width: 1848px;
+  margin: 0 auto;
+}
+
 .gone {
   display: none;
 }
@@ -74,6 +80,28 @@
 
 .card-header {
   padding: 0 !important;
+  text-align: center;
+}
+
+:is(.large-card, .small-card) .MuiAccordionSummary-root {
+  position: relative;
+}
+
+:is(.large-card, .small-card) .MuiAccordionSummary-content {
+  margin: 0 !important;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+:is(.large-card, .small-card) .MuiAccordionSummary-content > .MuiBox-root {
+  width: 100%;
+}
+
+:is(.large-card, .small-card) .MuiAccordionSummary-expandIconWrapper {
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
 
 /* Global */

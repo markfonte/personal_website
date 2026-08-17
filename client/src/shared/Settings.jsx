@@ -1,25 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { Card, Typography, Switch, Tooltip, Snackbar, Alert, CardHeader, Box } from '@mui/material';
+import React, { useState, useEffect } from "react";
+import {
+  Card,
+  Typography,
+  Switch,
+  Tooltip,
+  Snackbar,
+  Alert,
+  CardHeader,
+  Box,
+} from "@mui/material";
 
-import { getCookie, setCookie } from './util/Cookies.js';
+import { getCookie, setCookie } from "./util/Cookies.js";
 
 const styles = {
   flatCard: {
-    padding: '12px',
-    margin: '8px',
+    padding: "12px",
+    margin: "8px",
   },
   switchContent: {
-    display: 'flex',
-    flexDirection: 'row',
-    margin: '8px',
-    width: '100%',
-    justifyContent: 'space-between',
+    display: "flex",
+    flexDirection: "row",
+    margin: "8px",
+    width: "100%",
+    justifyContent: "space-between",
   },
   switchTitle: {
-    alignSelf: 'center',
+    alignSelf: "center",
   },
   switch: {
-    alignSelf: 'flex-end',
+    alignSelf: "flex-end",
   },
 };
 
@@ -28,23 +37,23 @@ export default function Settings() {
   const [ads, setAds] = useState(false);
 
   useEffect(() => {
-    if (getCookie('rainbow') === 'true') {
+    if (getCookie("rainbow") === "true") {
       setRainbow(true);
-    } else if (getCookie('rainbow') === 'false') {
+    } else if (getCookie("rainbow") === "false") {
       setRainbow(false);
     } else {
       setRainbow(false);
-      setCookie('rainbow', 'false', 1000);
+      setCookie("rainbow", "false", 1000);
     }
   }, []);
 
   const handleRainbowChange = () => {
     if (!rainbow) {
       setRainbow(true);
-      setCookie('rainbow', 'true', 1000);
+      setCookie("rainbow", "true", 1000);
     } else {
       setRainbow(false);
-      setCookie('rainbow', 'false', 1000);
+      setCookie("rainbow", "false", 1000);
     }
     window.location.reload();
   };
@@ -56,7 +65,7 @@ export default function Settings() {
   };
 
   const handleAdsSnackbarClose = (_, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
     setAds(false);
@@ -64,22 +73,23 @@ export default function Settings() {
 
   return (
     <Card sx={styles.flatCard}>
-      <CardHeader
-        className="card-header"
-        title="Settings"
-      />
+      <CardHeader className="card-header" title="Settings" />
       <Box sx={styles.switchContent}>
         <Typography sx={styles.switchTitle} variant="subtitle1">
-          rainbow mode
+          colorful mode
         </Typography>
-        <Tooltip placement="right" arrow title={rainbow ? "turn off 🌈 mode" : "turn on 🌈 mode"}>
+        <Tooltip
+          placement="right"
+          arrow
+          title={rainbow ? "turn off 🌈 mode" : "turn on 🌈 mode"}
+        >
           <Switch
             checked={rainbow}
             onClick={handleRainbowChange}
             sx={styles.switch}
             color="secondary"
             slotProps={{
-              input: { 'aria-label': 'primary checkbox' }
+              input: { "aria-label": "primary checkbox" },
             }}
           />
         </Tooltip>
@@ -95,7 +105,7 @@ export default function Settings() {
             sx={styles.switch}
             color="secondary"
             slotProps={{
-              input: { 'aria-label': 'primary checkbox' }
+              input: { "aria-label": "primary checkbox" },
             }}
           />
         </Tooltip>
@@ -103,7 +113,8 @@ export default function Settings() {
       <Snackbar
         open={ads}
         autoHideDuration={4000}
-        onClose={handleAdsSnackbarClose}>
+        onClose={handleAdsSnackbarClose}
+      >
         <Alert
           onClose={handleAdsSnackbarClose}
           severity="success"
@@ -112,6 +123,6 @@ export default function Settings() {
           Just kidding! I don&#39;t have ads. Thanks for the support though 🙂
         </Alert>
       </Snackbar>
-    </Card >
+    </Card>
   );
-};
+}
