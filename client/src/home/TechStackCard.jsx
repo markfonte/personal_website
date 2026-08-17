@@ -65,6 +65,8 @@ const tags = [
 const styles = {
   techStackWrapper: {
     overflowX: "auto",
+    width: "100%",
+    textAlign: "center",
   },
   cardContent: {
     display: "flex",

@@ -139,19 +139,12 @@ export default function TeslaCard() {
             <Typography variant="body1" sx={{
               marginBottom: "16px"
             }}>
-              <i>
-                ** note: my current work information is likely out of date **
-              </i>
-            </Typography>
-            <Typography variant="body1" sx={{
-              marginBottom: "16px"
-            }}>
               I am the software engineering team lead for the{" "}
-              <b>Toolbox team</b> and all of its features and customers. The
-              Toolbox web application is the primary tool used by technicians
-              (Tesla and external) to diagnose and repair Tesla vehicles. It has
-              a rich feature set including the ability to connect to vehicles
-              over the air or via a wired connection, run diagnostic tests, view
+              <b>Toolbox team</b> and product. The Toolbox web application is
+              the primary tool used by technicians (Tesla and external) to
+              diagnose and repair Tesla vehicles and Optimus robots. It has a
+              rich feature set including the ability to connect to vehicles over
+              the air or via a wired connection, run diagnostic tests, view
               vehicle data and logs, perform guided troubleshooting, talk to a
               custom chatbot, and much more. It is used by thousands of
               technicians worldwide and is a critical tool for Tesla Service,
@@ -208,7 +201,8 @@ export default function TeslaCard() {
               }}>
               <b>Some of my responsibilities include / have included:</b>
               <br />
-              · Leading the Toolbox software team and all of its features
+              · Leading the Toolbox software team and its diagnostics work for
+              Tesla vehicles and Optimus
               <br />
               · Co-owning Service & Roadside features in the customer-facing
               mobile app
