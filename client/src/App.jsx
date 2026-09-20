@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 import profilePicture
   from './static/photos/mark_circle.svg';
+import weddingProfile from './static/photos/wedding_profile.webp';
 import WorkPage from './work/Work.jsx';
 import ContactPage from './contact/Contact.jsx';
 import HomePage from './home/Home.jsx';
 import Blog from './blog/Blog.jsx';
+import Wedding, { WeddingHome, WeddingSection } from './wedding/Wedding.jsx';
+import { weddingPages } from './wedding/WeddingNav.jsx';
 import Footer from './footer/Footer.jsx';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
-import { LightMode, DarkMode, Home, Computer, Call } from '@mui/icons-material';
+import { LightMode, DarkMode, Home, Computer, Call, Wc, Logout } from '@mui/icons-material';
 import {
   Typography,
   Tabs,
@@ -20,14 +23,127 @@ import {
   IconButton,
 } from '@mui/material';
 import ScrollToTop from './shared/ScrollToTop.jsx';
+import PropTypes from 'prop-types';
 
 import { setCookie, getCookie } from './shared/util/Cookies.js';
+import { isWeddingPath, weddingRequest } from './wedding/api.js';
 
-const routes = [
-  { name: 'Home', path: '/', index: 0, icon: <Home /> },
-  { name: 'Work', path: '/work', index: 1, icon: <Computer /> },
-  { name: 'Contact', path: '/contact', index: 2, icon: <Call /> },
+const baseRoutes = [
+  { name: 'Home', path: '/', icon: <Home /> },
+  { name: 'Work', path: '/work', icon: <Computer /> },
+  { name: 'Contact', path: '/contact', icon: <Call /> },
 ];
+
+const weddingRoute = { name: 'Wedding', path: '/ellie', icon: <Wc /> };
+
+function navIndex(pathname, routes) {
+  return routes.findIndex((route) => {
+    if (route.path === '/') {
+      return pathname === '/' || pathname === '/home';
+    }
+    return pathname === route.path;
+  });
+}
+
+function PrimaryNav({ showWedding, theme }) {
+  const location = useLocation();
+  if (isWeddingPath(location.pathname)) {
+    return null;
+  }
+  const routes = showWedding ? [...baseRoutes, weddingRoute] : baseRoutes;
+  const currentlySelected = navIndex(location.pathname, routes);
+
+  return (
+    <nav style={styles.primaryNav}>
+      <Tabs
+        value={currentlySelected === -1 ? false : currentlySelected}
+        onChange={() => {}}
+        indicatorColor="secondary"
+      >
+        {routes.map((route) => (
+          <Tooltip key={route.name} title={'Navigate to ' + route.name} arrow>
+            <Tab
+              component={Link}
+              to={route.path}
+              label={route.name}
+              sx={{
+                '&.Mui-selected': {
+                  color: theme.palette.secondary.main,
+                  fontWeight: 'bold',
+                },
+              }}
+              icon={route.icon}
+            />
+          </Tooltip>
+        ))}
+      </Tabs>
+    </nav>
+  );
+}
+
+function SiteTitle() {
+  const { pathname } = useLocation();
+  return (
+    <Typography sx={styles.mainTitle} variant="h3">
+      {isWeddingPath(pathname) ? 'Ellie & Mark' : 'Mark Fonte'}
+    </Typography>
+  );
+}
+
+function ProfilePicture({ spinning, onClick }) {
+  const { pathname } = useLocation();
+  const wedding = isWeddingPath(pathname);
+  return (
+    <Tooltip title={spinning ? 'weeeeeeeeeee!!' : 'click me!'} arrow>
+      <img
+        onClick={onClick}
+        src={wedding ? weddingProfile : profilePicture}
+        style={spinning ? styles.profileLogoSpinning : styles.profileLogo}
+        alt={wedding ? 'Ellie and Mark' : 'headshot'}
+      />
+    </Tooltip>
+  );
+}
+
+ProfilePicture.propTypes = {
+  spinning: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
+function TopLeftControls({ isDarkTheme, onToggleTheme }) {
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+  return (
+    <Box sx={styles.topLeftControls}>
+      <Tooltip title={isDarkTheme ? 'enter Light Mode' : 'enter Dark Mode'} arrow>
+        <IconButton onClick={onToggleTheme} sx={styles.cornerButton}>
+          {isDarkTheme ? <LightMode /> : <DarkMode />}
+        </IconButton>
+      </Tooltip>
+      {isWeddingPath(pathname) ? (
+        <Tooltip title="Back to Mark's site" arrow>
+          <IconButton
+            onClick={() => navigate('/')}
+            aria-label="Back to Mark's site"
+            sx={styles.cornerButton}
+          >
+            <Logout />
+          </IconButton>
+        </Tooltip>
+      ) : null}
+    </Box>
+  );
+}
+
+TopLeftControls.propTypes = {
+  isDarkTheme: PropTypes.bool.isRequired,
+  onToggleTheme: PropTypes.func.isRequired,
+};
+
+PrimaryNav.propTypes = {
+  showWedding: PropTypes.bool.isRequired,
+  theme: PropTypes.object.isRequired,
+};
 
 const darkTheme = createTheme({
   palette: {
@@ -81,27 +197,30 @@ const lightTheme = createTheme({
   },
 });
 
+const profileLogo = {
+  height: '100px',
+  width: '100px',
+  alignSelf: 'center',
+  zIndex: 2,
+  borderRadius: '50%',
+  objectFit: 'cover',
+};
+
 const styles = {
   root: {
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    position: 'relative',
     padding: '4px',
+    paddingTop: '28px',
     margin: 'auto',
   },
-  profileLogo: {
-    height: '100px',
-    width: '100px',
-    alignSelf: 'center',
-    zIndex: 2,
-  },
+  profileLogo,
   profileLogoSpinning: {
+    ...profileLogo,
     animation: `react-logo-spin infinite 1s ease-in-out`,
-    height: '100px',
-    width: '100px',
-    alignSelf: 'center',
-    zIndex: 2,
   },
   primaryNav: {
     textAlign: 'center',
@@ -139,18 +258,23 @@ const styles = {
   routerLink: {
     textDecoration: 'none',
   },
-  navTab: {
+  topLeftControls: {
+    position: 'absolute',
+    top: '4px',
+    left: '4px',
+    zIndex: 3,
+    display: 'flex',
+    alignItems: 'center',
   },
-  toggleThemeButton: {
-    padding: '16px',
-    alignSelf: 'flex-start',
+  cornerButton: {
+    padding: '8px',
   },
 };
 
 export default function App() {
   const [theme, setTheme] = useState(lightTheme);
   const [rainbow, setRainbow] = useState(false);
-  const [currentlySelected, setCurrentlySelected] = useState(0);
+  const [showWedding, setShowWedding] = useState(false);
   const [logoSpinning, setLogoSpinning] = useState(false);
 
   const toggleTheme = () => {
@@ -163,23 +287,36 @@ export default function App() {
     }
   }
 
-  const findCurrentRoute = (value) => {
-    if (value.path === window.location.pathname) {
-      setCurrentlySelected(value.index);
-    }
-  }
-
   const profilePictureClicked = () => {
     setLogoSpinning(!logoSpinning);
   }
 
-  const handleTabChange = (event, newValue) => {
-    setCurrentlySelected(newValue);
-  };
+  const revealWeddingNav = useCallback(() => {
+    setShowWedding(true);
+  }, []);
 
   useEffect(() => {
-    routes.forEach(findCurrentRoute);
+    const abortController = new window.AbortController();
+    weddingRequest('content', {
+      method: 'get',
+      signal: abortController.signal,
+    })
+      .then((response) => {
+        if (response.ok) {
+          setShowWedding(true);
+        }
+      })
+      .catch((error) => {
+        if (error.name === 'AbortError' || error.name === 'TypeError') {
+          return;
+        }
+        console.error(error);
+      });
 
+    return () => abortController.abort();
+  }, []);
+
+  useEffect(() => {
     let rainbow = false;
     if (getCookie('rainbow') === 'true') {
       rainbow = true;
@@ -202,38 +339,14 @@ export default function App() {
         <CssBaseline />
         <Box sx={styles.root}>
           {rainbow ? <header style={styles.headerRoot} /> : null}
-          <Tooltip title={theme === darkTheme ? "enter Light Mode" : "enter Dark Mode"} arrow>
-            <IconButton onClick={toggleTheme} sx={styles.toggleThemeButton}>
-              {theme === darkTheme ? <LightMode /> : <DarkMode />}
-            </IconButton>
-          </Tooltip>
           <Router>
-            <Tooltip title={logoSpinning ? 'weeeeeeeeeee!!' : 'click me!'} arrow>
-              <img
-                onClick={profilePictureClicked}
-                srcSet={[profilePicture]}
-                style={logoSpinning ? styles.profileLogoSpinning : styles.profileLogo}
-                alt="headshot"
-              />
-            </Tooltip>
-            <Typography sx={styles.mainTitle} variant="h3">Mark Fonte</Typography>
-            <nav style={styles.primaryNav}>
-              <Tabs value={currentlySelected} onChange={handleTabChange} indicatorColor="secondary">
-                {routes.map((route, _) => (
-                  <Tooltip key={route.name} title={'Navigate to ' + route.name} arrow>
-                    <Tab key={route.name} component={Link} to={route.path} label={route.name}
-                      sx={{
-                        ...styles.navTab,
-                        '&.Mui-selected': {
-                          color: theme.palette.secondary.main,
-                          fontWeight: 'bold',
-                        },
-                      }}
-                      icon={route.icon} />
-                  </Tooltip>
-                ))}
-              </Tabs>
-            </nav>
+            <TopLeftControls
+              isDarkTheme={theme === darkTheme}
+              onToggleTheme={toggleTheme}
+            />
+            <ProfilePicture spinning={logoSpinning} onClick={profilePictureClicked} />
+            <SiteTitle />
+            <PrimaryNav showWedding={showWedding} theme={theme} />
 
             <Routes>
               <Route path="/" exact element={<HomePage isDarkTheme={theme === darkTheme} />} />
@@ -241,10 +354,22 @@ export default function App() {
               <Route path="work" element={<WorkPage isDarkTheme={theme === darkTheme} />} />
               <Route path="contact" element={<ContactPage />} />
               <Route path="blog" element={<Blog />} />
+              <Route path="wedding" element={<Navigate to="/ellie" replace />} />
+              <Route path="ellie" element={<Wedding onAuthenticated={revealWeddingNav} />}>
+                <Route index element={<WeddingHome />} />
+                {weddingPages.filter((page) => page.segment).map((page) => (
+                  <Route
+                    key={page.segment}
+                    path={page.segment}
+                    element={<WeddingSection title={page.name} />}
+                  />
+                ))}
+                <Route path="*" element={<Navigate to="/ellie" replace />} />
+              </Route>
             </Routes>
+            <ScrollToTop />
+            <Footer isDarkTheme={theme === darkTheme} />
           </Router>
-          <ScrollToTop />
-          <Footer isDarkTheme={theme === darkTheme} />
         </Box>
         {rainbow ? <footer style={styles.footerRoot} /> : null}
       </ThemeProvider>

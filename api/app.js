@@ -3,10 +3,19 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var cors = require('cors');
+try {
+  process.loadEnvFile(path.join(__dirname, '.env'));
+} catch (err) {
+  if (err.code !== 'ENOENT' && err.code !== 'ERR_ENOENT') {
+    throw err;
+  }
+}
 var indexRouter = require('./routes/index.js');
 var apiHeartbeatRouter = require('./routes/api_heartbeat.js');
 var likeRouter = require('./routes/like.js');
+var weddingRouter = require('./routes/wedding.js');
 var app = express();
+app.set('trust proxy', 1);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -16,10 +25,14 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors());
+app.use(cors({
+  origin: true,
+  credentials: true,
+}));
 app.use('/api', indexRouter);
 app.use('/api/api_heartbeat', apiHeartbeatRouter);
 app.use('/api/like', likeRouter);
+app.use('/api/wedding', weddingRouter);
 
 // removes 304 error
 app.disable('etag');

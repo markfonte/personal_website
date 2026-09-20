@@ -3,6 +3,8 @@ import "../App.css";
 import reactLogo from "../static/logos/react_logo.svg";
 import universityOfMichiganLogoSmall from "../static/logos/university_of_michigan_logo_small.svg";
 import { Typography, Link, Tooltip, Button, Box } from "@mui/material";
+import { useLocation } from "react-router-dom";
+import { isWeddingPath } from "../wedding/api.js";
 import timestamp from "../CommitTimestamp.js";
 import facebookLogo from "../static/logos/facebook_logo.svg";
 import stackOverflowLogo from "../static/logos/stack_overflow_logo.svg";
@@ -163,6 +165,8 @@ const styles = {
   },
 };
 export default function Footer({ isDarkTheme }) {
+  const { pathname } = useLocation();
+  const hideSocial = isWeddingPath(pathname);
   const [apiResponse, setApiResponse] = useState(true);
   const [serverCrashed, setServerCrashed] = useState(false);
 
@@ -203,23 +207,25 @@ export default function Footer({ isDarkTheme }) {
   return (
     <footer>
       <Box sx={styles.footerContainer}>
-        <Box sx={styles.iconBar}>
-          {buttons.map((button) => (
-            <Tooltip key={button.name} title={`see my ${button.name}`} arrow>
-              <Button href={button.link}>
-                <img
-                  src={
-                    !isDarkTheme && button.logoDark
-                      ? button.logoDark
-                      : button.logo
-                  }
-                  style={styles.button}
-                  alt={`${button.name} button`}
-                />
-              </Button>
-            </Tooltip>
-          ))}
-        </Box>
+        {hideSocial ? null : (
+          <Box sx={styles.iconBar}>
+            {buttons.map((button) => (
+              <Tooltip key={button.name} title={`see my ${button.name}`} arrow>
+                <Button href={button.link}>
+                  <img
+                    src={
+                      !isDarkTheme && button.logoDark
+                        ? button.logoDark
+                        : button.logo
+                    }
+                    style={styles.button}
+                    alt={`${button.name} button`}
+                  />
+                </Button>
+              </Tooltip>
+            ))}
+          </Box>
+        )}
         <Box>
           {apiResponse ? (
             <img src={reactLogo} style={styles.reactLogo} alt="React logo" />

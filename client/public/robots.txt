@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /ellie
+Disallow: /wedding
 
 Sitemap: https://mark.fonte.com/sitemap.xml
