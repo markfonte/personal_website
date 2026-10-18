@@ -22,7 +22,6 @@ import welcomeImageTen from "../static/photos/welcome_photo_10.webp";
 import welcomeImageSeven from "../static/photos/welcome_photo_7.webp";
 import welcomeImageEight from "../static/photos/welcome_photo_8.webp";
 import welcomeImageNine from "../static/photos/welcome_photo_9.webp";
-import welcomeImageEleven from "../static/photos/welcome_photo_11.webp";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PropTypes from "prop-types";
 import LikeButton from "../shared/LikeButton";
@@ -78,10 +77,6 @@ const styles = {
     justifyContent: "space-around",
     overflow: "hidden",
     padding: "0px",
-  },
-  photoGrid: {
-    flexWrap: "nowrap",
-    transform: "translateZ(0)",
   },
   expansionHeaderContainer: {
     display: "flex",

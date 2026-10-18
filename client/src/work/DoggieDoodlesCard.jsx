@@ -76,7 +76,6 @@ const styles = {
     maxWidth: "400px",
     height: "auto",
   },
-  doggieDoodlesLogo: {},
 };
 
 export default function DoggieDoodlesCard() {

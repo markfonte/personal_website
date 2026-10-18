@@ -285,12 +285,6 @@ const links = [
 ];
 
 const styles = {
-  newsBanner: {
-    width: "100%",
-    marginTop: "4px",
-    marginBottom: "0px",
-    padding: "0px",
-  },
   cardActionIcon: {
     width: "24px",
     height: "24px",

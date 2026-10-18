@@ -4,7 +4,6 @@ import contactCoverPhoto from '../static/photos/spike_photo.webp';
 import venmoLogo from '../static/logos/venmo_logo.svg';
 import gmailLogo from '../static/logos/gmail_logo.svg';
 import InteractionCard from '../shared/InteractionCard.jsx';
-import ResumeCard from './ResumeCard.jsx';
 
 const emailLink = `mailto:mark@fonte.com`;
 const venmoLink = `https://venmo.com/Mark-Fonte`;
@@ -17,9 +16,6 @@ const styles = {
     marginBottom: '16px',
   },
   subtitle: {
-    margin: '16px',
-  },
-  paragraph: {
     margin: '16px',
   },
   buttonDefault: {
@@ -80,7 +76,6 @@ export default function Contact() {
             onClick={() => window.open(venmoLink)}
             clickable />
         </Tooltip>
-        {/* <ResumeCard /> */}
       </Box>
       <br /> <br />
       <img

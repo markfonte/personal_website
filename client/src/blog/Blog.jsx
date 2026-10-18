@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import {
   Typography,
   Card,
@@ -11,17 +11,11 @@ import {
   CircularProgress,
   Box,
 } from "@mui/material";
-import Snackbar from "@mui/material/Snackbar";
-import MuiAlert from "@mui/material/Alert";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Masonry } from "@mui/lab";
 
 const renderLoader = () => <CircularProgress color="secondary" />;
 const InteractionCard = lazy(() => import("../shared/InteractionCard.jsx"));
-
-function Alert(props) {
-  return <MuiAlert elevation={6} variant="filled" {...props} />;
-}
 
 const posts = [
   {
@@ -641,35 +635,12 @@ const styles = {
 };
 
 export default function Blog() {
-  const [successDialogOpen, setSuccessDialogOpen] = useState(false);
-
   useEffect(() => {
     document.title = "Blog | Mark Fonte";
   }, []);
 
-  const copyToClipboard = (postLink) => {
-    navigator.clipboard.writeText(postLink);
-    setSuccessDialogOpen(true);
-  };
-
-  const handleClose = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    setSuccessDialogOpen(false);
-  };
-
   return (
     <Box sx={styles.root}>
-      <Snackbar
-        onClose={handleClose}
-        open={successDialogOpen}
-        autoHideDuration={4000}
-      >
-        <Alert variant="outlined" onClose={handleClose} severity="success">
-          Link copied to clipboard!
-        </Alert>
-      </Snackbar>
       <Typography sx={styles.title} variant="h6">
         Welcome! Here are some of my thoughts on issues that I find important.
         <br />

@@ -121,11 +121,6 @@ const styles = {
     width: "100%",
     maxWidth: "700px",
   },
-  violet: {
-    width: "auto",
-    height: "100%",
-    maxHeight: "200px",
-  },
   sunflower: {
     width: "auto",
     height: "100%",

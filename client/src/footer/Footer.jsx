@@ -153,9 +153,6 @@ const styles = {
   logoDefault: {
     margin: "8px",
   },
-  errorMessageRoot: {
-    margin: "16px",
-  },
   button: {
     width: "40px",
     height: "auto",

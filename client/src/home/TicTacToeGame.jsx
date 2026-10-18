@@ -3,19 +3,6 @@ import TicTacToeBoard from './TicTacToeBoard';
 import { Typography, Button, Tooltip, Box } from '@mui/material';
 
 const styles = {
-  moveList: {
-    paddingLeft: '0px',
-    paddingRight: '0px',
-    paddingInlineEnd: '0px',
-    paddingInlineStart: '0px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-  },
-  moveListItem: {
-    justifyContent: 'center',
-  },
   gameBoard: {
     display: 'flex',
     justifyContent: 'center',

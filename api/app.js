@@ -10,7 +10,6 @@ try {
     throw err;
   }
 }
-var indexRouter = require('./routes/index.js');
 var apiHeartbeatRouter = require('./routes/api_heartbeat.js');
 var likeRouter = require('./routes/like.js');
 var weddingRouter = require('./routes/wedding.js');
@@ -29,7 +28,6 @@ app.use(cors({
   origin: true,
   credentials: true,
 }));
-app.use('/api', indexRouter);
 app.use('/api/api_heartbeat', apiHeartbeatRouter);
 app.use('/api/like', likeRouter);
 app.use('/api/wedding', weddingRouter);

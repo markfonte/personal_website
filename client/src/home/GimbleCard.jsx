@@ -127,14 +127,6 @@ const styles = {
     justifyContent: "center",
     flexDirection: "column",
   },
-  buttonExplanation: {
-    display: "flex",
-    alignItems: "start",
-    justifyContent: "left",
-    marginLeft: "16px",
-    marginRight: "16px",
-    marginTop: "12px",
-  },
 };
 
 export default function GimbleCard() {

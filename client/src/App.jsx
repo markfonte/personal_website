@@ -255,9 +255,6 @@ const styles = {
   mainTitle: {
     margin: '4px',
   },
-  routerLink: {
-    textDecoration: 'none',
-  },
   topLeftControls: {
     position: 'absolute',
     top: '4px',
@@ -349,7 +346,7 @@ export default function App() {
             <PrimaryNav showWedding={showWedding} theme={theme} />
 
             <Routes>
-              <Route path="/" exact element={<HomePage isDarkTheme={theme === darkTheme} />} />
+              <Route path="/" element={<HomePage isDarkTheme={theme === darkTheme} />} />
               <Route path="home" element={<HomePage isDarkTheme={theme === darkTheme} />} />
               <Route path="work" element={<WorkPage isDarkTheme={theme === darkTheme} />} />
               <Route path="contact" element={<ContactPage />} />

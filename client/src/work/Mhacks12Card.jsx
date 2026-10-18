@@ -71,10 +71,6 @@ const styles = {
     marginLeft: "0px",
     marginRight: "0px",
   },
-  logo: {
-    width: "40%",
-    height: "auto",
-  },
   screenshot: {
     marginTop: "12px",
     marginBottom: "12px",
