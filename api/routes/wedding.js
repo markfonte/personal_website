@@ -2,13 +2,14 @@ var express = require('express');
 var crypto = require('crypto');
 var fs = require('fs');
 var path = require('path');
+var rsvp = require('../db/rsvp.js');
 var router = express.Router();
 
 const COOKIE_NAME = 'wedding_auth';
 const YEAR_MS = 365 * 24 * 60 * 60 * 1000;
 const LOGIN_WINDOW_MS = 10 * 60 * 1000;
 const LOGIN_MAX_ATTEMPTS = 10;
-const CONTENT_FILE = path.join(__dirname, '..', 'wedding_content.json');
+const CONTENT_FILE = process.env.WEDDING_CONTENT_FILE || path.join(__dirname, '..', 'wedding_content.json');
 const loginAttempts = new Map();
 
 router.use(function (req, res, next) {
@@ -29,6 +30,10 @@ function readContent() {
     }
     throw err;
   }
+}
+
+function contentResponse() {
+  return { ok: true, ...readContent(), rsvpOpen: rsvp.isOpen() };
 }
 
 function safeEqual(a, b) {
@@ -111,6 +116,13 @@ function recordFailure(ip) {
   loginAttempts.set(ip, recent);
 }
 
+function requireAuth(req, res, next) {
+  if (!verifyToken(readCookie(req, COOKIE_NAME))) {
+    return res.status(401).json({ ok: false });
+  }
+  next();
+}
+
 router.post('/login', function (req, res) {
   const ip = req.ip || req.socket.remoteAddress || '';
   if (tooManyAttempts(ip)) {
@@ -127,7 +139,7 @@ router.post('/login', function (req, res) {
     ...cookieOptions(req),
     maxAge: YEAR_MS,
   });
-  res.json({ ok: true, ...readContent() });
+  res.json(contentResponse());
 });
 
 router.post('/logout', function (req, res) {
@@ -135,11 +147,26 @@ router.post('/logout', function (req, res) {
   res.json({ ok: true });
 });
 
-router.get('/content', function (req, res) {
-  if (!verifyToken(readCookie(req, COOKIE_NAME))) {
-    return res.status(401).json({ ok: false });
+router.get('/content', requireAuth, function (req, res) {
+  res.json(contentResponse());
+});
+
+router.post('/rsvp/find', requireAuth, function (req, res) {
+  const party = rsvp.findParty(req.body && req.body.name);
+  if (!party) {
+    return res.status(404).json({ ok: false });
   }
-  res.json({ ok: true, ...readContent() });
+  res.json({ ok: true, party: rsvp.withResponses(party) });
+});
+
+router.post('/rsvp', requireAuth, function (req, res) {
+  const party = rsvp.getParty(req.body && req.body.partyId);
+  const response = party && rsvp.parseResponse(party, req.body);
+  if (!response) {
+    return res.status(400).json({ ok: false });
+  }
+  rsvp.saveResponse(party, response);
+  res.json({ ok: true });
 });
 
 module.exports = router;

@@ -8,3 +8,13 @@ export function weddingRequest(path, options = {}) {
     ...options,
   });
 }
+
+export function weddingPost(path, body) {
+  return weddingRequest(path, {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+}
