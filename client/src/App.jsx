@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, lazy, Suspense } from 'react';
 import './App.css';
 import profilePicture
   from './static/photos/mark_circle.svg';
@@ -7,8 +7,9 @@ import WorkPage from './work/Work.jsx';
 import ContactPage from './contact/Contact.jsx';
 import HomePage from './home/Home.jsx';
 import Blog from './blog/Blog.jsx';
-import Wedding, { WeddingHome, WeddingSection } from './wedding/Wedding.jsx';
+import Wedding, { WeddingHome, WeddingLoading, WeddingSection } from './wedding/Wedding.jsx';
 import { weddingPages } from './wedding/WeddingNav.jsx';
+const WeddingRsvp = lazy(() => import('./wedding/WeddingRsvp.jsx'));
 import Footer from './footer/Footer.jsx';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
@@ -354,7 +355,15 @@ export default function App() {
               <Route path="wedding" element={<Navigate to="/ellie" replace />} />
               <Route path="ellie" element={<Wedding onAuthenticated={revealWeddingNav} />}>
                 <Route index element={<WeddingHome />} />
-                {weddingPages.filter((page) => page.segment).map((page) => (
+                <Route
+                  path="rsvp"
+                  element={
+                    <Suspense fallback={<WeddingLoading />}>
+                      <WeddingRsvp />
+                    </Suspense>
+                  }
+                />
+                {weddingPages.filter((page) => page.segment && page.segment !== 'rsvp').map((page) => (
                   <Route
                     key={page.segment}
                     path={page.segment}

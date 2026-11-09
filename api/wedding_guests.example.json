@@ -1,0 +1,16 @@
+[
+  {
+    "id": "example-family",
+    "guests": [
+      { "id": "alex-example", "name": "Alex Example" },
+      { "id": "sam-example", "name": "Sam Example" }
+    ]
+  },
+  {
+    "id": "jordan-sample",
+    "guests": [
+      { "id": "jordan-sample", "name": "Jordan Sample" },
+      { "id": "jordan-sample-guest", "plusOne": true }
+    ]
+  }
+]

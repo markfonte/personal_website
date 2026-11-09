@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const Database = require('better-sqlite3');
-
-const db = new Database('./db/var/personal_website.sqlite3');
+const db = require('../db');
 
 router.post('/', function (req, res) {
   const page = req.body.page;

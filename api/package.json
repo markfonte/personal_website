@@ -5,7 +5,9 @@
     "private": true,
     "scripts": {
         "dev": "node ./bin/www",
-        "start": "node ./bin/www"
+        "start": "node ./bin/www",
+        "test": "node --test",
+        "rsvp-report": "node ./bin/rsvp_report.js"
     },
     "dependencies": {
         "better-sqlite3": "^13.0.3",

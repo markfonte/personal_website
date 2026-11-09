@@ -20,7 +20,7 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import weddingCover from "../static/photos/wedding_cover.webp";
-import { weddingRequest } from "./api.js";
+import { weddingPost, weddingRequest } from "./api.js";
 import WeddingNav from "./WeddingNav.jsx";
 
 const styles = {
@@ -174,27 +174,46 @@ WeddingEntry.propTypes = {
   }).isRequired,
 };
 
-export function WeddingSection({ title, segment }) {
-  const { content } = useOutletContext();
-  const entries = Array.isArray(content[segment]) ? content[segment] : [];
+export function WeddingLoading() {
+  return (
+    <Box sx={styles.root}>
+      <CircularProgress color="secondary" />
+    </Box>
+  );
+}
+
+export function WeddingPage({ title, children }) {
   return (
     <Box sx={styles.page}>
       <Card raised className="large-card" sx={styles.sectionCard}>
         <CardHeader className="card-header" title={title} />
-        <CardContent>
-          {entries.length > 0 ? (
-            entries.map((entry, index) => (
-              <React.Fragment key={index}>
-                {index > 0 ? <Divider sx={styles.divider} /> : null}
-                <WeddingEntry entry={entry} />
-              </React.Fragment>
-            ))
-          ) : (
-            <Typography variant="body1">Coming soon.</Typography>
-          )}
-        </CardContent>
+        <CardContent>{children}</CardContent>
       </Card>
     </Box>
+  );
+}
+
+WeddingPage.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
+export function WeddingSection({ title, segment }) {
+  const { content } = useOutletContext();
+  const entries = Array.isArray(content[segment]) ? content[segment] : [];
+  return (
+    <WeddingPage title={title}>
+      {entries.length > 0 ? (
+        entries.map((entry, index) => (
+          <React.Fragment key={index}>
+            {index > 0 ? <Divider sx={styles.divider} /> : null}
+            <WeddingEntry entry={entry} />
+          </React.Fragment>
+        ))
+      ) : (
+        <Typography variant="body1">Coming soon.</Typography>
+      )}
+    </WeddingPage>
   );
 }
 
@@ -251,13 +270,7 @@ export default function Wedding({ onAuthenticated = () => {} }) {
     event.preventDefault();
     setError("");
     setStatus("submitting");
-    weddingRequest("login", {
-      method: "post",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ password }),
-    })
+    weddingPost("login", { password })
       .then((response) => {
         if (response.status === 429) {
           throw new Error("too-many");
@@ -280,11 +293,7 @@ export default function Wedding({ onAuthenticated = () => {} }) {
   };
 
   if (status === "loading") {
-    return (
-      <Box sx={styles.root}>
-        <CircularProgress color="secondary" />
-      </Box>
-    );
+    return <WeddingLoading />;
   }
 
   if (status === "authed" && content) {
