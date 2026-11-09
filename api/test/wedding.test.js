@@ -9,9 +9,11 @@ const Database = require('better-sqlite3');
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'wedding-test-'));
 const contentFile = path.join(dir, 'content.json');
 const guestsFile = path.join(dir, 'guests.json');
+const photosDir = path.join(dir, 'photos');
 process.env.WEDDING_PASSWORD = 'test-password';
 process.env.WEDDING_CONTENT_FILE = contentFile;
 process.env.WEDDING_GUESTS_FILE = guestsFile;
+process.env.WEDDING_PHOTOS_DIR = photosDir;
 process.env.DB_PATH = path.join(dir, 'test.sqlite3');
 
 fs.writeFileSync(contentFile, JSON.stringify({ home: { date: 'Test date' } }));
@@ -43,6 +45,10 @@ fs.writeFileSync(guestsFile, JSON.stringify([
     guests: [{ id: 'christine', name: 'Christine Other', aliases: ['Chris Shared'] }],
   },
 ]));
+fs.mkdirSync(photosDir);
+fs.writeFileSync(path.join(photosDir, 'us.jpg'), 'photo bytes');
+fs.writeFileSync(path.join(photosDir, 'notes.txt'), 'not a photo');
+fs.writeFileSync(path.join(dir, 'secret.jpg'), 'outside the photos folder');
 const schema = fs.readFileSync(path.join(__dirname, '..', 'db', 'sql', 'create_personal_website.sql'), 'utf8');
 new Database(process.env.DB_PATH).exec(schema).close();
 
@@ -77,8 +83,10 @@ async function call(method, route, { body, cookie, ip } = {}) {
     headers,
     body: body === undefined ? undefined : JSON.stringify(body),
   });
-  const json = res.headers.get('content-type')?.includes('json') ? await res.json() : null;
-  return { status: res.status, json, setCookie: res.headers.get('set-cookie') };
+  const isJson = res.headers.get('content-type')?.includes('json');
+  const json = isJson ? await res.json() : null;
+  const text = isJson ? null : await res.text();
+  return { status: res.status, json, text, headers: res.headers, setCookie: res.headers.get('set-cookie') };
 }
 
 async function login() {
@@ -240,5 +248,29 @@ test('RSVP stays closed until the guest list exists', async () => {
     assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Jordan Sample' }, cookie })).status, 404);
   } finally {
     fs.renameSync(guestsFile + '.hidden', guestsFile);
+  }
+});
+
+test('photos need the password', async () => {
+  assert.equal((await call('GET', '/photos/us.jpg')).status, 401);
+});
+
+test('photos are served from the photos folder, and only found photos are cached', async () => {
+  const cookie = await login();
+  const photo = await call('GET', '/photos/us.jpg', { cookie });
+  assert.equal(photo.status, 200);
+  assert.equal(photo.headers.get('content-type'), 'image/jpeg');
+  assert.equal(photo.headers.get('cache-control'), 'private, max-age=86400');
+  assert.equal(photo.text, 'photo bytes');
+
+  const missing = await call('GET', '/photos/missing.jpg', { cookie });
+  assert.equal(missing.status, 404);
+  assert.equal(missing.headers.get('cache-control'), 'no-store');
+});
+
+test('only image file names inside the photos folder are served', async () => {
+  const cookie = await login();
+  for (const file of ['..%2Fsecret.jpg', 'notes.txt']) {
+    assert.equal((await call('GET', '/photos/' + file, { cookie })).status, 404, file);
   }
 });

@@ -5,14 +5,16 @@ import {
   Alert,
   Box,
   Button,
+  Checkbox,
   Divider,
   FormControlLabel,
+  Grow,
   Radio,
   RadioGroup,
   TextField,
   Typography,
 } from "@mui/material";
-import { weddingPost } from "./api.js";
+import { weddingPhotoUrl, weddingPost } from "./api.js";
 import { WeddingPage } from "./Wedding.jsx";
 
 // Matches the limits the API enforces in api/db/rsvp.js.
@@ -38,6 +40,12 @@ const styles = {
     flexWrap: "wrap",
     justifyContent: "center",
     gap: "8px",
+  },
+  thanksPhoto: {
+    alignSelf: "center",
+    maxWidth: "100%",
+    maxHeight: "400px",
+    borderRadius: "4px",
   },
 };
 
@@ -117,6 +125,8 @@ export default function WeddingRsvp() {
   const [note, setNote] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [thanksPhoto, setThanksPhoto] = useState(null);
+  const [noGifts, setNoGifts] = useState(false);
 
   if (!content.rsvpOpen) {
     return (
@@ -155,6 +165,7 @@ export default function WeddingRsvp() {
         ])));
         setSong(data.party.song);
         setNote(data.party.note);
+        setNoGifts(false);
         setStep("form");
       })
       .catch((err) => {
@@ -179,6 +190,8 @@ export default function WeddingRsvp() {
         if (!response.ok) {
           throw new Error("failed");
         }
+        const photos = Array.isArray(content.photos) ? content.photos : [];
+        setThanksPhoto(photos[Math.floor(Math.random() * photos.length)] || null);
         setParty({ ...party, responded: true });
         setStep("done");
       })
@@ -191,6 +204,16 @@ export default function WeddingRsvp() {
       <WeddingPage title="RSVP">
         <Box sx={styles.form}>
           <Alert severity="success">Thank you! Your RSVP is saved.</Alert>
+          {thanksPhoto ? (
+            <Grow in>
+              <Box
+                component="img"
+                src={weddingPhotoUrl(thanksPhoto.file)}
+                alt={thanksPhoto.caption || "Ellie and Mark"}
+                sx={styles.thanksPhoto}
+              />
+            </Grow>
+          ) : null}
           <Box sx={styles.actions}>
             <Button autoFocus variant="outlined" color="secondary" onClick={() => setStep("form")}>
               Change your RSVP
@@ -205,7 +228,8 @@ export default function WeddingRsvp() {
   }
 
   if (step === "form") {
-    const complete = party.guests.every((guest) => {
+    const anyoneAttending = party.guests.some((guest) => answers[guest.id].attending);
+    const complete = (noGifts || !anyoneAttending) && party.guests.every((guest) => {
       const answer = answers[guest.id];
       return answer.attending !== null && !(guest.plusOne && answer.attending && !answer.name.trim());
     });
@@ -242,6 +266,19 @@ export default function WeddingRsvp() {
             onChange={(event) => setNote(event.target.value)}
             slotProps={{ htmlInput: { maxLength: LIMITS.note } }}
           />
+          {anyoneAttending ? (
+            <FormControlLabel
+              required
+              control={
+                <Checkbox
+                  color="secondary"
+                  checked={noGifts}
+                  onChange={(event) => setNoGifts(event.target.checked)}
+                />
+              }
+              label="I will NOT bring any gift of monetary value. Ellie and Mark are honored that I would attend at all!"
+            />
+          ) : null}
           {error ? <Alert severity="error">{error}</Alert> : null}
           <Box sx={styles.actions}>
             <Button color="secondary" onClick={startOver}>

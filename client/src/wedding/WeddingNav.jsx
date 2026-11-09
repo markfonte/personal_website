@@ -7,6 +7,7 @@ export const weddingPages = [
   { name: "Home", path: "/ellie" },
   { name: "Schedule", path: "/ellie/schedule", segment: "schedule" },
   { name: "Hotels", path: "/ellie/hotels", segment: "hotels" },
+  { name: "Photos", path: "/ellie/photos", segment: "photos" },
   { name: "Things To Do", path: "/ellie/things-to-do", segment: "things-to-do" },
   { name: "FAQs", path: "/ellie/faqs", segment: "faqs" },
   { name: "RSVP", path: "/ellie/rsvp", segment: "rsvp" },

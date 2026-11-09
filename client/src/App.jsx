@@ -7,9 +7,8 @@ import WorkPage from './work/Work.jsx';
 import ContactPage from './contact/Contact.jsx';
 import HomePage from './home/Home.jsx';
 import Blog from './blog/Blog.jsx';
-import Wedding, { WeddingHome, WeddingLoading, WeddingSection } from './wedding/Wedding.jsx';
-import { weddingPages } from './wedding/WeddingNav.jsx';
-const WeddingRsvp = lazy(() => import('./wedding/WeddingRsvp.jsx'));
+import WeddingLoading from './wedding/WeddingLoading.jsx';
+const Wedding = lazy(() => import('./wedding/Wedding.jsx'));
 import Footer from './footer/Footer.jsx';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material/styles';
@@ -353,25 +352,14 @@ export default function App() {
               <Route path="contact" element={<ContactPage />} />
               <Route path="blog" element={<Blog />} />
               <Route path="wedding" element={<Navigate to="/ellie" replace />} />
-              <Route path="ellie" element={<Wedding onAuthenticated={revealWeddingNav} />}>
-                <Route index element={<WeddingHome />} />
-                <Route
-                  path="rsvp"
-                  element={
-                    <Suspense fallback={<WeddingLoading />}>
-                      <WeddingRsvp />
-                    </Suspense>
-                  }
-                />
-                {weddingPages.filter((page) => page.segment && page.segment !== 'rsvp').map((page) => (
-                  <Route
-                    key={page.segment}
-                    path={page.segment}
-                    element={<WeddingSection title={page.name} segment={page.segment} />}
-                  />
-                ))}
-                <Route path="*" element={<Navigate to="/ellie" replace />} />
-              </Route>
+              <Route
+                path="ellie/*"
+                element={
+                  <Suspense fallback={<WeddingLoading />}>
+                    <Wedding onAuthenticated={revealWeddingNav} />
+                  </Suspense>
+                }
+              />
             </Routes>
             <ScrollToTop />
             <Footer isDarkTheme={theme === darkTheme} />

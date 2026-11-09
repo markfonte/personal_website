@@ -9,6 +9,10 @@ export function weddingRequest(path, options = {}) {
   });
 }
 
+export function weddingPhotoUrl(file) {
+  return import.meta.env.VITE_API_URL + "wedding/photos/" + encodeURIComponent(file);
+}
+
 export function weddingPost(path, body) {
   return weddingRequest(path, {
     method: "post",

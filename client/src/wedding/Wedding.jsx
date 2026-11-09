@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Outlet, useOutletContext } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes, useOutletContext } from "react-router-dom";
 import {
   Alert,
+  Avatar,
   Box,
   Button,
   Card,
   CardContent,
   CardHeader,
   CardMedia,
-  CircularProgress,
   Divider,
   IconButton,
   InputAdornment,
@@ -20,8 +20,15 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import weddingCover from "../static/photos/wedding_cover.webp";
-import { weddingPost, weddingRequest } from "./api.js";
-import WeddingNav from "./WeddingNav.jsx";
+import { weddingPhotoUrl, weddingPost, weddingRequest } from "./api.js";
+import WeddingLoading from "./WeddingLoading.jsx";
+import WeddingNav, { weddingPages } from "./WeddingNav.jsx";
+
+const weddingViews = {
+  rsvp: lazy(() => import("./WeddingRsvp.jsx")),
+  photos: lazy(() => import("./WeddingPhotos.jsx")),
+  registry: lazy(() => import("./WeddingRegistry.jsx")),
+};
 
 const styles = {
   root: {
@@ -65,6 +72,11 @@ const styles = {
     alignItems: "center",
     gap: "4px",
   },
+  entryPhoto: {
+    width: "96px",
+    height: "96px",
+    marginBottom: "8px",
+  },
   details: {
     whiteSpace: "pre-line",
   },
@@ -99,7 +111,7 @@ function mapsUrl(address) {
   );
 }
 
-export function WeddingHome() {
+function WeddingHome() {
   const { content } = useOutletContext();
   const home = content.home || {};
   return (
@@ -131,6 +143,14 @@ export function WeddingHome() {
 function WeddingEntry({ entry }) {
   return (
     <Box sx={styles.entry}>
+      {entry.photo ? (
+        <Avatar
+          src={weddingPhotoUrl(entry.photo)}
+          alt=""
+          slotProps={{ img: { loading: "lazy" } }}
+          sx={styles.entryPhoto}
+        />
+      ) : null}
       {entry.title ? <Typography variant="h6">{entry.title}</Typography> : null}
       {entry.subtitle ? (
         <Typography variant="subtitle1" color="text.secondary">
@@ -163,6 +183,7 @@ function WeddingEntry({ entry }) {
 
 WeddingEntry.propTypes = {
   entry: PropTypes.shape({
+    photo: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     address: PropTypes.string,
@@ -173,14 +194,6 @@ WeddingEntry.propTypes = {
     }),
   }).isRequired,
 };
-
-export function WeddingLoading() {
-  return (
-    <Box sx={styles.root}>
-      <CircularProgress color="secondary" />
-    </Box>
-  );
-}
 
 export function WeddingPage({ title, children }) {
   return (
@@ -198,7 +211,7 @@ WeddingPage.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export function WeddingSection({ title, segment }) {
+function WeddingSection({ title, segment }) {
   const { content } = useOutletContext();
   const entries = Array.isArray(content[segment]) ? content[segment] : [];
   return (
@@ -206,8 +219,14 @@ export function WeddingSection({ title, segment }) {
       {entries.length > 0 ? (
         entries.map((entry, index) => (
           <React.Fragment key={index}>
-            {index > 0 ? <Divider sx={styles.divider} /> : null}
-            <WeddingEntry entry={entry} />
+            {index > 0 && !entries[index - 1].heading ? <Divider sx={styles.divider} /> : null}
+            {entry.heading ? (
+              <Typography variant="h5" color="secondary" gutterBottom>
+                {entry.heading}
+              </Typography>
+            ) : (
+              <WeddingEntry entry={entry} />
+            )}
           </React.Fragment>
         ))
       ) : (
@@ -300,7 +319,24 @@ export default function Wedding({ onAuthenticated = () => {} }) {
     return (
       <>
         <WeddingNav />
-        <Outlet context={{ content }} />
+        <Suspense fallback={<WeddingLoading />}>
+          <Routes>
+            <Route element={<Outlet context={{ content }} />}>
+              <Route index element={<WeddingHome />} />
+              {weddingPages.filter((page) => page.segment).map((page) => {
+                const View = weddingViews[page.segment];
+                return (
+                  <Route
+                    key={page.segment}
+                    path={page.segment}
+                    element={View ? <View /> : <WeddingSection title={page.name} segment={page.segment} />}
+                  />
+                );
+              })}
+              <Route path="*" element={<Navigate to="/ellie" replace />} />
+            </Route>
+          </Routes>
+        </Suspense>
       </>
     );
   }

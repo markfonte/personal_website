@@ -27,7 +27,18 @@
       "link": { "label": "Book a room", "url": "https://example.com" }
     }
   ],
+  "photos": [
+    { "file": "example-photo.webp", "caption": "An optional caption", "width": 1600, "height": 1067 }
+  ],
   "things-to-do": [
+    { "heading": "Food & Drink" },
+    {
+      "title": "Example Restaurant",
+      "photo": "example-restaurant.webp",
+      "address": "321 Example Lane, City, State",
+      "details": "Why guests might like it."
+    },
+    { "heading": "Activities" },
     {
       "title": "Example Museum",
       "subtitle": "Museum",

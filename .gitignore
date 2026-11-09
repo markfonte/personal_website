@@ -343,8 +343,9 @@ yarn-error.log*
 # for sqlite file. Needs to be created on prod
 var/
 
-# for private wedding page content and guest list. Needs to be created on prod
+# for private wedding page content, guest list and photos. Needs to be created on prod
 api/wedding_content.json
 api/wedding_guests.json
+api/wedding_photos/
 
 .vscode/

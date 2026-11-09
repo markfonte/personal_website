@@ -10,6 +10,8 @@ const YEAR_MS = 365 * 24 * 60 * 60 * 1000;
 const LOGIN_WINDOW_MS = 10 * 60 * 1000;
 const LOGIN_MAX_ATTEMPTS = 10;
 const CONTENT_FILE = process.env.WEDDING_CONTENT_FILE || path.join(__dirname, '..', 'wedding_content.json');
+const PHOTOS_DIR = process.env.WEDDING_PHOTOS_DIR || path.join(__dirname, '..', 'wedding_photos');
+const PHOTO_FILE = /^[\w-]+\.(jpe?g|png|webp|gif)$/i;
 const loginAttempts = new Map();
 
 router.use(function (req, res, next) {
@@ -167,6 +169,19 @@ router.post('/rsvp', requireAuth, function (req, res) {
   }
   rsvp.saveResponse(party, response);
   res.json({ ok: true });
+});
+
+router.get('/photos/:file', requireAuth, function (req, res) {
+  if (!PHOTO_FILE.test(req.params.file)) {
+    return res.status(404).json({ ok: false });
+  }
+  // Only a photo that was found gets cached, so one uploaded later still shows up.
+  const options = { root: PHOTOS_DIR, headers: { 'Cache-Control': 'private, max-age=86400' } };
+  res.sendFile(req.params.file, options, function (err) {
+    if (err && !res.headersSent) {
+      res.status(err.status || 500).json({ ok: false });
+    }
+  });
 });
 
 module.exports = router;
