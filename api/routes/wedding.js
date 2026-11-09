@@ -1,15 +1,14 @@
 var express = require('express');
 var crypto = require('crypto');
+var fs = require('fs');
+var path = require('path');
 var router = express.Router();
 
 const COOKIE_NAME = 'wedding_auth';
 const YEAR_MS = 365 * 24 * 60 * 60 * 1000;
 const LOGIN_WINDOW_MS = 10 * 60 * 1000;
 const LOGIN_MAX_ATTEMPTS = 10;
-const WEDDING_CONTENT = {
-  title: 'Hello world',
-  body: 'This page is under construction.',
-};
+const CONTENT_FILE = path.join(__dirname, '..', 'wedding_content.json');
 const loginAttempts = new Map();
 
 router.use(function (req, res, next) {
@@ -19,6 +18,17 @@ router.use(function (req, res, next) {
 
 function getPassword() {
   return process.env.WEDDING_PASSWORD || '';
+}
+
+function readContent() {
+  try {
+    return JSON.parse(fs.readFileSync(CONTENT_FILE, 'utf8'));
+  } catch (err) {
+    if (err.code === 'ENOENT') {
+      return {};
+    }
+    throw err;
+  }
 }
 
 function safeEqual(a, b) {
@@ -64,7 +74,11 @@ function readCookie(req, name) {
   for (let i = 0; i < parts.length; i++) {
     const part = parts[i].trim();
     if (part.startsWith(prefix)) {
-      return decodeURIComponent(part.slice(prefix.length));
+      try {
+        return decodeURIComponent(part.slice(prefix.length));
+      } catch {
+        return '';
+      }
     }
   }
   return '';
@@ -113,7 +127,7 @@ router.post('/login', function (req, res) {
     ...cookieOptions(req),
     maxAge: YEAR_MS,
   });
-  res.json({ ok: true, ...WEDDING_CONTENT });
+  res.json({ ok: true, ...readContent() });
 });
 
 router.post('/logout', function (req, res) {
@@ -125,7 +139,7 @@ router.get('/content', function (req, res) {
   if (!verifyToken(readCookie(req, COOKIE_NAME))) {
     return res.status(401).json({ ok: false });
   }
-  res.json({ ok: true, ...WEDDING_CONTENT });
+  res.json({ ok: true, ...readContent() });
 });
 
 module.exports = router;
