@@ -2,7 +2,7 @@
   {
     "id": "example-family",
     "guests": [
-      { "id": "alex-example", "name": "Alex Example" },
+      { "id": "alex-example", "name": "Alex Example", "aliases": ["Alexandra Example", "Alex Sample"] },
       { "id": "sam-example", "name": "Sam Example" }
     ]
   },

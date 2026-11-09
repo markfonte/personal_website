@@ -15,7 +15,7 @@ From `/api` directory, copy `.env.example` to `.env` and set `WEDDING_PASSWORD`.
 Copy `wedding_content.example.json` to `wedding_content.json` and fill it in. It holds the wedding page content, which the API only sends after the password is entered. Keep real details out of git, because this repo is public. Each list key matches a page path such as `schedule` or `things-to-do`, and a page with no entries shows "Coming soon". Changes show up without restarting the API.
 
 ## Wedding RSVPs
-Copy `wedding_guests.example.json` to `wedding_guests.json` and list each party with its guests. It also stays out of git. Saved answers are keyed by the party and guest ids, so don't change an id once guests have responded. Mark an unnamed plus-one with `"plusOne": true`, and the guest types the name when they RSVP. The RSVP page shows "Coming soon" until this file exists.
+Copy `wedding_guests.example.json` to `wedding_guests.json` and list each party with its guests. It also stays out of git. Saved answers are keyed by the party and guest ids, so don't change an id once guests have responded. Mark an unnamed plus-one with `"plusOne": true`, and the guest types the name when they RSVP. List any other full names a guest might type, such as a nickname or a maiden name, in `"aliases"`. A name that matches guests in more than one party finds none of them, so keep names unique across parties. The RSVP page shows "Coming soon" until this file exists.
 
 Before adding the guest list on a server, create the RSVP tables once. From `/api/db` directory:
 

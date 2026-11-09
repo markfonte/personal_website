@@ -19,8 +19,8 @@ fs.writeFileSync(guestsFile, JSON.stringify([
   {
     id: 'alex-family',
     guests: [
-      { id: 'alex', name: 'Álex Example' },
-      { id: 'sam', name: "Sam O'Example" },
+      { id: 'alex', name: 'Álex Example', aliases: ['Alexandra Example', 'Alex Fonte'] },
+      { id: 'sam', name: "Sam O'Example", aliases: 'Samuel Example' },
     ],
   },
   {
@@ -32,7 +32,15 @@ fs.writeFileSync(guestsFile, JSON.stringify([
   },
   {
     id: 'anna-party',
-    guests: [{ id: 'anna', name: 'Анна Иванова' }],
+    guests: [{ id: 'anna', name: 'Анна Иванова', aliases: [42] }],
+  },
+  {
+    id: 'chris-party',
+    guests: [{ id: 'chris', name: 'Chris Shared' }],
+  },
+  {
+    id: 'christine-party',
+    guests: [{ id: 'christine', name: 'Christine Other', aliases: ['Chris Shared'] }],
   },
 ]));
 const schema = fs.readFileSync(path.join(__dirname, '..', 'db', 'sql', 'create_personal_website.sql'), 'utf8');
@@ -144,6 +152,31 @@ test('finding a party matches whole names in any alphabet, ignoring case, accent
   assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Alex' }, cookie })).status, 404);
   assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Nobody Here' }, cookie })).status, 404);
   assert.equal((await call('POST', '/rsvp/find', { body: {}, cookie })).status, 404);
+});
+
+test('a guest can be found by any alias, and the form shows their main name', async () => {
+  const cookie = await login();
+  for (const alias of ['alexandra example', 'ALEX FONTE']) {
+    const found = await call('POST', '/rsvp/find', { body: { name: alias }, cookie });
+    assert.equal(found.status, 200, alias);
+    assert.equal(found.json.party.id, 'alex-family');
+    assert.equal(found.json.party.guests[0].name, 'Álex Example');
+    assert.equal(JSON.stringify(found.json).includes('Alexandra'), false);
+  }
+  assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Alexandra Fonte' }, cookie })).status, 404);
+});
+
+test('a lone alias string counts as one name, and a bad alias entry breaks nothing', async () => {
+  const cookie = await login();
+  assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Samuel Example' }, cookie })).status, 200);
+  assert.equal((await call('POST', '/rsvp/find', { body: { name: 's' }, cookie })).status, 404);
+  assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Анна Иванова' }, cookie })).status, 200);
+});
+
+test('a name that matches more than one party finds neither', async () => {
+  const cookie = await login();
+  assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Chris Shared' }, cookie })).status, 404);
+  assert.equal((await call('POST', '/rsvp/find', { body: { name: 'Christine Other' }, cookie })).status, 200);
 });
 
 test('a party can save an RSVP and change it later', async () => {

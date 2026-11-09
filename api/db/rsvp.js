@@ -35,9 +35,12 @@ function findParty(name) {
   if (!wanted) {
     return null;
   }
-  return readParties().find((party) =>
-    party.guests.some((guest) => guest.name && normalizeName(guest.name) === wanted)
-  ) || null;
+  const matches = readParties().filter((party) =>
+    party.guests.some((guest) =>
+      [guest.name].concat(guest.aliases || []).some((known) => typeof known === 'string' && normalizeName(known) === wanted)
+    )
+  );
+  return matches.length === 1 ? matches[0] : null;
 }
 
 function getParty(partyId) {
