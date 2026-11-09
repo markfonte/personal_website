@@ -358,7 +358,7 @@ export default function App() {
                   <Route
                     key={page.segment}
                     path={page.segment}
-                    element={<WeddingSection title={page.name} />}
+                    element={<WeddingSection title={page.name} segment={page.segment} />}
                   />
                 ))}
                 <Route path="*" element={<Navigate to="/ellie" replace />} />

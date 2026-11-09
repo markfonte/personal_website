@@ -343,4 +343,7 @@ yarn-error.log*
 # for sqlite file. Needs to be created on prod
 var/
 
+# for private wedding page content. Needs to be created on prod
+api/wedding_content.json
+
 .vscode/

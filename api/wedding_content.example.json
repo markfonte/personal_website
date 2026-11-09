@@ -1,0 +1,44 @@
+{
+  "home": {
+    "date": "Saturday, Month Day, Year",
+    "location": "City, State",
+    "message": "A short welcome message for guests."
+  },
+  "schedule": [
+    {
+      "title": "Welcome Drinks",
+      "subtitle": "Friday · 7:00 PM",
+      "address": "123 Example Street, City, State",
+      "details": "Attire and anything else guests should know."
+    },
+    {
+      "title": "Ceremony",
+      "subtitle": "Saturday · 4:00 PM",
+      "address": "456 Example Avenue, City, State",
+      "details": "Line breaks in details\nshow up on the page."
+    }
+  ],
+  "hotels": [
+    {
+      "title": "Example Hotel",
+      "subtitle": "10 minutes from the venue",
+      "address": "789 Example Road, City, State",
+      "details": "Room block name and the date to book by.",
+      "link": { "label": "Book a room", "url": "https://example.com" }
+    }
+  ],
+  "things-to-do": [
+    {
+      "title": "Example Museum",
+      "subtitle": "Museum",
+      "details": "Why guests might like it.",
+      "link": { "label": "Website", "url": "https://example.com" }
+    }
+  ],
+  "faqs": [
+    {
+      "title": "Example question?",
+      "details": "Example answer."
+    }
+  ]
+}
